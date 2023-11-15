@@ -1,0 +1,95 @@
+{
+  "ID": "ALAS2-2022-1740",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2022-1740: important priority package update for mailman",
+  "Issued": {
+    "Date": "2022-01-18 21:37"
+  },
+  "Updated": {
+    "Date": "2022-01-20 19:31"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-44227:\n\tA Cross-Site Request Forgery (CSRF) attack can be performed in mailman due to a CSRF token bypass. CSRF tokens are not checked against the right type of user when performing admin operations and a token created by a regular user can be used by an admin to perform an admin-level request, effectively bypassing the protection provided by CSRF tokens. A remote attacker with an account on the mailman system can use this flaw to perform a CSRF attack and perform operations on behalf of the victim admin.\n\nCVE-2021-42097:\n\tA Cross-Site Request Forgery (CSRF) attack can be performed in mailman due to a CSRF token bypass. CSRF tokens are not checked against the right user and a token created by one user can be used by another one to perform a request, effectively bypassing the protection provided by CSRF tokens. A remote attacker with an account on the mailman system can use this flaw to perform a CSRF attack and perform operations on behalf of the victim user.\n\nCVE-2016-6893:\n\tCross-site request forgery (CSRF) vulnerability in the user options page in GNU Mailman 2.1.x before 2.1.23 allows remote attackers to hijack the authentication of arbitrary users for requests that modify an option, as demonstrated by gaining access to the credentials of a victim's account.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6893",
+        "ID": "CVE-2016-6893",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42097",
+        "ID": "CVE-2021-42097",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44227",
+        "ID": "CVE-2021-44227",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mailman",
+          "Release": "30.amzn2.2",
+          "Version": "2.1.15",
+          "Filename": "Packages/mailman-2.1.15-30.amzn2.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mailman-debuginfo",
+          "Release": "30.amzn2.2",
+          "Version": "2.1.15",
+          "Filename": "Packages/mailman-debuginfo-2.1.15-30.amzn2.2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mailman",
+          "Release": "30.amzn2.2",
+          "Version": "2.1.15",
+          "Filename": "Packages/mailman-2.1.15-30.amzn2.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mailman-debuginfo",
+          "Release": "30.amzn2.2",
+          "Version": "2.1.15",
+          "Filename": "Packages/mailman-debuginfo-2.1.15-30.amzn2.2.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mailman",
+          "Release": "30.amzn2.2",
+          "Version": "2.1.15",
+          "Filename": "Packages/mailman-2.1.15-30.amzn2.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mailman-debuginfo",
+          "Release": "30.amzn2.2",
+          "Version": "2.1.15",
+          "Filename": "Packages/mailman-debuginfo-2.1.15-30.amzn2.2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "ID": "ALAS-2016-724",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-724: medium priority package update for python26 python27 python34",
+  "Issued": {
+    "Date": "2016-07-20 18:00"
+  },
+  "Updated": {
+    "Date": "2016-07-20 18:00"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-5699:\n\tIt was found that Python&#039;s httplib library (used urllib, urllib2 and others) did not properly check HTTP header input in HTTPConnection.putheader(). An attacker could use this flow to inject additional headers in a Python application that allows user provided header name or values.\n1303699: \nCVE-2016-5699 python: http protocol steam injection attack\n\nCVE-2016-5636:\n\tA vulnerability was discovered in Python, in the built-in zipimporter.  A specially crafted zip file placed in a module path such that it would be loaded by a later &quot;import&quot; statement could cause a heap overflow, leading to arbitrary code execution.\n1345856: \nCVE-2016-5636 python: Heap overflow in zipimporter module\n\nCVE-2016-0772:\n\tIt was found that Python&#039;s smtplib library did not return an exception if StartTLS fails to establish correctly in the SMTP.starttls() function. An attacker with ability to launch an active man in the middle attack could strip out the STARTTLS command without generating an exception on the python SMTP client application, preventing the establishment of the TLS layer.\n1303647: \nCVE-2016-0772 python: smtplib StartTLS stripping attack\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0772",
+        "ID": "CVE-2016-0772",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5636",
+        "ID": "CVE-2016-5636",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5699",
+        "ID": "CVE-2016-5699",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python26-libs",
+          "Release": "2.86.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-libs-2.6.9-2.86.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python26-tools",
+          "Release": "2.86.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-tools-2.6.9-2.86.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python26-test",
+          "Release": "2.86.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-test-2.6.9-2.86.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python26-devel",
+          "Release": "2.86.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-devel-2.6.9-2.86.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python26",
+          "Release": "2.86.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-2.6.9-2.86.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python26-debuginfo",
+          "Release": "2.86.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-debuginfo-2.6.9-2.86.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python26-libs",
+          "Release": "2.86.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-libs-2.6.9-2.86.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python26-tools",
+          "Release": "2.86.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-tools-2.6.9-2.86.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python26-test",
+          "Release": "2.86.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-test-2.6.9-2.86.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python26",
+          "Release": "2.86.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-2.6.9-2.86.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python26-debuginfo",
+          "Release": "2.86.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-debuginfo-2.6.9-2.86.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python26-devel",
+          "Release": "2.86.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-devel-2.6.9-2.86.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-devel",
+          "Release": "4.122.amzn1",
+          "Version": "2.7.10",
+          "Filename": "Packages/python27-devel-2.7.10-4.122.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-test",
+          "Release": "4.122.amzn1",
+          "Version": "2.7.10",
+          "Filename": "Packages/python27-test-2.7.10-4.122.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-tools",
+          "Release": "4.122.amzn1",
+          "Version": "2.7.10",
+          "Filename": "Packages/python27-tools-2.7.10-4.122.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27",
+          "Release": "4.122.amzn1",
+          "Version": "2.7.10",
+          "Filename": "Packages/python27-2.7.10-4.122.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-debuginfo",
+          "Release": "4.122.amzn1",
+          "Version": "2.7.10",
+          "Filename": "Packages/python27-debuginfo-2.7.10-4.122.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-libs",
+          "Release": "4.122.amzn1",
+          "Version": "2.7.10",
+          "Filename": "Packages/python27-libs-2.7.10-4.122.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-devel",
+          "Release": "4.122.amzn1",
+          "Version": "2.7.10",
+          "Filename": "Packages/python27-devel-2.7.10-4.122.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-test",
+          "Release": "4.122.amzn1",
+          "Version": "2.7.10",
+          "Filename": "Packages/python27-test-2.7.10-4.122.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-tools",
+          "Release": "4.122.amzn1",
+          "Version": "2.7.10",
+          "Filename": "Packages/python27-tools-2.7.10-4.122.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-debuginfo",
+          "Release": "4.122.amzn1",
+          "Version": "2.7.10",
+          "Filename": "Packages/python27-debuginfo-2.7.10-4.122.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27",
+          "Release": "4.122.amzn1",
+          "Version": "2.7.10",
+          "Filename": "Packages/python27-2.7.10-4.122.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-libs",
+          "Release": "4.122.amzn1",
+          "Version": "2.7.10",
+          "Filename": "Packages/python27-libs-2.7.10-4.122.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python34",
+          "Release": "1.32.amzn1",
+          "Version": "3.4.3",
+          "Filename": "Packages/python34-3.4.3-1.32.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python34-debuginfo",
+          "Release": "1.32.amzn1",
+          "Version": "3.4.3",
+          "Filename": "Packages/python34-debuginfo-3.4.3-1.32.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python34-devel",
+          "Release": "1.32.amzn1",
+          "Version": "3.4.3",
+          "Filename": "Packages/python34-devel-3.4.3-1.32.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python34-tools",
+          "Release": "1.32.amzn1",
+          "Version": "3.4.3",
+          "Filename": "Packages/python34-tools-3.4.3-1.32.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python34-test",
+          "Release": "1.32.amzn1",
+          "Version": "3.4.3",
+          "Filename": "Packages/python34-test-3.4.3-1.32.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python34-libs",
+          "Release": "1.32.amzn1",
+          "Version": "3.4.3",
+          "Filename": "Packages/python34-libs-3.4.3-1.32.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python34-tools",
+          "Release": "1.32.amzn1",
+          "Version": "3.4.3",
+          "Filename": "Packages/python34-tools-3.4.3-1.32.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python34-test",
+          "Release": "1.32.amzn1",
+          "Version": "3.4.3",
+          "Filename": "Packages/python34-test-3.4.3-1.32.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python34",
+          "Release": "1.32.amzn1",
+          "Version": "3.4.3",
+          "Filename": "Packages/python34-3.4.3-1.32.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python34-devel",
+          "Release": "1.32.amzn1",
+          "Version": "3.4.3",
+          "Filename": "Packages/python34-devel-3.4.3-1.32.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python34-debuginfo",
+          "Release": "1.32.amzn1",
+          "Version": "3.4.3",
+          "Filename": "Packages/python34-debuginfo-3.4.3-1.32.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python34-libs",
+          "Release": "1.32.amzn1",
+          "Version": "3.4.3",
+          "Filename": "Packages/python34-libs-3.4.3-1.32.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

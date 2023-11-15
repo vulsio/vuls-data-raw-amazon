@@ -1,0 +1,169 @@
+{
+  "ID": "ALAS-2018-1010",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2018-1010: medium priority package update for krb5",
+  "Issued": {
+    "Date": "2018-09-05 19:27"
+  },
+  "Updated": {
+    "Date": "2018-09-06 21:59"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-7562:\n\tAn authentication bypass flaw was found in the way krb5&#039;s certauth interface handled the validation of client certificates. A remote attacker able to communicate with the KDC could potentially use this flaw to impersonate arbitrary principals under rare and erroneous circumstances.\n1485510: \nCVE-2017-7562 krb5: Authentication bypass by improper validation of certificate EKU and SAN\n\nCVE-2017-11368:\n\tA denial of service flaw was found in MIT Kerberos krb5kdc service. An authenticated attacker could use this flaw to cause krb5kdc to exit with an assertion failure by making an invalid S4U2Self or S4U2Proxy request.\n1473560: \nCVE-2017-11368 krb5: Invalid S4U2Self or S4U2Proxy request causes assertion failure\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11368",
+        "ID": "CVE-2017-11368",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7562",
+        "ID": "CVE-2017-7562",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-devel",
+          "Release": "19.43.amzn1",
+          "Version": "1.15.1",
+          "Filename": "Packages/krb5-devel-1.15.1-19.43.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-server",
+          "Release": "19.43.amzn1",
+          "Version": "1.15.1",
+          "Filename": "Packages/krb5-server-1.15.1-19.43.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-debuginfo",
+          "Release": "19.43.amzn1",
+          "Version": "1.15.1",
+          "Filename": "Packages/krb5-debuginfo-1.15.1-19.43.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-workstation",
+          "Release": "19.43.amzn1",
+          "Version": "1.15.1",
+          "Filename": "Packages/krb5-workstation-1.15.1-19.43.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-libs",
+          "Release": "19.43.amzn1",
+          "Version": "1.15.1",
+          "Filename": "Packages/krb5-libs-1.15.1-19.43.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-pkinit-openssl",
+          "Release": "19.43.amzn1",
+          "Version": "1.15.1",
+          "Filename": "Packages/krb5-pkinit-openssl-1.15.1-19.43.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libkadm5",
+          "Release": "19.43.amzn1",
+          "Version": "1.15.1",
+          "Filename": "Packages/libkadm5-1.15.1-19.43.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-server-ldap",
+          "Release": "19.43.amzn1",
+          "Version": "1.15.1",
+          "Filename": "Packages/krb5-server-ldap-1.15.1-19.43.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-debuginfo",
+          "Release": "19.43.amzn1",
+          "Version": "1.15.1",
+          "Filename": "Packages/krb5-debuginfo-1.15.1-19.43.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-workstation",
+          "Release": "19.43.amzn1",
+          "Version": "1.15.1",
+          "Filename": "Packages/krb5-workstation-1.15.1-19.43.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-devel",
+          "Release": "19.43.amzn1",
+          "Version": "1.15.1",
+          "Filename": "Packages/krb5-devel-1.15.1-19.43.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-pkinit-openssl",
+          "Release": "19.43.amzn1",
+          "Version": "1.15.1",
+          "Filename": "Packages/krb5-pkinit-openssl-1.15.1-19.43.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libkadm5",
+          "Release": "19.43.amzn1",
+          "Version": "1.15.1",
+          "Filename": "Packages/libkadm5-1.15.1-19.43.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-libs",
+          "Release": "19.43.amzn1",
+          "Version": "1.15.1",
+          "Filename": "Packages/krb5-libs-1.15.1-19.43.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-server",
+          "Release": "19.43.amzn1",
+          "Version": "1.15.1",
+          "Filename": "Packages/krb5-server-1.15.1-19.43.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-server-ldap",
+          "Release": "19.43.amzn1",
+          "Version": "1.15.1",
+          "Filename": "Packages/krb5-server-ldap-1.15.1-19.43.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

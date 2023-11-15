@@ -1,0 +1,113 @@
+{
+  "ID": "ALAS-2017-907",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-907: critical priority package update for dnsmasq",
+  "Issued": {
+    "Date": "2017-10-02 17:05"
+  },
+  "Updated": {
+    "Date": "2017-10-02 21:47"
+  },
+  "Severity": "critical",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-14496:\n\tAn integer underflow flaw leading to a buffer over-read was found in dnsmasq in the EDNS0 code. An attacker could send crafted DNS packets to dnsmasq which would cause it to crash. This issue only affected configurations using one of the options: add-mac, add-cpe-id, or add-subnet.\n1495416: \nCVE-2017-14496 dnsmasq: integer underflow leading to buffer over-read in the EDNS0 code\n\nCVE-2017-14495:\n\tA memory exhaustion flaw was found in dnsmasq in the EDNS0 code. An attacker could send crafted DNS packets which would trigger memory allocations which would never be freed, leading to unbounded memory consumption and eventually a crash. This issue only affected configurations using one of the options: add-mac, add-cpe-id, or add-subnet.\n1495415: \nCVE-2017-14495 dnsmasq: memory exhaustion vulnerability in the EDNS0 code\n\nCVE-2017-14494:\n\tAn information leak was found in dnsmasq in the DHCPv6 relay code. An attacker on the local network could send crafted DHCPv6 packets to dnsmasq causing it to forward the contents of process memory, potentially leaking sensitive data.\n1495412: \nCVE-2017-14494 dnsmasq: information leak in the DHCPv6 relay code\n\nCVE-2017-14493:\n\tA stack buffer overflow was found in dnsmasq in the DHCPv6 code. An attacker on the local network could send a crafted DHCPv6 request to dnsmasq which would cause it to a crash or, potentially, execute arbitrary code.\n1495411: \nCVE-2017-14493 dnsmasq: stack buffer overflow in the DHCPv6 code\n\nCVE-2017-14492:\n\tA heap buffer overflow was discovered in dnsmasq in the IPv6 router advertisement (RA) handling code. An attacker on the local network segment could send crafted RAs to dnsmasq which would cause it to crash or, potentially, execute arbitrary code. This issue only affected configurations using one of these options: enable-ra, ra-only, slaac, ra-names, ra-advrouter, or ra-stateless.\n1495410: \nCVE-2017-14492 dnsmasq: heap overflow in the IPv6 router advertisement code\n\nCVE-2017-14491:\n\tA heap buffer overflow was found in dnsmasq in the code responsible for building DNS replies. An attacker could send crafted DNS packets to dnsmasq which would cause it to crash or, potentially, execute arbitrary code.\n1495409: \nCVE-2017-14491 dnsmasq: heap overflow in the code responsible for building DNS replies\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14491",
+        "ID": "CVE-2017-14491",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14492",
+        "ID": "CVE-2017-14492",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14493",
+        "ID": "CVE-2017-14493",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14494",
+        "ID": "CVE-2017-14494",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14495",
+        "ID": "CVE-2017-14495",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14496",
+        "ID": "CVE-2017-14496",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "dnsmasq-utils",
+          "Release": "2.14.amzn1",
+          "Version": "2.76",
+          "Filename": "Packages/dnsmasq-utils-2.76-2.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "dnsmasq-debuginfo",
+          "Release": "2.14.amzn1",
+          "Version": "2.76",
+          "Filename": "Packages/dnsmasq-debuginfo-2.76-2.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "dnsmasq",
+          "Release": "2.14.amzn1",
+          "Version": "2.76",
+          "Filename": "Packages/dnsmasq-2.76-2.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "dnsmasq",
+          "Release": "2.14.amzn1",
+          "Version": "2.76",
+          "Filename": "Packages/dnsmasq-2.76-2.14.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "dnsmasq-debuginfo",
+          "Release": "2.14.amzn1",
+          "Version": "2.76",
+          "Filename": "Packages/dnsmasq-debuginfo-2.76-2.14.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "dnsmasq-utils",
+          "Release": "2.14.amzn1",
+          "Version": "2.76",
+          "Filename": "Packages/dnsmasq-utils-2.76-2.14.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

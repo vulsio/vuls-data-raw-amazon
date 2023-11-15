@@ -1,0 +1,113 @@
+{
+  "ID": "ALAS-2012-128",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2012-128: medium priority package update for dbus",
+  "Issued": {
+    "Date": "2012-09-22 21:37"
+  },
+  "Updated": {
+    "Date": "2014-09-14 17:04"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-3524:\n\tlibdbus 1.5.x and earlier, when used in setuid or other privileged programs in X.org and possibly other products, allows local users to gain privileges and execute arbitrary code via the DBUS_SYSTEM_BUS_ADDRESS environment variable.  NOTE: libdbus maintainers state that this is a vulnerability in the applications that do not cleanse environment variables, not in libdbus itself: \"we do not support use of libdbus in setuid binaries that do not sanitize their environment before their first call into libdbus.\"\nIt was discovered that the D-Bus library honored environment settings even when running with elevated privileges. A local attacker could possibly use this flaw to escalate their privileges, by setting specific environment variables before running a setuid or setgid application linked against the D-Bus library (libdbus).\n847402: \nCVE-2012-3524 dbus: privilege escalation when libdbus is used in setuid/setgid application\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3524",
+        "ID": "CVE-2012-3524",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2012:1261.html",
+        "ID": "RHSA-2012:1261",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "dbus-libs",
+          "Release": "7.16.amzn1",
+          "Version": "1.2.24",
+          "Filename": "Packages/dbus-libs-1.2.24-7.16.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "dbus-debuginfo",
+          "Release": "7.16.amzn1",
+          "Version": "1.2.24",
+          "Filename": "Packages/dbus-debuginfo-1.2.24-7.16.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "dbus",
+          "Release": "7.16.amzn1",
+          "Version": "1.2.24",
+          "Filename": "Packages/dbus-1.2.24-7.16.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "dbus-devel",
+          "Release": "7.16.amzn1",
+          "Version": "1.2.24",
+          "Filename": "Packages/dbus-devel-1.2.24-7.16.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "1",
+          "Name": "dbus-doc",
+          "Release": "7.16.amzn1",
+          "Version": "1.2.24",
+          "Filename": "Packages/dbus-doc-1.2.24-7.16.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "dbus",
+          "Release": "7.16.amzn1",
+          "Version": "1.2.24",
+          "Filename": "Packages/dbus-1.2.24-7.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "dbus-devel",
+          "Release": "7.16.amzn1",
+          "Version": "1.2.24",
+          "Filename": "Packages/dbus-devel-1.2.24-7.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "dbus-libs",
+          "Release": "7.16.amzn1",
+          "Version": "1.2.24",
+          "Filename": "Packages/dbus-libs-1.2.24-7.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "dbus-debuginfo",
+          "Release": "7.16.amzn1",
+          "Version": "1.2.24",
+          "Filename": "Packages/dbus-debuginfo-1.2.24-7.16.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

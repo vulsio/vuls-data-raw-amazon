@@ -1,0 +1,277 @@
+{
+  "ID": "ALAS2KERNEL-5.4-2022-019",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 - Kernel-5.4 2.0 - ALAS2KERNEL-5.4-2022-019: important priority package update for kernel",
+  "Issued": {
+    "Date": "2022-01-20 19:53"
+  },
+  "Updated": {
+    "Date": "2023-06-07 16:34"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2021-39648:\n\tIn gadget_dev_desc_UDC_show of configfs.c, there is a possible disclosure of kernel heap memory due to a race condition. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-160822094References: Upstream kernel\n\nCVE-2020-36694:\n\tAn issue was discovered in netfilter in the Linux kernel before 5.10. There can be a use-after-free in the packet processing context, because the per-CPU sequence count is mishandled during concurrent iptables rules replacement. This could be exploited with the CAP_NET_ADMIN capability in an unprivileged namespace. NOTE: cc00bca was reverted in 5.12.\n\nCVE-2020-29661:\n\tA locking vulnerability was found in the tty subsystem of the Linux kernel in drivers/tty/tty_jobctrl.c. This flaw allows a local attacker to possibly corrupt memory or escalate privileges. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability.\n\nCVE-2020-29660:\n\tA locking inconsistency issue was discovered in the tty subsystem of the Linux kernel. A local user could use this flaw to read numerical value from memory after free.\n\nCVE-2020-29569:\n\tAn issue was discovered in the Linux kernel through 5.10.1, as used with Xen through 4.14.x. The Linux kernel PV block backend expects the kernel thread handler to reset ring->xenblkd to NULL when stopped. However, the handler may not have time to run if the frontend quickly toggles between the states connect and disconnect. As a consequence, the block backend may re-use a pointer after it was freed. A misbehaving guest can trigger a dom0 crash by continuously connecting / disconnecting a block frontend. Privilege escalation and information leaks cannot be ruled out. This only affects systems with a Linux blkback.\n\nCVE-2020-29568:\n\tAn issue was discovered in Xen through 4.14.x. Some OSes (such as Linux, FreeBSD, and NetBSD) are processing watch events using a single thread. If the events are received faster than the thread is able to handle, they will get queued. As the queue is unbounded, a guest may be able to trigger an OOM in the backend. All systems with a FreeBSD, Linux, or NetBSD (any version) dom0 are vulnerable.\n\nCVE-2020-28374:\n\tA flaw was found in the Linux kernel's implementation of the Linux SCSI target host, where an authenticated attacker could write to any block on the exported SCSI device backing store. This flaw allows an authenticated attacker to send LIO block requests to the Linux system to overwrite data on the backing store. The highest threat from this vulnerability is to integrity. In addition, this flaw affects the tcmu-runner package, where the affected SCSI command is called.\n\nCVE-2020-27815:\n\tA flaw was found in the JFS filesystem code. This flaw allows a local attacker with the ability to set extended attributes to panic the system, causing memory corruption or escalating privileges. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27815",
+        "ID": "CVE-2020-27815",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28374",
+        "ID": "CVE-2020-28374",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-29568",
+        "ID": "CVE-2020-29568",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-29569",
+        "ID": "CVE-2020-29569",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-29660",
+        "ID": "CVE-2020-29660",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-29661",
+        "ID": "CVE-2020-29661",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-36694",
+        "ID": "CVE-2020-36694",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-39648",
+        "ID": "CVE-2021-39648",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2---kernel-5.4",
+      "Name": "Amazon Linux 2 - Kernel-5.4",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/kernel-5.4.91-41.139.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/kernel-headers-5.4.91-41.139.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-aarch64",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/kernel-debuginfo-common-aarch64-5.4.91-41.139.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/perf-5.4.91-41.139.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/perf-debuginfo-5.4.91-41.139.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/python-perf-5.4.91-41.139.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/python-perf-debuginfo-5.4.91-41.139.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/kernel-tools-5.4.91-41.139.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/kernel-tools-devel-5.4.91-41.139.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/kernel-tools-debuginfo-5.4.91-41.139.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/kernel-devel-5.4.91-41.139.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/kernel-debuginfo-5.4.91-41.139.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/kernel-5.4.91-41.139.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/kernel-headers-5.4.91-41.139.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-5.4.91-41.139.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/perf-5.4.91-41.139.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/perf-debuginfo-5.4.91-41.139.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/python-perf-5.4.91-41.139.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/python-perf-debuginfo-5.4.91-41.139.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/kernel-tools-5.4.91-41.139.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/kernel-tools-devel-5.4.91-41.139.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/kernel-tools-debuginfo-5.4.91-41.139.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/kernel-devel-5.4.91-41.139.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/kernel-debuginfo-5.4.91-41.139.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "41.139.amzn2",
+          "Version": "5.4.91",
+          "Filename": "Packages/kernel-headers-5.4.91-41.139.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

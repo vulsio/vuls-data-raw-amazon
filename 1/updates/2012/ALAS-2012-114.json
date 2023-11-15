@@ -1,0 +1,159 @@
+{
+  "ID": "ALAS-2012-114",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2012-114: important priority package update for krb5",
+  "Issued": {
+    "Date": "2012-08-03 15:55"
+  },
+  "Updated": {
+    "Date": "2014-09-14 16:48"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-1015:\n\tThe kdc_handle_protected_negotiation function in the Key Distribution Center (KDC) in MIT Kerberos 5 (aka krb5) 1.8.x, 1.9.x before 1.9.5, and 1.10.x before 1.10.3 attempts to calculate a checksum before verifying that the key type is appropriate for a checksum, which allows remote attackers to execute arbitrary code or cause a denial of service (uninitialized pointer free, heap memory corruption, and daemon crash) via a crafted AS-REQ request.\nAn uninitialized pointer use flaw was found in the way the MIT Kerberos KDC handled initial authentication requests (AS-REQ). A remote, unauthenticated attacker could use this flaw to crash the KDC via a specially-crafted AS-REQ request.\n838012: \nCVE-2012-1015 krb5: KDC daemon crash via free() of an uninitialized pointer\n\nCVE-2012-1013:\n\tThe check_1_6_dummy function in lib/kadm5/srv/svr_principal.c in kadmind in MIT Kerberos 5 (aka krb5) 1.8.x, 1.9.x, and 1.10.x before 1.10.2 allows remote authenticated administrators to cause a denial of service (NULL pointer dereference and daemon crash) via a KRB5_KDB_DISALLOW_ALL_TIX create request that lacks a password.\nA NULL pointer dereference flaw was found in the MIT Kerberos administration daemon, kadmind. A Kerberos administrator who has the \"create\" privilege could use this flaw to crash kadmind.\n827517: \nCVE-2012-1013 krb5: kadmind denial of service\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1013",
+        "ID": "CVE-2012-1013",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1015",
+        "ID": "CVE-2012-1015",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2012:1131.html",
+        "ID": "RHSA-2012:1131",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-pkinit-openssl",
+          "Release": "33.22.amzn1",
+          "Version": "1.9",
+          "Filename": "Packages/krb5-pkinit-openssl-1.9-33.22.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-server-ldap",
+          "Release": "33.22.amzn1",
+          "Version": "1.9",
+          "Filename": "Packages/krb5-server-ldap-1.9-33.22.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-debuginfo",
+          "Release": "33.22.amzn1",
+          "Version": "1.9",
+          "Filename": "Packages/krb5-debuginfo-1.9-33.22.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-devel",
+          "Release": "33.22.amzn1",
+          "Version": "1.9",
+          "Filename": "Packages/krb5-devel-1.9-33.22.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-workstation",
+          "Release": "33.22.amzn1",
+          "Version": "1.9",
+          "Filename": "Packages/krb5-workstation-1.9-33.22.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-libs",
+          "Release": "33.22.amzn1",
+          "Version": "1.9",
+          "Filename": "Packages/krb5-libs-1.9-33.22.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-server",
+          "Release": "33.22.amzn1",
+          "Version": "1.9",
+          "Filename": "Packages/krb5-server-1.9-33.22.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-server-ldap",
+          "Release": "33.22.amzn1",
+          "Version": "1.9",
+          "Filename": "Packages/krb5-server-ldap-1.9-33.22.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-workstation",
+          "Release": "33.22.amzn1",
+          "Version": "1.9",
+          "Filename": "Packages/krb5-workstation-1.9-33.22.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-libs",
+          "Release": "33.22.amzn1",
+          "Version": "1.9",
+          "Filename": "Packages/krb5-libs-1.9-33.22.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-pkinit-openssl",
+          "Release": "33.22.amzn1",
+          "Version": "1.9",
+          "Filename": "Packages/krb5-pkinit-openssl-1.9-33.22.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-devel",
+          "Release": "33.22.amzn1",
+          "Version": "1.9",
+          "Filename": "Packages/krb5-devel-1.9-33.22.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-server",
+          "Release": "33.22.amzn1",
+          "Version": "1.9",
+          "Filename": "Packages/krb5-server-1.9-33.22.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-debuginfo",
+          "Release": "33.22.amzn1",
+          "Version": "1.9",
+          "Filename": "Packages/krb5-debuginfo-1.9-33.22.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

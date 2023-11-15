@@ -1,0 +1,175 @@
+{
+  "ID": "ALAS-2018-1110",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2018-1110: low priority package update for poppler",
+  "Issued": {
+    "Date": "2018-12-06 00:26"
+  },
+  "Updated": {
+    "Date": "2018-12-07 00:51"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-13988:\n\tPoppler through 0.62 contains an out of bounds read vulnerability due to an incorrect memory access that is not mapped in its memory space, as demonstrated by pdfunite. This can result in memory corruption and denial of service. This may be exploitable when a victim opens a specially crafted PDF file.\n1602838: \nCVE-2018-13988 poppler: out of bounds read in pdfunite\n\nCVE-2018-10768:\n\tThere is a NULL pointer dereference in the AnnotPath::getCoordsLength function in Annot.h in an Ubuntu package for Poppler 0.24.5. A crafted input will lead to a remote denial of service attack. Later Ubuntu packages such as for Poppler 0.41.0 are not affected.\n1576169: \nCVE-2018-10768 poppler: NULL pointer dereference in Annot.h:AnnotPath::getCoordsLength() allows for denial of service via crafted PDF\n\nCVE-2017-18267:\n\tThe FoFiType1C::cvtGlyph function in fofi/FoFiType1C.cc in Poppler through 0.64.0 allows remote attackers to cause a denial of service (infinite recursion) via a crafted PDF file, as demonstrated by pdftops.\n1578777: \nCVE-2017-18267 poppler: Infinite recursion in fofi/FoFiType1C.cc:FoFiType1C::cvtGlyph() function allows denial of service\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18267",
+        "ID": "CVE-2017-18267",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-10768",
+        "ID": "CVE-2018-10768",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-13988",
+        "ID": "CVE-2018-13988",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "poppler-debuginfo",
+          "Release": "20.18.amzn1",
+          "Version": "0.26.5",
+          "Filename": "Packages/poppler-debuginfo-0.26.5-20.18.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "poppler-glib-devel",
+          "Release": "20.18.amzn1",
+          "Version": "0.26.5",
+          "Filename": "Packages/poppler-glib-devel-0.26.5-20.18.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "poppler-cpp-devel",
+          "Release": "20.18.amzn1",
+          "Version": "0.26.5",
+          "Filename": "Packages/poppler-cpp-devel-0.26.5-20.18.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "poppler-glib",
+          "Release": "20.18.amzn1",
+          "Version": "0.26.5",
+          "Filename": "Packages/poppler-glib-0.26.5-20.18.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "poppler",
+          "Release": "20.18.amzn1",
+          "Version": "0.26.5",
+          "Filename": "Packages/poppler-0.26.5-20.18.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "poppler-devel",
+          "Release": "20.18.amzn1",
+          "Version": "0.26.5",
+          "Filename": "Packages/poppler-devel-0.26.5-20.18.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "poppler-utils",
+          "Release": "20.18.amzn1",
+          "Version": "0.26.5",
+          "Filename": "Packages/poppler-utils-0.26.5-20.18.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "poppler-cpp",
+          "Release": "20.18.amzn1",
+          "Version": "0.26.5",
+          "Filename": "Packages/poppler-cpp-0.26.5-20.18.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "poppler-devel",
+          "Release": "20.18.amzn1",
+          "Version": "0.26.5",
+          "Filename": "Packages/poppler-devel-0.26.5-20.18.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "poppler-glib",
+          "Release": "20.18.amzn1",
+          "Version": "0.26.5",
+          "Filename": "Packages/poppler-glib-0.26.5-20.18.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "poppler-cpp-devel",
+          "Release": "20.18.amzn1",
+          "Version": "0.26.5",
+          "Filename": "Packages/poppler-cpp-devel-0.26.5-20.18.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "poppler-utils",
+          "Release": "20.18.amzn1",
+          "Version": "0.26.5",
+          "Filename": "Packages/poppler-utils-0.26.5-20.18.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "poppler-glib-devel",
+          "Release": "20.18.amzn1",
+          "Version": "0.26.5",
+          "Filename": "Packages/poppler-glib-devel-0.26.5-20.18.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "poppler-cpp",
+          "Release": "20.18.amzn1",
+          "Version": "0.26.5",
+          "Filename": "Packages/poppler-cpp-0.26.5-20.18.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "poppler-debuginfo",
+          "Release": "20.18.amzn1",
+          "Version": "0.26.5",
+          "Filename": "Packages/poppler-debuginfo-0.26.5-20.18.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "poppler",
+          "Release": "20.18.amzn1",
+          "Version": "0.26.5",
+          "Filename": "Packages/poppler-0.26.5-20.18.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

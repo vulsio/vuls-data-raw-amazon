@@ -1,0 +1,67 @@
+{
+  "ID": "ALAS-2013-215",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-215: medium priority package update for haproxy",
+  "Issued": {
+    "Date": "2013-08-07 21:21"
+  },
+  "Updated": {
+    "Date": "2014-09-15 23:19"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-2175:\n\tHAProxy 1.4 before 1.4.24 and 1.5 before 1.5-dev19, when configured to use hdr_ip or other \"hdr_*\" functions with a negative occurrence count, allows remote attackers to cause a denial of service (negative array index usage and crash) via an HTTP header with a certain number of values, related to the MAX_HDR_HISTORY variable.\n974259: \nCVE-2013-2175 haproxy: http_get_hdr()/get_ip_from_hdr2() MAX_HDR_HISTORY handling denial of service\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2175",
+        "ID": "CVE-2013-2175",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "haproxy-debuginfo",
+          "Release": "5.3.amzn1",
+          "Version": "1.4.22",
+          "Filename": "Packages/haproxy-debuginfo-1.4.22-5.3.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "haproxy",
+          "Release": "5.3.amzn1",
+          "Version": "1.4.22",
+          "Filename": "Packages/haproxy-1.4.22-5.3.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "haproxy",
+          "Release": "5.3.amzn1",
+          "Version": "1.4.22",
+          "Filename": "Packages/haproxy-1.4.22-5.3.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "haproxy-debuginfo",
+          "Release": "5.3.amzn1",
+          "Version": "1.4.22",
+          "Filename": "Packages/haproxy-debuginfo-1.4.22-5.3.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

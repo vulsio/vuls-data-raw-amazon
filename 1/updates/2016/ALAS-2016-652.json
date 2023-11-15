@@ -1,0 +1,99 @@
+{
+  "ID": "ALAS-2016-652",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-652: low priority package update for curl",
+  "Issued": {
+    "Date": "2016-02-09 13:30"
+  },
+  "Updated": {
+    "Date": "2016-02-09 13:30"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-0755:\n\tThe ConnectionExists function in lib/url.c in libcurl before 7.47.0 does not properly re-use NTLM-authenticated proxy connections, which might allow remote attackers to authenticate as other users via a request, a similar issue to CVE-2014-0015.\n1302263: \nCVE-2016-0755 curl: NTLM credentials not-checked for proxy connection re-use\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0755",
+        "ID": "CVE-2016-0755",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcurl-devel",
+          "Release": "8.54.amzn1",
+          "Version": "7.40.0",
+          "Filename": "Packages/libcurl-devel-7.40.0-8.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcurl",
+          "Release": "8.54.amzn1",
+          "Version": "7.40.0",
+          "Filename": "Packages/libcurl-7.40.0-8.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "curl-debuginfo",
+          "Release": "8.54.amzn1",
+          "Version": "7.40.0",
+          "Filename": "Packages/curl-debuginfo-7.40.0-8.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "curl",
+          "Release": "8.54.amzn1",
+          "Version": "7.40.0",
+          "Filename": "Packages/curl-7.40.0-8.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcurl-devel",
+          "Release": "8.54.amzn1",
+          "Version": "7.40.0",
+          "Filename": "Packages/libcurl-devel-7.40.0-8.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "curl",
+          "Release": "8.54.amzn1",
+          "Version": "7.40.0",
+          "Filename": "Packages/curl-7.40.0-8.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "curl-debuginfo",
+          "Release": "8.54.amzn1",
+          "Version": "7.40.0",
+          "Filename": "Packages/curl-debuginfo-7.40.0-8.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcurl",
+          "Release": "8.54.amzn1",
+          "Version": "7.40.0",
+          "Filename": "Packages/libcurl-7.40.0-8.54.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

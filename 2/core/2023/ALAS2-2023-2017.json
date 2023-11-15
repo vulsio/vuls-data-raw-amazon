@@ -1,0 +1,43 @@
+{
+  "ID": "ALAS2-2023-2017",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2017: medium priority package update for mysql-connector-java",
+  "Issued": {
+    "Date": "2023-04-13 19:28"
+  },
+  "Updated": {
+    "Date": "2023-04-20 18:23"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-2934:\n\tVulnerability in the MySQL Connectors product of Oracle MySQL (component: Connector/J). Supported versions that are affected are 8.0.19 and prior and 5.1.48 and prior. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise MySQL Connectors. Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of MySQL Connectors accessible data as well as unauthorized read access to a subset of MySQL Connectors accessible data and unauthorized ability to cause a partial denial of service (partial DOS) of MySQL Connectors.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-2934",
+        "ID": "CVE-2020-2934",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "1",
+          "Name": "mysql-connector-java",
+          "Release": "3.amzn2.0.1",
+          "Version": "5.1.25",
+          "Filename": "Packages/mysql-connector-java-5.1.25-3.amzn2.0.1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

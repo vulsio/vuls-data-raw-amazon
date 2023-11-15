@@ -1,0 +1,111 @@
+{
+  "ID": "ALAS-2012-106",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2012-106: important priority package update for libtiff",
+  "Issued": {
+    "Date": "2012-07-06 16:18"
+  },
+  "Updated": {
+    "Date": "2014-09-14 16:44"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-2113:\n\tMultiple integer overflows in tiff2pdf in libtiff before 4.0.2 allow remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted tiff image, which triggers a heap-based buffer overflow.\nMultiple integer overflow flaws, leading to heap-based buffer overflows, were found in the tiff2pdf tool. An attacker could use these flaws to create a specially-crafted TIFF file that would cause tiff2pdf to crash or, possibly, execute arbitrary code.\n810551: \nCVE-2012-2113 libtiff: integer overflow in tiff2pdf leading to heap-buffer overflow when reading a tiled tiff file\n\nCVE-2012-2088:\n\tlibtiff did not properly convert between signed and unsigned integer values, leading to a buffer overflow. An attacker could use this flaw to create a specially-crafted TIFF file that, when opened, would cause an application linked against libtiff to crash or, possibly, execute arbitrary code.\nInteger signedness error in the TIFFReadDirectory function in tif_dirread.c in libtiff 3.9.4 and earlier allows remote attackers to cause a denial of service (application crash) and possibly execute arbitrary code via a negative tile depth in a tiff image, which triggers an improper conversion between signed and unsigned types, leading to a heap-based buffer overflow.\n832864: \nCVE-2012-2088 libtiff: Type conversion flaw leading to heap-buffer overflow\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2088",
+        "ID": "CVE-2012-2088",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2113",
+        "ID": "CVE-2012-2113",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2012:1054.html",
+        "ID": "RHSA-2012:1054",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libtiff-devel",
+          "Release": "6.10.amzn1",
+          "Version": "3.9.4",
+          "Filename": "Packages/libtiff-devel-3.9.4-6.10.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libtiff",
+          "Release": "6.10.amzn1",
+          "Version": "3.9.4",
+          "Filename": "Packages/libtiff-3.9.4-6.10.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libtiff-debuginfo",
+          "Release": "6.10.amzn1",
+          "Version": "3.9.4",
+          "Filename": "Packages/libtiff-debuginfo-3.9.4-6.10.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libtiff-static",
+          "Release": "6.10.amzn1",
+          "Version": "3.9.4",
+          "Filename": "Packages/libtiff-static-3.9.4-6.10.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libtiff",
+          "Release": "6.10.amzn1",
+          "Version": "3.9.4",
+          "Filename": "Packages/libtiff-3.9.4-6.10.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libtiff-debuginfo",
+          "Release": "6.10.amzn1",
+          "Version": "3.9.4",
+          "Filename": "Packages/libtiff-debuginfo-3.9.4-6.10.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libtiff-static",
+          "Release": "6.10.amzn1",
+          "Version": "3.9.4",
+          "Filename": "Packages/libtiff-static-3.9.4-6.10.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libtiff-devel",
+          "Release": "6.10.amzn1",
+          "Version": "3.9.4",
+          "Filename": "Packages/libtiff-devel-3.9.4-6.10.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

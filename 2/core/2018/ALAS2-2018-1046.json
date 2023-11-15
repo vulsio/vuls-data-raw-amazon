@@ -1,0 +1,139 @@
+{
+  "ID": "ALAS2-2018-1046",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2018-1046: medium priority package update for kernel",
+  "Issued": {
+    "Date": "2018-07-23 23:01"
+  },
+  "Updated": {
+    "Date": "2018-07-24 21:23"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-11412:\n\tThe fs/ext4/inline.c:ext4_read_inline_data() function in the Linux kernel performs a memcpy with an untrusted length value in certain circumstances involving a crafted filesystem that stores the system.data extended attribute value in a dedicated inode. The unbound copy can cause memory corruption or possible privilege escalation.\n1582358: \nCVE-2018-11412 kernel: out-of-bounds memcpy in fs/ext4/inline.c:ext4_read_inline_data() with crafted ext4 image\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-11412",
+        "ID": "CVE-2018-11412",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "68.37.amzn2",
+          "Version": "4.14.55",
+          "Filename": "Packages/kernel-4.14.55-68.37.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "68.37.amzn2",
+          "Version": "4.14.55",
+          "Filename": "Packages/kernel-headers-4.14.55-68.37.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "68.37.amzn2",
+          "Version": "4.14.55",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.14.55-68.37.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "68.37.amzn2",
+          "Version": "4.14.55",
+          "Filename": "Packages/perf-4.14.55-68.37.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "68.37.amzn2",
+          "Version": "4.14.55",
+          "Filename": "Packages/perf-debuginfo-4.14.55-68.37.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "68.37.amzn2",
+          "Version": "4.14.55",
+          "Filename": "Packages/python-perf-4.14.55-68.37.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "68.37.amzn2",
+          "Version": "4.14.55",
+          "Filename": "Packages/python-perf-debuginfo-4.14.55-68.37.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "68.37.amzn2",
+          "Version": "4.14.55",
+          "Filename": "Packages/kernel-tools-4.14.55-68.37.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "68.37.amzn2",
+          "Version": "4.14.55",
+          "Filename": "Packages/kernel-tools-devel-4.14.55-68.37.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "68.37.amzn2",
+          "Version": "4.14.55",
+          "Filename": "Packages/kernel-tools-debuginfo-4.14.55-68.37.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "68.37.amzn2",
+          "Version": "4.14.55",
+          "Filename": "Packages/kernel-devel-4.14.55-68.37.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "68.37.amzn2",
+          "Version": "4.14.55",
+          "Filename": "Packages/kernel-debuginfo-4.14.55-68.37.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "68.37.amzn2",
+          "Version": "4.14.55",
+          "Filename": "Packages/kernel-headers-4.14.55-68.37.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "ID": "ALAS2-2021-1604",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1604: important priority package update for unzip",
+  "Issued": {
+    "Date": "2021-02-17 18:14"
+  },
+  "Updated": {
+    "Date": "2021-02-19 22:02"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-1000035:\n\tA heap-based buffer overflow exists in Info-Zip UnZip version <= 6.00 in the processing of password-protected archives that allows an attacker to perform a denial of service or to possibly achieve code execution.\n1537043: CVE-2018-1000035 unzip: Heap-based buffer overflow in fileio.c:UzpPassword function allows code execution\n\nCVE-2016-9844:\n\tBuffer overflow in the zi_short function in zipinfo.c in Info-Zip UnZip 6.0 allows remote attackers to cause a denial of service (crash) via a large compression method value in the central directory file header.\n1401864: CVE-2016-9844 unzip: methbuf[] buffer overflow in zipinfo's zi_short()\n\nCVE-2015-7697:\n\tInfo-ZIP UnZip 6.0 allows remote attackers to cause a denial of service (infinite loop) via empty bzip2 data in a ZIP archive.\n1260944: CVE-2015-7696 CVE-2015-7697 unzip: Heap overflow and DoS in 6.0\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7697",
+        "ID": "CVE-2015-7697",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9844",
+        "ID": "CVE-2016-9844",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000035",
+        "ID": "CVE-2018-1000035",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "unzip",
+          "Release": "43.amzn2",
+          "Version": "6.0",
+          "Filename": "Packages/unzip-6.0-43.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "unzip-debuginfo",
+          "Release": "43.amzn2",
+          "Version": "6.0",
+          "Filename": "Packages/unzip-debuginfo-6.0-43.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "unzip",
+          "Release": "43.amzn2",
+          "Version": "6.0",
+          "Filename": "Packages/unzip-6.0-43.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "unzip-debuginfo",
+          "Release": "43.amzn2",
+          "Version": "6.0",
+          "Filename": "Packages/unzip-debuginfo-6.0-43.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "unzip",
+          "Release": "43.amzn2",
+          "Version": "6.0",
+          "Filename": "Packages/unzip-6.0-43.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "unzip-debuginfo",
+          "Release": "43.amzn2",
+          "Version": "6.0",
+          "Filename": "Packages/unzip-debuginfo-6.0-43.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

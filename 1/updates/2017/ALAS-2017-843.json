@@ -1,0 +1,89 @@
+{
+  "ID": "ALAS-2017-843",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-843: important priority package update for sudo",
+  "Issued": {
+    "Date": "2017-06-06 17:08"
+  },
+  "Updated": {
+    "Date": "2017-06-06 22:51"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-1000367:\n\tA flaw was found in the way sudo parsed tty information from the process status file in the proc filesystem. A local user with privileges to execute commands via sudo could use this flaw to escalate their privileges to root.\n1453074: \nCVE-2017-1000367 sudo: Privilege escalation in via improper get_process_ttyname() parsing\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1000367",
+        "ID": "CVE-2017-1000367",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2017:1382.html",
+        "ID": "RHSA-2017:1382",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sudo",
+          "Release": "28.25.amzn1",
+          "Version": "1.8.6p3",
+          "Filename": "Packages/sudo-1.8.6p3-28.25.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sudo-devel",
+          "Release": "28.25.amzn1",
+          "Version": "1.8.6p3",
+          "Filename": "Packages/sudo-devel-1.8.6p3-28.25.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sudo-debuginfo",
+          "Release": "28.25.amzn1",
+          "Version": "1.8.6p3",
+          "Filename": "Packages/sudo-debuginfo-1.8.6p3-28.25.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sudo-devel",
+          "Release": "28.25.amzn1",
+          "Version": "1.8.6p3",
+          "Filename": "Packages/sudo-devel-1.8.6p3-28.25.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sudo",
+          "Release": "28.25.amzn1",
+          "Version": "1.8.6p3",
+          "Filename": "Packages/sudo-1.8.6p3-28.25.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sudo-debuginfo",
+          "Release": "28.25.amzn1",
+          "Version": "1.8.6p3",
+          "Filename": "Packages/sudo-debuginfo-1.8.6p3-28.25.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

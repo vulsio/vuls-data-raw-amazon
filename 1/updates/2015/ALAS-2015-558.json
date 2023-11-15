@@ -1,0 +1,99 @@
+{
+  "ID": "ALAS-2015-558",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-558: medium priority package update for fuse",
+  "Issued": {
+    "Date": "2015-07-07 12:33"
+  },
+  "Updated": {
+    "Date": "2015-07-07 22:26"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-3202:\n\tIt was discovered that fusermount failed to properly sanitize its environment before executing mount and umount commands. A local user could possibly use this flaw to escalate their privileges on the system.\n1224103: \nCVE-2015-3202 fuse: incorrect filtering of environment variables leading to privilege escalation\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3202",
+        "ID": "CVE-2015-3202",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fuse-devel",
+          "Release": "1.17.amzn1",
+          "Version": "2.9.4",
+          "Filename": "Packages/fuse-devel-2.9.4-1.17.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fuse-debuginfo",
+          "Release": "1.17.amzn1",
+          "Version": "2.9.4",
+          "Filename": "Packages/fuse-debuginfo-2.9.4-1.17.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fuse",
+          "Release": "1.17.amzn1",
+          "Version": "2.9.4",
+          "Filename": "Packages/fuse-2.9.4-1.17.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fuse-libs",
+          "Release": "1.17.amzn1",
+          "Version": "2.9.4",
+          "Filename": "Packages/fuse-libs-2.9.4-1.17.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fuse-debuginfo",
+          "Release": "1.17.amzn1",
+          "Version": "2.9.4",
+          "Filename": "Packages/fuse-debuginfo-2.9.4-1.17.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fuse-devel",
+          "Release": "1.17.amzn1",
+          "Version": "2.9.4",
+          "Filename": "Packages/fuse-devel-2.9.4-1.17.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fuse",
+          "Release": "1.17.amzn1",
+          "Version": "2.9.4",
+          "Filename": "Packages/fuse-2.9.4-1.17.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fuse-libs",
+          "Release": "1.17.amzn1",
+          "Version": "2.9.4",
+          "Filename": "Packages/fuse-libs-2.9.4-1.17.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

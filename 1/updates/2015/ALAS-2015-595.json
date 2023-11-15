@@ -1,0 +1,57 @@
+{
+  "ID": "ALAS-2015-595",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-595: important priority package update for jakarta-taglibs-standard",
+  "Issued": {
+    "Date": "2015-09-22 10:00"
+  },
+  "Updated": {
+    "Date": "2015-09-22 10:00"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-0254:\n\tIt was found that the Java Standard Tag Library (JSTL) allowed the processing of untrusted XML documents to utilize external entity references, which could access resources on the host system and, potentially, allowing arbitrary code execution.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0254",
+        "ID": "CVE-2015-0254",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2015:1695.html",
+        "ID": "RHSA-2015:1695",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "jakarta-taglibs-standard",
+          "Release": "11.7.9.amzn1",
+          "Version": "1.1.1",
+          "Filename": "Packages/jakarta-taglibs-standard-1.1.1-11.7.9.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "jakarta-taglibs-standard-javadoc",
+          "Release": "11.7.9.amzn1",
+          "Version": "1.1.1",
+          "Filename": "Packages/jakarta-taglibs-standard-javadoc-1.1.1-11.7.9.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

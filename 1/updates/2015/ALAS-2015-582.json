@@ -1,0 +1,79 @@
+{
+  "ID": "ALAS-2015-582",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-582: medium priority package update for mailman",
+  "Issued": {
+    "Date": "2015-08-17 12:31"
+  },
+  "Updated": {
+    "Date": "2015-08-17 12:31"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-2775:\n\tIt was found that mailman did not sanitize the list name before passing it to certain MTAs. A local attacker could use this flaw to execute arbitrary code as the user running mailman.\n\nCVE-2002-0389:\n\tIt was found that mailman stored private email messages in a world-readable directory. A local user could use this flaw to read private mailing list archives.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-0389",
+        "ID": "CVE-2002-0389",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2775",
+        "ID": "CVE-2015-2775",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2015:1417.html",
+        "ID": "RHSA-2015:1417",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mailman-debuginfo",
+          "Release": "21.20.amzn1",
+          "Version": "2.1.15",
+          "Filename": "Packages/mailman-debuginfo-2.1.15-21.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mailman",
+          "Release": "21.20.amzn1",
+          "Version": "2.1.15",
+          "Filename": "Packages/mailman-2.1.15-21.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mailman",
+          "Release": "21.20.amzn1",
+          "Version": "2.1.15",
+          "Filename": "Packages/mailman-2.1.15-21.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mailman-debuginfo",
+          "Release": "21.20.amzn1",
+          "Version": "2.1.15",
+          "Filename": "Packages/mailman-debuginfo-2.1.15-21.20.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

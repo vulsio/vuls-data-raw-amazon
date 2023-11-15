@@ -1,0 +1,273 @@
+{
+  "ID": "ALAS2-2022-1825",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2022-1825: important priority package update for kernel",
+  "Issued": {
+    "Date": "2022-07-19 01:20"
+  },
+  "Updated": {
+    "Date": "2022-07-20 22:22"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-33744:\n\tArm guests can cause Dom0 DoS via PV devices When mapping pages of guests on Arm, dom0 is using an rbtree to keep track of the foreign mappings. Updating of that rbtree is not always done completely with the related lock held, resulting in a small race window, which can be used by unprivileged guests via PV devices to cause inconsistencies of the rbtree. These inconsistencies can lead to Denial of Service (DoS) of dom0, e.g. by causing crashes or the inability to perform further mappings of other guests' memory pages.\n\nCVE-2022-33742:\n\tLinux disk/nic frontends data leaks T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Linux Block and Network PV device frontends don't zero memory regions before sharing them with the backend (CVE-2022-26365, CVE-2022-33740). Additionally the granularity of the grant table doesn't allow sharing less than a 4K page, leading to unrelated data residing in the same 4K page as data shared with a backend being accessible by such backend (CVE-2022-33741, CVE-2022-33742).\n\nCVE-2022-33741:\n\tLinux disk/nic frontends data leaks T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Linux Block and Network PV device frontends don't zero memory regions before sharing them with the backend (CVE-2022-26365, CVE-2022-33740). Additionally the granularity of the grant table doesn't allow sharing less than a 4K page, leading to unrelated data residing in the same 4K page as data shared with a backend being accessible by such backend (CVE-2022-33741, CVE-2022-33742).\n\nCVE-2022-33740:\n\tLinux disk/nic frontends data leaks T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Linux Block and Network PV device frontends don't zero memory regions before sharing them with the backend (CVE-2022-26365, CVE-2022-33740). Additionally the granularity of the grant table doesn't allow sharing less than a 4K page, leading to unrelated data residing in the same 4K page as data shared with a backend being accessible by such backend (CVE-2022-33741, CVE-2022-33742).\n\nCVE-2022-26365:\n\tLinux disk/nic frontends data leaks T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] Linux Block and Network PV device frontends don't zero memory regions before sharing them with the backend (CVE-2022-26365, CVE-2022-33740). Additionally the granularity of the grant table doesn't allow sharing less than a 4K page, leading to unrelated data residing in the same 4K page as data shared with a backend being accessible by such backend (CVE-2022-33741, CVE-2022-33742).\n\nCVE-2022-2318:\n\tThere are use-after-free vulnerabilities caused by timer handler in net/rose/rose_timer.c of linux that allow attackers to crash linux kernel without any privileges.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2318",
+        "ID": "CVE-2022-2318",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26365",
+        "ID": "CVE-2022-26365",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-33740",
+        "ID": "CVE-2022-33740",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-33741",
+        "ID": "CVE-2022-33741",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-33742",
+        "ID": "CVE-2022-33742",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-33744",
+        "ID": "CVE-2022-33744",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/kernel-4.14.287-215.504.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/kernel-headers-4.14.287-215.504.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.14.287-215.504.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/perf-4.14.287-215.504.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/perf-debuginfo-4.14.287-215.504.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/python-perf-4.14.287-215.504.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/python-perf-debuginfo-4.14.287-215.504.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/kernel-tools-4.14.287-215.504.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/kernel-tools-devel-4.14.287-215.504.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/kernel-tools-debuginfo-4.14.287-215.504.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/kernel-devel-4.14.287-215.504.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/kernel-debuginfo-4.14.287-215.504.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-4.14.287-215.504",
+          "Release": "0.amzn2",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-4.14.287-215.504-1.0-0.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/kernel-headers-4.14.287-215.504.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/kernel-4.14.287-215.504.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/kernel-headers-4.14.287-215.504.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-aarch64",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/kernel-debuginfo-common-aarch64-4.14.287-215.504.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/perf-4.14.287-215.504.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/perf-debuginfo-4.14.287-215.504.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/python-perf-4.14.287-215.504.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/python-perf-debuginfo-4.14.287-215.504.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/kernel-tools-4.14.287-215.504.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/kernel-tools-devel-4.14.287-215.504.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/kernel-tools-debuginfo-4.14.287-215.504.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/kernel-devel-4.14.287-215.504.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "215.504.amzn2",
+          "Version": "4.14.287",
+          "Filename": "Packages/kernel-debuginfo-4.14.287-215.504.amzn2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

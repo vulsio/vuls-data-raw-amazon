@@ -1,0 +1,51 @@
+{
+  "ID": "ALAS2ANSIBLE2-2023-003",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 - Ansible2 2.0 - ALAS2ANSIBLE2-2023-003: medium priority package update for ansible",
+  "Issued": {
+    "Date": "2023-08-21 21:01"
+  },
+  "Updated": {
+    "Date": "2023-09-25 22:13"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 - Ansible2 that fix the following vulnerabilities:\nCVE-2021-3447:\n\tA flaw was found in several ansible modules, where parameters containing credentials, such as secrets, were being logged in plain-text on managed nodes, as well as being made visible on the controller node when run in verbose mode. These parameters were not protected by the no_log feature. An attacker can take advantage of this information to steal those credentials, provided when they have access to the log files containing them. The highest threat from this vulnerability is to data confidentiality. This flaw affects Red Hat Ansible Automation Platform in versions before 1.2.2 and Ansible Tower in versions before 3.8.2.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3447",
+        "ID": "CVE-2021-3447",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2---ansible2",
+      "Name": "Amazon Linux 2 - Ansible2",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "ansible",
+          "Release": "1.amzn2",
+          "Version": "2.9.20",
+          "Filename": "Packages/ansible-2.9.20-1.amzn2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "ansible-doc",
+          "Release": "1.amzn2",
+          "Version": "2.9.20",
+          "Filename": "Packages/ansible-doc-2.9.20-1.amzn2.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

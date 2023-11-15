@@ -1,0 +1,137 @@
+{
+  "ID": "ALAS-2016-633",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-633: medium priority package update for libldb",
+  "Issued": {
+    "Date": "2016-01-18 11:00"
+  },
+  "Updated": {
+    "Date": "2016-01-18 11:00"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-5330:\n\tA memory-read flaw was found in the way the libldb library processed LDB DN records with a null byte. An authenticated, remote attacker could use this flaw to read heap-memory pages from the server.\n1281326: \nCVE-2015-5330 samba, libldb: remote memory read in the Samba LDAP server\n\nCVE-2015-3223:\n\tA denial of service flaw was found in the ldb_wildcard_compare() function of libldb. A remote attacker could send a specially crafted packet that, when processed by an application using libldb (for example the AD LDAP server in Samba), would cause that application to consume an excessive amount of memory and crash.\n1290287: \nCVE-2015-3223 libldb: Remote DoS in Samba (AD) LDAP server\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3223",
+        "ID": "CVE-2015-3223",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5330",
+        "ID": "CVE-2015-5330",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "pyldb",
+          "Release": "1.7.amzn1",
+          "Version": "1.1.20",
+          "Filename": "Packages/pyldb-1.1.20-1.7.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ldb-tools",
+          "Release": "1.7.amzn1",
+          "Version": "1.1.20",
+          "Filename": "Packages/ldb-tools-1.1.20-1.7.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libldb",
+          "Release": "1.7.amzn1",
+          "Version": "1.1.20",
+          "Filename": "Packages/libldb-1.1.20-1.7.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "pyldb-devel",
+          "Release": "1.7.amzn1",
+          "Version": "1.1.20",
+          "Filename": "Packages/pyldb-devel-1.1.20-1.7.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libldb-debuginfo",
+          "Release": "1.7.amzn1",
+          "Version": "1.1.20",
+          "Filename": "Packages/libldb-debuginfo-1.1.20-1.7.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libldb-devel",
+          "Release": "1.7.amzn1",
+          "Version": "1.1.20",
+          "Filename": "Packages/libldb-devel-1.1.20-1.7.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "pyldb",
+          "Release": "1.7.amzn1",
+          "Version": "1.1.20",
+          "Filename": "Packages/pyldb-1.1.20-1.7.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "pyldb-devel",
+          "Release": "1.7.amzn1",
+          "Version": "1.1.20",
+          "Filename": "Packages/pyldb-devel-1.1.20-1.7.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libldb-devel",
+          "Release": "1.7.amzn1",
+          "Version": "1.1.20",
+          "Filename": "Packages/libldb-devel-1.1.20-1.7.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libldb-debuginfo",
+          "Release": "1.7.amzn1",
+          "Version": "1.1.20",
+          "Filename": "Packages/libldb-debuginfo-1.1.20-1.7.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ldb-tools",
+          "Release": "1.7.amzn1",
+          "Version": "1.1.20",
+          "Filename": "Packages/ldb-tools-1.1.20-1.7.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libldb",
+          "Release": "1.7.amzn1",
+          "Version": "1.1.20",
+          "Filename": "Packages/libldb-1.1.20-1.7.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

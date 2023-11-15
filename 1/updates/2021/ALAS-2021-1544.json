@@ -1,0 +1,213 @@
+{
+  "ID": "ALAS-2021-1544",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2021-1544: medium priority package update for mysql57",
+  "Issued": {
+    "Date": "2021-10-29 16:27"
+  },
+  "Updated": {
+    "Date": "2021-11-04 18:54"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2021-2385:\n\tVulnerability in the MySQL Server product of Oracle MySQL (component: Server: Replication). Supported versions that are affected are 5.7.34 and prior and 8.0.25 and prior. Difficult to exploit vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 5.0 (Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:L/A:H).\n1992307: CVE-2021-2385 mysql: Server: Replication unspecified vulnerability (CPU Jul 2021)\n\nCVE-2021-2372:\n\tVulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB). Supported versions that are affected are 5.7.34 and prior and 8.0.25 and prior. Difficult to exploit vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.4 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H).\n1992303: CVE-2021-2372 mysql: InnoDB unspecified vulnerability (CPU Jul 2021)\n\nCVE-2021-2356:\n\tVulnerability in the MySQL Server product of Oracle MySQL (component: Server: Replication). Supported versions that are affected are 5.7.34 and prior and 8.0.25 and prior. Difficult to exploit vulnerability allows low privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 5.9 (Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:H).\n1992299: CVE-2021-2356 mysql: Server: Replication unspecified vulnerability (CPU Jul 2021)\n\nCVE-2021-2342:\n\tVulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer). Supported versions that are affected are 5.7.34 and prior and 8.0.25 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H).\n1992294: CVE-2021-2342 mysql: Server: Optimizer unspecified vulnerability (CPU Jul 2021)\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-2342",
+        "ID": "CVE-2021-2342",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-2356",
+        "ID": "CVE-2021-2356",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-2372",
+        "ID": "CVE-2021-2372",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-2385",
+        "ID": "CVE-2021-2385",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql57-embedded-devel",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-embedded-devel-5.7.35-1.17.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql57-embedded",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-embedded-5.7.35-1.17.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql57-devel",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-devel-5.7.35-1.17.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql57-errmsg",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-errmsg-5.7.35-1.17.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql57-debuginfo",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-debuginfo-5.7.35-1.17.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql57-common",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-common-5.7.35-1.17.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql57",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-5.7.35-1.17.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql57-libs",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-libs-5.7.35-1.17.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql57-server",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-server-5.7.35-1.17.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql57-test",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-test-5.7.35-1.17.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql57-errmsg",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-errmsg-5.7.35-1.17.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql57-debuginfo",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-debuginfo-5.7.35-1.17.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql57",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-5.7.35-1.17.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql57-libs",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-libs-5.7.35-1.17.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql57-embedded-devel",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-embedded-devel-5.7.35-1.17.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql57-common",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-common-5.7.35-1.17.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql57-embedded",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-embedded-5.7.35-1.17.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql57-devel",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-devel-5.7.35-1.17.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql57-test",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-test-5.7.35-1.17.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql57-server",
+          "Release": "1.17.amzn1",
+          "Version": "5.7.35",
+          "Filename": "Packages/mysql57-server-5.7.35-1.17.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

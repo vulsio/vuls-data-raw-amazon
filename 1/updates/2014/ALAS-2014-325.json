@@ -1,0 +1,81 @@
+{
+  "ID": "ALAS-2014-325",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-325: important priority package update for xalan-j2",
+  "Issued": {
+    "Date": "2014-04-17 23:50"
+  },
+  "Updated": {
+    "Date": "2014-09-18 00:22"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-0107:\n\tIt was found that the secure processing feature of Xalan-Java had insufficient restrictions defined for certain properties and features. A remote attacker able to provide Extensible Stylesheet Language Transformations (XSLT) content to be processed by an application using Xalan-Java could use this flaw to bypass the intended constraints of the secure processing feature. Depending on the components available in the classpath, this could lead to arbitrary remote code execution in the context of the application server running the application that uses Xalan-Java.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0107",
+        "ID": "CVE-2014-0107",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2014:0348.html",
+        "ID": "RHSA-2014:0348",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "xalan-j2-demo",
+          "Release": "9.9.9.amzn1",
+          "Version": "2.7.0",
+          "Filename": "Packages/xalan-j2-demo-2.7.0-9.9.9.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "xalan-j2-javadoc",
+          "Release": "9.9.9.amzn1",
+          "Version": "2.7.0",
+          "Filename": "Packages/xalan-j2-javadoc-2.7.0-9.9.9.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "xalan-j2",
+          "Release": "9.9.9.amzn1",
+          "Version": "2.7.0",
+          "Filename": "Packages/xalan-j2-2.7.0-9.9.9.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "xalan-j2-manual",
+          "Release": "9.9.9.amzn1",
+          "Version": "2.7.0",
+          "Filename": "Packages/xalan-j2-manual-2.7.0-9.9.9.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "xalan-j2-xsltc",
+          "Release": "9.9.9.amzn1",
+          "Version": "2.7.0",
+          "Filename": "Packages/xalan-j2-xsltc-2.7.0-9.9.9.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

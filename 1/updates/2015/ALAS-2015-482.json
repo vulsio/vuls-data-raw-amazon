@@ -1,0 +1,67 @@
+{
+  "ID": "ALAS-2015-482",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-482: medium priority package update for perl-YAML-LibYAML",
+  "Issued": {
+    "Date": "2015-02-11 19:39"
+  },
+  "Updated": {
+    "Date": "2015-02-11 19:54"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-9130:\n\tAn assertion failure was found in the way the libyaml library parsed wrapped strings. An attacker able to load specially crafted YAML input into an application using libyaml could cause the application to crash.\n1169369: \nCVE-2014-9130 libyaml: assert failure when processing wrapped strings\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9130",
+        "ID": "CVE-2014-9130",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-YAML-LibYAML-debuginfo",
+          "Release": "1.16.amzn1",
+          "Version": "0.59",
+          "Filename": "Packages/perl-YAML-LibYAML-debuginfo-0.59-1.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-YAML-LibYAML",
+          "Release": "1.16.amzn1",
+          "Version": "0.59",
+          "Filename": "Packages/perl-YAML-LibYAML-0.59-1.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-YAML-LibYAML",
+          "Release": "1.16.amzn1",
+          "Version": "0.59",
+          "Filename": "Packages/perl-YAML-LibYAML-0.59-1.16.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-YAML-LibYAML-debuginfo",
+          "Release": "1.16.amzn1",
+          "Version": "0.59",
+          "Filename": "Packages/perl-YAML-LibYAML-debuginfo-0.59-1.16.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

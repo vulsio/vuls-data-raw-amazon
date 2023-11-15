@@ -1,0 +1,67 @@
+{
+  "ID": "ALAS2NITRO-ENCLAVES-2021-008",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 - Nitro-enclaves 2.0 - ALAS2NITRO-ENCLAVES-2021-008: important priority package update for runc",
+  "Issued": {
+    "Date": "2021-10-19 20:32"
+  },
+  "Updated": {
+    "Date": "2021-11-18 21:38"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 - Nitro-enclaves that fix the following vulnerabilities:\nCVE-2021-30465:\n\tThe runc package is vulnerable to a symlink exchange attack whereby an attacker can request a seemingly innocuous container configuration that results in the host filesystem being bind-mounted into the container. The highest threat from this vulnerability is to data confidentiality and integrity as well as to system availability.\n1954736: CVE-2021-30465 runc: vulnerable to symlink exchange attack\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30465",
+        "ID": "CVE-2021-30465",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2---nitro-enclaves",
+      "Name": "Amazon Linux 2 - Nitro-enclaves",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "runc",
+          "Release": "0.3.20210225.git12644e6.amzn2",
+          "Version": "1.0.0",
+          "Filename": "Packages/runc-1.0.0-0.3.20210225.git12644e6.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "runc-debuginfo",
+          "Release": "0.3.20210225.git12644e6.amzn2",
+          "Version": "1.0.0",
+          "Filename": "Packages/runc-debuginfo-1.0.0-0.3.20210225.git12644e6.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "runc",
+          "Release": "0.3.20210225.git12644e6.amzn2",
+          "Version": "1.0.0",
+          "Filename": "Packages/runc-1.0.0-0.3.20210225.git12644e6.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "runc-debuginfo",
+          "Release": "0.3.20210225.git12644e6.amzn2",
+          "Version": "1.0.0",
+          "Filename": "Packages/runc-debuginfo-1.0.0-0.3.20210225.git12644e6.amzn2.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

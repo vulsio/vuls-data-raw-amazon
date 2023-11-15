@@ -1,0 +1,261 @@
+{
+  "ID": "ALAS2-2020-1520",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1520: important priority package update for kernel",
+  "Issued": {
+    "Date": "2020-10-22 18:07"
+  },
+  "Updated": {
+    "Date": "2020-10-22 22:35"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-25645:\n\tA flaw was found in the Linux kernel. Traffic between two Geneve endpoints may be unencrypted when IPsec is configured to encrypt traffic for the specific UDP port used by the GENEVE tunnel allowing anyone in between the two endpoints to read the traffic unencrypted. The main threat from this vulnerability is to data confidentiality.\n1883988: CVE-2020-25645 kernel: Geneve/IPsec traffic may be unencrypted between two Geneve endpoints\n\nCVE-2020-25643:\n\tA flaw was found in the HDLC_PPP module of the Linux kernel.  Memory corruption and a read overflow is caused by improper input validation in the ppp_cp_parse_cr function which can cause the system to crash or cause a denial of service.  The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n1879981: CVE-2020-25643 kernel: improper input validation in ppp_cp_parse_cr function leads to memory corruption and read overflow\n\nCVE-2020-25284:\n\tA flaw was found in the capabilities check of the rados block device functionality in the Linux kernel. Incorrect capability checks could alllow a local user with root priviledges (but no capabilities) to add or remove Rados Block Devices from the system.\n1882594: CVE-2020-25284 kernel: incomplete permission checking for access to rbd devices\n\nCVE-2020-14390:\n\tA flaw was found in the Linux kernel. When changing screen size, an out-of-bounds memory write can occur leading to memory corruption or a denial of service. Due to the nature of the flaw, privilege escalation cannot be fully ruled out.\n1876788: CVE-2020-14390 kernel: out-of-bounds write in fbcon_redraw_softback\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14390",
+        "ID": "CVE-2020-14390",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25284",
+        "ID": "CVE-2020-25284",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25643",
+        "ID": "CVE-2020-25643",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25645",
+        "ID": "CVE-2020-25645",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/kernel-4.14.200-155.322.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/kernel-headers-4.14.200-155.322.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-aarch64",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/kernel-debuginfo-common-aarch64-4.14.200-155.322.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/perf-4.14.200-155.322.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/perf-debuginfo-4.14.200-155.322.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/python-perf-4.14.200-155.322.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/python-perf-debuginfo-4.14.200-155.322.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/kernel-tools-4.14.200-155.322.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/kernel-tools-devel-4.14.200-155.322.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/kernel-tools-debuginfo-4.14.200-155.322.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/kernel-devel-4.14.200-155.322.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/kernel-debuginfo-4.14.200-155.322.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/kernel-4.14.200-155.322.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/kernel-headers-4.14.200-155.322.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.14.200-155.322.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/perf-4.14.200-155.322.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/perf-debuginfo-4.14.200-155.322.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/python-perf-4.14.200-155.322.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/python-perf-debuginfo-4.14.200-155.322.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/kernel-tools-4.14.200-155.322.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/kernel-tools-devel-4.14.200-155.322.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/kernel-tools-debuginfo-4.14.200-155.322.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/kernel-devel-4.14.200-155.322.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/kernel-debuginfo-4.14.200-155.322.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-4.14.200-155.322",
+          "Release": "0.amzn2",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-4.14.200-155.322-1.0-0.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "155.322.amzn2",
+          "Version": "4.14.200",
+          "Filename": "Packages/kernel-headers-4.14.200-155.322.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

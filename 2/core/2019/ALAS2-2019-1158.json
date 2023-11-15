@@ -1,0 +1,43 @@
+{
+  "ID": "ALAS2-2019-1158",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1158: low priority package update for setup",
+  "Issued": {
+    "Date": "2019-02-13 18:26"
+  },
+  "Updated": {
+    "Date": "2019-02-14 04:07"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-1113:\n\tSetup in Fedora and Red Hat Enterprise Linux added /sbin/nologin and /usr/sbin/nologin to /etc/shells. This violates security assumptions made by pam_shells and some daemons which allow access based on a user&#039;s shell being listed in /etc/shells.  Under some circumstances, users which had their shell changed to /sbin/nologin could still access the system.\n1571094: \nCVE-2018-1113 setup: nologin listed in /etc/shells violates security expectations\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1113",
+        "ID": "CVE-2018-1113",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "setup",
+          "Release": "10.amzn2",
+          "Version": "2.8.71",
+          "Filename": "Packages/setup-2.8.71-10.amzn2.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

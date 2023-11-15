@@ -1,0 +1,121 @@
+{
+  "ID": "ALAS-2012-52",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2012-52: medium priority package update for libxml2",
+  "Issued": {
+    "Date": "2012-03-04 16:12"
+  },
+  "Updated": {
+    "Date": "2014-09-14 15:39"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-0841:\n\tIt was found that the hashing routine used by libxml2 arrays was susceptible to predictable hash collisions. Sending a specially-crafted message to an XML service could result in longer processing time, which could lead to a denial of service. To mitigate this issue, randomization has been added to the hashing function to reduce the chance of an attacker successfully causing intentional collisions.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0841",
+        "ID": "CVE-2012-0841",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2012:0324.html",
+        "ID": "RHSA-2012:0324",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libxml2-python",
+          "Release": "4.12.amzn1",
+          "Version": "2.7.6",
+          "Filename": "Packages/libxml2-python-2.7.6-4.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libxml2-debuginfo",
+          "Release": "4.12.amzn1",
+          "Version": "2.7.6",
+          "Filename": "Packages/libxml2-debuginfo-2.7.6-4.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libxml2-devel",
+          "Release": "4.12.amzn1",
+          "Version": "2.7.6",
+          "Filename": "Packages/libxml2-devel-2.7.6-4.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libxml2",
+          "Release": "4.12.amzn1",
+          "Version": "2.7.6",
+          "Filename": "Packages/libxml2-2.7.6-4.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libxml2-static",
+          "Release": "4.12.amzn1",
+          "Version": "2.7.6",
+          "Filename": "Packages/libxml2-static-2.7.6-4.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libxml2-devel",
+          "Release": "4.12.amzn1",
+          "Version": "2.7.6",
+          "Filename": "Packages/libxml2-devel-2.7.6-4.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libxml2",
+          "Release": "4.12.amzn1",
+          "Version": "2.7.6",
+          "Filename": "Packages/libxml2-2.7.6-4.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libxml2-python",
+          "Release": "4.12.amzn1",
+          "Version": "2.7.6",
+          "Filename": "Packages/libxml2-python-2.7.6-4.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libxml2-debuginfo",
+          "Release": "4.12.amzn1",
+          "Version": "2.7.6",
+          "Filename": "Packages/libxml2-debuginfo-2.7.6-4.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libxml2-static",
+          "Release": "4.12.amzn1",
+          "Version": "2.7.6",
+          "Filename": "Packages/libxml2-static-2.7.6-4.12.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

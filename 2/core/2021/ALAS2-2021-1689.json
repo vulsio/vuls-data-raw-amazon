@@ -1,0 +1,297 @@
+{
+  "ID": "ALAS2-2021-1689",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1689: medium priority package update for rpm",
+  "Issued": {
+    "Date": "2021-07-14 20:43"
+  },
+  "Updated": {
+    "Date": "2021-07-15 21:39"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-3421:\n\tA flaw was found in the RPM package in the read functionality. This flaw allows an attacker who can convince a victim to install a seemingly verifiable package or compromise an RPM repository, to cause RPM database corruption. The highest threat from this vulnerability is to data integrity.\n1927747: CVE-2021-3421 rpm: unsigned signature header leads to string injection into an rpm database\n\nCVE-2021-20271:\n\tA flaw was found in RPM's signature check functionality when reading a package file. This flaw allows an attacker who can convince a victim to install a seemingly verifiable package, whose signature header was modified, to cause RPM database corruption and execute code. The highest threat from this vulnerability is to data integrity, confidentiality, and system availability.\n1934125: CVE-2021-20271 rpm: Signature checks bypass via corrupted rpm package\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20271",
+        "ID": "CVE-2021-20271",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3421",
+        "ID": "CVE-2021-3421",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "rpm",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-4.11.3-40.amzn2.0.6.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "rpm-libs",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-libs-4.11.3-40.amzn2.0.6.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "rpm-build-libs",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-build-libs-4.11.3-40.amzn2.0.6.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "rpm-devel",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-devel-4.11.3-40.amzn2.0.6.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "rpm-build",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-build-4.11.3-40.amzn2.0.6.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "rpm-sign",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-sign-4.11.3-40.amzn2.0.6.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python2-rpm",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/python2-rpm-4.11.3-40.amzn2.0.6.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python3-rpm",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/python3-rpm-4.11.3-40.amzn2.0.6.aarch64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "rpm-apidocs",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-apidocs-4.11.3-40.amzn2.0.6.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "rpm-cron",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-cron-4.11.3-40.amzn2.0.6.noarch.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "rpm-plugin-systemd-inhibit",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-plugin-systemd-inhibit-4.11.3-40.amzn2.0.6.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "rpm-debuginfo",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-debuginfo-4.11.3-40.amzn2.0.6.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rpm",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-4.11.3-40.amzn2.0.6.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rpm-libs",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-libs-4.11.3-40.amzn2.0.6.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rpm-build-libs",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-build-libs-4.11.3-40.amzn2.0.6.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rpm-devel",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-devel-4.11.3-40.amzn2.0.6.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rpm-build",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-build-4.11.3-40.amzn2.0.6.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rpm-sign",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-sign-4.11.3-40.amzn2.0.6.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python2-rpm",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/python2-rpm-4.11.3-40.amzn2.0.6.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python3-rpm",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/python3-rpm-4.11.3-40.amzn2.0.6.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rpm-plugin-systemd-inhibit",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-plugin-systemd-inhibit-4.11.3-40.amzn2.0.6.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rpm-debuginfo",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-debuginfo-4.11.3-40.amzn2.0.6.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rpm",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-4.11.3-40.amzn2.0.6.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rpm-libs",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-libs-4.11.3-40.amzn2.0.6.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rpm-build-libs",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-build-libs-4.11.3-40.amzn2.0.6.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rpm-devel",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-devel-4.11.3-40.amzn2.0.6.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rpm-build",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-build-4.11.3-40.amzn2.0.6.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rpm-sign",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-sign-4.11.3-40.amzn2.0.6.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python2-rpm",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/python2-rpm-4.11.3-40.amzn2.0.6.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python3-rpm",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/python3-rpm-4.11.3-40.amzn2.0.6.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rpm-plugin-systemd-inhibit",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-plugin-systemd-inhibit-4.11.3-40.amzn2.0.6.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rpm-debuginfo",
+          "Release": "40.amzn2.0.6",
+          "Version": "4.11.3",
+          "Filename": "Packages/rpm-debuginfo-4.11.3-40.amzn2.0.6.i686.rpm"
+        }
+      ]
+    }
+  }
+}

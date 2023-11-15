@@ -1,0 +1,105 @@
+{
+  "ID": "ALAS-2015-501",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-501: important priority package update for 389-ds-base",
+  "Issued": {
+    "Date": "2015-04-01 13:49"
+  },
+  "Updated": {
+    "Date": "2015-04-01 17:03"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-8112:\n\tIt was found that when the nsslapd-unhashed-pw-switch 389 Directory Server configuration option was set to \"off\", it did not prevent the writing of unhashed passwords into the Changelog. This could potentially allow an authenticated user able to access the Changelog to read sensitive information.\n1172729: \nCVE-2014-8112 389-ds-base: password hashing bypassed when \"nsslapd-unhashed-pw-switch\" is set to off\n\nCVE-2014-8105:\n\tAn information disclosure flaw was found in the way the 389 Directory Server stored information in the Changelog that is exposed via the 'cn=changelog' LDAP sub-tree. An unauthenticated user could in certain cases use this flaw to read data from the Changelog, which could include sensitive information such as plain-text passwords.\n1167858: \nCVE-2014-8105 389-ds-base: information disclosure through 'cn=changelog' subtree\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8105",
+        "ID": "CVE-2014-8105",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8112",
+        "ID": "CVE-2014-8112",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "389-ds-base-devel",
+          "Release": "1.27.amzn1",
+          "Version": "1.3.2.27",
+          "Filename": "Packages/389-ds-base-devel-1.3.2.27-1.27.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "389-ds-base",
+          "Release": "1.27.amzn1",
+          "Version": "1.3.2.27",
+          "Filename": "Packages/389-ds-base-1.3.2.27-1.27.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "389-ds-base-debuginfo",
+          "Release": "1.27.amzn1",
+          "Version": "1.3.2.27",
+          "Filename": "Packages/389-ds-base-debuginfo-1.3.2.27-1.27.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "389-ds-base-libs",
+          "Release": "1.27.amzn1",
+          "Version": "1.3.2.27",
+          "Filename": "Packages/389-ds-base-libs-1.3.2.27-1.27.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "389-ds-base-debuginfo",
+          "Release": "1.27.amzn1",
+          "Version": "1.3.2.27",
+          "Filename": "Packages/389-ds-base-debuginfo-1.3.2.27-1.27.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "389-ds-base-devel",
+          "Release": "1.27.amzn1",
+          "Version": "1.3.2.27",
+          "Filename": "Packages/389-ds-base-devel-1.3.2.27-1.27.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "389-ds-base-libs",
+          "Release": "1.27.amzn1",
+          "Version": "1.3.2.27",
+          "Filename": "Packages/389-ds-base-libs-1.3.2.27-1.27.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "389-ds-base",
+          "Release": "1.27.amzn1",
+          "Version": "1.3.2.27",
+          "Filename": "Packages/389-ds-base-1.3.2.27-1.27.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

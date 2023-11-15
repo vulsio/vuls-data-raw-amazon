@@ -1,0 +1,55 @@
+{
+  "ID": "ALAS-2017-874",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-874: important priority package update for cacti",
+  "Issued": {
+    "Date": "2017-08-17 18:36"
+  },
+  "Updated": {
+    "Date": "2017-08-31 23:15"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-12066:\n\t\n\nCVE-2017-12065:\n\t\n\nCVE-2017-10970:\n\tCross-site scripting (XSS) vulnerability in link.php in Cacti 1.1.12 allows remote anonymous users to inject arbitrary web script or HTML via the id parameter, related to the die_html_input_error function in lib/html_validate.php\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-10970",
+        "ID": "CVE-2017-10970",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12065",
+        "ID": "CVE-2017-12065",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12066",
+        "ID": "CVE-2017-12066",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "cacti",
+          "Release": "1.16.amzn1",
+          "Version": "1.1.16",
+          "Filename": "Packages/cacti-1.1.16-1.16.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

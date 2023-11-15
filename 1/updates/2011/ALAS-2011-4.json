@@ -1,0 +1,115 @@
+{
+  "ID": "ALAS-2011-4",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2011-4: medium priority package update for openssl",
+  "Issued": {
+    "Date": "2011-10-10 23:40"
+  },
+  "Updated": {
+    "Date": "2014-09-14 14:25"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2011-3207:\n\tcrypto/x509/x509_vfy.c in OpenSSL 1.0.x before 1.0.0e does not initialize certain structure members, which makes it easier for remote attackers to bypass CRL validation by using a nextUpdate value corresponding to a time in the past.\nAn uninitialized variable use flaw was found in OpenSSL. This flaw could cause an application using the OpenSSL Certificate Revocation List (CRL) checking functionality to incorrectly accept a CRL that has a nextUpdate date in the past.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3207",
+        "ID": "CVE-2011-3207",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssl-static",
+          "Release": "2.16.amzn1",
+          "Version": "1.0.0e",
+          "Filename": "Packages/openssl-static-1.0.0e-2.16.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssl-devel",
+          "Release": "2.16.amzn1",
+          "Version": "1.0.0e",
+          "Filename": "Packages/openssl-devel-1.0.0e-2.16.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssl",
+          "Release": "2.16.amzn1",
+          "Version": "1.0.0e",
+          "Filename": "Packages/openssl-1.0.0e-2.16.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssl-debuginfo",
+          "Release": "2.16.amzn1",
+          "Version": "1.0.0e",
+          "Filename": "Packages/openssl-debuginfo-1.0.0e-2.16.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssl-perl",
+          "Release": "2.16.amzn1",
+          "Version": "1.0.0e",
+          "Filename": "Packages/openssl-perl-1.0.0e-2.16.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssl-perl",
+          "Release": "2.16.amzn1",
+          "Version": "1.0.0e",
+          "Filename": "Packages/openssl-perl-1.0.0e-2.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssl-debuginfo",
+          "Release": "2.16.amzn1",
+          "Version": "1.0.0e",
+          "Filename": "Packages/openssl-debuginfo-1.0.0e-2.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssl-devel",
+          "Release": "2.16.amzn1",
+          "Version": "1.0.0e",
+          "Filename": "Packages/openssl-devel-1.0.0e-2.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssl",
+          "Release": "2.16.amzn1",
+          "Version": "1.0.0e",
+          "Filename": "Packages/openssl-1.0.0e-2.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssl-static",
+          "Release": "2.16.amzn1",
+          "Version": "1.0.0e",
+          "Filename": "Packages/openssl-static-1.0.0e-2.16.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

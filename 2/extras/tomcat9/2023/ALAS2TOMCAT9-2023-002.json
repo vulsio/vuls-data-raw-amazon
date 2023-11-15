@@ -1,0 +1,107 @@
+{
+  "ID": "ALAS2TOMCAT9-2023-002",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 - Tomcat9 2.0 - ALAS2TOMCAT9-2023-002: important priority package update for tomcat",
+  "Issued": {
+    "Date": "2023-08-21 20:58"
+  },
+  "Updated": {
+    "Date": "2023-09-25 21:58"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 - Tomcat9 that fix the following vulnerabilities:\nCVE-2022-42252:\n\tIf Apache Tomcat 8.5.0 to 8.5.82, 9.0.0-M1 to 9.0.67, 10.0.0-M1 to 10.0.26 or 10.1.0-M1 to 10.1.0 was configured to ignore invalid HTTP headers via setting rejectIllegalHeader to false (the default for 8.5.x only), Tomcat did not reject a request containing an invalid Content-Length header making a request smuggling attack possible if Tomcat was located behind a reverse proxy that also failed to reject the request with the invalid header.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42252",
+        "ID": "CVE-2022-42252",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2---tomcat9",
+      "Name": "Amazon Linux 2 - Tomcat9",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.0.71",
+          "Filename": "Packages/tomcat-9.0.71-1.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat-admin-webapps",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.0.71",
+          "Filename": "Packages/tomcat-admin-webapps-9.0.71-1.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat-docs-webapp",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.0.71",
+          "Filename": "Packages/tomcat-docs-webapp-9.0.71-1.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat-jsvc",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.0.71",
+          "Filename": "Packages/tomcat-jsvc-9.0.71-1.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat-jsp-2.3-api",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.0.71",
+          "Filename": "Packages/tomcat-jsp-2.3-api-9.0.71-1.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat-lib",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.0.71",
+          "Filename": "Packages/tomcat-lib-9.0.71-1.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat-servlet-4.0-api",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.0.71",
+          "Filename": "Packages/tomcat-servlet-4.0-api-9.0.71-1.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat-el-3.0-api",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.0.71",
+          "Filename": "Packages/tomcat-el-3.0-api-9.0.71-1.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat-webapps",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.0.71",
+          "Filename": "Packages/tomcat-webapps-9.0.71-1.amzn2.0.1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

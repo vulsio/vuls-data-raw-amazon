@@ -1,0 +1,43 @@
+{
+  "ID": "ALAS-2022-1566",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2022-1566: critical priority package update for perl-Image-ExifTool",
+  "Issued": {
+    "Date": "2022-02-17 18:30"
+  },
+  "Updated": {
+    "Date": "2022-02-18 22:52"
+  },
+  "Severity": "critical",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2022-23935:\n\tlib/Image/ExifTool.pm in ExifTool before 12.38 mishandles a $file =~ /\\|$/ check.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23935",
+        "ID": "CVE-2022-23935",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "perl-Image-ExifTool",
+          "Release": "1.3.amzn1",
+          "Version": "12.38",
+          "Filename": "Packages/perl-Image-ExifTool-12.38-1.3.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

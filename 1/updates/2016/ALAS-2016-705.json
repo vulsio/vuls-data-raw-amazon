@@ -1,0 +1,99 @@
+{
+  "ID": "ALAS-2016-705",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-705: medium priority package update for jq",
+  "Issued": {
+    "Date": "2016-06-02 17:38"
+  },
+  "Updated": {
+    "Date": "2016-06-03 19:28"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-8863:\n\tA heap-based buffer overflow flaw was found in jq&#039;s tokenadd() function. By tricking a victim into processing a specially crafted JSON file, an attacker could use this flaw to crash jq or, potentially, execute arbitrary code on the victim&#039;s system.\n1328747: \nCVE-2015-8863 jq: heap-buffer-overflow in tokenadd() function\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8863",
+        "ID": "CVE-2015-8863",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "jq",
+          "Release": "1.2.amzn1",
+          "Version": "1.5",
+          "Filename": "Packages/jq-1.5-1.2.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "jq-devel",
+          "Release": "1.2.amzn1",
+          "Version": "1.5",
+          "Filename": "Packages/jq-devel-1.5-1.2.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "jq-debuginfo",
+          "Release": "1.2.amzn1",
+          "Version": "1.5",
+          "Filename": "Packages/jq-debuginfo-1.5-1.2.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "jq-libs",
+          "Release": "1.2.amzn1",
+          "Version": "1.5",
+          "Filename": "Packages/jq-libs-1.5-1.2.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "jq-libs",
+          "Release": "1.2.amzn1",
+          "Version": "1.5",
+          "Filename": "Packages/jq-libs-1.5-1.2.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "jq",
+          "Release": "1.2.amzn1",
+          "Version": "1.5",
+          "Filename": "Packages/jq-1.5-1.2.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "jq-devel",
+          "Release": "1.2.amzn1",
+          "Version": "1.5",
+          "Filename": "Packages/jq-devel-1.5-1.2.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "jq-debuginfo",
+          "Release": "1.2.amzn1",
+          "Version": "1.5",
+          "Filename": "Packages/jq-debuginfo-1.5-1.2.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

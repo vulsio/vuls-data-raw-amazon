@@ -1,0 +1,167 @@
+{
+  "ID": "ALAS2-2021-1601",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1601: medium priority package update for p11-kit",
+  "Issued": {
+    "Date": "2021-02-17 18:10"
+  },
+  "Updated": {
+    "Date": "2021-02-19 22:04"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-29363:\n\tAn issue was discovered in p11-kit 0.23.6 through 0.23.21. A heap-based buffer overflow has been discovered in the RPC protocol used by p11-kit server/remote commands and the client library. When the remote entity supplies a serialized byte array in a CK_ATTRIBUTE, the receiving entity may not allocate sufficient length for the buffer to store the deserialized value.\n1903588: CVE-2020-29363 p11-kit: out-of-bounds write in p11_rpc_buffer_get_byte_array_value function in rpc-message.c\n\nCVE-2020-29362:\n\tAn issue was discovered in p11-kit 0.21.1 through 0.23.21. A heap-based buffer over-read has been discovered in the RPC protocol used by thep11-kit server/remote commands and the client library. When the remote entity supplies a byte array through a serialized PKCS#11 function call, the receiving entity may allow the reading of up to 4 bytes of memory past the heap allocation.\n1903590: CVE-2020-29362 p11-kit: out-of-bounds read in p11_rpc_buffer_get_byte_array function in rpc-message.c\n\nCVE-2020-29361:\n\tAn issue was discovered in p11-kit 0.21.1 through 0.23.21. Multiple integer overflows have been discovered in the array allocations in the p11-kit library and the p11-kit list command, where overflow checks are missing before calling realloc or calloc.\n1903592: CVE-2020-29361 p11-kit: integer overflow when allocating memory for arrays or attributes and object identifiers\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-29361",
+        "ID": "CVE-2020-29361",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-29362",
+        "ID": "CVE-2020-29362",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-29363",
+        "ID": "CVE-2020-29363",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "p11-kit",
+          "Release": "1.amzn2.0.1",
+          "Version": "0.23.22",
+          "Filename": "Packages/p11-kit-0.23.22-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "p11-kit-devel",
+          "Release": "1.amzn2.0.1",
+          "Version": "0.23.22",
+          "Filename": "Packages/p11-kit-devel-0.23.22-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "p11-kit-trust",
+          "Release": "1.amzn2.0.1",
+          "Version": "0.23.22",
+          "Filename": "Packages/p11-kit-trust-0.23.22-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "p11-kit-server",
+          "Release": "1.amzn2.0.1",
+          "Version": "0.23.22",
+          "Filename": "Packages/p11-kit-server-0.23.22-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "p11-kit-debuginfo",
+          "Release": "1.amzn2.0.1",
+          "Version": "0.23.22",
+          "Filename": "Packages/p11-kit-debuginfo-0.23.22-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "p11-kit",
+          "Release": "1.amzn2.0.1",
+          "Version": "0.23.22",
+          "Filename": "Packages/p11-kit-0.23.22-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "p11-kit-devel",
+          "Release": "1.amzn2.0.1",
+          "Version": "0.23.22",
+          "Filename": "Packages/p11-kit-devel-0.23.22-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "p11-kit-trust",
+          "Release": "1.amzn2.0.1",
+          "Version": "0.23.22",
+          "Filename": "Packages/p11-kit-trust-0.23.22-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "p11-kit-server",
+          "Release": "1.amzn2.0.1",
+          "Version": "0.23.22",
+          "Filename": "Packages/p11-kit-server-0.23.22-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "p11-kit-debuginfo",
+          "Release": "1.amzn2.0.1",
+          "Version": "0.23.22",
+          "Filename": "Packages/p11-kit-debuginfo-0.23.22-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "p11-kit",
+          "Release": "1.amzn2.0.1",
+          "Version": "0.23.22",
+          "Filename": "Packages/p11-kit-0.23.22-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "p11-kit-devel",
+          "Release": "1.amzn2.0.1",
+          "Version": "0.23.22",
+          "Filename": "Packages/p11-kit-devel-0.23.22-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "p11-kit-trust",
+          "Release": "1.amzn2.0.1",
+          "Version": "0.23.22",
+          "Filename": "Packages/p11-kit-trust-0.23.22-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "p11-kit-server",
+          "Release": "1.amzn2.0.1",
+          "Version": "0.23.22",
+          "Filename": "Packages/p11-kit-server-0.23.22-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "p11-kit-debuginfo",
+          "Release": "1.amzn2.0.1",
+          "Version": "0.23.22",
+          "Filename": "Packages/p11-kit-debuginfo-0.23.22-1.amzn2.0.1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

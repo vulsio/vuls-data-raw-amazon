@@ -1,0 +1,141 @@
+{
+  "ID": "ALAS-2013-193",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-193: medium priority package update for httpd",
+  "Issued": {
+    "Date": "2013-05-24 13:56"
+  },
+  "Updated": {
+    "Date": "2014-09-15 23:06"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-1862:\n\tIt was found that mod_rewrite did not filter terminal escape sequences from its log file. If mod_rewrite was configured with the RewriteLog directive, a remote attacker could use specially-crafted HTTP requests to inject terminal escape sequences into the mod_rewrite log file. If a victim viewed the log file with a terminal emulator, it could result in arbitrary command execution with the privileges of that user.\n\nCVE-2012-4558:\n\tCross-site scripting (XSS) flaws were found in the mod_proxy_balancer module's manager web interface. If a remote attacker could trick a user, who was logged into the manager web interface, into visiting a specially-crafted URL, it would lead to arbitrary web script execution in the context of the user's manager interface session.\n\nCVE-2012-3499:\n\tCross-site scripting (XSS) flaws were found in the mod_info, mod_status, mod_imagemap, mod_ldap, and mod_proxy_ftp modules. An attacker could possibly use these flaws to perform XSS attacks if they were able to make the victim's browser generate an HTTP request with a specially-crafted Host header.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3499",
+        "ID": "CVE-2012-3499",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4558",
+        "ID": "CVE-2012-4558",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1862",
+        "ID": "CVE-2013-1862",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2013:0815.html",
+        "ID": "RHSA-2013:0815",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-devel",
+          "Release": "2.31.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/httpd-devel-2.2.24-2.31.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod_ssl",
+          "Release": "2.31.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/mod_ssl-2.2.24-2.31.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-debuginfo",
+          "Release": "2.31.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/httpd-debuginfo-2.2.24-2.31.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "httpd-manual",
+          "Release": "2.31.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/httpd-manual-2.2.24-2.31.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd",
+          "Release": "2.31.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/httpd-2.2.24-2.31.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-tools",
+          "Release": "2.31.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/httpd-tools-2.2.24-2.31.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-debuginfo",
+          "Release": "2.31.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/httpd-debuginfo-2.2.24-2.31.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd",
+          "Release": "2.31.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/httpd-2.2.24-2.31.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod_ssl",
+          "Release": "2.31.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/mod_ssl-2.2.24-2.31.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-tools",
+          "Release": "2.31.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/httpd-tools-2.2.24-2.31.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-devel",
+          "Release": "2.31.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/httpd-devel-2.2.24-2.31.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

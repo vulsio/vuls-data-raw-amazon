@@ -1,0 +1,191 @@
+{
+  "ID": "ALAS2-2019-1374",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1374: low priority package update for libsolv",
+  "Issued": {
+    "Date": "2019-12-13 19:36"
+  },
+  "Updated": {
+    "Date": "2019-12-18 01:27"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-20534:\n\t99999: \nCVE-2018-20534 libsolv: illegal address access in pool_whatprovides in src/pool.h\n1665538: \nCVE-2018-20534 libsolv: illegal address access in pool_whatprovides in src/pool.h\n    \n** DISPUTED ** There is an illegal address access at ext/testcase.c in libsolv.a in libsolv through 0.7.2 that will cause a denial of service. NOTE: third parties dispute this issue stating that the issue affects the test suite and not the underlying library. It cannot be exploited in any real-world application.\n\nCVE-2018-20533:\n\tThere is a NULL pointer dereference at ext/testcase.c (function testcase_str2dep_complex) in libsolvext.a in libsolv through 0.7.2 that will cause a denial of service.\n99999: \nCVE-2018-20533 libsolv: NULL pointer dereference in function testcase_str2dep_complex\n1665535: \nCVE-2018-20533 libsolv: NULL pointer dereference in function testcase_str2dep_complex\n    \n\nCVE-2018-20532:\n\tThere is a NULL pointer dereference at ext/testcase.c (function testcase_read) in libsolvext.a in libsolv through 0.7.2 that will cause a denial of service.\n99999: \nCVE-2018-20532 libsolv: NULL pointer dereference in function testcase_read\n1665532: \nCVE-2018-20532 libsolv: NULL pointer dereference in function testcase_read\n    \n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20532",
+        "ID": "CVE-2018-20532",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20533",
+        "ID": "CVE-2018-20533",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20534",
+        "ID": "CVE-2018-20534",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libsolv",
+          "Release": "4.amzn2",
+          "Version": "0.6.34",
+          "Filename": "Packages/libsolv-0.6.34-4.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libsolv-devel",
+          "Release": "4.amzn2",
+          "Version": "0.6.34",
+          "Filename": "Packages/libsolv-devel-0.6.34-4.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libsolv-tools",
+          "Release": "4.amzn2",
+          "Version": "0.6.34",
+          "Filename": "Packages/libsolv-tools-0.6.34-4.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libsolv-demo",
+          "Release": "4.amzn2",
+          "Version": "0.6.34",
+          "Filename": "Packages/libsolv-demo-0.6.34-4.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python2-solv",
+          "Release": "4.amzn2",
+          "Version": "0.6.34",
+          "Filename": "Packages/python2-solv-0.6.34-4.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libsolv-debuginfo",
+          "Release": "4.amzn2",
+          "Version": "0.6.34",
+          "Filename": "Packages/libsolv-debuginfo-0.6.34-4.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libsolv",
+          "Release": "4.amzn2",
+          "Version": "0.6.34",
+          "Filename": "Packages/libsolv-0.6.34-4.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libsolv-devel",
+          "Release": "4.amzn2",
+          "Version": "0.6.34",
+          "Filename": "Packages/libsolv-devel-0.6.34-4.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libsolv-tools",
+          "Release": "4.amzn2",
+          "Version": "0.6.34",
+          "Filename": "Packages/libsolv-tools-0.6.34-4.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libsolv-demo",
+          "Release": "4.amzn2",
+          "Version": "0.6.34",
+          "Filename": "Packages/libsolv-demo-0.6.34-4.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python2-solv",
+          "Release": "4.amzn2",
+          "Version": "0.6.34",
+          "Filename": "Packages/python2-solv-0.6.34-4.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libsolv-debuginfo",
+          "Release": "4.amzn2",
+          "Version": "0.6.34",
+          "Filename": "Packages/libsolv-debuginfo-0.6.34-4.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libsolv",
+          "Release": "4.amzn2",
+          "Version": "0.6.34",
+          "Filename": "Packages/libsolv-0.6.34-4.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libsolv-devel",
+          "Release": "4.amzn2",
+          "Version": "0.6.34",
+          "Filename": "Packages/libsolv-devel-0.6.34-4.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libsolv-tools",
+          "Release": "4.amzn2",
+          "Version": "0.6.34",
+          "Filename": "Packages/libsolv-tools-0.6.34-4.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libsolv-demo",
+          "Release": "4.amzn2",
+          "Version": "0.6.34",
+          "Filename": "Packages/libsolv-demo-0.6.34-4.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python2-solv",
+          "Release": "4.amzn2",
+          "Version": "0.6.34",
+          "Filename": "Packages/python2-solv-0.6.34-4.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libsolv-debuginfo",
+          "Release": "4.amzn2",
+          "Version": "0.6.34",
+          "Filename": "Packages/libsolv-debuginfo-0.6.34-4.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

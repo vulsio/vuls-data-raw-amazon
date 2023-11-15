@@ -1,0 +1,243 @@
+{
+  "ID": "ALAS2-2018-1080",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2018-1080: important priority package update for postgresql",
+  "Issued": {
+    "Date": "2018-09-20 18:43"
+  },
+  "Updated": {
+    "Date": "2018-09-25 17:48"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-10915:\n\tA vulnerability was found in libpq, the default PostgreSQL client library where libpq failed to properly reset its internal state between connections. If an affected version of libpq were used with &quot;host&quot; or &quot;hostaddr&quot; connection parameters from untrusted input, attackers could bypass client-side connection security features, obtain access to higher privileged connections or potentially cause other impact through SQL injection, by causing the PQescape() functions to malfunction.\n1609891: \nCVE-2018-10915 postgresql: Certain host connection parameters defeat client-side security defenses\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-10915",
+        "ID": "CVE-2018-10915",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-9.2.24-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-libs",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-libs-9.2.24-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-server",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-server-9.2.24-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-docs",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-docs-9.2.24-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-contrib",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-contrib-9.2.24-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-devel",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-devel-9.2.24-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-static",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-static-9.2.24-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-upgrade",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-upgrade-9.2.24-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-plperl",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-plperl-9.2.24-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-plpython",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-plpython-9.2.24-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-pltcl",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-pltcl-9.2.24-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-test",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-test-9.2.24-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-debuginfo",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-debuginfo-9.2.24-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-9.2.24-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-libs",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-libs-9.2.24-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-server",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-server-9.2.24-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-docs",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-docs-9.2.24-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-contrib",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-contrib-9.2.24-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-devel",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-devel-9.2.24-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-static",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-static-9.2.24-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-upgrade",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-upgrade-9.2.24-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-plperl",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-plperl-9.2.24-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-plpython",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-plpython-9.2.24-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-pltcl",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-pltcl-9.2.24-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-test",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-test-9.2.24-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-debuginfo",
+          "Release": "1.amzn2.0.1",
+          "Version": "9.2.24",
+          "Filename": "Packages/postgresql-debuginfo-9.2.24-1.amzn2.0.1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

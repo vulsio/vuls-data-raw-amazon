@@ -1,0 +1,149 @@
+{
+  "ID": "ALAS2-2023-2230",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2230: medium priority package update for curl",
+  "Issued": {
+    "Date": "2023-08-31 22:29"
+  },
+  "Updated": {
+    "Date": "2023-09-07 18:49"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-28322:\n\tWhen doing HTTP(S) transfers, libcurl might erroneously use the read callback (CURLOPT_READFUNCTION) to ask for data to send, even when the CURLOPT_POSTFIELDS option has been set, if the same handle previously was used to issue a PUT request which used that callback.\n\nThis flaw may surprise the application and cause it to misbehave and either send off the wrong data or use memory after free or similar in the second transfer.\n\nThe problem exists in the logic for a reused handle when it is (expected to be) changed from a PUT to a POST.\n\nCVE-2023-28321:\n\tcurl supports matching of wildcard patterns when listed as \"Subject Alternative Name\" in TLS server certificates. curl can be built to use its own name matching function for TLS rather than one provided by a TLS library. This private wildcard matching function would match IDN (International Domain Name) hosts incorrectly and could as a result accept patterns that otherwise should mismatch.\n\nIDN hostnames are converted to puny code before used for certificate checks. Puny coded names always start with xn-- and should not be allowed to pattern match, but the wildcard check in curl could still check for x*, which would match even though the IDN name most likely contained nothing even resembling an x.\n\nCVE-2023-28319:\n\tlibcurl offers a feature to verify an SSH server's public key using a SHA 256 hash. When this check fails, libcurl would free the memory for the fingerprint before it returns an error message containing the (now freed) hash.\n\nThis flaw risks inserting sensitive heap-based data into the error message that might be shown to users or otherwise get leaked and revealed.\n\nCVE-2020-19909:\n\tInteger overflow vulnerability in tool_operate.c in curl 7.65.2 via crafted value as the retry delay.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-19909",
+        "ID": "CVE-2020-19909",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28319",
+        "ID": "CVE-2023-28319",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28321",
+        "ID": "CVE-2023-28321",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28322",
+        "ID": "CVE-2023-28322",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "curl",
+          "Release": "1.amzn2.0.2",
+          "Version": "8.2.1",
+          "Filename": "Packages/curl-8.2.1-1.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcurl",
+          "Release": "1.amzn2.0.2",
+          "Version": "8.2.1",
+          "Filename": "Packages/libcurl-8.2.1-1.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcurl-devel",
+          "Release": "1.amzn2.0.2",
+          "Version": "8.2.1",
+          "Filename": "Packages/libcurl-devel-8.2.1-1.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "curl-debuginfo",
+          "Release": "1.amzn2.0.2",
+          "Version": "8.2.1",
+          "Filename": "Packages/curl-debuginfo-8.2.1-1.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "curl",
+          "Release": "1.amzn2.0.2",
+          "Version": "8.2.1",
+          "Filename": "Packages/curl-8.2.1-1.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcurl",
+          "Release": "1.amzn2.0.2",
+          "Version": "8.2.1",
+          "Filename": "Packages/libcurl-8.2.1-1.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcurl-devel",
+          "Release": "1.amzn2.0.2",
+          "Version": "8.2.1",
+          "Filename": "Packages/libcurl-devel-8.2.1-1.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "curl-debuginfo",
+          "Release": "1.amzn2.0.2",
+          "Version": "8.2.1",
+          "Filename": "Packages/curl-debuginfo-8.2.1-1.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "curl",
+          "Release": "1.amzn2.0.2",
+          "Version": "8.2.1",
+          "Filename": "Packages/curl-8.2.1-1.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libcurl",
+          "Release": "1.amzn2.0.2",
+          "Version": "8.2.1",
+          "Filename": "Packages/libcurl-8.2.1-1.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libcurl-devel",
+          "Release": "1.amzn2.0.2",
+          "Version": "8.2.1",
+          "Filename": "Packages/libcurl-devel-8.2.1-1.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "curl-debuginfo",
+          "Release": "1.amzn2.0.2",
+          "Version": "8.2.1",
+          "Filename": "Packages/curl-debuginfo-8.2.1-1.amzn2.0.2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

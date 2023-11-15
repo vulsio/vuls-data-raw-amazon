@@ -1,0 +1,361 @@
+{
+  "ID": "ALAS2023-2023-251",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2023 - ALAS2023-2023-251: Important priority package update for kernel",
+  "Issued": {
+    "Date": "2023-07-17 20:45:00"
+  },
+  "Updated": {
+    "Date": "2023-08-03 20:25:00"
+  },
+  "Severity": "Important",
+  "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-3610:\n\tA use-after-free vulnerability in the Linux kernel's netfilter: nf_tables component can be exploited to achieve local privilege escalation.\n\nFlaw in the error handling of bound chains causes a use-after-free in the abort path of NFT_MSG_NEWRULE. The vulnerability requires CAP_NET_ADMIN to be triggered.\n\nWe recommend upgrading past commit 4bedf9eee016286c835e3d8fa981ddece5338795.\n\nCVE-2023-3609:\n\tA use-after-free vulnerability in the Linux kernel's net/sched: cls_u32 component can be exploited to achieve local privilege escalation.\n\nIf tcf_change_indev() fails, u32_set_parms() will immediately return an error after incrementing or decrementing the reference counter in tcf_bind_filter(). If an attacker can control the reference counter and set it to zero, they can cause the reference to be freed, leading to a use-after-free vulnerability.\n\nWe recommend upgrading past commit 04c55383fa5689357bcdd2c8036725a55ed632bc.\n\nCVE-2023-35001:\n\tLinux Kernel nftables Out-Of-Bounds Read/Write Vulnerability; nft_byteorder poorly handled vm register contents when CAP_NET_ADMIN is in any user or network namespace\n\nCVE-2023-3390:\n\tA use-after-free vulnerability was found in the Linux kernel's netfilter subsystem in net/netfilter/nf_tables_api.c.\n\nMishandled error handling with NFT_MSG_NEWRULE makes it possible to use a dangling pointer in the same transaction causing a use-after-free vulnerability. This flaw allows a local attacker with user access to cause a privilege escalation issue.\n\nWe recommend upgrading past commit 1240eb93f0616b21c675416516ff3d74798fdc97.\n\nCVE-2023-31248:\n\tLinux Kernel nftables Use-After-Free Local Privilege Escalation Vulnerability; `nft_chain_lookup_byid()` failed to check whether a chain was active and CAP_NET_ADMIN is in any user or network namespace\n\nCVE-2023-3117:\n\tA use-after-free flaw was found in the Netfilter subsystem of the Linux kernel when processing named and anonymous sets in batch requests, which can lead to performing arbitrary reads and writes in kernel memory. This flaw allows a local user with CAP_NET_ADMIN capability to crash or potentially escalate their privileges on the system.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3117",
+        "ID": "CVE-2023-3117",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-31248",
+        "ID": "CVE-2023-31248",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3390",
+        "ID": "CVE-2023-3390",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-35001",
+        "ID": "CVE-2023-35001",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3609",
+        "ID": "CVE-2023-3609",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3610",
+        "ID": "CVE-2023-3610",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2023",
+      "Name": "Amazon Linux 2023",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-libbpf-devel",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-libbpf-devel-6.1.38-59.109.amzn2023.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-libbpf",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-libbpf-6.1.38-59.109.amzn2023.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python3-perf-debuginfo",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/python3-perf-debuginfo-6.1.38-59.109.amzn2023.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-libbpf-static",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-libbpf-static-6.1.38-59.109.amzn2023.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-tools-6.1.38-59.109.amzn2023.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-tools-debuginfo-6.1.38-59.109.amzn2023.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-6.1.38-59.109",
+          "Release": "0.amzn2023",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-6.1.38-59.109-1.0-0.amzn2023.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python3-perf",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/python3-perf-6.1.38-59.109.amzn2023.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-tools-devel-6.1.38-59.109.amzn2023.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/perf-debuginfo-6.1.38-59.109.amzn2023.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "bpftool-debuginfo",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/bpftool-debuginfo-6.1.38-59.109.amzn2023.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "bpftool",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/bpftool-6.1.38-59.109.amzn2023.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/perf-6.1.38-59.109.amzn2023.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-headers-6.1.38-59.109.amzn2023.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-debuginfo-6.1.38-59.109.amzn2023.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-6.1.38-59.109.amzn2023.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-6.1.38-59.109.amzn2023.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-devel-6.1.38-59.109.amzn2023.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-headers-6.1.38-59.109.amzn2023.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-tools-debuginfo-6.1.38-59.109.amzn2023.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "bpftool-debuginfo",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/bpftool-debuginfo-6.1.38-59.109.amzn2023.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/perf-debuginfo-6.1.38-59.109.amzn2023.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "bpftool",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/bpftool-6.1.38-59.109.amzn2023.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-6.1.38-59.109",
+          "Release": "0.amzn2023",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-6.1.38-59.109-1.0-0.amzn2023.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-libbpf",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-libbpf-6.1.38-59.109.amzn2023.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-headers-6.1.38-59.109.amzn2023.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-tools-6.1.38-59.109.amzn2023.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-libbpf-devel",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-libbpf-devel-6.1.38-59.109.amzn2023.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/perf-6.1.38-59.109.amzn2023.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-tools-devel-6.1.38-59.109.amzn2023.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python3-perf",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/python3-perf-6.1.38-59.109.amzn2023.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-libbpf-static",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-libbpf-static-6.1.38-59.109.amzn2023.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-6.1.38-59.109.amzn2023.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python3-perf-debuginfo",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/python3-perf-debuginfo-6.1.38-59.109.amzn2023.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-debuginfo-6.1.38-59.109.amzn2023.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-aarch64",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-debuginfo-common-aarch64-6.1.38-59.109.amzn2023.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "59.109.amzn2023",
+          "Version": "6.1.38",
+          "Filename": "Packages/kernel-devel-6.1.38-59.109.amzn2023.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

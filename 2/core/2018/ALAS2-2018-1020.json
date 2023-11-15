@@ -1,0 +1,67 @@
+{
+  "ID": "ALAS2-2018-1020",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2018-1020: medium priority package update for nghttp2",
+  "Issued": {
+    "Date": "2018-05-24 17:59"
+  },
+  "Updated": {
+    "Date": "2018-05-29 23:17"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-1000168:\n\tnghttp2 version &gt;= 1.10.0 and nghttp2 &lt;= v1.31.0 contains an Improper Input Validation CWE-20 vulnerability in ALTSVC frame handling that can result in segmentation fault leading to denial of service. This attack appears to be exploitable via network client. This vulnerability appears to have been fixed in &gt;= 1.31.1.\n1565035: \nCVE-2018-1000168 nghttp2: Null pointer dereference when too large ALTSVC frame is received\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000168",
+        "ID": "CVE-2018-1000168",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "nghttp2",
+          "Release": "1.amzn2",
+          "Version": "1.31.1",
+          "Filename": "Packages/nghttp2-1.31.1-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libnghttp2",
+          "Release": "1.amzn2",
+          "Version": "1.31.1",
+          "Filename": "Packages/libnghttp2-1.31.1-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libnghttp2-devel",
+          "Release": "1.amzn2",
+          "Version": "1.31.1",
+          "Filename": "Packages/libnghttp2-devel-1.31.1-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "nghttp2-debuginfo",
+          "Release": "1.amzn2",
+          "Version": "1.31.1",
+          "Filename": "Packages/nghttp2-debuginfo-1.31.1-1.amzn2.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

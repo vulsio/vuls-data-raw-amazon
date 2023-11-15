@@ -1,0 +1,121 @@
+{
+  "ID": "ALAS2-2019-1226",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1226: medium priority package update for libX11",
+  "Issued": {
+    "Date": "2019-06-11 23:17"
+  },
+  "Updated": {
+    "Date": "2019-06-13 18:45"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-14599:\n\tAn off-by-one error has been discovered in libX11 in functions XGetFontPath(), XListExtensions(), and XListFonts(). An attacker who can either configure a malicious X server or modify the data coming from one could use this flaw to make the program crash or have other unspecified effects, caused by the memory corruption.\n1623250: \nCVE-2018-14599 libX11: off-by-one error in XListExtensions in ListExt.c\n\nCVE-2018-14598:\n\tIt was discovered that libX11 does not properly validate input coming from the server, causing XListExtensions() and XGetFontPath() functions to produce an invalid list of elements that in turn make XFreeExtensionsList() and XFreeFontPath() access invalid memory. An attacker who can either configure a malicious X server or modify the data coming from one, could use this flaw to crash the application using libX11, resulting in a denial of service.\n1623238: \nCVE-2018-14598 libX11: Crash on invalid reply in XListExtensions in ListExt.c\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14598",
+        "ID": "CVE-2018-14598",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14599",
+        "ID": "CVE-2018-14599",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libX11",
+          "Release": "2.amzn2.0.2",
+          "Version": "1.6.5",
+          "Filename": "Packages/libX11-1.6.5-2.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "libX11-common",
+          "Release": "2.amzn2.0.2",
+          "Version": "1.6.5",
+          "Filename": "Packages/libX11-common-1.6.5-2.amzn2.0.2.noarch.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libX11-devel",
+          "Release": "2.amzn2.0.2",
+          "Version": "1.6.5",
+          "Filename": "Packages/libX11-devel-1.6.5-2.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libX11-debuginfo",
+          "Release": "2.amzn2.0.2",
+          "Version": "1.6.5",
+          "Filename": "Packages/libX11-debuginfo-1.6.5-2.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libX11",
+          "Release": "2.amzn2.0.2",
+          "Version": "1.6.5",
+          "Filename": "Packages/libX11-1.6.5-2.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libX11-devel",
+          "Release": "2.amzn2.0.2",
+          "Version": "1.6.5",
+          "Filename": "Packages/libX11-devel-1.6.5-2.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libX11-debuginfo",
+          "Release": "2.amzn2.0.2",
+          "Version": "1.6.5",
+          "Filename": "Packages/libX11-debuginfo-1.6.5-2.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libX11",
+          "Release": "2.amzn2.0.2",
+          "Version": "1.6.5",
+          "Filename": "Packages/libX11-1.6.5-2.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libX11-devel",
+          "Release": "2.amzn2.0.2",
+          "Version": "1.6.5",
+          "Filename": "Packages/libX11-devel-1.6.5-2.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libX11-debuginfo",
+          "Release": "2.amzn2.0.2",
+          "Version": "1.6.5",
+          "Filename": "Packages/libX11-debuginfo-1.6.5-2.amzn2.0.2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

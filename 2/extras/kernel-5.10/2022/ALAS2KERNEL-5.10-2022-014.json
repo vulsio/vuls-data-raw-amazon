@@ -1,0 +1,343 @@
+{
+  "ID": "ALAS2KERNEL-5.10-2022-014",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 - Kernel-5.10 2.0 - ALAS2KERNEL-5.10-2022-014: important priority package update for kernel",
+  "Issued": {
+    "Date": "2022-06-04 00:05"
+  },
+  "Updated": {
+    "Date": "2023-08-31 22:49"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2023-4459:\n\tA NULL pointer dereference flaw was found in vmxnet3_rq_cleanup in drivers/net/vmxnet3/vmxnet3_drv.c in the networking sub-component in vmxnet3 in the Linux Kernel. This issue may allow a local attacker with normal user privilege to cause a denial of service due to a missing sanity check during cleanup.\n\nCVE-2023-4387:\n\tA use-after-free flaw was found in vmxnet3_rq_alloc_rx_buf in drivers/net/vmxnet3/vmxnet3_drv.c in VMware's vmxnet3 ethernet NIC driver in the Linux Kernel. This issue could allow a local attacker to crash the system due to a double-free while cleaning up vmxnet3_rq_cleanup_all, which could also lead to a kernel information leak problem.\n\nCVE-2023-1838:\n\tA use-after-free flaw was found in vhost_net_set_backend in drivers/vhost/net.c in virtio network subcomponent in the Linux kernel due to a double fget. This flaw could allow a local attacker to crash the system, and could even lead to a kernel information leak problem.\n\nCVE-2022-29581:\n\tImproper Update of Reference Count vulnerability in net/sched of Linux Kernel allows local attacker to cause privilege escalation to root. This issue affects: Linux Kernel versions prior to 5.18; version 4.14 and later versions.\n\nCVE-2022-28893:\n\tThe SUNRPC subsystem in the Linux kernel through 5.17.2 can call xs_xprt_free before ensuring that sockets are in the intended state.\n\nCVE-2022-2639:\n\tAn integer coercion error was found in the openvswitch kernel module. Given a sufficiently large number of actions, while copying and reserving memory for a new action of a new flow, the reserve_sfa_size() function does not return -EMSGSIZE as expected, potentially leading to an out-of-bounds write access. This flaw allows a local user to crash or potentially escalate their privileges on the system.\n\nCVE-2022-23222:\n\tA flaw was found in the Linux kernel's adjust_ptr_min_max_vals in the kernel/bpf/verifier.c function. In this flaw, a missing sanity check for *_OR_NULL pointer types that perform pointer arithmetic may cause a kernel information leak issue.\n\nCVE-2022-1786:\n\tio_uring: always use original task when preparing req identity\n\nCVE-2022-1729:\n\tperf: Fix sys_perf_event_open() race against self\n\nCVE-2022-0854:\n\tA memory leak flaw was found in the Linux kernel's DMA subsystem, in the way a user calls DMA_FROM_DEVICE. This flaw allows a local user to read random memory from the kernel space.\n\nCVE-2022-0494:\n\tA kernel information leak flaw was identified in the scsi_ioctl function in drivers/scsi/scsi_ioctl.c in the Linux kernel. This flaw allows a local attacker with a special user privilege (CAP_SYS_ADMIN or CAP_SYS_RAWIO) to create issues with confidentiality.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0494",
+        "ID": "CVE-2022-0494",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0854",
+        "ID": "CVE-2022-0854",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1729",
+        "ID": "CVE-2022-1729",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1786",
+        "ID": "CVE-2022-1786",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23222",
+        "ID": "CVE-2022-23222",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2639",
+        "ID": "CVE-2022-2639",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28893",
+        "ID": "CVE-2022-28893",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29581",
+        "ID": "CVE-2022-29581",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-1838",
+        "ID": "CVE-2023-1838",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4387",
+        "ID": "CVE-2023-4387",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4459",
+        "ID": "CVE-2023-4459",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2---kernel-5.10",
+      "Name": "Amazon Linux 2 - Kernel-5.10",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/kernel-5.10.118-111.515.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/kernel-headers-5.10.118-111.515.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-5.10.118-111.515.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/perf-5.10.118-111.515.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/perf-debuginfo-5.10.118-111.515.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/python-perf-5.10.118-111.515.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/python-perf-debuginfo-5.10.118-111.515.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/kernel-tools-5.10.118-111.515.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/kernel-tools-devel-5.10.118-111.515.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/kernel-tools-debuginfo-5.10.118-111.515.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "bpftool",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/bpftool-5.10.118-111.515.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "bpftool-debuginfo",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/bpftool-debuginfo-5.10.118-111.515.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/kernel-devel-5.10.118-111.515.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/kernel-debuginfo-5.10.118-111.515.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-5.10.118-111.515",
+          "Release": "0.amzn2",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-5.10.118-111.515-1.0-0.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/kernel-headers-5.10.118-111.515.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/kernel-5.10.118-111.515.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/kernel-headers-5.10.118-111.515.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-aarch64",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/kernel-debuginfo-common-aarch64-5.10.118-111.515.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/perf-5.10.118-111.515.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/perf-debuginfo-5.10.118-111.515.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/python-perf-5.10.118-111.515.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/python-perf-debuginfo-5.10.118-111.515.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/kernel-tools-5.10.118-111.515.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/kernel-tools-devel-5.10.118-111.515.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/kernel-tools-debuginfo-5.10.118-111.515.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "bpftool",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/bpftool-5.10.118-111.515.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "bpftool-debuginfo",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/bpftool-debuginfo-5.10.118-111.515.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/kernel-devel-5.10.118-111.515.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "111.515.amzn2",
+          "Version": "5.10.118",
+          "Filename": "Packages/kernel-debuginfo-5.10.118-111.515.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-5.10.118-111.515",
+          "Release": "0.amzn2",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-5.10.118-111.515-1.0-0.amzn2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

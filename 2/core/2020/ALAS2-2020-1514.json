@@ -1,0 +1,107 @@
+{
+  "ID": "ALAS2-2020-1514",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1514: medium priority package update for fontforge",
+  "Issued": {
+    "Date": "2020-10-22 17:33"
+  },
+  "Updated": {
+    "Date": "2020-10-22 22:36"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-5395:\n\tAn out-of-bounds write was discovered in fontforge while parsing SFD files containing very large LayerCount tokens. The flaw allows an attacker to overwrite data before a buffer allocated on the heap, thus causing the application to crash or execute arbitrary code.\n1790041: CVE-2020-5395 fontforge: out-of-bounds write in SFD_GetFontMetaData function in sfd.c\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-5395",
+        "ID": "CVE-2020-5395",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fontforge",
+          "Release": "13.amzn2",
+          "Version": "20120731b",
+          "Filename": "Packages/fontforge-20120731b-13.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fontforge-devel",
+          "Release": "13.amzn2",
+          "Version": "20120731b",
+          "Filename": "Packages/fontforge-devel-20120731b-13.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fontforge-debuginfo",
+          "Release": "13.amzn2",
+          "Version": "20120731b",
+          "Filename": "Packages/fontforge-debuginfo-20120731b-13.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fontforge",
+          "Release": "13.amzn2",
+          "Version": "20120731b",
+          "Filename": "Packages/fontforge-20120731b-13.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fontforge-devel",
+          "Release": "13.amzn2",
+          "Version": "20120731b",
+          "Filename": "Packages/fontforge-devel-20120731b-13.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fontforge-debuginfo",
+          "Release": "13.amzn2",
+          "Version": "20120731b",
+          "Filename": "Packages/fontforge-debuginfo-20120731b-13.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fontforge",
+          "Release": "13.amzn2",
+          "Version": "20120731b",
+          "Filename": "Packages/fontforge-20120731b-13.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fontforge-devel",
+          "Release": "13.amzn2",
+          "Version": "20120731b",
+          "Filename": "Packages/fontforge-devel-20120731b-13.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fontforge-debuginfo",
+          "Release": "13.amzn2",
+          "Version": "20120731b",
+          "Filename": "Packages/fontforge-debuginfo-20120731b-13.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

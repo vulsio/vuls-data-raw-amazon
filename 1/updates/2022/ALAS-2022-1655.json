@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS-2022-1655",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2022-1655: important priority package update for expat",
+  "Issued": {
+    "Date": "2022-12-01 17:34"
+  },
+  "Updated": {
+    "Date": "2022-12-10 00:37"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2022-43680:\n\tIn libexpat through 2.4.9, there is a use-after free caused by overeager destruction of a shared DTD in XML_ExternalEntityParserCreate in out-of-memory situations.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-43680",
+        "ID": "CVE-2022-43680",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "expat-devel",
+          "Release": "15.33.amzn1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-devel-2.1.0-15.33.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "expat",
+          "Release": "15.33.amzn1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-2.1.0-15.33.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "expat-debuginfo",
+          "Release": "15.33.amzn1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-debuginfo-2.1.0-15.33.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "expat-debuginfo",
+          "Release": "15.33.amzn1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-debuginfo-2.1.0-15.33.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "expat-devel",
+          "Release": "15.33.amzn1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-devel-2.1.0-15.33.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "expat",
+          "Release": "15.33.amzn1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-2.1.0-15.33.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

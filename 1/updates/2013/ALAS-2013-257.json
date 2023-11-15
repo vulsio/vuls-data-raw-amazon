@@ -1,0 +1,105 @@
+{
+  "ID": "ALAS-2013-257",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-257: medium priority package update for dracut",
+  "Issued": {
+    "Date": "2013-12-11 20:33"
+  },
+  "Updated": {
+    "Date": "2014-09-16 22:09"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2012-4453:\n\tIt was discovered that dracut created initramfs images as world readable. A local user could possibly use this flaw to obtain sensitive information from these files, such as iSCSI authentication passwords, encrypted root file system crypttab passwords, or other information.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4453",
+        "ID": "CVE-2012-4453",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2013:1674.html",
+        "ID": "RHSA-2013:1674",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "dracut-tools",
+          "Release": "336.21.amzn1",
+          "Version": "004",
+          "Filename": "Packages/dracut-tools-004-336.21.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "dracut",
+          "Release": "336.21.amzn1",
+          "Version": "004",
+          "Filename": "Packages/dracut-004-336.21.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "dracut-caps",
+          "Release": "336.21.amzn1",
+          "Version": "004",
+          "Filename": "Packages/dracut-caps-004-336.21.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "dracut-kernel",
+          "Release": "336.21.amzn1",
+          "Version": "004",
+          "Filename": "Packages/dracut-kernel-004-336.21.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "dracut-fips",
+          "Release": "336.21.amzn1",
+          "Version": "004",
+          "Filename": "Packages/dracut-fips-004-336.21.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "dracut-generic",
+          "Release": "336.21.amzn1",
+          "Version": "004",
+          "Filename": "Packages/dracut-generic-004-336.21.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "dracut-fips-aesni",
+          "Release": "336.21.amzn1",
+          "Version": "004",
+          "Filename": "Packages/dracut-fips-aesni-004-336.21.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "dracut-network",
+          "Release": "336.21.amzn1",
+          "Version": "004",
+          "Filename": "Packages/dracut-network-004-336.21.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

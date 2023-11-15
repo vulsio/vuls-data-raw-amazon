@@ -1,0 +1,325 @@
+{
+  "ID": "ALAS2-2019-1249",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1249: important priority package update for ruby",
+  "Issued": {
+    "Date": "2019-07-18 18:14"
+  },
+  "Updated": {
+    "Date": "2019-07-22 16:49"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2019-8325:\n\tAn issue was discovered in RubyGems 2.6 and later through 3.0.2. Since Gem::CommandManager#run calls alert_error without escaping, escape sequence injection is possible. (There are many ways to cause an error.)\n1692522: \nCVE-2019-8325 rubygems: Escape sequence injection vulnerability in errors\n\nCVE-2019-8324:\n\tAn issue was discovered in RubyGems 2.6 and later through 3.0.2. A crafted gem with a multi-line name is not handled correctly. Therefore, an attacker could inject arbitrary code to the stub line of gemspec, which is eval-ed by code in ensure_loadable_spec during the preinstall check.\n1692520: \nCVE-2019-8324 rubygems: Installing a malicious gem may lead to arbitrary code execution\n\nCVE-2019-8323:\n\tAn issue was discovered in RubyGems 2.6 and later through 3.0.2. Gem::GemcutterUtilities#with_response may output the API response to stdout as it is. Therefore, if the API side modifies the response, escape sequence injection may occur.\n1692519: \nCVE-2019-8323 rubygems: Escape sequence injection vulnerability in API response handling\n\nCVE-2019-8322:\n\tAn issue was discovered in RubyGems 2.6 and later through 3.0.2. The gem owner command outputs the contents of the API response directly to stdout. Therefore, if the response is crafted, escape sequence injection may occur.\n1692516: \nCVE-2019-8322 rubygems: Escape sequence injection vulnerability in gem owner\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-8322",
+        "ID": "CVE-2019-8322",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-8323",
+        "ID": "CVE-2019-8323",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-8324",
+        "ID": "CVE-2019-8324",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-8325",
+        "ID": "CVE-2019-8325",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ruby",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0.648",
+          "Filename": "Packages/ruby-2.0.0.648-35.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ruby-devel",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0.648",
+          "Filename": "Packages/ruby-devel-2.0.0.648-35.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ruby-libs",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0.648",
+          "Filename": "Packages/ruby-libs-2.0.0.648-35.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "rubygems",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.14.1",
+          "Filename": "Packages/rubygems-2.0.14.1-35.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "rubygems-devel",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.14.1",
+          "Filename": "Packages/rubygems-devel-2.0.14.1-35.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "rubygem-rake",
+          "Release": "35.amzn2.0.1",
+          "Version": "0.9.6",
+          "Filename": "Packages/rubygem-rake-0.9.6-35.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "ruby-irb",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0.648",
+          "Filename": "Packages/ruby-irb-2.0.0.648-35.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "rubygem-rdoc",
+          "Release": "35.amzn2.0.1",
+          "Version": "4.0.0",
+          "Filename": "Packages/rubygem-rdoc-4.0.0-35.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "ruby-doc",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0.648",
+          "Filename": "Packages/ruby-doc-2.0.0.648-35.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "rubygem-bigdecimal",
+          "Release": "35.amzn2.0.1",
+          "Version": "1.2.0",
+          "Filename": "Packages/rubygem-bigdecimal-1.2.0-35.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "rubygem-io-console",
+          "Release": "35.amzn2.0.1",
+          "Version": "0.4.2",
+          "Filename": "Packages/rubygem-io-console-0.4.2-35.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "rubygem-json",
+          "Release": "35.amzn2.0.1",
+          "Version": "1.7.7",
+          "Filename": "Packages/rubygem-json-1.7.7-35.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "rubygem-minitest",
+          "Release": "35.amzn2.0.1",
+          "Version": "4.3.2",
+          "Filename": "Packages/rubygem-minitest-4.3.2-35.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "rubygem-psych",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0",
+          "Filename": "Packages/rubygem-psych-2.0.0-35.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ruby-tcltk",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0.648",
+          "Filename": "Packages/ruby-tcltk-2.0.0.648-35.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ruby-debuginfo",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0.648",
+          "Filename": "Packages/ruby-debuginfo-2.0.0.648-35.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ruby",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0.648",
+          "Filename": "Packages/ruby-2.0.0.648-35.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ruby-devel",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0.648",
+          "Filename": "Packages/ruby-devel-2.0.0.648-35.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ruby-libs",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0.648",
+          "Filename": "Packages/ruby-libs-2.0.0.648-35.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rubygem-bigdecimal",
+          "Release": "35.amzn2.0.1",
+          "Version": "1.2.0",
+          "Filename": "Packages/rubygem-bigdecimal-1.2.0-35.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rubygem-io-console",
+          "Release": "35.amzn2.0.1",
+          "Version": "0.4.2",
+          "Filename": "Packages/rubygem-io-console-0.4.2-35.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rubygem-json",
+          "Release": "35.amzn2.0.1",
+          "Version": "1.7.7",
+          "Filename": "Packages/rubygem-json-1.7.7-35.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rubygem-psych",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0",
+          "Filename": "Packages/rubygem-psych-2.0.0-35.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ruby-tcltk",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0.648",
+          "Filename": "Packages/ruby-tcltk-2.0.0.648-35.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ruby-debuginfo",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0.648",
+          "Filename": "Packages/ruby-debuginfo-2.0.0.648-35.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ruby",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0.648",
+          "Filename": "Packages/ruby-2.0.0.648-35.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ruby-devel",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0.648",
+          "Filename": "Packages/ruby-devel-2.0.0.648-35.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ruby-libs",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0.648",
+          "Filename": "Packages/ruby-libs-2.0.0.648-35.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rubygem-bigdecimal",
+          "Release": "35.amzn2.0.1",
+          "Version": "1.2.0",
+          "Filename": "Packages/rubygem-bigdecimal-1.2.0-35.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rubygem-io-console",
+          "Release": "35.amzn2.0.1",
+          "Version": "0.4.2",
+          "Filename": "Packages/rubygem-io-console-0.4.2-35.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rubygem-json",
+          "Release": "35.amzn2.0.1",
+          "Version": "1.7.7",
+          "Filename": "Packages/rubygem-json-1.7.7-35.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rubygem-psych",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0",
+          "Filename": "Packages/rubygem-psych-2.0.0-35.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ruby-tcltk",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0.648",
+          "Filename": "Packages/ruby-tcltk-2.0.0.648-35.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ruby-debuginfo",
+          "Release": "35.amzn2.0.1",
+          "Version": "2.0.0.648",
+          "Filename": "Packages/ruby-debuginfo-2.0.0.648-35.amzn2.0.1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

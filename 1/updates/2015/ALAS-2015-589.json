@@ -1,0 +1,89 @@
+{
+  "ID": "ALAS-2015-589",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-589: medium priority package update for pam",
+  "Issued": {
+    "Date": "2015-09-02 12:00"
+  },
+  "Updated": {
+    "Date": "2015-09-02 12:00"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-3238:\n\tIt was discovered that the _unix_run_helper_binary() function of PAM's unix_pam module could write to a blocking pipe, possibly causing the function to become unresponsive. An attacker able to supply large passwords to the unix_pam module could use this flaw to enumerate valid user accounts, or cause a denial of service on the system.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3238",
+        "ID": "CVE-2015-3238",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2015:1640.html",
+        "ID": "RHSA-2015:1640",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "pam-devel",
+          "Release": "12.32.amzn1",
+          "Version": "1.1.8",
+          "Filename": "Packages/pam-devel-1.1.8-12.32.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "pam",
+          "Release": "12.32.amzn1",
+          "Version": "1.1.8",
+          "Filename": "Packages/pam-1.1.8-12.32.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "pam-debuginfo",
+          "Release": "12.32.amzn1",
+          "Version": "1.1.8",
+          "Filename": "Packages/pam-debuginfo-1.1.8-12.32.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "pam-devel",
+          "Release": "12.32.amzn1",
+          "Version": "1.1.8",
+          "Filename": "Packages/pam-devel-1.1.8-12.32.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "pam",
+          "Release": "12.32.amzn1",
+          "Version": "1.1.8",
+          "Filename": "Packages/pam-1.1.8-12.32.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "pam-debuginfo",
+          "Release": "12.32.amzn1",
+          "Version": "1.1.8",
+          "Filename": "Packages/pam-debuginfo-1.1.8-12.32.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

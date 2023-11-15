@@ -1,0 +1,101 @@
+{
+  "ID": "ALAS2-2023-2152",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2152: medium priority package update for squashfs-tools",
+  "Issued": {
+    "Date": "2023-07-17 17:40"
+  },
+  "Updated": {
+    "Date": "2023-07-19 22:18"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-41072:\n\tsquashfs_opendir in unsquash-2.c in Squashfs-Tools 4.5 allows Directory Traversal, a different vulnerability than CVE-2021-40153. A squashfs filesystem that has been crafted to include a symbolic link and then contents under the same filename in a filesystem can cause unsquashfs to first create the symbolic link pointing outside the expected directory, and then the subsequent write operation will cause the unsquashfs process to write through the symbolic link elsewhere in the filesystem.\n\nCVE-2021-40153:\n\tsquashfs_opendir in unsquash-1.c in Squashfs-Tools 4.5 stores the filename in the directory entry; this is then used by unsquashfs to create the new file during the unsquash. The filename is not validated for traversal outside of the destination directory, and thus allows writing to locations outside of the destination.\n\nCVE-2015-4646:\n\t(1) unsquash-1.c, (2) unsquash-2.c, (3) unsquash-3.c, and (4) unsquash-4.c in Squashfs and sasquatch allow remote attackers to cause a denial of service (application crash) via a crafted input.\n\nCVE-2015-4645:\n\tInteger overflow in the read_fragment_table_4 function in unsquash-4.c in Squashfs and sasquatch allows remote attackers to cause a denial of service (application crash) via a crafted input, which triggers a stack-based buffer overflow.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4645",
+        "ID": "CVE-2015-4645",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4646",
+        "ID": "CVE-2015-4646",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-40153",
+        "ID": "CVE-2021-40153",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41072",
+        "ID": "CVE-2021-41072",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "squashfs-tools",
+          "Release": "0.21.gitaae0aff4.amzn2.0.2",
+          "Version": "4.3",
+          "Filename": "Packages/squashfs-tools-4.3-0.21.gitaae0aff4.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "squashfs-tools-debuginfo",
+          "Release": "0.21.gitaae0aff4.amzn2.0.2",
+          "Version": "4.3",
+          "Filename": "Packages/squashfs-tools-debuginfo-4.3-0.21.gitaae0aff4.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "squashfs-tools",
+          "Release": "0.21.gitaae0aff4.amzn2.0.2",
+          "Version": "4.3",
+          "Filename": "Packages/squashfs-tools-4.3-0.21.gitaae0aff4.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "squashfs-tools-debuginfo",
+          "Release": "0.21.gitaae0aff4.amzn2.0.2",
+          "Version": "4.3",
+          "Filename": "Packages/squashfs-tools-debuginfo-4.3-0.21.gitaae0aff4.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "squashfs-tools",
+          "Release": "0.21.gitaae0aff4.amzn2.0.2",
+          "Version": "4.3",
+          "Filename": "Packages/squashfs-tools-4.3-0.21.gitaae0aff4.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "squashfs-tools-debuginfo",
+          "Release": "0.21.gitaae0aff4.amzn2.0.2",
+          "Version": "4.3",
+          "Filename": "Packages/squashfs-tools-debuginfo-4.3-0.21.gitaae0aff4.amzn2.0.2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

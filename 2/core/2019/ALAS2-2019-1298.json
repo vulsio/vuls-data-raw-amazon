@@ -1,0 +1,137 @@
+{
+  "ID": "ALAS2-2019-1298",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1298: important priority package update for nghttp2",
+  "Issued": {
+    "Date": "2019-10-08 21:43"
+  },
+  "Updated": {
+    "Date": "2019-10-09 23:18"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2019-9513:\n\tSome HTTP/2 implementations are vulnerable to resource loops, potentially leading to a denial of service. The attacker creates multiple request streams and continually shuffles the priority of the streams in a way that causes substantial churn to the priority tree. This can consume excess CPU.\n1735741: \nCVE-2019-9513 HTTP/2: flood using PRIORITY frames results in excessive resource consumption\n\nCVE-2019-9511:\n\tSome HTTP/2 implementations are vulnerable to window size manipulation and stream prioritization manipulation, potentially leading to a denial of service. The attacker requests a large amount of data from a specified resource over multiple streams. They manipulate window size and stream priority to force the server to queue the data in 1-byte chunks. Depending on how efficiently this data is queued, this can consume excess CPU, memory, or both.\n1741860: \nCVE-2019-9511 HTTP/2: large amount of data requests leads to denial of service\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9511",
+        "ID": "CVE-2019-9511",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9513",
+        "ID": "CVE-2019-9513",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "nghttp2",
+          "Release": "1.amzn2",
+          "Version": "1.39.2",
+          "Filename": "Packages/nghttp2-1.39.2-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libnghttp2",
+          "Release": "1.amzn2",
+          "Version": "1.39.2",
+          "Filename": "Packages/libnghttp2-1.39.2-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libnghttp2-devel",
+          "Release": "1.amzn2",
+          "Version": "1.39.2",
+          "Filename": "Packages/libnghttp2-devel-1.39.2-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "nghttp2-debuginfo",
+          "Release": "1.amzn2",
+          "Version": "1.39.2",
+          "Filename": "Packages/nghttp2-debuginfo-1.39.2-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "nghttp2",
+          "Release": "1.amzn2",
+          "Version": "1.39.2",
+          "Filename": "Packages/nghttp2-1.39.2-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libnghttp2",
+          "Release": "1.amzn2",
+          "Version": "1.39.2",
+          "Filename": "Packages/libnghttp2-1.39.2-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libnghttp2-devel",
+          "Release": "1.amzn2",
+          "Version": "1.39.2",
+          "Filename": "Packages/libnghttp2-devel-1.39.2-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "nghttp2-debuginfo",
+          "Release": "1.amzn2",
+          "Version": "1.39.2",
+          "Filename": "Packages/nghttp2-debuginfo-1.39.2-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "nghttp2",
+          "Release": "1.amzn2",
+          "Version": "1.39.2",
+          "Filename": "Packages/nghttp2-1.39.2-1.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libnghttp2",
+          "Release": "1.amzn2",
+          "Version": "1.39.2",
+          "Filename": "Packages/libnghttp2-1.39.2-1.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libnghttp2-devel",
+          "Release": "1.amzn2",
+          "Version": "1.39.2",
+          "Filename": "Packages/libnghttp2-devel-1.39.2-1.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "nghttp2-debuginfo",
+          "Release": "1.amzn2",
+          "Version": "1.39.2",
+          "Filename": "Packages/nghttp2-debuginfo-1.39.2-1.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

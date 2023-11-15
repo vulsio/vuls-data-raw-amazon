@@ -1,0 +1,155 @@
+{
+  "ID": "ALAS2-2021-1700",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1700: medium priority package update for curl",
+  "Issued": {
+    "Date": "2021-09-08 23:35"
+  },
+  "Updated": {
+    "Date": "2021-09-15 17:41"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-22925:\n\tA flaw was found in the way curl handled telnet protocol option for sending environment variables, which could lead to sending of uninitialized data from a stack-based buffer to the server. This issue leads to potentially revealing sensitive internal information to the server using a clear-text network protocol.\n1970902: CVE-2021-22925 curl: Incorrect fix for CVE-2021-22898 TELNET stack contents disclosure\n\nCVE-2021-22924:\n\tA flaw was found in libcurl in the way libcurl handles previously used connections without accounting for 'issuer cert' and comparing the involved paths case-insensitively. This flaw allows libcurl to use the wrong connection. The highest threat from this vulnerability is to confidentiality.\n1981460: CVE-2021-22924 curl: Bad connection reuse due to flawed path name checks\n\nCVE-2021-22923:\n\tA flaw was found in curl in the way curl handles credentials when downloading content using the Metalink feature. This flaw allows malicious actors controlling a hosting server to gain access to credentials provided while downloading content without the user's knowledge. The highest threat from this vulnerability is to confidentiality.\n1981438: CVE-2021-22923 curl: Metalink download sends credentials\n\nCVE-2021-22922:\n\tA flaw was found in curl in the way curl handles a file hash mismatch after downloading content using the Metalink feature. This flaw allows malicious actors controlling a hosting server to trick users into downloading malicious content. The highest threat from this vulnerability is to integrity.\n1981435: CVE-2021-22922 curl: Content not matching hash in Metalink is not being discarded\n\nCVE-2021-22898:\n\tA flaw was found in the way curl handled telnet protocol option for sending environment variables, which could lead to sending of uninitialized data from a stack-based buffer to the server. This issue leads to potentially revealing sensitive internal information to the server using a clear-text network protocol.\n1964887: CVE-2021-22898 curl: TELNET stack contents disclosure\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22898",
+        "ID": "CVE-2021-22898",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22922",
+        "ID": "CVE-2021-22922",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22923",
+        "ID": "CVE-2021-22923",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22924",
+        "ID": "CVE-2021-22924",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-22925",
+        "ID": "CVE-2021-22925",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "curl",
+          "Release": "7.amzn2.0.2",
+          "Version": "7.76.1",
+          "Filename": "Packages/curl-7.76.1-7.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libcurl",
+          "Release": "7.amzn2.0.2",
+          "Version": "7.76.1",
+          "Filename": "Packages/libcurl-7.76.1-7.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libcurl-devel",
+          "Release": "7.amzn2.0.2",
+          "Version": "7.76.1",
+          "Filename": "Packages/libcurl-devel-7.76.1-7.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "curl-debuginfo",
+          "Release": "7.amzn2.0.2",
+          "Version": "7.76.1",
+          "Filename": "Packages/curl-debuginfo-7.76.1-7.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "curl",
+          "Release": "7.amzn2.0.2",
+          "Version": "7.76.1",
+          "Filename": "Packages/curl-7.76.1-7.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcurl",
+          "Release": "7.amzn2.0.2",
+          "Version": "7.76.1",
+          "Filename": "Packages/libcurl-7.76.1-7.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcurl-devel",
+          "Release": "7.amzn2.0.2",
+          "Version": "7.76.1",
+          "Filename": "Packages/libcurl-devel-7.76.1-7.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "curl-debuginfo",
+          "Release": "7.amzn2.0.2",
+          "Version": "7.76.1",
+          "Filename": "Packages/curl-debuginfo-7.76.1-7.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "curl",
+          "Release": "7.amzn2.0.2",
+          "Version": "7.76.1",
+          "Filename": "Packages/curl-7.76.1-7.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcurl",
+          "Release": "7.amzn2.0.2",
+          "Version": "7.76.1",
+          "Filename": "Packages/libcurl-7.76.1-7.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcurl-devel",
+          "Release": "7.amzn2.0.2",
+          "Version": "7.76.1",
+          "Filename": "Packages/libcurl-devel-7.76.1-7.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "curl-debuginfo",
+          "Release": "7.amzn2.0.2",
+          "Version": "7.76.1",
+          "Filename": "Packages/curl-debuginfo-7.76.1-7.amzn2.0.2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "ID": "ALAS2-2021-1630",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1630: important priority package update for pki-core",
+  "Issued": {
+    "Date": "2021-04-20 17:55"
+  },
+  "Updated": {
+    "Date": "2021-04-21 18:01"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-20179:\n\tA flaw was found in pki-core. An attacker who has successfully compromised a key could use this flaw to renew the corresponding certificate over and over again, as long as it is not explicitly revoked. The highest threat from this vulnerability is to data confidentiality and integrity.\n1914379: CVE-2021-20179 pki-core: Unprivileged users can renew any certificate\n\nCVE-2020-25715:\n\tA flaw was found in pki-core. A specially crafted POST request can be used to reflect a DOM-based cross-site scripting (XSS) attack to inject code into the search query form which can get automatically executed. The highest threat from this vulnerability is to data integrity.\n1891016: CVE-2020-25715 pki-core: XSS in the certificate search results\n\nCVE-2020-1721:\n\tA flaw was found in the Key Recovery Authority (KRA) Agent Service where it did not properly sanitize the recovery ID during a key recovery request, enabling a Reflected Cross-Site Scripting (XSS) vulnerability. An attacker could trick an authenticated victim into executing specially crafted Javascript code.\n1777579: CVE-2020-1721 pki-core: KRA vulnerable to reflected XSS via the getPk12 page\n\nCVE-2019-10221:\n\tA Reflected Cross Site Scripting vulnerability was found in the pki-ca module from the pki-core server. This flaw is caused by missing sanitization of the GET URL parameters. An attacker could abuse this flaw to trick an authenticated user into clicking a specially crafted link which can execute arbitrary code when viewed in a browser.\n1732565: CVE-2019-10221 pki-core: Reflected XSS in getcookies?url= endpoint in CA\n\nCVE-2019-10179:\n\tIt was found that the Key Recovery Authority (KRA) Agent Service did not properly sanitize recovery request search page, enabling a Reflected Cross Site Scripting (XSS) vulnerability. An attacker could trick an authenticated victim into executing specially crafted Javascript code.\n1695901: CVE-2019-10179 pki-core/pki-kra: Reflected XSS in recoveryID search field at KRA's DRM agent page in authorize recovery tab\n\nCVE-2019-10146:\n\tA Reflected Cross Site Scripting flaw was found in the pki-ca module from the pki-core server due to the CA Agent Service not properly sanitizing the certificate request page. An attacker could inject a specially crafted value that will be executed on the victim's browser.\n1710171: CVE-2019-10146 pki-core: Reflected XSS in 'path length' constraint field in CA's Agent page\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10146",
+        "ID": "CVE-2019-10146",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10179",
+        "ID": "CVE-2019-10179",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10221",
+        "ID": "CVE-2019-10221",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-1721",
+        "ID": "CVE-2020-1721",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25715",
+        "ID": "CVE-2020-25715",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20179",
+        "ID": "CVE-2021-20179",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "pki-symkey",
+          "Release": "12.amzn2.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/pki-symkey-10.5.18-12.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "pki-base",
+          "Release": "12.amzn2.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/pki-base-10.5.18-12.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "pki-base-java",
+          "Release": "12.amzn2.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/pki-base-java-10.5.18-12.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "pki-tools",
+          "Release": "12.amzn2.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/pki-tools-10.5.18-12.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "pki-server",
+          "Release": "12.amzn2.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/pki-server-10.5.18-12.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "pki-ca",
+          "Release": "12.amzn2.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/pki-ca-10.5.18-12.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "pki-kra",
+          "Release": "12.amzn2.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/pki-kra-10.5.18-12.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "pki-javadoc",
+          "Release": "12.amzn2.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/pki-javadoc-10.5.18-12.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "pki-core-debuginfo",
+          "Release": "12.amzn2.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/pki-core-debuginfo-10.5.18-12.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "pki-symkey",
+          "Release": "12.amzn2.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/pki-symkey-10.5.18-12.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "pki-tools",
+          "Release": "12.amzn2.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/pki-tools-10.5.18-12.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "pki-core-debuginfo",
+          "Release": "12.amzn2.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/pki-core-debuginfo-10.5.18-12.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "pki-symkey",
+          "Release": "12.amzn2.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/pki-symkey-10.5.18-12.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "pki-tools",
+          "Release": "12.amzn2.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/pki-tools-10.5.18-12.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "pki-core-debuginfo",
+          "Release": "12.amzn2.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/pki-core-debuginfo-10.5.18-12.amzn2.0.1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

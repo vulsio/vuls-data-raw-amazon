@@ -1,0 +1,43 @@
+{
+  "ID": "ALAS-2017-923",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-923: medium priority package update for cacti",
+  "Issued": {
+    "Date": "2017-11-15 19:56"
+  },
+  "Updated": {
+    "Date": "2017-11-20 21:38"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-15194:\n\tinclude/global_session.php in Cacti 1.1.25 has XSS related to (1) the URI or (2) the refresh page.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15194",
+        "ID": "CVE-2017-15194",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "cacti",
+          "Release": "2.18.amzn1",
+          "Version": "1.1.19",
+          "Filename": "Packages/cacti-1.1.19-2.18.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

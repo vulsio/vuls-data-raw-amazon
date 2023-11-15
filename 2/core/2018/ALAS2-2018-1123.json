@@ -1,0 +1,131 @@
+{
+  "ID": "ALAS2-2018-1123",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2018-1123: medium priority package update for fuse",
+  "Issued": {
+    "Date": "2018-12-06 20:29"
+  },
+  "Updated": {
+    "Date": "2018-12-08 01:51"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-10906:\n\tA vulnerability was discovered in fuse. When SELinux is active, fusermount is vulnerable to a restriction bypass. This allows non-root users to mount a FUSE file system with the &#039;allow_other&#039; mount option regardless of whether &#039;user_allow_other&#039; is set in the fuse configuration. An attacker may use this flaw to mount a FUSE file system, accessible by other users, and trick them into accessing files on that file system, possibly causing Denial of Service or other unspecified effects.\n1602996: \nCVE-2018-10906 fuse: bypass of the \"user_allow_other\" restriction when SELinux is active\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-10906",
+        "ID": "CVE-2018-10906",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fuse",
+          "Release": "11.amzn2",
+          "Version": "2.9.2",
+          "Filename": "Packages/fuse-2.9.2-11.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fuse-libs",
+          "Release": "11.amzn2",
+          "Version": "2.9.2",
+          "Filename": "Packages/fuse-libs-2.9.2-11.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fuse-devel",
+          "Release": "11.amzn2",
+          "Version": "2.9.2",
+          "Filename": "Packages/fuse-devel-2.9.2-11.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fuse-debuginfo",
+          "Release": "11.amzn2",
+          "Version": "2.9.2",
+          "Filename": "Packages/fuse-debuginfo-2.9.2-11.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fuse",
+          "Release": "11.amzn2",
+          "Version": "2.9.2",
+          "Filename": "Packages/fuse-2.9.2-11.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fuse-libs",
+          "Release": "11.amzn2",
+          "Version": "2.9.2",
+          "Filename": "Packages/fuse-libs-2.9.2-11.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fuse-devel",
+          "Release": "11.amzn2",
+          "Version": "2.9.2",
+          "Filename": "Packages/fuse-devel-2.9.2-11.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fuse-debuginfo",
+          "Release": "11.amzn2",
+          "Version": "2.9.2",
+          "Filename": "Packages/fuse-debuginfo-2.9.2-11.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fuse",
+          "Release": "11.amzn2",
+          "Version": "2.9.2",
+          "Filename": "Packages/fuse-2.9.2-11.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fuse-libs",
+          "Release": "11.amzn2",
+          "Version": "2.9.2",
+          "Filename": "Packages/fuse-libs-2.9.2-11.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fuse-devel",
+          "Release": "11.amzn2",
+          "Version": "2.9.2",
+          "Filename": "Packages/fuse-devel-2.9.2-11.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fuse-debuginfo",
+          "Release": "11.amzn2",
+          "Version": "2.9.2",
+          "Filename": "Packages/fuse-debuginfo-2.9.2-11.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

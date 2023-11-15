@@ -1,0 +1,89 @@
+{
+  "ID": "ALAS-2014-282",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-282: important priority package update for libXfont",
+  "Issued": {
+    "Date": "2014-02-03 15:26"
+  },
+  "Updated": {
+    "Date": "2014-09-16 22:21"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-6462:\n\tA stack-based buffer overflow flaw was found in the way the libXfont library parsed Glyph Bitmap Distribution Format (BDF) fonts. A malicious, local user could exploit this issue to potentially execute arbitrary code with the privileges of the X.Org server.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6462",
+        "ID": "CVE-2013-6462",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2014:0018.html",
+        "ID": "RHSA-2014:0018",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libXfont-devel",
+          "Release": "3.8.amzn1",
+          "Version": "1.4.5",
+          "Filename": "Packages/libXfont-devel-1.4.5-3.8.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libXfont-debuginfo",
+          "Release": "3.8.amzn1",
+          "Version": "1.4.5",
+          "Filename": "Packages/libXfont-debuginfo-1.4.5-3.8.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libXfont",
+          "Release": "3.8.amzn1",
+          "Version": "1.4.5",
+          "Filename": "Packages/libXfont-1.4.5-3.8.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libXfont-devel",
+          "Release": "3.8.amzn1",
+          "Version": "1.4.5",
+          "Filename": "Packages/libXfont-devel-1.4.5-3.8.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libXfont",
+          "Release": "3.8.amzn1",
+          "Version": "1.4.5",
+          "Filename": "Packages/libXfont-1.4.5-3.8.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libXfont-debuginfo",
+          "Release": "3.8.amzn1",
+          "Version": "1.4.5",
+          "Filename": "Packages/libXfont-debuginfo-1.4.5-3.8.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

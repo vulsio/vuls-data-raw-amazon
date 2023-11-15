@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS2-2021-1624",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1624: important priority package update for wpa_supplicant",
+  "Issued": {
+    "Date": "2021-03-25 18:31"
+  },
+  "Updated": {
+    "Date": "2021-03-25 20:51"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-27803:\n\tA flaw was found in the wpa_supplicant, in the way it processes P2P (Wi-Fi Direct) provision discovery requests. This flaw allows an attacker who is within radio range of the device running P2P discovery to cause termination of the wpa_supplicant process or potentially cause code execution. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability.\n1933361: CVE-2021-27803 wpa_supplicant: Use-after-free in P2P provision discovery processing\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-27803",
+        "ID": "CVE-2021-27803",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "wpa_supplicant",
+          "Release": "12.amzn2.2.1",
+          "Version": "2.6",
+          "Filename": "Packages/wpa_supplicant-2.6-12.amzn2.2.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "wpa_supplicant-debuginfo",
+          "Release": "12.amzn2.2.1",
+          "Version": "2.6",
+          "Filename": "Packages/wpa_supplicant-debuginfo-2.6-12.amzn2.2.1.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "wpa_supplicant",
+          "Release": "12.amzn2.2.1",
+          "Version": "2.6",
+          "Filename": "Packages/wpa_supplicant-2.6-12.amzn2.2.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "wpa_supplicant-debuginfo",
+          "Release": "12.amzn2.2.1",
+          "Version": "2.6",
+          "Filename": "Packages/wpa_supplicant-debuginfo-2.6-12.amzn2.2.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "wpa_supplicant",
+          "Release": "12.amzn2.2.1",
+          "Version": "2.6",
+          "Filename": "Packages/wpa_supplicant-2.6-12.amzn2.2.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "wpa_supplicant-debuginfo",
+          "Release": "12.amzn2.2.1",
+          "Version": "2.6",
+          "Filename": "Packages/wpa_supplicant-debuginfo-2.6-12.amzn2.2.1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

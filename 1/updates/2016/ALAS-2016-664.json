@@ -1,0 +1,99 @@
+{
+  "ID": "ALAS-2016-664",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-664: important priority package update for 389-ds-base",
+  "Issued": {
+    "Date": "2016-03-10 16:30"
+  },
+  "Updated": {
+    "Date": "2016-03-10 16:30"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-0741:\n\tAn infinite-loop vulnerability was discovered in the 389 directory server, where the server failed to correctly handle unexpectedly closed client connections. A remote attacker able to connect to the server could use this flaw to make the directory server consume an excessive amount of CPU and stop accepting connections (denial of service).\n1299416: \nCVE-2016-0741 389-ds-base: worker threads do not detect abnormally closed connections causing DoS\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0741",
+        "ID": "CVE-2016-0741",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "389-ds-base",
+          "Release": "26.47.amzn1",
+          "Version": "1.3.4.0",
+          "Filename": "Packages/389-ds-base-1.3.4.0-26.47.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "389-ds-base-devel",
+          "Release": "26.47.amzn1",
+          "Version": "1.3.4.0",
+          "Filename": "Packages/389-ds-base-devel-1.3.4.0-26.47.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "389-ds-base-debuginfo",
+          "Release": "26.47.amzn1",
+          "Version": "1.3.4.0",
+          "Filename": "Packages/389-ds-base-debuginfo-1.3.4.0-26.47.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "389-ds-base-libs",
+          "Release": "26.47.amzn1",
+          "Version": "1.3.4.0",
+          "Filename": "Packages/389-ds-base-libs-1.3.4.0-26.47.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "389-ds-base-devel",
+          "Release": "26.47.amzn1",
+          "Version": "1.3.4.0",
+          "Filename": "Packages/389-ds-base-devel-1.3.4.0-26.47.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "389-ds-base",
+          "Release": "26.47.amzn1",
+          "Version": "1.3.4.0",
+          "Filename": "Packages/389-ds-base-1.3.4.0-26.47.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "389-ds-base-libs",
+          "Release": "26.47.amzn1",
+          "Version": "1.3.4.0",
+          "Filename": "Packages/389-ds-base-libs-1.3.4.0-26.47.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "389-ds-base-debuginfo",
+          "Release": "26.47.amzn1",
+          "Version": "1.3.4.0",
+          "Filename": "Packages/389-ds-base-debuginfo-1.3.4.0-26.47.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

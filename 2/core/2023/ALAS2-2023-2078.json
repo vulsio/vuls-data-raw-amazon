@@ -1,0 +1,155 @@
+{
+  "ID": "ALAS2-2023-2078",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2078: medium priority package update for OpenEXR",
+  "Issued": {
+    "Date": "2023-06-05 16:39"
+  },
+  "Updated": {
+    "Date": "2023-06-07 22:38"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-3605:\n\tThere's a flaw in OpenEXR's rleUncompress functionality in versions prior to 3.0.5. An attacker who is able to submit a crafted file to an application linked with OpenEXR could cause an out-of-bounds read. The greatest risk from this flaw is to application availability.\n\nCVE-2021-3475:\n\tThere is a flaw in OpenEXR in versions before 3.0.0-beta. An attacker who can submit a crafted file to be processed by OpenEXR could cause an integer overflow, potentially leading to problems with application availability.\n\nCVE-2021-20304:\n\tA flaw was found in OpenEXR's hufDecode functionality. This flaw allows an attacker who can pass a crafted file to be processed by OpenEXR, to trigger an undefined right shift error. The highest threat from this vulnerability is to system availability.\n\nCVE-2021-20303:\n\tA flaw found in function dataWindowForTile() of IlmImf/ImfTiledMisc.cpp. An attacker who is able to submit a crafted file to be processed by OpenEXR could trigger an integer overflow, leading to an out-of-bounds write on the heap. The greatest impact of this flaw is to application availability, with some potential impact to data integrity as well.\n\nCVE-2021-20298:\n\tA flaw was found in OpenEXR's B44Compressor. This flaw allows an attacker who can submit a crafted file to be processed by OpenEXR, to exhaust all memory accessible to the application. The highest threat from this vulnerability is to system availability.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20298",
+        "ID": "CVE-2021-20298",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20303",
+        "ID": "CVE-2021-20303",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20304",
+        "ID": "CVE-2021-20304",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3475",
+        "ID": "CVE-2021-3475",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3605",
+        "ID": "CVE-2021-3605",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "OpenEXR",
+          "Release": "8.amzn2.0.2",
+          "Version": "1.7.1",
+          "Filename": "Packages/OpenEXR-1.7.1-8.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "OpenEXR-devel",
+          "Release": "8.amzn2.0.2",
+          "Version": "1.7.1",
+          "Filename": "Packages/OpenEXR-devel-1.7.1-8.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "OpenEXR-libs",
+          "Release": "8.amzn2.0.2",
+          "Version": "1.7.1",
+          "Filename": "Packages/OpenEXR-libs-1.7.1-8.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "OpenEXR-debuginfo",
+          "Release": "8.amzn2.0.2",
+          "Version": "1.7.1",
+          "Filename": "Packages/OpenEXR-debuginfo-1.7.1-8.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "OpenEXR",
+          "Release": "8.amzn2.0.2",
+          "Version": "1.7.1",
+          "Filename": "Packages/OpenEXR-1.7.1-8.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "OpenEXR-devel",
+          "Release": "8.amzn2.0.2",
+          "Version": "1.7.1",
+          "Filename": "Packages/OpenEXR-devel-1.7.1-8.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "OpenEXR-libs",
+          "Release": "8.amzn2.0.2",
+          "Version": "1.7.1",
+          "Filename": "Packages/OpenEXR-libs-1.7.1-8.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "OpenEXR-debuginfo",
+          "Release": "8.amzn2.0.2",
+          "Version": "1.7.1",
+          "Filename": "Packages/OpenEXR-debuginfo-1.7.1-8.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "OpenEXR",
+          "Release": "8.amzn2.0.2",
+          "Version": "1.7.1",
+          "Filename": "Packages/OpenEXR-1.7.1-8.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "OpenEXR-devel",
+          "Release": "8.amzn2.0.2",
+          "Version": "1.7.1",
+          "Filename": "Packages/OpenEXR-devel-1.7.1-8.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "OpenEXR-libs",
+          "Release": "8.amzn2.0.2",
+          "Version": "1.7.1",
+          "Filename": "Packages/OpenEXR-libs-1.7.1-8.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "OpenEXR-debuginfo",
+          "Release": "8.amzn2.0.2",
+          "Version": "1.7.1",
+          "Filename": "Packages/OpenEXR-debuginfo-1.7.1-8.amzn2.0.2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

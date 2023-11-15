@@ -1,0 +1,137 @@
+{
+  "ID": "ALAS-2013-241",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-241: medium priority package update for python26",
+  "Issued": {
+    "Date": "2013-11-03 12:09"
+  },
+  "Updated": {
+    "Date": "2015-06-22 10:35"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-4238:\n\tThe ssl.match_hostname function in the SSL module in Python 2.6 through 3.4 does not properly handle a '\\0' character in a domain name in the Subject Alternative Name field of an X.509 certificate, which allows man-in-the-middle attackers to spoof arbitrary SSL servers via a crafted certificate issued by a legitimate Certification Authority, a related issue to CVE-2009-2408.\nA flaw was found in the way the Python SSL module handled X.509 certificate fields that contain a NULL byte. An attacker could potentially exploit this flaw to conduct man-in-the-middle attacks to spoof SSL servers. Note that to exploit this issue, an attacker would need to obtain a carefully crafted certificate signed by an authority that the client trusts.\n996381: \nCVE-2013-4238 python: hostname check bypassing vulnerability in SSL module\n\nCVE-2013-1752:\n\tIt was discovered that multiple Python standard library modules implementing network protocols (such as httplib or smtplib) failed to restrict sizes of server responses. A malicious server could cause a client using one of the affected modules to consume an excessive amount of memory.\n1046174: \nCVE-2013-1752 python: multiple unbound readline() DoS flaws in python stdlib\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1752",
+        "ID": "CVE-2013-1752",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4238",
+        "ID": "CVE-2013-4238",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python26-tools",
+          "Release": "1.40.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-tools-2.6.9-1.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python26",
+          "Release": "1.40.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-2.6.9-1.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python26-debuginfo",
+          "Release": "1.40.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-debuginfo-2.6.9-1.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python26-test",
+          "Release": "1.40.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-test-2.6.9-1.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python26-libs",
+          "Release": "1.40.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-libs-2.6.9-1.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python26-devel",
+          "Release": "1.40.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-devel-2.6.9-1.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python26-devel",
+          "Release": "1.40.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-devel-2.6.9-1.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python26",
+          "Release": "1.40.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-2.6.9-1.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python26-test",
+          "Release": "1.40.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-test-2.6.9-1.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python26-tools",
+          "Release": "1.40.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-tools-2.6.9-1.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python26-libs",
+          "Release": "1.40.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-libs-2.6.9-1.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python26-debuginfo",
+          "Release": "1.40.amzn1",
+          "Version": "2.6.9",
+          "Filename": "Packages/python26-debuginfo-2.6.9-1.40.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

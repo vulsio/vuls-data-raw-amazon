@@ -1,0 +1,609 @@
+{
+  "ID": "ALAS-2017-788",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-788: medium priority package update for php70",
+  "Issued": {
+    "Date": "2017-01-26 18:00"
+  },
+  "Updated": {
+    "Date": "2017-01-26 18:00"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-9936:\n\tThe unserialize implementation in ext/standard/var.c in PHP 7.x before 7.0.14 allows remote attackers to cause a denial of service (use-after-free) or possibly have unspecified other impact via crafted serialized data.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2015-6834.\n1404735: \nCVE-2016-9936 php: Use After Free in unserialize()\n\nCVE-2016-9935:\n\tThe php_wddx_push_element function in ext/wddx/wddx.c in PHP before 5.6.29 and 7.x before 7.0.14 allows remote attackers to cause a denial of service (out-of-bounds read and memory corruption) or possibly have unspecified other impact via an empty boolean element in a wddxPacket XML document.\n1404731: \nCVE-2016-9935 php: Invalid read when wddx decodes empty boolean element\n\nCVE-2016-9934:\n\text/wddx/wddx.c in PHP before 5.6.28 and 7.x before 7.0.13 allows remote attackers to cause a denial of service (NULL pointer dereference) via crafted serialized data in a wddxPacket XML document, as demonstrated by a PDORow string.\n1404726: \nCVE-2016-9934 php: NULL Pointer Dereference in WDDX Packet Deserialization with PDORow\n\nCVE-2016-9933:\n\tStack consumption vulnerability in the gdImageFillToBorder function in gd.c in the GD Graphics Library (aka libgd) before 2.2.2, as used in PHP before 5.6.28 and 7.x before 7.0.13, allows remote attackers to cause a denial of service (segmentation violation) via a crafted imagefilltoborder call that triggers use of a negative color value.\n1404723: \nCVE-2016-9933 php, gd: Stack overflow in gdImageFillToBorder on truecolor images\n\nCVE-2016-9137:\n\tUse-after-free vulnerability in the CURLFile implementation in ext/curl/curl_file.c in PHP before 5.6.27 and 7.x before 7.0.12 allows remote attackers to cause a denial of service or possibly have unspecified other impact via crafted serialized data that is mishandled during __wakeup processing.\n1391000: \nCVE-2016-9137 php: Use after free in unserialize()\n\nCVE-2016-7480:\n\tThe SplObjectStorage unserialize implementation in ext/spl/spl_observer.c in PHP before 7.0.12 does not verify that a key is an object, which allows remote attackers to execute arbitrary code or cause a denial of service (uninitialized memory access) via crafted serialized data.\n1416499: \nCVE-2016-7480 php: Use of uninitialized value in SplObjectStorag::unserialize\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7480",
+        "ID": "CVE-2016-7480",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9137",
+        "ID": "CVE-2016-9137",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9933",
+        "ID": "CVE-2016-9933",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9934",
+        "ID": "CVE-2016-9934",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9935",
+        "ID": "CVE-2016-9935",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9936",
+        "ID": "CVE-2016-9936",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-embedded",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-embedded-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-json",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-json-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-pdo-dblib",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-pdo-dblib-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-common",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-common-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-intl",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-intl-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-cli",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-cli-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-soap",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-soap-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-pspell",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-pspell-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-xmlrpc",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-xmlrpc-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-zip",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-zip-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-enchant",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-enchant-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-gd",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-gd-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-mysqlnd",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-mysqlnd-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-imap",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-imap-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-recode",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-recode-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-mcrypt",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-mcrypt-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-gmp",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-gmp-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-mbstring",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-mbstring-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-xml",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-xml-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-pdo",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-pdo-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-pgsql",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-pgsql-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-debuginfo",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-debuginfo-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-dba",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-dba-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-process",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-process-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-devel",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-devel-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-fpm",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-fpm-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-ldap",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-ldap-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-bcmath",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-bcmath-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-opcache",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-opcache-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-snmp",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-snmp-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-odbc",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-odbc-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-tidy",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-tidy-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php70-dbg",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-dbg-7.0.14-1.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-pspell",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-pspell-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-bcmath",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-bcmath-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-mbstring",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-mbstring-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-mysqlnd",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-mysqlnd-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-mcrypt",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-mcrypt-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-imap",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-imap-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-intl",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-intl-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-xmlrpc",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-xmlrpc-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-enchant",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-enchant-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-debuginfo",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-debuginfo-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-embedded",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-embedded-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-zip",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-zip-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-dbg",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-dbg-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-soap",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-soap-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-snmp",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-snmp-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-common",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-common-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-gd",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-gd-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-ldap",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-ldap-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-gmp",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-gmp-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-cli",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-cli-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-devel",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-devel-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-tidy",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-tidy-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-xml",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-xml-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-pdo",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-pdo-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-dba",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-dba-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-process",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-process-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-recode",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-recode-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-pgsql",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-pgsql-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-pdo-dblib",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-pdo-dblib-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-fpm",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-fpm-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-opcache",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-opcache-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-json",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-json-7.0.14-1.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php70-odbc",
+          "Release": "1.20.amzn1",
+          "Version": "7.0.14",
+          "Filename": "Packages/php70-odbc-7.0.14-1.20.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

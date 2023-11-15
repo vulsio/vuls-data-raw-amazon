@@ -1,0 +1,101 @@
+{
+  "ID": "ALAS-2017-852",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-852: important priority package update for openvpn",
+  "Issued": {
+    "Date": "2017-06-27 17:47"
+  },
+  "Updated": {
+    "Date": "2017-07-06 22:56"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-7522:\n\tOpenVPN versions before 2.4.3 and before 2.3.17 are vulnerable to denial-of-service by authenticated remote attacker via sending a certificate with an embedded NULL character.\n1463642: \nCVE-2017-7508 CVE-2017-7520 CVE-2017-7521 CVE-2017-7522 openvpn: Multiple security issues fixed in OpenVPN 2.4.3 and 2.3.17\n\nCVE-2017-7521:\n\tOpenVPN versions before 2.4.3 and before 2.3.17 are vulnerable to remote denial-of-service due to memory exhaustion caused by memory leaks and double-free issue in extract_x509_extension().\n1463642: \nCVE-2017-7508 CVE-2017-7520 CVE-2017-7521 CVE-2017-7522 openvpn: Multiple security issues fixed in OpenVPN 2.4.3 and 2.3.17\n\nCVE-2017-7520:\n\tOpenVPN versions before 2.4.3 and before 2.3.17 are vulnerable to denial-of-service and/or possibly sensitive memory leak triggered by man-in-the-middle attacker.\n1463642: \nCVE-2017-7508 CVE-2017-7520 CVE-2017-7521 CVE-2017-7522 openvpn: Multiple security issues fixed in OpenVPN 2.4.3 and 2.3.17\n\nCVE-2017-7508:\n\tOpenVPN versions before 2.4.3 and before 2.3.17 are vulnerable to remote denial-of-service when receiving malformed IPv6 packet.\n1463642: \nCVE-2017-7508 CVE-2017-7520 CVE-2017-7521 CVE-2017-7522 openvpn: Multiple security issues fixed in OpenVPN 2.4.3 and 2.3.17\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7508",
+        "ID": "CVE-2017-7508",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7520",
+        "ID": "CVE-2017-7520",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7521",
+        "ID": "CVE-2017-7521",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7522",
+        "ID": "CVE-2017-7522",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openvpn",
+          "Release": "1.19.amzn1",
+          "Version": "2.4.3",
+          "Filename": "Packages/openvpn-2.4.3-1.19.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openvpn-debuginfo",
+          "Release": "1.19.amzn1",
+          "Version": "2.4.3",
+          "Filename": "Packages/openvpn-debuginfo-2.4.3-1.19.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openvpn-devel",
+          "Release": "1.19.amzn1",
+          "Version": "2.4.3",
+          "Filename": "Packages/openvpn-devel-2.4.3-1.19.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openvpn-devel",
+          "Release": "1.19.amzn1",
+          "Version": "2.4.3",
+          "Filename": "Packages/openvpn-devel-2.4.3-1.19.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openvpn-debuginfo",
+          "Release": "1.19.amzn1",
+          "Version": "2.4.3",
+          "Filename": "Packages/openvpn-debuginfo-2.4.3-1.19.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openvpn",
+          "Release": "1.19.amzn1",
+          "Version": "2.4.3",
+          "Filename": "Packages/openvpn-2.4.3-1.19.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

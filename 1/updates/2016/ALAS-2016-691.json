@@ -1,0 +1,159 @@
+{
+  "ID": "ALAS-2016-691",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-691: medium priority package update for krb5",
+  "Issued": {
+    "Date": "2016-04-21 16:00"
+  },
+  "Updated": {
+    "Date": "2016-04-21 16:00"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-8631:\n\tA memory leak flaw was found in the krb5_unparse_name() function of the MIT Kerberos kadmind service. An authenticated attacker could repeatedly send specially crafted requests to the server, which could cause the server to consume large amounts of memory resources, ultimately leading to a denial of service due to memory exhaustion.\n1302642: \nCVE-2015-8631 krb5: Memory leak caused by supplying a null principal name in request\n\nCVE-2015-8630:\n\tA NULL pointer dereference flaw was found in the procedure used by the MIT Kerberos kadmind service to store policies: the kadm5_create_principal_3() and kadm5_modify_principal() function did not ensure that a policy was given when KADM5_POLICY was set. An authenticated attacker with permissions to modify the database could use this flaw to add or modify a principal with a policy set to NULL, causing the kadmind service to crash.\n1302632: \nCVE-2015-8630 krb5: krb5 doesn't check for null policy when KADM5_POLICY is set in the mask\n\nCVE-2015-8629:\n\tAn out-of-bounds read flaw was found in the kadmind service of MIT Kerberos. An authenticated attacker could send a maliciously crafted message to force kadmind to read beyond the end of allocated memory, and write the memory contents to the KDC database if the attacker has write permission, leading to information disclosure.\n1302617: \nCVE-2015-8629 krb5: xdr_nullstring() doesn't check for terminating null character\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8629",
+        "ID": "CVE-2015-8629",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8630",
+        "ID": "CVE-2015-8630",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8631",
+        "ID": "CVE-2015-8631",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-workstation",
+          "Release": "12.40.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-workstation-1.13.2-12.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-debuginfo",
+          "Release": "12.40.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-debuginfo-1.13.2-12.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-libs",
+          "Release": "12.40.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-libs-1.13.2-12.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-server",
+          "Release": "12.40.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-server-1.13.2-12.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-server-ldap",
+          "Release": "12.40.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-server-ldap-1.13.2-12.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-devel",
+          "Release": "12.40.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-devel-1.13.2-12.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-pkinit-openssl",
+          "Release": "12.40.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-pkinit-openssl-1.13.2-12.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-debuginfo",
+          "Release": "12.40.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-debuginfo-1.13.2-12.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-libs",
+          "Release": "12.40.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-libs-1.13.2-12.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-devel",
+          "Release": "12.40.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-devel-1.13.2-12.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-pkinit-openssl",
+          "Release": "12.40.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-pkinit-openssl-1.13.2-12.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-workstation",
+          "Release": "12.40.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-workstation-1.13.2-12.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-server",
+          "Release": "12.40.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-server-1.13.2-12.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-server-ldap",
+          "Release": "12.40.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-server-ldap-1.13.2-12.40.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

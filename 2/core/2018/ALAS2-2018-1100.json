@@ -1,0 +1,145 @@
+{
+  "ID": "ALAS2-2018-1100",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2018-1100: medium priority package update for kernel",
+  "Issued": {
+    "Date": "2018-11-07 21:58"
+  },
+  "Updated": {
+    "Date": "2018-11-08 23:39"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-18021:\n\tA vulnerability was discovered in the Linux kernel that allows an attacker to escalate privileges with using a 64-bit ARM architecture. A local attacker with permission to create KVM-based virtual machines can both panic the hypervisor by triggering an illegal exception return (resulting in a DoS) and to redirect execution elsewhere within the hypervisor with full register control, instead of causing a return to the guest.\n1635475: \nCVE-2018-18021 kernel: Privilege escalation on arm64 via KVM hypervisor\n\nCVE-2018-17972:\n\tAn issue was discovered in the proc_pid_stack function in fs/proc/base.c in the Linux kernel. An attacker with a local account can trick the stack unwinder code to leak stack contents to userspace. The fix allows only root to inspect the kernel stack of an arbitrary task.\n1636349: \nCVE-2018-17972 kernel: Unprivileged users able to inspect kernel stacks of arbitrary tasks\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17972",
+        "ID": "CVE-2018-17972",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18021",
+        "ID": "CVE-2018-18021",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "80.57.amzn2",
+          "Version": "4.14.77",
+          "Filename": "Packages/kernel-4.14.77-80.57.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "80.57.amzn2",
+          "Version": "4.14.77",
+          "Filename": "Packages/kernel-headers-4.14.77-80.57.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "80.57.amzn2",
+          "Version": "4.14.77",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.14.77-80.57.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "80.57.amzn2",
+          "Version": "4.14.77",
+          "Filename": "Packages/perf-4.14.77-80.57.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "80.57.amzn2",
+          "Version": "4.14.77",
+          "Filename": "Packages/perf-debuginfo-4.14.77-80.57.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "80.57.amzn2",
+          "Version": "4.14.77",
+          "Filename": "Packages/python-perf-4.14.77-80.57.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "80.57.amzn2",
+          "Version": "4.14.77",
+          "Filename": "Packages/python-perf-debuginfo-4.14.77-80.57.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "80.57.amzn2",
+          "Version": "4.14.77",
+          "Filename": "Packages/kernel-tools-4.14.77-80.57.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "80.57.amzn2",
+          "Version": "4.14.77",
+          "Filename": "Packages/kernel-tools-devel-4.14.77-80.57.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "80.57.amzn2",
+          "Version": "4.14.77",
+          "Filename": "Packages/kernel-tools-debuginfo-4.14.77-80.57.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "80.57.amzn2",
+          "Version": "4.14.77",
+          "Filename": "Packages/kernel-devel-4.14.77-80.57.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "80.57.amzn2",
+          "Version": "4.14.77",
+          "Filename": "Packages/kernel-debuginfo-4.14.77-80.57.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "80.57.amzn2",
+          "Version": "4.14.77",
+          "Filename": "Packages/kernel-headers-4.14.77-80.57.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

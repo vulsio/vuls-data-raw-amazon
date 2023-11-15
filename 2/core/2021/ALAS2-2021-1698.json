@@ -1,0 +1,51 @@
+{
+  "ID": "ALAS2-2021-1698",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1698: important priority package update for xstream",
+  "Issued": {
+    "Date": "2021-08-04 20:32"
+  },
+  "Updated": {
+    "Date": "2021-08-05 21:24"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-29505:\n\tA flaw was found in XStream. By manipulating the processed input stream, a remote attacker may be able to obtain sufficient rights to execute commands. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n1966735: CVE-2021-29505 XStream: remote command execution attack by manipulating the processed input stream\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-29505",
+        "ID": "CVE-2021-29505",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "xstream",
+          "Release": "14.amzn2",
+          "Version": "1.3.1",
+          "Filename": "Packages/xstream-1.3.1-14.amzn2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "xstream-javadoc",
+          "Release": "14.amzn2",
+          "Version": "1.3.1",
+          "Filename": "Packages/xstream-javadoc-1.3.1-14.amzn2.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

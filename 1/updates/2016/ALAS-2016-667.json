@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS-2016-667",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-667: critical priority package update for nss-util",
+  "Issued": {
+    "Date": "2016-03-10 16:30"
+  },
+  "Updated": {
+    "Date": "2016-03-10 16:30"
+  },
+  "Severity": "critical",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-1950:\n\tA heap-based buffer overflow flaw was found in the way NSS parsed certain ASN.1 structures. An attacker could use this flaw to create a specially crafted certificate which, when parsed by NSS, could cause it to crash, or execute arbitrary code, using the permissions of the user running an application compiled against the NSS library.\n1310509: \nCVE-2016-1950 nss: Heap buffer overflow vulnerability in ASN1 certificate parsing (MFSA 2016-35)\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1950",
+        "ID": "CVE-2016-1950",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "nss-util",
+          "Release": "9.49.amzn1",
+          "Version": "3.19.1",
+          "Filename": "Packages/nss-util-3.19.1-9.49.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "nss-util-devel",
+          "Release": "9.49.amzn1",
+          "Version": "3.19.1",
+          "Filename": "Packages/nss-util-devel-3.19.1-9.49.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "nss-util-debuginfo",
+          "Release": "9.49.amzn1",
+          "Version": "3.19.1",
+          "Filename": "Packages/nss-util-debuginfo-3.19.1-9.49.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "nss-util",
+          "Release": "9.49.amzn1",
+          "Version": "3.19.1",
+          "Filename": "Packages/nss-util-3.19.1-9.49.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "nss-util-devel",
+          "Release": "9.49.amzn1",
+          "Version": "3.19.1",
+          "Filename": "Packages/nss-util-devel-3.19.1-9.49.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "nss-util-debuginfo",
+          "Release": "9.49.amzn1",
+          "Version": "3.19.1",
+          "Filename": "Packages/nss-util-debuginfo-3.19.1-9.49.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

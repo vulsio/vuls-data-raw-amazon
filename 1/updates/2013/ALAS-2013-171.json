@@ -1,0 +1,133 @@
+{
+  "ID": "ALAS-2013-171",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-171: medium priority package update for openssl",
+  "Issued": {
+    "Date": "2013-03-14 22:04"
+  },
+  "Updated": {
+    "Date": "2014-09-15 22:41"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-0169:\n\tIt was discovered that OpenSSL leaked timing information when decrypting TLS/SSL and DTLS protocol encrypted records when CBC-mode cipher suites were used. A remote attacker could possibly use this flaw to retrieve plain text from the encrypted packets by using a TLS/SSL or DTLS server as a padding oracle.\n\nCVE-2013-0166:\n\tA NULL pointer dereference flaw was found in the OCSP response verification in OpenSSL. A malicious OCSP server could use this flaw to crash applications performing OCSP verification by sending a specially-crafted response.\n\nCVE-2012-4929:\n\tIt was discovered that the TLS/SSL protocol could leak information about plain text when optional compression was used. An attacker able to control part of the plain text sent over an encrypted TLS/SSL connection could possibly use this flaw to recover other portions of the plain text.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4929",
+        "ID": "CVE-2012-4929",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0166",
+        "ID": "CVE-2013-0166",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-0169",
+        "ID": "CVE-2013-0169",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2013:0587.html",
+        "ID": "RHSA-2013:0587",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssl-debuginfo",
+          "Release": "1.48.amzn1",
+          "Version": "1.0.0k",
+          "Filename": "Packages/openssl-debuginfo-1.0.0k-1.48.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssl",
+          "Release": "1.48.amzn1",
+          "Version": "1.0.0k",
+          "Filename": "Packages/openssl-1.0.0k-1.48.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssl-devel",
+          "Release": "1.48.amzn1",
+          "Version": "1.0.0k",
+          "Filename": "Packages/openssl-devel-1.0.0k-1.48.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssl-perl",
+          "Release": "1.48.amzn1",
+          "Version": "1.0.0k",
+          "Filename": "Packages/openssl-perl-1.0.0k-1.48.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssl-static",
+          "Release": "1.48.amzn1",
+          "Version": "1.0.0k",
+          "Filename": "Packages/openssl-static-1.0.0k-1.48.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssl-devel",
+          "Release": "1.48.amzn1",
+          "Version": "1.0.0k",
+          "Filename": "Packages/openssl-devel-1.0.0k-1.48.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssl-static",
+          "Release": "1.48.amzn1",
+          "Version": "1.0.0k",
+          "Filename": "Packages/openssl-static-1.0.0k-1.48.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssl",
+          "Release": "1.48.amzn1",
+          "Version": "1.0.0k",
+          "Filename": "Packages/openssl-1.0.0k-1.48.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssl-debuginfo",
+          "Release": "1.48.amzn1",
+          "Version": "1.0.0k",
+          "Filename": "Packages/openssl-debuginfo-1.0.0k-1.48.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssl-perl",
+          "Release": "1.48.amzn1",
+          "Version": "1.0.0k",
+          "Filename": "Packages/openssl-perl-1.0.0k-1.48.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

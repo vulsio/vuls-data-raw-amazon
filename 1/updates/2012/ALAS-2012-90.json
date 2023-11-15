@@ -1,0 +1,99 @@
+{
+  "ID": "ALAS-2012-90",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2012-90: low priority package update for quagga",
+  "Issued": {
+    "Date": "2012-06-19 16:01"
+  },
+  "Updated": {
+    "Date": "2014-09-14 16:37"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-1820:\n\tTwo flaws were found in the way the bgpd daemon processed certain BGP OPEN messages. A configured BGP peer could cause bgpd on a target system to abort via a specially-crafted BGP OPEN message.\nThe bgp_capability_orf function in bgpd in Quagga 0.99.20.1 and earlier allows remote attackers to cause a denial of service (assertion failure and daemon exit) by leveraging a BGP peering relationship and sending a malformed Outbound Route Filtering (ORF) capability TLV in an OPEN message.\n817580: \nCVE-2012-1820 quagga (bgpd): Assertion failure by processing BGP OPEN message with malformed ORF capability TLV (VU#962587)\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1820",
+        "ID": "CVE-2012-1820",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "quagga-devel",
+          "Release": "1.5.amzn1",
+          "Version": "0.99.20.1",
+          "Filename": "Packages/quagga-devel-0.99.20.1-1.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "quagga-debuginfo",
+          "Release": "1.5.amzn1",
+          "Version": "0.99.20.1",
+          "Filename": "Packages/quagga-debuginfo-0.99.20.1-1.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "quagga",
+          "Release": "1.5.amzn1",
+          "Version": "0.99.20.1",
+          "Filename": "Packages/quagga-0.99.20.1-1.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "quagga-contrib",
+          "Release": "1.5.amzn1",
+          "Version": "0.99.20.1",
+          "Filename": "Packages/quagga-contrib-0.99.20.1-1.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "quagga",
+          "Release": "1.5.amzn1",
+          "Version": "0.99.20.1",
+          "Filename": "Packages/quagga-0.99.20.1-1.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "quagga-debuginfo",
+          "Release": "1.5.amzn1",
+          "Version": "0.99.20.1",
+          "Filename": "Packages/quagga-debuginfo-0.99.20.1-1.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "quagga-devel",
+          "Release": "1.5.amzn1",
+          "Version": "0.99.20.1",
+          "Filename": "Packages/quagga-devel-0.99.20.1-1.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "quagga-contrib",
+          "Release": "1.5.amzn1",
+          "Version": "0.99.20.1",
+          "Filename": "Packages/quagga-contrib-0.99.20.1-1.5.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

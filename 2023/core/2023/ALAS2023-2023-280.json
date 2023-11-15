@@ -1,0 +1,91 @@
+{
+  "ID": "ALAS2023-2023-280",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2023 - ALAS2023-2023-280: Medium priority package update for bouncycastle",
+  "Issued": {
+    "Date": "2023-08-03 20:26:00"
+  },
+  "Updated": {
+    "Date": "2023-08-09 23:15:00"
+  },
+  "Severity": "Medium",
+  "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-33201:\n\tA flaw was found in Bouncy Castle 1.73. This issue targets the fix of LDAP wild cards. Before the fix there was no validation for the X.500 name of any certificate, subject, or issuer, so the presence of a wild card may lead to information disclosure. This could allow a malicious user to obtain unauthorized information via blind LDAP Injection, exploring the environment and enumerating data. The exploit depends on the structure of the target LDAP directory as well as what kind of errors are exposed to the user.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-33201",
+        "ID": "CVE-2023-33201",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2023",
+      "Name": "Amazon Linux 2023",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "bouncycastle-mail",
+          "Release": "4.amzn2023.0.3",
+          "Version": "1.70",
+          "Filename": "Packages/bouncycastle-mail-1.70-4.amzn2023.0.3.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "bouncycastle-pkix",
+          "Release": "4.amzn2023.0.3",
+          "Version": "1.70",
+          "Filename": "Packages/bouncycastle-pkix-1.70-4.amzn2023.0.3.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "bouncycastle-pg",
+          "Release": "4.amzn2023.0.3",
+          "Version": "1.70",
+          "Filename": "Packages/bouncycastle-pg-1.70-4.amzn2023.0.3.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "bouncycastle-tls",
+          "Release": "4.amzn2023.0.3",
+          "Version": "1.70",
+          "Filename": "Packages/bouncycastle-tls-1.70-4.amzn2023.0.3.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "bouncycastle-util",
+          "Release": "4.amzn2023.0.3",
+          "Version": "1.70",
+          "Filename": "Packages/bouncycastle-util-1.70-4.amzn2023.0.3.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "bouncycastle",
+          "Release": "4.amzn2023.0.3",
+          "Version": "1.70",
+          "Filename": "Packages/bouncycastle-1.70-4.amzn2023.0.3.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "bouncycastle-javadoc",
+          "Release": "4.amzn2023.0.3",
+          "Version": "1.70",
+          "Filename": "Packages/bouncycastle-javadoc-1.70-4.amzn2023.0.3.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

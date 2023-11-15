@@ -1,0 +1,115 @@
+{
+  "ID": "ALAS-2015-543",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-543: medium priority package update for libcap-ng",
+  "Issued": {
+    "Date": "2015-06-16 10:27"
+  },
+  "Updated": {
+    "Date": "2015-06-16 11:41"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-3215:\n\tA flaw was found in the way seunshare, a utility for running executables under a different security context, used the capng_lock functionality of the libcap-ng library. The subsequent invocation of suid root binaries that relied on the fact that the setuid() system call, among others, also sets the saved set-user-ID when dropping the binaries' process privileges, could allow a local, unprivileged user to potentially escalate their privileges on the system. Note: the fix for this issue is the kernel part of the overall fix, and introduces the PR_SET_NO_NEW_PRIVS functionality and the related SELinux exec transitions support.\n1095855: \nCVE-2014-3215 policycoreutils: local privilege escalation via seunshare\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3215",
+        "ID": "CVE-2014-3215",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcap-ng",
+          "Release": "5.13.amzn1",
+          "Version": "0.7.3",
+          "Filename": "Packages/libcap-ng-0.7.3-5.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcap-ng-debuginfo",
+          "Release": "5.13.amzn1",
+          "Version": "0.7.3",
+          "Filename": "Packages/libcap-ng-debuginfo-0.7.3-5.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcap-ng-python",
+          "Release": "5.13.amzn1",
+          "Version": "0.7.3",
+          "Filename": "Packages/libcap-ng-python-0.7.3-5.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcap-ng-devel",
+          "Release": "5.13.amzn1",
+          "Version": "0.7.3",
+          "Filename": "Packages/libcap-ng-devel-0.7.3-5.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcap-ng-utils",
+          "Release": "5.13.amzn1",
+          "Version": "0.7.3",
+          "Filename": "Packages/libcap-ng-utils-0.7.3-5.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcap-ng-utils",
+          "Release": "5.13.amzn1",
+          "Version": "0.7.3",
+          "Filename": "Packages/libcap-ng-utils-0.7.3-5.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcap-ng-python",
+          "Release": "5.13.amzn1",
+          "Version": "0.7.3",
+          "Filename": "Packages/libcap-ng-python-0.7.3-5.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcap-ng-debuginfo",
+          "Release": "5.13.amzn1",
+          "Version": "0.7.3",
+          "Filename": "Packages/libcap-ng-debuginfo-0.7.3-5.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcap-ng",
+          "Release": "5.13.amzn1",
+          "Version": "0.7.3",
+          "Filename": "Packages/libcap-ng-0.7.3-5.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcap-ng-devel",
+          "Release": "5.13.amzn1",
+          "Version": "0.7.3",
+          "Filename": "Packages/libcap-ng-devel-0.7.3-5.13.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

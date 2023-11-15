@@ -1,0 +1,105 @@
+{
+  "ID": "ALAS2-2019-1195",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1195: critical priority package update for thunderbird",
+  "Issued": {
+    "Date": "2019-04-25 16:37"
+  },
+  "Updated": {
+    "Date": "2019-04-26 01:28"
+  },
+  "Severity": "critical",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2019-9813:\n\t1692182: \nCVE-2019-9813 Mozilla: Ionmonkey type confusion with __proto__ mutations\n\nCVE-2019-9810:\n\t1692181: \nCVE-2019-9810 Mozilla: IonMonkey MArraySlice has incorrect alias information\n\nCVE-2019-9796:\n\t1690681: \nCVE-2019-9796 Mozilla: Use-after-free with SMIL animation controller\n\nCVE-2019-9795:\n\t1690680: \nCVE-2019-9795 Mozilla: Type-confusion in IonMonkey JIT compiler\n\nCVE-2019-9793:\n\t1690678: \nCVE-2019-9793 Mozilla: Improper bounds checks when Spectre mitigations are disabled\n\nCVE-2019-9792:\n\t1690677: \nCVE-2019-9792 Mozilla: IonMonkey leaks JS_OPTIMIZED_OUT magic value to script\n\nCVE-2019-9791:\n\t1690676: \nCVE-2019-9791 Mozilla: Type inference is incorrect for constructors entered through on-stack replacement with IonMonkey\n\nCVE-2019-9790:\n\t1690675: \nCVE-2019-9790 Mozilla: Use-after-free when removing in-use DOM elements\n\nCVE-2019-9788:\n\t1690674: \nCVE-2019-9788 Mozilla: Memory safety bugs fixed in Firefox 66 and Firefox ESR 60.6\n\nCVE-2018-18506:\n\tWhen proxy auto-detection is enabled, if a web server serves a Proxy Auto-Configuration (PAC) file or if a PAC file is loaded locally, this PAC file can specify that requests to the localhost are to be sent through the proxy to another server. This behavior is disallowed by default when a proxy is manually configured, but when enabled could allow for attacks on services and tools that bind to the localhost for networked behavior if they are accessed through browsing. This vulnerability affects Firefox &lt; 65.\n1690673: \nCVE-2018-18506 Mozilla: Proxy Auto-Configuration file can define localhost access to be proxied\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18506",
+        "ID": "CVE-2018-18506",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9788",
+        "ID": "CVE-2019-9788",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9790",
+        "ID": "CVE-2019-9790",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9791",
+        "ID": "CVE-2019-9791",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9792",
+        "ID": "CVE-2019-9792",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9793",
+        "ID": "CVE-2019-9793",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9795",
+        "ID": "CVE-2019-9795",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9796",
+        "ID": "CVE-2019-9796",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9810",
+        "ID": "CVE-2019-9810",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9813",
+        "ID": "CVE-2019-9813",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "thunderbird",
+          "Release": "1.amzn2.0.1",
+          "Version": "60.6.1",
+          "Filename": "Packages/thunderbird-60.6.1-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "thunderbird-debuginfo",
+          "Release": "1.amzn2.0.1",
+          "Version": "60.6.1",
+          "Filename": "Packages/thunderbird-debuginfo-60.6.1-1.amzn2.0.1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,319 @@
+{
+  "ID": "ALAS2022-2022-039",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2022 - ALAS2022-2022-039: Important priority package update for kernel",
+  "Issued": {
+    "Date": "2022-03-07 23:59"
+  },
+  "Updated": {
+    "Date": "2022-05-12 15:44"
+  },
+  "Severity": "Important",
+  "Description": "Package updates are available for Amazon Linux 2022 that fix the following vulnerabilities:\nCVE-2022-23960:\n\tThe Amazon Linux kernel now enables, by default, a software mitigation for this issue, on all ARM-based EC2 instance types.\n\nCVE-2022-1055:\n\tA use-after-free vulnerability was found in the tc_new_tfilter function in net/sched/cls_api.c in the Linux kernel. The availability of local, unprivileged user namespaces allows privilege escalation.\n\nCVE-2022-0847:\n\tA flaw was found in the way the \"flags\" member of the new pipe buffer structure was lacking proper initialization in copy_page_to_iter_pipe and push_pipe functions in the Linux kernel and could thus contain stale values. An unprivileged local user could use this flaw to write to pages in the page cache backed by read only files and as such escalate their privileges on the system.\n\nCVE-2022-0002:\n\tNon-transparent sharing of branch predictor within a context in some Intel(r) Processors may allow an authorized user to potentially enable information disclosure via local access.\n\nCVE-2022-0001:\n\tNon-transparent sharing of branch predictor selectors between contexts in some Intel(R) Processors may allow an authorized user to potentially enable information disclosure.\n\nCVE-2021-26401:\n\tAMD recommends using a software mitigation for this issue, which the kernel is enabling by default. The Linux kernel will use the generic retpoline software mitigation, instead of the specialized AMD one, on AMD instances (*5a*). This is done by default, and no administrator action is needed.\n\nCVE-2021-26341:\n\tAMD recommends using a software mitigation for this issue, which the kernel is enabling by default. The Linux kernel will use the generic retpoline software mitigation, instead of the specialized AMD one, on AMD instances (*5a*). This is done by default, and no administrator action is needed.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-26341",
+        "ID": "CVE-2021-26341",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-26401",
+        "ID": "CVE-2021-26401",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0001",
+        "ID": "CVE-2022-0001",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0002",
+        "ID": "CVE-2022-0002",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0847",
+        "ID": "CVE-2022-0847",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1055",
+        "ID": "CVE-2022-1055",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23960",
+        "ID": "CVE-2022-23960",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2022",
+      "Name": "Amazon Linux 2022",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python3-perf-debuginfo",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/python3-perf-debuginfo-5.15.25-14.106.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-5.15.25-14.106",
+          "Release": "0.amzn2022",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-5.15.25-14.106-1.0-0.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "bpftool",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/bpftool-5.15.25-14.106.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/perf-5.15.25-14.106.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/kernel-headers-5.15.25-14.106.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/kernel-tools-debuginfo-5.15.25-14.106.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "bpftool-debuginfo",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/bpftool-debuginfo-5.15.25-14.106.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/perf-debuginfo-5.15.25-14.106.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/kernel-tools-devel-5.15.25-14.106.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python3-perf",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/python3-perf-5.15.25-14.106.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/kernel-debuginfo-5.15.25-14.106.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/kernel-5.15.25-14.106.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/kernel-tools-5.15.25-14.106.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-5.15.25-14.106.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/kernel-devel-5.15.25-14.106.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/kernel-headers-5.15.25-14.106.amzn2022.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "bpftool",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/bpftool-5.15.25-14.106.amzn2022.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python3-perf",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/python3-perf-5.15.25-14.106.amzn2022.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python3-perf-debuginfo",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/python3-perf-debuginfo-5.15.25-14.106.amzn2022.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "bpftool-debuginfo",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/bpftool-debuginfo-5.15.25-14.106.amzn2022.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-5.15.25-14.106",
+          "Release": "0.amzn2022",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-5.15.25-14.106-1.0-0.amzn2022.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/kernel-tools-5.15.25-14.106.amzn2022.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/kernel-headers-5.15.25-14.106.amzn2022.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/kernel-tools-devel-5.15.25-14.106.amzn2022.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/perf-debuginfo-5.15.25-14.106.amzn2022.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/kernel-tools-debuginfo-5.15.25-14.106.amzn2022.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/perf-5.15.25-14.106.amzn2022.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/kernel-5.15.25-14.106.amzn2022.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/kernel-debuginfo-5.15.25-14.106.amzn2022.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-aarch64",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/kernel-debuginfo-common-aarch64-5.15.25-14.106.amzn2022.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "14.106.amzn2022",
+          "Version": "5.15.25",
+          "Filename": "Packages/kernel-devel-5.15.25-14.106.amzn2022.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

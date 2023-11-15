@@ -1,0 +1,49 @@
+{
+  "ID": "ALAS-2014-425",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2014-425: medium priority package update for python-oauth2",
+  "Issued": {
+    "Date": "2014-10-14 10:04"
+  },
+  "Updated": {
+    "Date": "2014-10-14 12:30"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-4347:\n\tThe (1) make_nonce, (2) generate_nonce, and (3) generate_verifier functions in SimpleGeo python-oauth2 uses weak random numbers to generate nonces, which makes it easier for remote attackers to guess the nonce via a brute force attack.\n1007758: \nCVE-2013-4347 python-oauth2: Uses poor PRNG in nonce\n\nCVE-2013-4346:\n\tThe Server.verify_request function in SimpleGeo python-oauth2 does not check the nonce, which allows remote attackers to perform replay attacks via a signed URL.\n1007746: \nCVE-2013-4346 python-oauth2: _check_signature() ignores the nonce value when validating signed urls\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4346",
+        "ID": "CVE-2013-4346",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4347",
+        "ID": "CVE-2013-4347",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "python-oauth2",
+          "Release": "7.1.amzn1",
+          "Version": "1.5.211",
+          "Filename": "Packages/python-oauth2-1.5.211-7.1.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "ID": "ALAS2-2021-1690",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1690: important priority package update for velocity",
+  "Issued": {
+    "Date": "2021-07-14 20:45"
+  },
+  "Updated": {
+    "Date": "2021-07-15 21:38"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-13936:\n\tA flaw was found in velocity. An attacker, able to modify Velocity templates, may execute arbitrary Java code or run arbitrary system commands with the same privileges as the account running the Servlet container. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n1937440: CVE-2020-13936 velocity: arbitrary code execution when attacker is able to modify templates\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13936",
+        "ID": "CVE-2020-13936",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "velocity",
+          "Release": "10.2.amzn2",
+          "Version": "1.7",
+          "Filename": "Packages/velocity-1.7-10.2.amzn2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "velocity-manual",
+          "Release": "10.2.amzn2",
+          "Version": "1.7",
+          "Filename": "Packages/velocity-manual-1.7-10.2.amzn2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "velocity-javadoc",
+          "Release": "10.2.amzn2",
+          "Version": "1.7",
+          "Filename": "Packages/velocity-javadoc-1.7-10.2.amzn2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "velocity-demo",
+          "Release": "10.2.amzn2",
+          "Version": "1.7",
+          "Filename": "Packages/velocity-demo-1.7-10.2.amzn2.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

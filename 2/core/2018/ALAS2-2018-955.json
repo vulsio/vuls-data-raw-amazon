@@ -1,0 +1,75 @@
+{
+  "ID": "ALAS2-2018-955",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2018-955: important priority package update for 389-ds-base",
+  "Issued": {
+    "Date": "2018-02-20 21:11"
+  },
+  "Updated": {
+    "Date": "2018-02-21 21:18"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2017-15134:\n\tA stack buffer overflow flaw was found in the way 389-ds-base handled certain LDAP search filters. A remote, unauthenticated attacker could potentially use this flaw to make ns-slapd crash via a specially crafted LDAP request, thus resulting in denial of service.\n1531573: \nCVE-2017-15134 389-ds-base: Remote DoS via search filters in slapi_filter_sprintf in slapd/util.c\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15134",
+        "ID": "CVE-2017-15134",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "389-ds-base",
+          "Release": "26.amzn2.0.1",
+          "Version": "1.3.6.1",
+          "Filename": "Packages/389-ds-base-1.3.6.1-26.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "389-ds-base-libs",
+          "Release": "26.amzn2.0.1",
+          "Version": "1.3.6.1",
+          "Filename": "Packages/389-ds-base-libs-1.3.6.1-26.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "389-ds-base-devel",
+          "Release": "26.amzn2.0.1",
+          "Version": "1.3.6.1",
+          "Filename": "Packages/389-ds-base-devel-1.3.6.1-26.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "389-ds-base-snmp",
+          "Release": "26.amzn2.0.1",
+          "Version": "1.3.6.1",
+          "Filename": "Packages/389-ds-base-snmp-1.3.6.1-26.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "389-ds-base-debuginfo",
+          "Release": "26.amzn2.0.1",
+          "Version": "1.3.6.1",
+          "Filename": "Packages/389-ds-base-debuginfo-1.3.6.1-26.amzn2.0.1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

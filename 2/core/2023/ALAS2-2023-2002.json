@@ -1,0 +1,49 @@
+{
+  "ID": "ALAS2-2023-2002",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2002: medium priority package update for xdg-utils",
+  "Issued": {
+    "Date": "2023-03-17 16:35"
+  },
+  "Updated": {
+    "Date": "2023-03-21 23:25"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-4055:\n\tWhen xdg-mail is configured to use thunderbird for mailto URLs, improper parsing of the URL can lead to additional headers being passed to thunderbird that should not be included per RFC 2368. An attacker can use this method to create a mailto URL that looks safe to users, but will actually attach files when clicked.\n\nCVE-2020-27748:\n\tA flaw was found in the xdg-email component of xdg-utils-1.1.0-rc1 and newer. When handling mailto: URIs, xdg-email allows attachments to be discreetly added via the URI when being passed to Thunderbird. An attacker could potentially send a victim a URI that automatically attaches a sensitive file to a new email. If a victim user does not notice that an attachment was added and sends the email, this could result in sensitive information disclosure. It has been confirmed that the code behind this issue is in xdg-email and not in Thunderbird.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27748",
+        "ID": "CVE-2020-27748",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4055",
+        "ID": "CVE-2022-4055",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "xdg-utils",
+          "Release": "0.17.20120809git.amzn2.0.1",
+          "Version": "1.1.0",
+          "Filename": "Packages/xdg-utils-1.1.0-0.17.20120809git.amzn2.0.1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

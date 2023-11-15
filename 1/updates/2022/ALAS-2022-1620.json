@@ -1,0 +1,115 @@
+{
+  "ID": "ALAS-2022-1620",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2022-1620: low priority package update for 389-ds-base",
+  "Issued": {
+    "Date": "2022-07-28 20:31"
+  },
+  "Updated": {
+    "Date": "2022-08-04 22:40"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2021-3652:\n\tA flaw was found in 389-ds-base. If an asterisk is imported as password hashes, either accidentally or maliciously, then instead of being inactive, any password will successf\nully match during authentication. This flaw allows an attacker to successfully authenticate as a user whose password was disabled.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3652",
+        "ID": "CVE-2021-3652",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "389-ds-base-libs",
+          "Release": "9.67.amzn1",
+          "Version": "1.3.10.2",
+          "Filename": "Packages/389-ds-base-libs-1.3.10.2-9.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "389-ds-base",
+          "Release": "9.67.amzn1",
+          "Version": "1.3.10.2",
+          "Filename": "Packages/389-ds-base-1.3.10.2-9.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "389-ds-base-devel",
+          "Release": "9.67.amzn1",
+          "Version": "1.3.10.2",
+          "Filename": "Packages/389-ds-base-devel-1.3.10.2-9.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "389-ds-base-debuginfo",
+          "Release": "9.67.amzn1",
+          "Version": "1.3.10.2",
+          "Filename": "Packages/389-ds-base-debuginfo-1.3.10.2-9.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "389-ds-base-snmp",
+          "Release": "9.67.amzn1",
+          "Version": "1.3.10.2",
+          "Filename": "Packages/389-ds-base-snmp-1.3.10.2-9.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "389-ds-base-debuginfo",
+          "Release": "9.67.amzn1",
+          "Version": "1.3.10.2",
+          "Filename": "Packages/389-ds-base-debuginfo-1.3.10.2-9.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "389-ds-base",
+          "Release": "9.67.amzn1",
+          "Version": "1.3.10.2",
+          "Filename": "Packages/389-ds-base-1.3.10.2-9.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "389-ds-base-devel",
+          "Release": "9.67.amzn1",
+          "Version": "1.3.10.2",
+          "Filename": "Packages/389-ds-base-devel-1.3.10.2-9.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "389-ds-base-libs",
+          "Release": "9.67.amzn1",
+          "Version": "1.3.10.2",
+          "Filename": "Packages/389-ds-base-libs-1.3.10.2-9.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "389-ds-base-snmp",
+          "Release": "9.67.amzn1",
+          "Version": "1.3.10.2",
+          "Filename": "Packages/389-ds-base-snmp-1.3.10.2-9.67.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

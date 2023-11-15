@@ -1,0 +1,121 @@
+{
+  "ID": "ALAS-2012-31",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2012-31: medium priority package update for dhcp",
+  "Issued": {
+    "Date": "2012-01-05 20:58"
+  },
+  "Updated": {
+    "Date": "2014-09-14 15:10"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2011-4539:\n\tdhcpd in ISC DHCP 4.x before 4.2.3-P1 and 4.1-ESV before 4.1-ESV-R4 does not properly handle regular expressions in dhcpd.conf, which allows remote attackers to cause a denial of service (daemon crash) via a crafted request packet.\nA denial of service flaw was found in the way the dhcpd daemon handled DHCP request packets when regular expression matching was used in \"/etc/dhcp/dhcpd.conf\". A remote attacker could use this flaw to crash dhcpd.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4539",
+        "ID": "CVE-2011-4539",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2011:1819.html",
+        "ID": "RHSA-2011:1819",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "12",
+          "Name": "dhcp-devel",
+          "Release": "25.P1.14.amzn1",
+          "Version": "4.1.1",
+          "Filename": "Packages/dhcp-devel-4.1.1-25.P1.14.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "12",
+          "Name": "dhclient",
+          "Release": "25.P1.14.amzn1",
+          "Version": "4.1.1",
+          "Filename": "Packages/dhclient-4.1.1-25.P1.14.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "12",
+          "Name": "dhcp",
+          "Release": "25.P1.14.amzn1",
+          "Version": "4.1.1",
+          "Filename": "Packages/dhcp-4.1.1-25.P1.14.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "12",
+          "Name": "dhcp-debuginfo",
+          "Release": "25.P1.14.amzn1",
+          "Version": "4.1.1",
+          "Filename": "Packages/dhcp-debuginfo-4.1.1-25.P1.14.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "12",
+          "Name": "dhcp-common",
+          "Release": "25.P1.14.amzn1",
+          "Version": "4.1.1",
+          "Filename": "Packages/dhcp-common-4.1.1-25.P1.14.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "12",
+          "Name": "dhcp",
+          "Release": "25.P1.14.amzn1",
+          "Version": "4.1.1",
+          "Filename": "Packages/dhcp-4.1.1-25.P1.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "12",
+          "Name": "dhclient",
+          "Release": "25.P1.14.amzn1",
+          "Version": "4.1.1",
+          "Filename": "Packages/dhclient-4.1.1-25.P1.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "12",
+          "Name": "dhcp-devel",
+          "Release": "25.P1.14.amzn1",
+          "Version": "4.1.1",
+          "Filename": "Packages/dhcp-devel-4.1.1-25.P1.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "12",
+          "Name": "dhcp-common",
+          "Release": "25.P1.14.amzn1",
+          "Version": "4.1.1",
+          "Filename": "Packages/dhcp-common-4.1.1-25.P1.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "12",
+          "Name": "dhcp-debuginfo",
+          "Release": "25.P1.14.amzn1",
+          "Version": "4.1.1",
+          "Filename": "Packages/dhcp-debuginfo-4.1.1-25.P1.14.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

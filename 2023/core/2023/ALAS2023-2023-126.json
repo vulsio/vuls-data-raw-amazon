@@ -1,0 +1,311 @@
+{
+  "ID": "ALAS2023-2023-126",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2023 - ALAS2023-2023-126: Important priority package update for device-mapper-multipath",
+  "Issued": {
+    "Date": "2023-03-07 00:29:00"
+  },
+  "Updated": {
+    "Date": "2023-03-08 00:51:00"
+  },
+  "Severity": "Important",
+  "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2022-41974:\n\tmultipath-tools 0.7.0 through 0.9.x before 0.9.2 allows local users to obtain root access, as exploited alone or in conjunction with CVE-2022-41973. Local users able to write to UNIX domain sockets can bypass access controls and manipulate the multipath setup. This can lead to local privilege escalation to root. This occurs because an attacker can repeat a keyword, which is mishandled because arithmetic ADD is used instead of bitwise OR.\n\nCVE-2022-41973:\n\tA vulnerability was found in the device-mapper-multipath. The device-mapper-multipath allows local users to obtain root access, in conjunction with CVE-2022-41974. Local users that are able to access /dev/shm can change symlinks in multipathd due to incorrect symlink handling, which may lead to controlled file writes outside of the /dev/shm directory. This could be used indirectly for local privilege escalation to root.\n\nCVE-2022-3787:\n\tA vulnerability was found in the device-mapper-multipath. The device-mapper-multipath allows local users to obtain root access, exploited alone or in conjunction with CVE-2022-41973. Local users that are able to write to UNIX domain sockets can bypass access controls and manipulate the multipath setup. This issue occurs because an attacker can repeat a keyword, which is mishandled when arithmetic ADD is used instead of bitwise OR. This could lead to local privilege escalation to root.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3787",
+        "ID": "CVE-2022-3787",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41973",
+        "ID": "CVE-2022-41973",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41974",
+        "ID": "CVE-2022-41974",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2023",
+      "Name": "Amazon Linux 2023",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "device-mapper-multipath-libs-debuginfo",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/device-mapper-multipath-libs-debuginfo-0.8.7-16.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kpartx",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/kpartx-0.8.7-16.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "device-mapper-multipath-debugsource",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/device-mapper-multipath-debugsource-0.8.7-16.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libdmmp-debuginfo",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/libdmmp-debuginfo-0.8.7-16.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libdmmp",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/libdmmp-0.8.7-16.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kpartx-debuginfo",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/kpartx-debuginfo-0.8.7-16.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "device-mapper-multipath-devel",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/device-mapper-multipath-devel-0.8.7-16.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "device-mapper-multipath",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/device-mapper-multipath-0.8.7-16.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libdmmp-devel",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/libdmmp-devel-0.8.7-16.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "device-mapper-multipath-debuginfo",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/device-mapper-multipath-debuginfo-0.8.7-16.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "device-mapper-multipath-libs",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/device-mapper-multipath-libs-0.8.7-16.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "device-mapper-multipath-debuginfo",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/device-mapper-multipath-debuginfo-0.8.7-16.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "device-mapper-multipath-libs-debuginfo",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/device-mapper-multipath-libs-debuginfo-0.8.7-16.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "device-mapper-multipath-libs",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/device-mapper-multipath-libs-0.8.7-16.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "device-mapper-multipath-debugsource",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/device-mapper-multipath-debugsource-0.8.7-16.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "device-mapper-multipath",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/device-mapper-multipath-0.8.7-16.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kpartx-debuginfo",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/kpartx-debuginfo-0.8.7-16.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libdmmp",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/libdmmp-0.8.7-16.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kpartx",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/kpartx-0.8.7-16.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libdmmp-debuginfo",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/libdmmp-debuginfo-0.8.7-16.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libdmmp-devel",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/libdmmp-devel-0.8.7-16.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "device-mapper-multipath-devel",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/device-mapper-multipath-devel-0.8.7-16.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "device-mapper-multipath-debuginfo",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/device-mapper-multipath-debuginfo-0.8.7-16.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kpartx-debuginfo",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/kpartx-debuginfo-0.8.7-16.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "device-mapper-multipath-debugsource",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/device-mapper-multipath-debugsource-0.8.7-16.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libdmmp",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/libdmmp-0.8.7-16.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libdmmp-devel",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/libdmmp-devel-0.8.7-16.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libdmmp-debuginfo",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/libdmmp-debuginfo-0.8.7-16.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "device-mapper-multipath-devel",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/device-mapper-multipath-devel-0.8.7-16.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kpartx",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/kpartx-0.8.7-16.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "device-mapper-multipath",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/device-mapper-multipath-0.8.7-16.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "device-mapper-multipath-libs-debuginfo",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/device-mapper-multipath-libs-debuginfo-0.8.7-16.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "device-mapper-multipath-libs",
+          "Release": "16.amzn2023.0.1",
+          "Version": "0.8.7",
+          "Filename": "Packages/device-mapper-multipath-libs-0.8.7-16.amzn2023.0.1.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

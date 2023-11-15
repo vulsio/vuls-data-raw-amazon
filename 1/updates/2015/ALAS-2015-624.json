@@ -1,0 +1,153 @@
+{
+  "ID": "ALAS-2015-624",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-624: medium priority package update for krb5",
+  "Issued": {
+    "Date": "2015-12-14 10:00"
+  },
+  "Updated": {
+    "Date": "2015-12-13 14:23"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-2694:\n\tA flaw was found in the OTP kdcpreauth module of MIT Kerberos. A remote attacker could use this flaw to bypass the requires_preauth flag on a client principal and obtain a ciphertext encrypted in the principal&#039;s long-term key. This ciphertext could be used to conduct an off-line dictionary attack against the user&#039;s password.\n1216133: \nCVE-2015-2694 krb5: issues in OTP and PKINIT kdcpreauth modules leading to requires_preauth bypass\n\nCVE-2014-5355:\n\tIt was found that the krb5_read_message() function of MIT Kerberos did not correctly sanitize input, and could create invalid krb5_data objects. A remote, unauthenticated attacker could use this flaw to crash a Kerberos child process via a specially crafted request.\n1193939: \nCVE-2014-5355 krb5: unauthenticated denial of service in recvauth_common() and others\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5355",
+        "ID": "CVE-2014-5355",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2694",
+        "ID": "CVE-2015-2694",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-devel",
+          "Release": "10.39.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-devel-1.13.2-10.39.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-pkinit-openssl",
+          "Release": "10.39.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-pkinit-openssl-1.13.2-10.39.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-debuginfo",
+          "Release": "10.39.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-debuginfo-1.13.2-10.39.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-server",
+          "Release": "10.39.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-server-1.13.2-10.39.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-workstation",
+          "Release": "10.39.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-workstation-1.13.2-10.39.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-libs",
+          "Release": "10.39.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-libs-1.13.2-10.39.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-server-ldap",
+          "Release": "10.39.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-server-ldap-1.13.2-10.39.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-server",
+          "Release": "10.39.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-server-1.13.2-10.39.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-libs",
+          "Release": "10.39.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-libs-1.13.2-10.39.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-debuginfo",
+          "Release": "10.39.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-debuginfo-1.13.2-10.39.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-workstation",
+          "Release": "10.39.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-workstation-1.13.2-10.39.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-server-ldap",
+          "Release": "10.39.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-server-ldap-1.13.2-10.39.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-devel",
+          "Release": "10.39.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-devel-1.13.2-10.39.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-pkinit-openssl",
+          "Release": "10.39.amzn1",
+          "Version": "1.13.2",
+          "Filename": "Packages/krb5-pkinit-openssl-1.13.2-10.39.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

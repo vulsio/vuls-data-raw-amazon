@@ -1,0 +1,221 @@
+{
+  "ID": "ALAS2022-2022-176",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2022 - ALAS2022-2022-176: Medium priority package update for lua",
+  "Issued": {
+    "Date": "2022-11-01 21:24"
+  },
+  "Updated": {
+    "Date": "2022-11-03 21:01"
+  },
+  "Severity": "Medium",
+  "Description": "Package updates are available for Amazon Linux 2022 that fix the following vulnerabilities:\nCVE-2022-33099:\n\tA vulnerability was found in Lua. During error handling, the luaG_errormsg() component uses slots from EXTRA_STACK. Some errors can recur such as a string overflow while creating an error message in luaG_runerror, or a C-stack overflow before calling the message handler, causing a crash that leads to a denial of service.\n\nCVE-2022-28805:\n\tA heap buffer-overflow vulnerability was found in Lua. The flaw occurs due to vulnerable code present in the lparser.c function of Lua that allows the execution of untrusted Lua code into a system, resulting in malicious activity.\n\nCVE-2021-44647:\n\tA flaw was found in Lua. An SEGV crash in the funcnamefromcode() function in ldebug.c during error handling occurs in __close metamethods. This flaw allows an attacker to cause a denial of service.\n\nCVE-2021-43519:\n\tA stack overflow issue was discovered in Lua in the lua_resume() function of ldo.c. This flaw allows a local attacker to pass a specially crafted file to the Lua Interpreter, causing a crash that leads to a denial of service.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43519",
+        "ID": "CVE-2021-43519",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44647",
+        "ID": "CVE-2021-44647",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28805",
+        "ID": "CVE-2022-28805",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-33099",
+        "ID": "CVE-2022-33099",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2022",
+      "Name": "Amazon Linux 2022",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lua-libs-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-libs-debuginfo-5.4.4-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lua-debugsource",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-debugsource-5.4.4-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lua-libs",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-libs-5.4.4-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lua-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-debuginfo-5.4.4-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lua-static",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-static-5.4.4-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lua-devel",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-devel-5.4.4-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lua",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-5.4.4-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lua-libs-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-libs-debuginfo-5.4.4-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lua-static",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-static-5.4.4-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lua-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-debuginfo-5.4.4-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lua-debugsource",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-debugsource-5.4.4-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lua",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-5.4.4-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lua-libs",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-libs-5.4.4-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lua-devel",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-devel-5.4.4-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "lua-libs-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-libs-debuginfo-5.4.4-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "lua",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-5.4.4-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "lua-static",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-static-5.4.4-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "lua-libs",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-libs-5.4.4-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "lua-devel",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-devel-5.4.4-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "lua-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-debuginfo-5.4.4-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "lua-debugsource",
+          "Release": "3.amzn2022.0.1",
+          "Version": "5.4.4",
+          "Filename": "Packages/lua-debugsource-5.4.4-3.amzn2022.0.1.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

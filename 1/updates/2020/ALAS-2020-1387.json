@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS-2020-1387",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2020-1387: important priority package update for telnet",
+  "Issued": {
+    "Date": "2020-06-23 06:42"
+  },
+  "Updated": {
+    "Date": "2020-06-26 04:47"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-10188:\n\tutility.c in telnetd in netkit telnet through 0.17 allows remote attackers to execute arbitrary code via short writes or urgent data, because of a buffer overflow involving the netclear and nextitem functions.\n1811673: CVE-2020-10188 telnet-server: no bounds checks in nextitem() function allows to remotely execute arbitrary code\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10188",
+        "ID": "CVE-2020-10188",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "telnet-debuginfo",
+          "Release": "49.9.amzn1",
+          "Version": "0.17",
+          "Filename": "Packages/telnet-debuginfo-0.17-49.9.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "telnet-server",
+          "Release": "49.9.amzn1",
+          "Version": "0.17",
+          "Filename": "Packages/telnet-server-0.17-49.9.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "telnet",
+          "Release": "49.9.amzn1",
+          "Version": "0.17",
+          "Filename": "Packages/telnet-0.17-49.9.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "telnet",
+          "Release": "49.9.amzn1",
+          "Version": "0.17",
+          "Filename": "Packages/telnet-0.17-49.9.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "telnet-server",
+          "Release": "49.9.amzn1",
+          "Version": "0.17",
+          "Filename": "Packages/telnet-server-0.17-49.9.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "telnet-debuginfo",
+          "Release": "49.9.amzn1",
+          "Version": "0.17",
+          "Filename": "Packages/telnet-debuginfo-0.17-49.9.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

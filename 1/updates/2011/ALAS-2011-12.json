@@ -1,0 +1,217 @@
+{
+  "ID": "ALAS-2011-12",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2011-12: medium priority package update for postgresql",
+  "Issued": {
+    "Date": "2011-10-31 18:24"
+  },
+  "Updated": {
+    "Date": "2014-09-14 14:32"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2011-2483:\n\tcrypt_blowfish before 1.1, as used in PHP before 5.3.7 on certain platforms, PostgreSQL before 8.4.9, and other products, does not properly handle 8-bit characters, which makes it easier for context-dependent attackers to determine a cleartext password by leveraging knowledge of a password hash.\nA signedness issue was found in the way the crypt() function in the PostgreSQL pgcrypto module handled 8-bit characters in passwords when using Blowfish hashing. Up to three characters immediately preceding a non-ASCII character (one with the high bit set) had no effect on the hash result, thus shortening the effective password length. This made brute-force guessing more efficient as several different passwords were hashed to the same value.\nA signedness issue was found in the way the PHP crypt() function handled 8-bit characters in passwords when using Blowfish hashing. Up to three characters immediately preceding a non-ASCII character (one with the high bit set) had no effect on the hash result, thus shortening the effective password length. This made brute-force guessing more efficient as several different passwords were hashed to the same value.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2483",
+        "ID": "CVE-2011-2483",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2011:1377.html",
+        "ID": "RHSA-2011:1377",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-plperl",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-plperl-8.4.9-1.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-libs",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-libs-8.4.9-1.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-devel",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-devel-8.4.9-1.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-docs",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-docs-8.4.9-1.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-contrib",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-contrib-8.4.9-1.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-pltcl",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-pltcl-8.4.9-1.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-8.4.9-1.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-server",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-server-8.4.9-1.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-plpython",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-plpython-8.4.9-1.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-debuginfo",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-debuginfo-8.4.9-1.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql-test",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-test-8.4.9-1.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-pltcl",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-pltcl-8.4.9-1.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-8.4.9-1.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-plpython",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-plpython-8.4.9-1.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-docs",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-docs-8.4.9-1.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-contrib",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-contrib-8.4.9-1.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-plperl",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-plperl-8.4.9-1.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-devel",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-devel-8.4.9-1.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-server",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-server-8.4.9-1.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-libs",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-libs-8.4.9-1.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-test",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-test-8.4.9-1.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql-debuginfo",
+          "Release": "1.13.amzn1",
+          "Version": "8.4.9",
+          "Filename": "Packages/postgresql-debuginfo-8.4.9-1.13.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

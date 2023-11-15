@@ -1,0 +1,123 @@
+{
+  "ID": "ALAS-2015-578",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-578: medium priority package update for httpd",
+  "Issued": {
+    "Date": "2015-08-17 12:23"
+  },
+  "Updated": {
+    "Date": "2015-08-17 12:23"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-3183:\n\tMultiple flaws were found in the way httpd parsed HTTP requests and responses using chunked transfer encoding. A remote attacker could use these flaws to create a specially crafted request, which httpd would decode differently from an HTTP proxy software in front of it, possibly leading to HTTP request smuggling attacks.\n1243887: \nCVE-2015-3183 httpd: HTTP request smuggling attack against chunked request parser\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3183",
+        "ID": "CVE-2015-3183",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-debuginfo",
+          "Release": "1.6.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/httpd-debuginfo-2.2.31-1.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-devel",
+          "Release": "1.6.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/httpd-devel-2.2.31-1.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-tools",
+          "Release": "1.6.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/httpd-tools-2.2.31-1.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod_ssl",
+          "Release": "1.6.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/mod_ssl-2.2.31-1.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd",
+          "Release": "1.6.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/httpd-2.2.31-1.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "httpd-manual",
+          "Release": "1.6.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/httpd-manual-2.2.31-1.6.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-devel",
+          "Release": "1.6.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/httpd-devel-2.2.31-1.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod_ssl",
+          "Release": "1.6.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/mod_ssl-2.2.31-1.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-tools",
+          "Release": "1.6.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/httpd-tools-2.2.31-1.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-debuginfo",
+          "Release": "1.6.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/httpd-debuginfo-2.2.31-1.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd",
+          "Release": "1.6.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/httpd-2.2.31-1.6.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

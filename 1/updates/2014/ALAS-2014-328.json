@@ -1,0 +1,173 @@
+{
+  "ID": "ALAS-2014-328",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-328: medium priority package update for kernel",
+  "Issued": {
+    "Date": "2014-04-22 10:53"
+  },
+  "Updated": {
+    "Date": "2014-09-18 00:24"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-2523:\n\tnet/netfilter/nf_conntrack_proto_dccp.c in the Linux kernel through 3.13.6 uses a DCCP header pointer incorrectly, which allows remote attackers to cause a denial of service (system crash) or possibly execute arbitrary code via a DCCP packet that triggers a call to the (1) dccp_new, (2) dccp_packet, or (3) dccp_error function.\n1077343: \nCVE-2014-2523 kernel: netfilter: nf_conntrack_dccp: incorrect skb_header_pointer API usages\n\nCVE-2014-2309:\n\tThe ip6_route_add function in net/ipv6/route.c in the Linux kernel through 3.13.6 does not properly count the addition of routes, which allows remote attackers to cause a denial of service (memory consumption) via a flood of ICMPv6 Router Advertisement packets.\n1074471: \nCVE-2014-2309 Kernel: net: IPv6: crash due to router advertisement flooding\n\nCVE-2014-0077:\n\tdrivers/vhost/net.c in the Linux kernel before 3.13.10, when mergeable buffers are disabled, does not properly validate packet lengths, which allows guest OS users to cause a denial of service (memory corruption and host OS crash) or possibly gain privileges on the host OS via crafted packets, related to the handle_rx and get_rx_bufs functions.\n1064440: \nCVE-2014-0077 kernel: vhost-net: insufficiency in handling of big packets in handle_rx()\n\nCVE-2014-0055:\n\tThe get_rx_bufs function in drivers/vhost/net.c in the vhost-net subsystem in the Linux kernel package before 2.6.32-431.11.2 on Red Hat Enterprise Linux (RHEL) 6 does not properly handle vhost_get_vq_desc errors, which allows guest OS users to cause a denial of service (host OS crash) via unspecified vectors.\n1062577: \nCVE-2014-0055 kernel: vhost-net: insufficient handling of error conditions in get_rx_bufs()\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0055",
+        "ID": "CVE-2014-0055",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0077",
+        "ID": "CVE-2014-0077",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2309",
+        "ID": "CVE-2014-2309",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2523",
+        "ID": "CVE-2014-2523",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "47.135.amzn1",
+          "Version": "3.10.37",
+          "Filename": "Packages/perf-debuginfo-3.10.37-47.135.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "47.135.amzn1",
+          "Version": "3.10.37",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-3.10.37-47.135.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "47.135.amzn1",
+          "Version": "3.10.37",
+          "Filename": "Packages/kernel-debuginfo-3.10.37-47.135.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "47.135.amzn1",
+          "Version": "3.10.37",
+          "Filename": "Packages/kernel-3.10.37-47.135.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "47.135.amzn1",
+          "Version": "3.10.37",
+          "Filename": "Packages/kernel-headers-3.10.37-47.135.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "47.135.amzn1",
+          "Version": "3.10.37",
+          "Filename": "Packages/perf-3.10.37-47.135.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "47.135.amzn1",
+          "Version": "3.10.37",
+          "Filename": "Packages/kernel-devel-3.10.37-47.135.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "47.135.amzn1",
+          "Version": "3.10.37",
+          "Filename": "Packages/kernel-3.10.37-47.135.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "47.135.amzn1",
+          "Version": "3.10.37",
+          "Filename": "Packages/perf-debuginfo-3.10.37-47.135.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "47.135.amzn1",
+          "Version": "3.10.37",
+          "Filename": "Packages/kernel-debuginfo-3.10.37-47.135.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "47.135.amzn1",
+          "Version": "3.10.37",
+          "Filename": "Packages/perf-3.10.37-47.135.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-i686",
+          "Release": "47.135.amzn1",
+          "Version": "3.10.37",
+          "Filename": "Packages/kernel-debuginfo-common-i686-3.10.37-47.135.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "47.135.amzn1",
+          "Version": "3.10.37",
+          "Filename": "Packages/kernel-devel-3.10.37-47.135.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "47.135.amzn1",
+          "Version": "3.10.37",
+          "Filename": "Packages/kernel-headers-3.10.37-47.135.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "kernel-doc",
+          "Release": "47.135.amzn1",
+          "Version": "3.10.37",
+          "Filename": "Packages/kernel-doc-3.10.37-47.135.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

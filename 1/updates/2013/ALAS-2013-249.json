@@ -1,0 +1,67 @@
+{
+  "ID": "ALAS-2013-249",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-249: important priority package update for nginx",
+  "Issued": {
+    "Date": "2013-12-02 20:27"
+  },
+  "Updated": {
+    "Date": "2014-09-16 21:55"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-4547:\n\tnginx 0.8.41 through 1.4.3 and 1.5.x before 1.5.7 allows remote attackers to bypass intended restrictions via an unescaped space character in a URI.\n1032266: \nCVE-2013-4547 nginx: security restriction bypass flaw due to whitespace parsing\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4547",
+        "ID": "CVE-2013-4547",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "nginx",
+          "Release": "1.14.amzn1",
+          "Version": "1.4.3",
+          "Filename": "Packages/nginx-1.4.3-1.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "nginx-debuginfo",
+          "Release": "1.14.amzn1",
+          "Version": "1.4.3",
+          "Filename": "Packages/nginx-debuginfo-1.4.3-1.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "nginx-debuginfo",
+          "Release": "1.14.amzn1",
+          "Version": "1.4.3",
+          "Filename": "Packages/nginx-debuginfo-1.4.3-1.14.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "nginx",
+          "Release": "1.14.amzn1",
+          "Version": "1.4.3",
+          "Filename": "Packages/nginx-1.4.3-1.14.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

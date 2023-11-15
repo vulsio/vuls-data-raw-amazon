@@ -1,0 +1,239 @@
+{
+  "ID": "ALAS2-2023-1971",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-1971: medium priority package update for ImageMagick",
+  "Issued": {
+    "Date": "2023-03-02 22:35"
+  },
+  "Updated": {
+    "Date": "2023-03-07 00:19"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-32547:\n\tIn ImageMagick, there is load of misaligned address for type 'double', which requires 8 byte alignment and for type 'float', which requires 4 byte alignment at MagickCore/property.c. Whenever crafted or untrusted input is processed by ImageMagick, this causes a negative impact to application availability or other problems related to undefined behavior.\n\nCVE-2022-32546:\n\tA vulnerability was found in ImageMagick, causing an outside the range of representable values of type 'unsigned long' at coders/pcl.c, when crafted or untrusted input is processed. This leads to a negative impact to application availability or other problems related to undefined behavior.\n\nCVE-2022-32545:\n\tA vulnerability was found in ImageMagick, causing an outside the range of representable values of type 'unsigned char' at coders/psd.c, when crafted or untrusted input is processed. This leads to a negative impact to application availability or other problems related to undefined behavior.\n\nCVE-2022-28463:\n\tImageMagick 7.1.0-27 is vulnerable to Buffer Overflow.\n\nCVE-2021-4219:\n\tA flaw was found in ImageMagick. The vulnerability occurs due to improper use of open functions and leads to a denial of service. This flaw allows an attacker to crash the system.\n\nCVE-2021-3574:\n\tA vulnerability was found in ImageMagick. Memory leaks are detected when executing a crafted file with the convert command, affecting availability.\n\nCVE-2021-20224:\n\tAn integer overflow issue was discovered in ImageMagick's ExportIndexQuantum() function in MagickCore/quantum-export.c. Function calls to GetPixelIndex() could result in values outside the range of representable for the 'unsigned char'. When ImageMagick processes a crafted pdf file, this could lead to an undefined behaviour or a crash.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20224",
+        "ID": "CVE-2021-20224",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3574",
+        "ID": "CVE-2021-3574",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4219",
+        "ID": "CVE-2021-4219",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28463",
+        "ID": "CVE-2022-28463",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32545",
+        "ID": "CVE-2022-32545",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32546",
+        "ID": "CVE-2022-32546",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32547",
+        "ID": "CVE-2022-32547",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ImageMagick",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-6.9.10.68-6.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ImageMagick-devel",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-devel-6.9.10.68-6.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ImageMagick-doc",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-doc-6.9.10.68-6.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ImageMagick-perl",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-perl-6.9.10.68-6.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ImageMagick-c++",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-c++-6.9.10.68-6.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ImageMagick-c++-devel",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-c++-devel-6.9.10.68-6.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ImageMagick-debuginfo",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-debuginfo-6.9.10.68-6.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ImageMagick",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-6.9.10.68-6.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ImageMagick-devel",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-devel-6.9.10.68-6.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ImageMagick-doc",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-doc-6.9.10.68-6.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ImageMagick-perl",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-perl-6.9.10.68-6.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ImageMagick-c++",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-c++-6.9.10.68-6.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ImageMagick-c++-devel",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-c++-devel-6.9.10.68-6.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ImageMagick-debuginfo",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-debuginfo-6.9.10.68-6.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ImageMagick",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-6.9.10.68-6.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ImageMagick-devel",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-devel-6.9.10.68-6.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ImageMagick-doc",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-doc-6.9.10.68-6.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ImageMagick-perl",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-perl-6.9.10.68-6.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ImageMagick-c++",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-c++-6.9.10.68-6.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ImageMagick-c++-devel",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-c++-devel-6.9.10.68-6.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ImageMagick-debuginfo",
+          "Release": "6.amzn2.0.3",
+          "Version": "6.9.10.68",
+          "Filename": "Packages/ImageMagick-debuginfo-6.9.10.68-6.amzn2.0.3.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,501 @@
+{
+  "ID": "ALAS2022-2022-053",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2022 - ALAS2022-2022-053: Important priority package update for httpd",
+  "Issued": {
+    "Date": "2022-04-19 00:10"
+  },
+  "Updated": {
+    "Date": "2022-04-22 15:16"
+  },
+  "Severity": "Important",
+  "Description": "Package updates are available for Amazon Linux 2022 that fix the following vulnerabilities:\nCVE-2022-23943:\n\tAn out-of-bounds read/write vulnerability was found in the mod_sed module of httpd. This flaw allows an attacker to overwrite the memory of an httpd instance that is using mod_sed with data provided by the attacker.\n\nCVE-2022-22721:\n\tA flaw was found in httpd, where it incorrectly limits the value of the LimitXMLRequestBody option. This issue can lead to an integer overflow and later causes an out-of-bounds write.\n\nCVE-2022-22720:\n\tA flaw was found in httpd. The inbound connection is not closed when it fails to discard the request body, which may expose the server to HTTP request smuggling.\n\nCVE-2022-22719:\n\tA flaw was found in the mod_lua module of httpd. A crafted request body can cause a read to a random memory area due to an uninitialized value in functions called by the parsebody function. The highest treat of this vulnerability is availability.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22719",
+        "ID": "CVE-2022-22719",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22720",
+        "ID": "CVE-2022-22720",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22721",
+        "ID": "CVE-2022-22721",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23943",
+        "ID": "CVE-2022-23943",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2022",
+      "Name": "Amazon Linux 2022",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "httpd-filesystem",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-filesystem-2.4.53-3.amzn2022.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod_ssl",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_ssl-2.4.53-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod_ssl-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_ssl-debuginfo-2.4.53-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mod_ldap",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_ldap-2.4.53-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-devel",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-devel-2.4.53-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-debugsource",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-debugsource-2.4.53-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "httpd-manual",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-manual-2.4.53-3.amzn2022.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mod_session-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_session-debuginfo-2.4.53-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-debuginfo-2.4.53-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mod_ldap-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_ldap-debuginfo-2.4.53-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mod_lua-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_lua-debuginfo-2.4.53-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod_proxy_html",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_proxy_html-2.4.53-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mod_lua",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_lua-2.4.53-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mod_session",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_session-2.4.53-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-tools",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-tools-2.4.53-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod_proxy_html-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_proxy_html-debuginfo-2.4.53-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-2.4.53-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-tools-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-tools-debuginfo-2.4.53-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-core",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-core-2.4.53-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-core-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-core-debuginfo-2.4.53-3.amzn2022.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-debugsource",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-debugsource-2.4.53-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-core-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-core-debuginfo-2.4.53-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-core",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-core-2.4.53-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-devel",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-devel-2.4.53-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod_ssl-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_ssl-debuginfo-2.4.53-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mod_lua-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_lua-debuginfo-2.4.53-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod_ssl",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_ssl-2.4.53-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-tools-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-tools-debuginfo-2.4.53-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-debuginfo-2.4.53-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mod_ldap-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_ldap-debuginfo-2.4.53-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mod_session-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_session-debuginfo-2.4.53-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-tools",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-tools-2.4.53-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mod_lua",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_lua-2.4.53-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mod_ldap",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_ldap-2.4.53-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mod_session",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_session-2.4.53-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod_proxy_html-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_proxy_html-debuginfo-2.4.53-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod_proxy_html",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_proxy_html-2.4.53-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-2.4.53-3.amzn2022.0.1.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "httpd-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-debuginfo-2.4.53-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "httpd-tools-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-tools-debuginfo-2.4.53-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "mod_ssl",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_ssl-2.4.53-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "mod_session",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_session-2.4.53-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "httpd",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-2.4.53-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "mod_ssl-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_ssl-debuginfo-2.4.53-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "mod_lua-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_lua-debuginfo-2.4.53-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "mod_lua",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_lua-2.4.53-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "mod_session-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_session-debuginfo-2.4.53-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "httpd-devel",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-devel-2.4.53-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "mod_proxy_html",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_proxy_html-2.4.53-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "mod_ldap",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_ldap-2.4.53-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "httpd-tools",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-tools-2.4.53-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "httpd-core",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-core-2.4.53-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "mod_proxy_html-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_proxy_html-debuginfo-2.4.53-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "httpd-debugsource",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-debugsource-2.4.53-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "mod_ldap-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/mod_ldap-debuginfo-2.4.53-3.amzn2022.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "httpd-core-debuginfo",
+          "Release": "3.amzn2022.0.1",
+          "Version": "2.4.53",
+          "Filename": "Packages/httpd-core-debuginfo-2.4.53-3.amzn2022.0.1.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

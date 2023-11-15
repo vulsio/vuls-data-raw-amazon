@@ -1,0 +1,43 @@
+{
+  "ID": "ALAS-2014-381",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-381: medium priority package update for cacti",
+  "Issued": {
+    "Date": "2014-07-23 13:54"
+  },
+  "Updated": {
+    "Date": "2014-09-19 10:50"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-4002:\n\tMultiple cross-site scripting (XSS) vulnerabilities in Cacti 0.8.8b allow remote attackers to inject arbitrary web script or HTML via the (1) drp_action parameter to cdef.php, (2) data_input.php, (3) data_queries.php, (4) data_sources.php, (5) data_templates.php, (6) graph_templates.php, (7) graphs.php, (8) host.php, or (9) host_templates.php or the (10) graph_template_input_id or (11) graph_template_id parameter to graph_templates_inputs.php.\n1113035: \nCVE-2014-4002 cacti: Cross-Site Scripting Vulnerability\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4002",
+        "ID": "CVE-2014-4002",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "cacti",
+          "Release": "7.5.amzn1",
+          "Version": "0.8.8b",
+          "Filename": "Packages/cacti-0.8.8b-7.5.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

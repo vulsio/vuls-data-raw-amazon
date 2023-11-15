@@ -1,0 +1,431 @@
+{
+  "ID": "ALAS-2018-1126",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2018-1126: medium priority package update for samba",
+  "Issued": {
+    "Date": "2019-01-22 17:55"
+  },
+  "Updated": {
+    "Date": "2019-01-25 02:42"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-1139:\n\tA flaw was found in the way samba allowed the use of weak NTLMv1 authentication even when NTLMv1 was explicitly disabled. A man-in-the-middle attacker could use this flaw to read the credential and other details passed between the samba server and client.\n1589651: \nCVE-2018-1139 samba: Weak authentication protocol regression\n\nCVE-2018-10858:\n\tA heap-buffer overflow was found in the way samba clients processed extra long filename in a directory listing. A malicious samba server could use this flaw to cause arbitrary code execution on a samba client.\n1612805: \nCVE-2018-10858 samba: Insufficient input validation in libsmbclient\n\nCVE-2018-1050:\n\tA null pointer dereference flaw was found in Samba RPC external printer service. An attacker could use this flaw to cause the printer spooler service to crash.\n1538771: \nCVE-2018-1050 samba: NULL pointer dereference in printer server process\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1050",
+        "ID": "CVE-2018-1050",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-10858",
+        "ID": "CVE-2018-10858",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1139",
+        "ID": "CVE-2018-1139",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "samba-winbind-krb5-locator",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-winbind-krb5-locator-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "samba-test-libs",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-test-libs-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "samba-winbind-clients",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-winbind-clients-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "samba-winbind",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-winbind-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libsmbclient",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/libsmbclient-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "samba-python-test",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-python-test-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "samba-python",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-python-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "samba-devel",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-devel-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libwbclient-devel",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/libwbclient-devel-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "samba-debuginfo",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-debuginfo-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "samba-krb5-printing",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-krb5-printing-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libwbclient",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/libwbclient-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "samba-common-libs",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-common-libs-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ctdb-tests",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/ctdb-tests-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "samba-common",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-common-4.8.3-4.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "samba-client-libs",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-client-libs-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "samba-pidl",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-pidl-4.8.3-4.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "samba-client",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-client-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libsmbclient-devel",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/libsmbclient-devel-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ctdb",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/ctdb-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "samba-test",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-test-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "samba",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "samba-winbind-modules",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-winbind-modules-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "samba-libs",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-libs-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "samba-common-tools",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-common-tools-4.8.3-4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "samba-python-test",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-python-test-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libsmbclient",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/libsmbclient-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "samba-libs",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-libs-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "samba-devel",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-devel-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "samba-test-libs",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-test-libs-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "samba-winbind-krb5-locator",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-winbind-krb5-locator-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "samba-winbind-clients",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-winbind-clients-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "samba-common-tools",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-common-tools-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ctdb",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/ctdb-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "samba-winbind-modules",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-winbind-modules-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libsmbclient-devel",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/libsmbclient-devel-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "samba-krb5-printing",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-krb5-printing-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "samba-debuginfo",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-debuginfo-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "samba",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "samba-python",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-python-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ctdb-tests",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/ctdb-tests-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "samba-test",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-test-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libwbclient-devel",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/libwbclient-devel-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "samba-client-libs",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-client-libs-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "samba-winbind",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-winbind-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "samba-common-libs",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-common-libs-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libwbclient",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/libwbclient-4.8.3-4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "samba-client",
+          "Release": "4.amzn1",
+          "Version": "4.8.3",
+          "Filename": "Packages/samba-client-4.8.3-4.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

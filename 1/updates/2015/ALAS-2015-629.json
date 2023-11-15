@@ -1,0 +1,43 @@
+{
+  "ID": "ALAS-2015-629",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-629: medium priority package update for perl-HTML-Scrubber",
+  "Issued": {
+    "Date": "2015-12-14 10:00"
+  },
+  "Updated": {
+    "Date": "2015-12-13 14:25"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-5667:\n\tCross-site scripting (XSS) vulnerability in the HTML-Scrubber module before 0.15 for Perl, when the comment feature is enabled, allows remote attackers to inject arbitrary web script or HTML via a crafted comment.\n1276646: \nCVE-2015-5667 perl-HTML-Scrubber: XSS vulnerability when function \"comment\" is enabled\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5667",
+        "ID": "CVE-2015-5667",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "perl-HTML-Scrubber",
+          "Release": "1.5.amzn1",
+          "Version": "0.15",
+          "Filename": "Packages/perl-HTML-Scrubber-0.15-1.5.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

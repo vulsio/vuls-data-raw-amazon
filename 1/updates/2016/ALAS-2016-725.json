@@ -1,0 +1,259 @@
+{
+  "ID": "ALAS-2016-725",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-725: important priority package update for httpd24 httpd",
+  "Issued": {
+    "Date": "2016-07-20 18:00"
+  },
+  "Updated": {
+    "Date": "2016-07-20 18:00"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-5387:\n\tIt was discovered that httpd used the value of the Proxy header from HTTP requests to initialize the HTTP_PROXY environment variable for CGI scripts, which in turn was incorrectly used by certain HTTP client implementations to configure the proxy for outgoing HTTP requests. A remote attacker could possibly use this flaw to redirect HTTP requests performed by a CGI script to an attacker-controlled proxy via a malicious HTTP request.\n1353755: \nCVE-2016-5387 Apache HTTPD: sets environmental variable based on user supplied Proxy request header\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5387",
+        "ID": "CVE-2016-5387",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd24",
+          "Release": "1.65.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/httpd24-2.4.23-1.65.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod24_proxy_html",
+          "Release": "1.65.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/mod24_proxy_html-2.4.23-1.65.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod24_ssl",
+          "Release": "1.65.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/mod24_ssl-2.4.23-1.65.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd24-tools",
+          "Release": "1.65.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/httpd24-tools-2.4.23-1.65.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mod24_session",
+          "Release": "1.65.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/mod24_session-2.4.23-1.65.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd24-devel",
+          "Release": "1.65.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/httpd24-devel-2.4.23-1.65.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd24-debuginfo",
+          "Release": "1.65.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/httpd24-debuginfo-2.4.23-1.65.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mod24_ldap",
+          "Release": "1.65.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/mod24_ldap-2.4.23-1.65.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "httpd24-manual",
+          "Release": "1.65.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/httpd24-manual-2.4.23-1.65.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mod24_session",
+          "Release": "1.65.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/mod24_session-2.4.23-1.65.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd24-devel",
+          "Release": "1.65.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/httpd24-devel-2.4.23-1.65.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd24",
+          "Release": "1.65.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/httpd24-2.4.23-1.65.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd24-debuginfo",
+          "Release": "1.65.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/httpd24-debuginfo-2.4.23-1.65.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd24-tools",
+          "Release": "1.65.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/httpd24-tools-2.4.23-1.65.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod24_proxy_html",
+          "Release": "1.65.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/mod24_proxy_html-2.4.23-1.65.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod24_ssl",
+          "Release": "1.65.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/mod24_ssl-2.4.23-1.65.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mod24_ldap",
+          "Release": "1.65.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/mod24_ldap-2.4.23-1.65.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd",
+          "Release": "1.8.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/httpd-2.2.31-1.8.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-devel",
+          "Release": "1.8.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/httpd-devel-2.2.31-1.8.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod_ssl",
+          "Release": "1.8.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/mod_ssl-2.2.31-1.8.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "httpd-manual",
+          "Release": "1.8.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/httpd-manual-2.2.31-1.8.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-tools",
+          "Release": "1.8.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/httpd-tools-2.2.31-1.8.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-debuginfo",
+          "Release": "1.8.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/httpd-debuginfo-2.2.31-1.8.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-debuginfo",
+          "Release": "1.8.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/httpd-debuginfo-2.2.31-1.8.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-tools",
+          "Release": "1.8.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/httpd-tools-2.2.31-1.8.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd",
+          "Release": "1.8.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/httpd-2.2.31-1.8.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod_ssl",
+          "Release": "1.8.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/mod_ssl-2.2.31-1.8.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-devel",
+          "Release": "1.8.amzn1",
+          "Version": "2.2.31",
+          "Filename": "Packages/httpd-devel-2.2.31-1.8.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

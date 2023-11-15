@@ -1,0 +1,113 @@
+{
+  "ID": "ALAS2-2022-1892",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2022-1892: medium priority package update for mutt",
+  "Issued": {
+    "Date": "2022-12-01 20:31"
+  },
+  "Updated": {
+    "Date": "2022-12-06 22:40"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-1328:\n\tA flaw was found in mutt. When reading unencoded messages, mutt uses the line length from the untrusted input without any validation. This flaw allows an attacker to craft a malicious message, which leads to an out-of-bounds read, causing data leaks that include fragments of other unrelated messages.\n\nCVE-2021-3181:\n\trfc822.c in Mutt through 2.0.4 allows remote attackers to cause a denial of service (mailbox unavailability) by sending email messages with sequences of semicolon characters in RFC822 address fields (aka terminators of empty groups). A small email message from the attacker can cause large memory consumption, and the victim may then be unable to see email messages from other persons.\n\nCVE-2020-28896:\n\tMutt before 2.0.2 and NeoMutt before 2020-11-20 did not ensure that  was processed if an IMAP server's initial server response was invalid. The connection was not properly closed, and the code could continue attempting to authenticate. This could result in authentication credentials being exposed on an unencrypted connection, or to a machine-in-the-middle.\n\nCVE-2020-14954:\n\tMutt before 1.14.4 and NeoMutt before 2020-06-19 have a STARTTLS buffering issue that affects IMAP, SMTP, and POP3. When a server sends a \"begin TLS\" response, the client reads additional data (e.g., from a man-in-the-middle attacker) and evaluates it in a TLS context, aka \"response injection.\"\n\nCVE-2020-14154:\n\tMutt before 1.14.3 proceeds with a connection even if, in response to a GnuTLS certificate prompt, the user rejects an expired intermediate certificate.\n\nCVE-2020-14093:\n\tMutt before 1.14.3 allows an IMAP fcc/postpone man-in-the-middle attack via a PREAUTH response.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14093",
+        "ID": "CVE-2020-14093",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14154",
+        "ID": "CVE-2020-14154",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14954",
+        "ID": "CVE-2020-14954",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28896",
+        "ID": "CVE-2020-28896",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3181",
+        "ID": "CVE-2021-3181",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1328",
+        "ID": "CVE-2022-1328",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "5",
+          "Name": "mutt",
+          "Release": "29.amzn2.0.1",
+          "Version": "1.5.21",
+          "Filename": "Packages/mutt-1.5.21-29.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "5",
+          "Name": "mutt-debuginfo",
+          "Release": "29.amzn2.0.1",
+          "Version": "1.5.21",
+          "Filename": "Packages/mutt-debuginfo-1.5.21-29.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "5",
+          "Name": "mutt",
+          "Release": "29.amzn2.0.1",
+          "Version": "1.5.21",
+          "Filename": "Packages/mutt-1.5.21-29.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "5",
+          "Name": "mutt-debuginfo",
+          "Release": "29.amzn2.0.1",
+          "Version": "1.5.21",
+          "Filename": "Packages/mutt-debuginfo-1.5.21-29.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "5",
+          "Name": "mutt",
+          "Release": "29.amzn2.0.1",
+          "Version": "1.5.21",
+          "Filename": "Packages/mutt-1.5.21-29.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "5",
+          "Name": "mutt-debuginfo",
+          "Release": "29.amzn2.0.1",
+          "Version": "1.5.21",
+          "Filename": "Packages/mutt-debuginfo-1.5.21-29.amzn2.0.1.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

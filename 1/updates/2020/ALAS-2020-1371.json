@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS-2020-1371",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2020-1371: important priority package update for ppp",
+  "Issued": {
+    "Date": "2020-05-22 20:57"
+  },
+  "Updated": {
+    "Date": "2020-06-03 17:20"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-8597:\n\teap.c in pppd in ppp 2.4.2 through 2.4.8 has an rhostname buffer overflow in the eap_request and eap_response functions.\n1800727: CVE-2020-8597 ppp: Buffer overflow in the eap_request and eap_response functions in eap.c\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8597",
+        "ID": "CVE-2020-8597",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ppp",
+          "Release": "11.9.amzn1",
+          "Version": "2.4.5",
+          "Filename": "Packages/ppp-2.4.5-11.9.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ppp-devel",
+          "Release": "11.9.amzn1",
+          "Version": "2.4.5",
+          "Filename": "Packages/ppp-devel-2.4.5-11.9.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ppp-debuginfo",
+          "Release": "11.9.amzn1",
+          "Version": "2.4.5",
+          "Filename": "Packages/ppp-debuginfo-2.4.5-11.9.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ppp-debuginfo",
+          "Release": "11.9.amzn1",
+          "Version": "2.4.5",
+          "Filename": "Packages/ppp-debuginfo-2.4.5-11.9.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ppp",
+          "Release": "11.9.amzn1",
+          "Version": "2.4.5",
+          "Filename": "Packages/ppp-2.4.5-11.9.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ppp-devel",
+          "Release": "11.9.amzn1",
+          "Version": "2.4.5",
+          "Filename": "Packages/ppp-devel-2.4.5-11.9.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

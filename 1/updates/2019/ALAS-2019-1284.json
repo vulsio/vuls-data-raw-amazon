@@ -1,0 +1,553 @@
+{
+  "ID": "ALAS-2019-1284",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2019-1284: low priority package update for php72",
+  "Issued": {
+    "Date": "2019-09-13 22:55"
+  },
+  "Updated": {
+    "Date": "2019-09-18 21:35"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2019-11042:\n\tWhen PHP EXIF extension is parsing EXIF information from an image, e.g. via exif_read_data() function, in PHP versions 7.1.x below 7.1.31, 7.2.x below 7.2.21 and 7.3.x below 7.3.8 it is possible to supply it with data what will cause it to read past the allocated buffer. This may lead to information disclosure or crash.\n1739465: \nCVE-2019-11042 php: heap buffer over-read in exif_process_user_comment()\n\nCVE-2019-11041:\n\tWhen PHP EXIF extension is parsing EXIF information from an image, e.g. via exif_read_data() function, in PHP versions 7.1.x below 7.1.31, 7.2.x below 7.2.21 and 7.3.x below 7.3.8 it is possible to supply it with data what will cause it to read past the allocated buffer. This may lead to information disclosure or crash.\n1739459: \nCVE-2019-11041 php: heap buffer over-read in exif_scan_thumbnail()\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11041",
+        "ID": "CVE-2019-11041",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11042",
+        "ID": "CVE-2019-11042",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-tidy",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-tidy-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-xmlrpc",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-xmlrpc-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-cli",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-cli-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-embedded",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-embedded-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-mysqlnd",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-mysqlnd-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-devel",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-devel-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-pdo-dblib",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-pdo-dblib-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-imap",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-imap-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-fpm",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-fpm-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-enchant",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-enchant-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-debuginfo",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-debuginfo-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-gmp",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-gmp-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-gd",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-gd-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-json",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-json-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-dba",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-dba-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-snmp",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-snmp-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-pgsql",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-pgsql-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-common",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-common-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-mbstring",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-mbstring-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-bcmath",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-bcmath-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-process",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-process-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-pdo",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-pdo-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-soap",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-soap-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-intl",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-intl-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-recode",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-recode-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-ldap",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-ldap-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-xml",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-xml-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-odbc",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-odbc-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-dbg",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-dbg-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-pspell",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-pspell-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php72-opcache",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-opcache-7.2.21-1.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-dba",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-dba-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-pspell",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-pspell-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-opcache",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-opcache-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-common",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-common-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-snmp",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-snmp-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-mbstring",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-mbstring-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-xmlrpc",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-xmlrpc-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-tidy",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-tidy-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-imap",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-imap-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-bcmath",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-bcmath-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-enchant",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-enchant-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-gmp",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-gmp-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-pdo-dblib",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-pdo-dblib-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-pgsql",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-pgsql-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-intl",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-intl-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-fpm",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-fpm-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-soap",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-soap-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-debuginfo",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-debuginfo-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-xml",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-xml-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-devel",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-devel-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-process",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-process-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-recode",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-recode-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-pdo",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-pdo-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-json",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-json-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-dbg",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-dbg-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-mysqlnd",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-mysqlnd-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-ldap",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-ldap-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-embedded",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-embedded-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-odbc",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-odbc-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-cli",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-cli-7.2.21-1.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php72-gd",
+          "Release": "1.15.amzn1",
+          "Version": "7.2.21",
+          "Filename": "Packages/php72-gd-7.2.21-1.15.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

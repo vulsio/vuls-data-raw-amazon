@@ -1,0 +1,137 @@
+{
+  "ID": "ALAS2-2018-1051",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2018-1051: low priority package update for kernel",
+  "Issued": {
+    "Date": "2018-08-04 23:49"
+  },
+  "Updated": {
+    "Date": "2018-08-06 18:37"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-13094:\n\tAn issue was discovered in the XFS filesystem in fs/xfs/libxfs/xfs_attr_leaf.c in the Linux kernel. A NULL pointer dereference may occur for a corrupted xfs image after xfs_da_shrink_inode() is called with a NULL bp. This can lead to a system crash and a denial of service.\n1597771: \nCVE-2018-13094 kernel: NULL pointer dereference in xfs_da_shrink_inode function\n\nCVE-2018-13093:\n\tAn issue was discovered in the XFS filesystem in fs/xfs/xfs_icache.c in the Linux kernel. There is a NULL pointer dereference leading to a system panic in lookup_slow() on a NULL inode-&gt;i_ops pointer when doing pathwalks on a corrupted xfs image. This occurs because of a lack of proper validation that cached inodes are free during an allocation.\n1597766: \nCVE-2018-13093 kernel: NULL pointer dereference in lookup_slow function\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-13093",
+        "ID": "CVE-2018-13093",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-13094",
+        "ID": "CVE-2018-13094",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "68.43.amzn2",
+          "Version": "4.14.59",
+          "Filename": "Packages/kernel-4.14.59-68.43.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "68.43.amzn2",
+          "Version": "4.14.59",
+          "Filename": "Packages/kernel-headers-4.14.59-68.43.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "68.43.amzn2",
+          "Version": "4.14.59",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.14.59-68.43.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "68.43.amzn2",
+          "Version": "4.14.59",
+          "Filename": "Packages/perf-4.14.59-68.43.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "68.43.amzn2",
+          "Version": "4.14.59",
+          "Filename": "Packages/perf-debuginfo-4.14.59-68.43.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "68.43.amzn2",
+          "Version": "4.14.59",
+          "Filename": "Packages/python-perf-4.14.59-68.43.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "68.43.amzn2",
+          "Version": "4.14.59",
+          "Filename": "Packages/python-perf-debuginfo-4.14.59-68.43.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "68.43.amzn2",
+          "Version": "4.14.59",
+          "Filename": "Packages/kernel-tools-4.14.59-68.43.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "68.43.amzn2",
+          "Version": "4.14.59",
+          "Filename": "Packages/kernel-tools-devel-4.14.59-68.43.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "68.43.amzn2",
+          "Version": "4.14.59",
+          "Filename": "Packages/kernel-tools-debuginfo-4.14.59-68.43.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "68.43.amzn2",
+          "Version": "4.14.59",
+          "Filename": "Packages/kernel-devel-4.14.59-68.43.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "68.43.amzn2",
+          "Version": "4.14.59",
+          "Filename": "Packages/kernel-debuginfo-4.14.59-68.43.amzn2.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,297 @@
+{
+  "ID": "ALAS2-2022-1749",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2022-1749: important priority package update for kernel",
+  "Issued": {
+    "Date": "2022-02-04 23:25"
+  },
+  "Updated": {
+    "Date": "2023-10-12 15:08"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-0492:\n\tThe cgroup release_agent is called with call_usermodehelper. The function call_usermodehelper starts the release_agent with a full set of capabilities. Therefore require capabilities when setting the release_agent.\n\nCVE-2021-44733:\n\tA use-after-free flaw in the Linux kernel TEE (Trusted Execution Environment) subsystem was found in the way user calls ioctl TEE_IOC_OPEN_SESSION or TEE_IOC_INVOKE. A local user could use this flaw to crash the system or escalate their privileges on the system. If the Linux system non configured with the CONFIG_PREEMPT option or CONFIG_CPU_SW_DOMAIN_PAN option enabled, then it is unlikely that a user can trigger this issue.\n\nCVE-2021-4155:\n\tA data leak flaw was found in the way XFS_IOC_ALLOCSP IOCTL in the XFS filesystem allowed for size increase of files with unaligned size. A local attacker could use this flaw to leak data on the XFS filesystem otherwise not accessible to them.\n\nCVE-2021-4083:\n\tA read-after-free memory flaw was found in the Linux kernel's garbage collection for Unix domain socket file handlers in the way users call close() and fget() simultaneously and can potentially trigger a race condition. This flaw allows a local user to crash the system or escalate their privileges on the system.\n\nCVE-2021-3923:\n\tA flaw was found in the Linux kernel's implementation of RDMA over infiniband. An attacker with a privileged local account can leak kernel stack information when issuing commands to the /dev/infiniband/rdma_cm device node. While this access is unlikely to leak sensitive user information, it can be further used to defeat existing kernel protection mechanisms.\n\nCVE-2021-28715:\n\tIncoming data packets for a guest in the Linux kernel's netback driver are buffered until the guest is ready to process them. There are some measures taken for avoiding to pile up too much data, but those can be bypassed by the guest: There is a timeout how long the client side of an interface can stop consuming new packets before it is assumed to have stalled, but this timeout is rather long (60 seconds by default). Using a UDP connection on a fast interface can easily accumulate gigabytes of data in that time.\n\nCVE-2021-28714:\n\tIncoming data packets for a guest in the Linux kernel's netback driver are buffered until the guest is ready to process them. There are some measures taken for avoiding to pile up too much data, but those can be bypassed by the guest: The timeout could even never trigger if the guest manages to have only one free slot in its RX queue ring page and the next package would require more than one free slot, which may be the case when using GSO, XDP, or software hashing.\n\nCVE-2021-28713:\n\tA denial of service flaw for virtual machine guests in the Linux kernel's Xen hypervisor subsystem was found in the way users call some interrupts with high frequency from one of the guests.\nA local user could use this flaw to starve the resources resulting in a denial of service.\n\nCVE-2021-28712:\n\tA denial of service flaw for virtual machine guests in the Linux kernel's Xen hypervisor subsystem was found in the way users call some interrupts with high frequency from one of the guests.\nA local user could use this flaw to starve the resources resulting in a denial of service.\n\nCVE-2021-28711:\n\tA denial of service flaw for virtual machine guests in the Linux kernel's Xen hypervisor subsystem was found in the way users call some interrupts with high frequency from one of the guests.\nA local user could use this flaw to starve the resources resulting in a denial of service.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28711",
+        "ID": "CVE-2021-28711",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28712",
+        "ID": "CVE-2021-28712",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28713",
+        "ID": "CVE-2021-28713",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28714",
+        "ID": "CVE-2021-28714",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28715",
+        "ID": "CVE-2021-28715",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3923",
+        "ID": "CVE-2021-3923",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4083",
+        "ID": "CVE-2021-4083",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4155",
+        "ID": "CVE-2021-4155",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44733",
+        "ID": "CVE-2021-44733",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0492",
+        "ID": "CVE-2022-0492",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/kernel-4.14.262-200.489.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/kernel-headers-4.14.262-200.489.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.14.262-200.489.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/perf-4.14.262-200.489.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/perf-debuginfo-4.14.262-200.489.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/python-perf-4.14.262-200.489.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/python-perf-debuginfo-4.14.262-200.489.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/kernel-tools-4.14.262-200.489.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/kernel-tools-devel-4.14.262-200.489.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/kernel-tools-debuginfo-4.14.262-200.489.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/kernel-devel-4.14.262-200.489.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/kernel-debuginfo-4.14.262-200.489.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-4.14.262-200.489",
+          "Release": "0.amzn2",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-4.14.262-200.489-1.0-0.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/kernel-headers-4.14.262-200.489.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/kernel-4.14.262-200.489.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/kernel-headers-4.14.262-200.489.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-aarch64",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/kernel-debuginfo-common-aarch64-4.14.262-200.489.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/perf-4.14.262-200.489.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/perf-debuginfo-4.14.262-200.489.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/python-perf-4.14.262-200.489.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/python-perf-debuginfo-4.14.262-200.489.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/kernel-tools-4.14.262-200.489.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/kernel-tools-devel-4.14.262-200.489.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/kernel-tools-debuginfo-4.14.262-200.489.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/kernel-devel-4.14.262-200.489.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "200.489.amzn2",
+          "Version": "4.14.262",
+          "Filename": "Packages/kernel-debuginfo-4.14.262-200.489.amzn2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

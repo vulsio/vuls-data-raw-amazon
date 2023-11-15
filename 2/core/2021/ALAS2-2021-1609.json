@@ -1,0 +1,113 @@
+{
+  "ID": "ALAS2-2021-1609",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1609: medium priority package update for golang",
+  "Issued": {
+    "Date": "2021-02-19 01:24"
+  },
+  "Updated": {
+    "Date": "2021-02-19 22:02"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-3115:\n\tGo before 1.14.14 and 1.15.x before 1.15.7 on Windows is vulnerable to Command Injection and remote code execution when using the \"go get\" command to fetch modules that make use of cgo (for example, cgo can execute a gcc program from an untrusted download).\n1918761: CVE-2021-3115 golang: cmd/go: packages using cgo can cause arbitrary code execution at build time\n\nCVE-2021-3114:\n\tIn Go before 1.14.14 and 1.15.x before 1.15.7, crypto/elliptic/p224.go can generate incorrect outputs, related to an underflow of the lowest limb during the final complete reduction in the P-224 field.\n1918750: CVE-2021-3114 golang: crypto/elliptic: incorrect operations on the P-224 curve\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3114",
+        "ID": "CVE-2021-3114",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3115",
+        "ID": "CVE-2021-3115",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "golang",
+          "Release": "1.amzn2.0.1",
+          "Version": "1.15.8",
+          "Filename": "Packages/golang-1.15.8-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "golang-docs",
+          "Release": "1.amzn2.0.1",
+          "Version": "1.15.8",
+          "Filename": "Packages/golang-docs-1.15.8-1.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "golang-misc",
+          "Release": "1.amzn2.0.1",
+          "Version": "1.15.8",
+          "Filename": "Packages/golang-misc-1.15.8-1.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "golang-tests",
+          "Release": "1.amzn2.0.1",
+          "Version": "1.15.8",
+          "Filename": "Packages/golang-tests-1.15.8-1.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "golang-src",
+          "Release": "1.amzn2.0.1",
+          "Version": "1.15.8",
+          "Filename": "Packages/golang-src-1.15.8-1.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "golang-bin",
+          "Release": "1.amzn2.0.1",
+          "Version": "1.15.8",
+          "Filename": "Packages/golang-bin-1.15.8-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "golang",
+          "Release": "1.amzn2.0.1",
+          "Version": "1.15.8",
+          "Filename": "Packages/golang-1.15.8-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "golang-bin",
+          "Release": "1.amzn2.0.1",
+          "Version": "1.15.8",
+          "Filename": "Packages/golang-bin-1.15.8-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "golang-race",
+          "Release": "1.amzn2.0.1",
+          "Version": "1.15.8",
+          "Filename": "Packages/golang-race-1.15.8-1.amzn2.0.1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

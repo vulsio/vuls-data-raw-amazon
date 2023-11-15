@@ -1,0 +1,89 @@
+{
+  "ID": "ALAS-2012-96",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2012-96: low priority package update for php-pecl-apc",
+  "Issued": {
+    "Date": "2012-07-05 16:13"
+  },
+  "Updated": {
+    "Date": "2014-09-14 16:26"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2010-3294:\n\tCross-site scripting (XSS) vulnerability in apc.php in the Alternative PHP Cache (APC) extension before 3.1.4 for PHP allows remote attackers to inject arbitrary web script or HTML via unspecified vectors.\nA cross-site scripting (XSS) flaw was found in the \"apc.php\" script, which provides a detailed analysis of the internal workings of APC and is shipped as part of the APC extension documentation. A remote attacker could possibly use this flaw to conduct a cross-site scripting attack.\n634334: \nCVE-2010-3294 php-pecl-apc: potential XSS in apc.php\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-3294",
+        "ID": "CVE-2010-3294",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2012:0811.html",
+        "ID": "RHSA-2012:0811",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php-pecl-apc",
+          "Release": "1.4.amzn1",
+          "Version": "3.1.10",
+          "Filename": "Packages/php-pecl-apc-3.1.10-1.4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php-pecl-apc-debuginfo",
+          "Release": "1.4.amzn1",
+          "Version": "3.1.10",
+          "Filename": "Packages/php-pecl-apc-debuginfo-3.1.10-1.4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php-pecl-apc-devel",
+          "Release": "1.4.amzn1",
+          "Version": "3.1.10",
+          "Filename": "Packages/php-pecl-apc-devel-3.1.10-1.4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-pecl-apc-devel",
+          "Release": "1.4.amzn1",
+          "Version": "3.1.10",
+          "Filename": "Packages/php-pecl-apc-devel-3.1.10-1.4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-pecl-apc-debuginfo",
+          "Release": "1.4.amzn1",
+          "Version": "3.1.10",
+          "Filename": "Packages/php-pecl-apc-debuginfo-3.1.10-1.4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-pecl-apc",
+          "Release": "1.4.amzn1",
+          "Version": "3.1.10",
+          "Filename": "Packages/php-pecl-apc-3.1.10-1.4.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "ID": "ALAS-2018-938",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2018-938: medium priority package update for curl",
+  "Issued": {
+    "Date": "2018-01-03 08:22"
+  },
+  "Updated": {
+    "Date": "2018-01-03 22:49"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-8817:\n\tThe FTP wildcard function in curl and libcurl before 7.57.0 allows remote attackers to cause a denial of service (out-of-bounds read and application crash) or possibly have unspecified other impact via a string that ends with an &#039;[&#039; character.\n1515760: \nCVE-2017-8817 curl: FTP wildcard out of bounds read\n\nCVE-2017-8816:\n\tThe NTLM authentication feature in curl and libcurl before 7.57.0 on 32-bit platforms allows attackers to cause a denial of service (integer overflow and resultant buffer overflow, and application crash) or possibly have unspecified other impact via vectors involving long user and password fields.\n1515757: \nCVE-2017-8816 curl: NTLM buffer overflow via integer overflow\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8816",
+        "ID": "CVE-2017-8816",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8817",
+        "ID": "CVE-2017-8817",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcurl",
+          "Release": "13.80.amzn1",
+          "Version": "7.53.1",
+          "Filename": "Packages/libcurl-7.53.1-13.80.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "curl",
+          "Release": "13.80.amzn1",
+          "Version": "7.53.1",
+          "Filename": "Packages/curl-7.53.1-13.80.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcurl-devel",
+          "Release": "13.80.amzn1",
+          "Version": "7.53.1",
+          "Filename": "Packages/libcurl-devel-7.53.1-13.80.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "curl-debuginfo",
+          "Release": "13.80.amzn1",
+          "Version": "7.53.1",
+          "Filename": "Packages/curl-debuginfo-7.53.1-13.80.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "curl-debuginfo",
+          "Release": "13.80.amzn1",
+          "Version": "7.53.1",
+          "Filename": "Packages/curl-debuginfo-7.53.1-13.80.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "curl",
+          "Release": "13.80.amzn1",
+          "Version": "7.53.1",
+          "Filename": "Packages/curl-7.53.1-13.80.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcurl",
+          "Release": "13.80.amzn1",
+          "Version": "7.53.1",
+          "Filename": "Packages/libcurl-7.53.1-13.80.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcurl-devel",
+          "Release": "13.80.amzn1",
+          "Version": "7.53.1",
+          "Filename": "Packages/libcurl-devel-7.53.1-13.80.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

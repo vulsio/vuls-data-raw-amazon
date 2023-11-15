@@ -1,0 +1,115 @@
+{
+  "ID": "ALAS-2013-179",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-179: medium priority package update for lighttpd",
+  "Issued": {
+    "Date": "2013-04-11 17:24"
+  },
+  "Updated": {
+    "Date": "2014-09-15 22:49"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2012-5533:\n\tThe http_request_split_value function in request.c in lighttpd before 1.4.32 allows remote attackers to cause a denial of service (infinite loop) via a request with a header containing an empty token, as demonstrated using the \"Connection: TE,,Keep-Alive\" header.\n878213: \nCVE-2012-5533 lighttpd: Denial of Service via malformed Connection headers\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5533",
+        "ID": "CVE-2012-5533",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lighttpd-debuginfo",
+          "Release": "1.5.amzn1",
+          "Version": "1.4.31",
+          "Filename": "Packages/lighttpd-debuginfo-1.4.31-1.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lighttpd-mod_mysql_vhost",
+          "Release": "1.5.amzn1",
+          "Version": "1.4.31",
+          "Filename": "Packages/lighttpd-mod_mysql_vhost-1.4.31-1.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lighttpd-mod_geoip",
+          "Release": "1.5.amzn1",
+          "Version": "1.4.31",
+          "Filename": "Packages/lighttpd-mod_geoip-1.4.31-1.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lighttpd-fastcgi",
+          "Release": "1.5.amzn1",
+          "Version": "1.4.31",
+          "Filename": "Packages/lighttpd-fastcgi-1.4.31-1.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lighttpd",
+          "Release": "1.5.amzn1",
+          "Version": "1.4.31",
+          "Filename": "Packages/lighttpd-1.4.31-1.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lighttpd-mod_geoip",
+          "Release": "1.5.amzn1",
+          "Version": "1.4.31",
+          "Filename": "Packages/lighttpd-mod_geoip-1.4.31-1.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lighttpd-debuginfo",
+          "Release": "1.5.amzn1",
+          "Version": "1.4.31",
+          "Filename": "Packages/lighttpd-debuginfo-1.4.31-1.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lighttpd",
+          "Release": "1.5.amzn1",
+          "Version": "1.4.31",
+          "Filename": "Packages/lighttpd-1.4.31-1.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lighttpd-mod_mysql_vhost",
+          "Release": "1.5.amzn1",
+          "Version": "1.4.31",
+          "Filename": "Packages/lighttpd-mod_mysql_vhost-1.4.31-1.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lighttpd-fastcgi",
+          "Release": "1.5.amzn1",
+          "Version": "1.4.31",
+          "Filename": "Packages/lighttpd-fastcgi-1.4.31-1.5.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "ID": "ALAS2023-2023-021",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2023 - ALAS2023-2023-021: Medium priority package update for cpio",
+  "Issued": {
+    "Date": "2023-02-17 20:43:00"
+  },
+  "Updated": {
+    "Date": "2023-02-22 23:53:00"
+  },
+  "Severity": "Medium",
+  "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2021-38185:\n\tGNU cpio through 2.13 allows attackers to execute arbitrary code via a crafted pattern file, because of a dstring.c ds_fgetstr integer overflow that triggers an out-of-bounds heap write. NOTE: it is unclear whether there are common cases where the pattern file, associated with the -E option, is untrusted data.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-38185",
+        "ID": "CVE-2021-38185",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2023",
+      "Name": "Amazon Linux 2023",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "cpio-debuginfo",
+          "Release": "13.amzn2023.0.2",
+          "Version": "2.13",
+          "Filename": "Packages/cpio-debuginfo-2.13-13.amzn2023.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "cpio",
+          "Release": "13.amzn2023.0.2",
+          "Version": "2.13",
+          "Filename": "Packages/cpio-2.13-13.amzn2023.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "cpio-debugsource",
+          "Release": "13.amzn2023.0.2",
+          "Version": "2.13",
+          "Filename": "Packages/cpio-debugsource-2.13-13.amzn2023.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "cpio-debuginfo",
+          "Release": "13.amzn2023.0.2",
+          "Version": "2.13",
+          "Filename": "Packages/cpio-debuginfo-2.13-13.amzn2023.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "cpio",
+          "Release": "13.amzn2023.0.2",
+          "Version": "2.13",
+          "Filename": "Packages/cpio-2.13-13.amzn2023.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "cpio-debugsource",
+          "Release": "13.amzn2023.0.2",
+          "Version": "2.13",
+          "Filename": "Packages/cpio-debugsource-2.13-13.amzn2023.0.2.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "cpio-debuginfo",
+          "Release": "13.amzn2023.0.2",
+          "Version": "2.13",
+          "Filename": "Packages/cpio-debuginfo-2.13-13.amzn2023.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "cpio",
+          "Release": "13.amzn2023.0.2",
+          "Version": "2.13",
+          "Filename": "Packages/cpio-2.13-13.amzn2023.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "cpio-debugsource",
+          "Release": "13.amzn2023.0.2",
+          "Version": "2.13",
+          "Filename": "Packages/cpio-debugsource-2.13-13.amzn2023.0.2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

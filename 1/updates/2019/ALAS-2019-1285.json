@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS-2019-1285",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2019-1285: medium priority package update for zsh",
+  "Issued": {
+    "Date": "2019-09-13 22:56"
+  },
+  "Updated": {
+    "Date": "2019-09-18 21:36"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-13259:\n\tIt was discovered that zsh does not properly validate the shebang of input files and it truncates it to the first 64 bytes. A local attacker may use this flaw to make zsh execute a different binary than what is expected, named with a substring of the shebang one.\n1626184: \nCVE-2018-13259 zsh: Improper handling of shebang line longer than 64\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-13259",
+        "ID": "CVE-2018-13259",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "zsh-html",
+          "Release": "33.18.amzn1",
+          "Version": "5.0.2",
+          "Filename": "Packages/zsh-html-5.0.2-33.18.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "zsh",
+          "Release": "33.18.amzn1",
+          "Version": "5.0.2",
+          "Filename": "Packages/zsh-5.0.2-33.18.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "zsh-debuginfo",
+          "Release": "33.18.amzn1",
+          "Version": "5.0.2",
+          "Filename": "Packages/zsh-debuginfo-5.0.2-33.18.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "zsh-html",
+          "Release": "33.18.amzn1",
+          "Version": "5.0.2",
+          "Filename": "Packages/zsh-html-5.0.2-33.18.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "zsh",
+          "Release": "33.18.amzn1",
+          "Version": "5.0.2",
+          "Filename": "Packages/zsh-5.0.2-33.18.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "zsh-debuginfo",
+          "Release": "33.18.amzn1",
+          "Version": "5.0.2",
+          "Filename": "Packages/zsh-debuginfo-5.0.2-33.18.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

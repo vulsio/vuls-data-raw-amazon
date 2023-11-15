@@ -1,0 +1,43 @@
+{
+  "ID": "ALAS2-2019-1334",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1334: low priority package update for python-requests",
+  "Issued": {
+    "Date": "2019-10-21 18:01"
+  },
+  "Updated": {
+    "Date": "2019-10-23 23:59"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-18074:\n\tA credentials-exposure flaw was found in python-requests, where if a request with authentication is redirected (302) from an HTTPS endpoint to an HTTP endpoint on the same host, the Authorization header is not stripped and the credentials can be read in plain text. A man-in-the-middle attacker could exploit this flaw to obtain a user&#039;s valid credentials.\n99999: \nCVE-2018-18074 python-requests: Redirect from HTTPS to HTTP does not remove Authorization header\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18074",
+        "ID": "CVE-2018-18074",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "python-requests",
+          "Release": "7.amzn2",
+          "Version": "2.6.0",
+          "Filename": "Packages/python-requests-2.6.0-7.amzn2.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

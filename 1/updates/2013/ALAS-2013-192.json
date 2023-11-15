@@ -1,0 +1,89 @@
+{
+  "ID": "ALAS-2013-192",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-192: important priority package update for openswan",
+  "Issued": {
+    "Date": "2013-05-24 13:56"
+  },
+  "Updated": {
+    "Date": "2014-09-15 23:06"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-2053:\n\tA buffer overflow flaw was found in Openswan. If Opportunistic Encryption were enabled (\"oe=yes\" in \"/etc/ipsec.conf\") and an RSA key configured, an attacker able to cause a system to perform a DNS lookup for an attacker-controlled domain containing malicious records (such as by sending an email that triggers a DKIM or SPF DNS record lookup) could cause Openswan's pluto IKE daemon to crash or, potentially, execute arbitrary code with root privileges. With \"oe=yes\" but no RSA key configured, the issue can only be triggered by attackers on the local network who can control the reverse DNS entry of the target system. Opportunistic Encryption is disabled by default.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2053",
+        "ID": "CVE-2013-2053",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2013:0827.html",
+        "ID": "RHSA-2013:0827",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openswan",
+          "Release": "2.16.amzn1",
+          "Version": "2.6.37",
+          "Filename": "Packages/openswan-2.6.37-2.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openswan-debuginfo",
+          "Release": "2.16.amzn1",
+          "Version": "2.6.37",
+          "Filename": "Packages/openswan-debuginfo-2.6.37-2.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openswan-doc",
+          "Release": "2.16.amzn1",
+          "Version": "2.6.37",
+          "Filename": "Packages/openswan-doc-2.6.37-2.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openswan-doc",
+          "Release": "2.16.amzn1",
+          "Version": "2.6.37",
+          "Filename": "Packages/openswan-doc-2.6.37-2.16.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openswan-debuginfo",
+          "Release": "2.16.amzn1",
+          "Version": "2.6.37",
+          "Filename": "Packages/openswan-debuginfo-2.6.37-2.16.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openswan",
+          "Release": "2.16.amzn1",
+          "Version": "2.6.37",
+          "Filename": "Packages/openswan-2.6.37-2.16.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

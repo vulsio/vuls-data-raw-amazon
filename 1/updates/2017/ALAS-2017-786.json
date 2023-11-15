@@ -1,0 +1,203 @@
+{
+  "ID": "ALAS-2017-786",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-786: medium priority package update for kernel",
+  "Issued": {
+    "Date": "2017-01-19 16:30"
+  },
+  "Updated": {
+    "Date": "2017-01-19 16:30"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-10088:\n\tThe sg implementation in the Linux kernel through 4.9 does not properly restrict write operations in situations where the KERNEL_DS option is set, which allows local users to read or write to arbitrary kernel memory locations or cause a denial of service (use-after-free) by leveraging access to a /dev/sg device, related to block/bsg.c and drivers/scsi/sg.c. NOTE: this vulnerability exists because of an incomplete fix for CVE-2016-9576.\n1412210: \nCVE-2016-10088 kernel: Use after free in SCSI generic device interface (CVE-2016-9576 regression)\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10088",
+        "ID": "CVE-2016-10088",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/perf-4.4.41-36.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/kernel-devel-4.4.41-36.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/perf-debuginfo-4.4.41-36.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/kernel-tools-4.4.41-36.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/kernel-debuginfo-4.4.41-36.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/kernel-headers-4.4.41-36.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/kernel-tools-debuginfo-4.4.41-36.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.4.41-36.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/kernel-4.4.41-36.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/kernel-tools-devel-4.4.41-36.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/kernel-tools-4.4.41-36.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/perf-4.4.41-36.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/perf-debuginfo-4.4.41-36.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/kernel-debuginfo-4.4.41-36.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/kernel-tools-debuginfo-4.4.41-36.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/kernel-devel-4.4.41-36.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/kernel-4.4.41-36.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/kernel-tools-devel-4.4.41-36.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-i686",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/kernel-debuginfo-common-i686-4.4.41-36.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/kernel-headers-4.4.41-36.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "kernel-doc",
+          "Release": "36.55.amzn1",
+          "Version": "4.4.41",
+          "Filename": "Packages/kernel-doc-4.4.41-36.55.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

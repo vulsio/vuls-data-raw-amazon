@@ -1,0 +1,95 @@
+{
+  "ID": "ALAS-2013-160",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-160: medium priority package update for pam",
+  "Issued": {
+    "Date": "2013-03-02 16:48"
+  },
+  "Updated": {
+    "Date": "2014-09-15 22:33"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2011-3149:\n\tA denial of service flaw was found in the way the pam_env module expanded certain environment variables. If an application's PAM configuration contained \"user_readenv=1\" (this is not the default), a local attacker could use this flaw to cause the application to enter an infinite loop.\n\nCVE-2011-3148:\n\tA stack-based buffer overflow flaw was found in the way the pam_env module parsed users' \"~/.pam_environment\" files. If an application's PAM configuration contained \"user_readenv=1\" (this is not the default), a local attacker could use this flaw to crash the application or, possibly, escalate their privileges.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3148",
+        "ID": "CVE-2011-3148",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3149",
+        "ID": "CVE-2011-3149",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2013:0521.html",
+        "ID": "RHSA-2013:0521",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "pam",
+          "Release": "13.20.amzn1",
+          "Version": "1.1.1",
+          "Filename": "Packages/pam-1.1.1-13.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "pam-debuginfo",
+          "Release": "13.20.amzn1",
+          "Version": "1.1.1",
+          "Filename": "Packages/pam-debuginfo-1.1.1-13.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "pam-devel",
+          "Release": "13.20.amzn1",
+          "Version": "1.1.1",
+          "Filename": "Packages/pam-devel-1.1.1-13.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "pam-debuginfo",
+          "Release": "13.20.amzn1",
+          "Version": "1.1.1",
+          "Filename": "Packages/pam-debuginfo-1.1.1-13.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "pam",
+          "Release": "13.20.amzn1",
+          "Version": "1.1.1",
+          "Filename": "Packages/pam-1.1.1-13.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "pam-devel",
+          "Release": "13.20.amzn1",
+          "Version": "1.1.1",
+          "Filename": "Packages/pam-devel-1.1.1-13.20.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS-2022-1588",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2022-1588: medium priority package update for expat",
+  "Issued": {
+    "Date": "2022-05-31 23:47"
+  },
+  "Updated": {
+    "Date": "2022-06-09 18:41"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2021-45960:\n\tIn Expat (aka libexpat) before 2.4.3, a left shift by 29 (or more) places in the storeAtts function in xmlparse.c can lead to realloc misbehavior (e.g., allocating too few bytes, or only freeing memory).\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45960",
+        "ID": "CVE-2021-45960",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "expat-debuginfo",
+          "Release": "12.28.amzn1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-debuginfo-2.1.0-12.28.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "expat-devel",
+          "Release": "12.28.amzn1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-devel-2.1.0-12.28.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "expat",
+          "Release": "12.28.amzn1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-2.1.0-12.28.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "expat",
+          "Release": "12.28.amzn1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-2.1.0-12.28.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "expat-debuginfo",
+          "Release": "12.28.amzn1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-debuginfo-2.1.0-12.28.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "expat-devel",
+          "Release": "12.28.amzn1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-devel-2.1.0-12.28.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

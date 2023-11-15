@@ -1,0 +1,73 @@
+{
+  "ID": "ALAS-2012-51",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2012-51: medium priority package update for cvs",
+  "Issued": {
+    "Date": "2012-03-04 16:12"
+  },
+  "Updated": {
+    "Date": "2014-09-14 15:39"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-0804:\n\tA heap-based buffer overflow flaw was found in the way the CVS client handled responses from HTTP proxies. A malicious HTTP proxy could use this flaw to cause the CVS client to crash or, possibly, execute arbitrary code with the privileges of the user running the CVS client.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0804",
+        "ID": "CVE-2012-0804",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2012:0321.html",
+        "ID": "RHSA-2012:0321",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "cvs-debuginfo",
+          "Release": "11.6.amzn1",
+          "Version": "1.11.23",
+          "Filename": "Packages/cvs-debuginfo-1.11.23-11.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "cvs",
+          "Release": "11.6.amzn1",
+          "Version": "1.11.23",
+          "Filename": "Packages/cvs-1.11.23-11.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "cvs",
+          "Release": "11.6.amzn1",
+          "Version": "1.11.23",
+          "Filename": "Packages/cvs-1.11.23-11.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "cvs-debuginfo",
+          "Release": "11.6.amzn1",
+          "Version": "1.11.23",
+          "Filename": "Packages/cvs-debuginfo-1.11.23-11.6.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

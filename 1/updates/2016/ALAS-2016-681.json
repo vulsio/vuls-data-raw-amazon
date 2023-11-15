@@ -1,0 +1,125 @@
+{
+  "ID": "ALAS-2016-681",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-681: medium priority package update for tomcat6",
+  "Issued": {
+    "Date": "2016-03-29 15:30"
+  },
+  "Updated": {
+    "Date": "2016-03-29 15:30"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-0714:\n\tThe session-persistence implementation in Apache Tomcat 6.x before 6.0.45, 7.x before 7.0.68, 8.x before 8.0.31, and 9.x before 9.0.0.M2 mishandles session attributes, which allows remote authenticated users to bypass intended SecurityManager restrictions and execute arbitrary code in a privileged context via a web application that places a crafted object in a session.\n1311082: \nCVE-2016-0714 tomcat: Security Manager bypass via persistence mechanisms\n\nCVE-2016-0706:\n\tApache Tomcat 6.x before 6.0.45, 7.x before 7.0.68, 8.x before 8.0.31, and 9.x before 9.0.0.M2 does not place org.apache.catalina.manager.StatusManagerServlet on the org/apache/catalina/core/RestrictedServlets.properties list, which allows remote authenticated users to bypass intended SecurityManager restrictions and read arbitrary HTTP requests, and consequently discover session ID values, via a crafted web application.\n1311087: \nCVE-2016-0706 tomcat: security manager bypass via StatusManagerServlet\n\nCVE-2015-5345:\n\tThe Mapper component in Apache Tomcat 6.x before 6.0.45, 7.x before 7.0.67, 8.x before 8.0.30, and 9.x before 9.0.0.M2 processes redirects before considering security constraints and Filters, which allows remote attackers to determine the existence of a directory via a URL that lacks a trailing / (slash) character.\n1311089: \nCVE-2015-5345 tomcat: directory disclosure\n\nCVE-2015-5174:\n\tDirectory traversal vulnerability in RequestUtil.java in Apache Tomcat 6.x before 6.0.45, 7.x before 7.0.65, and 8.x before 8.0.27 allows remote authenticated users to bypass intended SecurityManager restrictions and list a parent directory via a /.. (slash dot dot) in a pathname used by a web application in a getResource, getResourceAsStream, or getResourcePaths call, as demonstrated by the $CATALINA_BASE/webapps directory.\n1265698: \nCVE-2015-5174 tomcat: URL Normalization issue\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5174",
+        "ID": "CVE-2015-5174",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5345",
+        "ID": "CVE-2015-5345",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0706",
+        "ID": "CVE-2016-0706",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-0714",
+        "ID": "CVE-2016-0714",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat6-jsp-2.1-api",
+          "Release": "1.4.amzn1",
+          "Version": "6.0.45",
+          "Filename": "Packages/tomcat6-jsp-2.1-api-6.0.45-1.4.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat6",
+          "Release": "1.4.amzn1",
+          "Version": "6.0.45",
+          "Filename": "Packages/tomcat6-6.0.45-1.4.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat6-admin-webapps",
+          "Release": "1.4.amzn1",
+          "Version": "6.0.45",
+          "Filename": "Packages/tomcat6-admin-webapps-6.0.45-1.4.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat6-servlet-2.5-api",
+          "Release": "1.4.amzn1",
+          "Version": "6.0.45",
+          "Filename": "Packages/tomcat6-servlet-2.5-api-6.0.45-1.4.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat6-docs-webapp",
+          "Release": "1.4.amzn1",
+          "Version": "6.0.45",
+          "Filename": "Packages/tomcat6-docs-webapp-6.0.45-1.4.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat6-el-2.1-api",
+          "Release": "1.4.amzn1",
+          "Version": "6.0.45",
+          "Filename": "Packages/tomcat6-el-2.1-api-6.0.45-1.4.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat6-webapps",
+          "Release": "1.4.amzn1",
+          "Version": "6.0.45",
+          "Filename": "Packages/tomcat6-webapps-6.0.45-1.4.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat6-lib",
+          "Release": "1.4.amzn1",
+          "Version": "6.0.45",
+          "Filename": "Packages/tomcat6-lib-6.0.45-1.4.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat6-javadoc",
+          "Release": "1.4.amzn1",
+          "Version": "6.0.45",
+          "Filename": "Packages/tomcat6-javadoc-6.0.45-1.4.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

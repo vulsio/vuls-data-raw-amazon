@@ -1,0 +1,71 @@
+{
+  "ID": "ALAS2-2018-1013",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2018-1013: medium priority package update for zsh",
+  "Issued": {
+    "Date": "2018-05-10 17:23"
+  },
+  "Updated": {
+    "Date": "2018-05-10 23:59"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-1100:\n\tA buffer overflow flaw was found in the zsh shell check path functionality. A local, unprivileged user can create a specially crafted message file, which, if used to set a custom &quot;you have new mail&quot; message, leads to code execution in the context of the user who receives the message. If the user affected is privileged, this leads to privilege escalation.\n1563395: \nCVE-2018-1100 zsh: buffer overflow in utils.c:checkmailpath() can lead to local arbitrary code execution\n\nCVE-2018-1083:\n\tA buffer overflow flaw was found in the zsh shell auto-complete functionality. A local, unprivileged user can create a specially crafted directory path which leads to code execution in the context of the user who tries to use auto-complete to traverse the before mentioned path. If the user affected is privileged, this leads to privilege escalation.\n1557382: \nCVE-2018-1083 zsh: Stack-based buffer overflow in gen_matches_files() at compctl.c\n\nCVE-2018-1071:\n\tzsh through version 5.4.2 is vulnerable to a stack-based buffer overflow in the exec.c:hashcmd() function. A local attacker could exploit this to cause a denial of service.\n1553531: \nCVE-2018-1071 zsh: Stack-based buffer overflow in exec.c:hashcmd()\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1071",
+        "ID": "CVE-2018-1071",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1083",
+        "ID": "CVE-2018-1083",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1100",
+        "ID": "CVE-2018-1100",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "zsh",
+          "Release": "1.amzn2",
+          "Version": "5.5.1",
+          "Filename": "Packages/zsh-5.5.1-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "zsh-html",
+          "Release": "1.amzn2",
+          "Version": "5.5.1",
+          "Filename": "Packages/zsh-html-5.5.1-1.amzn2.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "zsh-debuginfo",
+          "Release": "1.amzn2",
+          "Version": "5.5.1",
+          "Filename": "Packages/zsh-debuginfo-5.5.1-1.amzn2.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

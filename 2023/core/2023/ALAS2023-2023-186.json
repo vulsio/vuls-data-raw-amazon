@@ -1,0 +1,145 @@
+{
+  "ID": "ALAS2023-2023-186",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2023 - ALAS2023-2023-186: Medium priority package update for libssh",
+  "Issued": {
+    "Date": "2023-05-25 17:41:00"
+  },
+  "Updated": {
+    "Date": "2023-06-07 20:08:00"
+  },
+  "Severity": "Medium",
+  "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-2283:\n\tA vulnerability was found in libssh, where the authentication check of the connecting client can be bypassed in thepki_verify_data_signature function in memory allocation problems. This issue may happen if there is insufficient memory or the memory usage is limited. The problem is caused by the return value rc, which is initialized to SSH_ERROR and later rewritten to save the return value of the function call pki_key_check_hash_compatible. The value of the variable is not changed between this point and the cryptographic verification. Therefore any error between them calls goto error returning SSH_OK.\n\nCVE-2023-1667:\n\tA NULL pointer dereference was found In libssh during re-keying with algorithm guessing. This issue may allow an authenticated client to cause a denial of service.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-1667",
+        "ID": "CVE-2023-1667",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-2283",
+        "ID": "CVE-2023-2283",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2023",
+      "Name": "Amazon Linux 2023",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libssh-debugsource",
+          "Release": "1.amzn2023.0.1",
+          "Version": "0.10.5",
+          "Filename": "Packages/libssh-debugsource-0.10.5-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libssh-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "0.10.5",
+          "Filename": "Packages/libssh-debuginfo-0.10.5-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libssh",
+          "Release": "1.amzn2023.0.1",
+          "Version": "0.10.5",
+          "Filename": "Packages/libssh-0.10.5-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libssh-devel",
+          "Release": "1.amzn2023.0.1",
+          "Version": "0.10.5",
+          "Filename": "Packages/libssh-devel-0.10.5-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "libssh-config",
+          "Release": "1.amzn2023.0.1",
+          "Version": "0.10.5",
+          "Filename": "Packages/libssh-config-0.10.5-1.amzn2023.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libssh-debugsource",
+          "Release": "1.amzn2023.0.1",
+          "Version": "0.10.5",
+          "Filename": "Packages/libssh-debugsource-0.10.5-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libssh-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "0.10.5",
+          "Filename": "Packages/libssh-debuginfo-0.10.5-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libssh",
+          "Release": "1.amzn2023.0.1",
+          "Version": "0.10.5",
+          "Filename": "Packages/libssh-0.10.5-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libssh-devel",
+          "Release": "1.amzn2023.0.1",
+          "Version": "0.10.5",
+          "Filename": "Packages/libssh-devel-0.10.5-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libssh-debugsource",
+          "Release": "1.amzn2023.0.1",
+          "Version": "0.10.5",
+          "Filename": "Packages/libssh-debugsource-0.10.5-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libssh-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "0.10.5",
+          "Filename": "Packages/libssh-debuginfo-0.10.5-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libssh",
+          "Release": "1.amzn2023.0.1",
+          "Version": "0.10.5",
+          "Filename": "Packages/libssh-0.10.5-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libssh-devel",
+          "Release": "1.amzn2023.0.1",
+          "Version": "0.10.5",
+          "Filename": "Packages/libssh-devel-0.10.5-1.amzn2023.0.1.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "ID": "ALAS2NITRO-ENCLAVES-2021-014",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 - Nitro-enclaves 2.0 - ALAS2NITRO-ENCLAVES-2021-014: medium priority package update for containerd docker",
+  "Issued": {
+    "Date": "2021-11-17 17:59"
+  },
+  "Updated": {
+    "Date": "2021-11-18 21:38"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 - Nitro-enclaves that fix the following vulnerabilities:\nCVE-2021-41190:\n\tIn the OCI Distribution Specification version 1.0.0 and prior and in the OCI Image Specification version 1.0.1 and prior, manifest and index documents are ambiguous without an accompanying Content-Type HTTP header. Versions of Moby (Docker Engine) prior to 20.10.11 and versions of containerd prior to 1.4.12 and 1.5.8 treat the Content-Type header as trusted and deserialize the document according to that header. If the Content-Type header changed between pulls of the same ambiguous document (with the same digest), the document may be interpreted differently, meaning that the digest alone is insufficient to unambiguously identify the content of the image.\nCVE-2021-41190 docker:\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41190",
+        "ID": "CVE-2021-41190",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2---nitro-enclaves",
+      "Name": "Amazon Linux 2 - Nitro-enclaves",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "containerd",
+          "Release": "7.amzn2",
+          "Version": "1.4.6",
+          "Filename": "Packages/containerd-1.4.6-7.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "containerd-stress",
+          "Release": "7.amzn2",
+          "Version": "1.4.6",
+          "Filename": "Packages/containerd-stress-1.4.6-7.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "containerd-debuginfo",
+          "Release": "7.amzn2",
+          "Version": "1.4.6",
+          "Filename": "Packages/containerd-debuginfo-1.4.6-7.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "containerd",
+          "Release": "7.amzn2",
+          "Version": "1.4.6",
+          "Filename": "Packages/containerd-1.4.6-7.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "containerd-stress",
+          "Release": "7.amzn2",
+          "Version": "1.4.6",
+          "Filename": "Packages/containerd-stress-1.4.6-7.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "containerd-debuginfo",
+          "Release": "7.amzn2",
+          "Version": "1.4.6",
+          "Filename": "Packages/containerd-debuginfo-1.4.6-7.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "docker",
+          "Release": "5.amzn2",
+          "Version": "20.10.7",
+          "Filename": "Packages/docker-20.10.7-5.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "docker-debuginfo",
+          "Release": "5.amzn2",
+          "Version": "20.10.7",
+          "Filename": "Packages/docker-debuginfo-20.10.7-5.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "docker",
+          "Release": "5.amzn2",
+          "Version": "20.10.7",
+          "Filename": "Packages/docker-20.10.7-5.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "docker-debuginfo",
+          "Release": "5.amzn2",
+          "Version": "20.10.7",
+          "Filename": "Packages/docker-debuginfo-20.10.7-5.amzn2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

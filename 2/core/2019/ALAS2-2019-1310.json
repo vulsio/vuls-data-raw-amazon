@@ -1,0 +1,113 @@
+{
+  "ID": "ALAS2-2019-1310",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1310: medium priority package update for libmspack",
+  "Issued": {
+    "Date": "2019-10-08 21:55"
+  },
+  "Updated": {
+    "Date": "2019-10-09 23:19"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-18585:\n\tchmd_read_headers in mspack/chmd.c in libmspack before 0.8alpha accepts a filename that has &#039;\\\\0&#039; as its first or second character (such as the &quot;/\\\\0&quot; name).\n99999: \nCVE-2018-18585 libmspack: chmd_read_headers() fails to reject filenames containing NULL bytes\n\nCVE-2018-18584:\n\tIn mspack/cab.h in libmspack before 0.8alpha and cabextract before 1.8, the CAB block input buffer is one byte too small for the maximal Quantum block, leading to an out-of-bounds write.\n99999: \nCVE-2018-18584 libmspack: Out-of-bounds write in mspack/cab.h\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18584",
+        "ID": "CVE-2018-18584",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18585",
+        "ID": "CVE-2018-18585",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libmspack",
+          "Release": "0.7.alpha.amzn2",
+          "Version": "0.5",
+          "Filename": "Packages/libmspack-0.5-0.7.alpha.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libmspack-devel",
+          "Release": "0.7.alpha.amzn2",
+          "Version": "0.5",
+          "Filename": "Packages/libmspack-devel-0.5-0.7.alpha.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libmspack-debuginfo",
+          "Release": "0.7.alpha.amzn2",
+          "Version": "0.5",
+          "Filename": "Packages/libmspack-debuginfo-0.5-0.7.alpha.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libmspack",
+          "Release": "0.7.alpha.amzn2",
+          "Version": "0.5",
+          "Filename": "Packages/libmspack-0.5-0.7.alpha.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libmspack-devel",
+          "Release": "0.7.alpha.amzn2",
+          "Version": "0.5",
+          "Filename": "Packages/libmspack-devel-0.5-0.7.alpha.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libmspack-debuginfo",
+          "Release": "0.7.alpha.amzn2",
+          "Version": "0.5",
+          "Filename": "Packages/libmspack-debuginfo-0.5-0.7.alpha.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libmspack",
+          "Release": "0.7.alpha.amzn2",
+          "Version": "0.5",
+          "Filename": "Packages/libmspack-0.5-0.7.alpha.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libmspack-devel",
+          "Release": "0.7.alpha.amzn2",
+          "Version": "0.5",
+          "Filename": "Packages/libmspack-devel-0.5-0.7.alpha.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libmspack-debuginfo",
+          "Release": "0.7.alpha.amzn2",
+          "Version": "0.5",
+          "Filename": "Packages/libmspack-debuginfo-0.5-0.7.alpha.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

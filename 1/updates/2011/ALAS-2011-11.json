@@ -1,0 +1,95 @@
+{
+  "ID": "ALAS-2011-11",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2011-11: medium priority package update for puppet",
+  "Issued": {
+    "Date": "2011-10-31 18:22"
+  },
+  "Updated": {
+    "Date": "2014-09-14 14:31"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2011-3871:\n\tPuppet 2.7.x before 2.7.5, 2.6.x before 2.6.11, and 0.25.x, when running in --edit mode, uses a predictable file name, which allows local users to run arbitrary Puppet code or trick a user into editing arbitrary files.\n\nCVE-2011-3870:\n\tPuppet 2.7.x before 2.7.5, 2.6.x before 2.6.11, and 0.25.x allows local users to modify the permissions of arbitrary files via a symlink attack on the SSH authorized_keys file.\n\nCVE-2011-3869:\n\tPuppet 2.7.x before 2.7.5, 2.6.x before 2.6.11, and 0.25.x allows local users to overwrite arbitrary files via a symlink attack on the .k5login file.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3869",
+        "ID": "CVE-2011-3869",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3870",
+        "ID": "CVE-2011-3870",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3871",
+        "ID": "CVE-2011-3871",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "puppet",
+          "Release": "3.2.amzn1",
+          "Version": "2.6.6",
+          "Filename": "Packages/puppet-2.6.6-3.2.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "puppet-server",
+          "Release": "3.2.amzn1",
+          "Version": "2.6.6",
+          "Filename": "Packages/puppet-server-2.6.6-3.2.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "puppet-debuginfo",
+          "Release": "3.2.amzn1",
+          "Version": "2.6.6",
+          "Filename": "Packages/puppet-debuginfo-2.6.6-3.2.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "puppet-debuginfo",
+          "Release": "3.2.amzn1",
+          "Version": "2.6.6",
+          "Filename": "Packages/puppet-debuginfo-2.6.6-3.2.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "puppet",
+          "Release": "3.2.amzn1",
+          "Version": "2.6.6",
+          "Filename": "Packages/puppet-2.6.6-3.2.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "puppet-server",
+          "Release": "3.2.amzn1",
+          "Version": "2.6.6",
+          "Filename": "Packages/puppet-server-2.6.6-3.2.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

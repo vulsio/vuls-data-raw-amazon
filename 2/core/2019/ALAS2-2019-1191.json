@@ -1,0 +1,167 @@
+{
+  "ID": "ALAS2-2019-1191",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1191: important priority package update for freerdp",
+  "Issued": {
+    "Date": "2019-04-04 21:55"
+  },
+  "Updated": {
+    "Date": "2019-04-17 17:01"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-8788:\n\tFreeRDP prior to version 2.0.0-rc4 contains an Out-Of-Bounds Write of up to 4 bytes in function nsc_rle_decode() that results in a memory corruption and possibly even a remote code execution.\n1671363: \nCVE-2018-8788 freerdp: Out-of-bounds write in nsc_rle_decode() function\n\nCVE-2018-8787:\n\tFreeRDP prior to version 2.0.0-rc4 contains an Integer Overflow that leads to a Heap-Based Buffer Overflow in function gdi_Bitmap_Decompress() and results in a memory corruption and probably even a remote code execution.\n1671361: \nCVE-2018-8787 freerdp: Integer overflow leading to heap-based buffer overflow in gdi_Bitmap_Decompress() function\n\nCVE-2018-8786:\n\tFreeRDP prior to version 2.0.0-rc4 contains an Integer Truncation that leads to a Heap-Based Buffer Overflow in function update_read_bitmap_update() and results in a memory corruption and probably even a remote code execution.\n1671359: \nCVE-2018-8786 freerdp: Integer truncation leading to heap-based buffer overflow in update_read_bitmap_update() function\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8786",
+        "ID": "CVE-2018-8786",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8787",
+        "ID": "CVE-2018-8787",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8788",
+        "ID": "CVE-2018-8788",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "freerdp",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.0.2",
+          "Filename": "Packages/freerdp-1.0.2-15.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "freerdp-libs",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.0.2",
+          "Filename": "Packages/freerdp-libs-1.0.2-15.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "freerdp-plugins",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.0.2",
+          "Filename": "Packages/freerdp-plugins-1.0.2-15.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "freerdp-devel",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.0.2",
+          "Filename": "Packages/freerdp-devel-1.0.2-15.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "freerdp-debuginfo",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.0.2",
+          "Filename": "Packages/freerdp-debuginfo-1.0.2-15.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "freerdp",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.0.2",
+          "Filename": "Packages/freerdp-1.0.2-15.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "freerdp-libs",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.0.2",
+          "Filename": "Packages/freerdp-libs-1.0.2-15.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "freerdp-plugins",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.0.2",
+          "Filename": "Packages/freerdp-plugins-1.0.2-15.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "freerdp-devel",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.0.2",
+          "Filename": "Packages/freerdp-devel-1.0.2-15.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "freerdp-debuginfo",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.0.2",
+          "Filename": "Packages/freerdp-debuginfo-1.0.2-15.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "freerdp",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.0.2",
+          "Filename": "Packages/freerdp-1.0.2-15.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "freerdp-libs",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.0.2",
+          "Filename": "Packages/freerdp-libs-1.0.2-15.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "freerdp-plugins",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.0.2",
+          "Filename": "Packages/freerdp-plugins-1.0.2-15.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "freerdp-devel",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.0.2",
+          "Filename": "Packages/freerdp-devel-1.0.2-15.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "freerdp-debuginfo",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.0.2",
+          "Filename": "Packages/freerdp-debuginfo-1.0.2-15.amzn2.0.1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

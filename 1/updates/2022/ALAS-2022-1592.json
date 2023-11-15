@@ -1,0 +1,67 @@
+{
+  "ID": "ALAS-2022-1592",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2022-1592: important priority package update for python-twisted-conch",
+  "Issued": {
+    "Date": "2022-05-31 23:47"
+  },
+  "Updated": {
+    "Date": "2022-06-09 18:52"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2022-21716:\n\tAn uncontrolled resource consumption flaw was found in python-twisted in the dataReceived() function. This flaw allows an unauthenticated, remote attacker to send a simple command to use all available memory and crash the server.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21716",
+        "ID": "CVE-2022-21716",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-twisted-conch",
+          "Release": "3.2.7.amzn1",
+          "Version": "8.2.0",
+          "Filename": "Packages/python27-twisted-conch-8.2.0-3.2.7.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python26-twisted-conch",
+          "Release": "3.2.7.amzn1",
+          "Version": "8.2.0",
+          "Filename": "Packages/python26-twisted-conch-8.2.0-3.2.7.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python26-twisted-conch",
+          "Release": "3.2.7.amzn1",
+          "Version": "8.2.0",
+          "Filename": "Packages/python26-twisted-conch-8.2.0-3.2.7.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-twisted-conch",
+          "Release": "3.2.7.amzn1",
+          "Version": "8.2.0",
+          "Filename": "Packages/python27-twisted-conch-8.2.0-3.2.7.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

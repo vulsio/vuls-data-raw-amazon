@@ -1,0 +1,135 @@
+{
+  "ID": "ALAS-2011-9",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2011-9: medium priority package update for httpd",
+  "Issued": {
+    "Date": "2011-10-31 18:19"
+  },
+  "Updated": {
+    "Date": "2014-09-14 14:26"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2011-3368:\n\tThe mod_proxy module in the Apache HTTP Server 1.3.x through 1.3.42, 2.0.x through 2.0.64, and 2.2.x through 2.2.21 does not properly interact with use of (1) RewriteRule and (2) ProxyPassMatch pattern matches for configuration of a reverse proxy, which allows remote attackers to send requests to intranet servers via a malformed URI containing an initial @ (at sign) character.\nIt was discovered that the Apache HTTP Server did not properly validate the request URI for proxied requests. In certain configurations, if a reverse proxy used the ProxyPassMatch directive, or if it used the RewriteRule directive with the proxy flag, a remote attacker could make the proxy connect to an arbitrary server, possibly disclosing sensitive information from internal web servers not directly accessible to the attacker.\n\nCVE-2011-3348:\n\tThe mod_proxy_ajp module in the Apache HTTP Server before 2.2.21, when used with mod_proxy_balancer in certain configurations, allows remote attackers to cause a denial of service (temporary \"error state\" in the backend server) via a malformed HTTP request.\nIt was discovered that mod_proxy_ajp incorrectly returned an \"Internal Server Error\" response when processing certain malformed HTTP requests, which caused the back-end server to be marked as failed in configurations where mod_proxy was used in load balancer mode. A remote attacker could cause mod_proxy to not send requests to back-end AJP (Apache JServ Protocol) servers for the retry timeout period or until all back-end servers were marked as failed.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3348",
+        "ID": "CVE-2011-3348",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3368",
+        "ID": "CVE-2011-3368",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2011:1391.html",
+        "ID": "RHSA-2011:1391",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-devel",
+          "Release": "1.19.amzn1",
+          "Version": "2.2.21",
+          "Filename": "Packages/httpd-devel-2.2.21-1.19.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-tools",
+          "Release": "1.19.amzn1",
+          "Version": "2.2.21",
+          "Filename": "Packages/httpd-tools-2.2.21-1.19.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd",
+          "Release": "1.19.amzn1",
+          "Version": "2.2.21",
+          "Filename": "Packages/httpd-2.2.21-1.19.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod_ssl",
+          "Release": "1.19.amzn1",
+          "Version": "2.2.21",
+          "Filename": "Packages/mod_ssl-2.2.21-1.19.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-debuginfo",
+          "Release": "1.19.amzn1",
+          "Version": "2.2.21",
+          "Filename": "Packages/httpd-debuginfo-2.2.21-1.19.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod_ssl",
+          "Release": "1.19.amzn1",
+          "Version": "2.2.21",
+          "Filename": "Packages/mod_ssl-2.2.21-1.19.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-debuginfo",
+          "Release": "1.19.amzn1",
+          "Version": "2.2.21",
+          "Filename": "Packages/httpd-debuginfo-2.2.21-1.19.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "httpd-manual",
+          "Release": "1.19.amzn1",
+          "Version": "2.2.21",
+          "Filename": "Packages/httpd-manual-2.2.21-1.19.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-tools",
+          "Release": "1.19.amzn1",
+          "Version": "2.2.21",
+          "Filename": "Packages/httpd-tools-2.2.21-1.19.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-devel",
+          "Release": "1.19.amzn1",
+          "Version": "2.2.21",
+          "Filename": "Packages/httpd-devel-2.2.21-1.19.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd",
+          "Release": "1.19.amzn1",
+          "Version": "2.2.21",
+          "Filename": "Packages/httpd-2.2.21-1.19.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

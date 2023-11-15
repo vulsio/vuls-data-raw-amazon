@@ -1,0 +1,99 @@
+{
+  "ID": "ALAS-2013-210",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-210: medium priority package update for curl",
+  "Issued": {
+    "Date": "2013-07-12 15:32"
+  },
+  "Updated": {
+    "Date": "2014-09-15 23:17"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-1944:\n\tThe tailMatch function in cookie.c in cURL and libcurl before 7.30.0 does not properly match the path domain when sending cookies, which allows remote attackers to steal cookies via a matching suffix in the domain of a URL.\nA flaw was found in the way libcurl matched domains associated with cookies. This could lead to cURL or an application linked against libcurl sending the wrong cookie if only part of the domain name matched the domain associated with the cookie, disclosing the cookie to unrelated hosts.\n950577: \nCVE-2013-1944 curl: Cookie domain suffix match vulnerability\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1944",
+        "ID": "CVE-2013-1944",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "curl",
+          "Release": "11.34.amzn1",
+          "Version": "7.27.0",
+          "Filename": "Packages/curl-7.27.0-11.34.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcurl",
+          "Release": "11.34.amzn1",
+          "Version": "7.27.0",
+          "Filename": "Packages/libcurl-7.27.0-11.34.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "curl-debuginfo",
+          "Release": "11.34.amzn1",
+          "Version": "7.27.0",
+          "Filename": "Packages/curl-debuginfo-7.27.0-11.34.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcurl-devel",
+          "Release": "11.34.amzn1",
+          "Version": "7.27.0",
+          "Filename": "Packages/libcurl-devel-7.27.0-11.34.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcurl-devel",
+          "Release": "11.34.amzn1",
+          "Version": "7.27.0",
+          "Filename": "Packages/libcurl-devel-7.27.0-11.34.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "curl",
+          "Release": "11.34.amzn1",
+          "Version": "7.27.0",
+          "Filename": "Packages/curl-7.27.0-11.34.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "curl-debuginfo",
+          "Release": "11.34.amzn1",
+          "Version": "7.27.0",
+          "Filename": "Packages/curl-debuginfo-7.27.0-11.34.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcurl",
+          "Release": "11.34.amzn1",
+          "Version": "7.27.0",
+          "Filename": "Packages/libcurl-7.27.0-11.34.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

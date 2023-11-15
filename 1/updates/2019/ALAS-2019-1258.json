@@ -1,0 +1,137 @@
+{
+  "ID": "ALAS-2019-1258",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2019-1258: important priority package update for python27",
+  "Issued": {
+    "Date": "2019-08-07 23:02"
+  },
+  "Updated": {
+    "Date": "2019-08-12 18:22"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2019-9948:\n\turllib in Python 2.x through 2.7.16 supports the local_file: scheme, which makes it easier for remote attackers to bypass protection mechanisms that blacklist file: URIs, as demonstrated by triggering a urllib.urlopen(&#039;local_file:///etc/passwd&#039;) call.\n1695570: \nCVE-2019-9948 python: Undocumented local_file protocol allows remote attackers to bypass protection mechanisms\n\nCVE-2019-10160:\n\tA security regression of CVE-2019-9636 was discovered in python, since commit d537ab0ff9767ef024f26246899728f0116b1ec3, which still allows an attacker to exploit CVE-2019-9636 by abusing the user and password parts of a URL. When an application parses user-supplied URLs to store cookies, authentication credentials, or other kind of information, it is possible for an attacker to provide specially crafted URLs to make the application locate host-related information (e.g. cookies, authentication data) and send them to a different host than where it should, unlike if the URLs had been correctly parsed. The result of an attack may vary based on the application.\n1718388: \nCVE-2019-10160 python: regression of CVE-2019-9636 due to functional fix to allow port numbers in netloc\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10160",
+        "ID": "CVE-2019-10160",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9948",
+        "ID": "CVE-2019-9948",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27",
+          "Release": "1.129.amzn1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python27-2.7.16-1.129.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-libs",
+          "Release": "1.129.amzn1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python27-libs-2.7.16-1.129.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-test",
+          "Release": "1.129.amzn1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python27-test-2.7.16-1.129.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-devel",
+          "Release": "1.129.amzn1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python27-devel-2.7.16-1.129.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-tools",
+          "Release": "1.129.amzn1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python27-tools-2.7.16-1.129.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-debuginfo",
+          "Release": "1.129.amzn1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python27-debuginfo-2.7.16-1.129.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27",
+          "Release": "1.129.amzn1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python27-2.7.16-1.129.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-devel",
+          "Release": "1.129.amzn1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python27-devel-2.7.16-1.129.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-debuginfo",
+          "Release": "1.129.amzn1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python27-debuginfo-2.7.16-1.129.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-tools",
+          "Release": "1.129.amzn1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python27-tools-2.7.16-1.129.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-libs",
+          "Release": "1.129.amzn1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python27-libs-2.7.16-1.129.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-test",
+          "Release": "1.129.amzn1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python27-test-2.7.16-1.129.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

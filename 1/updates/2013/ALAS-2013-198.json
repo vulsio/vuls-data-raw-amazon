@@ -1,0 +1,175 @@
+{
+  "ID": "ALAS-2013-198",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-198: medium priority package update for mesa",
+  "Issued": {
+    "Date": "2013-06-11 22:45"
+  },
+  "Updated": {
+    "Date": "2014-09-15 23:09"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-1993:\n\tIt was found that Mesa did not correctly validate messages from the X server. A malicious X server could cause an application using Mesa to crash or, potentially, execute arbitrary code with the privileges of the user running the application.\n\nCVE-2013-1872:\n\tAn out-of-bounds access flaw was found in Mesa. If an application using Mesa exposed the Mesa API to untrusted inputs (Mozilla Firefox does this), an attacker could cause the application to crash or, potentially, execute arbitrary code with the privileges of the user running the application.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1872",
+        "ID": "CVE-2013-1872",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1993",
+        "ID": "CVE-2013-1993",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2013:0897.html",
+        "ID": "RHSA-2013:0897",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mesa-debuginfo",
+          "Release": "0.8.15.amzn1",
+          "Version": "9.0",
+          "Filename": "Packages/mesa-debuginfo-9.0-0.8.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mesa-libOSMesa",
+          "Release": "0.8.15.amzn1",
+          "Version": "9.0",
+          "Filename": "Packages/mesa-libOSMesa-9.0-0.8.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mesa-libGLU",
+          "Release": "0.8.15.amzn1",
+          "Version": "9.0",
+          "Filename": "Packages/mesa-libGLU-9.0-0.8.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "glx-utils",
+          "Release": "0.8.15.amzn1",
+          "Version": "9.0",
+          "Filename": "Packages/glx-utils-9.0-0.8.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mesa-libGL-devel",
+          "Release": "0.8.15.amzn1",
+          "Version": "9.0",
+          "Filename": "Packages/mesa-libGL-devel-9.0-0.8.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mesa-libGL",
+          "Release": "0.8.15.amzn1",
+          "Version": "9.0",
+          "Filename": "Packages/mesa-libGL-9.0-0.8.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mesa-libGLU-devel",
+          "Release": "0.8.15.amzn1",
+          "Version": "9.0",
+          "Filename": "Packages/mesa-libGLU-devel-9.0-0.8.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mesa-libOSMesa-devel",
+          "Release": "0.8.15.amzn1",
+          "Version": "9.0",
+          "Filename": "Packages/mesa-libOSMesa-devel-9.0-0.8.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "glx-utils",
+          "Release": "0.8.15.amzn1",
+          "Version": "9.0",
+          "Filename": "Packages/glx-utils-9.0-0.8.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mesa-libGL-devel",
+          "Release": "0.8.15.amzn1",
+          "Version": "9.0",
+          "Filename": "Packages/mesa-libGL-devel-9.0-0.8.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mesa-debuginfo",
+          "Release": "0.8.15.amzn1",
+          "Version": "9.0",
+          "Filename": "Packages/mesa-debuginfo-9.0-0.8.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mesa-libGL",
+          "Release": "0.8.15.amzn1",
+          "Version": "9.0",
+          "Filename": "Packages/mesa-libGL-9.0-0.8.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mesa-libGLU",
+          "Release": "0.8.15.amzn1",
+          "Version": "9.0",
+          "Filename": "Packages/mesa-libGLU-9.0-0.8.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mesa-libGLU-devel",
+          "Release": "0.8.15.amzn1",
+          "Version": "9.0",
+          "Filename": "Packages/mesa-libGLU-devel-9.0-0.8.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mesa-libOSMesa-devel",
+          "Release": "0.8.15.amzn1",
+          "Version": "9.0",
+          "Filename": "Packages/mesa-libOSMesa-devel-9.0-0.8.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mesa-libOSMesa",
+          "Release": "0.8.15.amzn1",
+          "Version": "9.0",
+          "Filename": "Packages/mesa-libOSMesa-9.0-0.8.15.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

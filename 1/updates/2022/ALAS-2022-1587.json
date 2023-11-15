@@ -1,0 +1,67 @@
+{
+  "ID": "ALAS-2022-1587",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2022-1587: important priority package update for aide",
+  "Issued": {
+    "Date": "2022-05-31 23:47"
+  },
+  "Updated": {
+    "Date": "2022-06-09 18:39"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2021-45417:\n\tA heap-based buffer overflow vulnerability in the base64 functions of AIDE, an advanced intrusion detection system. An attacker could crash the program and possibly execute arbitrary code through large (<16k) extended file attributes or ACL.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45417",
+        "ID": "CVE-2021-45417",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "aide",
+          "Release": "7.9.amzn1",
+          "Version": "0.14",
+          "Filename": "Packages/aide-0.14-7.9.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "aide-debuginfo",
+          "Release": "7.9.amzn1",
+          "Version": "0.14",
+          "Filename": "Packages/aide-debuginfo-0.14-7.9.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "aide",
+          "Release": "7.9.amzn1",
+          "Version": "0.14",
+          "Filename": "Packages/aide-0.14-7.9.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "aide-debuginfo",
+          "Release": "7.9.amzn1",
+          "Version": "0.14",
+          "Filename": "Packages/aide-debuginfo-0.14-7.9.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

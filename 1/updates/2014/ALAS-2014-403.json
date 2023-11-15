@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS-2014-403",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2014-403: medium priority package update for libXext",
+  "Issued": {
+    "Date": "2014-09-17 21:44"
+  },
+  "Updated": {
+    "Date": "2014-09-19 12:02"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-1982:\n\tMultiple integer overflows in X.org libXext 1.3.1 and earlier allow X servers to trigger allocation of insufficient memory and a buffer overflow via vectors related to the (1) XcupGetReservedColormapEntries, (2) XcupStoreColors, (3) XdbeGetVisualInfo, (4) XeviGetVisualInfo, (5) XShapeGetRectangles, and (6) XSyncListSystemCounters functions.\n959046: \nCVE-2013-1982 libXext: Multiple integer overflows leading to heap-based buffer-overflows\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1982",
+        "ID": "CVE-2013-1982",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libXext-debuginfo",
+          "Release": "2.9.amzn1",
+          "Version": "1.3.1",
+          "Filename": "Packages/libXext-debuginfo-1.3.1-2.9.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libXext-devel",
+          "Release": "2.9.amzn1",
+          "Version": "1.3.1",
+          "Filename": "Packages/libXext-devel-1.3.1-2.9.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libXext",
+          "Release": "2.9.amzn1",
+          "Version": "1.3.1",
+          "Filename": "Packages/libXext-1.3.1-2.9.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libXext-debuginfo",
+          "Release": "2.9.amzn1",
+          "Version": "1.3.1",
+          "Filename": "Packages/libXext-debuginfo-1.3.1-2.9.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libXext-devel",
+          "Release": "2.9.amzn1",
+          "Version": "1.3.1",
+          "Filename": "Packages/libXext-devel-1.3.1-2.9.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libXext",
+          "Release": "2.9.amzn1",
+          "Version": "1.3.1",
+          "Filename": "Packages/libXext-1.3.1-2.9.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

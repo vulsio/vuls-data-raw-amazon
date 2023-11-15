@@ -1,0 +1,269 @@
+{
+  "ID": "ALAS-2014-306",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-306: important priority package update for postgresql9",
+  "Issued": {
+    "Date": "2014-03-13 18:12"
+  },
+  "Updated": {
+    "Date": "2014-09-17 22:52"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-0066:\n\tIt was found that the chkpass extension of PostgreSQL did not check the return value of the crypt() function. An authenticated database user could possibly use this flaw to crash PostgreSQL via a null pointer dereference.\n\nCVE-2014-0065:\n\tMultiple potential buffer overflow flaws were found in PostgreSQL. An authenticated database user could possibly use these flaws to crash PostgreSQL or, potentially, execute arbitrary code with the permissions of the user running PostgreSQL.\n\nCVE-2014-0064:\n\tMultiple integer overflow flaws, leading to heap-based buffer overflows, were found in various type input functions in PostgreSQL. An authenticated database user could possibly use these flaws to crash PostgreSQL or, potentially, execute arbitrary code with the permissions of the user running PostgreSQL.\n\nCVE-2014-0063:\n\tMultiple stack-based buffer overflow flaws were found in the date/time implementation of PostgreSQL. An authenticated database user could provide a specially crafted date/time value that, when processed, could cause PostgreSQL to crash or, potentially, execute arbitrary code with the permissions of the user running PostgreSQL.\n\nCVE-2014-0062:\n\tA race condition was found in the way the CREATE INDEX command performed multiple independent lookups of a table that had to be indexed. An authenticated database user could possibly use this flaw to escalate their privileges.\n\nCVE-2014-0061:\n\tA flaw was found in the validator functions provided by PostgreSQL's procedural languages (PLs). An authenticated database user could possibly use this flaw to escalate their privileges.\n\nCVE-2014-0060:\n\tIt was found that granting an SQL role to a database user in a PostgreSQL database without specifying the \"ADMIN\" option allowed the grantee to remove other users from their granted role. An authenticated database user could use this flaw to remove a user from an SQL role which they were granted access to.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0060",
+        "ID": "CVE-2014-0060",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0061",
+        "ID": "CVE-2014-0061",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0062",
+        "ID": "CVE-2014-0062",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0063",
+        "ID": "CVE-2014-0063",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0064",
+        "ID": "CVE-2014-0064",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0065",
+        "ID": "CVE-2014-0065",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0066",
+        "ID": "CVE-2014-0066",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2014:0211.html",
+        "ID": "RHSA-2014:0211",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql9-server",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-server-9.2.7-1.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql9-test",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-test-9.2.7-1.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql9-upgrade",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-upgrade-9.2.7-1.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql9-pltcl",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-pltcl-9.2.7-1.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql9-contrib",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-contrib-9.2.7-1.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql9",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-9.2.7-1.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql9-docs",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-docs-9.2.7-1.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql9-plpython",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-plpython-9.2.7-1.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql9-debuginfo",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-debuginfo-9.2.7-1.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql9-devel",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-devel-9.2.7-1.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql9-plperl",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-plperl-9.2.7-1.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql9-libs",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-libs-9.2.7-1.40.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql9-server",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-server-9.2.7-1.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql9-libs",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-libs-9.2.7-1.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql9-upgrade",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-upgrade-9.2.7-1.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql9-plpython",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-plpython-9.2.7-1.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql9-contrib",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-contrib-9.2.7-1.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql9-test",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-test-9.2.7-1.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql9-debuginfo",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-debuginfo-9.2.7-1.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql9-pltcl",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-pltcl-9.2.7-1.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql9-plperl",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-plperl-9.2.7-1.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql9",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-9.2.7-1.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql9-docs",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-docs-9.2.7-1.40.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql9-devel",
+          "Release": "1.40.amzn1",
+          "Version": "9.2.7",
+          "Filename": "Packages/postgresql9-devel-9.2.7-1.40.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

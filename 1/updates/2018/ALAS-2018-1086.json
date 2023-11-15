@@ -1,0 +1,213 @@
+{
+  "ID": "ALAS-2018-1086",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2018-1086: important priority package update for kernel",
+  "Issued": {
+    "Date": "2018-10-03 02:57"
+  },
+  "Updated": {
+    "Date": "2020-06-03 18:10"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-20856:\n\tAn issue was discovered in the Linux kernel before 4.18.7. In block/blk-core.c, there is an __blk_drain_queue() use-after-free because a certain error case is mishandled.\n1738705: CVE-2018-20856 kernel: Use-after-free in __blk_drain_queue() function in block/blk-core.c\n\nCVE-2018-17182:\n\tA security flaw was discovered in the Linux kernel. The vmacache_flush_all() function in mm/vmacache.c mishandles sequence number overflows. An attacker can trigger a use-after-free (and possibly gain privileges) via certain thread creation, map, unmap, invalidation, and dereference operations.\n1631205: \nCVE-2018-17182 kernel: Use-after-free in the vmacache_flush_all function resulting in a possible privilege escalation\n\nCVE-2018-16658:\n\tAn information leak was discovered in the Linux kernel in cdrom_ioctl_drive_status() function in drivers/cdrom/cdrom.c that could be used by local attackers to read kernel memory at certain location.\n1627731: \nCVE-2018-16658 kernel: Information leak in cdrom_ioctl_drive_status\n\nCVE-2018-14633:\n\tA security flaw was found in the chap_server_compute_md5() function in the ISCSI target code in the Linux kernel in a way an authentication request from an ISCSI initiator is processed. An unauthenticated remote attacker can cause a stack buffer overflow and smash up to 17 bytes of the stack. The attack requires the iSCSI target to be enabled on the victim host. Depending on how the target&#039;s code was built (i.e. depending on a compiler, compile flags and hardware architecture) an attack may lead to a system crash and thus to a denial-of-service or possibly to a non-authorized access to data exported by an iSCSI target. Due to the nature of the flaw, privilege escalation cannot be fully ruled out, although we believe it is highly unlikely.\nA security flaw was found in the chap_server_compute_md5() function in the ISCSI target code in the Linux kernel in a way an authentication request from an ISCSI initiator is processed. An unauthenticated remote attacker can cause a stack buffer overflow and smash up to 17 bytes of the stack. The attack requires the iSCSI target to be enabled on the victim host. Depending on how the target&#039;s code was built (i.e. depending on a compiler, compile flags and hardware architecture) an attack may lead to a system crash and thus to a denial of service or possibly to a non-authorized access to data exported by an iSCSI target. Due to the nature of the flaw, privilege escalation cannot be fully ruled out, although we believe it is highly unlikely.\n1626035: \nCVE-2018-14633 kernel: stack-based buffer overflow in chap_server_compute_md5() in iscsi target\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14633",
+        "ID": "CVE-2018-14633",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16658",
+        "ID": "CVE-2018-16658",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17182",
+        "ID": "CVE-2018-17182",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20856",
+        "ID": "CVE-2018-20856",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/kernel-debuginfo-4.14.72-68.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/perf-debuginfo-4.14.72-68.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/perf-4.14.72-68.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/kernel-devel-4.14.72-68.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/kernel-tools-debuginfo-4.14.72-68.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/kernel-tools-4.14.72-68.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/kernel-headers-4.14.72-68.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/kernel-4.14.72-68.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/kernel-tools-devel-4.14.72-68.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.14.72-68.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-i686",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/kernel-debuginfo-common-i686-4.14.72-68.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/kernel-headers-4.14.72-68.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/kernel-tools-devel-4.14.72-68.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/kernel-4.14.72-68.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/kernel-tools-4.14.72-68.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/perf-4.14.72-68.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/kernel-debuginfo-4.14.72-68.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/kernel-tools-debuginfo-4.14.72-68.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/kernel-devel-4.14.72-68.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "68.55.amzn1",
+          "Version": "4.14.72",
+          "Filename": "Packages/perf-debuginfo-4.14.72-68.55.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

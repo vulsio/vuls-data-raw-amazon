@@ -1,0 +1,59 @@
+{
+  "ID": "ALAS2-2019-1184",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1184: important priority package update for spice",
+  "Issued": {
+    "Date": "2019-03-21 19:33"
+  },
+  "Updated": {
+    "Date": "2019-03-28 19:33"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2019-3813:\n\tSpice, versions 0.5.2 through 0.14.1, are vulnerable to an out-of-bounds read due to an off-by-one error in memslot_get_virt. This may lead to a denial of service, or, in the worst case, code-execution by unauthenticated attackers.\n1665371: \nCVE-2019-3813 spice: Off-by-one error in array access in spice/server/memslot.c\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3813",
+        "ID": "CVE-2019-3813",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "spice-server",
+          "Release": "6.amzn2.1",
+          "Version": "0.14.0",
+          "Filename": "Packages/spice-server-0.14.0-6.amzn2.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "spice-server-devel",
+          "Release": "6.amzn2.1",
+          "Version": "0.14.0",
+          "Filename": "Packages/spice-server-devel-0.14.0-6.amzn2.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "spice-debuginfo",
+          "Release": "6.amzn2.1",
+          "Version": "0.14.0",
+          "Filename": "Packages/spice-debuginfo-0.14.0-6.amzn2.1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

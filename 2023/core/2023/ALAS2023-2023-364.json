@@ -1,0 +1,171 @@
+{
+  "ID": "ALAS2023-2023-364",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2023 - ALAS2023-2023-364: Medium priority package update for libtiff",
+  "Issued": {
+    "Date": "2023-09-27 21:05:00"
+  },
+  "Updated": {
+    "Date": "2023-10-03 20:50:00"
+  },
+  "Severity": "Medium",
+  "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-41175:\n\tMultiple potential integer overflow in raw2tiff.c in libtiff <= 4.5.1 can allow remote attackers to cause a denial of service (application crash) or possibly execute an arbitrary code via a crafted tiff image which triggers a heap-based buffer overflow.\n\nCVE-2023-40745:\n\tMultiple potential integer overflow in tiffcp.c in libtiff <= 4.5.1 can allow remote attackers to cause a denial of service (application crash) or possibly execute an arbitrary code via a crafted tiff image which triggers a heap-based buffer overflow.\n\nCVE-2023-30775:\n\tA vulnerability was found in libtiff library. This security flaw causes a heap buffer overflow in extractContigSamples32bits, tiffcrop.c\n\nCVE-2022-48281:\n\tprocessCropSelections in tools/tiffcrop.c in LibTIFF through 4.5.0 has a heap-based buffer overflow (e.g., \"WRITE of size 307203\") via a crafted TIFF image.\n\nCVE-2022-3598:\n\tLibTIFF 4.4.0 has an out-of-bounds write in extractContigSamplesShifted24bits in tools/tiffcrop.c:3604, allowing attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit cfbb883b.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3598",
+        "ID": "CVE-2022-3598",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48281",
+        "ID": "CVE-2022-48281",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-30775",
+        "ID": "CVE-2023-30775",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-40745",
+        "ID": "CVE-2023-40745",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-41175",
+        "ID": "CVE-2023-41175",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2023",
+      "Name": "Amazon Linux 2023",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libtiff-debugsource",
+          "Release": "4.amzn2023.0.16",
+          "Version": "4.4.0",
+          "Filename": "Packages/libtiff-debugsource-4.4.0-4.amzn2023.0.16.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libtiff-static",
+          "Release": "4.amzn2023.0.16",
+          "Version": "4.4.0",
+          "Filename": "Packages/libtiff-static-4.4.0-4.amzn2023.0.16.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libtiff",
+          "Release": "4.amzn2023.0.16",
+          "Version": "4.4.0",
+          "Filename": "Packages/libtiff-4.4.0-4.amzn2023.0.16.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libtiff-debuginfo",
+          "Release": "4.amzn2023.0.16",
+          "Version": "4.4.0",
+          "Filename": "Packages/libtiff-debuginfo-4.4.0-4.amzn2023.0.16.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libtiff-tools-debuginfo",
+          "Release": "4.amzn2023.0.16",
+          "Version": "4.4.0",
+          "Filename": "Packages/libtiff-tools-debuginfo-4.4.0-4.amzn2023.0.16.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libtiff-tools",
+          "Release": "4.amzn2023.0.16",
+          "Version": "4.4.0",
+          "Filename": "Packages/libtiff-tools-4.4.0-4.amzn2023.0.16.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libtiff-devel",
+          "Release": "4.amzn2023.0.16",
+          "Version": "4.4.0",
+          "Filename": "Packages/libtiff-devel-4.4.0-4.amzn2023.0.16.x86_64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libtiff-debuginfo",
+          "Release": "4.amzn2023.0.16",
+          "Version": "4.4.0",
+          "Filename": "Packages/libtiff-debuginfo-4.4.0-4.amzn2023.0.16.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libtiff-debugsource",
+          "Release": "4.amzn2023.0.16",
+          "Version": "4.4.0",
+          "Filename": "Packages/libtiff-debugsource-4.4.0-4.amzn2023.0.16.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libtiff-tools",
+          "Release": "4.amzn2023.0.16",
+          "Version": "4.4.0",
+          "Filename": "Packages/libtiff-tools-4.4.0-4.amzn2023.0.16.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libtiff-static",
+          "Release": "4.amzn2023.0.16",
+          "Version": "4.4.0",
+          "Filename": "Packages/libtiff-static-4.4.0-4.amzn2023.0.16.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libtiff",
+          "Release": "4.amzn2023.0.16",
+          "Version": "4.4.0",
+          "Filename": "Packages/libtiff-4.4.0-4.amzn2023.0.16.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libtiff-tools-debuginfo",
+          "Release": "4.amzn2023.0.16",
+          "Version": "4.4.0",
+          "Filename": "Packages/libtiff-tools-debuginfo-4.4.0-4.amzn2023.0.16.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libtiff-devel",
+          "Release": "4.amzn2023.0.16",
+          "Version": "4.4.0",
+          "Filename": "Packages/libtiff-devel-4.4.0-4.amzn2023.0.16.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

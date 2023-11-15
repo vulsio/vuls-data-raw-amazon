@@ -1,0 +1,283 @@
+{
+  "ID": "ALAS2-2018-952",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2018-952: important priority package update for libvirt",
+  "Issued": {
+    "Date": "2018-02-07 18:40"
+  },
+  "Updated": {
+    "Date": "2018-02-08 21:49"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2017-5715:\n\tAn industry-wide issue was found in the way many modern microprocessor designs have implemented speculative execution of instructions (a commonly used performance optimization). There are three primary variants of the issue which differ in the way the speculative execution can be exploited. Variant CVE-2017-5715 triggers the speculative execution by utilizing branch target injection. It relies on the presence of a precisely-defined instruction sequence in the privileged code as well as the fact that memory accesses may cause allocation into the microprocessor&#039;s data cache even for speculatively executed instructions that never actually commit (retire). As a result, an unprivileged attacker could use this flaw to cross the syscall and guest/host boundaries and read privileged memory by conducting targeted cache side-channel attacks.\n1519780: \nCVE-2017-5715 hw: cpu: speculative execution branch target injection\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715",
+        "ID": "CVE-2017-5715",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-docs",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-docs-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-config-network",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-config-network-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-config-nwfilter",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-config-nwfilter-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-network",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-driver-network-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-nwfilter",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-driver-nwfilter-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-nodedev",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-driver-nodedev-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-interface",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-driver-interface-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-secret",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-driver-secret-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-core",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-core-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-logical",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-logical-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-disk",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-disk-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-scsi",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-scsi-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-iscsi",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-iscsi-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-mpath",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-mpath-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-gluster",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-gluster-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-rbd",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-rbd-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-qemu",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-driver-qemu-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-lxc",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-driver-lxc-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-kvm",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-kvm-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-lxc",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-daemon-lxc-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-client",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-client-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-libs",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-libs-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-admin",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-admin-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-login-shell",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-login-shell-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-devel",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-devel-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-lock-sanlock",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-lock-sanlock-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-nss",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-nss-3.2.0-14.amzn2.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-debuginfo",
+          "Release": "14.amzn2.7",
+          "Version": "3.2.0",
+          "Filename": "Packages/libvirt-debuginfo-3.2.0-14.amzn2.7.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

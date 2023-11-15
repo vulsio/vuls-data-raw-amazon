@@ -1,0 +1,43 @@
+{
+  "ID": "ALAS-2021-1533",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2021-1533: important priority package update for postgresql-jdbc",
+  "Issued": {
+    "Date": "2021-09-02 22:54"
+  },
+  "Updated": {
+    "Date": "2021-09-08 19:28"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-13692:\n\tA flaw was found in PostgreSQL JDBC in versions prior to 42.2.13. An XML External Entity (XXE) weakness was found in PostgreSQL JDBC. The highest threat from this vulnerability is to data confidentiality and system availability.\n1852985: CVE-2020-13692 postgresql-jdbc: XML external entity (XXE) vulnerability in PgSQLXML\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13692",
+        "ID": "CVE-2020-13692",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "postgresql-jdbc",
+          "Release": "4.13.amzn1",
+          "Version": "8.4.704",
+          "Filename": "Packages/postgresql-jdbc-8.4.704-4.13.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

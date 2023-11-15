@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS2-2018-1014",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2018-1014: important priority package update for corosync",
+  "Issued": {
+    "Date": "2018-05-10 17:24"
+  },
+  "Updated": {
+    "Date": "2018-05-11 00:00"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-1084:\n\tAn integer overflow leading to an out-of-bound read was found in authenticate_nss_2_3() in Corosync. An attacker could craft a malicious packet that would lead to a denial of service.\n1552830: \nCVE-2018-1084 corosync: Integer overflow in exec/totemcrypto.c:authenticate_nss_2_3() function\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1084",
+        "ID": "CVE-2018-1084",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "corosync",
+          "Release": "2.amzn2.1",
+          "Version": "2.4.3",
+          "Filename": "Packages/corosync-2.4.3-2.amzn2.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "corosync-debuginfo",
+          "Release": "2.amzn2.1",
+          "Version": "2.4.3",
+          "Filename": "Packages/corosync-debuginfo-2.4.3-2.amzn2.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "corosynclib",
+          "Release": "2.amzn2.1",
+          "Version": "2.4.3",
+          "Filename": "Packages/corosynclib-2.4.3-2.amzn2.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "corosynclib-devel",
+          "Release": "2.amzn2.1",
+          "Version": "2.4.3",
+          "Filename": "Packages/corosynclib-devel-2.4.3-2.amzn2.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "corosync-qdevice",
+          "Release": "2.amzn2.1",
+          "Version": "2.4.3",
+          "Filename": "Packages/corosync-qdevice-2.4.3-2.amzn2.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "corosync-qnetd",
+          "Release": "2.amzn2.1",
+          "Version": "2.4.3",
+          "Filename": "Packages/corosync-qnetd-2.4.3-2.amzn2.1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

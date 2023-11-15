@@ -1,0 +1,51 @@
+{
+  "ID": "ALAS-2019-1245",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2019-1245: medium priority package update for docker",
+  "Issued": {
+    "Date": "2019-07-17 23:53"
+  },
+  "Updated": {
+    "Date": "2019-07-25 18:46"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-15664:\n\tA flaw was discovered in the API endpoint behind the &#039;docker cp&#039; command. The endpoint is vulnerable to a Time Of Check to Time Of Use (TOCTOU) vulnerability in the way it handles symbolic links inside a container. An attacker who has compromised an existing container can cause arbitrary files on the host filesystem to be read/written when an administrator tries to copy a file from/to the container.\n1714722: \nCVE-2018-15664 docker: symlink-exchange race attacks in docker cp\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15664",
+        "ID": "CVE-2018-15664",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "docker",
+          "Release": "10.32.amzn1",
+          "Version": "18.06.1ce",
+          "Filename": "Packages/docker-18.06.1ce-10.32.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "docker-debuginfo",
+          "Release": "10.32.amzn1",
+          "Version": "18.06.1ce",
+          "Filename": "Packages/docker-debuginfo-18.06.1ce-10.32.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

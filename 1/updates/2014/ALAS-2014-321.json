@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS-2014-321",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-321: important priority package update for libyaml",
+  "Issued": {
+    "Date": "2014-04-10 23:54"
+  },
+  "Updated": {
+    "Date": "2014-09-18 00:19"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-2525:\n\tHeap-based buffer overflow in the yaml_parser_scan_uri_escapes function in LibYAML before 0.1.6 allows context-dependent attackers to execute arbitrary code via a long sequence of percent-encoded characters in a URI in a YAML file.\n1078083: \nCVE-2014-2525 libyaml: heap-based buffer overflow when parsing URLs\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2525",
+        "ID": "CVE-2014-2525",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libyaml-devel",
+          "Release": "1.6.amzn1",
+          "Version": "0.1.6",
+          "Filename": "Packages/libyaml-devel-0.1.6-1.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libyaml-debuginfo",
+          "Release": "1.6.amzn1",
+          "Version": "0.1.6",
+          "Filename": "Packages/libyaml-debuginfo-0.1.6-1.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libyaml",
+          "Release": "1.6.amzn1",
+          "Version": "0.1.6",
+          "Filename": "Packages/libyaml-0.1.6-1.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libyaml-debuginfo",
+          "Release": "1.6.amzn1",
+          "Version": "0.1.6",
+          "Filename": "Packages/libyaml-debuginfo-0.1.6-1.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libyaml-devel",
+          "Release": "1.6.amzn1",
+          "Version": "0.1.6",
+          "Filename": "Packages/libyaml-devel-0.1.6-1.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libyaml",
+          "Release": "1.6.amzn1",
+          "Version": "0.1.6",
+          "Filename": "Packages/libyaml-0.1.6-1.6.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

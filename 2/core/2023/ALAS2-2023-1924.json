@@ -1,0 +1,143 @@
+{
+  "ID": "ALAS2-2023-1924",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-1924: medium priority package update for curl",
+  "Issued": {
+    "Date": "2023-01-30 16:02"
+  },
+  "Updated": {
+    "Date": "2023-02-04 18:27"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-43552:\n\tA vulnerability was found in curl. In this issue, curl can be asked to tunnel all protocols virtually it supports through an HTTP proxy. HTTP proxies can deny these tunnel operations using an appropriate HTTP error response code. When getting denied to tunnel the specific SMB or TELNET protocols, curl can use a heap-allocated struct after it has been freed and shut down the code path in its transfer.\n\nCVE-2022-43551:\n\tNo description is available for this CVE.\n\nCVE-2022-27781:\n\tA vulnerability was found in curl. This issue occurs due to an erroneous function. A malicious server could make curl within Network Security Services (NSS) get stuck in a never-ending busy loop when trying to retrieve that information. This flaw allows an Infinite Loop, affecting system availability.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27781",
+        "ID": "CVE-2022-27781",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-43551",
+        "ID": "CVE-2022-43551",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-43552",
+        "ID": "CVE-2022-43552",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "curl",
+          "Release": "2.amzn2.0.1",
+          "Version": "7.87.0",
+          "Filename": "Packages/curl-7.87.0-2.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcurl",
+          "Release": "2.amzn2.0.1",
+          "Version": "7.87.0",
+          "Filename": "Packages/libcurl-7.87.0-2.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcurl-devel",
+          "Release": "2.amzn2.0.1",
+          "Version": "7.87.0",
+          "Filename": "Packages/libcurl-devel-7.87.0-2.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "curl-debuginfo",
+          "Release": "2.amzn2.0.1",
+          "Version": "7.87.0",
+          "Filename": "Packages/curl-debuginfo-7.87.0-2.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "curl",
+          "Release": "2.amzn2.0.1",
+          "Version": "7.87.0",
+          "Filename": "Packages/curl-7.87.0-2.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcurl",
+          "Release": "2.amzn2.0.1",
+          "Version": "7.87.0",
+          "Filename": "Packages/libcurl-7.87.0-2.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcurl-devel",
+          "Release": "2.amzn2.0.1",
+          "Version": "7.87.0",
+          "Filename": "Packages/libcurl-devel-7.87.0-2.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "curl-debuginfo",
+          "Release": "2.amzn2.0.1",
+          "Version": "7.87.0",
+          "Filename": "Packages/curl-debuginfo-7.87.0-2.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "curl",
+          "Release": "2.amzn2.0.1",
+          "Version": "7.87.0",
+          "Filename": "Packages/curl-7.87.0-2.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libcurl",
+          "Release": "2.amzn2.0.1",
+          "Version": "7.87.0",
+          "Filename": "Packages/libcurl-7.87.0-2.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libcurl-devel",
+          "Release": "2.amzn2.0.1",
+          "Version": "7.87.0",
+          "Filename": "Packages/libcurl-devel-7.87.0-2.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "curl-debuginfo",
+          "Release": "2.amzn2.0.1",
+          "Version": "7.87.0",
+          "Filename": "Packages/curl-debuginfo-7.87.0-2.amzn2.0.1.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

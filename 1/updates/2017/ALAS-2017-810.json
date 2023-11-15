@@ -1,0 +1,119 @@
+{
+  "ID": "ALAS-2017-810",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-810: medium priority package update for tomcat6",
+  "Issued": {
+    "Date": "2017-03-29 16:48"
+  },
+  "Updated": {
+    "Date": "2017-03-29 22:51"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-8745:\n\t1403824: \nCVE-2016-8745 tomcat: information disclosure due to incorrect Processor sharing\n\nCVE-2016-6816:\n\tIt was discovered that the code that parsed the HTTP request line permitted invalid characters. This could be exploited, in conjunction with a proxy that also permitted the invalid characters but with a different interpretation, to inject data into the HTTP response. By manipulating the HTTP response the attacker could poison a web-cache, perform an XSS attack, or obtain sensitive information from requests other then their own.\n1397484: \nCVE-2016-6816 tomcat: HTTP Request smuggling vulnerability due to permitting invalid character in HTTP requests\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6816",
+        "ID": "CVE-2016-6816",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8745",
+        "ID": "CVE-2016-8745",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2017:0527.html",
+        "ID": "RHSA-2017:0527",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat6-webapps",
+          "Release": "1.10.amzn1",
+          "Version": "6.0.51",
+          "Filename": "Packages/tomcat6-webapps-6.0.51-1.10.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat6",
+          "Release": "1.10.amzn1",
+          "Version": "6.0.51",
+          "Filename": "Packages/tomcat6-6.0.51-1.10.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat6-jsp-2.1-api",
+          "Release": "1.10.amzn1",
+          "Version": "6.0.51",
+          "Filename": "Packages/tomcat6-jsp-2.1-api-6.0.51-1.10.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat6-servlet-2.5-api",
+          "Release": "1.10.amzn1",
+          "Version": "6.0.51",
+          "Filename": "Packages/tomcat6-servlet-2.5-api-6.0.51-1.10.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat6-lib",
+          "Release": "1.10.amzn1",
+          "Version": "6.0.51",
+          "Filename": "Packages/tomcat6-lib-6.0.51-1.10.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat6-el-2.1-api",
+          "Release": "1.10.amzn1",
+          "Version": "6.0.51",
+          "Filename": "Packages/tomcat6-el-2.1-api-6.0.51-1.10.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat6-docs-webapp",
+          "Release": "1.10.amzn1",
+          "Version": "6.0.51",
+          "Filename": "Packages/tomcat6-docs-webapp-6.0.51-1.10.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat6-admin-webapps",
+          "Release": "1.10.amzn1",
+          "Version": "6.0.51",
+          "Filename": "Packages/tomcat6-admin-webapps-6.0.51-1.10.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "tomcat6-javadoc",
+          "Release": "1.10.amzn1",
+          "Version": "6.0.51",
+          "Filename": "Packages/tomcat6-javadoc-6.0.51-1.10.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

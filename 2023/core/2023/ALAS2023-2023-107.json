@@ -1,0 +1,167 @@
+{
+  "ID": "ALAS2023-2023-107",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2023 - ALAS2023-2023-107: Important priority package update for libXpm",
+  "Issued": {
+    "Date": "2023-02-17 20:48:00"
+  },
+  "Updated": {
+    "Date": "2023-02-22 23:25:00"
+  },
+  "Severity": "Important",
+  "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2022-4883:\n\tA flaw was found in libXpm. When processing files with .Z or .gz extensions, the library calls external programs to compress and uncompress files, relying on the PATH environment variable to find these programs, which could allow a malicious user to execute other programs by manipulating the PATH environment variable.\n\nCVE-2022-46285:\n\tA flaw was found in libXpm. This issue occurs when parsing a file with a comment not closed; the end-of-file condition will not be detected, leading to an infinite loop and resulting in a Denial of Service in the application linked to the library.\n\nCVE-2022-44617:\n\tA flaw was found in libXpm. When processing a file with width of 0 and a very large height, some parser functions will be called repeatedly and can lead to an infinite loop, resulting in a Denial of Service in the application linked to the library.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-44617",
+        "ID": "CVE-2022-44617",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-46285",
+        "ID": "CVE-2022-46285",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4883",
+        "ID": "CVE-2022-4883",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2023",
+      "Name": "Amazon Linux 2023",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libXpm-debuginfo",
+          "Release": "2.amzn2023.0.1",
+          "Version": "3.5.15",
+          "Filename": "Packages/libXpm-debuginfo-3.5.15-2.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libXpm-debugsource",
+          "Release": "2.amzn2023.0.1",
+          "Version": "3.5.15",
+          "Filename": "Packages/libXpm-debugsource-3.5.15-2.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libXpm-devel-debuginfo",
+          "Release": "2.amzn2023.0.1",
+          "Version": "3.5.15",
+          "Filename": "Packages/libXpm-devel-debuginfo-3.5.15-2.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libXpm",
+          "Release": "2.amzn2023.0.1",
+          "Version": "3.5.15",
+          "Filename": "Packages/libXpm-3.5.15-2.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libXpm-devel",
+          "Release": "2.amzn2023.0.1",
+          "Version": "3.5.15",
+          "Filename": "Packages/libXpm-devel-3.5.15-2.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libXpm-debugsource",
+          "Release": "2.amzn2023.0.1",
+          "Version": "3.5.15",
+          "Filename": "Packages/libXpm-debugsource-3.5.15-2.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libXpm",
+          "Release": "2.amzn2023.0.1",
+          "Version": "3.5.15",
+          "Filename": "Packages/libXpm-3.5.15-2.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libXpm-debuginfo",
+          "Release": "2.amzn2023.0.1",
+          "Version": "3.5.15",
+          "Filename": "Packages/libXpm-debuginfo-3.5.15-2.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libXpm-devel-debuginfo",
+          "Release": "2.amzn2023.0.1",
+          "Version": "3.5.15",
+          "Filename": "Packages/libXpm-devel-debuginfo-3.5.15-2.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libXpm-devel",
+          "Release": "2.amzn2023.0.1",
+          "Version": "3.5.15",
+          "Filename": "Packages/libXpm-devel-3.5.15-2.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libXpm-debuginfo",
+          "Release": "2.amzn2023.0.1",
+          "Version": "3.5.15",
+          "Filename": "Packages/libXpm-debuginfo-3.5.15-2.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libXpm-devel-debuginfo",
+          "Release": "2.amzn2023.0.1",
+          "Version": "3.5.15",
+          "Filename": "Packages/libXpm-devel-debuginfo-3.5.15-2.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libXpm-debugsource",
+          "Release": "2.amzn2023.0.1",
+          "Version": "3.5.15",
+          "Filename": "Packages/libXpm-debugsource-3.5.15-2.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libXpm",
+          "Release": "2.amzn2023.0.1",
+          "Version": "3.5.15",
+          "Filename": "Packages/libXpm-3.5.15-2.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libXpm-devel",
+          "Release": "2.amzn2023.0.1",
+          "Version": "3.5.15",
+          "Filename": "Packages/libXpm-devel-3.5.15-2.amzn2023.0.1.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

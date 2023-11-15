@@ -1,0 +1,291 @@
+{
+  "ID": "ALAS2-2020-1465",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1465: important priority package update for kernel",
+  "Issued": {
+    "Date": "2020-07-21 16:34"
+  },
+  "Updated": {
+    "Date": "2023-02-17 00:12"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-12771:\n\tAn issue was discovered in the Linux kernel through 5.6.11. btree_gc_coalesce in drivers/md/bcache/btree.c has a deadlock if a coalescing operation fails.\n\nCVE-2020-10768:\n\tA flaw was found in the prctl() function, where it can be used to enable indirect branch speculation after it has been disabled. This call incorrectly reports it as being 'force disabled' when it is not and opens the system to Spectre v2 attacks. The highest threat from this vulnerability is to confidentiality.\n\nCVE-2020-10767:\n\tA flaw was found in the Linux kernel's implementation of the Enhanced IBPB (Indirect Branch Prediction Barrier). The IBPB mitigation will be disabled when STIBP is not available or when the Enhanced Indirect Branch Restricted Speculation (IBRS) is available. This flaw allows a local attacker to perform a Spectre V2 style attack when this configuration is active. The highest threat from this vulnerability is to confidentiality.\n\nCVE-2020-10766:\n\tA logic bug flaw was found in the Linux kernel's implementation of SSBD. A bug in the logic handling allows an attacker with a local account to disable SSBD protection during a context switch when additional speculative execution mitigations are in place. This issue was introduced when the per task/process conditional STIPB switching was added on top of the existing SSBD switching. The highest threat from this vulnerability is to confidentiality.\n\nCVE-2020-10757:\n\tA flaw was found in the way mremap handled DAX Huge Pages. This flaw allows a local attacker with access to a DAX enabled storage to escalate their privileges on the system.\n\nCVE-2020-10732:\n\tA flaw was found in the Linux kernel's implementation of Userspace core dumps. This flaw allows an attacker with a local account to crash a trivial program and exfiltrate private kernel data.\n\nCVE-2020-0543:\n\tA new domain bypass transient execution attack known as Special Register Buffer Data Sampling (SRBDS) has been found. This flaw allows data values from special internal registers to be leaked by an attacker able to execute code on any core of the CPU. An unprivileged, local attacker can use this flaw to infer values returned by affected instructions known to be commonly used during cryptographic operations that rely on uniqueness, secrecy, or both.\n\nCVE-2019-19462:\n\tA NULL pointer dereference flaw may occur in the Linux kernel's relay_open in kernel/relay.c. if the alloc_percpu() function is not validated in time of failure and used as a valid address for access. An attacker could use this flaw to cause a denial of service.\n\nCVE-2018-20669:\n\tA flaw was found in the Linux kernel where a provided address with access_ok() is not checked before accessing userspace data in certain situations. Lack of such checks in i915_gem_execbuffer2_ioctl in drivers/gpu/drm/i915/i915_gem_execbuffer.c may allow a local unprivileged attacker to possible escalate its privileges.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20669",
+        "ID": "CVE-2018-20669",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19462",
+        "ID": "CVE-2019-19462",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-0543",
+        "ID": "CVE-2020-0543",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10732",
+        "ID": "CVE-2020-10732",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10757",
+        "ID": "CVE-2020-10757",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10766",
+        "ID": "CVE-2020-10766",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10767",
+        "ID": "CVE-2020-10767",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10768",
+        "ID": "CVE-2020-10768",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12771",
+        "ID": "CVE-2020-12771",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/kernel-4.14.186-146.268.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/kernel-headers-4.14.186-146.268.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-aarch64",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/kernel-debuginfo-common-aarch64-4.14.186-146.268.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/perf-4.14.186-146.268.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/perf-debuginfo-4.14.186-146.268.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/python-perf-4.14.186-146.268.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/python-perf-debuginfo-4.14.186-146.268.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/kernel-tools-4.14.186-146.268.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/kernel-tools-devel-4.14.186-146.268.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/kernel-tools-debuginfo-4.14.186-146.268.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/kernel-devel-4.14.186-146.268.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/kernel-debuginfo-4.14.186-146.268.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/kernel-4.14.186-146.268.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/kernel-headers-4.14.186-146.268.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.14.186-146.268.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/perf-4.14.186-146.268.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/perf-debuginfo-4.14.186-146.268.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/python-perf-4.14.186-146.268.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/python-perf-debuginfo-4.14.186-146.268.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/kernel-tools-4.14.186-146.268.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/kernel-tools-devel-4.14.186-146.268.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/kernel-tools-debuginfo-4.14.186-146.268.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/kernel-devel-4.14.186-146.268.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/kernel-debuginfo-4.14.186-146.268.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-4.14.186-146.268",
+          "Release": "0.amzn2",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-4.14.186-146.268-1.0-0.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "146.268.amzn2",
+          "Version": "4.14.186",
+          "Filename": "Packages/kernel-headers-4.14.186-146.268.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

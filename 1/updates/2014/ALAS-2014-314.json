@@ -1,0 +1,543 @@
+{
+  "ID": "ALAS-2014-314",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-314: important priority package update for php55",
+  "Issued": {
+    "Date": "2014-03-24 23:37"
+  },
+  "Updated": {
+    "Date": "2014-09-18 00:05"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-2270:\n\t1072220: \nCVE-2014-2270 file: out-of-bounds memory access when parsing Portable Executable (PE) format files\n\nCVE-2014-1943:\n\tFine Free file before 5.17 allows context-dependent attackers to cause a denial of service (infinite recursion, CPU consumption, and crash) via a crafted indirect offset value in the magic of a file.\n1065836: \nCVE-2014-1943 file: unrestricted recursion in handling of indirect type rules\n1065836: \nCVE-2014-1943 file: infinite recursion\n\nCVE-2013-7327:\n\tThe gdImageCrop function in ext/gd/gd.c in PHP 5.5.x before 5.5.9 does not check return values, which allows remote attackers to cause a denial of service (application crash) or possibly have unspecified other impact via invalid imagecrop arguments that lead to use of a NULL pointer as a return value, a different vulnerability than CVE-2013-7226.\n1065108: \nCVE-2013-7226 CVE-2013-7327 CVE-2013-7328 CVE-2014-2020 php: multiple vulnerabilities in gdImageCrop()\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7327",
+        "ID": "CVE-2013-7327",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1943",
+        "ID": "CVE-2014-1943",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2270",
+        "ID": "CVE-2014-2270",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-soap",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-soap-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-xmlrpc",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-xmlrpc-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-xml",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-xml-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-pspell",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-pspell-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-intl",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-intl-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-fpm",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-fpm-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-snmp",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-snmp-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-tidy",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-tidy-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-enchant",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-enchant-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-process",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-process-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-imap",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-imap-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-pgsql",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-pgsql-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-devel",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-devel-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-ldap",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-ldap-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-mbstring",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-mbstring-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-mysqlnd",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-mysqlnd-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-odbc",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-odbc-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-bcmath",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-bcmath-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-recode",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-recode-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-mcrypt",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-mcrypt-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-common",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-common-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-pdo",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-pdo-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-gmp",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-gmp-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-gd",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-gd-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-cli",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-cli-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-embedded",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-embedded-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-dba",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-dba-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-debuginfo",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-debuginfo-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-mssql",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-mssql-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php55-opcache",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-opcache-5.5.10-1.67.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-intl",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-intl-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-tidy",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-tidy-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-snmp",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-snmp-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-common",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-common-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-embedded",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-embedded-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-imap",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-imap-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-odbc",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-odbc-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-xmlrpc",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-xmlrpc-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-cli",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-cli-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-process",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-process-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-mbstring",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-mbstring-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-pdo",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-pdo-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-devel",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-devel-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-mcrypt",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-mcrypt-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-fpm",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-fpm-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-debuginfo",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-debuginfo-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-opcache",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-opcache-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-ldap",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-ldap-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-recode",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-recode-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-gd",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-gd-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-pgsql",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-pgsql-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-gmp",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-gmp-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-bcmath",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-bcmath-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-pspell",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-pspell-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-enchant",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-enchant-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-dba",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-dba-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-xml",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-xml-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-mysqlnd",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-mysqlnd-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-mssql",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-mssql-5.5.10-1.67.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php55-soap",
+          "Release": "1.67.amzn1",
+          "Version": "5.5.10",
+          "Filename": "Packages/php55-soap-5.5.10-1.67.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

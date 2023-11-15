@@ -1,0 +1,43 @@
+{
+  "ID": "ALAS-2014-401",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2014-401: low priority package update for automake19",
+  "Issued": {
+    "Date": "2014-09-17 21:41"
+  },
+  "Updated": {
+    "Date": "2014-09-19 12:01"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2012-3386:\n\tThe \"make distcheck\" rule in GNU Automake before 1.11.6 and 1.12.x before 1.12.2 grants world-writable permissions to the extraction directory, which introduces a race condition that allows local users to execute arbitrary code via unspecified vectors.\nIt was found that the distcheck rule in Automake-generated Makefiles made a directory world-writable when preparing source archives. If a malicious, local user could access this directory, they could execute arbitrary code with the privileges of the user running \"make distcheck\".\n838286: \nCVE-2012-3386 automake: locally exploitable \"make distcheck\" bug\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3386",
+        "ID": "CVE-2012-3386",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "automake19",
+          "Release": "3.12.amzn1",
+          "Version": "1.9.6",
+          "Filename": "Packages/automake19-1.9.6-3.12.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

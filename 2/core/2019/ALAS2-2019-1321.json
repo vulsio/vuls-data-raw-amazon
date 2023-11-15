@@ -1,0 +1,131 @@
+{
+  "ID": "ALAS2-2019-1321",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1321: low priority package update for exempi",
+  "Issued": {
+    "Date": "2019-10-21 18:01"
+  },
+  "Updated": {
+    "Date": "2019-10-23 23:45"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-7730:\n\tAn integer wraparound, leading to a buffer overflow, was found in Exempi in the way it handles Adobe Photoshop Images. An attacker could exploit this to cause a denial of service via a crafted image file.\n99999: \nCVE-2018-7730 exempi: Heap-based buffer overflow in PSD_MetaHandler::CacheFileData function in XMPFiles/source/FormatSupport/PSIR_FileWriter.cpp allows for denial of service via crafted XLS file\n\nCVE-2017-18238:\n\tAn infinite loop has been discovered in Exempi in the way it handles Extensible Metadata Platform (XMP) data in QuickTime files. An attacker could cause a denial of service via a crafted file.\n99999: \nCVE-2017-18238 exempi: Infinite loop in TradQT_Manager::ParseCachedBoxes function in XMPFiles/source/FormatSupport/QuickTime_Support.cpp\n\nCVE-2017-18236:\n\tAn issue was discovered in Exempi before 2.4.4. The ASF_Support::ReadHeaderObject function in XMPFiles/source/FormatSupport/ASF_Support.cpp allows remote attackers to cause a denial of service (infinite loop) via a crafted .asf file.\n99999: \nCVE-2017-18236 exempi: Infinite loop in ASF_Support::ReadHeaderObject function in XMPFiles/source/FormatSupport/ASF_Support.cpp\n\nCVE-2017-18234:\n\tAn issue was discovered in Exempi before 2.4.3. It allows remote attackers to cause a denial of service (invalid memcpy with resultant use-after-free) or possibly have unspecified other impact via a .pdf file containing JPEG data, related to XMPFiles/source/FormatSupport/ReconcileTIFF.cpp, XMPFiles/source/FormatSupport/TIFF_MemoryReader.cpp, and XMPFiles/source/FormatSupport/TIFF_Support.hpp.\n99999: \nCVE-2017-18234 exempi: Use after free via a PDF file containing JPEG data\n\nCVE-2017-18233:\n\tAn issue was discovered in Exempi before 2.4.4. Integer overflow in the Chunk class in XMPFiles/source/FormatSupport/RIFF.cpp allows remote attackers to cause a denial of service (infinite loop) via crafted XMP data in a .avi file.\n99999: \nCVE-2017-18233 exempi: Infinite Loop in Chunk class in XMPFiles/source/FormatSupport/RIFF.cpp\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18233",
+        "ID": "CVE-2017-18233",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18234",
+        "ID": "CVE-2017-18234",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18236",
+        "ID": "CVE-2017-18236",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18238",
+        "ID": "CVE-2017-18238",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7730",
+        "ID": "CVE-2018-7730",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "exempi",
+          "Release": "9.amzn2",
+          "Version": "2.2.0",
+          "Filename": "Packages/exempi-2.2.0-9.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "exempi-devel",
+          "Release": "9.amzn2",
+          "Version": "2.2.0",
+          "Filename": "Packages/exempi-devel-2.2.0-9.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "exempi-debuginfo",
+          "Release": "9.amzn2",
+          "Version": "2.2.0",
+          "Filename": "Packages/exempi-debuginfo-2.2.0-9.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "exempi",
+          "Release": "9.amzn2",
+          "Version": "2.2.0",
+          "Filename": "Packages/exempi-2.2.0-9.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "exempi-devel",
+          "Release": "9.amzn2",
+          "Version": "2.2.0",
+          "Filename": "Packages/exempi-devel-2.2.0-9.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "exempi-debuginfo",
+          "Release": "9.amzn2",
+          "Version": "2.2.0",
+          "Filename": "Packages/exempi-debuginfo-2.2.0-9.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "exempi",
+          "Release": "9.amzn2",
+          "Version": "2.2.0",
+          "Filename": "Packages/exempi-2.2.0-9.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "exempi-devel",
+          "Release": "9.amzn2",
+          "Version": "2.2.0",
+          "Filename": "Packages/exempi-devel-2.2.0-9.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "exempi-debuginfo",
+          "Release": "9.amzn2",
+          "Version": "2.2.0",
+          "Filename": "Packages/exempi-debuginfo-2.2.0-9.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

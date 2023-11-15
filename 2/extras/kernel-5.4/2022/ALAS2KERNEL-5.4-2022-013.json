@@ -1,0 +1,253 @@
+{
+  "ID": "ALAS2KERNEL-5.4-2022-013",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 - Kernel-5.4 2.0 - ALAS2KERNEL-5.4-2022-013: important priority package update for kernel",
+  "Issued": {
+    "Date": "2022-01-20 19:22"
+  },
+  "Updated": {
+    "Date": "2022-01-28 17:22"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2020-12771:\n\tAn issue was discovered in the Linux kernel through 5.6.11. btree_gc_coalesce in drivers/md/bcache/btree.c has a deadlock if a coalescing operation fails.\n\nCVE-2020-10768:\n\tA flaw was found in the prctl() function, where it can be used to enable indirect branch speculation after it has been disabled. This call incorrectly reports it as being 'force disabled' when it is not and opens the system to Spectre v2 attacks. The highest threat from this vulnerability is to confidentiality.\n\nCVE-2020-10767:\n\tA flaw was found in the Linux kernel's implementation of the Enhanced IBPB (Indirect Branch Prediction Barrier). The IBPB mitigation will be disabled when STIBP is not available or when the Enhanced Indirect Branch Restricted Speculation (IBRS) is available. This flaw allows a local attacker to perform a Spectre V2 style attack when this configuration is active. The highest threat from this vulnerability is to confidentiality.\n\nCVE-2020-10766:\n\tA logic bug flaw was found in the Linux kernel's implementation of SSBD. A bug in the logic handling allows an attacker with a local account to disable SSBD protection during a context switch when additional speculative execution mitigations are in place. This issue was introduced when the per task/process conditional STIPB switching was added on top of the existing SSBD switching. The highest threat from this vulnerability is to confidentiality.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10766",
+        "ID": "CVE-2020-10766",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10767",
+        "ID": "CVE-2020-10767",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10768",
+        "ID": "CVE-2020-10768",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12771",
+        "ID": "CVE-2020-12771",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2---kernel-5.4",
+      "Name": "Amazon Linux 2 - Kernel-5.4",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/kernel-5.4.50-25.83.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/kernel-headers-5.4.50-25.83.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-aarch64",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/kernel-debuginfo-common-aarch64-5.4.50-25.83.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/perf-5.4.50-25.83.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/perf-debuginfo-5.4.50-25.83.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/python-perf-5.4.50-25.83.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/python-perf-debuginfo-5.4.50-25.83.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/kernel-tools-5.4.50-25.83.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/kernel-tools-devel-5.4.50-25.83.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/kernel-tools-debuginfo-5.4.50-25.83.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/kernel-devel-5.4.50-25.83.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/kernel-debuginfo-5.4.50-25.83.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/kernel-5.4.50-25.83.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/kernel-headers-5.4.50-25.83.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-5.4.50-25.83.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/perf-5.4.50-25.83.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/perf-debuginfo-5.4.50-25.83.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/python-perf-5.4.50-25.83.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/python-perf-debuginfo-5.4.50-25.83.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/kernel-tools-5.4.50-25.83.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/kernel-tools-devel-5.4.50-25.83.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/kernel-tools-debuginfo-5.4.50-25.83.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/kernel-devel-5.4.50-25.83.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/kernel-debuginfo-5.4.50-25.83.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "25.83.amzn2",
+          "Version": "5.4.50",
+          "Filename": "Packages/kernel-headers-5.4.50-25.83.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

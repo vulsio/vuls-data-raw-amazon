@@ -1,0 +1,221 @@
+{
+  "ID": "ALAS-2017-870",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-870: important priority package update for kernel",
+  "Issued": {
+    "Date": "2017-08-17 18:09"
+  },
+  "Updated": {
+    "Date": "2017-11-03 05:45"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-8831:\n\tThe saa7164_bus_get function in drivers/media/pci/saa7164/saa7164-bus.c in the Linux kernel through 4.10.14 allows local users to cause a denial of service (out-of-bounds array access) or possibly have unspecified other impact by changing a certain sequence-number value, aka a &quot;double fetch&quot; vulnerability.\n1449980: \nCVE-2017-8831 kernel: Double fetch vulnerability in saa7164_bus_get function\n\nCVE-2017-7542:\n\tAn integer overflow vulnerability in ip6_find_1stfragopt() function was found. A local attacker that has privileges (of CAP_NET_RAW) to open raw socket can cause an infinite loop inside the ip6_find_1stfragopt() function.\n1473649: \nCVE-2017-7542 kernel: Integer overflow in ip6_find_1stfragopt() causes infinite loop\n\nCVE-2017-7533:\n\tA race condition was found in the Linux kernel, present since v3.14-rc1 through v4.12. The race happens between threads of inotify_handle_event() and vfs_rename() while running the rename operation against the same file. As a result of the race the next slab data or the slab&#039;s free list pointer can be corrupted with attacker-controlled data, which may lead to the privilege escalation.\n1468283: \nCVE-2017-7533 kernel: a race between inotify_handle_event() and sys_rename()\n\nCVE-2017-11473:\n\tBuffer overflow in the mp_override_legacy_irq() function in arch/x86/kernel/acpi/boot.c in the Linux kernel through 4.12.2 allows local users to gain privileges via a crafted ACPI table.\n1473209: \nCVE-2017-11473 kernel: Buffer overflow in mp_override_legacy_irq()\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11473",
+        "ID": "CVE-2017-11473",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7533",
+        "ID": "CVE-2017-7533",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7542",
+        "ID": "CVE-2017-7542",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-8831",
+        "ID": "CVE-2017-8831",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/kernel-headers-4.9.43-17.38.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/perf-4.9.43-17.38.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/kernel-4.9.43-17.38.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/kernel-debuginfo-4.9.43-17.38.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/kernel-tools-debuginfo-4.9.43-17.38.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.9.43-17.38.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/kernel-tools-4.9.43-17.38.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/perf-debuginfo-4.9.43-17.38.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/kernel-devel-4.9.43-17.38.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/kernel-tools-devel-4.9.43-17.38.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/perf-4.9.43-17.38.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/kernel-tools-devel-4.9.43-17.38.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/kernel-tools-4.9.43-17.38.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/kernel-tools-debuginfo-4.9.43-17.38.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/kernel-headers-4.9.43-17.38.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-i686",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/kernel-debuginfo-common-i686-4.9.43-17.38.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/kernel-debuginfo-4.9.43-17.38.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/kernel-devel-4.9.43-17.38.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/perf-debuginfo-4.9.43-17.38.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/kernel-4.9.43-17.38.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "kernel-doc",
+          "Release": "17.38.amzn1",
+          "Version": "4.9.43",
+          "Filename": "Packages/kernel-doc-4.9.43-17.38.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

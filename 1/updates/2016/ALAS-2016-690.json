@@ -1,0 +1,73 @@
+{
+  "ID": "ALAS-2016-690",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-690: medium priority package update for foomatic",
+  "Issued": {
+    "Date": "2016-04-21 16:00"
+  },
+  "Updated": {
+    "Date": "2016-04-21 16:00"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-8560:\n\tIt was discovered that foomatic-rip failed to remove all shell special characters from inputs used to construct command lines for external programs run by the filter. An attacker could possibly use this flaw to execute arbitrary commands.\n1291227: \nCVE-2015-8560 cups-filters: foomatic-rip did not consider semicolon as illegal shell escape character\n\nCVE-2010-5325:\n\tIt was discovered that the unhtmlify() function of foomatic-rip did not correctly calculate buffer sizes, possibly leading to a heap-based memory corruption. A malicious attacker could exploit this flaw to cause foomatic-rip to crash or, possibly, execute arbitrary code.\n1218297: \nCVE-2010-5325 foomatic: potential remote arbitrary code execution\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-5325",
+        "ID": "CVE-2010-5325",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8560",
+        "ID": "CVE-2015-8560",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "foomatic",
+          "Release": "5.11.amzn1",
+          "Version": "4.0.4",
+          "Filename": "Packages/foomatic-4.0.4-5.11.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "foomatic-debuginfo",
+          "Release": "5.11.amzn1",
+          "Version": "4.0.4",
+          "Filename": "Packages/foomatic-debuginfo-4.0.4-5.11.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "foomatic-debuginfo",
+          "Release": "5.11.amzn1",
+          "Version": "4.0.4",
+          "Filename": "Packages/foomatic-debuginfo-4.0.4-5.11.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "foomatic",
+          "Release": "5.11.amzn1",
+          "Version": "4.0.4",
+          "Filename": "Packages/foomatic-4.0.4-5.11.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

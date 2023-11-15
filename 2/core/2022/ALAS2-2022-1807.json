@@ -1,0 +1,67 @@
+{
+  "ID": "ALAS2-2022-1807",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2022-1807: medium priority package update for amazon-ssm-agent",
+  "Issued": {
+    "Date": "2022-07-06 02:44"
+  },
+  "Updated": {
+    "Date": "2022-07-14 21:49"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-24675:\n\tA buffer overflow flaw was found in Golang's library encoding/pem. This flaw allows an attacker to use a large PEM input (more than 5 MB) ), causing a stack overflow in Decode, which leads to a loss of availability.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-24675",
+        "ID": "CVE-2022-24675",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "amazon-ssm-agent",
+          "Release": "1.amzn2",
+          "Version": "3.1.1575.0",
+          "Filename": "Packages/amazon-ssm-agent-3.1.1575.0-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "amazon-ssm-agent-debuginfo",
+          "Release": "1.amzn2",
+          "Version": "3.1.1575.0",
+          "Filename": "Packages/amazon-ssm-agent-debuginfo-3.1.1575.0-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "amazon-ssm-agent",
+          "Release": "1.amzn2",
+          "Version": "3.1.1575.0",
+          "Filename": "Packages/amazon-ssm-agent-3.1.1575.0-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "amazon-ssm-agent-debuginfo",
+          "Release": "1.amzn2",
+          "Version": "3.1.1575.0",
+          "Filename": "Packages/amazon-ssm-agent-debuginfo-3.1.1575.0-1.amzn2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

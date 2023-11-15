@@ -1,0 +1,43 @@
+{
+  "ID": "ALAS-2014-409",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2014-409: medium priority package update for fwsnort",
+  "Issued": {
+    "Date": "2014-09-17 21:46"
+  },
+  "Updated": {
+    "Date": "2014-09-19 12:08"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-0039:\n\tUntrusted search path vulnerability in fwsnort before 1.6.4, when not running as root, allows local users to execute arbitrary code via a Trojan horse fwsnort.conf in the current working directory.\n1060602: \nCVE-2014-0039 fwsnort: configuration file can be loaded from cwd when run as a non-root user\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0039",
+        "ID": "CVE-2014-0039",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "fwsnort",
+          "Release": "1.5.amzn1",
+          "Version": "1.6.4",
+          "Filename": "Packages/fwsnort-1.6.4-1.5.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

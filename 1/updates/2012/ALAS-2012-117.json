@@ -1,0 +1,137 @@
+{
+  "ID": "ALAS-2012-117",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2012-117: low priority package update for openldap",
+  "Issued": {
+    "Date": "2012-08-18 05:14"
+  },
+  "Updated": {
+    "Date": "2014-09-14 16:50"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-2668:\n\tlibraries/libldap/tls_m.c in OpenLDAP, possibly 2.4.31 and earlier, when using the Mozilla NSS backend, always uses the default cipher suite even when TLSCipherSuite is set, which might cause OpenLDAP to use weaker ciphers than intended and make it easier for remote attackers to obtain sensitive information.\nIt was found that the OpenLDAP server daemon ignored olcTLSCipherSuite settings. This resulted in the default cipher suite always being used, which could lead to weaker than expected ciphers being accepted during Transport Layer Security (TLS) negotiation with OpenLDAP clients.\n825875: \nCVE-2012-2668 openldap: does not honor TLSCipherSuite settings\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2668",
+        "ID": "CVE-2012-2668",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2012:1151.html",
+        "ID": "RHSA-2012:1151",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openldap-clients",
+          "Release": "26.16.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/openldap-clients-2.4.23-26.16.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openldap-devel",
+          "Release": "26.16.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/openldap-devel-2.4.23-26.16.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openldap-debuginfo",
+          "Release": "26.16.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/openldap-debuginfo-2.4.23-26.16.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openldap-servers",
+          "Release": "26.16.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/openldap-servers-2.4.23-26.16.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openldap-servers-sql",
+          "Release": "26.16.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/openldap-servers-sql-2.4.23-26.16.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openldap",
+          "Release": "26.16.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/openldap-2.4.23-26.16.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openldap-clients",
+          "Release": "26.16.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/openldap-clients-2.4.23-26.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openldap-servers-sql",
+          "Release": "26.16.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/openldap-servers-sql-2.4.23-26.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openldap",
+          "Release": "26.16.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/openldap-2.4.23-26.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openldap-devel",
+          "Release": "26.16.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/openldap-devel-2.4.23-26.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openldap-servers",
+          "Release": "26.16.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/openldap-servers-2.4.23-26.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openldap-debuginfo",
+          "Release": "26.16.amzn1",
+          "Version": "2.4.23",
+          "Filename": "Packages/openldap-debuginfo-2.4.23-26.16.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

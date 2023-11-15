@@ -1,0 +1,271 @@
+{
+  "ID": "ALAS2-2021-1592",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1592: important priority package update for xorg-x11-server",
+  "Issued": {
+    "Date": "2021-01-25 23:09"
+  },
+  "Updated": {
+    "Date": "2021-01-26 18:45"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-25712:\n\tA flaw was found in xorg-x11-server. A heap-buffer overflow in XkbSetDeviceInfo may lead to a privilege escalation vulnerability. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n1887276: CVE-2020-25712 xorg-x11-server: XkbSetDeviceInfo heap-based buffer overflow privilege escalation vulnerability\n\nCVE-2020-14360:\n\tA flaw was found in the X.Org Server. An out-of-bounds access in the XkbSetMap function may lead to a privilege escalation vulnerability. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n1869139: CVE-2020-14360 xorg-x11-server: Out-of-bounds access in XkbSetMap function\n\nCVE-2020-14347:\n\tA flaw was found in the way the Xserver memory was not properly initialized. This issue leak parts of server memory to the X client. In cases where the Xorg server runs with elevated privileges, this flaw results in a possible ASLR bypass.\n1862258: CVE-2020-14347 xorg-x11-server: Leak of uninitialized heap memory from the X server to clients in AllocatePixmap of dix/pixmap.c\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14347",
+        "ID": "CVE-2020-14347",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14360",
+        "ID": "CVE-2020-14360",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25712",
+        "ID": "CVE-2020-25712",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-common",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-common-1.20.4-15.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xorg",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-Xorg-1.20.4-15.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xnest",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-Xnest-1.20.4-15.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xdmx",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-Xdmx-1.20.4-15.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xvfb",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-Xvfb-1.20.4-15.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xephyr",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-Xephyr-1.20.4-15.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xwayland",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-Xwayland-1.20.4-15.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-devel",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-devel-1.20.4-15.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-source",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-source-1.20.4-15.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-debuginfo",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-debuginfo-1.20.4-15.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-common",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-common-1.20.4-15.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xorg",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-Xorg-1.20.4-15.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xnest",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-Xnest-1.20.4-15.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xdmx",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-Xdmx-1.20.4-15.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xvfb",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-Xvfb-1.20.4-15.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xephyr",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-Xephyr-1.20.4-15.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xwayland",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-Xwayland-1.20.4-15.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-devel",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-devel-1.20.4-15.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-debuginfo",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-debuginfo-1.20.4-15.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-common",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-common-1.20.4-15.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xorg",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-Xorg-1.20.4-15.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xnest",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-Xnest-1.20.4-15.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xdmx",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-Xdmx-1.20.4-15.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xvfb",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-Xvfb-1.20.4-15.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xephyr",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-Xephyr-1.20.4-15.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xwayland",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-Xwayland-1.20.4-15.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-devel",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-devel-1.20.4-15.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-debuginfo",
+          "Release": "15.amzn2.0.1",
+          "Version": "1.20.4",
+          "Filename": "Packages/xorg-x11-server-debuginfo-1.20.4-15.amzn2.0.1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

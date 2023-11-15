@@ -1,0 +1,141 @@
+{
+  "ID": "ALAS-2014-388",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-388: important priority package update for httpd",
+  "Issued": {
+    "Date": "2014-07-31 13:54"
+  },
+  "Updated": {
+    "Date": "2014-09-19 11:39"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-0231:\n\tA denial of service flaw was found in the way httpd's mod_cgid module executed CGI scripts that did not read data from the standard input. A remote attacker could submit a specially crafted request that would cause the httpd child process to hang indefinitely.\n\nCVE-2014-0226:\n\tA race condition flaw, leading to heap-based buffer overflows, was found in the mod_status httpd module. A remote attacker able to access a status page served by mod_status on a server using a threaded Multi-Processing Module (MPM) could send a specially crafted request that would cause the httpd child process to crash or, possibly, allow the attacker to execute arbitrary code with the privileges of the \"apache\" user.\n\nCVE-2014-0118:\n\tA denial of service flaw was found in the way httpd's mod_deflate module handled request body decompression (configured via the \"DEFLATE\" input filter). A remote attacker able to send a request whose body would be decompressed could use this flaw to consume an excessive amount of system memory and CPU on the target system.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0118",
+        "ID": "CVE-2014-0118",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0226",
+        "ID": "CVE-2014-0226",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0231",
+        "ID": "CVE-2014-0231",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2014:0920.html",
+        "ID": "RHSA-2014:0920",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-tools",
+          "Release": "1.3.amzn1",
+          "Version": "2.2.27",
+          "Filename": "Packages/httpd-tools-2.2.27-1.3.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-devel",
+          "Release": "1.3.amzn1",
+          "Version": "2.2.27",
+          "Filename": "Packages/httpd-devel-2.2.27-1.3.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "httpd-manual",
+          "Release": "1.3.amzn1",
+          "Version": "2.2.27",
+          "Filename": "Packages/httpd-manual-2.2.27-1.3.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod_ssl",
+          "Release": "1.3.amzn1",
+          "Version": "2.2.27",
+          "Filename": "Packages/mod_ssl-2.2.27-1.3.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd",
+          "Release": "1.3.amzn1",
+          "Version": "2.2.27",
+          "Filename": "Packages/httpd-2.2.27-1.3.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-debuginfo",
+          "Release": "1.3.amzn1",
+          "Version": "2.2.27",
+          "Filename": "Packages/httpd-debuginfo-2.2.27-1.3.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-tools",
+          "Release": "1.3.amzn1",
+          "Version": "2.2.27",
+          "Filename": "Packages/httpd-tools-2.2.27-1.3.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-devel",
+          "Release": "1.3.amzn1",
+          "Version": "2.2.27",
+          "Filename": "Packages/httpd-devel-2.2.27-1.3.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd",
+          "Release": "1.3.amzn1",
+          "Version": "2.2.27",
+          "Filename": "Packages/httpd-2.2.27-1.3.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod_ssl",
+          "Release": "1.3.amzn1",
+          "Version": "2.2.27",
+          "Filename": "Packages/mod_ssl-2.2.27-1.3.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-debuginfo",
+          "Release": "1.3.amzn1",
+          "Version": "2.2.27",
+          "Filename": "Packages/httpd-debuginfo-2.2.27-1.3.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

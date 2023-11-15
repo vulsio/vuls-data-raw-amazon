@@ -1,0 +1,159 @@
+{
+  "ID": "ALAS-2013-267",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-267: medium priority package update for libjpeg-turbo",
+  "Issued": {
+    "Date": "2013-12-17 21:32"
+  },
+  "Updated": {
+    "Date": "2014-09-16 22:13"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-6630:\n\tAn uninitialized memory read issue was found in the way libjpeg-turbo decoded images with missing Start Of Scan (SOS) JPEG markers or Define Huffman Table (DHT) JPEG markers. A remote attacker could create a specially crafted JPEG image that, when decoded, could possibly lead to a disclosure of potentially sensitive information.\n\nCVE-2013-6629:\n\tAn uninitialized memory read issue was found in the way libjpeg-turbo decoded images with missing Start Of Scan (SOS) JPEG markers or Define Huffman Table (DHT) JPEG markers. A remote attacker could create a specially crafted JPEG image that, when decoded, could possibly lead to a disclosure of potentially sensitive information.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6629",
+        "ID": "CVE-2013-6629",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6630",
+        "ID": "CVE-2013-6630",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2013:1803.html",
+        "ID": "RHSA-2013:1803",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libjpeg-turbo-static",
+          "Release": "3.4.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/libjpeg-turbo-static-1.2.1-3.4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libjpeg-turbo-debuginfo",
+          "Release": "3.4.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/libjpeg-turbo-debuginfo-1.2.1-3.4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libjpeg-turbo-devel",
+          "Release": "3.4.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/libjpeg-turbo-devel-1.2.1-3.4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "turbojpeg-devel",
+          "Release": "3.4.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/turbojpeg-devel-1.2.1-3.4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libjpeg-turbo-utils",
+          "Release": "3.4.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/libjpeg-turbo-utils-1.2.1-3.4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "turbojpeg",
+          "Release": "3.4.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/turbojpeg-1.2.1-3.4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libjpeg-turbo",
+          "Release": "3.4.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/libjpeg-turbo-1.2.1-3.4.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libjpeg-turbo-static",
+          "Release": "3.4.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/libjpeg-turbo-static-1.2.1-3.4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libjpeg-turbo-debuginfo",
+          "Release": "3.4.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/libjpeg-turbo-debuginfo-1.2.1-3.4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libjpeg-turbo-utils",
+          "Release": "3.4.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/libjpeg-turbo-utils-1.2.1-3.4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "turbojpeg",
+          "Release": "3.4.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/turbojpeg-1.2.1-3.4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "turbojpeg-devel",
+          "Release": "3.4.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/turbojpeg-devel-1.2.1-3.4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libjpeg-turbo-devel",
+          "Release": "3.4.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/libjpeg-turbo-devel-1.2.1-3.4.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libjpeg-turbo",
+          "Release": "3.4.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/libjpeg-turbo-1.2.1-3.4.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

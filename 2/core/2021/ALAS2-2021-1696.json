@@ -1,0 +1,261 @@
+{
+  "ID": "ALAS2-2021-1696",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1696: important priority package update for kernel",
+  "Issued": {
+    "Date": "2021-08-04 20:32"
+  },
+  "Updated": {
+    "Date": "2023-06-29 22:25"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-28772:\n\tAn issue was discovered in the Linux kernel before 5.13.3. lib/seq_buf.c has a seq_buf_putmem_hex buffer overflow.\n\nCVE-2021-3655:\n\tA vulnerability was found in the Linux kernel. Missing size validations on inbound SCTP packets may allow the kernel to read uninitialized memory.\n\nCVE-2021-35477:\n\tA flaw in the Linux kernel allows a privileged BPF program to obtain sensitive information from kernel memory via a Speculative Store Bypass side-channel in the eBPF subsystem\n\nCVE-2021-34556:\n\tA flaw was found in the Linux kernel, where a BPF program can obtain sensitive information from kernel memory via a Speculative Store Bypass side-channel attack. This issue occurs when the protection mechanism neglects the possibility of uninitialized memory locations on the BPF stack. The highest threat from this vulnerability is to confidentiality.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-34556",
+        "ID": "CVE-2021-34556",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-35477",
+        "ID": "CVE-2021-35477",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3655",
+        "ID": "CVE-2021-3655",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28772",
+        "ID": "CVE-2023-28772",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/kernel-4.14.241-184.433.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/kernel-headers-4.14.241-184.433.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-aarch64",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/kernel-debuginfo-common-aarch64-4.14.241-184.433.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/perf-4.14.241-184.433.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/perf-debuginfo-4.14.241-184.433.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/python-perf-4.14.241-184.433.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/python-perf-debuginfo-4.14.241-184.433.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/kernel-tools-4.14.241-184.433.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/kernel-tools-devel-4.14.241-184.433.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/kernel-tools-debuginfo-4.14.241-184.433.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/kernel-devel-4.14.241-184.433.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/kernel-debuginfo-4.14.241-184.433.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/kernel-4.14.241-184.433.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/kernel-headers-4.14.241-184.433.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.14.241-184.433.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/perf-4.14.241-184.433.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/perf-debuginfo-4.14.241-184.433.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/python-perf-4.14.241-184.433.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/python-perf-debuginfo-4.14.241-184.433.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/kernel-tools-4.14.241-184.433.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/kernel-tools-devel-4.14.241-184.433.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/kernel-tools-debuginfo-4.14.241-184.433.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/kernel-devel-4.14.241-184.433.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/kernel-debuginfo-4.14.241-184.433.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-4.14.241-184.433",
+          "Release": "0.amzn2",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-4.14.241-184.433-1.0-0.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "184.433.amzn2",
+          "Version": "4.14.241",
+          "Filename": "Packages/kernel-headers-4.14.241-184.433.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

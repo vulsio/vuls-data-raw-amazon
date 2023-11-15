@@ -1,0 +1,107 @@
+{
+  "ID": "ALAS2023-2023-207",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2023 - ALAS2023-2023-207: Medium priority package update for opensc",
+  "Issued": {
+    "Date": "2023-06-07 23:52:00"
+  },
+  "Updated": {
+    "Date": "2023-06-12 23:41:00"
+  },
+  "Severity": "Medium",
+  "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-2977:\n\tA vulnerbility was found in OpenSC. This security flaw cause a buffer overrun vulnerability in pkcs15 cardos_have_verifyrc_package. The attacker can supply a smart card package with malformed ASN1 context. The cardos_have_verifyrc_package function scans the ASN1 buffer for 2 tags, where remaining length is wrongly caculated due to moved starting pointer. This leads to possible heap-based buffer oob read. In cases where ASAN is enabled while compiling this causes a crash. Further info leak or more damage is possible.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-2977",
+        "ID": "CVE-2023-2977",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2023",
+      "Name": "Amazon Linux 2023",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "opensc-debuginfo",
+          "Release": "3.amzn2023.0.1",
+          "Version": "0.23.0",
+          "Filename": "Packages/opensc-debuginfo-0.23.0-3.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "opensc",
+          "Release": "3.amzn2023.0.1",
+          "Version": "0.23.0",
+          "Filename": "Packages/opensc-0.23.0-3.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "opensc-debugsource",
+          "Release": "3.amzn2023.0.1",
+          "Version": "0.23.0",
+          "Filename": "Packages/opensc-debugsource-0.23.0-3.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "opensc-debuginfo",
+          "Release": "3.amzn2023.0.1",
+          "Version": "0.23.0",
+          "Filename": "Packages/opensc-debuginfo-0.23.0-3.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "opensc",
+          "Release": "3.amzn2023.0.1",
+          "Version": "0.23.0",
+          "Filename": "Packages/opensc-0.23.0-3.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "opensc-debugsource",
+          "Release": "3.amzn2023.0.1",
+          "Version": "0.23.0",
+          "Filename": "Packages/opensc-debugsource-0.23.0-3.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "opensc-debuginfo",
+          "Release": "3.amzn2023.0.1",
+          "Version": "0.23.0",
+          "Filename": "Packages/opensc-debuginfo-0.23.0-3.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "opensc-debugsource",
+          "Release": "3.amzn2023.0.1",
+          "Version": "0.23.0",
+          "Filename": "Packages/opensc-debugsource-0.23.0-3.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "opensc",
+          "Release": "3.amzn2023.0.1",
+          "Version": "0.23.0",
+          "Filename": "Packages/opensc-0.23.0-3.amzn2023.0.1.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

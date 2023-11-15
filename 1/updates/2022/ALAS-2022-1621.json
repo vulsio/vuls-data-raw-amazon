@@ -1,0 +1,197 @@
+{
+  "ID": "ALAS-2022-1621",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2022-1621: important priority package update for clamav",
+  "Issued": {
+    "Date": "2022-07-28 20:34"
+  },
+  "Updated": {
+    "Date": "2022-08-04 22:33"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2022-20796:\n\tOn May 4, 2022, the following vulnerability in the ClamAV scanning library versions 0.103.5 and earlier and 0.104.2 and earlier was disclosed: A vulnerability in Clam AntiVirus (ClamAV) versions 0.103.4, 0.103.5, 0.104.1, and 0.104.2 could allow an authenticated, local attacker to cause a denial of service condition on an affected device. For a description of this vulnerability, see the ClamAV blog.\n\nCVE-2022-20785:\n\tOn April 20, 2022, the following vulnerability in the ClamAV scanning library versions 0.103.5 and earlier and 0.104.2 and earlier was disclosed: A vulnerability in HTML file parser of Clam AntiVirus (ClamAV) versions 0.104.0 through 0.104.2 and LTS version 0.103.5 and prior versions could allow an unauthenticated, remote attacker to cause a denial of service condition on an affected device. For a description of this vulnerability, see the ClamAV blog. This advisory will be updated as additional information becomes available.\n\nCVE-2022-20771:\n\tOn April 20, 2022, the following vulnerability in the ClamAV scanning library versions 0.103.5 and earlier and 0.104.2 and earlier was disclosed: A vulnerability in the TIFF file parser of Clam AntiVirus (ClamAV) versions 0.104.0 through 0.104.2 and LTS version 0.103.5 and prior versions could allow an unauthenticated, remote attacker to cause a denial of service condition on an affected device. For a description of this vulnerability, see the ClamAV blog. This advisory will be updated as additional information becomes available.\n\nCVE-2022-20770:\n\tOn April 20, 2022, the following vulnerability in the ClamAV scanning library versions 0.103.5 and earlier and 0.104.2 and earlier was disclosed: A vulnerability in CHM file parser of Clam AntiVirus (ClamAV) versions 0.104.0 through 0.104.2 and LTS version 0.103.5 and prior versions could allow an unauthenticated, remote attacker to cause a denial of service condition on an affected device. For a description of this vulnerability, see the ClamAV blog. This advisory will be updated as additional information becomes available.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-20770",
+        "ID": "CVE-2022-20770",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-20771",
+        "ID": "CVE-2022-20771",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-20785",
+        "ID": "CVE-2022-20785",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-20796",
+        "ID": "CVE-2022-20796",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "clamav-milter",
+          "Release": "1.49.amzn1",
+          "Version": "0.103.6",
+          "Filename": "Packages/clamav-milter-0.103.6-1.49.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "clamav-filesystem",
+          "Release": "1.49.amzn1",
+          "Version": "0.103.6",
+          "Filename": "Packages/clamav-filesystem-0.103.6-1.49.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "clamav-data",
+          "Release": "1.49.amzn1",
+          "Version": "0.103.6",
+          "Filename": "Packages/clamav-data-0.103.6-1.49.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "clamav-update",
+          "Release": "1.49.amzn1",
+          "Version": "0.103.6",
+          "Filename": "Packages/clamav-update-0.103.6-1.49.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "clamd",
+          "Release": "1.49.amzn1",
+          "Version": "0.103.6",
+          "Filename": "Packages/clamd-0.103.6-1.49.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "clamav",
+          "Release": "1.49.amzn1",
+          "Version": "0.103.6",
+          "Filename": "Packages/clamav-0.103.6-1.49.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "clamav-db",
+          "Release": "1.49.amzn1",
+          "Version": "0.103.6",
+          "Filename": "Packages/clamav-db-0.103.6-1.49.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "clamav-debuginfo",
+          "Release": "1.49.amzn1",
+          "Version": "0.103.6",
+          "Filename": "Packages/clamav-debuginfo-0.103.6-1.49.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "clamav-devel",
+          "Release": "1.49.amzn1",
+          "Version": "0.103.6",
+          "Filename": "Packages/clamav-devel-0.103.6-1.49.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "clamav-lib",
+          "Release": "1.49.amzn1",
+          "Version": "0.103.6",
+          "Filename": "Packages/clamav-lib-0.103.6-1.49.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "clamav",
+          "Release": "1.49.amzn1",
+          "Version": "0.103.6",
+          "Filename": "Packages/clamav-0.103.6-1.49.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "clamav-db",
+          "Release": "1.49.amzn1",
+          "Version": "0.103.6",
+          "Filename": "Packages/clamav-db-0.103.6-1.49.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "clamav-lib",
+          "Release": "1.49.amzn1",
+          "Version": "0.103.6",
+          "Filename": "Packages/clamav-lib-0.103.6-1.49.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "clamav-debuginfo",
+          "Release": "1.49.amzn1",
+          "Version": "0.103.6",
+          "Filename": "Packages/clamav-debuginfo-0.103.6-1.49.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "clamav-devel",
+          "Release": "1.49.amzn1",
+          "Version": "0.103.6",
+          "Filename": "Packages/clamav-devel-0.103.6-1.49.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "clamav-update",
+          "Release": "1.49.amzn1",
+          "Version": "0.103.6",
+          "Filename": "Packages/clamav-update-0.103.6-1.49.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "clamav-milter",
+          "Release": "1.49.amzn1",
+          "Version": "0.103.6",
+          "Filename": "Packages/clamav-milter-0.103.6-1.49.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "clamd",
+          "Release": "1.49.amzn1",
+          "Version": "0.103.6",
+          "Filename": "Packages/clamd-0.103.6-1.49.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

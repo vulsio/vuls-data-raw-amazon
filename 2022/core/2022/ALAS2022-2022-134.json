@@ -1,0 +1,107 @@
+{
+  "ID": "ALAS2022-2022-134",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2022 - ALAS2022-2022-134: Medium priority package update for wget",
+  "Issued": {
+    "Date": "2022-09-13 18:37"
+  },
+  "Updated": {
+    "Date": "2022-09-21 20:03"
+  },
+  "Severity": "Medium",
+  "Description": "Package updates are available for Amazon Linux 2022 that fix the following vulnerabilities:\nCVE-2021-31879:\n\tA flaw was found in wget. If wget sends an Authorization header as part of a query and receives an HTTP REDIRECT to a third party in return, the Authorization header will be forwarded as part of the redirected request. This issue creates a password leak, as the second server receives the password. The highest threat from this vulnerability is confidentiality.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-31879",
+        "ID": "CVE-2021-31879",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2022",
+      "Name": "Amazon Linux 2022",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "wget-debuginfo",
+          "Release": "1.amzn2022",
+          "Version": "1.21.3",
+          "Filename": "Packages/wget-debuginfo-1.21.3-1.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "wget",
+          "Release": "1.amzn2022",
+          "Version": "1.21.3",
+          "Filename": "Packages/wget-1.21.3-1.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "wget-debugsource",
+          "Release": "1.amzn2022",
+          "Version": "1.21.3",
+          "Filename": "Packages/wget-debugsource-1.21.3-1.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "wget-debuginfo",
+          "Release": "1.amzn2022",
+          "Version": "1.21.3",
+          "Filename": "Packages/wget-debuginfo-1.21.3-1.amzn2022.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "wget",
+          "Release": "1.amzn2022",
+          "Version": "1.21.3",
+          "Filename": "Packages/wget-1.21.3-1.amzn2022.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "wget-debugsource",
+          "Release": "1.amzn2022",
+          "Version": "1.21.3",
+          "Filename": "Packages/wget-debugsource-1.21.3-1.amzn2022.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "wget-debuginfo",
+          "Release": "1.amzn2022",
+          "Version": "1.21.3",
+          "Filename": "Packages/wget-debuginfo-1.21.3-1.amzn2022.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "wget",
+          "Release": "1.amzn2022",
+          "Version": "1.21.3",
+          "Filename": "Packages/wget-1.21.3-1.amzn2022.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "wget-debugsource",
+          "Release": "1.amzn2022",
+          "Version": "1.21.3",
+          "Filename": "Packages/wget-debugsource-1.21.3-1.amzn2022.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

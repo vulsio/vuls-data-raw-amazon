@@ -1,0 +1,135 @@
+{
+  "ID": "ALAS-2012-104",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2012-104: low priority package update for xorg-x11-server",
+  "Issued": {
+    "Date": "2012-07-05 16:24"
+  },
+  "Updated": {
+    "Date": "2014-09-14 16:44"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2011-4029:\n\tThe LockServer function in os/utils.c in X.Org xserver before 1.11.2 allows local users to change the permissions of arbitrary files to 444, read those files, and possibly cause a denial of service (removed execution permission) via a symlink attack on a temporary lock file.\nA race condition was found in the way the X.Org server managed temporary lock files. A local attacker could use this flaw to perform a symbolic link attack, allowing them to make an arbitrary file world readable, leading to the disclosure of sensitive information.\n745024: \nCVE-2011-4029 xorg-x11-server: lock file chmod change race condition\n\nCVE-2011-4028:\n\tA flaw was found in the way the X.Org server handled lock files. A local user with access to the system console could use this flaw to determine the existence of a file in a directory not accessible to the user, via a symbolic link attack.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4028",
+        "ID": "CVE-2011-4028",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4029",
+        "ID": "CVE-2011-4029",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2012:0939.html",
+        "ID": "RHSA-2012:0939",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-common",
+          "Release": "1.12.amzn1",
+          "Version": "1.10.6",
+          "Filename": "Packages/xorg-x11-server-common-1.10.6-1.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xvfb",
+          "Release": "1.12.amzn1",
+          "Version": "1.10.6",
+          "Filename": "Packages/xorg-x11-server-Xvfb-1.10.6-1.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xephyr",
+          "Release": "1.12.amzn1",
+          "Version": "1.10.6",
+          "Filename": "Packages/xorg-x11-server-Xephyr-1.10.6-1.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xnest",
+          "Release": "1.12.amzn1",
+          "Version": "1.10.6",
+          "Filename": "Packages/xorg-x11-server-Xnest-1.10.6-1.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-debuginfo",
+          "Release": "1.12.amzn1",
+          "Version": "1.10.6",
+          "Filename": "Packages/xorg-x11-server-debuginfo-1.10.6-1.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-debuginfo",
+          "Release": "1.12.amzn1",
+          "Version": "1.10.6",
+          "Filename": "Packages/xorg-x11-server-debuginfo-1.10.6-1.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xephyr",
+          "Release": "1.12.amzn1",
+          "Version": "1.10.6",
+          "Filename": "Packages/xorg-x11-server-Xephyr-1.10.6-1.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xnest",
+          "Release": "1.12.amzn1",
+          "Version": "1.10.6",
+          "Filename": "Packages/xorg-x11-server-Xnest-1.10.6-1.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-source",
+          "Release": "1.12.amzn1",
+          "Version": "1.10.6",
+          "Filename": "Packages/xorg-x11-server-source-1.10.6-1.12.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-Xvfb",
+          "Release": "1.12.amzn1",
+          "Version": "1.10.6",
+          "Filename": "Packages/xorg-x11-server-Xvfb-1.10.6-1.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xorg-x11-server-common",
+          "Release": "1.12.amzn1",
+          "Version": "1.10.6",
+          "Filename": "Packages/xorg-x11-server-common-1.10.6-1.12.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

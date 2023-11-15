@@ -1,0 +1,153 @@
+{
+  "ID": "ALAS-2012-97",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2012-97: medium priority package update for net-snmp",
+  "Issued": {
+    "Date": "2012-07-05 16:15"
+  },
+  "Updated": {
+    "Date": "2014-09-14 16:31"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-2141:\n\tArray index error in the handle_nsExtendOutput2Table function in agent/mibgroup/agent/extend.c in Net-SNMP 5.7.1 allows remote authenticated users to cause a denial of service (out-of-bounds read and snmpd crash) via an SNMP GET request for an entry not in the extension table.\nAn out-of-bounds buffer read flaw was found in the net-snmp agent. A remote attacker with read privileges to a Management Information Base (MIB) subtree handled by the \"extend\" directive (in \"/etc/snmp/snmpd.conf\") could use this flaw to crash snmpd via a crafted SNMP GET request.\nAn array index error, leading to an out-of-bounds buffer read flaw, was found in the way the net-snmp agent looked up entries in the extension table. A remote attacker with read privileges to a Management Information Base (MIB) subtree handled by the \"extend\" directive (in \"/etc/snmp/snmpd.conf\") could use this flaw to crash snmpd via a crafted SNMP GET request.\n815813: \nCVE-2012-2141 net-snmp: Array index error, leading to out-of heap-based buffer read (snmpd crash)\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2141",
+        "ID": "CVE-2012-2141",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2012:0876.html",
+        "ID": "RHSA-2012:0876",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "net-snmp-perl",
+          "Release": "41.10.amzn1",
+          "Version": "5.5",
+          "Filename": "Packages/net-snmp-perl-5.5-41.10.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "net-snmp-utils",
+          "Release": "41.10.amzn1",
+          "Version": "5.5",
+          "Filename": "Packages/net-snmp-utils-5.5-41.10.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "net-snmp-libs",
+          "Release": "41.10.amzn1",
+          "Version": "5.5",
+          "Filename": "Packages/net-snmp-libs-5.5-41.10.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "net-snmp-python",
+          "Release": "41.10.amzn1",
+          "Version": "5.5",
+          "Filename": "Packages/net-snmp-python-5.5-41.10.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "net-snmp-debuginfo",
+          "Release": "41.10.amzn1",
+          "Version": "5.5",
+          "Filename": "Packages/net-snmp-debuginfo-5.5-41.10.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "net-snmp-devel",
+          "Release": "41.10.amzn1",
+          "Version": "5.5",
+          "Filename": "Packages/net-snmp-devel-5.5-41.10.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "net-snmp",
+          "Release": "41.10.amzn1",
+          "Version": "5.5",
+          "Filename": "Packages/net-snmp-5.5-41.10.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "net-snmp-python",
+          "Release": "41.10.amzn1",
+          "Version": "5.5",
+          "Filename": "Packages/net-snmp-python-5.5-41.10.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "net-snmp",
+          "Release": "41.10.amzn1",
+          "Version": "5.5",
+          "Filename": "Packages/net-snmp-5.5-41.10.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "net-snmp-debuginfo",
+          "Release": "41.10.amzn1",
+          "Version": "5.5",
+          "Filename": "Packages/net-snmp-debuginfo-5.5-41.10.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "net-snmp-libs",
+          "Release": "41.10.amzn1",
+          "Version": "5.5",
+          "Filename": "Packages/net-snmp-libs-5.5-41.10.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "net-snmp-devel",
+          "Release": "41.10.amzn1",
+          "Version": "5.5",
+          "Filename": "Packages/net-snmp-devel-5.5-41.10.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "net-snmp-perl",
+          "Release": "41.10.amzn1",
+          "Version": "5.5",
+          "Filename": "Packages/net-snmp-perl-5.5-41.10.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "net-snmp-utils",
+          "Release": "41.10.amzn1",
+          "Version": "5.5",
+          "Filename": "Packages/net-snmp-utils-5.5-41.10.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

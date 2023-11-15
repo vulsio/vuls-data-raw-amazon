@@ -1,0 +1,207 @@
+{
+  "ID": "ALAS-2017-800",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-800: important priority package update for mysql51",
+  "Issued": {
+    "Date": "2017-02-22 18:00"
+  },
+  "Updated": {
+    "Date": "2017-02-22 18:00"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-6663:\n\tA race condition was found in the way MySQL performed MyISAM engine table repair. A database user with shell access to the server running mysqld could use this flaw to change permissions of arbitrary files writable by the mysql system user.\n1378936: \nCVE-2016-6663 CVE-2016-5616 mysql: race condition while setting stats during MyISAM table repair (CPU Oct 2016)\n\nCVE-2016-6662:\n\tIt was discovered that the MySQL logging functionality allowed writing to MySQL configuration files. An administrative database user, or a database user with FILE privileges, could possibly use this flaw to run arbitrary commands with root privileges on the system running the database server.\n1375198: \nCVE-2016-6662 mysql: general_log can write to configuration files, leading to privilege escalation (CPU Oct 2016)\n1375198: \nCVE-2016-6662 mysql: general_log can write to configuration files, leading to privilege escalation\n\nCVE-2016-5616:\n\tA race condition was found in the way MySQL performed MyISAM engine table repair. A database user with shell access to the server running mysqld could use this flaw to change permissions of arbitrary files writable by the mysql system user.\n1378936: \nCVE-2016-6663 CVE-2016-5616 mysql: race condition while setting stats during MyISAM table repair (CPU Oct 2016)\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5616",
+        "ID": "CVE-2016-5616",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6662",
+        "ID": "CVE-2016-6662",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6663",
+        "ID": "CVE-2016-6663",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51-server",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-server-5.1.73-8.72.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51-devel",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-devel-5.1.73-8.72.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51-common",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-common-5.1.73-8.72.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51-debuginfo",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-debuginfo-5.1.73-8.72.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51-test",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-test-5.1.73-8.72.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-5.1.73-8.72.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51-embedded-devel",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-embedded-devel-5.1.73-8.72.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51-libs",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-libs-5.1.73-8.72.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51-bench",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-bench-5.1.73-8.72.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51-embedded",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-embedded-5.1.73-8.72.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51-bench",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-bench-5.1.73-8.72.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51-embedded-devel",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-embedded-devel-5.1.73-8.72.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51-debuginfo",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-debuginfo-5.1.73-8.72.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-5.1.73-8.72.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51-common",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-common-5.1.73-8.72.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51-test",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-test-5.1.73-8.72.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51-server",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-server-5.1.73-8.72.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51-devel",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-devel-5.1.73-8.72.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51-libs",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-libs-5.1.73-8.72.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51-embedded",
+          "Release": "8.72.amzn1",
+          "Version": "5.1.73",
+          "Filename": "Packages/mysql51-embedded-5.1.73-8.72.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

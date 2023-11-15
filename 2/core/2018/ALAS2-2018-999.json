@@ -1,0 +1,59 @@
+{
+  "ID": "ALAS2-2018-999",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2018-999: important priority package update for slf4j",
+  "Issued": {
+    "Date": "2018-04-19 05:11"
+  },
+  "Updated": {
+    "Date": "2018-04-19 22:45"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-8088:\n\tAn XML deserialization vulnerability was discovered in slf4j&#039;s EventData which accepts anXML serialized string and can lead to arbitrary code execution.\n1548909: \nCVE-2018-8088 slf4j: Deserialisation vulnerability in EventData constructor can allow for arbitrary code execution\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-8088",
+        "ID": "CVE-2018-8088",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "slf4j",
+          "Release": "4.amzn2",
+          "Version": "1.7.4",
+          "Filename": "Packages/slf4j-1.7.4-4.amzn2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "slf4j-javadoc",
+          "Release": "4.amzn2",
+          "Version": "1.7.4",
+          "Filename": "Packages/slf4j-javadoc-1.7.4-4.amzn2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "slf4j-manual",
+          "Release": "4.amzn2",
+          "Version": "1.7.4",
+          "Filename": "Packages/slf4j-manual-1.7.4-4.amzn2.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

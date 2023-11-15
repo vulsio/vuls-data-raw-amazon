@@ -1,0 +1,95 @@
+{
+  "ID": "ALAS-2016-761",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-761: important priority package update for memcached",
+  "Issued": {
+    "Date": "2016-11-10 18:00"
+  },
+  "Updated": {
+    "Date": "2016-11-10 18:00"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-8706:\n\tAn integer overflow flaw, leading to a heap-based buffer overflow, was found in memcached&#039;s parsing of SASL authentication messages. An attacker could create a specially crafted message that would cause the memcached server to crash or, potentially, execute arbitrary code.\n1390512: \nCVE-2016-8706 memcached: SASL authentication remote code execution\n\nCVE-2016-8705:\n\tAn integer overflow flaw, leading to a heap-based buffer overflow, was found in the memcached binary protocol. An attacker could create a specially crafted message that would cause the memcached server to crash or, potentially, execute arbitrary code.\n1390511: \nCVE-2016-8705 memcached: Server update remote code execution\n\nCVE-2016-8704:\n\tAn integer overflow flaw, leading to a heap-based buffer overflow, was found in the memcached binary protocol. An attacker could create a specially crafted message that would cause the memcached server to crash or, potentially, execute arbitrary code.\n1390510: \nCVE-2016-8704 memcached: Server append/prepend remote code execution\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8704",
+        "ID": "CVE-2016-8704",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8705",
+        "ID": "CVE-2016-8705",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8706",
+        "ID": "CVE-2016-8706",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "memcached",
+          "Release": "9.13.amzn1",
+          "Version": "1.4.15",
+          "Filename": "Packages/memcached-1.4.15-9.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "memcached-devel",
+          "Release": "9.13.amzn1",
+          "Version": "1.4.15",
+          "Filename": "Packages/memcached-devel-1.4.15-9.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "memcached-debuginfo",
+          "Release": "9.13.amzn1",
+          "Version": "1.4.15",
+          "Filename": "Packages/memcached-debuginfo-1.4.15-9.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "memcached",
+          "Release": "9.13.amzn1",
+          "Version": "1.4.15",
+          "Filename": "Packages/memcached-1.4.15-9.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "memcached-debuginfo",
+          "Release": "9.13.amzn1",
+          "Version": "1.4.15",
+          "Filename": "Packages/memcached-debuginfo-1.4.15-9.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "memcached-devel",
+          "Release": "9.13.amzn1",
+          "Version": "1.4.15",
+          "Filename": "Packages/memcached-devel-1.4.15-9.13.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

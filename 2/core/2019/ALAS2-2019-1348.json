@@ -1,0 +1,971 @@
+{
+  "ID": "ALAS2-2019-1348",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1348: medium priority package update for fence-agents",
+  "Issued": {
+    "Date": "2019-11-04 22:16"
+  },
+  "Updated": {
+    "Date": "2019-11-07 00:28"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2019-10153:\n\tA flaw was discovered in fence-agents, prior to version 4.3.4, where using non-ASCII characters in a guest VM&#039;s comment or other fields would cause fence_rhevm to exit with an exception. In cluster environments, this could lead to preventing automated recovery or otherwise denying service to clusters of which that VM is a member.\n99999: \nCVE-2019-10153 fence-agents: mis-handling of non-ASCII characters in guest comment fields\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10153",
+        "ID": "CVE-2019-10153",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-debuginfo",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-debuginfo-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-common",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-common-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-all",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-all-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-amt-ws",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-amt-ws-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-apc",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-apc-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-apc-snmp",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-apc-snmp-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-bladecenter",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-bladecenter-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-brocade",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-brocade-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-cisco-mds",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-cisco-mds-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-cisco-ucs",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-cisco-ucs-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-compute",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-compute-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-drac5",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-drac5-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-eaton-snmp",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-eaton-snmp-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-emerson",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-emerson-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-eps",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-eps-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-heuristics-ping",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-heuristics-ping-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-hpblade",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-hpblade-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-ibmblade",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ibmblade-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-ifmib",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ifmib-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-ilo2",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ilo2-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-ilo-moonshot",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ilo-moonshot-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-ilo-mp",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ilo-mp-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-ilo-ssh",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ilo-ssh-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-intelmodular",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-intelmodular-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-ipdu",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ipdu-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-ipmilan",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ipmilan-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-mpath",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-mpath-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-kdump",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-kdump-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-redfish",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-redfish-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-rhevm",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-rhevm-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-rsa",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-rsa-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-rsb",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-rsb-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-sbd",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-sbd-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-scsi",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-scsi-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-virsh",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-virsh-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-vmware-rest",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-vmware-rest-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-vmware-soap",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-vmware-soap-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "fence-agents-wti",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-wti-4.2.1-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-debuginfo",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-debuginfo-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-common",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-common-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-all",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-all-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-aliyun",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-aliyun-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-amt-ws",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-amt-ws-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-apc",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-apc-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-apc-snmp",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-apc-snmp-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-aws",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-aws-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-bladecenter",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-bladecenter-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-brocade",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-brocade-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-cisco-mds",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-cisco-mds-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-cisco-ucs",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-cisco-ucs-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-compute",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-compute-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-drac5",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-drac5-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-eaton-snmp",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-eaton-snmp-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-emerson",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-emerson-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-eps",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-eps-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-gce",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-gce-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-heuristics-ping",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-heuristics-ping-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-hpblade",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-hpblade-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-ibmblade",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ibmblade-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-ifmib",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ifmib-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-ilo2",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ilo2-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-ilo-moonshot",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ilo-moonshot-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-ilo-mp",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ilo-mp-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-ilo-ssh",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ilo-ssh-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-intelmodular",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-intelmodular-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-ipdu",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ipdu-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-ipmilan",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ipmilan-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-mpath",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-mpath-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-kdump",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-kdump-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-redfish",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-redfish-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-rhevm",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-rhevm-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-rsa",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-rsa-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-rsb",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-rsb-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-sbd",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-sbd-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-scsi",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-scsi-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-virsh",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-virsh-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-vmware-rest",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-vmware-rest-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-vmware-soap",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-vmware-soap-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "fence-agents-wti",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-wti-4.2.1-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-debuginfo",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-debuginfo-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-common",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-common-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-all",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-all-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-amt-ws",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-amt-ws-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-apc",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-apc-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-apc-snmp",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-apc-snmp-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-bladecenter",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-bladecenter-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-brocade",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-brocade-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-cisco-mds",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-cisco-mds-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-cisco-ucs",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-cisco-ucs-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-compute",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-compute-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-drac5",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-drac5-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-eaton-snmp",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-eaton-snmp-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-emerson",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-emerson-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-eps",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-eps-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-heuristics-ping",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-heuristics-ping-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-hpblade",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-hpblade-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-ibmblade",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ibmblade-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-ifmib",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ifmib-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-ilo2",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ilo2-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-ilo-moonshot",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ilo-moonshot-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-ilo-mp",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ilo-mp-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-ilo-ssh",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ilo-ssh-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-intelmodular",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-intelmodular-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-ipdu",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ipdu-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-ipmilan",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-ipmilan-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-mpath",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-mpath-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-kdump",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-kdump-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-redfish",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-redfish-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-rhevm",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-rhevm-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-rsa",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-rsa-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-rsb",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-rsb-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-sbd",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-sbd-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-scsi",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-scsi-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-virsh",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-virsh-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-vmware-rest",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-vmware-rest-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-vmware-soap",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-vmware-soap-4.2.1-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "fence-agents-wti",
+          "Release": "24.amzn2.0.3",
+          "Version": "4.2.1",
+          "Filename": "Packages/fence-agents-wti-4.2.1-24.amzn2.0.3.i686.rpm"
+        }
+      ]
+    }
+  }
+}

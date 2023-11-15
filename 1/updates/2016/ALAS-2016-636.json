@@ -1,0 +1,75 @@
+{
+  "ID": "ALAS-2016-636",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-636: medium priority package update for realmd",
+  "Issued": {
+    "Date": "2016-01-18 11:00"
+  },
+  "Updated": {
+    "Date": "2016-01-18 11:00"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-2704:\n\tA flaw was found in the way realmd parsed certain input when writing configuration into the sssd.conf or smb.conf file. A remote attacker could use this flaw to inject arbitrary configurations into these files via a newline character in an LDAP response.\n1205752: \nCVE-2015-2704 realmd: untrusted data is used when configuring sssd.conf and/or smb.conf\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2704",
+        "ID": "CVE-2015-2704",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "realmd-devel-docs",
+          "Release": "5.5.amzn1",
+          "Version": "0.16.1",
+          "Filename": "Packages/realmd-devel-docs-0.16.1-5.5.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "realmd-debuginfo",
+          "Release": "5.5.amzn1",
+          "Version": "0.16.1",
+          "Filename": "Packages/realmd-debuginfo-0.16.1-5.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "realmd",
+          "Release": "5.5.amzn1",
+          "Version": "0.16.1",
+          "Filename": "Packages/realmd-0.16.1-5.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "realmd-debuginfo",
+          "Release": "5.5.amzn1",
+          "Version": "0.16.1",
+          "Filename": "Packages/realmd-debuginfo-0.16.1-5.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "realmd",
+          "Release": "5.5.amzn1",
+          "Version": "0.16.1",
+          "Filename": "Packages/realmd-0.16.1-5.5.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

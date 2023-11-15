@@ -1,0 +1,133 @@
+{
+  "ID": "ALAS-2015-575",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-575: medium priority package update for gnutls",
+  "Issued": {
+    "Date": "2015-08-04 11:36"
+  },
+  "Updated": {
+    "Date": "2015-08-04 17:48"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-0294:\n\tIt was discovered that GnuTLS did not check if all sections of X.509 certificates indicate the same signature algorithm. This flaw, in combination with a different flaw, could possibly lead to a bypass of the certificate signature check.\n\nCVE-2015-0282:\n\tIt was found that GnuTLS did not verify whether a hashing algorithm listed in a signature matched the hashing algorithm listed in the certificate. An attacker could create a certificate that used a different hashing algorithm than it claimed, possibly causing GnuTLS to use an insecure, disallowed hashing algorithm during certificate verification.\n\nCVE-2014-8155:\n\tIt was found that GnuTLS did not check activation and expiration dates of CA certificates. This could cause an application using GnuTLS to incorrectly accept a certificate as valid when its issuing CA is already expired.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8155",
+        "ID": "CVE-2014-8155",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0282",
+        "ID": "CVE-2015-0282",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0294",
+        "ID": "CVE-2015-0294",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2015:1457.html",
+        "ID": "RHSA-2015:1457",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "gnutls-debuginfo",
+          "Release": "18.14.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-debuginfo-2.8.5-18.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "gnutls-guile",
+          "Release": "18.14.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-guile-2.8.5-18.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "gnutls-utils",
+          "Release": "18.14.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-utils-2.8.5-18.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "gnutls",
+          "Release": "18.14.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-2.8.5-18.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "gnutls-devel",
+          "Release": "18.14.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-devel-2.8.5-18.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "gnutls",
+          "Release": "18.14.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-2.8.5-18.14.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "gnutls-debuginfo",
+          "Release": "18.14.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-debuginfo-2.8.5-18.14.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "gnutls-devel",
+          "Release": "18.14.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-devel-2.8.5-18.14.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "gnutls-guile",
+          "Release": "18.14.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-guile-2.8.5-18.14.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "gnutls-utils",
+          "Release": "18.14.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-utils-2.8.5-18.14.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

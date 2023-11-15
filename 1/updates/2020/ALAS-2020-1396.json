@@ -1,0 +1,79 @@
+{
+  "ID": "ALAS-2020-1396",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2020-1396: medium priority package update for microcode_ctl",
+  "Issued": {
+    "Date": "2020-07-14 01:55"
+  },
+  "Updated": {
+    "Date": "2020-07-15 17:28"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-0549:\n\tCleanup errors in some data cache evictions for some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access.\n1788788: CVE-2020-0549 hw: L1D Cache Eviction Sampling\n\nCVE-2020-0548:\n\tCleanup errors in some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access.\n1788786: CVE-2020-0548 hw: Vector Register Data Sampling\n\nCVE-2020-0543:\n\tIncomplete cleanup from specific special register read operations in some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access.\nA new domain bypass transient execution attack known as Special Register Buffer Data Sampling (SRBDS) has been found. This flaw allows data values from special internal registers to be leaked by an attacker able to execute code on any core of the CPU. An unprivileged, local attacker can use this flaw to infer values returned by affected instructions known to be commonly used during cryptographic operations that rely on uniqueness, secrecy, or both.\n1827165: CVE-2020-0543 hw: Special Register Buffer Data Sampling (SRBDS)\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-0543",
+        "ID": "CVE-2020-0543",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-0548",
+        "ID": "CVE-2020-0548",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-0549",
+        "ID": "CVE-2020-0549",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "2",
+          "Name": "microcode_ctl-debuginfo",
+          "Release": "47.39.amzn1",
+          "Version": "2.1",
+          "Filename": "Packages/microcode_ctl-debuginfo-2.1-47.39.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "2",
+          "Name": "microcode_ctl",
+          "Release": "47.39.amzn1",
+          "Version": "2.1",
+          "Filename": "Packages/microcode_ctl-2.1-47.39.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "2",
+          "Name": "microcode_ctl",
+          "Release": "47.39.amzn1",
+          "Version": "2.1",
+          "Filename": "Packages/microcode_ctl-2.1-47.39.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "2",
+          "Name": "microcode_ctl-debuginfo",
+          "Release": "47.39.amzn1",
+          "Version": "2.1",
+          "Filename": "Packages/microcode_ctl-debuginfo-2.1-47.39.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

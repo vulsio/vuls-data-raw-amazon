@@ -1,0 +1,67 @@
+{
+  "ID": "ALAS-2014-347",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-347: medium priority package update for cacti",
+  "Issued": {
+    "Date": "2014-06-03 14:59"
+  },
+  "Updated": {
+    "Date": "2014-09-18 00:38"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-2709:\n\tlib/rrd.php in Cacti 0.8.7g, 0.8.8b, and earlier allows remote attackers to execute arbitrary commands via shell metacharacters in unspecified parameters.\n1084258: \nCVE-2014-2708 CVE-2014-2709 cacti: command injection issues fixed in bug#0002405\n\nCVE-2014-2708:\n\tMultiple SQL injection vulnerabilities in graph_xport.php in Cacti 0.8.7g, 0.8.8b, and earlier allow remote attackers to execute arbitrary SQL commands via the (1) graph_start, (2) graph_end, (3) graph_height, (4) graph_width, (5) graph_nolegend, (6) print_source, (7) local_graph_id, or (8) rra_id parameter.\n1084258: \nCVE-2014-2708 CVE-2014-2709 cacti: command injection issues fixed in bug#0002405\n\nCVE-2014-2328:\n\tlib/graph_export.php in Cacti 0.8.7g, 0.8.8b, and earlier allows remote authenticated users to execute arbitrary commands via shell metacharacters in unspecified vectors.\n1082122: \nCVE-2014-2326 CVE-2014-2327 CVE-2014-2328 cacti: multiple flaws reported by Deutsche Telekom\n\nCVE-2014-2327:\n\tCross-site request forgery (CSRF) vulnerability in Cacti 0.8.7g, 0.8.8b, and earlier allows remote attackers to hijack the authentication of users for unspecified commands, as demonstrated by requests that (1) modify binary files, (2) modify configurations, or (3) add arbitrary users.\n1082122: \nCVE-2014-2326 CVE-2014-2327 CVE-2014-2328 cacti: multiple flaws reported by Deutsche Telekom\n\nCVE-2014-2326:\n\tCross-site scripting (XSS) vulnerability in cdef.php in Cacti 0.8.7g, 0.8.8b, and earlier allows remote attackers to inject arbitrary web  script or HTML via unspecified vectors.\n1082122: \nCVE-2014-2326 CVE-2014-2327 CVE-2014-2328 cacti: multiple flaws reported by Deutsche Telekom\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2326",
+        "ID": "CVE-2014-2326",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2327",
+        "ID": "CVE-2014-2327",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2328",
+        "ID": "CVE-2014-2328",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2708",
+        "ID": "CVE-2014-2708",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2709",
+        "ID": "CVE-2014-2709",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "cacti",
+          "Release": "5.4.amzn1",
+          "Version": "0.8.8b",
+          "Filename": "Packages/cacti-0.8.8b-5.4.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

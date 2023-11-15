@@ -1,0 +1,193 @@
+{
+  "ID": "ALAS2022-2022-220",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2022 - ALAS2022-2022-220: Important priority package update for polkit",
+  "Issued": {
+    "Date": "2022-12-06 16:42"
+  },
+  "Updated": {
+    "Date": "2022-12-06 16:42"
+  },
+  "Severity": "Important",
+  "Description": "Package updates are available for Amazon Linux 2022 that fix the following vulnerabilities:\nCVE-2021-4115:\n\tThere is a flaw in polkit which can allow an unprivileged user to cause polkit to crash, due to process file descriptor exhaustion. \nThe highest threat from this vulnerability is to availability. NOTE: Polkit process outage duration is tied to the failing process being reaped and a new one being spawned.\n\nCVE-2021-4034:\n\tA local privilege escalation vulnerability was found on polkit's pkexec utility. The pkexec application is a setuid tool designed to allow unprivileged users to run commands as privileged users according predefined policies. The current version of pkexec doesn't handle the calling parameters count correctly and ends trying to execute environment variables as commands. An attacker can leverage this by crafting environment variables in such a way it'll induce pkexec to execute arbitrary code. When successfully executed the attack can cause a local privilege escalation given unprivileged users administrative rights on the target machine.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4034",
+        "ID": "CVE-2021-4034",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4115",
+        "ID": "CVE-2021-4115",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2022",
+      "Name": "Amazon Linux 2022",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "polkit-libs-debuginfo",
+          "Release": "10.amzn2022.0.2",
+          "Version": "0.117",
+          "Filename": "Packages/polkit-libs-debuginfo-0.117-10.amzn2022.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "polkit-devel",
+          "Release": "10.amzn2022.0.2",
+          "Version": "0.117",
+          "Filename": "Packages/polkit-devel-0.117-10.amzn2022.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "polkit-docs",
+          "Release": "10.amzn2022.0.2",
+          "Version": "0.117",
+          "Filename": "Packages/polkit-docs-0.117-10.amzn2022.0.2.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "polkit-libs",
+          "Release": "10.amzn2022.0.2",
+          "Version": "0.117",
+          "Filename": "Packages/polkit-libs-0.117-10.amzn2022.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "polkit",
+          "Release": "10.amzn2022.0.2",
+          "Version": "0.117",
+          "Filename": "Packages/polkit-0.117-10.amzn2022.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "polkit-debuginfo",
+          "Release": "10.amzn2022.0.2",
+          "Version": "0.117",
+          "Filename": "Packages/polkit-debuginfo-0.117-10.amzn2022.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "polkit-debugsource",
+          "Release": "10.amzn2022.0.2",
+          "Version": "0.117",
+          "Filename": "Packages/polkit-debugsource-0.117-10.amzn2022.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "polkit-libs-debuginfo",
+          "Release": "10.amzn2022.0.2",
+          "Version": "0.117",
+          "Filename": "Packages/polkit-libs-debuginfo-0.117-10.amzn2022.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "polkit-debuginfo",
+          "Release": "10.amzn2022.0.2",
+          "Version": "0.117",
+          "Filename": "Packages/polkit-debuginfo-0.117-10.amzn2022.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "polkit-libs",
+          "Release": "10.amzn2022.0.2",
+          "Version": "0.117",
+          "Filename": "Packages/polkit-libs-0.117-10.amzn2022.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "polkit-debugsource",
+          "Release": "10.amzn2022.0.2",
+          "Version": "0.117",
+          "Filename": "Packages/polkit-debugsource-0.117-10.amzn2022.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "polkit",
+          "Release": "10.amzn2022.0.2",
+          "Version": "0.117",
+          "Filename": "Packages/polkit-0.117-10.amzn2022.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "polkit-devel",
+          "Release": "10.amzn2022.0.2",
+          "Version": "0.117",
+          "Filename": "Packages/polkit-devel-0.117-10.amzn2022.0.2.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "polkit-libs-debuginfo",
+          "Release": "10.amzn2022.0.2",
+          "Version": "0.117",
+          "Filename": "Packages/polkit-libs-debuginfo-0.117-10.amzn2022.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "polkit-devel",
+          "Release": "10.amzn2022.0.2",
+          "Version": "0.117",
+          "Filename": "Packages/polkit-devel-0.117-10.amzn2022.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "polkit-debuginfo",
+          "Release": "10.amzn2022.0.2",
+          "Version": "0.117",
+          "Filename": "Packages/polkit-debuginfo-0.117-10.amzn2022.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "polkit-libs",
+          "Release": "10.amzn2022.0.2",
+          "Version": "0.117",
+          "Filename": "Packages/polkit-libs-0.117-10.amzn2022.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "polkit",
+          "Release": "10.amzn2022.0.2",
+          "Version": "0.117",
+          "Filename": "Packages/polkit-0.117-10.amzn2022.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "polkit-debugsource",
+          "Release": "10.amzn2022.0.2",
+          "Version": "0.117",
+          "Filename": "Packages/polkit-debugsource-0.117-10.amzn2022.0.2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

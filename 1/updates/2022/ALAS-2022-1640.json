@@ -1,0 +1,67 @@
+{
+  "ID": "ALAS-2022-1640",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2022-1640: important priority package update for rsync",
+  "Issued": {
+    "Date": "2022-12-01 17:33"
+  },
+  "Updated": {
+    "Date": "2022-12-10 00:47"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-25032:\n\tAn out-of-bounds access flaw was found in zlib, which allows memory corruption when deflating (ex: when compressing) if the input has many distant matches. For some rare inputs with a large number of distant matches (crafted payloads), the buffer into which the compressed or deflated data is written can overwrite the distance symbol table which it overlays. This issue results in corrupted output due to invalid distances, which leads to out-of-bound access, corrupting the memory and potentially crashing the application.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-25032",
+        "ID": "CVE-2018-25032",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rsync-debuginfo",
+          "Release": "12.14.amzn1",
+          "Version": "3.0.6",
+          "Filename": "Packages/rsync-debuginfo-3.0.6-12.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rsync",
+          "Release": "12.14.amzn1",
+          "Version": "3.0.6",
+          "Filename": "Packages/rsync-3.0.6-12.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rsync",
+          "Release": "12.14.amzn1",
+          "Version": "3.0.6",
+          "Filename": "Packages/rsync-3.0.6-12.14.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rsync-debuginfo",
+          "Release": "12.14.amzn1",
+          "Version": "3.0.6",
+          "Filename": "Packages/rsync-debuginfo-3.0.6-12.14.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

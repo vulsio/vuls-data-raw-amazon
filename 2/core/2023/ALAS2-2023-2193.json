@@ -1,0 +1,73 @@
+{
+  "ID": "ALAS2-2023-2193",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2193: important priority package update for nerdctl",
+  "Issued": {
+    "Date": "2023-08-03 18:10"
+  },
+  "Updated": {
+    "Date": "2023-08-08 22:02"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-29406:\n\tThe HTTP/1 client does not fully validate the contents of the Host header. A maliciously crafted Host header can inject additional headers or entire requests. With fix, the HTTP/1 client now refuses to send requests containing an invalid Request.Host or Request.URL.Host value.\n\nCVE-2022-41723:\n\thttp2/hpack: avoid quadratic complexity in hpack decoding\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41723",
+        "ID": "CVE-2022-41723",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29406",
+        "ID": "CVE-2023-29406",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "nerdctl",
+          "Release": "1.amzn2.0.2",
+          "Version": "1.1.0",
+          "Filename": "Packages/nerdctl-1.1.0-1.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "nerdctl-debuginfo",
+          "Release": "1.amzn2.0.2",
+          "Version": "1.1.0",
+          "Filename": "Packages/nerdctl-debuginfo-1.1.0-1.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "nerdctl",
+          "Release": "1.amzn2.0.2",
+          "Version": "1.1.0",
+          "Filename": "Packages/nerdctl-1.1.0-1.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "nerdctl-debuginfo",
+          "Release": "1.amzn2.0.2",
+          "Version": "1.1.0",
+          "Filename": "Packages/nerdctl-debuginfo-1.1.0-1.amzn2.0.2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

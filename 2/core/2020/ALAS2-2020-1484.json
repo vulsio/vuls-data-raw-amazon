@@ -1,0 +1,233 @@
+{
+  "ID": "ALAS2-2020-1484",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1484: medium priority package update for python3",
+  "Issued": {
+    "Date": "2020-09-01 00:40"
+  },
+  "Updated": {
+    "Date": "2020-09-02 17:56"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-14422:\n\tLib/ipaddress.py in Python through 3.8.3 improperly computes hash values in the IPv4Interface and IPv6Interface classes, which might allow a remote attacker to cause a denial of service if an application is affected by the performance of a dictionary containing IPv4Interface or IPv6Interface objects, and this attacker can cause many dictionary entries to be created.\n1854926: CVE-2020-14422 python: DoS via inefficiency in IPv{4,6}Interface classes\n\nCVE-2019-20907:\n\tIn Lib/tarfile.py in Python through 3.8.3, an attacker is able to craft a TAR archive leading to an infinite loop when opened by tarfile.open, because _proc_pax lacks header validation.\n1856481: CVE-2019-20907 python: infinite loop in the tarfile module via crafted TAR archive\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-20907",
+        "ID": "CVE-2019-20907",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14422",
+        "ID": "CVE-2020-14422",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python3",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-3.7.9-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python3-libs",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-libs-3.7.9-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python3-devel",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-devel-3.7.9-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python3-tools",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-tools-3.7.9-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python3-tkinter",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-tkinter-3.7.9-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python3-test",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-test-3.7.9-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python3-debug",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-debug-3.7.9-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python3-debuginfo",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-debuginfo-3.7.9-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python3",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-3.7.9-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python3-libs",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-libs-3.7.9-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python3-devel",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-devel-3.7.9-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python3-tools",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-tools-3.7.9-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python3-tkinter",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-tkinter-3.7.9-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python3-test",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-test-3.7.9-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python3-debug",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-debug-3.7.9-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python3-debuginfo",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-debuginfo-3.7.9-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python3",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-3.7.9-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python3-libs",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-libs-3.7.9-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python3-devel",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-devel-3.7.9-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python3-tools",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-tools-3.7.9-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python3-tkinter",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-tkinter-3.7.9-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python3-test",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-test-3.7.9-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python3-debug",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-debug-3.7.9-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python3-debuginfo",
+          "Release": "1.amzn2.0.1",
+          "Version": "3.7.9",
+          "Filename": "Packages/python3-debuginfo-3.7.9-1.amzn2.0.1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "ID": "ALAS-2022-1634",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2022-1634: critical priority package update for cacti",
+  "Issued": {
+    "Date": "2022-09-15 03:57"
+  },
+  "Updated": {
+    "Date": "2022-09-20 23:20"
+  },
+  "Severity": "critical",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2022-0730:\n\tUnder certain ldap conditions, Cacti authentication can be bypassed with certain credential types.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0730",
+        "ID": "CVE-2022-0730",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "cacti",
+          "Release": "2.19.amzn1",
+          "Version": "1.1.19",
+          "Filename": "Packages/cacti-1.1.19-2.19.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

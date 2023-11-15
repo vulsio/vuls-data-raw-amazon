@@ -1,0 +1,767 @@
+{
+  "ID": "ALAS-2011-19",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2011-19: medium priority package update for perl",
+  "Issued": {
+    "Date": "2011-11-09 21:48"
+  },
+  "Updated": {
+    "Date": "2014-09-14 14:41"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2011-3597:\n\tIt was found that the \"new\" constructor of the Digest module used its argument as part of the string expression passed to the eval() function. An attacker could possibly use this flaw to execute arbitrary Perl code with the privileges of a Perl program that uses untrusted input as an argument to the constructor.\nEval injection in the Digest module before 1.17 for Perl allows context-dependent attackers to execute arbitrary commands via the new constructor.\n\nCVE-2011-2939:\n\tOff-by-one error in the decode_xs function in Unicode/Unicode.xs in the Encode module before 2.44, as used in Perl before 5.15.6, might allow context-dependent attackers to cause a denial of service (memory corruption) via a crafted Unicode string, which triggers a heap-based buffer overflow.\nA heap-based buffer overflow flaw was found in the way Perl decoded Unicode strings. An attacker could create a malicious Unicode string that, when decoded by a Perl program, would cause the program to crash or, potentially, execute arbitrary code with the permissions of the user running the program.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2939",
+        "ID": "CVE-2011-2939",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3597",
+        "ID": "CVE-2011-3597",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2011:1424.html",
+        "ID": "RHSA-2011:1424",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-Term-UI",
+          "Release": "119.12.amzn1",
+          "Version": "0.20",
+          "Filename": "Packages/perl-Term-UI-0.20-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "4",
+          "Name": "perl-suidperl",
+          "Release": "119.12.amzn1",
+          "Version": "5.10.1",
+          "Filename": "Packages/perl-suidperl-5.10.1-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "perl-Object-Accessor",
+          "Release": "119.12.amzn1",
+          "Version": "0.34",
+          "Filename": "Packages/perl-Object-Accessor-0.34-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "perl-Pod-Escapes",
+          "Release": "119.12.amzn1",
+          "Version": "1.04",
+          "Filename": "Packages/perl-Pod-Escapes-1.04-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "perl-Digest-SHA",
+          "Release": "119.12.amzn1",
+          "Version": "5.47",
+          "Filename": "Packages/perl-Digest-SHA-5.47-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-CPAN",
+          "Release": "119.12.amzn1",
+          "Version": "1.9402",
+          "Filename": "Packages/perl-CPAN-1.9402-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "perl-ExtUtils-ParseXS",
+          "Release": "119.12.amzn1",
+          "Version": "2.2003.0",
+          "Filename": "Packages/perl-ExtUtils-ParseXS-2.2003.0-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-IO-Compress-Base",
+          "Release": "119.12.amzn1",
+          "Version": "2.020",
+          "Filename": "Packages/perl-IO-Compress-Base-2.020-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "perl-Module-Build",
+          "Release": "119.12.amzn1",
+          "Version": "0.3500",
+          "Filename": "Packages/perl-Module-Build-0.3500-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "4",
+          "Name": "perl-libs",
+          "Release": "119.12.amzn1",
+          "Version": "5.10.1",
+          "Filename": "Packages/perl-libs-5.10.1-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-ExtUtils-MakeMaker",
+          "Release": "119.12.amzn1",
+          "Version": "6.55",
+          "Filename": "Packages/perl-ExtUtils-MakeMaker-6.55-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "perl-Module-Load",
+          "Release": "119.12.amzn1",
+          "Version": "0.16",
+          "Filename": "Packages/perl-Module-Load-0.16-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-Time-Piece",
+          "Release": "119.12.amzn1",
+          "Version": "1.15",
+          "Filename": "Packages/perl-Time-Piece-1.15-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "4",
+          "Name": "perl-devel",
+          "Release": "119.12.amzn1",
+          "Version": "5.10.1",
+          "Filename": "Packages/perl-devel-5.10.1-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "perl-ExtUtils-CBuilder",
+          "Release": "119.12.amzn1",
+          "Version": "0.27",
+          "Filename": "Packages/perl-ExtUtils-CBuilder-0.27-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "perl-Archive-Extract",
+          "Release": "119.12.amzn1",
+          "Version": "0.38",
+          "Filename": "Packages/perl-Archive-Extract-0.38-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-core",
+          "Release": "119.12.amzn1",
+          "Version": "5.10.1",
+          "Filename": "Packages/perl-core-5.10.1-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-File-Fetch",
+          "Release": "119.12.amzn1",
+          "Version": "0.26",
+          "Filename": "Packages/perl-File-Fetch-0.26-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "perl-version",
+          "Release": "119.12.amzn1",
+          "Version": "0.77",
+          "Filename": "Packages/perl-version-0.77-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-Archive-Tar",
+          "Release": "119.12.amzn1",
+          "Version": "1.58",
+          "Filename": "Packages/perl-Archive-Tar-1.58-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "perl-Parse-CPAN-Meta",
+          "Release": "119.12.amzn1",
+          "Version": "1.40",
+          "Filename": "Packages/perl-Parse-CPAN-Meta-1.40-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "perl-Params-Check",
+          "Release": "119.12.amzn1",
+          "Version": "0.26",
+          "Filename": "Packages/perl-Params-Check-0.26-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-Module-CoreList",
+          "Release": "119.12.amzn1",
+          "Version": "2.18",
+          "Filename": "Packages/perl-Module-CoreList-2.18-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-ExtUtils-Embed",
+          "Release": "119.12.amzn1",
+          "Version": "1.28",
+          "Filename": "Packages/perl-ExtUtils-Embed-1.28-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-CPANPLUS",
+          "Release": "119.12.amzn1",
+          "Version": "0.88",
+          "Filename": "Packages/perl-CPANPLUS-0.88-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "perl-Module-Loaded",
+          "Release": "119.12.amzn1",
+          "Version": "0.02",
+          "Filename": "Packages/perl-Module-Loaded-0.02-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "perl-Log-Message",
+          "Release": "119.12.amzn1",
+          "Version": "0.02",
+          "Filename": "Packages/perl-Log-Message-0.02-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "perl-Module-Pluggable",
+          "Release": "119.12.amzn1",
+          "Version": "3.90",
+          "Filename": "Packages/perl-Module-Pluggable-3.90-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-Log-Message-Simple",
+          "Release": "119.12.amzn1",
+          "Version": "0.04",
+          "Filename": "Packages/perl-Log-Message-Simple-0.04-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-Test-Harness",
+          "Release": "119.12.amzn1",
+          "Version": "3.17",
+          "Filename": "Packages/perl-Test-Harness-3.17-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "perl-IPC-Cmd",
+          "Release": "119.12.amzn1",
+          "Version": "0.56",
+          "Filename": "Packages/perl-IPC-Cmd-0.56-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-IO-Compress-Zlib",
+          "Release": "119.12.amzn1",
+          "Version": "2.020",
+          "Filename": "Packages/perl-IO-Compress-Zlib-2.020-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "perl-parent",
+          "Release": "119.12.amzn1",
+          "Version": "0.221",
+          "Filename": "Packages/perl-parent-0.221-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-Compress-Zlib",
+          "Release": "119.12.amzn1",
+          "Version": "2.020",
+          "Filename": "Packages/perl-Compress-Zlib-2.020-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-CGI",
+          "Release": "119.12.amzn1",
+          "Version": "3.51",
+          "Filename": "Packages/perl-CGI-3.51-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "perl-IO-Zlib",
+          "Release": "119.12.amzn1",
+          "Version": "1.09",
+          "Filename": "Packages/perl-IO-Zlib-1.09-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-Test-Simple",
+          "Release": "119.12.amzn1",
+          "Version": "0.92",
+          "Filename": "Packages/perl-Test-Simple-0.92-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-Compress-Raw-Zlib",
+          "Release": "119.12.amzn1",
+          "Version": "2.023",
+          "Filename": "Packages/perl-Compress-Raw-Zlib-2.023-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "4",
+          "Name": "perl-debuginfo",
+          "Release": "119.12.amzn1",
+          "Version": "5.10.1",
+          "Filename": "Packages/perl-debuginfo-5.10.1-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-Module-Load-Conditional",
+          "Release": "119.12.amzn1",
+          "Version": "0.30",
+          "Filename": "Packages/perl-Module-Load-Conditional-0.30-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "perl-Package-Constants",
+          "Release": "119.12.amzn1",
+          "Version": "0.02",
+          "Filename": "Packages/perl-Package-Constants-0.02-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "4",
+          "Name": "perl-Time-HiRes",
+          "Release": "119.12.amzn1",
+          "Version": "1.9721",
+          "Filename": "Packages/perl-Time-HiRes-1.9721-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "perl-Locale-Maketext-Simple",
+          "Release": "119.12.amzn1",
+          "Version": "0.18",
+          "Filename": "Packages/perl-Locale-Maketext-Simple-0.18-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "4",
+          "Name": "perl",
+          "Release": "119.12.amzn1",
+          "Version": "5.10.1",
+          "Filename": "Packages/perl-5.10.1-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "perl-Pod-Simple",
+          "Release": "119.12.amzn1",
+          "Version": "3.13",
+          "Filename": "Packages/perl-Pod-Simple-3.13-119.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "4",
+          "Name": "perl-Time-HiRes",
+          "Release": "119.12.amzn1",
+          "Version": "1.9721",
+          "Filename": "Packages/perl-Time-HiRes-1.9721-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-Time-Piece",
+          "Release": "119.12.amzn1",
+          "Version": "1.15",
+          "Filename": "Packages/perl-Time-Piece-1.15-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "perl-Archive-Extract",
+          "Release": "119.12.amzn1",
+          "Version": "0.38",
+          "Filename": "Packages/perl-Archive-Extract-0.38-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-CPANPLUS",
+          "Release": "119.12.amzn1",
+          "Version": "0.88",
+          "Filename": "Packages/perl-CPANPLUS-0.88-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "4",
+          "Name": "perl-libs",
+          "Release": "119.12.amzn1",
+          "Version": "5.10.1",
+          "Filename": "Packages/perl-libs-5.10.1-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "perl-parent",
+          "Release": "119.12.amzn1",
+          "Version": "0.221",
+          "Filename": "Packages/perl-parent-0.221-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "perl-ExtUtils-CBuilder",
+          "Release": "119.12.amzn1",
+          "Version": "0.27",
+          "Filename": "Packages/perl-ExtUtils-CBuilder-0.27-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-ExtUtils-Embed",
+          "Release": "119.12.amzn1",
+          "Version": "1.28",
+          "Filename": "Packages/perl-ExtUtils-Embed-1.28-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "perl-Params-Check",
+          "Release": "119.12.amzn1",
+          "Version": "0.26",
+          "Filename": "Packages/perl-Params-Check-0.26-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "perl-Locale-Maketext-Simple",
+          "Release": "119.12.amzn1",
+          "Version": "0.18",
+          "Filename": "Packages/perl-Locale-Maketext-Simple-0.18-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "perl-ExtUtils-ParseXS",
+          "Release": "119.12.amzn1",
+          "Version": "2.2003.0",
+          "Filename": "Packages/perl-ExtUtils-ParseXS-2.2003.0-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-Archive-Tar",
+          "Release": "119.12.amzn1",
+          "Version": "1.58",
+          "Filename": "Packages/perl-Archive-Tar-1.58-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "perl-Pod-Escapes",
+          "Release": "119.12.amzn1",
+          "Version": "1.04",
+          "Filename": "Packages/perl-Pod-Escapes-1.04-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "4",
+          "Name": "perl-devel",
+          "Release": "119.12.amzn1",
+          "Version": "5.10.1",
+          "Filename": "Packages/perl-devel-5.10.1-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "perl-Object-Accessor",
+          "Release": "119.12.amzn1",
+          "Version": "0.34",
+          "Filename": "Packages/perl-Object-Accessor-0.34-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "perl-Log-Message",
+          "Release": "119.12.amzn1",
+          "Version": "0.02",
+          "Filename": "Packages/perl-Log-Message-0.02-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "4",
+          "Name": "perl",
+          "Release": "119.12.amzn1",
+          "Version": "5.10.1",
+          "Filename": "Packages/perl-5.10.1-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-Module-CoreList",
+          "Release": "119.12.amzn1",
+          "Version": "2.18",
+          "Filename": "Packages/perl-Module-CoreList-2.18-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-Log-Message-Simple",
+          "Release": "119.12.amzn1",
+          "Version": "0.04",
+          "Filename": "Packages/perl-Log-Message-Simple-0.04-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "perl-Pod-Simple",
+          "Release": "119.12.amzn1",
+          "Version": "3.13",
+          "Filename": "Packages/perl-Pod-Simple-3.13-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-Compress-Zlib",
+          "Release": "119.12.amzn1",
+          "Version": "2.020",
+          "Filename": "Packages/perl-Compress-Zlib-2.020-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "perl-Parse-CPAN-Meta",
+          "Release": "119.12.amzn1",
+          "Version": "1.40",
+          "Filename": "Packages/perl-Parse-CPAN-Meta-1.40-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-Compress-Raw-Zlib",
+          "Release": "119.12.amzn1",
+          "Version": "2.023",
+          "Filename": "Packages/perl-Compress-Raw-Zlib-2.023-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-ExtUtils-MakeMaker",
+          "Release": "119.12.amzn1",
+          "Version": "6.55",
+          "Filename": "Packages/perl-ExtUtils-MakeMaker-6.55-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-IO-Compress-Zlib",
+          "Release": "119.12.amzn1",
+          "Version": "2.020",
+          "Filename": "Packages/perl-IO-Compress-Zlib-2.020-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "perl-Module-Loaded",
+          "Release": "119.12.amzn1",
+          "Version": "0.02",
+          "Filename": "Packages/perl-Module-Loaded-0.02-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-Module-Load-Conditional",
+          "Release": "119.12.amzn1",
+          "Version": "0.30",
+          "Filename": "Packages/perl-Module-Load-Conditional-0.30-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-IO-Compress-Base",
+          "Release": "119.12.amzn1",
+          "Version": "2.020",
+          "Filename": "Packages/perl-IO-Compress-Base-2.020-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-CPAN",
+          "Release": "119.12.amzn1",
+          "Version": "1.9402",
+          "Filename": "Packages/perl-CPAN-1.9402-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "perl-Module-Pluggable",
+          "Release": "119.12.amzn1",
+          "Version": "3.90",
+          "Filename": "Packages/perl-Module-Pluggable-3.90-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "perl-Digest-SHA",
+          "Release": "119.12.amzn1",
+          "Version": "5.47",
+          "Filename": "Packages/perl-Digest-SHA-5.47-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-File-Fetch",
+          "Release": "119.12.amzn1",
+          "Version": "0.26",
+          "Filename": "Packages/perl-File-Fetch-0.26-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-CGI",
+          "Release": "119.12.amzn1",
+          "Version": "3.51",
+          "Filename": "Packages/perl-CGI-3.51-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-Test-Simple",
+          "Release": "119.12.amzn1",
+          "Version": "0.92",
+          "Filename": "Packages/perl-Test-Simple-0.92-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "perl-Module-Build",
+          "Release": "119.12.amzn1",
+          "Version": "0.3500",
+          "Filename": "Packages/perl-Module-Build-0.3500-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "perl-version",
+          "Release": "119.12.amzn1",
+          "Version": "0.77",
+          "Filename": "Packages/perl-version-0.77-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "4",
+          "Name": "perl-debuginfo",
+          "Release": "119.12.amzn1",
+          "Version": "5.10.1",
+          "Filename": "Packages/perl-debuginfo-5.10.1-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "4",
+          "Name": "perl-suidperl",
+          "Release": "119.12.amzn1",
+          "Version": "5.10.1",
+          "Filename": "Packages/perl-suidperl-5.10.1-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "perl-Package-Constants",
+          "Release": "119.12.amzn1",
+          "Version": "0.02",
+          "Filename": "Packages/perl-Package-Constants-0.02-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "perl-IO-Zlib",
+          "Release": "119.12.amzn1",
+          "Version": "1.09",
+          "Filename": "Packages/perl-IO-Zlib-1.09-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-Term-UI",
+          "Release": "119.12.amzn1",
+          "Version": "0.20",
+          "Filename": "Packages/perl-Term-UI-0.20-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-core",
+          "Release": "119.12.amzn1",
+          "Version": "5.10.1",
+          "Filename": "Packages/perl-core-5.10.1-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "perl-IPC-Cmd",
+          "Release": "119.12.amzn1",
+          "Version": "0.56",
+          "Filename": "Packages/perl-IPC-Cmd-0.56-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-Test-Harness",
+          "Release": "119.12.amzn1",
+          "Version": "3.17",
+          "Filename": "Packages/perl-Test-Harness-3.17-119.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "perl-Module-Load",
+          "Release": "119.12.amzn1",
+          "Version": "0.16",
+          "Filename": "Packages/perl-Module-Load-0.16-119.12.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

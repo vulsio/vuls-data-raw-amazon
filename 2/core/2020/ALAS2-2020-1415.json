@@ -1,0 +1,115 @@
+{
+  "ID": "ALAS2-2020-1415",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1415: important priority package update for xerces-c",
+  "Issued": {
+    "Date": "2020-04-20 20:48"
+  },
+  "Updated": {
+    "Date": "2020-04-23 23:26"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-1311:\n\tThe Apache Xerces-C 3.0.0 to 3.2.2 XML parser contains a use-after-free error triggered during the scanning of external DTDs. This flaw has not been addressed in the maintained version of the library and has no current mitigation other than to disable DTD processing. This can be accomplished via the DOM using a standard parser feature, or via SAX using the XERCES_DISABLE_DTD environment variable.\n1788472: CVE-2018-1311 xerces-c: XML parser contains a use-after-free error triggered during the scanning of external DTDs\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1311",
+        "ID": "CVE-2018-1311",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "xerces-c",
+          "Release": "10.amzn2",
+          "Version": "3.1.1",
+          "Filename": "Packages/xerces-c-3.1.1-10.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "xerces-c-devel",
+          "Release": "10.amzn2",
+          "Version": "3.1.1",
+          "Filename": "Packages/xerces-c-devel-3.1.1-10.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "xerces-c-doc",
+          "Release": "10.amzn2",
+          "Version": "3.1.1",
+          "Filename": "Packages/xerces-c-doc-3.1.1-10.amzn2.noarch.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "xerces-c-debuginfo",
+          "Release": "10.amzn2",
+          "Version": "3.1.1",
+          "Filename": "Packages/xerces-c-debuginfo-3.1.1-10.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xerces-c",
+          "Release": "10.amzn2",
+          "Version": "3.1.1",
+          "Filename": "Packages/xerces-c-3.1.1-10.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xerces-c-devel",
+          "Release": "10.amzn2",
+          "Version": "3.1.1",
+          "Filename": "Packages/xerces-c-devel-3.1.1-10.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xerces-c-debuginfo",
+          "Release": "10.amzn2",
+          "Version": "3.1.1",
+          "Filename": "Packages/xerces-c-debuginfo-3.1.1-10.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xerces-c",
+          "Release": "10.amzn2",
+          "Version": "3.1.1",
+          "Filename": "Packages/xerces-c-3.1.1-10.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xerces-c-devel",
+          "Release": "10.amzn2",
+          "Version": "3.1.1",
+          "Filename": "Packages/xerces-c-devel-3.1.1-10.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xerces-c-debuginfo",
+          "Release": "10.amzn2",
+          "Version": "3.1.1",
+          "Filename": "Packages/xerces-c-debuginfo-3.1.1-10.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "ID": "ALAS2-2019-1151",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1151: low priority package update for libcdio",
+  "Issued": {
+    "Date": "2019-01-23 23:25"
+  },
+  "Updated": {
+    "Date": "2019-01-25 00:58"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2017-18201:\n\tA double-free flaw was found in the way libcdio handled processing of ISO files. An attacker could potentially use this flaw to crash applications using libcdio by tricking them into processing crafted ISO files.\n1549707: \nCVE-2017-18201 libcdio: Double free in get_cdtext_generic() in lib/driver/_cdio_generic.c\n\nCVE-2017-18199:\n\tA NULL pointer dereference flaw was found in the way libcdio handled processing of ISO files. An attacker could potentially use this flaw to crash applications using libcdio by tricking them into processing crafted ISO files.\n1549701: \nCVE-2017-18199 libcdio: NULL pointer dereference in realloc_symlink in rock.c\n\nCVE-2017-18198:\n\tA heap corruption bug was found in the way libcdio handled processing of ISO files. An attacker could potentially use this flaw to crash applications using libcdio by tricking them into processing crafted ISO files, thus resulting in local DoS.\n1549644: \nCVE-2017-18198 libcdio: Heap-based buffer over-read in print_iso9660_recurse function in iso-info.c\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18198",
+        "ID": "CVE-2017-18198",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18199",
+        "ID": "CVE-2017-18199",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-18201",
+        "ID": "CVE-2017-18201",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libcdio",
+          "Release": "3.amzn2",
+          "Version": "0.92",
+          "Filename": "Packages/libcdio-0.92-3.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libcdio-devel",
+          "Release": "3.amzn2",
+          "Version": "0.92",
+          "Filename": "Packages/libcdio-devel-0.92-3.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libcdio-debuginfo",
+          "Release": "3.amzn2",
+          "Version": "0.92",
+          "Filename": "Packages/libcdio-debuginfo-0.92-3.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcdio",
+          "Release": "3.amzn2",
+          "Version": "0.92",
+          "Filename": "Packages/libcdio-0.92-3.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcdio-devel",
+          "Release": "3.amzn2",
+          "Version": "0.92",
+          "Filename": "Packages/libcdio-devel-0.92-3.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcdio-debuginfo",
+          "Release": "3.amzn2",
+          "Version": "0.92",
+          "Filename": "Packages/libcdio-debuginfo-0.92-3.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcdio",
+          "Release": "3.amzn2",
+          "Version": "0.92",
+          "Filename": "Packages/libcdio-0.92-3.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcdio-devel",
+          "Release": "3.amzn2",
+          "Version": "0.92",
+          "Filename": "Packages/libcdio-devel-0.92-3.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcdio-debuginfo",
+          "Release": "3.amzn2",
+          "Version": "0.92",
+          "Filename": "Packages/libcdio-debuginfo-0.92-3.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

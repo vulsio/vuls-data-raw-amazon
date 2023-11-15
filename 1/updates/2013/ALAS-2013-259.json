@@ -1,0 +1,101 @@
+{
+  "ID": "ALAS-2013-259",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-259: low priority package update for sudo",
+  "Issued": {
+    "Date": "2013-12-11 20:34"
+  },
+  "Updated": {
+    "Date": "2014-09-16 22:10"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-2777:\n\tIt was found that sudo did not properly validate the controlling terminal device when the tty_tickets option was enabled in the /etc/sudoers file. An attacker able to run code as a local user could possibly gain additional privileges by running commands that the victim user was allowed to run via sudo, without knowing the victim's password.\n\nCVE-2013-2776:\n\tIt was found that sudo did not properly validate the controlling terminal device when the tty_tickets option was enabled in the /etc/sudoers file. An attacker able to run code as a local user could possibly gain additional privileges by running commands that the victim user was allowed to run via sudo, without knowing the victim's password.\n\nCVE-2013-1775:\n\tA flaw was found in the way sudo handled time stamp files. An attacker able to run code as a local user and with the ability to control the system clock could possibly gain additional privileges by running commands that the victim user was allowed to run via sudo, without knowing the victim's password.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1775",
+        "ID": "CVE-2013-1775",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2776",
+        "ID": "CVE-2013-2776",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2777",
+        "ID": "CVE-2013-2777",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2013:1701.html",
+        "ID": "RHSA-2013:1701",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sudo-devel",
+          "Release": "12.17.amzn1",
+          "Version": "1.8.6p3",
+          "Filename": "Packages/sudo-devel-1.8.6p3-12.17.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sudo",
+          "Release": "12.17.amzn1",
+          "Version": "1.8.6p3",
+          "Filename": "Packages/sudo-1.8.6p3-12.17.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sudo-debuginfo",
+          "Release": "12.17.amzn1",
+          "Version": "1.8.6p3",
+          "Filename": "Packages/sudo-debuginfo-1.8.6p3-12.17.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sudo-devel",
+          "Release": "12.17.amzn1",
+          "Version": "1.8.6p3",
+          "Filename": "Packages/sudo-devel-1.8.6p3-12.17.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sudo-debuginfo",
+          "Release": "12.17.amzn1",
+          "Version": "1.8.6p3",
+          "Filename": "Packages/sudo-debuginfo-1.8.6p3-12.17.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sudo",
+          "Release": "12.17.amzn1",
+          "Version": "1.8.6p3",
+          "Filename": "Packages/sudo-1.8.6p3-12.17.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

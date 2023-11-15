@@ -1,0 +1,121 @@
+{
+  "ID": "ALAS-2012-85",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2012-85: medium priority package update for openssl",
+  "Issued": {
+    "Date": "2012-06-10 11:48"
+  },
+  "Updated": {
+    "Date": "2014-09-14 16:18"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-2333:\n\tInteger underflow in OpenSSL before 0.9.8x, 1.0.0 before 1.0.0j, and 1.0.1 before 1.0.1c, when TLS 1.1, TLS 1.2, or DTLS is used with CBC encryption, allows remote attackers to cause a denial of service (buffer over-read) or possibly have unspecified other impact via a crafted TLS packet that is not properly handled during a certain explicit IV calculation.\nAn integer underflow flaw, leading to a buffer over-read, was found in the way OpenSSL handled DTLS (Datagram Transport Layer Security) application data record lengths when using a block cipher in CBC (cipher-block chaining) mode. A malicious DTLS client or server could use this flaw to crash its DTLS connection peer.\n820686: \nCVE-2012-2333 openssl: record length handling integer underflow\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2333",
+        "ID": "CVE-2012-2333",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2012:0699.html",
+        "ID": "RHSA-2012:0699",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssl-static",
+          "Release": "1.43.amzn1",
+          "Version": "1.0.0j",
+          "Filename": "Packages/openssl-static-1.0.0j-1.43.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssl",
+          "Release": "1.43.amzn1",
+          "Version": "1.0.0j",
+          "Filename": "Packages/openssl-1.0.0j-1.43.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssl-debuginfo",
+          "Release": "1.43.amzn1",
+          "Version": "1.0.0j",
+          "Filename": "Packages/openssl-debuginfo-1.0.0j-1.43.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssl-perl",
+          "Release": "1.43.amzn1",
+          "Version": "1.0.0j",
+          "Filename": "Packages/openssl-perl-1.0.0j-1.43.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssl-devel",
+          "Release": "1.43.amzn1",
+          "Version": "1.0.0j",
+          "Filename": "Packages/openssl-devel-1.0.0j-1.43.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssl-devel",
+          "Release": "1.43.amzn1",
+          "Version": "1.0.0j",
+          "Filename": "Packages/openssl-devel-1.0.0j-1.43.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssl-perl",
+          "Release": "1.43.amzn1",
+          "Version": "1.0.0j",
+          "Filename": "Packages/openssl-perl-1.0.0j-1.43.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssl",
+          "Release": "1.43.amzn1",
+          "Version": "1.0.0j",
+          "Filename": "Packages/openssl-1.0.0j-1.43.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssl-debuginfo",
+          "Release": "1.43.amzn1",
+          "Version": "1.0.0j",
+          "Filename": "Packages/openssl-debuginfo-1.0.0j-1.43.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssl-static",
+          "Release": "1.43.amzn1",
+          "Version": "1.0.0j",
+          "Filename": "Packages/openssl-static-1.0.0j-1.43.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

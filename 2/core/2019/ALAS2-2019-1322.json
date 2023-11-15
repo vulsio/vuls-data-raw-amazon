@@ -1,0 +1,113 @@
+{
+  "ID": "ALAS2-2019-1322",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1322: medium priority package update for http-parser",
+  "Issued": {
+    "Date": "2019-10-21 18:01"
+  },
+  "Updated": {
+    "Date": "2019-10-23 23:46"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-7159:\n\tIt was found that the http module from Node.js could accept incorrect Content-Length values, containing spaces within the value, in HTTP headers. A specially crafted client could use this flaw to possibly confuse the script, causing unspecified behavior.\n99999: \nCVE-2018-7159 nodejs: HTTP parser allowed for spaces inside Content-Length header values\n\nCVE-2018-12121:\n\tNode.js: All versions prior to Node.js 6.15.0, 8.14.0, 10.14.0 and 11.3.0: Denial of Service with large HTTP headers: By using a combination of many requests with maximum sized headers (almost 80 KB per connection), and carefully timed completion of the headers, it is possible to cause the HTTP server to abort from heap allocation failure. Attack potential is mitigated by the use of a load balancer or other proxy layer.\n99999: \nCVE-2018-12121 nodejs: Denial of Service with large HTTP headers\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12121",
+        "ID": "CVE-2018-12121",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7159",
+        "ID": "CVE-2018-7159",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "http-parser",
+          "Release": "8.amzn2",
+          "Version": "2.7.1",
+          "Filename": "Packages/http-parser-2.7.1-8.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "http-parser-devel",
+          "Release": "8.amzn2",
+          "Version": "2.7.1",
+          "Filename": "Packages/http-parser-devel-2.7.1-8.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "http-parser-debuginfo",
+          "Release": "8.amzn2",
+          "Version": "2.7.1",
+          "Filename": "Packages/http-parser-debuginfo-2.7.1-8.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "http-parser",
+          "Release": "8.amzn2",
+          "Version": "2.7.1",
+          "Filename": "Packages/http-parser-2.7.1-8.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "http-parser-devel",
+          "Release": "8.amzn2",
+          "Version": "2.7.1",
+          "Filename": "Packages/http-parser-devel-2.7.1-8.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "http-parser-debuginfo",
+          "Release": "8.amzn2",
+          "Version": "2.7.1",
+          "Filename": "Packages/http-parser-debuginfo-2.7.1-8.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "http-parser",
+          "Release": "8.amzn2",
+          "Version": "2.7.1",
+          "Filename": "Packages/http-parser-2.7.1-8.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "http-parser-devel",
+          "Release": "8.amzn2",
+          "Version": "2.7.1",
+          "Filename": "Packages/http-parser-devel-2.7.1-8.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "http-parser-debuginfo",
+          "Release": "8.amzn2",
+          "Version": "2.7.1",
+          "Filename": "Packages/http-parser-debuginfo-2.7.1-8.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

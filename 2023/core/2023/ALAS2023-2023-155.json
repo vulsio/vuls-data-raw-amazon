@@ -1,0 +1,699 @@
+{
+  "ID": "ALAS2023-2023-155",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2023 - ALAS2023-2023-155: Important priority package update for mariadb105",
+  "Issued": {
+    "Date": "2023-03-30 21:11:00"
+  },
+  "Updated": {
+    "Date": "2023-04-27 20:00:00"
+  },
+  "Severity": "Important",
+  "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2022-47015:\n\tMariaDB Server before 10.3.34 thru 10.9.3 is vulnerable to Denial of Service. It is possible for function spider_db_mbase::print_warnings to dereference a null pointer.\n\nCVE-2022-38791:\n\tIn MariaDB before 10.9.2, compress_write in extra/mariabackup/ds_compress.cc does not release data_mutex upon a stream write failure, which allows local users to trigger a deadlock.\n\nCVE-2022-32091:\n\tMariaDB v10.7 was discovered to contain an use-after-poison in in __interceptor_memset at /libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc.\n\nCVE-2022-31623:\n\tMariaDB Server before 10.7 is vulnerable to Denial of Service. In extra/mariabackup/ds_compress.cc, when an error occurs (i.e., going to the err label) while executing the method create_worker_threads, the held lock thd->ctrl_mutex is not released correctly, which allows local users to trigger a denial of service due to the deadlock.\n\nCVE-2022-31622:\n\tMariaDB Server before 10.7 is vulnerable to Denial of Service. In extra/mariabackup/ds_compress.cc, when an error occurs (pthread_create returns a nonzero value) while executing the method create_worker_threads, the held lock is not released correctly, which allows local users to trigger a denial of service due to the deadlock.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-31622",
+        "ID": "CVE-2022-31622",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-31623",
+        "ID": "CVE-2022-31623",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32091",
+        "ID": "CVE-2022-32091",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-38791",
+        "ID": "CVE-2022-38791",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-47015",
+        "ID": "CVE-2022-47015",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2023",
+      "Name": "Amazon Linux 2023",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-server-utils-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-server-utils-debuginfo-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-debuginfo-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-connect-engine",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-connect-engine-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-pam-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-pam-debuginfo-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-oqgraph-engine",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-oqgraph-engine-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-cracklib-password-check",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-cracklib-password-check-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-errmsg",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-errmsg-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-gssapi-server",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-gssapi-server-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-oqgraph-engine-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-oqgraph-engine-debuginfo-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-backup",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-backup-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-connect-engine-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-connect-engine-debuginfo-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-pam",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-pam-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-sphinx-engine",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-sphinx-engine-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-cracklib-password-check-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-cracklib-password-check-debuginfo-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-gssapi-server-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-gssapi-server-debuginfo-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-backup-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-backup-debuginfo-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-sphinx-engine-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-sphinx-engine-debuginfo-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-common",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-common-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-server-utils",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-server-utils-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-rocksdb-engine-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-rocksdb-engine-debuginfo-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-rocksdb-engine",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-rocksdb-engine-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-server-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-server-debuginfo-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-test-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-test-debuginfo-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-server",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-server-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-devel",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-devel-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-debugsource",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-debugsource-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mariadb105-test",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-test-10.5.18-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-backup-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-backup-debuginfo-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-server-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-server-debuginfo-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-debugsource",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-debugsource-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-test",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-test-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-server",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-server-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-backup",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-backup-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-debuginfo-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-test-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-test-debuginfo-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-devel",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-devel-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-connect-engine-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-connect-engine-debuginfo-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-errmsg",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-errmsg-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-oqgraph-engine-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-oqgraph-engine-debuginfo-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-connect-engine",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-connect-engine-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-server-utils-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-server-utils-debuginfo-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-sphinx-engine-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-sphinx-engine-debuginfo-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-server-utils",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-server-utils-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-oqgraph-engine",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-oqgraph-engine-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-common",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-common-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-sphinx-engine",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-sphinx-engine-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-pam-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-pam-debuginfo-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-pam",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-pam-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-gssapi-server-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-gssapi-server-debuginfo-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-cracklib-password-check-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-cracklib-password-check-debuginfo-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-gssapi-server",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-gssapi-server-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "3",
+          "Name": "mariadb105-cracklib-password-check",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-cracklib-password-check-10.5.18-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-common",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-common-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-sphinx-engine",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-sphinx-engine-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-pam-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-pam-debuginfo-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-sphinx-engine-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-sphinx-engine-debuginfo-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-oqgraph-engine-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-oqgraph-engine-debuginfo-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-devel",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-devel-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-backup-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-backup-debuginfo-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-connect-engine-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-connect-engine-debuginfo-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-cracklib-password-check-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-cracklib-password-check-debuginfo-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-connect-engine",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-connect-engine-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-server-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-server-debuginfo-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-test-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-test-debuginfo-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-server-utils-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-server-utils-debuginfo-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-debuginfo-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-errmsg",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-errmsg-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-backup",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-backup-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-server-utils",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-server-utils-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-server",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-server-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-oqgraph-engine",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-oqgraph-engine-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-pam",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-pam-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-gssapi-server-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-gssapi-server-debuginfo-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-gssapi-server",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-gssapi-server-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-cracklib-password-check",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-cracklib-password-check-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-debugsource",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-debugsource-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "3",
+          "Name": "mariadb105-test",
+          "Release": "1.amzn2023.0.1",
+          "Version": "10.5.18",
+          "Filename": "Packages/mariadb105-test-10.5.18-1.amzn2023.0.1.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

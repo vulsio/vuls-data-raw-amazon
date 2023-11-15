@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS-2020-1412",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2020-1412: low priority package update for doxygen",
+  "Issued": {
+    "Date": "2020-07-28 17:22"
+  },
+  "Updated": {
+    "Date": "2020-07-29 21:30"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-10245:\n\tInsufficient sanitization of the query parameter in templates/html/search_opensearch.php could lead to reflected cross-site scripting or iframe injection.\n1714190: CVE-2016-10245 doxygen: cross-site scripting in templates/html/search_opensearch.php\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10245",
+        "ID": "CVE-2016-10245",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "doxygen-debuginfo",
+          "Release": "4.14.amzn1",
+          "Version": "1.8.5",
+          "Filename": "Packages/doxygen-debuginfo-1.8.5-4.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "doxygen",
+          "Release": "4.14.amzn1",
+          "Version": "1.8.5",
+          "Filename": "Packages/doxygen-1.8.5-4.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "doxygen-latex",
+          "Release": "4.14.amzn1",
+          "Version": "1.8.5",
+          "Filename": "Packages/doxygen-latex-1.8.5-4.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "doxygen-debuginfo",
+          "Release": "4.14.amzn1",
+          "Version": "1.8.5",
+          "Filename": "Packages/doxygen-debuginfo-1.8.5-4.14.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "doxygen-latex",
+          "Release": "4.14.amzn1",
+          "Version": "1.8.5",
+          "Filename": "Packages/doxygen-latex-1.8.5-4.14.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "doxygen",
+          "Release": "4.14.amzn1",
+          "Version": "1.8.5",
+          "Filename": "Packages/doxygen-1.8.5-4.14.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "ID": "ALAS-2017-904",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-904: medium priority package update for cacti",
+  "Issued": {
+    "Date": "2017-10-02 16:54"
+  },
+  "Updated": {
+    "Date": "2017-10-02 22:00"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-12978:\n\tlib/html.php in Cacti before 1.1.18 has XSS via the title field of an external link added by an authenticated user.\n\nCVE-2017-12927:\n\tA cross-site scripting vulnerability exists in Cacti 1.1.17 in the method parameter in spikekill.php.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12927",
+        "ID": "CVE-2017-12927",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12978",
+        "ID": "CVE-2017-12978",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "cacti",
+          "Release": "1.17.amzn1",
+          "Version": "1.1.19",
+          "Filename": "Packages/cacti-1.1.19-1.17.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

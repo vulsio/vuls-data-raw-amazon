@@ -1,0 +1,431 @@
+{
+  "ID": "ALAS-2017-930",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-930: medium priority package update for postgresql95 postgresql96",
+  "Issued": {
+    "Date": "2017-12-05 22:18"
+  },
+  "Updated": {
+    "Date": "2017-12-06 21:35"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-15099:\n\tINSERT ... ON CONFLICT DO UPDATE commands in PostgreSQL 10.x before 10.1, 9.6.x before 9.6.6, and 9.5.x before 9.5.10 disclose table contents that the invoker lacks privilege to read. These exploits affect only tables where the attacker lacks full read access but has both INSERT and UPDATE privileges. Exploits bypass row level security policies and lack of SELECT privilege.\n1508823: \nCVE-2017-15099 postgresql: INSERT ... ON CONFLICT DO UPDATE fails to enforce SELECT privileges\n\nCVE-2017-15098:\n\tInvalid json_populate_recordset or jsonb_populate_recordset function calls in PostgreSQL 10.x before 10.1, 9.6.x before 9.6.6, 9.5.x before 9.5.10, 9.4.x before 9.4.15, and 9.3.x before 9.3.20 can crash the server or disclose a few bytes of server memory.\n1508820: \nCVE-2017-15098 postgresql: Memory disclosure in JSON functions\n\nCVE-2017-12172:\n\tPrivilege escalation flaws were found in the initialization scripts of PostgreSQL. A remote attacker with access to the postgres user account could use these flaws to obtain root access on the server machine.\n1498394: \nCVE-2017-12172 postgresql: Start scripts permit database administrator to modify root-owned files\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12172",
+        "ID": "CVE-2017-12172",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15098",
+        "ID": "CVE-2017-15098",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15099",
+        "ID": "CVE-2017-15099",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql95-server",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-server-9.5.10-1.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql95-devel",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-devel-9.5.10-1.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql95-contrib",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-contrib-9.5.10-1.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql95",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-9.5.10-1.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql95-static",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-static-9.5.10-1.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql95-plpython27",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-plpython27-9.5.10-1.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql95-libs",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-libs-9.5.10-1.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql95-docs",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-docs-9.5.10-1.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql95-plpython26",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-plpython26-9.5.10-1.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql95-plperl",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-plperl-9.5.10-1.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql95-debuginfo",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-debuginfo-9.5.10-1.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql95-test",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-test-9.5.10-1.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql95-plperl",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-plperl-9.5.10-1.77.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql95-libs",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-libs-9.5.10-1.77.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql95-debuginfo",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-debuginfo-9.5.10-1.77.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql95-devel",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-devel-9.5.10-1.77.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql95-test",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-test-9.5.10-1.77.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql95-contrib",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-contrib-9.5.10-1.77.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql95-docs",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-docs-9.5.10-1.77.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql95",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-9.5.10-1.77.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql95-plpython26",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-plpython26-9.5.10-1.77.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql95-static",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-static-9.5.10-1.77.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql95-server",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-server-9.5.10-1.77.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql95-plpython27",
+          "Release": "1.77.amzn1",
+          "Version": "9.5.10",
+          "Filename": "Packages/postgresql95-plpython27-9.5.10-1.77.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql96-static",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-static-9.6.6-1.79.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql96-docs",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-docs-9.6.6-1.79.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql96-plperl",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-plperl-9.6.6-1.79.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql96-libs",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-libs-9.6.6-1.79.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql96-test",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-test-9.6.6-1.79.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql96-debuginfo",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-debuginfo-9.6.6-1.79.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql96",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-9.6.6-1.79.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql96-contrib",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-contrib-9.6.6-1.79.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql96-server",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-server-9.6.6-1.79.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql96-plpython26",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-plpython26-9.6.6-1.79.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql96-devel",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-devel-9.6.6-1.79.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql96-plpython27",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-plpython27-9.6.6-1.79.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql96-plperl",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-plperl-9.6.6-1.79.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql96-plpython26",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-plpython26-9.6.6-1.79.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql96-plpython27",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-plpython27-9.6.6-1.79.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql96-devel",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-devel-9.6.6-1.79.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql96-contrib",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-contrib-9.6.6-1.79.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql96-static",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-static-9.6.6-1.79.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql96-docs",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-docs-9.6.6-1.79.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql96-libs",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-libs-9.6.6-1.79.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql96-debuginfo",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-debuginfo-9.6.6-1.79.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql96-test",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-test-9.6.6-1.79.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql96",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-9.6.6-1.79.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql96-server",
+          "Release": "1.79.amzn1",
+          "Version": "9.6.6",
+          "Filename": "Packages/postgresql96-server-9.6.6-1.79.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

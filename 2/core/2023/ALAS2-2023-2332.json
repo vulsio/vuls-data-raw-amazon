@@ -1,0 +1,87 @@
+{
+  "ID": "ALAS2-2023-2332",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2332: medium priority package update for libguestfs-winsupport",
+  "Issued": {
+    "Date": "2023-10-30 23:59"
+  },
+  "Updated": {
+    "Date": "2023-10-30 23:59"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-30789:\n\tA crafted NTFS image can cause a heap-based buffer overflow in ntfs_check_log_client_array in NTFS-3G through 2021.8.22.\n\nCVE-2022-30788:\n\tA crafted NTFS image can cause a heap-based buffer overflow in ntfs_mft_rec_alloc in NTFS-3G through 2021.8.22.\n\nCVE-2022-30787:\n\tAn integer underflow in fuse_lib_readdir enables arbitrary memory read operations in NTFS-3G through 2021.8.22 when using libfuse-lite.\n\nCVE-2022-30786:\n\tA crafted NTFS image can cause a heap-based buffer overflow in ntfs_names_full_collate in NTFS-3G through 2021.8.22.\n\nCVE-2022-30785:\n\tA file handle created in fuse_lib_opendir, and later used in fuse_lib_readdir, enables arbitrary memory read and write operations in NTFS-3G through 2021.8.22 when using libfuse-lite.\n\nCVE-2022-30784:\n\tA crafted NTFS image can cause heap exhaustion in ntfs_get_attribute_value in NTFS-3G through 2021.8.22.\n\nCVE-2022-30783:\n\tAn invalid return code in fuse_kern_mount enables intercepting of libfuse-lite protocol traffic between NTFS-3G and the kernel in NTFS-3G through 2021.8.22 when using libfuse-lite.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30783",
+        "ID": "CVE-2022-30783",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30784",
+        "ID": "CVE-2022-30784",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30785",
+        "ID": "CVE-2022-30785",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30786",
+        "ID": "CVE-2022-30786",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30787",
+        "ID": "CVE-2022-30787",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30788",
+        "ID": "CVE-2022-30788",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30789",
+        "ID": "CVE-2022-30789",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libguestfs-winsupport",
+          "Release": "3.amzn2.0.1",
+          "Version": "7.2",
+          "Filename": "Packages/libguestfs-winsupport-7.2-3.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libguestfs-winsupport",
+          "Release": "3.amzn2.0.1",
+          "Version": "7.2",
+          "Filename": "Packages/libguestfs-winsupport-7.2-3.amzn2.0.1.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

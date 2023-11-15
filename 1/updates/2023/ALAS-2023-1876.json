@@ -1,0 +1,131 @@
+{
+  "ID": "ALAS-2023-1876",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2023-1876: important priority package update for python27",
+  "Issued": {
+    "Date": "2023-10-30 23:31"
+  },
+  "Updated": {
+    "Date": "2023-10-30 23:31"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2023-40217:\n\tAn issue was discovered in Python before 3.8.18, 3.9.x before 3.9.18, 3.10.x before 3.10.13, and 3.11.x before 3.11.5. It primarily affects servers (such as HTTP servers) that use TLS client authentication. If a TLS server-side socket is created, receives data into the socket buffer, and then is closed quickly, there is a brief window where the SSLSocket instance will detect the socket as \"not connected\" and won't initiate a handshake, but buffered data will still be readable from the socket buffer. This data will not be authenticated if the server-side TLS peer is expecting client certificate authentication, and is indistinguishable from valid TLS stream data. Data is limited in size to the amount that will fit in the buffer. (The TLS connection cannot directly be used for data exfiltration because the vulnerable code path requires that the connection be closed on initialization of the SSLSocket.)\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-40217",
+        "ID": "CVE-2023-40217",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-devel",
+          "Release": "2.148.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-devel-2.7.18-2.148.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-tools",
+          "Release": "2.148.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-tools-2.7.18-2.148.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27",
+          "Release": "2.148.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-2.7.18-2.148.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-debuginfo",
+          "Release": "2.148.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-debuginfo-2.7.18-2.148.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-libs",
+          "Release": "2.148.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-libs-2.7.18-2.148.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-test",
+          "Release": "2.148.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-test-2.7.18-2.148.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-test",
+          "Release": "2.148.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-test-2.7.18-2.148.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27",
+          "Release": "2.148.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-2.7.18-2.148.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-devel",
+          "Release": "2.148.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-devel-2.7.18-2.148.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-tools",
+          "Release": "2.148.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-tools-2.7.18-2.148.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-debuginfo",
+          "Release": "2.148.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-debuginfo-2.7.18-2.148.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-libs",
+          "Release": "2.148.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-libs-2.7.18-2.148.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

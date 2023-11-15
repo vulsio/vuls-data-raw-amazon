@@ -1,0 +1,209 @@
+{
+  "ID": "ALAS-2016-762",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-762: important priority package update for kernel",
+  "Issued": {
+    "Date": "2016-11-10 18:00"
+  },
+  "Updated": {
+    "Date": "2016-11-10 18:00"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-8666:\n\tThe IP stack in the Linux kernel before 4.6 allows remote attackers to cause a denial of service (stack consumption and panic) or possibly have unspecified other impact by triggering use of the GRO path for packets with tunnel stacking, as demonstrated by interleaved IPv4 headers and GRE headers, a related issue to CVE-2016-7039.\n1384991: \nCVE-2016-8666 kernel: Remotely triggerable recursion in GRE code leading to kernel crash\n\nCVE-2016-7039:\n\tLinux kernel built with the 802.1Q/802.1ad VLAN(CONFIG_VLAN_8021Q) OR Virtual eXtensible Local Area Network(CONFIG_VXLAN) with Transparent Ethernet Bridging(TEB) GRO support, is vulnerable to a stack overflow issue. It could occur while receiving large packets via GRO path, as an unlimited recursion could unfold in both VLAN and TEB modules, leading to a stack corruption in the kernel.\n1375944: \nCVE-2016-7039 kernel: remotely triggerable unbounded recursion in the vlan gro code leading to a kernel crash\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7039",
+        "ID": "CVE-2016-7039",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8666",
+        "ID": "CVE-2016-8666",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/kernel-4.4.30-32.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/kernel-devel-4.4.30-32.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/perf-debuginfo-4.4.30-32.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/kernel-tools-devel-4.4.30-32.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/kernel-tools-4.4.30-32.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.4.30-32.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/kernel-headers-4.4.30-32.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/kernel-tools-debuginfo-4.4.30-32.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/perf-4.4.30-32.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/kernel-debuginfo-4.4.30-32.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/kernel-tools-devel-4.4.30-32.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/kernel-debuginfo-4.4.30-32.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/kernel-headers-4.4.30-32.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/kernel-tools-4.4.30-32.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/kernel-devel-4.4.30-32.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/perf-debuginfo-4.4.30-32.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-i686",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/kernel-debuginfo-common-i686-4.4.30-32.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/perf-4.4.30-32.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/kernel-4.4.30-32.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/kernel-tools-debuginfo-4.4.30-32.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "kernel-doc",
+          "Release": "32.54.amzn1",
+          "Version": "4.4.30",
+          "Filename": "Packages/kernel-doc-4.4.30-32.54.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

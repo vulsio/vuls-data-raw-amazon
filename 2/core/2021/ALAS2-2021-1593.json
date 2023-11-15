@@ -1,0 +1,51 @@
+{
+  "ID": "ALAS2-2021-1593",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1593: important priority package update for xstream",
+  "Issued": {
+    "Date": "2021-01-25 23:09"
+  },
+  "Updated": {
+    "Date": "2021-01-26 18:44"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-26217:\n\tA flaw was found in xstream. An unsafe deserialization of user-supplied XML, in conjunction with relying on the default deny list, allows a remote attacker to perform a variety of attacks including a remote code execution of arbitrary code in the context of the JVM running the XStream application. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n1898907: CVE-2020-26217 XStream: remote code execution due to insecure XML deserialization when relying on blocklists\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26217",
+        "ID": "CVE-2020-26217",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "xstream",
+          "Release": "12.amzn2",
+          "Version": "1.3.1",
+          "Filename": "Packages/xstream-1.3.1-12.amzn2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "xstream-javadoc",
+          "Release": "12.amzn2",
+          "Version": "1.3.1",
+          "Filename": "Packages/xstream-javadoc-1.3.1-12.amzn2.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

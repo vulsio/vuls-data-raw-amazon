@@ -1,0 +1,161 @@
+{
+  "ID": "ALAS-2022-1593",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2022-1593: medium priority package update for python27",
+  "Issued": {
+    "Date": "2022-05-31 23:47"
+  },
+  "Updated": {
+    "Date": "2022-06-09 18:53"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2022-0391:\n\tA flaw was found in Python, specifically within the urllib.parse module. This module helps break Uniform Resource Locator (URL) strings into components. The issue involves how the urlparse method does not sanitize input and allows characters like r and n in the URL path. This flaw allows an attacker to input a crafted URL, leading to injection attacks.\n\nCVE-2021-4189:\n\tftplib should not use the host from the PASV response\n\nCVE-2021-3737:\n\tA flaw was found in python. An improperly handled HTTP response in the HTTP client code of python may allow a remote attacker, who controls the HTTP server, to make the client script enter an infinite loop, consuming CPU time. The highest threat from this vulnerability is to system availability.\n\nCVE-2021-3733:\n\tThere's a flaw in urllib's AbstractBasicAuthHandler class. An attacker who controls a malicious HTTP server that an HTTP client (such as web browser) connects to, could trigger a Regular Expression Denial of Service (ReDOS) during an authentication request with a specially crafted payload that is sent by the server to the client. The greatest threat that this flaw poses is to application availability.\n\nCVE-2021-23336:\n\tThe package python/cpython is vulnerable to Web Cache Poisoning via urllib.parse.parse_qsl and urllib.parse.parse_qs by using a vector called parameter cloaking. When the attacker can separate query parameters using a semicolon (;), they can cause a difference in the interpretation of the request between the proxy (running with default configuration) and the server. This can result in malicious requests being cached as completely safe ones, as the proxy would usually not see the semicolon as a separator, and therefore would not include it in a cache key of an unkeyed parameter.\n\nCVE-2020-27619:\n\tIn Python3's Lib/test/multibytecodec_support.py CJK codec tests call eval() on content retrieved via HTTP.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27619",
+        "ID": "CVE-2020-27619",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-23336",
+        "ID": "CVE-2021-23336",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3733",
+        "ID": "CVE-2021-3733",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3737",
+        "ID": "CVE-2021-3737",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4189",
+        "ID": "CVE-2021-4189",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0391",
+        "ID": "CVE-2022-0391",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-debuginfo",
+          "Release": "2.142.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-debuginfo-2.7.18-2.142.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-tools",
+          "Release": "2.142.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-tools-2.7.18-2.142.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-libs",
+          "Release": "2.142.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-libs-2.7.18-2.142.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-devel",
+          "Release": "2.142.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-devel-2.7.18-2.142.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27",
+          "Release": "2.142.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-2.7.18-2.142.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-test",
+          "Release": "2.142.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-test-2.7.18-2.142.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-debuginfo",
+          "Release": "2.142.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-debuginfo-2.7.18-2.142.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-libs",
+          "Release": "2.142.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-libs-2.7.18-2.142.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27",
+          "Release": "2.142.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-2.7.18-2.142.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-test",
+          "Release": "2.142.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-test-2.7.18-2.142.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-tools",
+          "Release": "2.142.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-tools-2.7.18-2.142.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-devel",
+          "Release": "2.142.amzn1",
+          "Version": "2.7.18",
+          "Filename": "Packages/python27-devel-2.7.18-2.142.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

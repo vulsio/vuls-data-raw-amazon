@@ -1,0 +1,327 @@
+{
+  "ID": "ALAS2-2021-1610",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1610: medium priority package update for perl",
+  "Issued": {
+    "Date": "2021-02-19 01:26"
+  },
+  "Updated": {
+    "Date": "2021-02-19 22:02"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-12723:\n\tregcomp.c in Perl before 5.30.3 allows a buffer overflow via a crafted regular expression because of recursive S_study_chunk calls.\n1838000: CVE-2020-12723 perl: corruption of intermediate language state of compiled regular expression due to recursive S_study_chunk() calls leads to DoS\n\nCVE-2020-10878:\n\tPerl before 5.30.3 has an integer overflow related to mishandling of a \"PL_regkind[OP(n)] == NOTHING\" situation. A crafted regular expression could lead to malformed bytecode with a possibility of instruction injection.\n1837988: CVE-2020-10878 perl: corruption of intermediate language state of compiled regular expression due to integer overflow leads to DoS\n\nCVE-2020-10543:\n\tPerl before 5.30.3 on 32-bit platforms allows a heap-based buffer overflow because nested regular expression quantifiers have an integer overflow.\n1837975: CVE-2020-10543 perl: heap-based buffer overflow in regular expression compiler leads to DoS\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10543",
+        "ID": "CVE-2020-10543",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10878",
+        "ID": "CVE-2020-10878",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12723",
+        "ID": "CVE-2020-12723",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "4",
+          "Name": "perl",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-5.16.3-299.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "4",
+          "Name": "perl-libs",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-libs-5.16.3-299.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "4",
+          "Name": "perl-devel",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-devel-5.16.3-299.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "4",
+          "Name": "perl-macros",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-macros-5.16.3-299.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "4",
+          "Name": "perl-tests",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-tests-5.16.3-299.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "perl-CPAN",
+          "Release": "299.amzn2.0.1",
+          "Version": "1.9800",
+          "Filename": "Packages/perl-CPAN-1.9800-299.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "1",
+          "Name": "perl-ExtUtils-CBuilder",
+          "Release": "299.amzn2.0.1",
+          "Version": "0.28.2.6",
+          "Filename": "Packages/perl-ExtUtils-CBuilder-0.28.2.6-299.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "perl-ExtUtils-Embed",
+          "Release": "299.amzn2.0.1",
+          "Version": "1.30",
+          "Filename": "Packages/perl-ExtUtils-Embed-1.30-299.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "perl-ExtUtils-Install",
+          "Release": "299.amzn2.0.1",
+          "Version": "1.58",
+          "Filename": "Packages/perl-ExtUtils-Install-1.58-299.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "1",
+          "Name": "perl-IO-Zlib",
+          "Release": "299.amzn2.0.1",
+          "Version": "1.10",
+          "Filename": "Packages/perl-IO-Zlib-1.10-299.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "1",
+          "Name": "perl-Locale-Maketext-Simple",
+          "Release": "299.amzn2.0.1",
+          "Version": "0.21",
+          "Filename": "Packages/perl-Locale-Maketext-Simple-0.21-299.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "1",
+          "Name": "perl-Module-CoreList",
+          "Release": "299.amzn2.0.1",
+          "Version": "2.76.02",
+          "Filename": "Packages/perl-Module-CoreList-2.76.02-299.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "1",
+          "Name": "perl-Module-Loaded",
+          "Release": "299.amzn2.0.1",
+          "Version": "0.08",
+          "Filename": "Packages/perl-Module-Loaded-0.08-299.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "1",
+          "Name": "perl-Object-Accessor",
+          "Release": "299.amzn2.0.1",
+          "Version": "0.42",
+          "Filename": "Packages/perl-Object-Accessor-0.42-299.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "1",
+          "Name": "perl-Package-Constants",
+          "Release": "299.amzn2.0.1",
+          "Version": "0.02",
+          "Filename": "Packages/perl-Package-Constants-0.02-299.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "1",
+          "Name": "perl-Pod-Escapes",
+          "Release": "299.amzn2.0.1",
+          "Version": "1.04",
+          "Filename": "Packages/perl-Pod-Escapes-1.04-299.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perl-Time-Piece",
+          "Release": "299.amzn2.0.1",
+          "Version": "1.20.1",
+          "Filename": "Packages/perl-Time-Piece-1.20.1-299.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perl-core",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-core-5.16.3-299.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "4",
+          "Name": "perl-debuginfo",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-debuginfo-5.16.3-299.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "4",
+          "Name": "perl",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-5.16.3-299.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "4",
+          "Name": "perl-libs",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-libs-5.16.3-299.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "4",
+          "Name": "perl-devel",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-devel-5.16.3-299.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "4",
+          "Name": "perl-macros",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-macros-5.16.3-299.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "4",
+          "Name": "perl-tests",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-tests-5.16.3-299.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-Time-Piece",
+          "Release": "299.amzn2.0.1",
+          "Version": "1.20.1",
+          "Filename": "Packages/perl-Time-Piece-1.20.1-299.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perl-core",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-core-5.16.3-299.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "4",
+          "Name": "perl-debuginfo",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-debuginfo-5.16.3-299.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "4",
+          "Name": "perl",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-5.16.3-299.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "4",
+          "Name": "perl-libs",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-libs-5.16.3-299.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "4",
+          "Name": "perl-devel",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-devel-5.16.3-299.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "4",
+          "Name": "perl-macros",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-macros-5.16.3-299.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "4",
+          "Name": "perl-tests",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-tests-5.16.3-299.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-Time-Piece",
+          "Release": "299.amzn2.0.1",
+          "Version": "1.20.1",
+          "Filename": "Packages/perl-Time-Piece-1.20.1-299.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perl-core",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-core-5.16.3-299.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "4",
+          "Name": "perl-debuginfo",
+          "Release": "299.amzn2.0.1",
+          "Version": "5.16.3",
+          "Filename": "Packages/perl-debuginfo-5.16.3-299.amzn2.0.1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

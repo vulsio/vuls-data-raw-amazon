@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS-2017-801",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-801: important priority package update for python-crypto",
+  "Issued": {
+    "Date": "2017-03-06 14:00"
+  },
+  "Updated": {
+    "Date": "2017-03-06 14:00"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-7459:\n\tHeap-based buffer overflow in the ALGnew function in block_templace.c in Python Cryptography Toolkit (aka pycrypto) allows remote attackers to execute arbitrary code as demonstrated by a crafted iv parameter to cryptmsg.py.\n1409754: \nCVE-2013-7459 pycrypto: Heap-buffer overflow in ALGobject structure\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7459",
+        "ID": "CVE-2013-7459",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python26-crypto",
+          "Release": "1.14.amzn1",
+          "Version": "2.6.1",
+          "Filename": "Packages/python26-crypto-2.6.1-1.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-crypto",
+          "Release": "1.14.amzn1",
+          "Version": "2.6.1",
+          "Filename": "Packages/python27-crypto-2.6.1-1.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-crypto-debuginfo",
+          "Release": "1.14.amzn1",
+          "Version": "2.6.1",
+          "Filename": "Packages/python-crypto-debuginfo-2.6.1-1.14.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python26-crypto",
+          "Release": "1.14.amzn1",
+          "Version": "2.6.1",
+          "Filename": "Packages/python26-crypto-2.6.1-1.14.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python-crypto-debuginfo",
+          "Release": "1.14.amzn1",
+          "Version": "2.6.1",
+          "Filename": "Packages/python-crypto-debuginfo-2.6.1-1.14.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-crypto",
+          "Release": "1.14.amzn1",
+          "Version": "2.6.1",
+          "Filename": "Packages/python27-crypto-2.6.1-1.14.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "ID": "ALAS2-2023-1989",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-1989: important priority package update for httpd",
+  "Issued": {
+    "Date": "2023-03-17 16:34"
+  },
+  "Updated": {
+    "Date": "2023-03-21 23:24"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-27522:\n\tHTTP Response Smuggling vulnerability in Apache HTTP Server via mod_proxy_uwsgi. This issue affects Apache HTTP Server: from 2.4.30 through 2.4.55. Special characters in the origin response header can truncate/split the response forwarded to the client.\n\nCVE-2023-25690:\n\tSome mod_proxy configurations on Apache HTTP Server versions 2.4.0 through 2.4.55 allow a HTTP Request Smuggling attack. Configurations are affected when mod_proxy is enabled along with some form of RewriteRule or ProxyPassMatch in which a non-specific pattern matches some portion of the user-supplied request-target (URL) data and is then re-inserted into the proxied request-target using variable substitution. For example, something like: RewriteEngine on RewriteRule \"^/here/(.*)\" \"http://example.com:8080/elsewhere?$1\"; [P] ProxyPassReverse /here/ http://example.com:8080/ Request splitting/smuggling could result in bypass of access controls in the proxy server, proxying unintended URLs to existing origin servers, and cache poisoning. Users are recommended to update to at least version 2.4.56 of Apache HTTP Server.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25690",
+        "ID": "CVE-2023-25690",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27522",
+        "ID": "CVE-2023-27522",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/httpd-2.4.56-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-devel",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/httpd-devel-2.4.56-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "httpd-manual",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/httpd-manual-2.4.56-1.amzn2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "httpd-filesystem",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/httpd-filesystem-2.4.56-1.amzn2.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-tools",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/httpd-tools-2.4.56-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod_ssl",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/mod_ssl-2.4.56-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mod_md",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/mod_md-2.4.56-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod_proxy_html",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/mod_proxy_html-2.4.56-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mod_ldap",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/mod_ldap-2.4.56-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mod_session",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/mod_session-2.4.56-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-debuginfo",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/httpd-debuginfo-2.4.56-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/httpd-2.4.56-1.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-devel",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/httpd-devel-2.4.56-1.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-tools",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/httpd-tools-2.4.56-1.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod_ssl",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/mod_ssl-2.4.56-1.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mod_md",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/mod_md-2.4.56-1.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod_proxy_html",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/mod_proxy_html-2.4.56-1.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mod_ldap",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/mod_ldap-2.4.56-1.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mod_session",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/mod_session-2.4.56-1.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-debuginfo",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/httpd-debuginfo-2.4.56-1.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "httpd",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/httpd-2.4.56-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "httpd-devel",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/httpd-devel-2.4.56-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "httpd-tools",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/httpd-tools-2.4.56-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "mod_ssl",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/mod_ssl-2.4.56-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "mod_md",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/mod_md-2.4.56-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "mod_proxy_html",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/mod_proxy_html-2.4.56-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "mod_ldap",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/mod_ldap-2.4.56-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "mod_session",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/mod_session-2.4.56-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "httpd-debuginfo",
+          "Release": "1.amzn2",
+          "Version": "2.4.56",
+          "Filename": "Packages/httpd-debuginfo-2.4.56-1.amzn2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

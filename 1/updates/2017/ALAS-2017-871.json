@@ -1,0 +1,571 @@
+{
+  "ID": "ALAS-2017-871",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-871: medium priority package update for php56",
+  "Issued": {
+    "Date": "2017-08-17 18:16"
+  },
+  "Updated": {
+    "Date": "2017-08-17 22:43"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-9229:\n\tAn issue was discovered in Oniguruma 6.2.0, as used in Oniguruma-mod in Ruby through 2.4.1 and mbstring in PHP through 7.1.5. A SIGSEGV occurs in left_adjust_char_head() during regular expression compilation. Invalid handling of reg-&gt;dmax in forward_search_range() could result in an invalid pointer dereference, normally as an immediate denial-of-service condition.\n1466746: \nCVE-2017-9229 oniguruma: Invalid pointer dereference in left_adjust_char_head()\n\nCVE-2017-9228:\n\tAn issue was discovered in Oniguruma 6.2.0, as used in Oniguruma-mod in Ruby through 2.4.1 and mbstring in PHP through 7.1.5. A heap out-of-bounds write occurs in bitset_set_range() during regular expression compilation due to an uninitialized variable from an incorrect state transition. An incorrect state transition in parse_char_class() could create an execution path that leaves a critical local variable uninitialized until it&#039;s used as an index, resulting in an out-of-bounds write memory corruption.\n1466740: \nCVE-2017-9228 oniguruma: Out-of-bounds heap write in bitset_set_range()\n\nCVE-2017-9227:\n\tAn issue was discovered in Oniguruma 6.2.0, as used in Oniguruma-mod in Ruby through 2.4.1 and mbstring in PHP through 7.1.5. A stack out-of-bounds read occurs in mbc_enc_len() during regular expression searching. Invalid handling of reg-&gt;dmin in forward_search_range() could result in an invalid pointer dereference, as an out-of-bounds read from a stack buffer.\n1466739: \nCVE-2017-9227 oniguruma: Out-of-bounds stack read in mbc_enc_len() during regular expression searching\n\nCVE-2017-9226:\n\tAn issue was discovered in Oniguruma 6.2.0, as used in Oniguruma-mod in Ruby through 2.4.1 and mbstring in PHP through 7.1.5. A heap out-of-bounds write or read occurs in next_state_val() during regular expression compilation. Octal numbers larger than 0xff are not handled correctly in fetch_token() and fetch_token_in_cc(). A malformed regular expression containing an octal number in the form of &#039;\\\\700&#039; would produce an invalid code point value larger than 0xff in next_state_val(), resulting in an out-of-bounds write memory corruption.\n1466736: \nCVE-2017-9226 oniguruma: Heap buffer overflow in next_state_val() during regular expression compilation\n\nCVE-2017-9224:\n\tAn issue was discovered in Oniguruma 6.2.0, as used in Oniguruma-mod in Ruby through 2.4.1 and mbstring in PHP through 7.1.5. A stack out-of-bounds read occurs in match_at() during regular expression searching. A logical error involving order of validation and access in match_at() could result in an out-of-bounds read from a stack buffer.\n1466730: \nCVE-2017-9224 oniguruma: Out-of-bounds stack read in match_at() during regular expression searching\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9224",
+        "ID": "CVE-2017-9224",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9226",
+        "ID": "CVE-2017-9226",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9227",
+        "ID": "CVE-2017-9227",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9228",
+        "ID": "CVE-2017-9228",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9229",
+        "ID": "CVE-2017-9229",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-ldap",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-ldap-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-mcrypt",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-mcrypt-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-devel",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-devel-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-gd",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-gd-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-recode",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-recode-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-pdo",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-pdo-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-tidy",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-tidy-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-intl",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-intl-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-imap",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-imap-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-fpm",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-fpm-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-soap",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-soap-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-snmp",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-snmp-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-pgsql",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-pgsql-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-xmlrpc",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-xmlrpc-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-process",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-process-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-dbg",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-dbg-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-embedded",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-embedded-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-mssql",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-mssql-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-dba",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-dba-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-debuginfo",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-debuginfo-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-mysqlnd",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-mysqlnd-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-gmp",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-gmp-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-odbc",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-odbc-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-mbstring",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-mbstring-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-bcmath",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-bcmath-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-pspell",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-pspell-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-opcache",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-opcache-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-cli",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-cli-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-common",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-common-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-enchant",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-enchant-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-xml",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-xml-5.6.31-1.134.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-xmlrpc",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-xmlrpc-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-recode",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-recode-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-enchant",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-enchant-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-intl",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-intl-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-odbc",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-odbc-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-bcmath",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-bcmath-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-mcrypt",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-mcrypt-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-mssql",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-mssql-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-cli",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-cli-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-mysqlnd",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-mysqlnd-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-dbg",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-dbg-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-tidy",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-tidy-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-fpm",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-fpm-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-gd",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-gd-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-process",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-process-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-pgsql",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-pgsql-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-dba",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-dba-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-pdo",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-pdo-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-pspell",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-pspell-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-common",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-common-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-gmp",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-gmp-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-ldap",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-ldap-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-mbstring",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-mbstring-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-imap",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-imap-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-opcache",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-opcache-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-soap",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-soap-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-xml",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-xml-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-embedded",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-embedded-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-snmp",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-snmp-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-devel",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-devel-5.6.31-1.134.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-debuginfo",
+          "Release": "1.134.amzn1",
+          "Version": "5.6.31",
+          "Filename": "Packages/php56-debuginfo-5.6.31-1.134.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

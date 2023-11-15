@@ -1,0 +1,105 @@
+{
+  "ID": "ALAS-2013-150",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-150: important priority package update for freetype",
+  "Issued": {
+    "Date": "2013-02-03 12:34"
+  },
+  "Updated": {
+    "Date": "2014-09-14 17:22"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2012-5669:\n\tThe _bdf_parse_glyphs function in FreeType before 2.4.11 allows context-dependent attackers to cause a denial of service (crash) via vectors related to BDF fonts and an incorrect calculation that triggers an out-of-bounds read.\nA flaw was found in the way the FreeType font rendering engine processed certain Glyph Bitmap Distribution Format (BDF) fonts. If a user loaded a specially-crafted font file with an application linked against FreeType, it could cause the application to crash or, possibly, execute arbitrary code with the privileges of the user running the application.\n890088: \nCVE-2012-5669 freetype: heap buffer over-read in BDF parsing _bdf_parse_glyphs() (#37906)\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5669",
+        "ID": "CVE-2012-5669",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2013:0216.html",
+        "ID": "RHSA-2013:0216",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "freetype-devel",
+          "Release": "14.13.amzn1",
+          "Version": "2.3.11",
+          "Filename": "Packages/freetype-devel-2.3.11-14.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "freetype-debuginfo",
+          "Release": "14.13.amzn1",
+          "Version": "2.3.11",
+          "Filename": "Packages/freetype-debuginfo-2.3.11-14.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "freetype",
+          "Release": "14.13.amzn1",
+          "Version": "2.3.11",
+          "Filename": "Packages/freetype-2.3.11-14.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "freetype-demos",
+          "Release": "14.13.amzn1",
+          "Version": "2.3.11",
+          "Filename": "Packages/freetype-demos-2.3.11-14.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "freetype-devel",
+          "Release": "14.13.amzn1",
+          "Version": "2.3.11",
+          "Filename": "Packages/freetype-devel-2.3.11-14.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "freetype",
+          "Release": "14.13.amzn1",
+          "Version": "2.3.11",
+          "Filename": "Packages/freetype-2.3.11-14.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "freetype-demos",
+          "Release": "14.13.amzn1",
+          "Version": "2.3.11",
+          "Filename": "Packages/freetype-demos-2.3.11-14.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "freetype-debuginfo",
+          "Release": "14.13.amzn1",
+          "Version": "2.3.11",
+          "Filename": "Packages/freetype-debuginfo-2.3.11-14.13.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

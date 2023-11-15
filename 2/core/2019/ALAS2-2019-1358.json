@@ -1,0 +1,119 @@
+{
+  "ID": "ALAS2-2019-1358",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1358: medium priority package update for binutils",
+  "Issued": {
+    "Date": "2019-11-11 17:35"
+  },
+  "Updated": {
+    "Date": "2019-11-14 03:20"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-12697:\n\tA NULL pointer dereference (aka SEGV on unknown address 0x000000000000) was discovered in work_stuff_copy_to_from in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.30. This can occur during execution of objdump.\n99999: \nCVE-2018-12697 binutils: NULL pointer dereference in work_stuff_copy_to_from in cplus-dem.c.\n\nCVE-2018-12641:\n\tAn issue was discovered in arm_pt in cplus-dem.c in GNU libiberty, as distributed in GNU Binutils 2.30. Stack Exhaustion occurs in the C++ demangling functions provided by libiberty, and there are recursive stack frames: demangle_arm_hp_template, demangle_class_name, demangle_fund_type, do_type, do_arg, demangle_args, and demangle_nested_args. This can occur during execution of nm-new.\n99999: \nCVE-2018-12641 binutils: Stack Exhaustion in the demangling functions provided by libiberty\n\nCVE-2018-1000876:\n\tbinutils version 2.32 and earlier contains a Integer Overflow vulnerability in objdump, bfd_get_dynamic_reloc_upper_bound,bfd_canonicalize_dynamic_reloc that can result in Integer overflow trigger heap overflow. Successful exploitation allows execution of arbitrary code.. This attack appear to be exploitable via Local. This vulnerability appears to have been fixed in after commit 3a551c7a1b80fca579461774860574eabfd7f18f.\n99999: \nCVE-2018-1000876 binutils: integer overflow leads to heap-based buffer overflow in objdump\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000876",
+        "ID": "CVE-2018-1000876",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12641",
+        "ID": "CVE-2018-12641",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12697",
+        "ID": "CVE-2018-12697",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "binutils",
+          "Release": "29.amzn2",
+          "Version": "2.29.1",
+          "Filename": "Packages/binutils-2.29.1-29.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "binutils-devel",
+          "Release": "29.amzn2",
+          "Version": "2.29.1",
+          "Filename": "Packages/binutils-devel-2.29.1-29.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "binutils-debuginfo",
+          "Release": "29.amzn2",
+          "Version": "2.29.1",
+          "Filename": "Packages/binutils-debuginfo-2.29.1-29.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "binutils",
+          "Release": "29.amzn2",
+          "Version": "2.29.1",
+          "Filename": "Packages/binutils-2.29.1-29.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "binutils-devel",
+          "Release": "29.amzn2",
+          "Version": "2.29.1",
+          "Filename": "Packages/binutils-devel-2.29.1-29.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "binutils-debuginfo",
+          "Release": "29.amzn2",
+          "Version": "2.29.1",
+          "Filename": "Packages/binutils-debuginfo-2.29.1-29.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "binutils",
+          "Release": "29.amzn2",
+          "Version": "2.29.1",
+          "Filename": "Packages/binutils-2.29.1-29.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "binutils-devel",
+          "Release": "29.amzn2",
+          "Version": "2.29.1",
+          "Filename": "Packages/binutils-devel-2.29.1-29.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "binutils-debuginfo",
+          "Release": "29.amzn2",
+          "Version": "2.29.1",
+          "Filename": "Packages/binutils-debuginfo-2.29.1-29.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

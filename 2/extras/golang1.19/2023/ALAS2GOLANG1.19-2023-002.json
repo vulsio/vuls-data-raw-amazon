@@ -1,0 +1,249 @@
+{
+  "ID": "ALAS2GOLANG1.19-2023-002",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 - Golang1.19 2.0 - ALAS2GOLANG1.19-2023-002: important priority package update for golang",
+  "Issued": {
+    "Date": "2023-08-07 05:59"
+  },
+  "Updated": {
+    "Date": "2023-09-25 22:11"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 - Golang1.19 that fix the following vulnerabilities:\nCVE-2022-41725:\n\tGolang: net/http, mime/multipart: denial of service from excessive resource consumption (https://groups.google.com/g/golang-announce/c/V0aBFqaFs_E)\n\nCVE-2022-41724:\n\tLarge handshake records may cause panics in crypto/tls. Both clients and servers may send large TLS handshake records which cause servers and clients, respectively, to panic when attempting to construct responses. This affects all TLS 1.3 clients, TLS 1.2 clients which explicitly enable session resumption (by setting Config.ClientSessionCache to a non-nil value), and TLS 1.3 servers which request client certificates (by setting Config.ClientAuth >= RequestClientCert).\n\nCVE-2022-41723:\n\thttp2/hpack: avoid quadratic complexity in hpack decoding\n\nCVE-2022-41722:\n\tThe Go project has described this issue as follows:\n\n\"On Windows, the filepath.Clean function could transform an invalid path such as a/../c:/b into the valid path c:\\b. This transformation of a relative (if invalid) path into an absolute path could enable a directory traversal attack. The filepath.Clean function will now transform this path into the relative (but still invalid) path .\\c:\\b.\"\n\nCVE-2022-41717:\n\tAn attacker can cause excessive memory growth in a Go server accepting HTTP/2 requests. HTTP/2 server connections contain a cache of HTTP header keys sent by the client. While the total number of entries in this cache is capped, an attacker sending very large keys can cause the server to allocate approximately 64 MiB per open connection.\n\nCVE-2022-41715:\n\tPrograms which compile regular expressions from untrusted sources may be vulnerable to memory exhaustion or denial of service. The parsed regexp representation is linear in the size of the input, but in some cases the constant factor can be as high as 40,000, making relatively small regexps consume much larger amounts of memory. After fix, each regexp being parsed is limited to a 256 MB memory footprint. Regular expressions whose representation would use more space than that are rejected. Normal use of regular expressions is unaffected.\n\nCVE-2022-30635:\n\tA flaw was found in golang. When calling Decoder.Decode on a message that contains deeply nested structures, a panic can occur due to stack exhaustion and allows an attacker to impact system availability.\n\nCVE-2022-30634:\n\tInfinite loop in Read in crypto/rand before Go 1.17.11 and Go 1.18.3 on Windows allows attacker to cause an indefinite hang by passing a buffer larger than 1 << 32 - 1 bytes.\n\nCVE-2022-30632:\n\tA flaw was found in golang. Calling Glob on a path that contains a large number of path separators can cause a panic issue due to stack exhaustion. This can cause an attacker to impact availability.\n\nCVE-2022-30580:\n\tCode injection in Cmd.Start in os/exec before Go 1.17.11 and Go 1.18.3 allows execution of any binaries in the working directory named either \"..com\" or \"..exe\" by calling Cmd.Run, Cmd.Start, Cmd.Output, or Cmd.CombinedOutput when Cmd.Path is unset.\n\nCVE-2022-2880:\n\tRequests forwarded by ReverseProxy include the raw query parameters from the inbound request, including unparseable parameters rejected by net/http. This could permit query parameter smuggling when a Go proxy forwards a parameter with an unparseable value. After fix, ReverseProxy sanitizes the query parameters in the forwarded query when the outbound request's Form field is set after the ReverseProxy. Director function returns, indicating that the proxy has parsed the query parameters. Proxies which do not parse query parameters continue to forward the original query parameters unchanged.\n\nCVE-2022-2879:\n\tReader.Read does not set a limit on the maximum size of file headers. A maliciously crafted archive could cause Read to allocate unbounded amounts of memory, potentially causing resource exhaustion or panics. After fix, Reader.Read limits the maximum size of header blocks to 1 MiB.\n\nCVE-2022-28327:\n\tAn integer overflow flaw was found in Golang's crypto/elliptic library. This flaw allows an attacker to use a crafted scaler input longer than 32 bytes, causing P256().ScalarMult or P256().ScalarBaseMult to panic, leading to a loss of availability.\n\nCVE-2022-27664:\n\tIn net/http in Go before 1.18.6 and 1.19.x before 1.19.1, attackers can cause a denial of service because an HTTP/2 connection can hang during closing if shutdown were preempted by a fatal error.\n\nCVE-2022-24675:\n\tA buffer overflow flaw was found in Golang's library encoding/pem. This flaw allows an attacker to use a large PEM input (more than 5 MB) ), causing a stack overflow in Decode, which leads to a loss of availability.\n\nCVE-2022-23806:\n\tA flaw was found in the elliptic package of the crypto library in golang when the IsOnCurve function could return true for invalid field elements. This flaw allows an attacker to take advantage of this undefined behavior, affecting the availability and integrity of the resource.\n\nCVE-2022-23773:\n\tcmd/go in Go before 1.16.14 and 1.17.x before 1.17.7 can misinterpret branch names that falsely appear to be version tags. This can lead to incorrect access control if an actor is supposed to be able to create branches but not tags.\n\nCVE-2022-23772:\n\tRat.SetString in math/big in Go before 1.16.14 and 1.17.x before 1.17.7 has an overflow that can lead to Uncontrolled Memory Consumption.\n\nCVE-2022-1962:\n\tA flaw was found in the golang standard library, go/parser. When calling any Parse functions on the Go source code, which contains deeply nested types or declarations, a panic can occur due to stack exhaustion. This issue allows an attacker to impact system availability.\n\nCVE-2022-1705:\n\tA flaw was found in golang. The HTTP/1 client accepted invalid Transfer-Encoding headers indicating \"chunked\" encoding. This issue could allow request smuggling, but only if combined with an intermediate server that also improperly accepts the header as invalid.\n\nCVE-2021-44717:\n\tThere's a flaw in golang's syscall.ForkExec() interface. An attacker who manages to first cause a file descriptor exhaustion for the process, then cause syscall.ForkExec() to be called repeatedly, could compromise data integrity and/or confidentiality in a somewhat uncontrolled way in programs linked with and using syscall.ForkExec().\n\nCVE-2021-41771:\n\tAn out of bounds read vulnerability was found in debug/macho of the Go standard library. When using the debug/macho standard library (stdlib) and malformed binaries are parsed using Open or OpenFat, it can cause golang to attempt to read outside of a slice (array) causing a panic when calling ImportedSymbols. An attacker can use this vulnerability to craft a file which causes an application using this library to crash resulting in a denial of service.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41771",
+        "ID": "CVE-2021-41771",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44717",
+        "ID": "CVE-2021-44717",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1705",
+        "ID": "CVE-2022-1705",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1962",
+        "ID": "CVE-2022-1962",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23772",
+        "ID": "CVE-2022-23772",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23773",
+        "ID": "CVE-2022-23773",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23806",
+        "ID": "CVE-2022-23806",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-24675",
+        "ID": "CVE-2022-24675",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-27664",
+        "ID": "CVE-2022-27664",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28327",
+        "ID": "CVE-2022-28327",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2879",
+        "ID": "CVE-2022-2879",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2880",
+        "ID": "CVE-2022-2880",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30580",
+        "ID": "CVE-2022-30580",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30632",
+        "ID": "CVE-2022-30632",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30634",
+        "ID": "CVE-2022-30634",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30635",
+        "ID": "CVE-2022-30635",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41715",
+        "ID": "CVE-2022-41715",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41717",
+        "ID": "CVE-2022-41717",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41722",
+        "ID": "CVE-2022-41722",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41723",
+        "ID": "CVE-2022-41723",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41724",
+        "ID": "CVE-2022-41724",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41725",
+        "ID": "CVE-2022-41725",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2---golang1.19",
+      "Name": "Amazon Linux 2 - Golang1.19",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "golang",
+          "Release": "1.amzn2.0.2",
+          "Version": "1.19.6",
+          "Filename": "Packages/golang-1.19.6-1.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "golang-docs",
+          "Release": "1.amzn2.0.2",
+          "Version": "1.19.6",
+          "Filename": "Packages/golang-docs-1.19.6-1.amzn2.0.2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "golang-misc",
+          "Release": "1.amzn2.0.2",
+          "Version": "1.19.6",
+          "Filename": "Packages/golang-misc-1.19.6-1.amzn2.0.2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "golang-tests",
+          "Release": "1.amzn2.0.2",
+          "Version": "1.19.6",
+          "Filename": "Packages/golang-tests-1.19.6-1.amzn2.0.2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "golang-src",
+          "Release": "1.amzn2.0.2",
+          "Version": "1.19.6",
+          "Filename": "Packages/golang-src-1.19.6-1.amzn2.0.2.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "golang-bin",
+          "Release": "1.amzn2.0.2",
+          "Version": "1.19.6",
+          "Filename": "Packages/golang-bin-1.19.6-1.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "golang-shared",
+          "Release": "1.amzn2.0.2",
+          "Version": "1.19.6",
+          "Filename": "Packages/golang-shared-1.19.6-1.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "golang-race",
+          "Release": "1.amzn2.0.2",
+          "Version": "1.19.6",
+          "Filename": "Packages/golang-race-1.19.6-1.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "golang",
+          "Release": "1.amzn2.0.2",
+          "Version": "1.19.6",
+          "Filename": "Packages/golang-1.19.6-1.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "golang-bin",
+          "Release": "1.amzn2.0.2",
+          "Version": "1.19.6",
+          "Filename": "Packages/golang-bin-1.19.6-1.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "golang-shared",
+          "Release": "1.amzn2.0.2",
+          "Version": "1.19.6",
+          "Filename": "Packages/golang-shared-1.19.6-1.amzn2.0.2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

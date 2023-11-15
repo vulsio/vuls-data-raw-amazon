@@ -1,0 +1,67 @@
+{
+  "ID": "ALAS-2021-1496",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2021-1496: medium priority package update for busybox",
+  "Issued": {
+    "Date": "2021-05-06 19:11"
+  },
+  "Updated": {
+    "Date": "2021-05-07 19:54"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2021-28831:\n\tdecompress_gunzip.c in BusyBox through 1.32.1 mishandles the error bit on the huft_build result pointer, with a resultant invalid free or segmentation fault, via malformed gzip data.\n1941028: CVE-2021-28831 busybox: invalid free or segmentation fault via malformed gzip data\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28831",
+        "ID": "CVE-2021-28831",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "busybox",
+          "Release": "2.12.amzn1",
+          "Version": "1.19.3",
+          "Filename": "Packages/busybox-1.19.3-2.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "busybox-petitboot",
+          "Release": "2.12.amzn1",
+          "Version": "1.19.3",
+          "Filename": "Packages/busybox-petitboot-1.19.3-2.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "busybox",
+          "Release": "2.12.amzn1",
+          "Version": "1.19.3",
+          "Filename": "Packages/busybox-1.19.3-2.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "busybox-petitboot",
+          "Release": "2.12.amzn1",
+          "Version": "1.19.3",
+          "Filename": "Packages/busybox-petitboot-1.19.3-2.12.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

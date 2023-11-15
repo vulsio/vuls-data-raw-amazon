@@ -1,0 +1,81 @@
+{
+  "ID": "ALAS2-2018-1089",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2018-1089: medium priority package update for zsh",
+  "Issued": {
+    "Date": "2018-10-08 22:18"
+  },
+  "Updated": {
+    "Date": "2018-10-10 00:14"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-13259:\n\tIt was discovered that zsh does not properly validate the shebang of input files and it truncates it to the first 64 bytes. A local attacker may use this flaw to make zsh execute a different binary than what is expected, named with a substring of the shebang one.\n1626184: \nCVE-2018-13259 zsh: Improper handling of shebang line longer than 64\n\nCVE-2018-0502:\n\tAn issue was discovered in zsh before 5.6. The beginning of a #! script file was mishandled, potentially leading to an execve call to a program named on the second line.\n1626187: \nCVE-2018-0502 zsh: Improper parsing of the shebang line with special chars\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0502",
+        "ID": "CVE-2018-0502",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-13259",
+        "ID": "CVE-2018-13259",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "zsh-html",
+          "Release": "2.amzn2.0.1",
+          "Version": "5.5.1",
+          "Filename": "Packages/zsh-html-5.5.1-2.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "zsh",
+          "Release": "2.amzn2.0.1",
+          "Version": "5.5.1",
+          "Filename": "Packages/zsh-5.5.1-2.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "zsh-debuginfo",
+          "Release": "2.amzn2.0.1",
+          "Version": "5.5.1",
+          "Filename": "Packages/zsh-debuginfo-5.5.1-2.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "zsh",
+          "Release": "2.amzn2.0.1",
+          "Version": "5.5.1",
+          "Filename": "Packages/zsh-5.5.1-2.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "zsh-debuginfo",
+          "Release": "2.amzn2.0.1",
+          "Version": "5.5.1",
+          "Filename": "Packages/zsh-debuginfo-5.5.1-2.amzn2.0.1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

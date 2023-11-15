@@ -1,0 +1,237 @@
+{
+  "ID": "ALAS2-2019-1302",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1302: medium priority package update for ncurses",
+  "Issued": {
+    "Date": "2019-09-30 22:49"
+  },
+  "Updated": {
+    "Date": "2019-10-02 23:13"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2017-11113:\n\tIn ncurses 6.0, there is a NULL Pointer Dereference in the _nc_parse_entry function of tinfo/parse_entry.c. It could lead to a remote denial of service attack if the terminfo library code is used to process untrusted terminfo data.\n1473310: \nCVE-2017-11113 ncurses: Null pointer dereference vulnerability in _nc_parse_entry function\n\nCVE-2017-11112:\n\tIn ncurses 6.0, there is an attempted 0xffffffffffffffff access in the append_acs function of tinfo/parse_entry.c. It could lead to a remote denial of service attack if the terminfo library code is used to process untrusted terminfo data.\n1473306: \nCVE-2017-11112 ncurses: Illegal address access in append_acs function\n\nCVE-2017-10685:\n\tIn ncurses 6.0, there is a format string vulnerability in the fmt_entry function. A crafted input will lead to a remote arbitrary code execution attack.\n1473312: \nCVE-2017-10685 ncurses: Stack-based buffer overflow caused by format string vulnerability in fmt_entry function\n\nCVE-2017-10684:\n\tIn ncurses 6.0, there is a stack-based buffer overflow in the fmt_entry function. A crafted input will lead to a remote arbitrary code execution attack.\n1473302: \nCVE-2017-10684 ncurses: Stack-based buffer overflow in fmt_entry function in dump_entry.c\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-10684",
+        "ID": "CVE-2017-10684",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-10685",
+        "ID": "CVE-2017-10685",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11112",
+        "ID": "CVE-2017-11112",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11113",
+        "ID": "CVE-2017-11113",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ncurses",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-6.0-8.20170212.amzn2.1.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ncurses-libs",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-libs-6.0-8.20170212.amzn2.1.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ncurses-compat-libs",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-compat-libs-6.0-8.20170212.amzn2.1.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ncurses-c++-libs",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-c++-libs-6.0-8.20170212.amzn2.1.3.aarch64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "ncurses-base",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-base-6.0-8.20170212.amzn2.1.3.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "ncurses-term",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-term-6.0-8.20170212.amzn2.1.3.noarch.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ncurses-devel",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-devel-6.0-8.20170212.amzn2.1.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ncurses-static",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-static-6.0-8.20170212.amzn2.1.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ncurses-debuginfo",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-debuginfo-6.0-8.20170212.amzn2.1.3.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ncurses",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-6.0-8.20170212.amzn2.1.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ncurses-libs",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-libs-6.0-8.20170212.amzn2.1.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ncurses-compat-libs",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-compat-libs-6.0-8.20170212.amzn2.1.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ncurses-c++-libs",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-c++-libs-6.0-8.20170212.amzn2.1.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ncurses-devel",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-devel-6.0-8.20170212.amzn2.1.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ncurses-static",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-static-6.0-8.20170212.amzn2.1.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ncurses-debuginfo",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-debuginfo-6.0-8.20170212.amzn2.1.3.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ncurses",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-6.0-8.20170212.amzn2.1.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ncurses-libs",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-libs-6.0-8.20170212.amzn2.1.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ncurses-compat-libs",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-compat-libs-6.0-8.20170212.amzn2.1.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ncurses-c++-libs",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-c++-libs-6.0-8.20170212.amzn2.1.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ncurses-devel",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-devel-6.0-8.20170212.amzn2.1.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ncurses-static",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-static-6.0-8.20170212.amzn2.1.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ncurses-debuginfo",
+          "Release": "8.20170212.amzn2.1.3",
+          "Version": "6.0",
+          "Filename": "Packages/ncurses-debuginfo-6.0-8.20170212.amzn2.1.3.i686.rpm"
+        }
+      ]
+    }
+  }
+}

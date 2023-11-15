@@ -1,0 +1,121 @@
+{
+  "ID": "ALAS-2011-29",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2011-29: important priority package update for jasper",
+  "Issued": {
+    "Date": "2011-12-12 13:45"
+  },
+  "Updated": {
+    "Date": "2014-09-14 15:07"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2011-4516:\n\tTwo heap-based buffer overflow flaws were found in the way JasPer decoded JPEG 2000 compressed image files. An attacker could create a malicious JPEG 2000 compressed image file that, when opened, would cause applications that use JasPer (such as Nautilus) to crash or, potentially, execute arbitrary code.\nTwo heap-based buffer overflow flaws were found in the embedded JasPer library, which is used to provide support for Part 1 of the JPEG 2000 image compression standard in the jpeg2ktopam and pamtojpeg2k tools. An attacker could create a malicious JPEG 2000 compressed image file that could cause jpeg2ktopam to crash or, potentially, execute arbitrary code with the privileges of the user running jpeg2ktopam. These flaws do not affect pamtojpeg2k.\nHeap-based buffer overflow in the jpc_cox_getcompparms function in libjasper/jpc/jpc_cs.c in JasPer 1.900.1 allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted numrlvls value in a JPEG2000 file.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4516",
+        "ID": "CVE-2011-4516",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2011:1807.html",
+        "ID": "RHSA-2011:1807",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "jasper-debuginfo",
+          "Release": "15.5.amzn1",
+          "Version": "1.900.1",
+          "Filename": "Packages/jasper-debuginfo-1.900.1-15.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "jasper-devel",
+          "Release": "15.5.amzn1",
+          "Version": "1.900.1",
+          "Filename": "Packages/jasper-devel-1.900.1-15.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "jasper-libs",
+          "Release": "15.5.amzn1",
+          "Version": "1.900.1",
+          "Filename": "Packages/jasper-libs-1.900.1-15.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "jasper",
+          "Release": "15.5.amzn1",
+          "Version": "1.900.1",
+          "Filename": "Packages/jasper-1.900.1-15.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "jasper-utils",
+          "Release": "15.5.amzn1",
+          "Version": "1.900.1",
+          "Filename": "Packages/jasper-utils-1.900.1-15.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "jasper",
+          "Release": "15.5.amzn1",
+          "Version": "1.900.1",
+          "Filename": "Packages/jasper-1.900.1-15.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "jasper-utils",
+          "Release": "15.5.amzn1",
+          "Version": "1.900.1",
+          "Filename": "Packages/jasper-utils-1.900.1-15.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "jasper-debuginfo",
+          "Release": "15.5.amzn1",
+          "Version": "1.900.1",
+          "Filename": "Packages/jasper-debuginfo-1.900.1-15.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "jasper-devel",
+          "Release": "15.5.amzn1",
+          "Version": "1.900.1",
+          "Filename": "Packages/jasper-devel-1.900.1-15.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "jasper-libs",
+          "Release": "15.5.amzn1",
+          "Version": "1.900.1",
+          "Filename": "Packages/jasper-libs-1.900.1-15.5.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

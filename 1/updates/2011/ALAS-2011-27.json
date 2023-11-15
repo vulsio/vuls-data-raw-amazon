@@ -1,0 +1,111 @@
+{
+  "ID": "ALAS-2011-27",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2011-27: medium priority package update for cyrus-imapd",
+  "Issued": {
+    "Date": "2011-12-09 11:17"
+  },
+  "Updated": {
+    "Date": "2014-09-14 15:06"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2011-3481:\n\tThe index_get_ids function in index.c in imapd in Cyrus IMAP Server before 2.4.11, when server-side threading is enabled, allows remote attackers to cause a denial of service (NULL pointer dereference and daemon crash) via a crafted References header in an e-mail message.\nA NULL pointer dereference flaw was found in the cyrus-imapd IMAP server, imapd. A remote attacker could send a specially-crafted mail message to a victim that would possibly prevent them from accessing their mail normally, if they were using an IMAP client that relies on the server threading IMAP feature.\n\nCVE-2011-3372:\n\timap/nntpd.c in the NNTP server (nntpd) for Cyrus IMAPd 2.4.x before 2.4.12 allows remote attackers to bypass authentication by sending an AUTHINFO USER command without sending an additional AUTHINFO PASS command.\nAn authentication bypass flaw was found in the cyrus-imapd NNTP server, nntpd. A remote user able to use the nntpd service could use this flaw to read or post newsgroup messages on an NNTP server configured to require user authentication, without providing valid authentication credentials.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3372",
+        "ID": "CVE-2011-3372",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3481",
+        "ID": "CVE-2011-3481",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2011:1508.html",
+        "ID": "RHSA-2011:1508",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "cyrus-imapd",
+          "Release": "6.5.amzn1",
+          "Version": "2.3.16",
+          "Filename": "Packages/cyrus-imapd-2.3.16-6.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "cyrus-imapd-devel",
+          "Release": "6.5.amzn1",
+          "Version": "2.3.16",
+          "Filename": "Packages/cyrus-imapd-devel-2.3.16-6.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "cyrus-imapd-utils",
+          "Release": "6.5.amzn1",
+          "Version": "2.3.16",
+          "Filename": "Packages/cyrus-imapd-utils-2.3.16-6.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "cyrus-imapd-debuginfo",
+          "Release": "6.5.amzn1",
+          "Version": "2.3.16",
+          "Filename": "Packages/cyrus-imapd-debuginfo-2.3.16-6.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "cyrus-imapd",
+          "Release": "6.5.amzn1",
+          "Version": "2.3.16",
+          "Filename": "Packages/cyrus-imapd-2.3.16-6.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "cyrus-imapd-utils",
+          "Release": "6.5.amzn1",
+          "Version": "2.3.16",
+          "Filename": "Packages/cyrus-imapd-utils-2.3.16-6.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "cyrus-imapd-devel",
+          "Release": "6.5.amzn1",
+          "Version": "2.3.16",
+          "Filename": "Packages/cyrus-imapd-devel-2.3.16-6.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "cyrus-imapd-debuginfo",
+          "Release": "6.5.amzn1",
+          "Version": "2.3.16",
+          "Filename": "Packages/cyrus-imapd-debuginfo-2.3.16-6.5.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

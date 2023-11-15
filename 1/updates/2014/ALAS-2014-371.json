@@ -1,0 +1,43 @@
+{
+  "ID": "ALAS-2014-371",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-371: medium priority package update for python-jinja2",
+  "Issued": {
+    "Date": "2014-07-09 16:39"
+  },
+  "Updated": {
+    "Date": "2014-09-19 10:35"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-1402:\n\tThe default configuration for bccache.FileSystemBytecodeCache in Jinja2 before 2.7.2 does not properly create temporary files, which allows local users to gain privileges via a crafted .cache file with a name starting with __jinja2_ in /tmp.\n1051421: \nCVE-2014-1402 python-jinja2: FileSystemBytecodeCache insecure cache temporary file use\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1402",
+        "ID": "CVE-2014-1402",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "python-jinja2",
+          "Release": "2.10.amzn1",
+          "Version": "2.7.2",
+          "Filename": "Packages/python-jinja2-2.7.2-2.10.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

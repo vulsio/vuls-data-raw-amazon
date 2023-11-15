@@ -1,0 +1,179 @@
+{
+  "ID": "ALAS-2014-355",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-355: low priority package update for glibc",
+  "Issued": {
+    "Date": "2014-06-15 16:19"
+  },
+  "Updated": {
+    "Date": "2014-09-19 10:22"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-4588:\n\tMultiple stack-based buffer overflows in net/netfilter/ipvs/ip_vs_ctl.c in the Linux kernel before 2.6.33, when CONFIG_IP_VS is used, allow local users to gain privileges by leveraging the CAP_NET_ADMIN capability for (1) a getsockopt system call, related to the do_ip_vs_get_ctl function, or (2) a setsockopt system call, related to the do_ip_vs_set_ctl function.\n1030800: \nCVE-2013-4588 Kernel: net: ipvs: stack buffer overflow\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4588",
+        "ID": "CVE-2013-4588",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "glibc-static",
+          "Release": "55.84.amzn1",
+          "Version": "2.17",
+          "Filename": "Packages/glibc-static-2.17-55.84.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "glibc-headers",
+          "Release": "55.84.amzn1",
+          "Version": "2.17",
+          "Filename": "Packages/glibc-headers-2.17-55.84.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "glibc-common",
+          "Release": "55.84.amzn1",
+          "Version": "2.17",
+          "Filename": "Packages/glibc-common-2.17-55.84.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "glibc-utils",
+          "Release": "55.84.amzn1",
+          "Version": "2.17",
+          "Filename": "Packages/glibc-utils-2.17-55.84.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "glibc-devel",
+          "Release": "55.84.amzn1",
+          "Version": "2.17",
+          "Filename": "Packages/glibc-devel-2.17-55.84.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "glibc",
+          "Release": "55.84.amzn1",
+          "Version": "2.17",
+          "Filename": "Packages/glibc-2.17-55.84.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "glibc-debuginfo",
+          "Release": "55.84.amzn1",
+          "Version": "2.17",
+          "Filename": "Packages/glibc-debuginfo-2.17-55.84.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "nscd",
+          "Release": "55.84.amzn1",
+          "Version": "2.17",
+          "Filename": "Packages/nscd-2.17-55.84.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "glibc-debuginfo-common",
+          "Release": "55.84.amzn1",
+          "Version": "2.17",
+          "Filename": "Packages/glibc-debuginfo-common-2.17-55.84.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "glibc-common",
+          "Release": "55.84.amzn1",
+          "Version": "2.17",
+          "Filename": "Packages/glibc-common-2.17-55.84.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "glibc-debuginfo",
+          "Release": "55.84.amzn1",
+          "Version": "2.17",
+          "Filename": "Packages/glibc-debuginfo-2.17-55.84.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "nscd",
+          "Release": "55.84.amzn1",
+          "Version": "2.17",
+          "Filename": "Packages/nscd-2.17-55.84.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "glibc-devel",
+          "Release": "55.84.amzn1",
+          "Version": "2.17",
+          "Filename": "Packages/glibc-devel-2.17-55.84.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "glibc-debuginfo-common",
+          "Release": "55.84.amzn1",
+          "Version": "2.17",
+          "Filename": "Packages/glibc-debuginfo-common-2.17-55.84.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "glibc-utils",
+          "Release": "55.84.amzn1",
+          "Version": "2.17",
+          "Filename": "Packages/glibc-utils-2.17-55.84.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "glibc-static",
+          "Release": "55.84.amzn1",
+          "Version": "2.17",
+          "Filename": "Packages/glibc-static-2.17-55.84.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "glibc",
+          "Release": "55.84.amzn1",
+          "Version": "2.17",
+          "Filename": "Packages/glibc-2.17-55.84.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "glibc-headers",
+          "Release": "55.84.amzn1",
+          "Version": "2.17",
+          "Filename": "Packages/glibc-headers-2.17-55.84.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

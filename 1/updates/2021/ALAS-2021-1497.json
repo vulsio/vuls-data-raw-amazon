@@ -1,0 +1,149 @@
+{
+  "ID": "ALAS-2021-1497",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2021-1497: important priority package update for exim",
+  "Issued": {
+    "Date": "2021-05-06 19:11"
+  },
+  "Updated": {
+    "Date": "2021-05-07 20:34"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-28021:\n\t99999: Exim 4 before 4.94.2 has Improper Neutralization of Line Delimiters. An authenticated remote SMTP client can insert newline characters into a spool file (which indirectly leads to remote code execution as root) via AUTH= in a MAIL FROM command. \n\n\n\nCVE-2020-28018:\n\t99999: Exim 4 before 4.94.2 allows Use After Free in smtp_reset in certain situations that may be common for builds with OpenSSL.\n\n\n\nCVE-2020-28017:\n\t99999: Exim 4 before 4.94.2 allows Integer Overflow to Buffer Overflow in receive_add_recipient via an e-mail message with fifty million recipients. NOTE: remote exploitation may be difficult because of resource consumption.\n\n\n\nCVE-2020-28015:\n\t99999: Exim 4 before 4.94.2 has Improper Neutralization of Line Delimiters. Local users can alter the behavior of root processes because a recipient address can have a newline character.\n\n\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28015",
+        "ID": "CVE-2020-28015",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28017",
+        "ID": "CVE-2020-28017",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28018",
+        "ID": "CVE-2020-28018",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28021",
+        "ID": "CVE-2020-28021",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "exim",
+          "Release": "1.27.amzn1",
+          "Version": "4.92",
+          "Filename": "Packages/exim-4.92-1.27.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "exim-mon",
+          "Release": "1.27.amzn1",
+          "Version": "4.92",
+          "Filename": "Packages/exim-mon-4.92-1.27.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "exim-greylist",
+          "Release": "1.27.amzn1",
+          "Version": "4.92",
+          "Filename": "Packages/exim-greylist-4.92-1.27.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "exim-pgsql",
+          "Release": "1.27.amzn1",
+          "Version": "4.92",
+          "Filename": "Packages/exim-pgsql-4.92-1.27.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "exim-mysql",
+          "Release": "1.27.amzn1",
+          "Version": "4.92",
+          "Filename": "Packages/exim-mysql-4.92-1.27.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "exim-debuginfo",
+          "Release": "1.27.amzn1",
+          "Version": "4.92",
+          "Filename": "Packages/exim-debuginfo-4.92-1.27.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "exim-mysql",
+          "Release": "1.27.amzn1",
+          "Version": "4.92",
+          "Filename": "Packages/exim-mysql-4.92-1.27.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "exim-mon",
+          "Release": "1.27.amzn1",
+          "Version": "4.92",
+          "Filename": "Packages/exim-mon-4.92-1.27.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "exim-debuginfo",
+          "Release": "1.27.amzn1",
+          "Version": "4.92",
+          "Filename": "Packages/exim-debuginfo-4.92-1.27.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "exim",
+          "Release": "1.27.amzn1",
+          "Version": "4.92",
+          "Filename": "Packages/exim-4.92-1.27.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "exim-greylist",
+          "Release": "1.27.amzn1",
+          "Version": "4.92",
+          "Filename": "Packages/exim-greylist-4.92-1.27.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "exim-pgsql",
+          "Release": "1.27.amzn1",
+          "Version": "4.92",
+          "Filename": "Packages/exim-pgsql-4.92-1.27.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

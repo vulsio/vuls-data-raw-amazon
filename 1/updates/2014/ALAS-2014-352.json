@@ -1,0 +1,121 @@
+{
+  "ID": "ALAS-2014-352",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-352: important priority package update for gnutls",
+  "Issued": {
+    "Date": "2014-06-05 15:38"
+  },
+  "Updated": {
+    "Date": "2014-09-19 10:20"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-3466:\n\tA flaw was found in the way GnuTLS parsed session IDs from ServerHello messages of the TLS/SSL handshake. A malicious server could use this flaw to send an excessively long session ID value, which would trigger a buffer overflow in a connecting TLS/SSL client application using GnuTLS, causing the client application to crash or, possibly, execute arbitrary code.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3466",
+        "ID": "CVE-2014-3466",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2014:0595.html",
+        "ID": "RHSA-2014:0595",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "gnutls-guile",
+          "Release": "14.13.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-guile-2.8.5-14.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "gnutls-utils",
+          "Release": "14.13.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-utils-2.8.5-14.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "gnutls",
+          "Release": "14.13.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-2.8.5-14.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "gnutls-debuginfo",
+          "Release": "14.13.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-debuginfo-2.8.5-14.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "gnutls-devel",
+          "Release": "14.13.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-devel-2.8.5-14.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "gnutls-devel",
+          "Release": "14.13.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-devel-2.8.5-14.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "gnutls-utils",
+          "Release": "14.13.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-utils-2.8.5-14.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "gnutls",
+          "Release": "14.13.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-2.8.5-14.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "gnutls-debuginfo",
+          "Release": "14.13.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-debuginfo-2.8.5-14.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "gnutls-guile",
+          "Release": "14.13.amzn1",
+          "Version": "2.8.5",
+          "Filename": "Packages/gnutls-guile-2.8.5-14.13.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

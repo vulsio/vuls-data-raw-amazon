@@ -1,0 +1,229 @@
+{
+  "ID": "ALAS-2022-1607",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2022-1607: medium priority package update for httpd24",
+  "Issued": {
+    "Date": "2022-06-30 23:38"
+  },
+  "Updated": {
+    "Date": "2022-07-06 23:58"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2022-31813:\n\tA flaw was found in the mod_proxy module of httpd. The server may remove the X-Forwarded-* headers from a request based on the client-side Connection header hop-by-hop mechanism.\n\nCVE-2022-30556:\n\tA flaw was found in the mod_lua module of httpd. The data returned by the wsread function may point past the end of the storage allocated for the buffer, resulting in information disclosure.\n\nCVE-2022-30522:\n\tA flaw was found in the mod_sed module of httpd. A very large input to the mod_sed module can result in a denial of service due to excessively large memory allocations.\n\nCVE-2022-29404:\n\tA flaw was found in the mod_lua module of httpd. A malicious request to a Lua script that calls parsebody(0) can lead to a denial of service due to no default limit on the possible input size.\n\nCVE-2022-28615:\n\tAn out-of-bounds read vulnerability was found in httpd. A very large input to the ap_strcmp_match function can lead to an integer overflow and result in an out-of-bounds read.\n\nCVE-2022-28614:\n\tAn out-of-bounds read vulnerability was found in httpd. A very large input to the ap_rputs and ap_rwrite functions can lead to an integer overflow and result in an out-of-bounds read.\n\nCVE-2022-28330:\n\tAn out-of-bounds read vulnerability was found in the mod_isapi module of httpd. The issue occurs when httpd is configured to process requests with the mod_isapi module.\n\nCVE-2022-26377:\n\tAn HTTP request smuggling vulnerability was found in the mod_proxy_ajp module of httpd. This flaw allows an attacker to smuggle requests to the AJP server, where it forwards requests.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26377",
+        "ID": "CVE-2022-26377",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28330",
+        "ID": "CVE-2022-28330",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28614",
+        "ID": "CVE-2022-28614",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28615",
+        "ID": "CVE-2022-28615",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29404",
+        "ID": "CVE-2022-29404",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30522",
+        "ID": "CVE-2022-30522",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30556",
+        "ID": "CVE-2022-30556",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-31813",
+        "ID": "CVE-2022-31813",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd24-tools",
+          "Release": "1.98.amzn1",
+          "Version": "2.4.54",
+          "Filename": "Packages/httpd24-tools-2.4.54-1.98.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mod24_session",
+          "Release": "1.98.amzn1",
+          "Version": "2.4.54",
+          "Filename": "Packages/mod24_session-2.4.54-1.98.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mod24_ldap",
+          "Release": "1.98.amzn1",
+          "Version": "2.4.54",
+          "Filename": "Packages/mod24_ldap-2.4.54-1.98.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd24-debuginfo",
+          "Release": "1.98.amzn1",
+          "Version": "2.4.54",
+          "Filename": "Packages/httpd24-debuginfo-2.4.54-1.98.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd24",
+          "Release": "1.98.amzn1",
+          "Version": "2.4.54",
+          "Filename": "Packages/httpd24-2.4.54-1.98.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mod24_md",
+          "Release": "1.98.amzn1",
+          "Version": "2.4.54",
+          "Filename": "Packages/mod24_md-2.4.54-1.98.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod24_proxy_html",
+          "Release": "1.98.amzn1",
+          "Version": "2.4.54",
+          "Filename": "Packages/mod24_proxy_html-2.4.54-1.98.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "httpd24-manual",
+          "Release": "1.98.amzn1",
+          "Version": "2.4.54",
+          "Filename": "Packages/httpd24-manual-2.4.54-1.98.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod24_ssl",
+          "Release": "1.98.amzn1",
+          "Version": "2.4.54",
+          "Filename": "Packages/mod24_ssl-2.4.54-1.98.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd24-devel",
+          "Release": "1.98.amzn1",
+          "Version": "2.4.54",
+          "Filename": "Packages/httpd24-devel-2.4.54-1.98.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd24-tools",
+          "Release": "1.98.amzn1",
+          "Version": "2.4.54",
+          "Filename": "Packages/httpd24-tools-2.4.54-1.98.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mod24_session",
+          "Release": "1.98.amzn1",
+          "Version": "2.4.54",
+          "Filename": "Packages/mod24_session-2.4.54-1.98.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mod24_ldap",
+          "Release": "1.98.amzn1",
+          "Version": "2.4.54",
+          "Filename": "Packages/mod24_ldap-2.4.54-1.98.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd24",
+          "Release": "1.98.amzn1",
+          "Version": "2.4.54",
+          "Filename": "Packages/httpd24-2.4.54-1.98.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd24-debuginfo",
+          "Release": "1.98.amzn1",
+          "Version": "2.4.54",
+          "Filename": "Packages/httpd24-debuginfo-2.4.54-1.98.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd24-devel",
+          "Release": "1.98.amzn1",
+          "Version": "2.4.54",
+          "Filename": "Packages/httpd24-devel-2.4.54-1.98.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod24_ssl",
+          "Release": "1.98.amzn1",
+          "Version": "2.4.54",
+          "Filename": "Packages/mod24_ssl-2.4.54-1.98.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod24_proxy_html",
+          "Release": "1.98.amzn1",
+          "Version": "2.4.54",
+          "Filename": "Packages/mod24_proxy_html-2.4.54-1.98.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mod24_md",
+          "Release": "1.98.amzn1",
+          "Version": "2.4.54",
+          "Filename": "Packages/mod24_md-2.4.54-1.98.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

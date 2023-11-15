@@ -1,0 +1,221 @@
+{
+  "ID": "ALAS-2016-718",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-718: medium priority package update for kernel",
+  "Issued": {
+    "Date": "2016-06-24 22:21"
+  },
+  "Updated": {
+    "Date": "2017-01-19 16:30"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-9806:\n\tA double free vulnerability was found in netlink_dump, which could cause a denial of service or possibly other unspecified impact.\n1401502: \nCVE-2016-9806 kernel: netlink: double-free in netlink_dump\n\nCVE-2016-4998:\n\tAn out-of-bounds heap memory access leading to a Denial of Service, heap disclosure, or further impact was found in setsockopt(). The function call is normally restricted to root, however some processes with cap_sys_admin may also be able to trigger this flaw in privileged container environments.\n1349886: \nCVE-2016-4998 kernel: out of bounds reads when processing IPT_SO_SET_REPLACE setsockopt\n\nCVE-2016-4997:\n\tA flaw was discovered in processing setsockopt for 32 bit processes on 64 bit systems.  This flaw will allow attackers to alter arbitrary kernel memory when unloading a kernel module.  This action is usually restricted to root-privileged users but can also be leveraged if the kernel is compiled with CONFIG_USER_NS and CONFIG_NET_NS and the user is granted elevated privileges.\n1349722: \nCVE-2016-4997 kernel: compat IPT_SO_SET_REPLACE setsockopt\n\nCVE-2016-4951:\n\tA vulnerability was found in the Linux kernel. The pointer to the netlink socket attribute is not checked, which could cause a null pointer dereference when parsing the nested attributes in function tipc_nl_publ_dump(). This allows local users to cause a DoS.\n1338625: \nCVE-2016-4951 kernel: Null pointer dereference in tipc_nl_publ_dump\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4951",
+        "ID": "CVE-2016-4951",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4997",
+        "ID": "CVE-2016-4997",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4998",
+        "ID": "CVE-2016-4998",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9806",
+        "ID": "CVE-2016-9806",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/perf-debuginfo-4.4.14-24.50.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/kernel-tools-debuginfo-4.4.14-24.50.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/kernel-4.4.14-24.50.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/kernel-tools-4.4.14-24.50.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/kernel-headers-4.4.14-24.50.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/kernel-devel-4.4.14-24.50.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/perf-4.4.14-24.50.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/kernel-tools-devel-4.4.14-24.50.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/kernel-debuginfo-4.4.14-24.50.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.4.14-24.50.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/perf-4.4.14-24.50.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/kernel-devel-4.4.14-24.50.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/kernel-tools-4.4.14-24.50.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/perf-debuginfo-4.4.14-24.50.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/kernel-4.4.14-24.50.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/kernel-headers-4.4.14-24.50.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-i686",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/kernel-debuginfo-common-i686-4.4.14-24.50.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/kernel-debuginfo-4.4.14-24.50.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/kernel-tools-debuginfo-4.4.14-24.50.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/kernel-tools-devel-4.4.14-24.50.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "kernel-doc",
+          "Release": "24.50.amzn1",
+          "Version": "4.4.14",
+          "Filename": "Packages/kernel-doc-4.4.14-24.50.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

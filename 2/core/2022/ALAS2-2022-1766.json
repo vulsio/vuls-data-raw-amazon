@@ -1,0 +1,299 @@
+{
+  "ID": "ALAS2-2022-1766",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2022-1766: important priority package update for openssl openssl11",
+  "Issued": {
+    "Date": "2022-03-15 18:49"
+  },
+  "Updated": {
+    "Date": "2022-04-26 19:03"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-0778:\n\tThe BN_mod_sqrt() function, which computes a modular square root, contains a bug that can cause it to loop forever for non-prime moduli. Internally this function is used when parsing certificates that contain elliptic curve public keys in compressed form or explicit elliptic curve parameters with a base point encoded in compressed form. It is possible to trigger the infinite loop by crafting a certificate that has invalid explicit curve parameters. Since certificate parsing happens prior to verification of the certificate signature, any process that parses an externally supplied certificate may thus be subject to a denial of service attack. The infinite loop can also be reached when parsing crafted private keys as they can contain explicit elliptic curve parameters. Thus vulnerable situations include: - TLS clients consuming server certificates - TLS servers consuming client certificates - Hosting providers taking certificates or private keys from customers - Certificate authorities parsing certification requests from subscribers - Anything else which parses ASN.1 elliptic curve parameters Also any other applications that use the BN_mod_sqrt() where the attacker can control the parameter values are vulnerable to this DoS issue. In the OpenSSL 1.0.2 version the public key is not parsed during initial parsing of the certificate which makes it slightly harder to trigger the infinite loop. However any operation which requires the public key from the certificate will trigger the infinite loop. In particular the attacker can use a self-signed certificate to trigger the loop during verification of the certificate signature. This issue affects OpenSSL versions 1.0.2, 1.1.1 and 3.0. It was addressed in the releases of 1.1.1n and 3.0.2 on the 15th March 2022. Fixed in OpenSSL 3.0.2 (Affected 3.0.0,3.0.1). Fixed in OpenSSL 1.1.1n (Affected 1.1.1-1.1.1m). Fixed in OpenSSL 1.0.2zd (Affected 1.0.2-1.0.2zc).\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0778",
+        "ID": "CVE-2022-0778",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl",
+          "Release": "24.amzn2.0.2",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-1.0.2k-24.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl-libs",
+          "Release": "24.amzn2.0.2",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-libs-1.0.2k-24.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl-devel",
+          "Release": "24.amzn2.0.2",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-devel-1.0.2k-24.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl-static",
+          "Release": "24.amzn2.0.2",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-static-1.0.2k-24.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl-perl",
+          "Release": "24.amzn2.0.2",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-perl-1.0.2k-24.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl-debuginfo",
+          "Release": "24.amzn2.0.2",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-debuginfo-1.0.2k-24.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl",
+          "Release": "24.amzn2.0.2",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-1.0.2k-24.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl-libs",
+          "Release": "24.amzn2.0.2",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-libs-1.0.2k-24.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl-devel",
+          "Release": "24.amzn2.0.2",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-devel-1.0.2k-24.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl-static",
+          "Release": "24.amzn2.0.2",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-static-1.0.2k-24.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl-perl",
+          "Release": "24.amzn2.0.2",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-perl-1.0.2k-24.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl-debuginfo",
+          "Release": "24.amzn2.0.2",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-debuginfo-1.0.2k-24.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "openssl",
+          "Release": "24.amzn2.0.2",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-1.0.2k-24.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "openssl-libs",
+          "Release": "24.amzn2.0.2",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-libs-1.0.2k-24.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "openssl-devel",
+          "Release": "24.amzn2.0.2",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-devel-1.0.2k-24.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "openssl-static",
+          "Release": "24.amzn2.0.2",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-static-1.0.2k-24.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "openssl-perl",
+          "Release": "24.amzn2.0.2",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-perl-1.0.2k-24.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "openssl-debuginfo",
+          "Release": "24.amzn2.0.2",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-debuginfo-1.0.2k-24.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl11",
+          "Release": "12.amzn2.0.7",
+          "Version": "1.1.1g",
+          "Filename": "Packages/openssl11-1.1.1g-12.amzn2.0.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl11-libs",
+          "Release": "12.amzn2.0.7",
+          "Version": "1.1.1g",
+          "Filename": "Packages/openssl11-libs-1.1.1g-12.amzn2.0.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl11-devel",
+          "Release": "12.amzn2.0.7",
+          "Version": "1.1.1g",
+          "Filename": "Packages/openssl11-devel-1.1.1g-12.amzn2.0.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl11-static",
+          "Release": "12.amzn2.0.7",
+          "Version": "1.1.1g",
+          "Filename": "Packages/openssl11-static-1.1.1g-12.amzn2.0.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl11-debuginfo",
+          "Release": "12.amzn2.0.7",
+          "Version": "1.1.1g",
+          "Filename": "Packages/openssl11-debuginfo-1.1.1g-12.amzn2.0.7.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl11",
+          "Release": "12.amzn2.0.7",
+          "Version": "1.1.1g",
+          "Filename": "Packages/openssl11-1.1.1g-12.amzn2.0.7.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl11-libs",
+          "Release": "12.amzn2.0.7",
+          "Version": "1.1.1g",
+          "Filename": "Packages/openssl11-libs-1.1.1g-12.amzn2.0.7.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl11-devel",
+          "Release": "12.amzn2.0.7",
+          "Version": "1.1.1g",
+          "Filename": "Packages/openssl11-devel-1.1.1g-12.amzn2.0.7.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl11-static",
+          "Release": "12.amzn2.0.7",
+          "Version": "1.1.1g",
+          "Filename": "Packages/openssl11-static-1.1.1g-12.amzn2.0.7.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl11-debuginfo",
+          "Release": "12.amzn2.0.7",
+          "Version": "1.1.1g",
+          "Filename": "Packages/openssl11-debuginfo-1.1.1g-12.amzn2.0.7.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "openssl11",
+          "Release": "12.amzn2.0.7",
+          "Version": "1.1.1g",
+          "Filename": "Packages/openssl11-1.1.1g-12.amzn2.0.7.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "openssl11-libs",
+          "Release": "12.amzn2.0.7",
+          "Version": "1.1.1g",
+          "Filename": "Packages/openssl11-libs-1.1.1g-12.amzn2.0.7.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "openssl11-devel",
+          "Release": "12.amzn2.0.7",
+          "Version": "1.1.1g",
+          "Filename": "Packages/openssl11-devel-1.1.1g-12.amzn2.0.7.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "openssl11-static",
+          "Release": "12.amzn2.0.7",
+          "Version": "1.1.1g",
+          "Filename": "Packages/openssl11-static-1.1.1g-12.amzn2.0.7.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "openssl11-debuginfo",
+          "Release": "12.amzn2.0.7",
+          "Version": "1.1.1g",
+          "Filename": "Packages/openssl11-debuginfo-1.1.1g-12.amzn2.0.7.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

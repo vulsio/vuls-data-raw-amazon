@@ -1,0 +1,107 @@
+{
+  "ID": "ALAS2022-2022-095",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2022 - ALAS2022-2022-095: Medium priority package update for logrotate",
+  "Issued": {
+    "Date": "2022-06-28 23:52"
+  },
+  "Updated": {
+    "Date": "2022-07-19 19:44"
+  },
+  "Severity": "Medium",
+  "Description": "Package updates are available for Amazon Linux 2022 that fix the following vulnerabilities:\nCVE-2022-1348:\n\tA vulnerability was found in logrotate in how the state file is created. The state file is used to prevent parallel executions of multiple instances of logrotate by acquiring and releasing a file lock. When the state file does not exist, it is created with world-readable permission, allowing an unprivileged user to lock the state file, stopping any rotation. This flaw affects logrotate versions before 3.20.0.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1348",
+        "ID": "CVE-2022-1348",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2022",
+      "Name": "Amazon Linux 2022",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "logrotate-debuginfo",
+          "Release": "2.amzn2022",
+          "Version": "3.20.1",
+          "Filename": "Packages/logrotate-debuginfo-3.20.1-2.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "logrotate-debugsource",
+          "Release": "2.amzn2022",
+          "Version": "3.20.1",
+          "Filename": "Packages/logrotate-debugsource-3.20.1-2.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "logrotate",
+          "Release": "2.amzn2022",
+          "Version": "3.20.1",
+          "Filename": "Packages/logrotate-3.20.1-2.amzn2022.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "logrotate-debugsource",
+          "Release": "2.amzn2022",
+          "Version": "3.20.1",
+          "Filename": "Packages/logrotate-debugsource-3.20.1-2.amzn2022.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "logrotate-debuginfo",
+          "Release": "2.amzn2022",
+          "Version": "3.20.1",
+          "Filename": "Packages/logrotate-debuginfo-3.20.1-2.amzn2022.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "logrotate",
+          "Release": "2.amzn2022",
+          "Version": "3.20.1",
+          "Filename": "Packages/logrotate-3.20.1-2.amzn2022.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "logrotate-debugsource",
+          "Release": "2.amzn2022",
+          "Version": "3.20.1",
+          "Filename": "Packages/logrotate-debugsource-3.20.1-2.amzn2022.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "logrotate-debuginfo",
+          "Release": "2.amzn2022",
+          "Version": "3.20.1",
+          "Filename": "Packages/logrotate-debuginfo-3.20.1-2.amzn2022.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "logrotate",
+          "Release": "2.amzn2022",
+          "Version": "3.20.1",
+          "Filename": "Packages/logrotate-3.20.1-2.amzn2022.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

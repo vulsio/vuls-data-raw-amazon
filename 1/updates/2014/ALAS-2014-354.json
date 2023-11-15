@@ -1,0 +1,89 @@
+{
+  "ID": "ALAS-2014-354",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-354: medium priority package update for pam",
+  "Issued": {
+    "Date": "2014-06-15 16:18"
+  },
+  "Updated": {
+    "Date": "2014-09-19 10:21"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-2583:\n\tMultiple directory traversal vulnerabilities in pam_timestamp.c in the pam_timestamp module for Linux-PAM (aka pam) 1.1.8 allow local users to create aribitrary files or possibly bypass authentication via a .. (dot dot) in the (1) PAM_RUSER value to the get_ruser function or (2) PAM_TTY value to the check_tty funtion, which is used by the format_timestamp_name function.\n1080243: \nCVE-2014-2583 pam: path traversal issue in pam_timestamp's format_timestamp_name()\n\nCVE-2013-7041:\n\tThe pam_userdb module for Pam uses a case-insensitive method to compare hashed passwords, which makes it easier for attackers to guess the password via a brute force attack.\n1038555: \nCVE-2013-7041 pam: pam_userdb case insensitive password hash comparison\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-7041",
+        "ID": "CVE-2013-7041",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2583",
+        "ID": "CVE-2014-2583",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "pam",
+          "Release": "9.29.amzn1",
+          "Version": "1.1.8",
+          "Filename": "Packages/pam-1.1.8-9.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "pam-devel",
+          "Release": "9.29.amzn1",
+          "Version": "1.1.8",
+          "Filename": "Packages/pam-devel-1.1.8-9.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "pam-debuginfo",
+          "Release": "9.29.amzn1",
+          "Version": "1.1.8",
+          "Filename": "Packages/pam-debuginfo-1.1.8-9.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "pam",
+          "Release": "9.29.amzn1",
+          "Version": "1.1.8",
+          "Filename": "Packages/pam-1.1.8-9.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "pam-devel",
+          "Release": "9.29.amzn1",
+          "Version": "1.1.8",
+          "Filename": "Packages/pam-devel-1.1.8-9.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "pam-debuginfo",
+          "Release": "9.29.amzn1",
+          "Version": "1.1.8",
+          "Filename": "Packages/pam-debuginfo-1.1.8-9.29.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

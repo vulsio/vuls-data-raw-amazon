@@ -1,0 +1,583 @@
+{
+  "ID": "ALAS-2015-601",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-601: medium priority package update for php56",
+  "Issued": {
+    "Date": "2015-10-20 14:50"
+  },
+  "Updated": {
+    "Date": "2016-03-16 16:30"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-7804:\n\t1271088: \nCVE-2015-7804 php: uninitialized pointer in phar_make_dirstream()\n\nCVE-2015-7803:\n\t1271081: \nCVE-2015-7803 php: NULL pointer dereference in phar_get_fp_offset()\n\nCVE-2015-6838:\n\tA NULL pointer dereference flaw was found in the XSLTProcessor class in PHP. An attacker could use this flaw to cause a PHP application to crash if it performed Extensible Stylesheet Language (XSL) transformations using untrusted XSLT files and allowed the use of PHP functions to be used as XSLT functions within XSL stylesheets.\n1260711: \nCVE-2015-6837 CVE-2015-6838 php: NULL pointer dereference in XSLTProcessor class\n\nCVE-2015-6837:\n\tA NULL pointer dereference flaw was found in the XSLTProcessor class in PHP. An attacker could use this flaw to cause a PHP application to crash if it performed Extensible Stylesheet Language (XSL) transformations using untrusted XSLT files and allowed the use of PHP functions to be used as XSLT functions within XSL stylesheets.\n1260711: \nCVE-2015-6837 CVE-2015-6838 php: NULL pointer dereference in XSLTProcessor class\n\nCVE-2015-6836:\n\tA flaw was discovered in the way PHP performed object unserialization. Specially crafted input processed by the unserialize() function could cause a PHP application to crash or, possibly, execute arbitrary code.\n1260683: \nCVE-2015-6836 php: SOAP serialize_function_call() type confusion\n\nCVE-2015-6835:\n\t1260647: \nCVE-2015-6835 php: use-after-free vulnerability in session deserializer\n\nCVE-2015-6834:\n\t1260642: \nCVE-2015-6834 php: multiple unserialization use-after-free issues\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-6834",
+        "ID": "CVE-2015-6834",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-6835",
+        "ID": "CVE-2015-6835",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-6836",
+        "ID": "CVE-2015-6836",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-6837",
+        "ID": "CVE-2015-6837",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-6838",
+        "ID": "CVE-2015-6838",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7803",
+        "ID": "CVE-2015-7803",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7804",
+        "ID": "CVE-2015-7804",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-intl",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-intl-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-process",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-process-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-xml",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-xml-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-common",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-common-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-xmlrpc",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-xmlrpc-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-recode",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-recode-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-snmp",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-snmp-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-ldap",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-ldap-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-debuginfo",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-debuginfo-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-mssql",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-mssql-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-mysqlnd",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-mysqlnd-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-soap",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-soap-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-mcrypt",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-mcrypt-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-enchant",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-enchant-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-devel",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-devel-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-pgsql",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-pgsql-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-dbg",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-dbg-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-opcache",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-opcache-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-cli",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-cli-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-embedded",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-embedded-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-tidy",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-tidy-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-mbstring",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-mbstring-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-gd",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-gd-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-bcmath",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-bcmath-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-pdo",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-pdo-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-gmp",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-gmp-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-imap",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-imap-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-fpm",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-fpm-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-odbc",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-odbc-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-pspell",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-pspell-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php56-dba",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-dba-5.6.14-1.119.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-xmlrpc",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-xmlrpc-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-xml",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-xml-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-odbc",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-odbc-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-imap",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-imap-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-pdo",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-pdo-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-debuginfo",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-debuginfo-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-gmp",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-gmp-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-mcrypt",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-mcrypt-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-dba",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-dba-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-tidy",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-tidy-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-enchant",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-enchant-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-opcache",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-opcache-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-common",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-common-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-devel",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-devel-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-fpm",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-fpm-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-mssql",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-mssql-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-pspell",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-pspell-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-snmp",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-snmp-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-process",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-process-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-cli",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-cli-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-mysqlnd",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-mysqlnd-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-ldap",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-ldap-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-gd",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-gd-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-intl",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-intl-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-embedded",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-embedded-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-dbg",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-dbg-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-bcmath",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-bcmath-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-soap",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-soap-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-pgsql",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-pgsql-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-recode",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-recode-5.6.14-1.119.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "php56-mbstring",
+          "Release": "1.119.amzn1",
+          "Version": "5.6.14",
+          "Filename": "Packages/php56-mbstring-5.6.14-1.119.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

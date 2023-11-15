@@ -1,0 +1,295 @@
+{
+  "ID": "ALAS2KERNEL-5.15-2022-010",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 - Kernel-5.15 2.0 - ALAS2KERNEL-5.15-2022-010: medium priority package update for kernel",
+  "Issued": {
+    "Date": "2022-10-31 21:49"
+  },
+  "Updated": {
+    "Date": "2023-03-17 16:45"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 - Kernel-5.15 that fix the following vulnerabilities:\nCVE-2022-43945:\n\tThe Linux kernel NFSD implementation prior to versions 5.19.17 and 6.0.2 are vulnerable to buffer overflow. NFSD tracks the number of pages held by each NFSD thread by combining the receive and send buffers of a remote procedure call (RPC) into a single array of pages. A client can force the send buffer to shrink by sending an RPC message over TCP with garbage data added at the end of the message. The RPC message with garbage data is still correctly formed according to the specification and is passed forward to handlers. Vulnerable code in NFSD is not expecting the oversized request and writes beyond the allocated buffer space. CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H\n\nCVE-2022-40768:\n\tdrivers/scsi/stex.c in the Linux kernel through 5.19.9 allows local users to obtain sensitive information from kernel memory because stex_queuecommand_lck lacks a memset for the PASSTHRU_CMD case.\n\nCVE-2022-3646:\n\tA vulnerability, which was classified as problematic, has been found in Linux Kernel. This issue affects the function nilfs_attach_log_writer of the file fs/nilfs2/segment.c of the component BPF. The manipulation leads to memory leak. The attack may be initiated remotely. It is recommended to apply a patch to fix this issue. The identifier VDB-211961 was assigned to this vulnerability.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3646",
+        "ID": "CVE-2022-3646",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40768",
+        "ID": "CVE-2022-40768",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-43945",
+        "ID": "CVE-2022-43945",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2---kernel-5.15",
+      "Name": "Amazon Linux 2 - Kernel-5.15",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/kernel-5.15.75-48.135.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/kernel-headers-5.15.75-48.135.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-5.15.75-48.135.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/perf-5.15.75-48.135.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/perf-debuginfo-5.15.75-48.135.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/python-perf-5.15.75-48.135.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/python-perf-debuginfo-5.15.75-48.135.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/kernel-tools-5.15.75-48.135.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/kernel-tools-devel-5.15.75-48.135.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/kernel-tools-debuginfo-5.15.75-48.135.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "bpftool",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/bpftool-5.15.75-48.135.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "bpftool-debuginfo",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/bpftool-debuginfo-5.15.75-48.135.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/kernel-devel-5.15.75-48.135.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/kernel-debuginfo-5.15.75-48.135.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-5.15.75-48.135",
+          "Release": "0.amzn2",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-5.15.75-48.135-1.0-0.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/kernel-headers-5.15.75-48.135.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/kernel-5.15.75-48.135.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/kernel-headers-5.15.75-48.135.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-aarch64",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/kernel-debuginfo-common-aarch64-5.15.75-48.135.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/perf-5.15.75-48.135.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/perf-debuginfo-5.15.75-48.135.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/python-perf-5.15.75-48.135.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/python-perf-debuginfo-5.15.75-48.135.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/kernel-tools-5.15.75-48.135.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/kernel-tools-devel-5.15.75-48.135.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/kernel-tools-debuginfo-5.15.75-48.135.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "bpftool",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/bpftool-5.15.75-48.135.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "bpftool-debuginfo",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/bpftool-debuginfo-5.15.75-48.135.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/kernel-devel-5.15.75-48.135.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "48.135.amzn2",
+          "Version": "5.15.75",
+          "Filename": "Packages/kernel-debuginfo-5.15.75-48.135.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-5.15.75-48.135",
+          "Release": "0.amzn2",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-5.15.75-48.135-1.0-0.amzn2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

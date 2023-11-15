@@ -1,0 +1,137 @@
+{
+  "ID": "ALAS2-2022-1764",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2022-1764: critical priority package update for expat",
+  "Issued": {
+    "Date": "2022-03-09 22:13"
+  },
+  "Updated": {
+    "Date": "2022-03-10 17:37"
+  },
+  "Severity": "critical",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-25236:\n\tA flaw was found in expat. Passing one or more namespace separator characters in the \"xmlns[:prefix]\" attribute values made expat send malformed tag names to the XML processor on top of expat. This issue causes arbitrary code execution depending on how unexpected cases are handled inside the XML processor.\n\nCVE-2022-25235:\n\tA flaw was found in expat. Passing malformed 2- and 3-byte UTF-8 sequences (for example, from start tag names) to the XML processing application on top of expat can lead to arbitrary code execution. This issue is dependent on how invalid UTF-8 is handled inside the XML processor.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25235",
+        "ID": "CVE-2022-25235",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25236",
+        "ID": "CVE-2022-25236",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "expat",
+          "Release": "12.amzn2.0.3",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-2.1.0-12.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "expat-devel",
+          "Release": "12.amzn2.0.3",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-devel-2.1.0-12.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "expat-static",
+          "Release": "12.amzn2.0.3",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-static-2.1.0-12.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "expat-debuginfo",
+          "Release": "12.amzn2.0.3",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-debuginfo-2.1.0-12.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "expat",
+          "Release": "12.amzn2.0.3",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-2.1.0-12.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "expat-devel",
+          "Release": "12.amzn2.0.3",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-devel-2.1.0-12.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "expat-static",
+          "Release": "12.amzn2.0.3",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-static-2.1.0-12.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "expat-debuginfo",
+          "Release": "12.amzn2.0.3",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-debuginfo-2.1.0-12.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "expat",
+          "Release": "12.amzn2.0.3",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-2.1.0-12.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "expat-devel",
+          "Release": "12.amzn2.0.3",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-devel-2.1.0-12.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "expat-static",
+          "Release": "12.amzn2.0.3",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-static-2.1.0-12.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "expat-debuginfo",
+          "Release": "12.amzn2.0.3",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-debuginfo-2.1.0-12.amzn2.0.3.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

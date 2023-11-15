@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS2NITRO-ENCLAVES-2021-011",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 - Nitro-enclaves 2.0 - ALAS2NITRO-ENCLAVES-2021-011: medium priority package update for containerd",
+  "Issued": {
+    "Date": "2021-10-19 20:47"
+  },
+  "Updated": {
+    "Date": "2021-11-18 21:38"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 - Nitro-enclaves that fix the following vulnerabilities:\nCVE-2021-21334:\n\tA flaw was found in containerd CRI plugin. Containers launched through containerd's CRI implementation that share the same image may receive incorrect environment variables, including values that are defined for other containers. The highest threat from this vulnerability is to data confidentiality.\n1937935: CVE-2021-21334 containerd CRI plugin: information leak between containers via environment variables\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21334",
+        "ID": "CVE-2021-21334",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2---nitro-enclaves",
+      "Name": "Amazon Linux 2 - Nitro-enclaves",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "containerd",
+          "Release": "1.amzn2",
+          "Version": "1.4.4",
+          "Filename": "Packages/containerd-1.4.4-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "containerd-stress",
+          "Release": "1.amzn2",
+          "Version": "1.4.4",
+          "Filename": "Packages/containerd-stress-1.4.4-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "containerd-debuginfo",
+          "Release": "1.amzn2",
+          "Version": "1.4.4",
+          "Filename": "Packages/containerd-debuginfo-1.4.4-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "containerd",
+          "Release": "1.amzn2",
+          "Version": "1.4.4",
+          "Filename": "Packages/containerd-1.4.4-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "containerd-stress",
+          "Release": "1.amzn2",
+          "Version": "1.4.4",
+          "Filename": "Packages/containerd-stress-1.4.4-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "containerd-debuginfo",
+          "Release": "1.amzn2",
+          "Version": "1.4.4",
+          "Filename": "Packages/containerd-debuginfo-1.4.4-1.amzn2.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

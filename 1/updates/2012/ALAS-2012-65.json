@@ -1,0 +1,105 @@
+{
+  "ID": "ALAS-2012-65",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2012-65: important priority package update for libtiff",
+  "Issued": {
+    "Date": "2012-04-30 14:43"
+  },
+  "Updated": {
+    "Date": "2014-09-14 15:46"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-1173:\n\tTwo integer overflow flaws, leading to heap-based buffer overflows, were found in the way libtiff attempted to allocate space for a tile in a TIFF image file. An attacker could use these flaws to create a specially-crafted TIFF file that, when opened, would cause an application linked against libtiff to crash or, possibly, execute arbitrary code.\nMultiple integer overflows in tiff_getimage.c in LibTIFF 3.9.4 allow remote attackers to execute arbitrary code via a crafted tile size in a TIFF file, which is not properly handled by the (1) gtTileSeparate or (2) gtStripSeparate function, leading to a heap-based buffer overflow.\n803078: \nCVE-2012-1173 libtiff: Heap-buffer overflow due to TileSize calculation when parsing tiff files\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1173",
+        "ID": "CVE-2012-1173",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2012:0468.html",
+        "ID": "RHSA-2012:0468",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libtiff-debuginfo",
+          "Release": "5.8.amzn1",
+          "Version": "3.9.4",
+          "Filename": "Packages/libtiff-debuginfo-3.9.4-5.8.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libtiff",
+          "Release": "5.8.amzn1",
+          "Version": "3.9.4",
+          "Filename": "Packages/libtiff-3.9.4-5.8.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libtiff-static",
+          "Release": "5.8.amzn1",
+          "Version": "3.9.4",
+          "Filename": "Packages/libtiff-static-3.9.4-5.8.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libtiff-devel",
+          "Release": "5.8.amzn1",
+          "Version": "3.9.4",
+          "Filename": "Packages/libtiff-devel-3.9.4-5.8.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libtiff-static",
+          "Release": "5.8.amzn1",
+          "Version": "3.9.4",
+          "Filename": "Packages/libtiff-static-3.9.4-5.8.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libtiff-debuginfo",
+          "Release": "5.8.amzn1",
+          "Version": "3.9.4",
+          "Filename": "Packages/libtiff-debuginfo-3.9.4-5.8.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libtiff-devel",
+          "Release": "5.8.amzn1",
+          "Version": "3.9.4",
+          "Filename": "Packages/libtiff-devel-3.9.4-5.8.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libtiff",
+          "Release": "5.8.amzn1",
+          "Version": "3.9.4",
+          "Filename": "Packages/libtiff-3.9.4-5.8.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

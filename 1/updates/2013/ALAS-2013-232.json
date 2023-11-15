@@ -1,0 +1,73 @@
+{
+  "ID": "ALAS-2013-232",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-232: medium priority package update for xinetd",
+  "Issued": {
+    "Date": "2013-10-16 20:53"
+  },
+  "Updated": {
+    "Date": "2014-09-16 21:41"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-4342:\n\tIt was found that xinetd ignored the user and group configuration directives for services running under the tcpmux-server service. This flaw could cause the associated services to run as root. If there was a flaw in such a service, a remote attacker could use it to execute arbitrary code with the privileges of the root user.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4342",
+        "ID": "CVE-2013-4342",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2013:1409.html",
+        "ID": "RHSA-2013:1409",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "2",
+          "Name": "xinetd-debuginfo",
+          "Release": "39.9.amzn1",
+          "Version": "2.3.14",
+          "Filename": "Packages/xinetd-debuginfo-2.3.14-39.9.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "2",
+          "Name": "xinetd",
+          "Release": "39.9.amzn1",
+          "Version": "2.3.14",
+          "Filename": "Packages/xinetd-2.3.14-39.9.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "2",
+          "Name": "xinetd",
+          "Release": "39.9.amzn1",
+          "Version": "2.3.14",
+          "Filename": "Packages/xinetd-2.3.14-39.9.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "2",
+          "Name": "xinetd-debuginfo",
+          "Release": "39.9.amzn1",
+          "Version": "2.3.14",
+          "Filename": "Packages/xinetd-debuginfo-2.3.14-39.9.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

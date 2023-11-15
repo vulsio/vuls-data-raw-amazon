@@ -1,0 +1,113 @@
+{
+  "ID": "ALAS2-2019-1354",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1354: medium priority package update for unixODBC",
+  "Issued": {
+    "Date": "2019-11-04 22:34"
+  },
+  "Updated": {
+    "Date": "2019-11-07 00:31"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-7485:\n\tAn argument order confusion flaw was found in the SQLWriteFileDSN API of unixODBC. This could only be exploited via a malicious ODBC database connector package with the maximum impact being a denial of service.\n99999: \nCVE-2018-7485 unixODBC: Insecure buffer copy in SQLWriteFileDSN function in odbcinst/SQLWriteFileDSN.c\n\nCVE-2018-7409:\n\tA buffer overflow flaw was found in the unicode_to_ansi_copy() function of unixODBC. This overflow is not directly controllable by an attacker making the maximum potential impact a crash or denial of service.\n99999: \nCVE-2018-7409 unixODBC: Buffer overflow in unicode_to_ansi_copy() can lead to crash or other unspecified impact\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7409",
+        "ID": "CVE-2018-7409",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7485",
+        "ID": "CVE-2018-7485",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "unixODBC",
+          "Release": "14.amzn2",
+          "Version": "2.3.1",
+          "Filename": "Packages/unixODBC-2.3.1-14.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "unixODBC-devel",
+          "Release": "14.amzn2",
+          "Version": "2.3.1",
+          "Filename": "Packages/unixODBC-devel-2.3.1-14.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "unixODBC-debuginfo",
+          "Release": "14.amzn2",
+          "Version": "2.3.1",
+          "Filename": "Packages/unixODBC-debuginfo-2.3.1-14.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "unixODBC",
+          "Release": "14.amzn2",
+          "Version": "2.3.1",
+          "Filename": "Packages/unixODBC-2.3.1-14.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "unixODBC-devel",
+          "Release": "14.amzn2",
+          "Version": "2.3.1",
+          "Filename": "Packages/unixODBC-devel-2.3.1-14.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "unixODBC-debuginfo",
+          "Release": "14.amzn2",
+          "Version": "2.3.1",
+          "Filename": "Packages/unixODBC-debuginfo-2.3.1-14.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "unixODBC",
+          "Release": "14.amzn2",
+          "Version": "2.3.1",
+          "Filename": "Packages/unixODBC-2.3.1-14.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "unixODBC-devel",
+          "Release": "14.amzn2",
+          "Version": "2.3.1",
+          "Filename": "Packages/unixODBC-devel-2.3.1-14.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "unixODBC-debuginfo",
+          "Release": "14.amzn2",
+          "Version": "2.3.1",
+          "Filename": "Packages/unixODBC-debuginfo-2.3.1-14.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

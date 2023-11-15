@@ -1,0 +1,237 @@
+{
+  "ID": "ALAS-2014-329",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-329: medium priority package update for mysql55",
+  "Issued": {
+    "Date": "2014-04-25 15:48"
+  },
+  "Updated": {
+    "Date": "2014-09-18 00:31"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-2440:\n\tUnspecified vulnerability in the MySQL Client component in Oracle MySQL 5.5.36 and earlier and 5.6.16 and earlier allows remote attackers to affect confidentiality, integrity, and availability via unknown vectors.\n1088197: \nCVE-2014-2440 mysql: unspecified vulnerability in MySQL Client subcomponent (CPU April 2014)\n\nCVE-2014-2438:\n\tUnspecified vulnerability in Oracle MySQL Server 5.5.35 and earlier and 5.6.15 and earlier allows remote authenticated users to affect availability via unknown vectors related to Replication.\n1088191: \nCVE-2014-2438 mysql: unspecified vulnerability in MySQL server related to Replication subcomponent (CPU April 2014)\n\nCVE-2014-2436:\n\tUnspecified vulnerability in Oracle MySQL Server 5.5.36 and earlier and 5.6.16 and earlier allows remote authenticated users to affect confidentiality, integrity, and availability via vectors related to RBR.\n1088190: \nCVE-2014-2436 mysql: unspecified vulnerability in MySQL server related to RBR subcomponent (CPU April 2014)\n\nCVE-2014-2432:\n\tUnspecified vulnerability Oracle the MySQL Server component 5.5.35 and earlier and 5.6.15 and earlier allows remote authenticated users to affect availability via unknown vectors related to Federated.\n1088179: \nCVE-2014-2432 mysql: unspecified vulnerability in MySQL server related to Federated subcomponent (CPU April 2014)\n\nCVE-2014-2431:\n\tUnspecified vulnerability in Oracle MySQL Server 5.5.36 and earlier and 5.6.16 and earlier allows remote attackers to affect availability via unknown vectors related to Options.\n1088146: \nCVE-2014-2431 mysql: unspecified vulnerability in MySQL server related to Options subcomponent (CPU April 2014)\n\nCVE-2014-2430:\n\tUnspecified vulnerability in Oracle MySQL Server 5.5.36 and earlier and 5.6.16 and earlier allows remote authenticated users to affect availability via unknown vectors related to Performance Schema.\n1088143: \nCVE-2014-2430 mysql: unspecified vulnerability in MySQL server related to Performance Schema subcomponent (CPU April 2014)\n\nCVE-2014-2419:\n\tUnspecified vulnerability in Oracle MySQL Server 5.5.35 and earlier and 5.6.15 and earlier allows remote authenticated users to affect availability via unknown vectors related to Partition.\n1088134: \nCVE-2014-2419 mysql: unspecified vulnerability in MySQL server related to Partition subcomponent\n\nCVE-2014-0384:\n\tUnspecified vulnerability in the MySQL Server component in Oracle MySQL 5.5.35 and earlier and 5.6.15 and earlier allows remote authenticated users to affect availability via vectors related to XML.\n1088133: \nCVE-2014-0384 mysql: unspecified vulnerability in MySQL server related to XML subcomponent (CPU April 2014)\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0384",
+        "ID": "CVE-2014-0384",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2419",
+        "ID": "CVE-2014-2419",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2430",
+        "ID": "CVE-2014-2430",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2431",
+        "ID": "CVE-2014-2431",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2432",
+        "ID": "CVE-2014-2432",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2436",
+        "ID": "CVE-2014-2436",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2438",
+        "ID": "CVE-2014-2438",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2440",
+        "ID": "CVE-2014-2440",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql55-test",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-test-5.5.37-1.46.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql55-server",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-server-5.5.37-1.46.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql55-bench",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-bench-5.5.37-1.46.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql55-embedded",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-embedded-5.5.37-1.46.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql55-embedded-devel",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-embedded-devel-5.5.37-1.46.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql55-libs",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-libs-5.5.37-1.46.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql55-devel",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-devel-5.5.37-1.46.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql55-debuginfo",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-debuginfo-5.5.37-1.46.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql55-common",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-common-5.5.37-1.46.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql55",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-5.5.37-1.46.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql55-server",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-server-5.5.37-1.46.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql55-debuginfo",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-debuginfo-5.5.37-1.46.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql55-devel",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-devel-5.5.37-1.46.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql55-common",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-common-5.5.37-1.46.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql55-test",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-test-5.5.37-1.46.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql55-embedded-devel",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-embedded-devel-5.5.37-1.46.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql55-libs",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-libs-5.5.37-1.46.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql55",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-5.5.37-1.46.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql55-bench",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-bench-5.5.37-1.46.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql55-embedded",
+          "Release": "1.46.amzn1",
+          "Version": "5.5.37",
+          "Filename": "Packages/mysql55-embedded-5.5.37-1.46.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

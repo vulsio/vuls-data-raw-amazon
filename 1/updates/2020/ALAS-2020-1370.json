@@ -1,0 +1,193 @@
+{
+  "ID": "ALAS-2020-1370",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2020-1370: low priority package update for httpd24",
+  "Issued": {
+    "Date": "2020-05-22 20:57"
+  },
+  "Updated": {
+    "Date": "2020-06-03 17:18"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-1934:\n\tIn Apache HTTP Server 2.4.0 to 2.4.41, mod_proxy_ftp may use uninitialized memory when proxying to a malicious FTP server.\n1820772: CVE-2020-1934 httpd: mod_proxy_ftp use of uninitialized value\n\nCVE-2020-1927:\n\tIn Apache HTTP Server 2.4.0 to 2.4.41, redirects configured with mod_rewrite that were intended to be self-referential might be fooled by encoded newlines and redirect instead to an an unexpected URL within the request URL.\n1820761: CVE-2020-1927 httpd: mod_rewrite configurations vulnerable to open redirect\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-1927",
+        "ID": "CVE-2020-1927",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-1934",
+        "ID": "CVE-2020-1934",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod24_proxy_html",
+          "Release": "1.89.amzn1",
+          "Version": "2.4.43",
+          "Filename": "Packages/mod24_proxy_html-2.4.43-1.89.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd24-tools",
+          "Release": "1.89.amzn1",
+          "Version": "2.4.43",
+          "Filename": "Packages/httpd24-tools-2.4.43-1.89.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod24_ssl",
+          "Release": "1.89.amzn1",
+          "Version": "2.4.43",
+          "Filename": "Packages/mod24_ssl-2.4.43-1.89.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd24-debuginfo",
+          "Release": "1.89.amzn1",
+          "Version": "2.4.43",
+          "Filename": "Packages/httpd24-debuginfo-2.4.43-1.89.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mod24_md",
+          "Release": "1.89.amzn1",
+          "Version": "2.4.43",
+          "Filename": "Packages/mod24_md-2.4.43-1.89.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mod24_session",
+          "Release": "1.89.amzn1",
+          "Version": "2.4.43",
+          "Filename": "Packages/mod24_session-2.4.43-1.89.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd24",
+          "Release": "1.89.amzn1",
+          "Version": "2.4.43",
+          "Filename": "Packages/httpd24-2.4.43-1.89.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd24-devel",
+          "Release": "1.89.amzn1",
+          "Version": "2.4.43",
+          "Filename": "Packages/httpd24-devel-2.4.43-1.89.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "httpd24-manual",
+          "Release": "1.89.amzn1",
+          "Version": "2.4.43",
+          "Filename": "Packages/httpd24-manual-2.4.43-1.89.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mod24_ldap",
+          "Release": "1.89.amzn1",
+          "Version": "2.4.43",
+          "Filename": "Packages/mod24_ldap-2.4.43-1.89.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mod24_md",
+          "Release": "1.89.amzn1",
+          "Version": "2.4.43",
+          "Filename": "Packages/mod24_md-2.4.43-1.89.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod24_proxy_html",
+          "Release": "1.89.amzn1",
+          "Version": "2.4.43",
+          "Filename": "Packages/mod24_proxy_html-2.4.43-1.89.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd24-tools",
+          "Release": "1.89.amzn1",
+          "Version": "2.4.43",
+          "Filename": "Packages/httpd24-tools-2.4.43-1.89.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mod24_ldap",
+          "Release": "1.89.amzn1",
+          "Version": "2.4.43",
+          "Filename": "Packages/mod24_ldap-2.4.43-1.89.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd24-debuginfo",
+          "Release": "1.89.amzn1",
+          "Version": "2.4.43",
+          "Filename": "Packages/httpd24-debuginfo-2.4.43-1.89.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod24_ssl",
+          "Release": "1.89.amzn1",
+          "Version": "2.4.43",
+          "Filename": "Packages/mod24_ssl-2.4.43-1.89.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mod24_session",
+          "Release": "1.89.amzn1",
+          "Version": "2.4.43",
+          "Filename": "Packages/mod24_session-2.4.43-1.89.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd24-devel",
+          "Release": "1.89.amzn1",
+          "Version": "2.4.43",
+          "Filename": "Packages/httpd24-devel-2.4.43-1.89.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd24",
+          "Release": "1.89.amzn1",
+          "Version": "2.4.43",
+          "Filename": "Packages/httpd24-2.4.43-1.89.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

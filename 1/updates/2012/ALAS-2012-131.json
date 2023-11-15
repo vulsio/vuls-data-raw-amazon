@@ -1,0 +1,201 @@
+{
+  "ID": "ALAS-2012-131",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2012-131: medium priority package update for freeradius",
+  "Issued": {
+    "Date": "2012-10-08 10:40"
+  },
+  "Updated": {
+    "Date": "2014-09-14 17:07"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-3547:\n\tStack-based buffer overflow in the cbtls_verify function in FreeRADIUS 2.1.10 through 2.1.12, when using TLS-based EAP methods, allows remote attackers to cause a denial of service (server crash) and possibly execute arbitrary code via a long \"not after\" timestamp in a client certificate.\nA buffer overflow flaw was discovered in the way radiusd handled the expiration date field in X.509 client certificates. A remote attacker could possibly use this flaw to crash radiusd if it were configured to use the certificate or TLS tunnelled authentication methods (such as EAP-TLS, EAP-TTLS, and PEAP).\n852752: \nCVE-2012-3547 freeradius: stack-based buffer overflow via long expiration date fields in client X509 certificates\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3547",
+        "ID": "CVE-2012-3547",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2012:1326.html",
+        "ID": "RHSA-2012:1326",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "freeradius-perl",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-perl-2.1.12-4.11.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "freeradius-utils",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-utils-2.1.12-4.11.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "freeradius-ldap",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-ldap-2.1.12-4.11.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "freeradius-unixODBC",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-unixODBC-2.1.12-4.11.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "freeradius-postgresql",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-postgresql-2.1.12-4.11.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "freeradius-python",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-python-2.1.12-4.11.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "freeradius-mysql",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-mysql-2.1.12-4.11.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "freeradius",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-2.1.12-4.11.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "freeradius-krb5",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-krb5-2.1.12-4.11.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "freeradius-debuginfo",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-debuginfo-2.1.12-4.11.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "freeradius-postgresql",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-postgresql-2.1.12-4.11.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "freeradius-mysql",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-mysql-2.1.12-4.11.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "freeradius-ldap",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-ldap-2.1.12-4.11.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "freeradius-debuginfo",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-debuginfo-2.1.12-4.11.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "freeradius-unixODBC",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-unixODBC-2.1.12-4.11.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "freeradius-utils",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-utils-2.1.12-4.11.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "freeradius-perl",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-perl-2.1.12-4.11.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "freeradius-krb5",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-krb5-2.1.12-4.11.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "freeradius-python",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-python-2.1.12-4.11.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "freeradius",
+          "Release": "4.11.amzn1",
+          "Version": "2.1.12",
+          "Filename": "Packages/freeradius-2.1.12-4.11.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

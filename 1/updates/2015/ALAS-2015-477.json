@@ -1,0 +1,105 @@
+{
+  "ID": "ALAS-2015-477",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-477: medium priority package update for curl",
+  "Issued": {
+    "Date": "2015-02-11 19:36"
+  },
+  "Updated": {
+    "Date": "2015-02-11 19:48"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-8150:\n\tCRLF injection vulnerability in libcurl 6.0 through 7.x before 7.40.0, when using an HTTP proxy, allows remote attackers to inject arbitrary HTTP headers and conduct HTTP response splitting attacks via CRLF sequences in a URL.\n1178692: \nCVE-2014-8150 curl: URL request injection vulnerability in parseurlandfillconn()\n\nCVE-2014-3707:\n\tThe curl_easy_duphandle function in libcurl 7.17.1 through 7.38.0, when running with the CURLOPT_COPYPOSTFIELDS option, does not properly copy HTTP POST data for an easy handle, which triggers an out-of-bounds read that allows remote web servers to read sensitive memory information.\n1154941: \nCVE-2014-3707 curl: incorrect handle duplication after COPYPOSTFIELDS\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3707",
+        "ID": "CVE-2014-3707",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8150",
+        "ID": "CVE-2014-8150",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "curl",
+          "Release": "1.49.amzn1",
+          "Version": "7.40.0",
+          "Filename": "Packages/curl-7.40.0-1.49.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "curl-debuginfo",
+          "Release": "1.49.amzn1",
+          "Version": "7.40.0",
+          "Filename": "Packages/curl-debuginfo-7.40.0-1.49.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcurl-devel",
+          "Release": "1.49.amzn1",
+          "Version": "7.40.0",
+          "Filename": "Packages/libcurl-devel-7.40.0-1.49.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libcurl",
+          "Release": "1.49.amzn1",
+          "Version": "7.40.0",
+          "Filename": "Packages/libcurl-7.40.0-1.49.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "curl",
+          "Release": "1.49.amzn1",
+          "Version": "7.40.0",
+          "Filename": "Packages/curl-7.40.0-1.49.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcurl-devel",
+          "Release": "1.49.amzn1",
+          "Version": "7.40.0",
+          "Filename": "Packages/libcurl-devel-7.40.0-1.49.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "curl-debuginfo",
+          "Release": "1.49.amzn1",
+          "Version": "7.40.0",
+          "Filename": "Packages/curl-debuginfo-7.40.0-1.49.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libcurl",
+          "Release": "1.49.amzn1",
+          "Version": "7.40.0",
+          "Filename": "Packages/libcurl-7.40.0-1.49.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

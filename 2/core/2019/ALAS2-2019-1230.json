@@ -1,0 +1,251 @@
+{
+  "ID": "ALAS2-2019-1230",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1230: important priority package update for python",
+  "Issued": {
+    "Date": "2019-06-25 21:04"
+  },
+  "Updated": {
+    "Date": "2019-07-01 21:56"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2019-9636:\n\tPython 2.7.x through 2.7.16 and 3.x through 3.7.2 is affected by: Improper Handling of Unicode Encoding (with an incorrect netloc) during NFKC normalization. The impact is: Information disclosure (credentials, cookies, etc. that are cached against a given hostname). The components are: urllib.parse.urlsplit, urllib.parse.urlparse. The attack vector is: A specially crafted URL could be incorrectly parsed to locate cookies or authentication data and send that information to a different host than when parsed correctly.\n1688543: \nCVE-2019-9636 python: Information Disclosure due to urlsplit improper NFKC normalization\n\nCVE-2019-5010:\n\tA null pointer dereference vulnerability was found in the certificate parsing code in Python. This causes a denial of service to applications when parsing specially crafted certificates. This vulnerability is unlikely to be triggered if application enables SSL/TLS certificate validation and accepts certificates only from trusted root certificate authorities.\n1666519: \nCVE-2019-5010 python: NULL pointer dereference using a specially crafted X509 certificate\n\nCVE-2018-20406:\n\tModules/_pickle.c in Python before 3.7.1 has an integer overflow via a large LONG_BINPUT value that is mishandled during a &quot;resize to twice the size&quot; attempt. This issue might cause memory exhaustion, but is only relevant if the pickle format is used for serializing tens or hundreds of gigabytes of data.\n1664509: \nCVE-2018-20406 python: Integer overflow in Modules/_pickle.c allows for memory exhaustion if serializing gigabytes of data\n\nCVE-2018-1061:\n\tA flaw was found in the way catastrophic backtracking was implemented in python&#039;s difflib.IS_LINE_JUNK method. An attacker could use this flaw to cause denial of service.\n1549192: \nCVE-2018-1061 python: DOS via regular expression backtracking in difflib.IS_LINE_JUNK method in difflib\n\nCVE-2018-1060:\n\tA flaw was found in the way catastrophic backtracking was implemented in python&#039;s pop3lib&#039;s apop() method. An attacker could use this flaw to cause denial of service.\n1549191: \nCVE-2018-1060 python: DOS via regular expression catastrophic backtracking in apop() method in pop3lib\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1060",
+        "ID": "CVE-2018-1060",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1061",
+        "ID": "CVE-2018-1061",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20406",
+        "ID": "CVE-2018-20406",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5010",
+        "ID": "CVE-2019-5010",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9636",
+        "ID": "CVE-2019-9636",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-2.7.16-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-libs",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-libs-2.7.16-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-devel",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-devel-2.7.16-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-tools",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-tools-2.7.16-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "tkinter",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/tkinter-2.7.16-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-test",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-test-2.7.16-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-debug",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-debug-2.7.16-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-debuginfo",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-debuginfo-2.7.16-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-2.7.16-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-libs",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-libs-2.7.16-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-devel",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-devel-2.7.16-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-tools",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-tools-2.7.16-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "tkinter",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/tkinter-2.7.16-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-test",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-test-2.7.16-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-debug",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-debug-2.7.16-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-debuginfo",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-debuginfo-2.7.16-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-2.7.16-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python-libs",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-libs-2.7.16-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python-devel",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-devel-2.7.16-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python-tools",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-tools-2.7.16-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "tkinter",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/tkinter-2.7.16-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python-test",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-test-2.7.16-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python-debug",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-debug-2.7.16-1.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python-debuginfo",
+          "Release": "1.amzn2.0.1",
+          "Version": "2.7.16",
+          "Filename": "Packages/python-debuginfo-2.7.16-1.amzn2.0.1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

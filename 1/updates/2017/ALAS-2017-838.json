@@ -1,0 +1,249 @@
+{
+  "ID": "ALAS-2017-838",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-838: medium priority package update for postgresql92",
+  "Issued": {
+    "Date": "2017-06-06 16:53"
+  },
+  "Updated": {
+    "Date": "2017-06-06 22:45"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-7486:\n\tIt was found that the pg_user_mappings view from postgresql could disclose information about user mappings to a foreign database to unprivileged users. An authenticated attacker with USAGE privilege for this mapping could, when querying the view, obtain user mapping data, such as the username and password used to connect to the foreign database.\n1448089: \nCVE-2017-7486 postgresql: pg_user_mappings view discloses foreign server passwords\n\nCVE-2017-7484:\n\tIt was found that some selectivity estimation functions did not check user privileges before providing information from pg_statistic, possibly leaking information. An unprivileged attacker could use this flaw to steal some information from tables they are otherwise not allowed to access.\n1448078: \nCVE-2017-7484 postgresql: Selectivity estimators bypass SELECT privilege checks\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7484",
+        "ID": "CVE-2017-7484",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7486",
+        "ID": "CVE-2017-7486",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql92-plperl",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-plperl-9.2.21-1.60.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql92-libs",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-libs-9.2.21-1.60.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql92-pltcl",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-pltcl-9.2.21-1.60.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql92-plpython26",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-plpython26-9.2.21-1.60.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql92-test",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-test-9.2.21-1.60.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql92-server",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-server-9.2.21-1.60.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql92",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-9.2.21-1.60.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql92-plpython27",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-plpython27-9.2.21-1.60.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql92-debuginfo",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-debuginfo-9.2.21-1.60.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql92-server-compat",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-server-compat-9.2.21-1.60.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql92-contrib",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-contrib-9.2.21-1.60.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql92-devel",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-devel-9.2.21-1.60.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "postgresql92-docs",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-docs-9.2.21-1.60.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql92-plperl",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-plperl-9.2.21-1.60.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql92-server",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-server-9.2.21-1.60.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql92-libs",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-libs-9.2.21-1.60.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql92",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-9.2.21-1.60.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql92-plpython26",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-plpython26-9.2.21-1.60.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql92-pltcl",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-pltcl-9.2.21-1.60.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql92-docs",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-docs-9.2.21-1.60.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql92-contrib",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-contrib-9.2.21-1.60.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql92-debuginfo",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-debuginfo-9.2.21-1.60.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql92-server-compat",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-server-compat-9.2.21-1.60.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql92-plpython27",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-plpython27-9.2.21-1.60.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql92-devel",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-devel-9.2.21-1.60.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "postgresql92-test",
+          "Release": "1.60.amzn1",
+          "Version": "9.2.21",
+          "Filename": "Packages/postgresql92-test-9.2.21-1.60.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

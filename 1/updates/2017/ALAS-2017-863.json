@@ -1,0 +1,201 @@
+{
+  "ID": "ALAS-2017-863",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-863: medium priority package update for httpd24",
+  "Issued": {
+    "Date": "2017-08-03 18:53"
+  },
+  "Updated": {
+    "Date": "2017-08-04 00:44"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-7679:\n\tA buffer over-read flaw was found in the httpd&#039;s mod_mime module. A user permitted to modify httpd&#039;s MIME configuration could use this flaw to cause httpd child process to crash.\n1463207: \nCVE-2017-7679 httpd: mod_mime buffer overread\n\nCVE-2017-7668:\n\tA buffer over-read flaw was found in the httpd&#039;s ap_find_token() function. A remote attacker could use this flaw to cause httpd child process to crash via a specially crafted HTTP request.\n1463205: \nCVE-2017-7668 httpd: ap_find_token() buffer overread\n\nCVE-2017-7659:\n\tA NULL pointer dereference flaw was found in the mod_http2 module of httpd. A remote attacker could use this flaw to cause httpd child process to crash via a specially crafted HTTP/2 request.\n1463199: \nCVE-2017-7659 httpd: mod_http2 NULL pointer dereference\n\nCVE-2017-3169:\n\tA NULL pointer dereference flaw was found in the httpd&#039;s mod_ssl module. A remote attacker could use this flaw to cause a httpd child process to crash if another module used by httpd called a certain API function during the processing of an HTTPS request.\n1463197: \nCVE-2017-3169 httpd: mod_ssl NULL pointer dereference\n\nCVE-2017-3167:\n\tIt was discovered that the use of httpd&#039;s ap_get_basic_auth_pw() API function outside of the authentication phase could lead to authentication bypass. A remote attacker could possibly use this flaw to bypass required authentication if the API was used incorrectly by one of the modules used by httpd.\n1463194: \nCVE-2017-3167 httpd: ap_get_basic_auth_pw() authentication bypass\n\nCVE-2016-8743:\n\tIt was discovered that the HTTP parser in httpd incorrectly allowed certain characters not permitted by the HTTP protocol specification to appear unencoded in HTTP request headers. If httpd was used in conjunction with a proxy or backend server that interpreted those characters differently, a remote attacker could possibly use this flaw to inject data into HTTP responses, resulting in proxy cache poisoning.\n1406822: \nCVE-2016-8743 httpd: Apache HTTP Request Parsing Whitespace Defects\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8743",
+        "ID": "CVE-2016-8743",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3167",
+        "ID": "CVE-2017-3167",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3169",
+        "ID": "CVE-2017-3169",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7659",
+        "ID": "CVE-2017-7659",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7668",
+        "ID": "CVE-2017-7668",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7679",
+        "ID": "CVE-2017-7679",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mod24_ldap",
+          "Release": "3.71.amzn1",
+          "Version": "2.4.27",
+          "Filename": "Packages/mod24_ldap-2.4.27-3.71.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd24-tools",
+          "Release": "3.71.amzn1",
+          "Version": "2.4.27",
+          "Filename": "Packages/httpd24-tools-2.4.27-3.71.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "httpd24-manual",
+          "Release": "3.71.amzn1",
+          "Version": "2.4.27",
+          "Filename": "Packages/httpd24-manual-2.4.27-3.71.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod24_proxy_html",
+          "Release": "3.71.amzn1",
+          "Version": "2.4.27",
+          "Filename": "Packages/mod24_proxy_html-2.4.27-3.71.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd24",
+          "Release": "3.71.amzn1",
+          "Version": "2.4.27",
+          "Filename": "Packages/httpd24-2.4.27-3.71.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd24-debuginfo",
+          "Release": "3.71.amzn1",
+          "Version": "2.4.27",
+          "Filename": "Packages/httpd24-debuginfo-2.4.27-3.71.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod24_ssl",
+          "Release": "3.71.amzn1",
+          "Version": "2.4.27",
+          "Filename": "Packages/mod24_ssl-2.4.27-3.71.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mod24_session",
+          "Release": "3.71.amzn1",
+          "Version": "2.4.27",
+          "Filename": "Packages/mod24_session-2.4.27-3.71.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd24-devel",
+          "Release": "3.71.amzn1",
+          "Version": "2.4.27",
+          "Filename": "Packages/httpd24-devel-2.4.27-3.71.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mod24_session",
+          "Release": "3.71.amzn1",
+          "Version": "2.4.27",
+          "Filename": "Packages/mod24_session-2.4.27-3.71.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod24_proxy_html",
+          "Release": "3.71.amzn1",
+          "Version": "2.4.27",
+          "Filename": "Packages/mod24_proxy_html-2.4.27-3.71.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd24-devel",
+          "Release": "3.71.amzn1",
+          "Version": "2.4.27",
+          "Filename": "Packages/httpd24-devel-2.4.27-3.71.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd24",
+          "Release": "3.71.amzn1",
+          "Version": "2.4.27",
+          "Filename": "Packages/httpd24-2.4.27-3.71.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd24-tools",
+          "Release": "3.71.amzn1",
+          "Version": "2.4.27",
+          "Filename": "Packages/httpd24-tools-2.4.27-3.71.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd24-debuginfo",
+          "Release": "3.71.amzn1",
+          "Version": "2.4.27",
+          "Filename": "Packages/httpd24-debuginfo-2.4.27-3.71.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod24_ssl",
+          "Release": "3.71.amzn1",
+          "Version": "2.4.27",
+          "Filename": "Packages/mod24_ssl-2.4.27-3.71.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mod24_ldap",
+          "Release": "3.71.amzn1",
+          "Version": "2.4.27",
+          "Filename": "Packages/mod24_ldap-2.4.27-3.71.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

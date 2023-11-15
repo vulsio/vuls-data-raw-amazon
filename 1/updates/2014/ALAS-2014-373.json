@@ -1,0 +1,99 @@
+{
+  "ID": "ALAS-2014-373",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-373: medium priority package update for lzo",
+  "Issued": {
+    "Date": "2014-07-09 16:45"
+  },
+  "Updated": {
+    "Date": "2014-09-19 10:36"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-4607:\n\tAn integer overflow flaw was found in the way the lzo library decompressed\ncertain archives compressed with the LZO algorithm. An attacker could\ncreate a specially crafted LZO-compressed input that, when decompressed by\nan application using the lzo library, would cause that application to crash\nor, potentially, execute arbitrary code. (CVE-2014-4607)\n1112418: \nCVE-2014-4607 lzo: lzo1x_decompress_safe() integer overflow\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4607",
+        "ID": "CVE-2014-4607",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lzo-debuginfo",
+          "Release": "1.5.amzn1",
+          "Version": "2.08",
+          "Filename": "Packages/lzo-debuginfo-2.08-1.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lzo-devel",
+          "Release": "1.5.amzn1",
+          "Version": "2.08",
+          "Filename": "Packages/lzo-devel-2.08-1.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lzo-minilzo",
+          "Release": "1.5.amzn1",
+          "Version": "2.08",
+          "Filename": "Packages/lzo-minilzo-2.08-1.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lzo",
+          "Release": "1.5.amzn1",
+          "Version": "2.08",
+          "Filename": "Packages/lzo-2.08-1.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lzo-minilzo",
+          "Release": "1.5.amzn1",
+          "Version": "2.08",
+          "Filename": "Packages/lzo-minilzo-2.08-1.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lzo",
+          "Release": "1.5.amzn1",
+          "Version": "2.08",
+          "Filename": "Packages/lzo-2.08-1.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lzo-debuginfo",
+          "Release": "1.5.amzn1",
+          "Version": "2.08",
+          "Filename": "Packages/lzo-debuginfo-2.08-1.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lzo-devel",
+          "Release": "1.5.amzn1",
+          "Version": "2.08",
+          "Filename": "Packages/lzo-devel-2.08-1.5.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

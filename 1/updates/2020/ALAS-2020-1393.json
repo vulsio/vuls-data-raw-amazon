@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS-2020-1393",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2020-1393: medium priority package update for libexif",
+  "Issued": {
+    "Date": "2020-07-14 01:51"
+  },
+  "Updated": {
+    "Date": "2020-07-15 17:31"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-13112:\n\tAn issue was discovered in libexif before 0.6.22. Several buffer over-reads in EXIF MakerNote handling could lead to information disclosure and crashes. This is different from CVE-2020-0093.\n1840344: CVE-2020-13112 libexif: several buffer over-reads in EXIF MakerNote handling can lead to information disclosure and DoS\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13112",
+        "ID": "CVE-2020-13112",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libexif-devel",
+          "Release": "6.7.amzn1",
+          "Version": "0.6.21",
+          "Filename": "Packages/libexif-devel-0.6.21-6.7.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libexif",
+          "Release": "6.7.amzn1",
+          "Version": "0.6.21",
+          "Filename": "Packages/libexif-0.6.21-6.7.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libexif-debuginfo",
+          "Release": "6.7.amzn1",
+          "Version": "0.6.21",
+          "Filename": "Packages/libexif-debuginfo-0.6.21-6.7.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libexif-debuginfo",
+          "Release": "6.7.amzn1",
+          "Version": "0.6.21",
+          "Filename": "Packages/libexif-debuginfo-0.6.21-6.7.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libexif-devel",
+          "Release": "6.7.amzn1",
+          "Version": "0.6.21",
+          "Filename": "Packages/libexif-devel-0.6.21-6.7.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libexif",
+          "Release": "6.7.amzn1",
+          "Version": "0.6.21",
+          "Filename": "Packages/libexif-0.6.21-6.7.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

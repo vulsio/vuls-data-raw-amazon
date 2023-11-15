@@ -1,0 +1,65 @@
+{
+  "ID": "ALAS-2014-412",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2014-412: important priority package update for axis",
+  "Issued": {
+    "Date": "2014-09-17 21:47"
+  },
+  "Updated": {
+    "Date": "2014-09-19 12:09"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-3596:\n\tIt was discovered that Axis incorrectly extracted the host name from an X.509 certificate subject's Common Name (CN) field. A man-in-the-middle attacker could use this flaw to spoof an SSL server using a specially crafted X.509 certificate.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3596",
+        "ID": "CVE-2014-3596",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2014:1193.html",
+        "ID": "RHSA-2014:1193",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "axis",
+          "Release": "7.5.14.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/axis-1.2.1-7.5.14.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "axis-javadoc",
+          "Release": "7.5.14.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/axis-javadoc-1.2.1-7.5.14.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "axis-manual",
+          "Release": "7.5.14.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/axis-manual-1.2.1-7.5.14.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

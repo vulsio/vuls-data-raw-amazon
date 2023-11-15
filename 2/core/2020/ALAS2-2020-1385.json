@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS2-2020-1385",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1385: low priority package update for tcpdump",
+  "Issued": {
+    "Date": "2020-01-14 20:05"
+  },
+  "Updated": {
+    "Date": "2020-01-17 16:11"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-19519:\n\tIn tcpdump 4.9.2, a stack-based buffer over-read exists in the print_prefix function of print-hncp.c via crafted packet data because of missing initialization.\n1655374: \nCVE-2018-19519 tcpdump: Stack-based buffer over-read in print-hncp.c:print_prefix() via crafted pcap\n    \n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19519",
+        "ID": "CVE-2018-19519",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "14",
+          "Name": "tcpdump",
+          "Release": "4.amzn2.1",
+          "Version": "4.9.2",
+          "Filename": "Packages/tcpdump-4.9.2-4.amzn2.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "14",
+          "Name": "tcpdump-debuginfo",
+          "Release": "4.amzn2.1",
+          "Version": "4.9.2",
+          "Filename": "Packages/tcpdump-debuginfo-4.9.2-4.amzn2.1.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "14",
+          "Name": "tcpdump",
+          "Release": "4.amzn2.1",
+          "Version": "4.9.2",
+          "Filename": "Packages/tcpdump-4.9.2-4.amzn2.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "14",
+          "Name": "tcpdump-debuginfo",
+          "Release": "4.amzn2.1",
+          "Version": "4.9.2",
+          "Filename": "Packages/tcpdump-debuginfo-4.9.2-4.amzn2.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "14",
+          "Name": "tcpdump",
+          "Release": "4.amzn2.1",
+          "Version": "4.9.2",
+          "Filename": "Packages/tcpdump-4.9.2-4.amzn2.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "14",
+          "Name": "tcpdump-debuginfo",
+          "Release": "4.amzn2.1",
+          "Version": "4.9.2",
+          "Filename": "Packages/tcpdump-debuginfo-4.9.2-4.amzn2.1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS-2017-928",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-928: important priority package update for apr",
+  "Issued": {
+    "Date": "2017-12-05 21:57"
+  },
+  "Updated": {
+    "Date": "2017-12-06 21:33"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-12613:\n\tAn out-of-bounds array dereference was found in apr_time_exp_get(). An attacker could abuse an unvalidated usage of this function to cause a denial of service or potentially lead to data leak.\n1506523: \nCVE-2017-12613 apr: Out-of-bounds array deref in apr_time_exp*() functions\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12613",
+        "ID": "CVE-2017-12613",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "apr-devel",
+          "Release": "5.13.amzn1",
+          "Version": "1.5.2",
+          "Filename": "Packages/apr-devel-1.5.2-5.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "apr-debuginfo",
+          "Release": "5.13.amzn1",
+          "Version": "1.5.2",
+          "Filename": "Packages/apr-debuginfo-1.5.2-5.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "apr",
+          "Release": "5.13.amzn1",
+          "Version": "1.5.2",
+          "Filename": "Packages/apr-1.5.2-5.13.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "apr-devel",
+          "Release": "5.13.amzn1",
+          "Version": "1.5.2",
+          "Filename": "Packages/apr-devel-1.5.2-5.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "apr",
+          "Release": "5.13.amzn1",
+          "Version": "1.5.2",
+          "Filename": "Packages/apr-1.5.2-5.13.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "apr-debuginfo",
+          "Release": "5.13.amzn1",
+          "Version": "1.5.2",
+          "Filename": "Packages/apr-debuginfo-1.5.2-5.13.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

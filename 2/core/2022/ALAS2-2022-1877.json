@@ -1,0 +1,131 @@
+{
+  "ID": "ALAS2-2022-1877",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2022-1877: important priority package update for expat",
+  "Issued": {
+    "Date": "2022-10-31 19:40"
+  },
+  "Updated": {
+    "Date": "2022-11-08 22:19"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-40674:\n\tA vulnerability was found in expat. With this flaw, it is possible to create a situation in which parsing is suspended while substituting in an internal entity so that XML_ResumeParser directly uses the internalEntityProcessor as its processor. If the subsequent parse includes some unclosed tags, this will return without calling storeRawNames to ensure that the raw versions of the tag names are stored in memory other than the parse buffer itself. Issues occur if the parse buffer is changed or reallocated (for example, if processing a file line by line), problems occur. Using this vulnerability in the doContent function allows an attacker to triage a denial of service or potentially arbitrary code execution.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40674",
+        "ID": "CVE-2022-40674",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "expat",
+          "Release": "15.amzn2.0.1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-2.1.0-15.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "expat-devel",
+          "Release": "15.amzn2.0.1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-devel-2.1.0-15.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "expat-static",
+          "Release": "15.amzn2.0.1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-static-2.1.0-15.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "expat-debuginfo",
+          "Release": "15.amzn2.0.1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-debuginfo-2.1.0-15.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "expat",
+          "Release": "15.amzn2.0.1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-2.1.0-15.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "expat-devel",
+          "Release": "15.amzn2.0.1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-devel-2.1.0-15.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "expat-static",
+          "Release": "15.amzn2.0.1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-static-2.1.0-15.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "expat-debuginfo",
+          "Release": "15.amzn2.0.1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-debuginfo-2.1.0-15.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "expat",
+          "Release": "15.amzn2.0.1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-2.1.0-15.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "expat-devel",
+          "Release": "15.amzn2.0.1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-devel-2.1.0-15.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "expat-static",
+          "Release": "15.amzn2.0.1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-static-2.1.0-15.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "expat-debuginfo",
+          "Release": "15.amzn2.0.1",
+          "Version": "2.1.0",
+          "Filename": "Packages/expat-debuginfo-2.1.0-15.amzn2.0.1.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "ID": "ALAS-2020-1343",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2020-1343: important priority package update for libarchive",
+  "Issued": {
+    "Date": "2020-02-17 19:38"
+  },
+  "Updated": {
+    "Date": "2020-02-19 23:21"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2019-18408:\n\tarchive_read_format_rar_read_data in archive_read_support_format_rar.c in libarchive before 3.4.0 has a use-after-free in a certain ARCHIVE_FAILED situation, related to Ppmd7_DecodeSymbol.\n1769979: CVE-2019-18408 libarchive: use-after-free in archive_read_format_rar_read_data when there is an error in the decompression of an archive entry\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-18408",
+        "ID": "CVE-2019-18408",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libarchive-devel",
+          "Release": "14.15.amzn1",
+          "Version": "3.1.2",
+          "Filename": "Packages/libarchive-devel-3.1.2-14.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "bsdtar",
+          "Release": "14.15.amzn1",
+          "Version": "3.1.2",
+          "Filename": "Packages/bsdtar-3.1.2-14.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libarchive-debuginfo",
+          "Release": "14.15.amzn1",
+          "Version": "3.1.2",
+          "Filename": "Packages/libarchive-debuginfo-3.1.2-14.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "bsdcpio",
+          "Release": "14.15.amzn1",
+          "Version": "3.1.2",
+          "Filename": "Packages/bsdcpio-3.1.2-14.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libarchive",
+          "Release": "14.15.amzn1",
+          "Version": "3.1.2",
+          "Filename": "Packages/libarchive-3.1.2-14.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libarchive",
+          "Release": "14.15.amzn1",
+          "Version": "3.1.2",
+          "Filename": "Packages/libarchive-3.1.2-14.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "bsdtar",
+          "Release": "14.15.amzn1",
+          "Version": "3.1.2",
+          "Filename": "Packages/bsdtar-3.1.2-14.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libarchive-devel",
+          "Release": "14.15.amzn1",
+          "Version": "3.1.2",
+          "Filename": "Packages/libarchive-devel-3.1.2-14.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libarchive-debuginfo",
+          "Release": "14.15.amzn1",
+          "Version": "3.1.2",
+          "Filename": "Packages/libarchive-debuginfo-3.1.2-14.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "bsdcpio",
+          "Release": "14.15.amzn1",
+          "Version": "3.1.2",
+          "Filename": "Packages/bsdcpio-3.1.2-14.15.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

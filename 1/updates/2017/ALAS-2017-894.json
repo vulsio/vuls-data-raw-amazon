@@ -1,0 +1,179 @@
+{
+  "ID": "ALAS-2017-894",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-894: low priority package update for nginx",
+  "Issued": {
+    "Date": "2017-09-13 23:19"
+  },
+  "Updated": {
+    "Date": "2017-09-14 22:22"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-7529:\n\tA flaw within the processing of ranged HTTP requests has been discovered in the range filter module of nginx. A remote attacker could possibly exploit this flaw to disclose parts of the cache file header, or, if used in combination with third party modules, disclose potentially sensitive memory by sending specially crafted HTTP requests.\n1468584: \nCVE-2017-7529 nginx: Integer overflow in nginx range filter module leading to memory disclosure\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7529",
+        "ID": "CVE-2017-7529",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "nginx-all-modules",
+          "Release": "1.32.amzn1",
+          "Version": "1.12.1",
+          "Filename": "Packages/nginx-all-modules-1.12.1-1.32.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "nginx",
+          "Release": "1.32.amzn1",
+          "Version": "1.12.1",
+          "Filename": "Packages/nginx-1.12.1-1.32.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "nginx-mod-http-geoip",
+          "Release": "1.32.amzn1",
+          "Version": "1.12.1",
+          "Filename": "Packages/nginx-mod-http-geoip-1.12.1-1.32.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "nginx-debuginfo",
+          "Release": "1.32.amzn1",
+          "Version": "1.12.1",
+          "Filename": "Packages/nginx-debuginfo-1.12.1-1.32.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "nginx-mod-mail",
+          "Release": "1.32.amzn1",
+          "Version": "1.12.1",
+          "Filename": "Packages/nginx-mod-mail-1.12.1-1.32.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "nginx-mod-stream",
+          "Release": "1.32.amzn1",
+          "Version": "1.12.1",
+          "Filename": "Packages/nginx-mod-stream-1.12.1-1.32.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "nginx-mod-http-xslt-filter",
+          "Release": "1.32.amzn1",
+          "Version": "1.12.1",
+          "Filename": "Packages/nginx-mod-http-xslt-filter-1.12.1-1.32.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "nginx-mod-http-image-filter",
+          "Release": "1.32.amzn1",
+          "Version": "1.12.1",
+          "Filename": "Packages/nginx-mod-http-image-filter-1.12.1-1.32.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "nginx-mod-http-perl",
+          "Release": "1.32.amzn1",
+          "Version": "1.12.1",
+          "Filename": "Packages/nginx-mod-http-perl-1.12.1-1.32.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "nginx-all-modules",
+          "Release": "1.32.amzn1",
+          "Version": "1.12.1",
+          "Filename": "Packages/nginx-all-modules-1.12.1-1.32.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "nginx",
+          "Release": "1.32.amzn1",
+          "Version": "1.12.1",
+          "Filename": "Packages/nginx-1.12.1-1.32.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "nginx-mod-http-geoip",
+          "Release": "1.32.amzn1",
+          "Version": "1.12.1",
+          "Filename": "Packages/nginx-mod-http-geoip-1.12.1-1.32.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "nginx-mod-mail",
+          "Release": "1.32.amzn1",
+          "Version": "1.12.1",
+          "Filename": "Packages/nginx-mod-mail-1.12.1-1.32.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "nginx-debuginfo",
+          "Release": "1.32.amzn1",
+          "Version": "1.12.1",
+          "Filename": "Packages/nginx-debuginfo-1.12.1-1.32.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "nginx-mod-http-xslt-filter",
+          "Release": "1.32.amzn1",
+          "Version": "1.12.1",
+          "Filename": "Packages/nginx-mod-http-xslt-filter-1.12.1-1.32.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "nginx-mod-http-perl",
+          "Release": "1.32.amzn1",
+          "Version": "1.12.1",
+          "Filename": "Packages/nginx-mod-http-perl-1.12.1-1.32.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "nginx-mod-stream",
+          "Release": "1.32.amzn1",
+          "Version": "1.12.1",
+          "Filename": "Packages/nginx-mod-stream-1.12.1-1.32.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "nginx-mod-http-image-filter",
+          "Release": "1.32.amzn1",
+          "Version": "1.12.1",
+          "Filename": "Packages/nginx-mod-http-image-filter-1.12.1-1.32.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

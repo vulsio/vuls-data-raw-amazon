@@ -1,0 +1,311 @@
+{
+  "ID": "ALAS2KERNEL-5.10-2022-005",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 - Kernel-5.10 2.0 - ALAS2KERNEL-5.10-2022-005: medium priority package update for kernel",
+  "Issued": {
+    "Date": "2022-01-20 23:50"
+  },
+  "Updated": {
+    "Date": "2022-01-28 17:25"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2021-40490:\n\tA flaw was found in the Linux kernel. A race condition was discovered in the ext4 subsystem. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n\nCVE-2021-38166:\n\tA flaw was found in the Linux kernel. An integer overflow can allow an out-of-bounds write when many elements are placed in a hash's bucket. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n\nCVE-2021-3753:\n\tA race problem was seen in the vt_k_ioctl in drivers/tty/vt/vt_ioctl.c in the Linux kernel, which may cause an out of bounds read in vt as the write access to vc_mode is not protected by lock-in vt_ioctl (KDSETMDE). The highest threat from this vulnerability is to data confidentiality.\n\nCVE-2021-3739:\n\tA NULL pointer dereference flaw was found in the btrfs_rm_device function in fs/btrfs/volumes.c in the Linux Kernel, where triggering the bug requires 'CAP_SYS_ADMIN'. This flaw allows a local attacker to crash the system or leak kernel internal information. The highest threat from this vulnerability is to system availability.\n\nCVE-2021-3656:\n\tA flaw was found in the KVM's AMD code for supporting SVM nested virtualization. The flaw occurs when processing the VMCB (virtual machine control block) provided by the L1 guest to spawn/handle a nested guest (L2). Due to improper validation of the \"virt_ext\" field, this issue could allow a malicious L1 to disable both VMLOAD/VMSAVE intercepts and VLS (Virtual VMLOAD/VMSAVE) for the L2 guest. As a result, the L2 guest would be allowed to read/write physical pages of the host, resulting in a crash of the entire system, leak of sensitive data or potential guest-to-host escape.\n\nCVE-2021-3653:\n\tA flaw was found in the KVM's AMD code for supporting SVM nested virtualization. The flaw occurs when processing the VMCB (virtual machine control block) provided by the L1 guest to spawn/handle a nested guest (L2). Due to improper validation of the \"int_ctl\" field, this issue could allow a malicious L1 to enable AVIC support (Advanced Virtual Interrupt Controller) for the L2 guest. As a result, the L2 guest would be allowed to read/write physical pages of the host, resulting in a crash of the entire system, leak of sensitive data or potential guest-to-host escape.\n\nCVE-2020-3702:\n\tA flaw was found in the Linux kernel's implementation of wireless drivers using the Atheros chipsets.  An attacker within wireless range could send crafted traffic leading to information disclosure.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-3702",
+        "ID": "CVE-2020-3702",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3653",
+        "ID": "CVE-2021-3653",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3656",
+        "ID": "CVE-2021-3656",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3739",
+        "ID": "CVE-2021-3739",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3753",
+        "ID": "CVE-2021-3753",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-38166",
+        "ID": "CVE-2021-38166",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-40490",
+        "ID": "CVE-2021-40490",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2---kernel-5.10",
+      "Name": "Amazon Linux 2 - Kernel-5.10",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/kernel-5.10.62-55.141.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/kernel-headers-5.10.62-55.141.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-aarch64",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/kernel-debuginfo-common-aarch64-5.10.62-55.141.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/perf-5.10.62-55.141.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/perf-debuginfo-5.10.62-55.141.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/python-perf-5.10.62-55.141.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/python-perf-debuginfo-5.10.62-55.141.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/kernel-tools-5.10.62-55.141.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/kernel-tools-devel-5.10.62-55.141.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/kernel-tools-debuginfo-5.10.62-55.141.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "bpftool",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/bpftool-5.10.62-55.141.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "bpftool-debuginfo",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/bpftool-debuginfo-5.10.62-55.141.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/kernel-devel-5.10.62-55.141.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/kernel-debuginfo-5.10.62-55.141.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/kernel-5.10.62-55.141.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/kernel-headers-5.10.62-55.141.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-5.10.62-55.141.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/perf-5.10.62-55.141.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/perf-debuginfo-5.10.62-55.141.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/python-perf-5.10.62-55.141.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/python-perf-debuginfo-5.10.62-55.141.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/kernel-tools-5.10.62-55.141.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/kernel-tools-devel-5.10.62-55.141.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/kernel-tools-debuginfo-5.10.62-55.141.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "bpftool",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/bpftool-5.10.62-55.141.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "bpftool-debuginfo",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/bpftool-debuginfo-5.10.62-55.141.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/kernel-devel-5.10.62-55.141.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/kernel-debuginfo-5.10.62-55.141.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-5.10.62-55.141",
+          "Release": "0.amzn2",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-5.10.62-55.141-1.0-0.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "55.141.amzn2",
+          "Version": "5.10.62",
+          "Filename": "Packages/kernel-headers-5.10.62-55.141.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

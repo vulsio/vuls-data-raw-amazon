@@ -1,0 +1,71 @@
+{
+  "ID": "ALAS-2014-461",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2014-461: critical priority package update for docker",
+  "Issued": {
+    "Date": "2014-12-11 16:40"
+  },
+  "Updated": {
+    "Date": "2014-12-11 16:50"
+  },
+  "Severity": "critical",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-9358:\n\t1172787: \nCVE-2014-9358 docker: Path traversal and spoofing opportunities presented through image identifiers\n\nCVE-2014-9357:\n\t1172782: \nCVE-2014-9357 docker: Escalation of privileges during decompression of LZMA archives\n\nCVE-2014-9356:\n\t1172761: \nCVE-2014-9356 docker: Path traversal during processing of absolute symlinks\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9356",
+        "ID": "CVE-2014-9356",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9357",
+        "ID": "CVE-2014-9357",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9358",
+        "ID": "CVE-2014-9358",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "docker-devel",
+          "Release": "1.0.amzn1",
+          "Version": "1.3.3",
+          "Filename": "Packages/docker-devel-1.3.3-1.0.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "docker-pkg-devel",
+          "Release": "1.0.amzn1",
+          "Version": "1.3.3",
+          "Filename": "Packages/docker-pkg-devel-1.3.3-1.0.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "docker",
+          "Release": "1.0.amzn1",
+          "Version": "1.3.3",
+          "Filename": "Packages/docker-1.3.3-1.0.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS-2020-1410",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2020-1410: medium priority package update for openvpn",
+  "Issued": {
+    "Date": "2020-07-28 03:26"
+  },
+  "Updated": {
+    "Date": "2020-07-29 21:32"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-11810:\n\tThis security issue is quite hard to abuse, requiring a fairly precise timing attack combined with guessing a just assigned peer-id reference. If successful, only a single client just initiating a new connection will experience a denial of service situation. This wi why the severity is rated low.\n1169925: CVE-2020-11810 openvpn: race condition between allocating peer-id and initializing data channel key\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11810",
+        "ID": "CVE-2020-11810",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openvpn-debuginfo",
+          "Release": "1.23.amzn1",
+          "Version": "2.4.9",
+          "Filename": "Packages/openvpn-debuginfo-2.4.9-1.23.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openvpn-devel",
+          "Release": "1.23.amzn1",
+          "Version": "2.4.9",
+          "Filename": "Packages/openvpn-devel-2.4.9-1.23.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openvpn",
+          "Release": "1.23.amzn1",
+          "Version": "2.4.9",
+          "Filename": "Packages/openvpn-2.4.9-1.23.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openvpn-devel",
+          "Release": "1.23.amzn1",
+          "Version": "2.4.9",
+          "Filename": "Packages/openvpn-devel-2.4.9-1.23.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openvpn-debuginfo",
+          "Release": "1.23.amzn1",
+          "Version": "2.4.9",
+          "Filename": "Packages/openvpn-debuginfo-2.4.9-1.23.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openvpn",
+          "Release": "1.23.amzn1",
+          "Version": "2.4.9",
+          "Filename": "Packages/openvpn-2.4.9-1.23.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

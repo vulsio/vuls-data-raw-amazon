@@ -1,0 +1,67 @@
+{
+  "ID": "ALAS-2017-783",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-783: important priority package update for docker",
+  "Issued": {
+    "Date": "2017-01-10 18:00"
+  },
+  "Updated": {
+    "Date": "2017-01-10 18:00"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-9962:\n\tIt was discovered that runC allowed additional container processes via `runc exec` to be ptraced by the pid 1 of the container. This allows the main processes of the container, if running as root, to gain access to file descriptors of these new processes during the initialization, which can lead to container escapes or modification of runC state before the process is fully placed inside the container.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9962",
+        "ID": "CVE-2016-9962",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "docker",
+          "Release": "1.17.amzn1",
+          "Version": "1.12.6",
+          "Filename": "Packages/docker-1.12.6-1.17.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "docker-devel",
+          "Release": "1.17.amzn1",
+          "Version": "1.12.6",
+          "Filename": "Packages/docker-devel-1.12.6-1.17.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "docker-debuginfo",
+          "Release": "1.17.amzn1",
+          "Version": "1.12.6",
+          "Filename": "Packages/docker-debuginfo-1.12.6-1.17.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "docker-pkg-devel",
+          "Release": "1.17.amzn1",
+          "Version": "1.12.6",
+          "Filename": "Packages/docker-pkg-devel-1.12.6-1.17.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

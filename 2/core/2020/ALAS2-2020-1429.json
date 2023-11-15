@@ -1,0 +1,121 @@
+{
+  "ID": "ALAS2-2020-1429",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1429: critical priority package update for thunderbird",
+  "Issued": {
+    "Date": "2020-05-19 18:32"
+  },
+  "Updated": {
+    "Date": "2020-05-20 20:41"
+  },
+  "Severity": "critical",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-6831:\n\tA flaw was found in Mozilla Firefox and Thunderbird. When parsing and validating SCTP chunks in WebRTC a memory buffer overflow could occur leading to memory corruption and an exploitable crash. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n1831763: CVE-2020-6831 usrsctp: Buffer overflow in AUTH chunk input validation\n\nCVE-2020-6825:\n\tMozilla developers and community members Tyson Smith and Christian Holler reported memory safety bugs present in Firefox 74 and Firefox ESR 68.6. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Thunderbird < 68.7.0, Firefox ESR < 68.7, and Firefox < 75.\n1821682: CVE-2020-6825 Mozilla: Memory safety bugs fixed in Firefox 75 and Firefox ESR 68.7\n\nCVE-2020-6822:\n\tOn 32-bit builds, an out of bounds write could have occurred when processing an image larger than 4 GB in <code>GMPDecodeData</code>. It is possible that with enough effort this could have been exploited to run arbitrary code. This vulnerability affects Thunderbird < 68.7.0, Firefox ESR < 68.7, and Firefox < 75.\n1821676: CVE-2020-6822 Mozilla: Out of bounds write in GMPDecodeData when processing large images\n\nCVE-2020-6821:\n\tWhen reading from areas partially or fully outside the source resource with WebGL's <code>copyTexSubImage</code> method, the specification requires the returned values be zero. Previously, this memory was uninitialized, leading to potentially sensitive data disclosure. This vulnerability affects Thunderbird < 68.7.0, Firefox ESR < 68.7, and Firefox < 75.\n1821674: CVE-2020-6821 Mozilla: Uninitialized memory could be read when using the WebGL copyTexSubImage method\n\nCVE-2020-6820:\n\tUnder certain conditions, when handling a ReadableStream, a race condition can cause a use-after-free. We are aware of targeted attacks in the wild abusing this flaw. This vulnerability affects Thunderbird < 68.7.0, Firefox < 74.0.1, and Firefox ESR < 68.6.1.\n1820878: CVE-2020-6820 Mozilla: Use-after-free when handling a ReadableStream\n\nCVE-2020-6819:\n\tUnder certain conditions, when running the nsDocShell destructor, a race condition can cause a use-after-free. We are aware of targeted attacks in the wild abusing this flaw. This vulnerability affects Thunderbird < 68.7.0, Firefox < 74.0.1, and Firefox ESR < 68.6.1.\n1820869: CVE-2020-6819 Mozilla: Use-after-free while running the nsDocShell destructor\n\nCVE-2020-12397:\n\tNo description is available for this CVE.\n1832565: CVE-2020-12397 Mozilla: Sender Email Address Spoofing using encoded Unicode characters\n\nCVE-2020-12395:\n\tMemory safety flaws were found in Mozilla Firefox and Thunderbird. Memory corruption that an attacker could leverage with enough effort, could allow arbitrary code to run. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n1831765: CVE-2020-12395 Mozilla: Memory safety bugs fixed in Firefox 76 and Firefox ESR 68.8\n\nCVE-2020-12392:\n\tThe Mozilla Foundation Security Advisory describes this flaw as:\nThe 'Copy as cURL' feature of Devtools' network tab did not properly escape the HTTP POST data of a request, which can be controlled by the website. If a user used the 'Copy as cURL' feature and pasted the command into a terminal, it could have resulted in the disclosure of local files.\n1831764: CVE-2020-12392 Mozilla: Arbitrary local file access with 'Copy as cURL'\n\nCVE-2020-12387:\n\tA flaw was found in Mozilla Firefox and Thunderbird. When running shutdown code for Web Worker, a race condition occurs leading to a use-after-free memory flaw that could lead to an exploitable crash. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n1831761: CVE-2020-12387 Mozilla: Use-after-free during worker shutdown\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12387",
+        "ID": "CVE-2020-12387",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12392",
+        "ID": "CVE-2020-12392",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12395",
+        "ID": "CVE-2020-12395",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12397",
+        "ID": "CVE-2020-12397",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6819",
+        "ID": "CVE-2020-6819",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6820",
+        "ID": "CVE-2020-6820",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6821",
+        "ID": "CVE-2020-6821",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6822",
+        "ID": "CVE-2020-6822",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6825",
+        "ID": "CVE-2020-6825",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-6831",
+        "ID": "CVE-2020-6831",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "thunderbird",
+          "Release": "1.amzn2",
+          "Version": "68.8.0",
+          "Filename": "Packages/thunderbird-68.8.0-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "thunderbird-debuginfo",
+          "Release": "1.amzn2",
+          "Version": "68.8.0",
+          "Filename": "Packages/thunderbird-debuginfo-68.8.0-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "thunderbird",
+          "Release": "1.amzn2",
+          "Version": "68.8.0",
+          "Filename": "Packages/thunderbird-68.8.0-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "thunderbird-debuginfo",
+          "Release": "1.amzn2",
+          "Version": "68.8.0",
+          "Filename": "Packages/thunderbird-debuginfo-68.8.0-1.amzn2.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

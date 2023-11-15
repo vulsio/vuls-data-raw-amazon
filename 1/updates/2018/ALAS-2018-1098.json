@@ -1,0 +1,115 @@
+{
+  "ID": "ALAS-2018-1098",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2018-1098: medium priority package update for openssl",
+  "Issued": {
+    "Date": "2018-10-30 20:50"
+  },
+  "Updated": {
+    "Date": "2018-11-01 23:45"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-0732:\n\tDuring key agreement in a TLS handshake using a DH(E) based ciphersuite a malicious server can send a very large prime value to the client. This will cause the client to spend an unreasonably long period of time generating a key for this prime resulting in a hang until the client has finished. This could be exploited in a Denial Of Service attack. Fixed in OpenSSL 1.1.0i-dev (Affected 1.1.0-1.1.0h). Fixed in OpenSSL 1.0.2p-dev (Affected 1.0.2-1.0.2o).\n1591100: \nCVE-2018-0732 openssl: Malicious server can send large prime to client during DH(E) TLS handshake causing the client to hang\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0732",
+        "ID": "CVE-2018-0732",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl-perl",
+          "Release": "13.111.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-perl-1.0.2k-13.111.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl",
+          "Release": "13.111.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-1.0.2k-13.111.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl-devel",
+          "Release": "13.111.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-devel-1.0.2k-13.111.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl-debuginfo",
+          "Release": "13.111.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-debuginfo-1.0.2k-13.111.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl-static",
+          "Release": "13.111.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-static-1.0.2k-13.111.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl-perl",
+          "Release": "13.111.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-perl-1.0.2k-13.111.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl-devel",
+          "Release": "13.111.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-devel-1.0.2k-13.111.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl-debuginfo",
+          "Release": "13.111.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-debuginfo-1.0.2k-13.111.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl",
+          "Release": "13.111.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-1.0.2k-13.111.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl-static",
+          "Release": "13.111.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-static-1.0.2k-13.111.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "ID": "ALAS-2018-1071",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2018-1071: medium priority package update for docker",
+  "Issued": {
+    "Date": "2018-09-05 19:30"
+  },
+  "Updated": {
+    "Date": "2018-09-06 22:00"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-10892:\n\tThe default OCI Linux spec in oci/defaults{_linux}.go in Docker/Moby, from 1.11 to current, does not block /proc/acpi pathnames. The flaw allows an attacker to modify host&#039;s hardware like enabling/disabling Bluetooth or turning up/down keyboard brightness.\n1598581: \nCVE-2018-10892 docker: container breakout without selinux in enforcing mode\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-10892",
+        "ID": "CVE-2018-10892",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "docker",
+          "Release": "2.16.amzn1",
+          "Version": "18.06.1ce",
+          "Filename": "Packages/docker-18.06.1ce-2.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "docker-debuginfo",
+          "Release": "2.16.amzn1",
+          "Version": "18.06.1ce",
+          "Filename": "Packages/docker-debuginfo-18.06.1ce-2.16.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

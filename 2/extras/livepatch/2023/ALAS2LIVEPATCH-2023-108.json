@@ -1,0 +1,67 @@
+{
+  "ID": "ALAS2LIVEPATCH-2023-108",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 - Livepatch 2.0 - ALAS2LIVEPATCH-2023-108: important priority package update for kernel-livepatch-5.10.155-138.670",
+  "Issued": {
+    "Date": "2023-03-02 18:07"
+  },
+  "Updated": {
+    "Date": "2023-03-08 19:24"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 - Livepatch that fix the following vulnerabilities:\nCVE-2023-0179:\n\tA buffer overflow vulnerability was found in the Netfilter subsystem in the Linux Kernel. This issue could allow the leakage of both stack and heap addresses, and potentially allow Local Privilege Escalation to the root user via arbitrary code execution.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0179",
+        "ID": "CVE-2023-0179",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2---livepatch",
+      "Name": "Amazon Linux 2 - Livepatch",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-5.10.155-138.670",
+          "Release": "5.amzn2",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-5.10.155-138.670-1.0-5.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-5.10.155-138.670-debuginfo",
+          "Release": "5.amzn2",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-5.10.155-138.670-debuginfo-1.0-5.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-5.10.155-138.670",
+          "Release": "5.amzn2",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-5.10.155-138.670-1.0-5.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-5.10.155-138.670-debuginfo",
+          "Release": "5.amzn2",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-5.10.155-138.670-debuginfo-1.0-5.amzn2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

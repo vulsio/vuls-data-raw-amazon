@@ -1,0 +1,325 @@
+{
+  "ID": "ALAS2KERNEL-5.10-2023-026",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 - Kernel-5.10 2.0 - ALAS2KERNEL-5.10-2023-026: important priority package update for kernel",
+  "Issued": {
+    "Date": "2023-01-31 20:02"
+  },
+  "Updated": {
+    "Date": "2023-06-29 23:54"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2023-23455:\n\tatm_tc_enqueue in net/sched/sch_atm.c in the Linux kernel through 6.1.4 allows attackers to cause a denial of service because of type confusion (non-negative numbers can sometimes indicate a TC_ACT_SHOT condition rather than valid classification results).\n\nCVE-2023-23454:\n\tcbq_classify in net/sched/sch_cbq.c in the Linux kernel through 6.1.4 allows attackers to cause a denial of service (slab-out-of-bounds read) because of type confusion (non-negative numbers can sometimes indicate a TC_ACT_SHOT condition rather than valid classification results).\n\nCVE-2023-21102:\n\tefi: rt-wrapper: Add missing include\n\nCVE-2023-0459:\n\tDetected a few exploitable gadgets that could leak secret memory through a side-channel such as MDS as well as insufficient hardening of the usercopy functions against spectre-v1.\n\nCVE-2023-0394:\n\tA NULL pointer dereference flaw was found in rawv6_push_pending_frames in net/ipv6/raw.c in the network subcomponent in the Linux kernel. This flaw causes the system to crash.\n\nCVE-2023-0179:\n\tA buffer overflow vulnerability was found in the Netfilter subsystem in the Linux Kernel. This issue could allow the leakage of both stack and heap addresses, and potentially allow Local Privilege Escalation to the root user via arbitrary code execution.\n\nCVE-2023-0045:\n\tThe Linux kernel does not correctly mitigate SMT attacks, as discovered through a strange pattern in the kernel API using STIBP as a mitigation, leaving the process exposed for a short period of time after a syscall. The kernel also does not issue an IBPB immediately during the syscall.\n\nCVE-2022-47929:\n\tIn the Linux kernel before 6.1.6, a NULL pointer dereference bug in the traffic control subsystem allows an unprivileged user to trigger a denial of service (system crash) via a crafted traffic control configuration that is set up with \"tc qdisc\" and \"tc class\" commands. This affects qdisc_graft in net/sched/sch_api.c.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-47929",
+        "ID": "CVE-2022-47929",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0045",
+        "ID": "CVE-2023-0045",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0179",
+        "ID": "CVE-2023-0179",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0394",
+        "ID": "CVE-2023-0394",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0459",
+        "ID": "CVE-2023-0459",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21102",
+        "ID": "CVE-2023-21102",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-23454",
+        "ID": "CVE-2023-23454",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-23455",
+        "ID": "CVE-2023-23455",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2---kernel-5.10",
+      "Name": "Amazon Linux 2 - Kernel-5.10",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/kernel-5.10.165-143.735.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/kernel-headers-5.10.165-143.735.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-5.10.165-143.735.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/perf-5.10.165-143.735.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/perf-debuginfo-5.10.165-143.735.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/python-perf-5.10.165-143.735.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/python-perf-debuginfo-5.10.165-143.735.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/kernel-tools-5.10.165-143.735.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/kernel-tools-devel-5.10.165-143.735.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/kernel-tools-debuginfo-5.10.165-143.735.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "bpftool",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/bpftool-5.10.165-143.735.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "bpftool-debuginfo",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/bpftool-debuginfo-5.10.165-143.735.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/kernel-devel-5.10.165-143.735.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/kernel-debuginfo-5.10.165-143.735.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-5.10.165-143.735",
+          "Release": "0.amzn2",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-5.10.165-143.735-1.0-0.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/kernel-headers-5.10.165-143.735.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/kernel-5.10.165-143.735.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/kernel-headers-5.10.165-143.735.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-aarch64",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/kernel-debuginfo-common-aarch64-5.10.165-143.735.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/perf-5.10.165-143.735.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/perf-debuginfo-5.10.165-143.735.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/python-perf-5.10.165-143.735.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/python-perf-debuginfo-5.10.165-143.735.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/kernel-tools-5.10.165-143.735.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/kernel-tools-devel-5.10.165-143.735.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/kernel-tools-debuginfo-5.10.165-143.735.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "bpftool",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/bpftool-5.10.165-143.735.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "bpftool-debuginfo",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/bpftool-debuginfo-5.10.165-143.735.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/kernel-devel-5.10.165-143.735.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "143.735.amzn2",
+          "Version": "5.10.165",
+          "Filename": "Packages/kernel-debuginfo-5.10.165-143.735.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-livepatch-5.10.165-143.735",
+          "Release": "0.amzn2",
+          "Version": "1.0",
+          "Filename": "Packages/kernel-livepatch-5.10.165-143.735-1.0-0.amzn2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

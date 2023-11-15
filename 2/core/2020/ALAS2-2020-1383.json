@@ -1,0 +1,107 @@
+{
+  "ID": "ALAS2-2020-1383",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1383: medium priority package update for golang",
+  "Issued": {
+    "Date": "2020-01-14 20:01"
+  },
+  "Updated": {
+    "Date": "2020-01-17 16:13"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2019-16276:\n\tIt was discovered that net/http (through net/textproto) in golang does not correctly interpret HTTP requests where an HTTP header contains spaces before the colon. This could be abused by an attacker to smuggle HTTP requests when a proxy or a firewall is placed behind a server implemented in Go or to filter bypasses depending on the specific network configuration.\nGo before 1.12.10 and 1.13.x before 1.13.1 allow HTTP Request Smuggling.\n99999: \nCVE-2019-16276 golang: HTTP/1.1 headers with a space before the colon leads to filter bypass or request smuggling\n1755969: CVE-2019-16276 golang: HTTP/1.1 headers with a space before the colon leads to filter bypass or request smuggling\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-16276",
+        "ID": "CVE-2019-16276",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "golang",
+          "Release": "1.amzn2.0.1",
+          "Version": "1.13.4",
+          "Filename": "Packages/golang-1.13.4-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "golang-docs",
+          "Release": "1.amzn2.0.1",
+          "Version": "1.13.4",
+          "Filename": "Packages/golang-docs-1.13.4-1.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "golang-misc",
+          "Release": "1.amzn2.0.1",
+          "Version": "1.13.4",
+          "Filename": "Packages/golang-misc-1.13.4-1.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "golang-tests",
+          "Release": "1.amzn2.0.1",
+          "Version": "1.13.4",
+          "Filename": "Packages/golang-tests-1.13.4-1.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "golang-src",
+          "Release": "1.amzn2.0.1",
+          "Version": "1.13.4",
+          "Filename": "Packages/golang-src-1.13.4-1.amzn2.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "golang-bin",
+          "Release": "1.amzn2.0.1",
+          "Version": "1.13.4",
+          "Filename": "Packages/golang-bin-1.13.4-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "golang",
+          "Release": "1.amzn2.0.1",
+          "Version": "1.13.4",
+          "Filename": "Packages/golang-1.13.4-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "golang-bin",
+          "Release": "1.amzn2.0.1",
+          "Version": "1.13.4",
+          "Filename": "Packages/golang-bin-1.13.4-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "golang-race",
+          "Release": "1.amzn2.0.1",
+          "Version": "1.13.4",
+          "Filename": "Packages/golang-race-1.13.4-1.amzn2.0.1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

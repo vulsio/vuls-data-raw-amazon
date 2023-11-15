@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS2-2021-1646",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1646: important priority package update for slapi-nis",
+  "Issued": {
+    "Date": "2021-06-16 20:36"
+  },
+  "Updated": {
+    "Date": "2021-06-22 21:36"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-3480:\n\tA flaw was found in slapi-nis. A NULL pointer dereference during the parsing of the Binding DN could allow an unauthenticated attacker to crash the 389-ds-base directory server. The highest threat from this vulnerability is to system availability.\n1944640: CVE-2021-3480 slapi-nis: NULL dereference (DoS) with specially crafted Binding DN\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3480",
+        "ID": "CVE-2021-3480",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "slapi-nis",
+          "Release": "4.amzn2",
+          "Version": "0.56.5",
+          "Filename": "Packages/slapi-nis-0.56.5-4.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "slapi-nis-debuginfo",
+          "Release": "4.amzn2",
+          "Version": "0.56.5",
+          "Filename": "Packages/slapi-nis-debuginfo-0.56.5-4.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "slapi-nis",
+          "Release": "4.amzn2",
+          "Version": "0.56.5",
+          "Filename": "Packages/slapi-nis-0.56.5-4.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "slapi-nis-debuginfo",
+          "Release": "4.amzn2",
+          "Version": "0.56.5",
+          "Filename": "Packages/slapi-nis-debuginfo-0.56.5-4.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "slapi-nis",
+          "Release": "4.amzn2",
+          "Version": "0.56.5",
+          "Filename": "Packages/slapi-nis-0.56.5-4.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "slapi-nis-debuginfo",
+          "Release": "4.amzn2",
+          "Version": "0.56.5",
+          "Filename": "Packages/slapi-nis-debuginfo-0.56.5-4.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

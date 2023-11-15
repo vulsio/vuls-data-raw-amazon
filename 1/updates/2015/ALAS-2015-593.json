@@ -1,0 +1,129 @@
+{
+  "ID": "ALAS-2015-593",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-593: low priority package update for ntp",
+  "Issued": {
+    "Date": "2015-09-02 12:00"
+  },
+  "Updated": {
+    "Date": "2016-02-09 13:30"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-7703:\n\t1254547: \nCVE-2015-7703 ntp: config command can be used to set the pidfile and drift file paths\n\nCVE-2015-5219:\n\t1255118: \nCVE-2015-5219 ntp: infinite loop in sntp processing crafted packet\n\nCVE-2015-5195:\n\t1254544: \nCVE-2015-5195 ntp: ntpd crash when processing config commands with statistics type\n\nCVE-2015-5194:\n\t1254542: \nCVE-2015-5194 ntp: crash with crafted logconfig configuration command\n\nCVE-2015-5146:\n\t1238136: \nCVE-2015-5146 ntp: ntpd control message crash on crafted NUL-byte in configuration directive (VU#668167)\n\nCVE-2015-3405:\n\tA flaw was found in the way the ntp-keygen utility generated MD5 symmetric keys on big-endian systems. An attacker could possibly use this flaw to guess generated MD5 keys, which could then be used to spoof an NTP client or server.\n1210324: \nCVE-2015-3405 ntp: ntp-keygen may generate non-random symmetric keys on big-endian systems\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3405",
+        "ID": "CVE-2015-3405",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5146",
+        "ID": "CVE-2015-5146",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5194",
+        "ID": "CVE-2015-5194",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5195",
+        "ID": "CVE-2015-5195",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5219",
+        "ID": "CVE-2015-5219",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7703",
+        "ID": "CVE-2015-7703",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "ntp-doc",
+          "Release": "33.26.amzn1",
+          "Version": "4.2.6p5",
+          "Filename": "Packages/ntp-doc-4.2.6p5-33.26.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ntp",
+          "Release": "33.26.amzn1",
+          "Version": "4.2.6p5",
+          "Filename": "Packages/ntp-4.2.6p5-33.26.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ntpdate",
+          "Release": "33.26.amzn1",
+          "Version": "4.2.6p5",
+          "Filename": "Packages/ntpdate-4.2.6p5-33.26.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ntp-debuginfo",
+          "Release": "33.26.amzn1",
+          "Version": "4.2.6p5",
+          "Filename": "Packages/ntp-debuginfo-4.2.6p5-33.26.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "ntp-perl",
+          "Release": "33.26.amzn1",
+          "Version": "4.2.6p5",
+          "Filename": "Packages/ntp-perl-4.2.6p5-33.26.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ntpdate",
+          "Release": "33.26.amzn1",
+          "Version": "4.2.6p5",
+          "Filename": "Packages/ntpdate-4.2.6p5-33.26.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ntp-debuginfo",
+          "Release": "33.26.amzn1",
+          "Version": "4.2.6p5",
+          "Filename": "Packages/ntp-debuginfo-4.2.6p5-33.26.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ntp",
+          "Release": "33.26.amzn1",
+          "Version": "4.2.6p5",
+          "Filename": "Packages/ntp-4.2.6p5-33.26.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

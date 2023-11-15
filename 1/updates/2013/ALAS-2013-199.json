@@ -1,0 +1,89 @@
+{
+  "ID": "ALAS-2013-199",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-199: medium priority package update for libtirpc",
+  "Issued": {
+    "Date": "2013-06-11 22:45"
+  },
+  "Updated": {
+    "Date": "2014-09-15 23:09"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-1950:\n\tA flaw was found in the way libtirpc decoded RPC requests. A specially-crafted RPC request could cause libtirpc to attempt to free a buffer provided by an application using the library, even when the buffer was not dynamically allocated. This could cause an application using libtirpc, such as rpcbind, to crash.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1950",
+        "ID": "CVE-2013-1950",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2013:0884.html",
+        "ID": "RHSA-2013:0884",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libtirpc-debuginfo",
+          "Release": "6.8.amzn1",
+          "Version": "0.2.1",
+          "Filename": "Packages/libtirpc-debuginfo-0.2.1-6.8.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libtirpc-devel",
+          "Release": "6.8.amzn1",
+          "Version": "0.2.1",
+          "Filename": "Packages/libtirpc-devel-0.2.1-6.8.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libtirpc",
+          "Release": "6.8.amzn1",
+          "Version": "0.2.1",
+          "Filename": "Packages/libtirpc-0.2.1-6.8.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libtirpc-devel",
+          "Release": "6.8.amzn1",
+          "Version": "0.2.1",
+          "Filename": "Packages/libtirpc-devel-0.2.1-6.8.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libtirpc",
+          "Release": "6.8.amzn1",
+          "Version": "0.2.1",
+          "Filename": "Packages/libtirpc-0.2.1-6.8.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libtirpc-debuginfo",
+          "Release": "6.8.amzn1",
+          "Version": "0.2.1",
+          "Filename": "Packages/libtirpc-debuginfo-0.2.1-6.8.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

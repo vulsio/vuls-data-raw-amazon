@@ -1,0 +1,223 @@
+{
+  "ID": "ALAS-2019-1296",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2019-1296: medium priority package update for mysql56",
+  "Issued": {
+    "Date": "2019-09-30 21:00"
+  },
+  "Updated": {
+    "Date": "2019-10-02 23:01"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2019-2819:\n\tVulnerability in the MySQL Server component of Oracle MySQL (subcomponent: Server: Security: Audit). Supported versions that are affected are 5.6.44 and prior, 5.7.26 and prior and 8.0.16 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.0 Base Score 5.5 (Integrity and Availability impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H).\n1732032: \nCVE-2019-2819 mysql: Server: Security: Audit unspecified vulnerability (CPU Jul 2019)\n\nCVE-2019-2740:\n\tVulnerability in the MySQL Server component of Oracle MySQL (subcomponent: Server: XML). Supported versions that are affected are 5.6.44 and prior, 5.7.26 and prior and 8.0.16 and prior. Easily exploitable vulnerability allows low privileged attacker with network access via multiple protocols to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.0 Base Score 6.5 (Availability impacts). CVSS Vector: (CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H).\n1732000: \nCVE-2019-2740 mysql: Server: XML unspecified vulnerability (CPU Jul 2019)\n\nCVE-2019-2739:\n\tVulnerability in the MySQL Server component of Oracle MySQL (subcomponent: Server: Security: Privileges). Supported versions that are affected are 5.6.44 and prior, 5.7.26 and prior and 8.0.16 and prior. Easily exploitable vulnerability allows high privileged attacker with logon to the infrastructure where MySQL Server executes to compromise MySQL Server. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server as well as unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.0 Base Score 5.1 (Integrity and Availability impacts). CVSS Vector: (CVSS:3.0/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H).\n1731999: \nCVE-2019-2739 mysql: Server: Security: Privileges unspecified vulnerability (CPU Jul 2019)\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-2739",
+        "ID": "CVE-2019-2739",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-2740",
+        "ID": "CVE-2019-2740",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-2819",
+        "ID": "CVE-2019-2819",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql56-debuginfo",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-debuginfo-5.6.45-1.34.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql56-errmsg",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-errmsg-5.6.45-1.34.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql56-test",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-test-5.6.45-1.34.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql56-embedded-devel",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-embedded-devel-5.6.45-1.34.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql56-common",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-common-5.6.45-1.34.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql56-libs",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-libs-5.6.45-1.34.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql56-embedded",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-embedded-5.6.45-1.34.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql56-bench",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-bench-5.6.45-1.34.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql56",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-5.6.45-1.34.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql56-server",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-server-5.6.45-1.34.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql56-devel",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-devel-5.6.45-1.34.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql56-server",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-server-5.6.45-1.34.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql56-devel",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-devel-5.6.45-1.34.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql56-embedded-devel",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-embedded-devel-5.6.45-1.34.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql56-libs",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-libs-5.6.45-1.34.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql56-debuginfo",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-debuginfo-5.6.45-1.34.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql56-bench",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-bench-5.6.45-1.34.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql56-test",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-test-5.6.45-1.34.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql56-errmsg",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-errmsg-5.6.45-1.34.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql56-common",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-common-5.6.45-1.34.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql56",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-5.6.45-1.34.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql56-embedded",
+          "Release": "1.34.amzn1",
+          "Version": "5.6.45",
+          "Filename": "Packages/mysql56-embedded-5.6.45-1.34.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

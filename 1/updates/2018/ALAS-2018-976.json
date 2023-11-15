@@ -1,0 +1,259 @@
+{
+  "ID": "ALAS-2018-976",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2018-976: medium priority package update for clamav",
+  "Issued": {
+    "Date": "2018-03-21 22:24"
+  },
+  "Updated": {
+    "Date": "2018-03-23 17:39"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-1000085:\n\t\n\nCVE-2018-0202:\n\t\n\nCVE-2017-6419:\n\tmspack/lzxd.c in libmspack 0.5alpha, as used in ClamAV 0.99.2, allows remote attackers to cause a denial of service (heap-based buffer overflow and application crash) or possibly have unspecified other impact via a crafted CHM file.\n1483909: \nCVE-2017-6419 libmspack, clamav: heap-based buffer overflow in mspack/lzxd.c\n\nCVE-2017-11423:\n\tThe cabd_read_string function in mspack/cabd.c in libmspack 0.5alpha, as used in ClamAV 0.99.2 and other products, allows remote attackers to cause a denial of service (stack-based buffer over-read and application crash) via a crafted CAB file.\n1472776: \nCVE-2017-11423 libmspack, clamav: Stack-based buffer over-read in cabd_read_string function\n\nCVE-2012-6706:\n\t\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-6706",
+        "ID": "CVE-2012-6706",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11423",
+        "ID": "CVE-2017-11423",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6419",
+        "ID": "CVE-2017-6419",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0202",
+        "ID": "CVE-2018-0202",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000085",
+        "ID": "CVE-2018-1000085",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "clamav-milter-sysvinit",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-milter-sysvinit-0.99.4-1.29.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "clamav-devel",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-devel-0.99.4-1.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "clamav-update",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-update-0.99.4-1.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "clamav-server-sysvinit",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-server-sysvinit-0.99.4-1.29.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "clamav-server",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-server-0.99.4-1.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "clamav-filesystem",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-filesystem-0.99.4-1.29.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "clamav-data-empty",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-data-empty-0.99.4-1.29.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "clamav-debuginfo",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-debuginfo-0.99.4-1.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "clamav-scanner-sysvinit",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-scanner-sysvinit-0.99.4-1.29.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "clamav-scanner",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-scanner-0.99.4-1.29.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "clamav-db",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-db-0.99.4-1.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "clamav-data",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-data-0.99.4-1.29.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "clamd",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamd-0.99.4-1.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "clamav",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-0.99.4-1.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "clamav-milter",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-milter-0.99.4-1.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "clamav-lib",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-lib-0.99.4-1.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "clamav",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-0.99.4-1.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "clamd",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamd-0.99.4-1.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "clamav-update",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-update-0.99.4-1.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "clamav-db",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-db-0.99.4-1.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "clamav-milter",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-milter-0.99.4-1.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "clamav-debuginfo",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-debuginfo-0.99.4-1.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "clamav-lib",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-lib-0.99.4-1.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "clamav-server",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-server-0.99.4-1.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "clamav-devel",
+          "Release": "1.29.amzn1",
+          "Version": "0.99.4",
+          "Filename": "Packages/clamav-devel-0.99.4-1.29.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

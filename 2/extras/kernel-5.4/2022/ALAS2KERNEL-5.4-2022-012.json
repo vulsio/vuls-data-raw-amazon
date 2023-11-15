@@ -1,0 +1,277 @@
+{
+  "ID": "ALAS2KERNEL-5.4-2022-012",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 - Kernel-5.4 2.0 - ALAS2KERNEL-5.4-2022-012: important priority package update for kernel",
+  "Issued": {
+    "Date": "2022-01-20 19:20"
+  },
+  "Updated": {
+    "Date": "2022-01-28 17:22"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2020-13143:\n\tgadget_dev_desc_UDC_store in drivers/usb/gadget/configfs.c in the Linux kernel 3.16 through 5.6.13 relies on kstrdup without considering the possibility of an internal 0 value, which allows attackers to trigger an out-of-bounds read, aka CID-15753588bcd4.\n\nCVE-2020-12770:\n\tA vulnerability was found in sg_write in drivers/scsi/sg.c in the SCSI generic (sg) driver subsystem. This flaw allows an attacker with local access and special user or root privileges to cause a denial of service if the allocated list is not cleaned with an invalid (Sg_fd * sfp) pointer at the time of failure, also possibly causing a kernel internal information leak problem.\n\nCVE-2020-12768:\n\tA flaw was found in the Linux kernel. A memory leak in svm_cpu_init() is possible leading to a system crash.  The highest threat from this vulnerability is to system availability.\n\nCVE-2020-10757:\n\tA flaw was found in the way mremap handled DAX Huge Pages. This flaw allows a local attacker with access to a DAX enabled storage to escalate their privileges on the system.\n\nCVE-2020-10751:\n\tA flaw was found in the Linux kernel's SELinux LSM hook implementation, where it anticipated the skb would only contain a single Netlink message. The hook incorrectly validated the first Netlink message in the skb only, to allow or deny the rest of the messages within the skb with the granted permissions and without further processing. At this time, there is no known ability for an attacker to abuse this flaw.\n\nCVE-2020-10732:\n\tA flaw was found in the Linux kernel's implementation of Userspace core dumps. This flaw allows an attacker with a local account to crash a trivial program and exfiltrate private kernel data.\n\nCVE-2020-0543:\n\tA new domain bypass transient execution attack known as Special Register Buffer Data Sampling (SRBDS) has been found. This flaw allows data values from special internal registers to be leaked by an attacker able to execute code on any core of the CPU. An unprivileged, local attacker can use this flaw to infer values returned by affected instructions known to be commonly used during cryptographic operations that rely on uniqueness, secrecy, or both.\n\nCVE-2019-19462:\n\tA NULL pointer dereference flaw may occur in the Linux kernel's relay_open in kernel/relay.c. if the alloc_percpu() function is not validated in time of failure and used as a valid address for access. An attacker could use this flaw to cause a denial of service.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19462",
+        "ID": "CVE-2019-19462",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-0543",
+        "ID": "CVE-2020-0543",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10732",
+        "ID": "CVE-2020-10732",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10751",
+        "ID": "CVE-2020-10751",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10757",
+        "ID": "CVE-2020-10757",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12768",
+        "ID": "CVE-2020-12768",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12770",
+        "ID": "CVE-2020-12770",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13143",
+        "ID": "CVE-2020-13143",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2---kernel-5.4",
+      "Name": "Amazon Linux 2 - Kernel-5.4",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/kernel-5.4.46-19.75.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/kernel-headers-5.4.46-19.75.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-aarch64",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/kernel-debuginfo-common-aarch64-5.4.46-19.75.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/perf-5.4.46-19.75.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/perf-debuginfo-5.4.46-19.75.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/python-perf-5.4.46-19.75.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/python-perf-debuginfo-5.4.46-19.75.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/kernel-tools-5.4.46-19.75.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/kernel-tools-devel-5.4.46-19.75.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/kernel-tools-debuginfo-5.4.46-19.75.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/kernel-devel-5.4.46-19.75.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/kernel-debuginfo-5.4.46-19.75.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/kernel-5.4.46-19.75.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/kernel-headers-5.4.46-19.75.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-5.4.46-19.75.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/perf-5.4.46-19.75.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/perf-debuginfo-5.4.46-19.75.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/python-perf-5.4.46-19.75.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python-perf-debuginfo",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/python-perf-debuginfo-5.4.46-19.75.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/kernel-tools-5.4.46-19.75.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/kernel-tools-devel-5.4.46-19.75.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/kernel-tools-debuginfo-5.4.46-19.75.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/kernel-devel-5.4.46-19.75.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/kernel-debuginfo-5.4.46-19.75.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "19.75.amzn2",
+          "Version": "5.4.46",
+          "Filename": "Packages/kernel-headers-5.4.46-19.75.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

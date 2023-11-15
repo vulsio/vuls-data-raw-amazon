@@ -1,0 +1,43 @@
+{
+  "ID": "ALAS-2019-1287",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2019-1287: medium priority package update for perl-Archive-Tar",
+  "Issued": {
+    "Date": "2019-09-13 22:59"
+  },
+  "Updated": {
+    "Date": "2019-09-18 21:38"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-12015:\n\tIt was found that the Archive::Tar module did not properly sanitize symbolic links when extracting tar archives. An attacker, able to provide a specially crafted archive for processing, could use this flaw to write or overwrite arbitrary files in the context of the Perl interpreter.\n1588760: \nCVE-2018-12015 perl: Directory traversal in Archive::Tar\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12015",
+        "ID": "CVE-2018-12015",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "perl-Archive-Tar",
+          "Release": "3.6.amzn1",
+          "Version": "1.92",
+          "Filename": "Packages/perl-Archive-Tar-1.92-3.6.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS2-2019-1323",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1323: medium priority package update for keepalived",
+  "Issued": {
+    "Date": "2019-10-21 18:01"
+  },
+  "Updated": {
+    "Date": "2019-10-23 23:46"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-19044:\n\tkeepalived 2.0.8 didn&#039;t check for pathnames with symlinks when writing data to a temporary file upon a call to PrintData or PrintStats. This allowed local users to overwrite arbitrary files if fs.protected_symlinks is set to 0, as demonstrated by a symlink from /tmp/keepalived.data or /tmp/keepalived.stats to /etc/passwd.\n99999: \nCVE-2018-19044 keepalived: Improper pathname validation allows for overwrite of arbitrary filenames via symlinks\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19044",
+        "ID": "CVE-2018-19044",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "keepalived",
+          "Release": "16.amzn2",
+          "Version": "1.3.5",
+          "Filename": "Packages/keepalived-1.3.5-16.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "keepalived-debuginfo",
+          "Release": "16.amzn2",
+          "Version": "1.3.5",
+          "Filename": "Packages/keepalived-debuginfo-1.3.5-16.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "keepalived",
+          "Release": "16.amzn2",
+          "Version": "1.3.5",
+          "Filename": "Packages/keepalived-1.3.5-16.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "keepalived-debuginfo",
+          "Release": "16.amzn2",
+          "Version": "1.3.5",
+          "Filename": "Packages/keepalived-debuginfo-1.3.5-16.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "keepalived",
+          "Release": "16.amzn2",
+          "Version": "1.3.5",
+          "Filename": "Packages/keepalived-1.3.5-16.amzn2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "keepalived-debuginfo",
+          "Release": "16.amzn2",
+          "Version": "1.3.5",
+          "Filename": "Packages/keepalived-debuginfo-1.3.5-16.amzn2.i686.rpm"
+        }
+      ]
+    }
+  }
+}

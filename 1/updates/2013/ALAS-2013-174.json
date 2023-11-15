@@ -1,0 +1,129 @@
+{
+  "ID": "ALAS-2013-174",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-174: medium priority package update for httpd",
+  "Issued": {
+    "Date": "2013-03-26 21:25"
+  },
+  "Updated": {
+    "Date": "2014-09-15 22:43"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2012-4558:\n\tMultiple cross-site scripting (XSS) vulnerabilities in the balancer_handler function in the manager interface in mod_proxy_balancer.c in the mod_proxy_balancer module in the Apache HTTP Server 2.2.x before 2.2.24-dev and 2.4.x before 2.4.4 allow remote attackers to inject arbitrary web script or HTML via a crafted string.\n915884: \nCVE-2012-4558 httpd: XSS flaw in mod_proxy_balancer manager interface\n\nCVE-2012-3499:\n\tMultiple cross-site scripting (XSS) vulnerabilities in the Apache HTTP Server 2.2.x before 2.2.24-dev and 2.4.x before 2.4.4 allow remote attackers to inject arbitrary web script or HTML via vectors involving hostnames and URIs in the (1) mod_imagemap, (2) mod_info, (3) mod_ldap, (4) mod_proxy_ftp, and (5) mod_status modules.\n915883: \nCVE-2012-3499 httpd: multiple XSS flaws due to unescaped hostnames\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3499",
+        "ID": "CVE-2012-3499",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4558",
+        "ID": "CVE-2012-4558",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd",
+          "Release": "1.29.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/httpd-2.2.24-1.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-tools",
+          "Release": "1.29.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/httpd-tools-2.2.24-1.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-debuginfo",
+          "Release": "1.29.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/httpd-debuginfo-2.2.24-1.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "httpd-manual",
+          "Release": "1.29.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/httpd-manual-2.2.24-1.29.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "mod_ssl",
+          "Release": "1.29.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/mod_ssl-2.2.24-1.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "httpd-devel",
+          "Release": "1.29.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/httpd-devel-2.2.24-1.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "mod_ssl",
+          "Release": "1.29.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/mod_ssl-2.2.24-1.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-debuginfo",
+          "Release": "1.29.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/httpd-debuginfo-2.2.24-1.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-devel",
+          "Release": "1.29.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/httpd-devel-2.2.24-1.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd-tools",
+          "Release": "1.29.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/httpd-tools-2.2.24-1.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "httpd",
+          "Release": "1.29.amzn1",
+          "Version": "2.2.24",
+          "Filename": "Packages/httpd-2.2.24-1.29.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "ID": "ALAS-2017-881",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-881: low priority package update for wget",
+  "Issued": {
+    "Date": "2017-08-31 15:58"
+  },
+  "Updated": {
+    "Date": "2017-08-31 23:07"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-6508:\n\tA CRLF injection flaw was found in the way wget handled URLs. A remote attacker could use this flaw to inject arbitrary HTTP headers in requests, via CRLF sequences in the host sub-component of a URL, by tricking a user running wget into processing crafted URLs.\n1429984: \nCVE-2017-6508 wget: CRLF injection in the url_parse function in url.c\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6508",
+        "ID": "CVE-2017-6508",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "wget",
+          "Release": "3.27.amzn1",
+          "Version": "1.18",
+          "Filename": "Packages/wget-1.18-3.27.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "wget-debuginfo",
+          "Release": "3.27.amzn1",
+          "Version": "1.18",
+          "Filename": "Packages/wget-debuginfo-1.18-3.27.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "wget-debuginfo",
+          "Release": "3.27.amzn1",
+          "Version": "1.18",
+          "Filename": "Packages/wget-debuginfo-1.18-3.27.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "wget",
+          "Release": "3.27.amzn1",
+          "Version": "1.18",
+          "Filename": "Packages/wget-1.18-3.27.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

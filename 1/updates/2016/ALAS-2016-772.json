@@ -1,0 +1,221 @@
+{
+  "ID": "ALAS-2016-772",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-772: important priority package update for kernel",
+  "Issued": {
+    "Date": "2016-12-06 23:44"
+  },
+  "Updated": {
+    "Date": "2016-12-07 19:04"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-9084:\n\tThe use of a kzalloc with an integer multiplication allowed an integer overflow condition to be reached in vfio_pci_intrs.c. This combined with CVE-2016-9083 may allow an attacker to craft an attack and use unallocated memory, potentially crashing the machine.\n1389259: \nCVE-2016-9084 kernel: Integer overflow when using kzalloc in vfio driver\n\nCVE-2016-9083:\n\tA flaw was discovered in the Linux kernel&#039;s implementation of VFIO. An attacker issuing an ioctl can create a situation where memory is corrupted and modify memory outside of the expected area.  This may overwrite kernel memory and subvert kernel execution.\n1389258: \nCVE-2016-9083 kernel: State machine confusion bug in vfio driver leading to memory corruption\n\nCVE-2016-8655:\n\tA race condition issue leading to a use-after-free flaw was found in the way the raw packet sockets implementation in the Linux kernel networking subsystem handled synchronization while creating the TPACKET_V3 ring buffer. A local user able to open a raw packet socket (requires the CAP_NET_RAW capability) could use this flaw to elevate their privileges on the system.\n1400019: \nCVE-2016-8655 kernel: Race condition in packet_set_ring leads to use after free\n\nCVE-2016-8645:\n\tIt was discovered that the Linux kernel since 3.6-rc1 with &#039;net.ipv4.tcp_fastopen&#039; set to 1 can hit BUG() statement in tcp_collapse() function after making a number of certain syscalls leading to a possible system crash.\n1393904: \nCVE-2016-8645 kernel: a BUG() statement can be hit in net/ipv4/tcp_input.c\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8645",
+        "ID": "CVE-2016-8645",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8655",
+        "ID": "CVE-2016-8655",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9083",
+        "ID": "CVE-2016-9083",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9084",
+        "ID": "CVE-2016-9084",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/kernel-tools-4.4.35-33.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/perf-debuginfo-4.4.35-33.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/kernel-headers-4.4.35-33.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/kernel-tools-devel-4.4.35-33.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/perf-4.4.35-33.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.4.35-33.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/kernel-4.4.35-33.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/kernel-devel-4.4.35-33.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/kernel-debuginfo-4.4.35-33.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/kernel-tools-debuginfo-4.4.35-33.55.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-i686",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/kernel-debuginfo-common-i686-4.4.35-33.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/perf-debuginfo-4.4.35-33.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/kernel-tools-4.4.35-33.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/perf-4.4.35-33.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/kernel-4.4.35-33.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/kernel-tools-debuginfo-4.4.35-33.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/kernel-headers-4.4.35-33.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/kernel-debuginfo-4.4.35-33.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/kernel-tools-devel-4.4.35-33.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/kernel-devel-4.4.35-33.55.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "kernel-doc",
+          "Release": "33.55.amzn1",
+          "Version": "4.4.35",
+          "Filename": "Packages/kernel-doc-4.4.35-33.55.amzn1.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

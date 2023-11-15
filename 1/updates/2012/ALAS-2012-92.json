@@ -1,0 +1,201 @@
+{
+  "ID": "ALAS-2012-92",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2012-92: low priority package update for mysql51",
+  "Issued": {
+    "Date": "2012-07-05 13:59"
+  },
+  "Updated": {
+    "Date": "2014-09-14 16:22"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-2102:\n\tMySQL 5.1.x before 5.1.62 and 5.5.x before 5.5.22 allows remote authenticated users to cause a denial of service (assertion failure and mysqld abort) by deleting a record and using HANDLER READ NEXT.\nA flaw was found in the way MySQL processed HANDLER READ NEXT statements after deleting a record. A remote, authenticated attacker could use this flaw to provide such requests, causing mysqld to crash. This issue only caused a temporary denial of service, as mysqld was automatically restarted after the crash.\n812431: \nCVE-2012-2102 mysql: Server crash on HANDLER READ NEXT after DELETE\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2102",
+        "ID": "CVE-2012-2102",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2012:0874.html",
+        "ID": "RHSA-2012:0874",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51-server",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-server-5.1.61-4.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51-embedded-devel",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-embedded-devel-5.1.61-4.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51-common",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-common-5.1.61-4.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51-libs",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-libs-5.1.61-4.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51-test",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-test-5.1.61-4.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51-devel",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-devel-5.1.61-4.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-5.1.61-4.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51-embedded",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-embedded-5.1.61-4.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51-bench",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-bench-5.1.61-4.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "mysql51-debuginfo",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-debuginfo-5.1.61-4.54.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-5.1.61-4.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51-common",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-common-5.1.61-4.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51-server",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-server-5.1.61-4.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51-bench",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-bench-5.1.61-4.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51-devel",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-devel-5.1.61-4.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51-debuginfo",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-debuginfo-5.1.61-4.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51-libs",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-libs-5.1.61-4.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51-test",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-test-5.1.61-4.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51-embedded",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-embedded-5.1.61-4.54.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "mysql51-embedded-devel",
+          "Release": "4.54.amzn1",
+          "Version": "5.1.61",
+          "Filename": "Packages/mysql51-embedded-devel-5.1.61-4.54.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

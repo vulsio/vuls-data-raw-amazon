@@ -1,0 +1,475 @@
+{
+  "ID": "ALAS-2016-635",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-635: low priority package update for sssd",
+  "Issued": {
+    "Date": "2016-01-18 11:00"
+  },
+  "Updated": {
+    "Date": "2016-01-18 11:00"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-5292:\n\tIt was found that SSSD&#039;s Privilege Attribute Certificate (PAC) responder plug-in would leak a small amount of memory on each authentication request. A remote attacker could potentially use this flaw to exhaust all available memory on the system by making repeated requests to a Kerberized daemon application configured to authenticate using the PAC responder plug-in.\n1267580: \nCVE-2015-5292 sssd: memory leak in the sssd_pac_plugin\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5292",
+        "ID": "CVE-2015-5292",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libsss_nss_idmap-devel",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/libsss_nss_idmap-devel-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sssd-debuginfo",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-debuginfo-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sssd-krb5-common",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-krb5-common-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libsss_idmap",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/libsss_idmap-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libsss_simpleifp-devel",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/libsss_simpleifp-devel-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sssd-ipa",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-ipa-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sssd-client",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-client-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sssd-libwbclient",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-libwbclient-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "python27-sssdconfig",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/python27-sssdconfig-1.13.0-40.6.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libipa_hbac",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/libipa_hbac-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libsss_simpleifp",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/libsss_simpleifp-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-libsss_nss_idmap",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/python27-libsss_nss_idmap-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sssd-ldap",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-ldap-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sssd-common",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-common-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sssd-tools",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-tools-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sssd-ad",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-ad-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sssd-libwbclient-devel",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-libwbclient-devel-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libsss_idmap-devel",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/libsss_idmap-devel-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-sss",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/python27-sss-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sssd-dbus",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-dbus-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sssd-common-pac",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-common-pac-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sssd-proxy",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-proxy-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libipa_hbac-devel",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/libipa_hbac-devel-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-sss-murmur",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/python27-sss-murmur-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sssd",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sssd-krb5",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-krb5-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libsss_nss_idmap",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/libsss_nss_idmap-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python27-libipa_hbac",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/python27-libipa_hbac-1.13.0-40.6.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sssd-libwbclient",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-libwbclient-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libipa_hbac-devel",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/libipa_hbac-devel-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libsss_simpleifp",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/libsss_simpleifp-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sssd",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sssd-common-pac",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-common-pac-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sssd-ldap",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-ldap-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sssd-dbus",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-dbus-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sssd-ad",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-ad-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sssd-proxy",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-proxy-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-sss",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/python27-sss-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-libsss_nss_idmap",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/python27-libsss_nss_idmap-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libsss_idmap",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/libsss_idmap-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sssd-ipa",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-ipa-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sssd-tools",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-tools-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-libipa_hbac",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/python27-libipa_hbac-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sssd-krb5-common",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-krb5-common-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sssd-common",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-common-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libsss_simpleifp-devel",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/libsss_simpleifp-devel-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sssd-debuginfo",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-debuginfo-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sssd-krb5",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-krb5-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libsss_nss_idmap",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/libsss_nss_idmap-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libsss_nss_idmap-devel",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/libsss_nss_idmap-devel-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libsss_idmap-devel",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/libsss_idmap-devel-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libipa_hbac",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/libipa_hbac-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python27-sss-murmur",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/python27-sss-murmur-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sssd-libwbclient-devel",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-libwbclient-devel-1.13.0-40.6.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sssd-client",
+          "Release": "40.6.amzn1",
+          "Version": "1.13.0",
+          "Filename": "Packages/sssd-client-1.13.0-40.6.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

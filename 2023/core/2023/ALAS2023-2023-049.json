@@ -1,0 +1,369 @@
+{
+  "ID": "ALAS2023-2023-049",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2023 - ALAS2023-2023-049: Important priority package update for protobuf",
+  "Issued": {
+    "Date": "2023-02-17 20:45:00"
+  },
+  "Updated": {
+    "Date": "2023-02-22 23:39:00"
+  },
+  "Severity": "Important",
+  "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2022-3171:\n\tA parsing issue with binary data in protobuf-java core and lite versions prior to 3.21.7, 3.20.3, 3.19.6 and 3.16.3 can lead to a denial of service attack. Inputs containing multiple instances of non-repeated embedded messages with repeated or unknown fields causes objects to be converted back-n-forth between mutable and immutable forms, resulting in potentially long garbage collection pauses. We recommend updating to the versions mentioned above.\n\nCVE-2022-1941:\n\tA parsing vulnerability for the MessageSet type in the ProtocolBuffers versions prior to and including 3.16.1, 3.17.3, 3.18.2, 3.19.4, 3.20.1 and 3.21.5 for protobuf-cpp, and versions prior to and including 3.16.1, \n3.17.3, 3.18.2, 3.19.4, 3.20.1 and 4.21.5 for protobuf-python can lead to out of memory failures. A specially crafted message with multiple key-value per elements creates parsing issues, and can lead to a Denial of Service against\n services receiving unsanitized input. We recommend upgrading to versions 3.18.3, 3.19.5, 3.20.2, 3.21.6 for protobuf-cpp and 3.18.3, 3.19.5, 3.20.2, 4.21.6 for protobuf-python. Versions for 3.16 and 3.17 are no longer updated.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1941",
+        "ID": "CVE-2022-1941",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3171",
+        "ID": "CVE-2022-3171",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2023",
+      "Name": "Amazon Linux 2023",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "protobuf-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-debuginfo-3.19.6-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "protobuf-compiler-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-compiler-debuginfo-3.19.6-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "protobuf-emacs",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-emacs-3.19.6-1.amzn2023.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "protobuf-lite-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-lite-debuginfo-3.19.6-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "protobuf-lite",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-lite-3.19.6-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "protobuf-devel",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-devel-3.19.6-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "protobuf",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-3.19.6-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "protobuf-static",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-static-3.19.6-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python3-protobuf-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/python3-protobuf-debuginfo-3.19.6-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "protobuf-lite-devel",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-lite-devel-3.19.6-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "protobuf-vim",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-vim-3.19.6-1.amzn2023.0.1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "protobuf-debugsource",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-debugsource-3.19.6-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "protobuf-lite-static",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-lite-static-3.19.6-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "protobuf-compiler",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-compiler-3.19.6-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "python3-protobuf",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/python3-protobuf-3.19.6-1.amzn2023.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "protobuf-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-debuginfo-3.19.6-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "protobuf-static",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-static-3.19.6-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "protobuf-compiler-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-compiler-debuginfo-3.19.6-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "protobuf-debugsource",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-debugsource-3.19.6-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "protobuf-lite-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-lite-debuginfo-3.19.6-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python3-protobuf-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/python3-protobuf-debuginfo-3.19.6-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "protobuf",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-3.19.6-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "protobuf-devel",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-devel-3.19.6-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "protobuf-lite-static",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-lite-static-3.19.6-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "protobuf-compiler",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-compiler-3.19.6-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "python3-protobuf",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/python3-protobuf-3.19.6-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "protobuf-lite",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-lite-3.19.6-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "protobuf-lite-devel",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-lite-devel-3.19.6-1.amzn2023.0.1.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "protobuf-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-debuginfo-3.19.6-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "protobuf-lite-devel",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-lite-devel-3.19.6-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "protobuf-compiler",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-compiler-3.19.6-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "protobuf-devel",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-devel-3.19.6-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "protobuf-compiler-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-compiler-debuginfo-3.19.6-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "protobuf-lite-static",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-lite-static-3.19.6-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "protobuf",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-3.19.6-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "protobuf-lite-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-lite-debuginfo-3.19.6-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "protobuf-lite",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-lite-3.19.6-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "protobuf-static",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-static-3.19.6-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "protobuf-debugsource",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/protobuf-debugsource-3.19.6-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python3-protobuf",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/python3-protobuf-3.19.6-1.amzn2023.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "python3-protobuf-debuginfo",
+          "Release": "1.amzn2023.0.1",
+          "Version": "3.19.6",
+          "Filename": "Packages/python3-protobuf-debuginfo-3.19.6-1.amzn2023.0.1.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

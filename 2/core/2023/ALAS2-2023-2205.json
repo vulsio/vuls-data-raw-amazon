@@ -1,0 +1,99 @@
+{
+  "ID": "ALAS2-2023-2205",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2205: medium priority package update for edk2",
+  "Issued": {
+    "Date": "2023-08-17 11:58"
+  },
+  "Updated": {
+    "Date": "2023-08-23 00:19"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-3817:\n\tIssue summary: Checking excessively long DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_check(), DH_check_ex()\nor EVP_PKEY_param_check() to check a DH key or DH parameters may experience long\ndelays. Where the key or parameters that are being checked have been obtained\nfrom an untrusted source this may lead to a Denial of Service.\n\nThe function DH_check() performs various checks on DH parameters. After fixing\nCVE-2023-3446 it was discovered that a large q parameter value can also trigger\nan overly long computation during some of these checks. A correct q value,\nif present, cannot be larger than the modulus p parameter, thus it is\nunnecessary to perform these checks if q is larger than p.\n\nAn application that calls DH_check() and supplies a key or parameters obtained\nfrom an untrusted source could be vulnerable to a Denial of Service attack.\n\nThe function DH_check() is itself called by a number of other OpenSSL functions.\nAn application calling any of those other functions may similarly be affected.\nThe other functions affected by this are DH_check_ex() and\nEVP_PKEY_param_check().\n\nAlso vulnerable are the OpenSSL dhparam and pkeyparam command line applications\nwhen using the \"-check\" option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3817",
+        "ID": "CVE-2023-3817",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "edk2-tools",
+          "Release": "1.amzn2.0.2",
+          "Version": "20200801stable",
+          "Filename": "Packages/edk2-tools-20200801stable-1.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "edk2-tools-python",
+          "Release": "1.amzn2.0.2",
+          "Version": "20200801stable",
+          "Filename": "Packages/edk2-tools-python-20200801stable-1.amzn2.0.2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "edk2-tools-doc",
+          "Release": "1.amzn2.0.2",
+          "Version": "20200801stable",
+          "Filename": "Packages/edk2-tools-doc-20200801stable-1.amzn2.0.2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "edk2-ovmf",
+          "Release": "1.amzn2.0.2",
+          "Version": "20200801stable",
+          "Filename": "Packages/edk2-ovmf-20200801stable-1.amzn2.0.2.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "edk2-debuginfo",
+          "Release": "1.amzn2.0.2",
+          "Version": "20200801stable",
+          "Filename": "Packages/edk2-debuginfo-20200801stable-1.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "edk2-tools",
+          "Release": "1.amzn2.0.2",
+          "Version": "20200801stable",
+          "Filename": "Packages/edk2-tools-20200801stable-1.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "edk2-aarch64",
+          "Release": "1.amzn2.0.2",
+          "Version": "20200801stable",
+          "Filename": "Packages/edk2-aarch64-20200801stable-1.amzn2.0.2.noarch.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "edk2-debuginfo",
+          "Release": "1.amzn2.0.2",
+          "Version": "20200801stable",
+          "Filename": "Packages/edk2-debuginfo-20200801stable-1.amzn2.0.2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

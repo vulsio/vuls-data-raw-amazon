@@ -1,0 +1,177 @@
+{
+  "ID": "ALAS-2015-518",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-518: medium priority package update for krb5",
+  "Issued": {
+    "Date": "2015-05-05 15:44"
+  },
+  "Updated": {
+    "Date": "2015-05-05 16:14"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-9422:\n\tIt was found that the MIT Kerberos administration server (kadmind) incorrectly accepted certain authentication requests for two-component server principal names. A remote attacker able to acquire a key with a particularly named principal (such as \"kad/x\") could use this flaw to impersonate any user to kadmind, and perform administrative actions as that user.\n\nCVE-2014-9421:\n\tA double-free flaw was found in the way MIT Kerberos handled invalid External Data Representation (XDR) data. An authenticated user could use this flaw to crash the MIT Kerberos administration server (kadmind), or other applications using Kerberos libraries, via specially crafted XDR packets.\n\nCVE-2014-5355:\n\tIt was found that the krb5_read_message() function of MIT Kerberos did not correctly sanitize input, and could create invalid krb5_data objects. A remote, unauthenticated attacker could use this flaw to crash a Kerberos child process via a specially crafted request.\n\nCVE-2014-5353:\n\tIf kadmind were used with an LDAP back end for the KDC database, a remote, authenticated attacker who has the permissions to set the password policy could crash kadmind by attempting to use a named ticket policy object as a password policy for a principal.\n\nCVE-2014-5352:\n\tA use-after-free flaw was found in the way the MIT Kerberos libgssapi_krb5 library processed valid context deletion tokens. An attacker able to make an application using the GSS-API library (libgssapi) could call the gss_process_context_token() function and use this flaw to crash that application.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5352",
+        "ID": "CVE-2014-5352",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5353",
+        "ID": "CVE-2014-5353",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-5355",
+        "ID": "CVE-2014-5355",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9421",
+        "ID": "CVE-2014-9421",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9422",
+        "ID": "CVE-2014-9422",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2015:0794.html",
+        "ID": "RHSA-2015:0794",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-devel",
+          "Release": "37.29.amzn1",
+          "Version": "1.10.3",
+          "Filename": "Packages/krb5-devel-1.10.3-37.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-server",
+          "Release": "37.29.amzn1",
+          "Version": "1.10.3",
+          "Filename": "Packages/krb5-server-1.10.3-37.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-debuginfo",
+          "Release": "37.29.amzn1",
+          "Version": "1.10.3",
+          "Filename": "Packages/krb5-debuginfo-1.10.3-37.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-server-ldap",
+          "Release": "37.29.amzn1",
+          "Version": "1.10.3",
+          "Filename": "Packages/krb5-server-ldap-1.10.3-37.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-workstation",
+          "Release": "37.29.amzn1",
+          "Version": "1.10.3",
+          "Filename": "Packages/krb5-workstation-1.10.3-37.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-libs",
+          "Release": "37.29.amzn1",
+          "Version": "1.10.3",
+          "Filename": "Packages/krb5-libs-1.10.3-37.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "krb5-pkinit-openssl",
+          "Release": "37.29.amzn1",
+          "Version": "1.10.3",
+          "Filename": "Packages/krb5-pkinit-openssl-1.10.3-37.29.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-devel",
+          "Release": "37.29.amzn1",
+          "Version": "1.10.3",
+          "Filename": "Packages/krb5-devel-1.10.3-37.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-pkinit-openssl",
+          "Release": "37.29.amzn1",
+          "Version": "1.10.3",
+          "Filename": "Packages/krb5-pkinit-openssl-1.10.3-37.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-server-ldap",
+          "Release": "37.29.amzn1",
+          "Version": "1.10.3",
+          "Filename": "Packages/krb5-server-ldap-1.10.3-37.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-debuginfo",
+          "Release": "37.29.amzn1",
+          "Version": "1.10.3",
+          "Filename": "Packages/krb5-debuginfo-1.10.3-37.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-libs",
+          "Release": "37.29.amzn1",
+          "Version": "1.10.3",
+          "Filename": "Packages/krb5-libs-1.10.3-37.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-workstation",
+          "Release": "37.29.amzn1",
+          "Version": "1.10.3",
+          "Filename": "Packages/krb5-workstation-1.10.3-37.29.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "krb5-server",
+          "Release": "37.29.amzn1",
+          "Version": "1.10.3",
+          "Filename": "Packages/krb5-server-1.10.3-37.29.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

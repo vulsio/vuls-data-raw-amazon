@@ -1,0 +1,125 @@
+{
+  "ID": "ALAS-2017-872",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-872: important priority package update for graphite2",
+  "Issued": {
+    "Date": "2017-08-17 18:27"
+  },
+  "Updated": {
+    "Date": "2017-08-17 22:46"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-7778:\n\t1461260: \nCVE-2017-7778 Mozilla: Vulnerabilities in the Graphite 2 library (MFSA 2017-16)\n\nCVE-2017-7777:\n\tThe use of uninitialized memory related to &quot;graphite2::GlyphCache::Loader::read_glyph&quot; has been reported in graphite2. An attacker could possibly exploit this flaw to negatively impact the execution of an application using graphite2 in unknown ways.\n1472225: \nCVE-2017-7777 graphite2: use of uninitialized memory \"graphite2::GlyphCache::Loader::read_glyph\"\n\nCVE-2017-7776:\n\tAn out of bounds read flaw related to &quot;graphite2::Silf::getClassGlyph&quot; has been reported in graphite2. An attacker could possibly exploit this flaw to disclose potentially sensitive memory or cause an application crash.\n1472223: \nCVE-2017-7776 graphite2: heap-buffer-overflow read \"graphite2::Silf::getClassGlyph\"\n\nCVE-2017-7775:\n\tAn assertion error has been reported in graphite2. An attacker could possibly exploit this flaw to cause an application crash.\n1472221: \nCVE-2017-7775 graphite2: assertion error \"size() > n\"\n\nCVE-2017-7774:\n\tAn out of bounds read flaw related to &quot;graphite2::Silf::readGraphite&quot; has been reported in graphite2. An attacker could possibly exploit this flaw to disclose potentially sensitive memory or cause an application crash.\n1472219: \nCVE-2017-7774 graphite2: out of bounds read \"graphite2::Silf::readGraphite\"\n\nCVE-2017-7773:\n\tA heap-based buffer overflow flaw related to &quot;lz4::decompress&quot; (src/Decompressor) has been reported in graphite2. An attacker could exploit this issue to cause a crash or, possibly, execute arbitrary code.\n1472215: \nCVE-2017-7773 graphite2: heap-buffer-overflow write \"lz4::decompress\" (src/Decompressor)\n\nCVE-2017-7772:\n\tA heap-based buffer overflow flaw related to &quot;lz4::decompress&quot; has been reported in graphite2. An attacker could exploit this issue to cause a crash or, possibly, execute arbitrary code.\n1472213: \nCVE-2017-7772 graphite2: heap-buffer-overflow write \"lz4::decompress\" (CVE-2017-7772)\n\nCVE-2017-7771:\n\tAn out of bounds read flaw related to &quot;graphite2::Pass::readPass&quot; has been reported in graphite2. An attacker could possibly exploit this flaw to disclose potentially sensitive memory or cause an application crash.\n1472212: \nCVE-2017-7771 graphite2: out of bounds read in \"graphite2::Pass::readPass\"\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7771",
+        "ID": "CVE-2017-7771",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7772",
+        "ID": "CVE-2017-7772",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7773",
+        "ID": "CVE-2017-7773",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7774",
+        "ID": "CVE-2017-7774",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7775",
+        "ID": "CVE-2017-7775",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7776",
+        "ID": "CVE-2017-7776",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7777",
+        "ID": "CVE-2017-7777",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7778",
+        "ID": "CVE-2017-7778",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "graphite2-devel",
+          "Release": "1.7.amzn1",
+          "Version": "1.3.10",
+          "Filename": "Packages/graphite2-devel-1.3.10-1.7.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "graphite2-debuginfo",
+          "Release": "1.7.amzn1",
+          "Version": "1.3.10",
+          "Filename": "Packages/graphite2-debuginfo-1.3.10-1.7.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "graphite2",
+          "Release": "1.7.amzn1",
+          "Version": "1.3.10",
+          "Filename": "Packages/graphite2-1.3.10-1.7.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "graphite2-devel",
+          "Release": "1.7.amzn1",
+          "Version": "1.3.10",
+          "Filename": "Packages/graphite2-devel-1.3.10-1.7.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "graphite2",
+          "Release": "1.7.amzn1",
+          "Version": "1.3.10",
+          "Filename": "Packages/graphite2-1.3.10-1.7.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "graphite2-debuginfo",
+          "Release": "1.7.amzn1",
+          "Version": "1.3.10",
+          "Filename": "Packages/graphite2-debuginfo-1.3.10-1.7.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

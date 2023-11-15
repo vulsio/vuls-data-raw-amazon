@@ -1,0 +1,127 @@
+{
+  "ID": "ALAS-2014-299",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-299: medium priority package update for lighttpd",
+  "Issued": {
+    "Date": "2014-03-06 14:57"
+  },
+  "Updated": {
+    "Date": "2014-09-16 22:37"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-4560:\n\tUse-after-free vulnerability in lighttpd before 1.4.33 allows remote attackers to cause a denial of service (segmentation fault and crash) via unspecified vectors that trigger FAMMonitorDirectory failures.\n1029664: \nCVE-2013-4560 lighttpd: Use after free if FAMMonitorDirectory fails\n\nCVE-2013-4559:\n\tlighttpd before 1.4.33 does not check the return value of the (1) setuid, (2) setgid, or (3) setgroups functions, which might cause lighttpd to run as root if it is restarted and allows remote attackers to gain privileges, as demonstrated by multiple calls to the clone function that cause setuid to fail when the user process limit is reached.\n1029663: \nCVE-2013-4559 lighttpd: setuid/setgid/setgroups return value check\n\nCVE-2013-4508:\n\tlighttpd before 1.4.34, when SNI is enabled, configures weak SSL ciphers, which makes it easier for remote attackers to hijack sessions by inserting packets into the client-server data stream or obtain sensitive information by sniffing the network.\n1026566: \nCVE-2013-4508 lighttpd: uses vulnerable cipher suites when SNI is used\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4508",
+        "ID": "CVE-2013-4508",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4559",
+        "ID": "CVE-2013-4559",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4560",
+        "ID": "CVE-2013-4560",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lighttpd-fastcgi",
+          "Release": "4.12.amzn1",
+          "Version": "1.4.34",
+          "Filename": "Packages/lighttpd-fastcgi-1.4.34-4.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lighttpd-mod_geoip",
+          "Release": "4.12.amzn1",
+          "Version": "1.4.34",
+          "Filename": "Packages/lighttpd-mod_geoip-1.4.34-4.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lighttpd-mod_mysql_vhost",
+          "Release": "4.12.amzn1",
+          "Version": "1.4.34",
+          "Filename": "Packages/lighttpd-mod_mysql_vhost-1.4.34-4.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lighttpd-debuginfo",
+          "Release": "4.12.amzn1",
+          "Version": "1.4.34",
+          "Filename": "Packages/lighttpd-debuginfo-1.4.34-4.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "lighttpd",
+          "Release": "4.12.amzn1",
+          "Version": "1.4.34",
+          "Filename": "Packages/lighttpd-1.4.34-4.12.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lighttpd-mod_geoip",
+          "Release": "4.12.amzn1",
+          "Version": "1.4.34",
+          "Filename": "Packages/lighttpd-mod_geoip-1.4.34-4.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lighttpd-fastcgi",
+          "Release": "4.12.amzn1",
+          "Version": "1.4.34",
+          "Filename": "Packages/lighttpd-fastcgi-1.4.34-4.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lighttpd-debuginfo",
+          "Release": "4.12.amzn1",
+          "Version": "1.4.34",
+          "Filename": "Packages/lighttpd-debuginfo-1.4.34-4.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lighttpd",
+          "Release": "4.12.amzn1",
+          "Version": "1.4.34",
+          "Filename": "Packages/lighttpd-1.4.34-4.12.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "lighttpd-mod_mysql_vhost",
+          "Release": "4.12.amzn1",
+          "Version": "1.4.34",
+          "Filename": "Packages/lighttpd-mod_mysql_vhost-1.4.34-4.12.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

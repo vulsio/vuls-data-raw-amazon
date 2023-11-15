@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS2DOCKER-2021-012",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 - Docker 2.0 - ALAS2DOCKER-2021-012: medium priority package update for containerd",
+  "Issued": {
+    "Date": "2021-10-19 20:49"
+  },
+  "Updated": {
+    "Date": "2021-11-18 21:36"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 - Docker that fix the following vulnerabilities:\nCVE-2020-15257:\n\tA flaw was found in containerd. Access controls for the shim's API socket verified that a connecting process had an effective UID of 0, but otherwise did not restrict access to the abstract Unix domain socket. This could allow malicious containers running in the same network namespace as the shim, with an effective UID of 0 but otherwise reduced privileges, to cause new processes to be run with elevated privileges. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n1899487: CVE-2020-15257 containerd: unrestricted access to abstract Unix domain socket can lead to privileges escalation\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-15257",
+        "ID": "CVE-2020-15257",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2---docker",
+      "Name": "Amazon Linux 2 - Docker",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "containerd",
+          "Release": "2.amzn2",
+          "Version": "1.4.1",
+          "Filename": "Packages/containerd-1.4.1-2.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "containerd-stress",
+          "Release": "2.amzn2",
+          "Version": "1.4.1",
+          "Filename": "Packages/containerd-stress-1.4.1-2.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "containerd-debuginfo",
+          "Release": "2.amzn2",
+          "Version": "1.4.1",
+          "Filename": "Packages/containerd-debuginfo-1.4.1-2.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "containerd",
+          "Release": "2.amzn2",
+          "Version": "1.4.1",
+          "Filename": "Packages/containerd-1.4.1-2.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "containerd-stress",
+          "Release": "2.amzn2",
+          "Version": "1.4.1",
+          "Filename": "Packages/containerd-stress-1.4.1-2.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "containerd-debuginfo",
+          "Release": "2.amzn2",
+          "Version": "1.4.1",
+          "Filename": "Packages/containerd-debuginfo-1.4.1-2.amzn2.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

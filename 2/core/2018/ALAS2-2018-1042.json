@@ -1,0 +1,115 @@
+{
+  "ID": "ALAS2-2018-1042",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2018-1042: low priority package update for openssh",
+  "Issued": {
+    "Date": "2018-06-20 19:56"
+  },
+  "Updated": {
+    "Date": "2018-07-24 21:14"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2017-15906:\n\tThe process_open function in sftp-server.c in OpenSSH before 7.6 does not properly prevent write operations in readonly mode, which allows attackers to create zero-length files.\n1506630: \nCVE-2017-15906 openssh: Improper write operations in readonly mode allow for zero-length file creation\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15906",
+        "ID": "CVE-2017-15906",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssh",
+          "Release": "16.amzn2.0.1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-7.4p1-16.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssh-clients",
+          "Release": "16.amzn2.0.1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-clients-7.4p1-16.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssh-server",
+          "Release": "16.amzn2.0.1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-server-7.4p1-16.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssh-server-sysvinit",
+          "Release": "16.amzn2.0.1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-server-sysvinit-7.4p1-16.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssh-ldap",
+          "Release": "16.amzn2.0.1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-ldap-7.4p1-16.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssh-keycat",
+          "Release": "16.amzn2.0.1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-keycat-7.4p1-16.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssh-askpass",
+          "Release": "16.amzn2.0.1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-askpass-7.4p1-16.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssh-cavs",
+          "Release": "16.amzn2.0.1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-cavs-7.4p1-16.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "pam_ssh_agent_auth",
+          "Release": "2.16.amzn2",
+          "Version": "0.10.3",
+          "Filename": "Packages/pam_ssh_agent_auth-0.10.3-2.16.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssh-debuginfo",
+          "Release": "16.amzn2.0.1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-debuginfo-7.4p1-16.amzn2.0.1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

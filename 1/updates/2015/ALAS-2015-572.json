@@ -1,0 +1,143 @@
+{
+  "ID": "ALAS-2015-572",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-572: important priority package update for usermode libuser",
+  "Issued": {
+    "Date": "2015-07-23 10:50"
+  },
+  "Updated": {
+    "Date": "2015-07-27 17:12"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-3246:\n\tTwo flaws were found in the way the libuser library handled the /etc/passwd file. A local attacker could use an application compiled against libuser (for example, userhelper) to manipulate the /etc/passwd file, which could result in a denial of service or possibly allow the attacker to escalate their privileges to root.\n\nCVE-2015-3245:\n\tlibuser does not filter newline characters in the GECOS field.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3245",
+        "ID": "CVE-2015-3245",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3246",
+        "ID": "CVE-2015-3246",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2015:1482.html",
+        "ID": "RHSA-2015:1482",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "usermode",
+          "Release": "3.18.amzn1",
+          "Version": "1.102",
+          "Filename": "Packages/usermode-1.102-3.18.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "usermode-debuginfo",
+          "Release": "3.18.amzn1",
+          "Version": "1.102",
+          "Filename": "Packages/usermode-debuginfo-1.102-3.18.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "usermode",
+          "Release": "3.18.amzn1",
+          "Version": "1.102",
+          "Filename": "Packages/usermode-1.102-3.18.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "usermode-debuginfo",
+          "Release": "3.18.amzn1",
+          "Version": "1.102",
+          "Filename": "Packages/usermode-debuginfo-1.102-3.18.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libuser-devel",
+          "Release": "8.15.amzn1",
+          "Version": "0.56.13",
+          "Filename": "Packages/libuser-devel-0.56.13-8.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libuser-python",
+          "Release": "8.15.amzn1",
+          "Version": "0.56.13",
+          "Filename": "Packages/libuser-python-0.56.13-8.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libuser-debuginfo",
+          "Release": "8.15.amzn1",
+          "Version": "0.56.13",
+          "Filename": "Packages/libuser-debuginfo-0.56.13-8.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libuser",
+          "Release": "8.15.amzn1",
+          "Version": "0.56.13",
+          "Filename": "Packages/libuser-0.56.13-8.15.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libuser-python",
+          "Release": "8.15.amzn1",
+          "Version": "0.56.13",
+          "Filename": "Packages/libuser-python-0.56.13-8.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libuser",
+          "Release": "8.15.amzn1",
+          "Version": "0.56.13",
+          "Filename": "Packages/libuser-0.56.13-8.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libuser-debuginfo",
+          "Release": "8.15.amzn1",
+          "Version": "0.56.13",
+          "Filename": "Packages/libuser-debuginfo-0.56.13-8.15.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libuser-devel",
+          "Release": "8.15.amzn1",
+          "Version": "0.56.13",
+          "Filename": "Packages/libuser-devel-0.56.13-8.15.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

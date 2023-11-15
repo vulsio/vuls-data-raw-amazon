@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS-2015-622",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-622: low priority package update for xfsprogs",
+  "Issued": {
+    "Date": "2015-12-14 10:00"
+  },
+  "Updated": {
+    "Date": "2015-12-13 14:22"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2012-2150:\n\tIt was discovered that the xfs_metadump tool of the xfsprogs suite did not fully adhere to the standards of obfuscation described in its man page. In case a user with the necessary privileges used xfs_metadump and relied on the advertised obfuscation, the generated data could contain unexpected traces of potentially sensitive information.\n817696: \nCVE-2012-2150 xfsprogs: xfs_metadump information disclosure flaw\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2150",
+        "ID": "CVE-2012-2150",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xfsprogs-debuginfo",
+          "Release": "2.20.amzn1",
+          "Version": "3.2.2",
+          "Filename": "Packages/xfsprogs-debuginfo-3.2.2-2.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xfsprogs",
+          "Release": "2.20.amzn1",
+          "Version": "3.2.2",
+          "Filename": "Packages/xfsprogs-3.2.2-2.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xfsprogs-devel",
+          "Release": "2.20.amzn1",
+          "Version": "3.2.2",
+          "Filename": "Packages/xfsprogs-devel-3.2.2-2.20.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xfsprogs",
+          "Release": "2.20.amzn1",
+          "Version": "3.2.2",
+          "Filename": "Packages/xfsprogs-3.2.2-2.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xfsprogs-devel",
+          "Release": "2.20.amzn1",
+          "Version": "3.2.2",
+          "Filename": "Packages/xfsprogs-devel-3.2.2-2.20.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xfsprogs-debuginfo",
+          "Release": "2.20.amzn1",
+          "Version": "3.2.2",
+          "Filename": "Packages/xfsprogs-debuginfo-3.2.2-2.20.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

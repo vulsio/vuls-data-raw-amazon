@@ -1,0 +1,227 @@
+{
+  "ID": "ALAS2-2022-1782",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2022-1782: important priority package update for gzip xz",
+  "Issued": {
+    "Date": "2022-04-25 22:56"
+  },
+  "Updated": {
+    "Date": "2022-04-27 16:34"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-1271:\n\tAn arbitrary file write vulnerability was found in GNU gzip's zgrep utility. When zgrep is applied on the attacker's chosen file name (for example, a crafted file name), this can overwrite an attacker's content to an arbitrary attacker-selected file. This flaw occurs due to insufficient validation when processing filenames with two or more newlines where selected content and the target file names are embedded in crafted multi-line file names. This flaw allows a remote, low privileged attacker to force zgrep to write arbitrary files on the system.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1271",
+        "ID": "CVE-2022-1271",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "gzip",
+          "Release": "10.amzn2.0.1",
+          "Version": "1.5",
+          "Filename": "Packages/gzip-1.5-10.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "gzip-debuginfo",
+          "Release": "10.amzn2.0.1",
+          "Version": "1.5",
+          "Filename": "Packages/gzip-debuginfo-1.5-10.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "gzip",
+          "Release": "10.amzn2.0.1",
+          "Version": "1.5",
+          "Filename": "Packages/gzip-1.5-10.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "gzip-debuginfo",
+          "Release": "10.amzn2.0.1",
+          "Version": "1.5",
+          "Filename": "Packages/gzip-debuginfo-1.5-10.amzn2.0.1.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "gzip",
+          "Release": "10.amzn2.0.1",
+          "Version": "1.5",
+          "Filename": "Packages/gzip-1.5-10.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "gzip-debuginfo",
+          "Release": "10.amzn2.0.1",
+          "Version": "1.5",
+          "Filename": "Packages/gzip-debuginfo-1.5-10.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xz",
+          "Release": "1.amzn2.0.3",
+          "Version": "5.2.2",
+          "Filename": "Packages/xz-5.2.2-1.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xz-libs",
+          "Release": "1.amzn2.0.3",
+          "Version": "5.2.2",
+          "Filename": "Packages/xz-libs-5.2.2-1.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xz-compat-libs",
+          "Release": "1.amzn2.0.3",
+          "Version": "5.2.2",
+          "Filename": "Packages/xz-compat-libs-5.2.2-1.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xz-devel",
+          "Release": "1.amzn2.0.3",
+          "Version": "5.2.2",
+          "Filename": "Packages/xz-devel-5.2.2-1.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xz-lzma-compat",
+          "Release": "1.amzn2.0.3",
+          "Version": "5.2.2",
+          "Filename": "Packages/xz-lzma-compat-5.2.2-1.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "xz-debuginfo",
+          "Release": "1.amzn2.0.3",
+          "Version": "5.2.2",
+          "Filename": "Packages/xz-debuginfo-5.2.2-1.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xz",
+          "Release": "1.amzn2.0.3",
+          "Version": "5.2.2",
+          "Filename": "Packages/xz-5.2.2-1.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xz-libs",
+          "Release": "1.amzn2.0.3",
+          "Version": "5.2.2",
+          "Filename": "Packages/xz-libs-5.2.2-1.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xz-compat-libs",
+          "Release": "1.amzn2.0.3",
+          "Version": "5.2.2",
+          "Filename": "Packages/xz-compat-libs-5.2.2-1.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xz-devel",
+          "Release": "1.amzn2.0.3",
+          "Version": "5.2.2",
+          "Filename": "Packages/xz-devel-5.2.2-1.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xz-lzma-compat",
+          "Release": "1.amzn2.0.3",
+          "Version": "5.2.2",
+          "Filename": "Packages/xz-lzma-compat-5.2.2-1.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "xz-debuginfo",
+          "Release": "1.amzn2.0.3",
+          "Version": "5.2.2",
+          "Filename": "Packages/xz-debuginfo-5.2.2-1.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "xz",
+          "Release": "1.amzn2.0.3",
+          "Version": "5.2.2",
+          "Filename": "Packages/xz-5.2.2-1.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "xz-libs",
+          "Release": "1.amzn2.0.3",
+          "Version": "5.2.2",
+          "Filename": "Packages/xz-libs-5.2.2-1.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "xz-compat-libs",
+          "Release": "1.amzn2.0.3",
+          "Version": "5.2.2",
+          "Filename": "Packages/xz-compat-libs-5.2.2-1.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "xz-devel",
+          "Release": "1.amzn2.0.3",
+          "Version": "5.2.2",
+          "Filename": "Packages/xz-devel-5.2.2-1.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "xz-lzma-compat",
+          "Release": "1.amzn2.0.3",
+          "Version": "5.2.2",
+          "Filename": "Packages/xz-lzma-compat-5.2.2-1.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "xz-debuginfo",
+          "Release": "1.amzn2.0.3",
+          "Version": "5.2.2",
+          "Filename": "Packages/xz-debuginfo-5.2.2-1.amzn2.0.3.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

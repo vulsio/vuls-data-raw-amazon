@@ -1,0 +1,233 @@
+{
+  "ID": "ALAS-2019-1318",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2019-1318: medium priority package update for microcode_ctl kernel",
+  "Issued": {
+    "Date": "2019-11-14 20:06"
+  },
+  "Updated": {
+    "Date": "2019-11-16 03:32"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2019-11139:\n\tImproper conditions check in the voltage modulation interface for some Intel Xeon Scalable Processors may allow a privileged user to potentially enable denial of service via local access.\n99999: \nCVE-2019-11139 hw: voltage modulation technical advisory\n\nCVE-2019-11135:\n\tTSX Asynchronous Abort condition on some CPUs utilizing speculative execution may allow an authenticated user to potentially enable information disclosure via a side channel with local access.\n99999: \nCVE-2019-11135 hw: TSX Transaction Asynchronous Abort (TAA)\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11135",
+        "ID": "CVE-2019-11135",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11139",
+        "ID": "CVE-2019-11139",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "2",
+          "Name": "microcode_ctl-debuginfo",
+          "Release": "47.36.amzn1",
+          "Version": "2.1",
+          "Filename": "Packages/microcode_ctl-debuginfo-2.1-47.36.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "2",
+          "Name": "microcode_ctl",
+          "Release": "47.36.amzn1",
+          "Version": "2.1",
+          "Filename": "Packages/microcode_ctl-2.1-47.36.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "2",
+          "Name": "microcode_ctl-debuginfo",
+          "Release": "47.36.amzn1",
+          "Version": "2.1",
+          "Filename": "Packages/microcode_ctl-debuginfo-2.1-47.36.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "2",
+          "Name": "microcode_ctl",
+          "Release": "47.36.amzn1",
+          "Version": "2.1",
+          "Filename": "Packages/microcode_ctl-2.1-47.36.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/perf-debuginfo-4.14.152-98.182.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/perf-4.14.152-98.182.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/kernel-tools-debuginfo-4.14.152-98.182.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/kernel-devel-4.14.152-98.182.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-x86_64",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.14.152-98.182.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/kernel-tools-4.14.152-98.182.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/kernel-4.14.152-98.182.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/kernel-tools-devel-4.14.152-98.182.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/kernel-debuginfo-4.14.152-98.182.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/kernel-headers-4.14.152-98.182.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools-debuginfo",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/kernel-tools-debuginfo-4.14.152-98.182.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/kernel-debuginfo-4.14.152-98.182.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perf-debuginfo",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/perf-debuginfo-4.14.152-98.182.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/kernel-tools-4.14.152-98.182.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-devel",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/kernel-devel-4.14.152-98.182.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-headers",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/kernel-headers-4.14.152-98.182.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-debuginfo-common-i686",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/kernel-debuginfo-common-i686-4.14.152-98.182.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "perf",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/perf-4.14.152-98.182.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/kernel-4.14.152-98.182.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "kernel-tools-devel",
+          "Release": "98.182.amzn1",
+          "Version": "4.14.152",
+          "Filename": "Packages/kernel-tools-devel-4.14.152-98.182.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "ID": "ALAS-2021-1541",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2021-1541: medium priority package update for openssl",
+  "Issued": {
+    "Date": "2021-10-01 18:00"
+  },
+  "Updated": {
+    "Date": "2021-10-04 22:13"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2021-3712:\n\tIt was found that openssl assumed ASN.1 strings to be NUL terminated. A malicious actor may be able to force an application into calling openssl function with a specially crafted, non-NUL terminated string to deliberately hit this bug, which may result in a crash of the application, causing a Denial of Service attack, or possibly, memory disclosure. The highest threat from this vulnerability is to data confidentiality and system availability.\n1995634: CVE-2021-3712 openssl: Read buffer overruns processing ASN.1 strings\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3712",
+        "ID": "CVE-2021-3712",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl-static",
+          "Release": "16.154.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-static-1.0.2k-16.154.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl-perl",
+          "Release": "16.154.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-perl-1.0.2k-16.154.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl-devel",
+          "Release": "16.154.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-devel-1.0.2k-16.154.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl-debuginfo",
+          "Release": "16.154.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-debuginfo-1.0.2k-16.154.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl",
+          "Release": "16.154.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-1.0.2k-16.154.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl-perl",
+          "Release": "16.154.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-perl-1.0.2k-16.154.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl-devel",
+          "Release": "16.154.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-devel-1.0.2k-16.154.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl-static",
+          "Release": "16.154.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-static-1.0.2k-16.154.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl",
+          "Release": "16.154.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-1.0.2k-16.154.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl-debuginfo",
+          "Release": "16.154.amzn1",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-debuginfo-1.0.2k-16.154.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

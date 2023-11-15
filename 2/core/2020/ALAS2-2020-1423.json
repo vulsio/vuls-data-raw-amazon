@@ -1,0 +1,201 @@
+{
+  "ID": "ALAS2-2020-1423",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1423: important priority package update for ipa",
+  "Issued": {
+    "Date": "2020-05-08 20:44"
+  },
+  "Updated": {
+    "Date": "2020-05-12 21:46"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2019-14867:\n\tA flaw was found in IPA, all 4.6.x versions before 4.6.7, all 4.7.x versions before 4.7.4 and all 4.8.x versions before 4.8.3, in the way the internal function ber_scanf() was used in some components of the IPA server, which parsed kerberos key data. An unauthenticated attacker who could trigger parsing of the krb principal key could cause the IPA server to crash or in some conditions, cause arbitrary code to be executed on the server hosting the IPA server.\n1766920: CVE-2019-14867 ipa: Denial of service in IPA server due to wrong use of ber_scanf()\n\nCVE-2019-10195:\n\tA flaw was found in IPA, all 4.6.x versions before 4.6.7, all 4.7.x versions before 4.7.4 and all 4.8.x versions before 4.8.3, in the way that FreeIPA's batch processing API logged operations. This included passing user passwords in clear text on FreeIPA masters. Batch processing of commands with passwords as arguments or options is not performed by default in FreeIPA but is possible by third-party components. An attacker having access to system logs on FreeIPA masters could use this flaw to produce log file content with passwords exposed.\n1726223: CVE-2019-10195 ipa: Batch API logging user passwords to /var/log/httpd/error_log\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10195",
+        "ID": "CVE-2019-10195",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14867",
+        "ID": "CVE-2019-14867",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ipa-server",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/ipa-server-4.6.5-11.amzn2.4.7.aarch64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "python2-ipaserver",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/python2-ipaserver-4.6.5-11.amzn2.4.7.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "ipa-server-common",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/ipa-server-common-4.6.5-11.amzn2.4.7.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "ipa-server-dns",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/ipa-server-dns-4.6.5-11.amzn2.4.7.noarch.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ipa-server-trust-ad",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/ipa-server-trust-ad-4.6.5-11.amzn2.4.7.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ipa-client",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/ipa-client-4.6.5-11.amzn2.4.7.aarch64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "python2-ipaclient",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/python2-ipaclient-4.6.5-11.amzn2.4.7.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "ipa-client-common",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/ipa-client-common-4.6.5-11.amzn2.4.7.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "ipa-python-compat",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/ipa-python-compat-4.6.5-11.amzn2.4.7.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "python2-ipalib",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/python2-ipalib-4.6.5-11.amzn2.4.7.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "ipa-common",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/ipa-common-4.6.5-11.amzn2.4.7.noarch.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ipa-debuginfo",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/ipa-debuginfo-4.6.5-11.amzn2.4.7.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ipa-server",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/ipa-server-4.6.5-11.amzn2.4.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ipa-server-trust-ad",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/ipa-server-trust-ad-4.6.5-11.amzn2.4.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ipa-client",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/ipa-client-4.6.5-11.amzn2.4.7.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ipa-debuginfo",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/ipa-debuginfo-4.6.5-11.amzn2.4.7.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ipa-server",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/ipa-server-4.6.5-11.amzn2.4.7.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ipa-server-trust-ad",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/ipa-server-trust-ad-4.6.5-11.amzn2.4.7.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ipa-client",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/ipa-client-4.6.5-11.amzn2.4.7.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ipa-debuginfo",
+          "Release": "11.amzn2.4.7",
+          "Version": "4.6.5",
+          "Filename": "Packages/ipa-debuginfo-4.6.5-11.amzn2.4.7.i686.rpm"
+        }
+      ]
+    }
+  }
+}

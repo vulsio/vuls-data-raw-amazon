@@ -1,0 +1,185 @@
+{
+  "ID": "ALAS-2014-458",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2014-458: important priority package update for rpm",
+  "Issued": {
+    "Date": "2014-12-09 07:34"
+  },
+  "Updated": {
+    "Date": "2014-12-10 13:48"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-8118:\n\tIt was found that RPM could encounter an integer overflow, leading to a stack-based overflow, while parsing a crafted CPIO header in the payload section of an RPM file.  This could allow an attacker to modify signed RPM files in such a way that they would execute code chosen by the attacker during package installation.\n1168715: \nCVE-2014-8118 rpm: integer overflow and stack overflow in CPIO header parsing\n\nCVE-2013-6435:\n\tIt was found that RPM wrote file contents to the target installation directory under a temporary name, and verified its cryptographic signature only after the temporary file has been written completely. Under certain conditions, the system interprets the unverified temporary file contents and extracts commands from it. This could allow an attacker to modify signed RPM files in such a way that they would execute code chosen by the attacker during package installation.\n1039811: \nCVE-2013-6435 rpm: race condition during the installation process\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6435",
+        "ID": "CVE-2013-6435",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8118",
+        "ID": "CVE-2014-8118",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rpm-devel",
+          "Release": "2.58.amzn1",
+          "Version": "4.11.2",
+          "Filename": "Packages/rpm-devel-4.11.2-2.58.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rpm-sign",
+          "Release": "2.58.amzn1",
+          "Version": "4.11.2",
+          "Filename": "Packages/rpm-sign-4.11.2-2.58.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rpm-build-libs",
+          "Release": "2.58.amzn1",
+          "Version": "4.11.2",
+          "Filename": "Packages/rpm-build-libs-4.11.2-2.58.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rpm-python",
+          "Release": "2.58.amzn1",
+          "Version": "4.11.2",
+          "Filename": "Packages/rpm-python-4.11.2-2.58.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "rpm-cron",
+          "Release": "2.58.amzn1",
+          "Version": "4.11.2",
+          "Filename": "Packages/rpm-cron-4.11.2-2.58.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rpm",
+          "Release": "2.58.amzn1",
+          "Version": "4.11.2",
+          "Filename": "Packages/rpm-4.11.2-2.58.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rpm-libs",
+          "Release": "2.58.amzn1",
+          "Version": "4.11.2",
+          "Filename": "Packages/rpm-libs-4.11.2-2.58.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "rpm-apidocs",
+          "Release": "2.58.amzn1",
+          "Version": "4.11.2",
+          "Filename": "Packages/rpm-apidocs-4.11.2-2.58.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rpm-debuginfo",
+          "Release": "2.58.amzn1",
+          "Version": "4.11.2",
+          "Filename": "Packages/rpm-debuginfo-4.11.2-2.58.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "rpm-build",
+          "Release": "2.58.amzn1",
+          "Version": "4.11.2",
+          "Filename": "Packages/rpm-build-4.11.2-2.58.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rpm",
+          "Release": "2.58.amzn1",
+          "Version": "4.11.2",
+          "Filename": "Packages/rpm-4.11.2-2.58.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rpm-sign",
+          "Release": "2.58.amzn1",
+          "Version": "4.11.2",
+          "Filename": "Packages/rpm-sign-4.11.2-2.58.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rpm-build-libs",
+          "Release": "2.58.amzn1",
+          "Version": "4.11.2",
+          "Filename": "Packages/rpm-build-libs-4.11.2-2.58.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rpm-devel",
+          "Release": "2.58.amzn1",
+          "Version": "4.11.2",
+          "Filename": "Packages/rpm-devel-4.11.2-2.58.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rpm-python",
+          "Release": "2.58.amzn1",
+          "Version": "4.11.2",
+          "Filename": "Packages/rpm-python-4.11.2-2.58.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rpm-debuginfo",
+          "Release": "2.58.amzn1",
+          "Version": "4.11.2",
+          "Filename": "Packages/rpm-debuginfo-4.11.2-2.58.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rpm-build",
+          "Release": "2.58.amzn1",
+          "Version": "4.11.2",
+          "Filename": "Packages/rpm-build-4.11.2-2.58.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "rpm-libs",
+          "Release": "2.58.amzn1",
+          "Version": "4.11.2",
+          "Filename": "Packages/rpm-libs-4.11.2-2.58.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

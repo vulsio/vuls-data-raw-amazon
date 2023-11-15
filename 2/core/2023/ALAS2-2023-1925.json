@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS2-2023-1925",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-1925: medium priority package update for sysstat",
+  "Issued": {
+    "Date": "2023-01-30 16:02"
+  },
+  "Updated": {
+    "Date": "2023-02-04 18:28"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-39377:\n\tsysstat is a set of system performance tools for the Linux operating system. On 32 bit systems, in versions 9.1.16 and newer but prior to 12.7.1, allocate_structures contains a size_t overflow in sa_common.c. The allocate_structures function insufficiently checks bounds before arithmetic multiplication, allowing for an overflow in the size allocated for the buffer representing system activities. This issue may lead to Remote Code Execution (RCE). This issue has been patched in version 12.7.1.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-39377",
+        "ID": "CVE-2022-39377",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sysstat",
+          "Release": "18.amzn2.0.2",
+          "Version": "10.1.5",
+          "Filename": "Packages/sysstat-10.1.5-18.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "sysstat-debuginfo",
+          "Release": "18.amzn2.0.2",
+          "Version": "10.1.5",
+          "Filename": "Packages/sysstat-debuginfo-10.1.5-18.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sysstat",
+          "Release": "18.amzn2.0.2",
+          "Version": "10.1.5",
+          "Filename": "Packages/sysstat-10.1.5-18.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "sysstat-debuginfo",
+          "Release": "18.amzn2.0.2",
+          "Version": "10.1.5",
+          "Filename": "Packages/sysstat-debuginfo-10.1.5-18.amzn2.0.2.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "sysstat",
+          "Release": "18.amzn2.0.2",
+          "Version": "10.1.5",
+          "Filename": "Packages/sysstat-10.1.5-18.amzn2.0.2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "sysstat-debuginfo",
+          "Release": "18.amzn2.0.2",
+          "Version": "10.1.5",
+          "Filename": "Packages/sysstat-debuginfo-10.1.5-18.amzn2.0.2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

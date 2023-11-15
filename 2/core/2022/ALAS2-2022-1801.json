@@ -1,0 +1,179 @@
+{
+  "ID": "ALAS2-2022-1801",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2022-1801: medium priority package update for openssl",
+  "Issued": {
+    "Date": "2022-05-31 23:50"
+  },
+  "Updated": {
+    "Date": "2022-06-07 19:26"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-1292:\n\tThe c_rehash script does not properly sanitise shell metacharacters to prevent command injection. This script is distributed by some operating systems in a manner where it is automatically executed. On such operating systems, an attacker could execute arbitrary commands with the privileges of the script. Use of the c_rehash script is considered obsolete and should be replaced by the OpenSSL rehash command line tool. Fixed in OpenSSL 3.0.3 (Affected 3.0.0,3.0.1,3.0.2). Fixed in OpenSSL 1.1.1o (Affected 1.1.1-1.1.1n). Fixed in OpenSSL 1.0.2ze (Affected 1.0.2-1.0.2zd).\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1292",
+        "ID": "CVE-2022-1292",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl",
+          "Release": "24.amzn2.0.3",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-1.0.2k-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl-libs",
+          "Release": "24.amzn2.0.3",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-libs-1.0.2k-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl-devel",
+          "Release": "24.amzn2.0.3",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-devel-1.0.2k-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl-static",
+          "Release": "24.amzn2.0.3",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-static-1.0.2k-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl-perl",
+          "Release": "24.amzn2.0.3",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-perl-1.0.2k-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "1",
+          "Name": "openssl-debuginfo",
+          "Release": "24.amzn2.0.3",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-debuginfo-1.0.2k-24.amzn2.0.3.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl",
+          "Release": "24.amzn2.0.3",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-1.0.2k-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl-libs",
+          "Release": "24.amzn2.0.3",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-libs-1.0.2k-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl-devel",
+          "Release": "24.amzn2.0.3",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-devel-1.0.2k-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl-static",
+          "Release": "24.amzn2.0.3",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-static-1.0.2k-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl-perl",
+          "Release": "24.amzn2.0.3",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-perl-1.0.2k-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "1",
+          "Name": "openssl-debuginfo",
+          "Release": "24.amzn2.0.3",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-debuginfo-1.0.2k-24.amzn2.0.3.i686.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "openssl",
+          "Release": "24.amzn2.0.3",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-1.0.2k-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "openssl-libs",
+          "Release": "24.amzn2.0.3",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-libs-1.0.2k-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "openssl-devel",
+          "Release": "24.amzn2.0.3",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-devel-1.0.2k-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "openssl-static",
+          "Release": "24.amzn2.0.3",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-static-1.0.2k-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "openssl-perl",
+          "Release": "24.amzn2.0.3",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-perl-1.0.2k-24.amzn2.0.3.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "1",
+          "Name": "openssl-debuginfo",
+          "Release": "24.amzn2.0.3",
+          "Version": "1.0.2k",
+          "Filename": "Packages/openssl-debuginfo-1.0.2k-24.amzn2.0.3.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

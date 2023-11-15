@@ -1,0 +1,83 @@
+{
+  "ID": "ALAS2-2018-1022",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2018-1022: medium priority package update for ghostscript",
+  "Issued": {
+    "Date": "2018-05-24 18:11"
+  },
+  "Updated": {
+    "Date": "2018-05-29 23:19"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-10194:\n\tThe set_text_distance function in devices/vector/gdevpdts.c in the pdfwrite component in Artifex Ghostscript through 9.22 does not prevent overflows in text-positioning calculation, which allows remote attackers to cause a denial of service (application crash) or possibly have unspecified other impact via a crafted PDF document.\n1569108: \nCVE-2018-10194 ghostscript: Stack-based out-of-bounds write in pdf_set_text_matrix function in gdevpdts.c\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-10194",
+        "ID": "CVE-2018-10194",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ghostscript",
+          "Release": "2.amzn2.0.2",
+          "Version": "9.06",
+          "Filename": "Packages/ghostscript-9.06-2.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ghostscript-devel",
+          "Release": "2.amzn2.0.2",
+          "Version": "9.06",
+          "Filename": "Packages/ghostscript-devel-9.06-2.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "ghostscript-doc",
+          "Release": "2.amzn2.0.2",
+          "Version": "9.06",
+          "Filename": "Packages/ghostscript-doc-9.06-2.amzn2.0.2.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ghostscript-gtk",
+          "Release": "2.amzn2.0.2",
+          "Version": "9.06",
+          "Filename": "Packages/ghostscript-gtk-9.06-2.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ghostscript-cups",
+          "Release": "2.amzn2.0.2",
+          "Version": "9.06",
+          "Filename": "Packages/ghostscript-cups-9.06-2.amzn2.0.2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ghostscript-debuginfo",
+          "Release": "2.amzn2.0.2",
+          "Version": "9.06",
+          "Filename": "Packages/ghostscript-debuginfo-9.06-2.amzn2.0.2.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

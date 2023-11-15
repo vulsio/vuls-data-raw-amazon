@@ -1,0 +1,51 @@
+{
+  "ID": "ALAS2-2018-985",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2018-985: medium priority package update for mailman",
+  "Issued": {
+    "Date": "2018-04-05 16:09"
+  },
+  "Updated": {
+    "Date": "2018-04-05 23:23"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-5950:\n\tA cross-site scripting (XSS) flaw was found in mailman. An attacker, able to trick the user into visiting a specific URL, can execute arbitrary web scripts on the user&#039;s side and force the victim to perform unintended actions.\n1537941: \nCVE-2018-5950 mailman: Cross-site scripting (XSS) vulnerability in web UI\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5950",
+        "ID": "CVE-2018-5950",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mailman",
+          "Release": "26.amzn2.1",
+          "Version": "2.1.15",
+          "Filename": "Packages/mailman-2.1.15-26.amzn2.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "3",
+          "Name": "mailman-debuginfo",
+          "Release": "26.amzn2.1",
+          "Version": "2.1.15",
+          "Filename": "Packages/mailman-debuginfo-2.1.15-26.amzn2.1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

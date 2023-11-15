@@ -1,0 +1,479 @@
+{
+  "ID": "ALAS2PHP8.2-2023-002",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 - Php8.2 2.0 - ALAS2PHP8.2-2023-002: important priority package update for php",
+  "Issued": {
+    "Date": "2023-09-06 19:00"
+  },
+  "Updated": {
+    "Date": "2023-09-13 19:31"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 - Php8.2 that fix the following vulnerabilities:\nCVE-2023-3824:\n\tIn PHP version 8.0.* before 8.0.30,  8.1.* before 8.1.22, and 8.2.* before 8.2.8, when loading phar file, while reading PHAR directory entries, insufficient length checking may lead to a stack buffer overflow, leading potentially to memory corruption or RCE.\n\nCVE-2023-3823:\n\tIn PHP versions 8.0.* before 8.0.30, 8.1.* before 8.1.22, and 8.2.* before 8.2.8 various XML functions rely on libxml global state to track configuration variables, like whether external entities are loaded. This state is assumed to be unchanged unless the user explicitly changes it by calling appropriate function. However, since the state is process-global, other modules - such as ImageMagick - may also use this library within the same process, and change that global state for their internal purposes, and leave it in a state where external entities loading is enabled. This can lead to the situation where external XML is parsed with external entities loaded, which can lead to disclosure of any local files accessible to PHP. This vulnerable state may persist in the same process across many requests, until the process is shut down.\n\nCVE-2023-3247:\n\tGHSA-76gg-c692-v2mw: Missing error check and insufficient random bytes in HTTP Digest authentication for SOAP\n\nNOTE: Fixed in 8.2.7, 8.1.20, 8.0.29\nNOTE: https://github.com/php/php-src/security/advisories/GHSA-76gg-c692-v2mw\nNOTE: https://github.com/php/php-src/commit/ac4254ad764c70cb1f05c9270d8d12689fc3aeb6 (php-8.0.29)\nNOTE: https://github.com/php/php-src/commit/32c7c433ac1983c4497349051681a4f361d3d33e (php-8.0.29)\nADVISORIES: ['DSA-5425-1', 'DSA-5424-1']\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3247",
+        "ID": "CVE-2023-3247",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3823",
+        "ID": "CVE-2023-3823",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3824",
+        "ID": "CVE-2023-3824",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2---php8.2",
+      "Name": "Amazon Linux 2 - Php8.2",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-cli",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-cli-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-dbg",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-dbg-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-fpm",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-fpm-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-common",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-common-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-devel",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-devel-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-opcache",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-opcache-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-ldap",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-ldap-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-pdo",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-pdo-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-mysqlnd",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-mysqlnd-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-pgsql",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-pgsql-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-process",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-process-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-odbc",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-odbc-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-soap",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-soap-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-snmp",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-snmp-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-xml",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-xml-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-mbstring",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-mbstring-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-gd",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-gd-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-bcmath",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-bcmath-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-gmp",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-gmp-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-dba",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-dba-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-embedded",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-embedded-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-pspell",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-pspell-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-intl",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-intl-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-enchant",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-enchant-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-sodium",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-sodium-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "php-debuginfo",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-debuginfo-8.2.9-1.amzn2.x86_64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-cli",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-cli-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-dbg",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-dbg-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-fpm",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-fpm-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-common",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-common-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-devel",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-devel-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-opcache",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-opcache-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-ldap",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-ldap-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-pdo",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-pdo-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-mysqlnd",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-mysqlnd-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-pgsql",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-pgsql-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-process",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-process-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-odbc",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-odbc-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-soap",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-soap-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-snmp",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-snmp-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-xml",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-xml-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-mbstring",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-mbstring-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-gd",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-gd-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-bcmath",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-bcmath-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-gmp",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-gmp-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-dba",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-dba-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-embedded",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-embedded-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-pspell",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-pspell-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-intl",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-intl-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-enchant",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-enchant-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-sodium",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-sodium-8.2.9-1.amzn2.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "php-debuginfo",
+          "Release": "1.amzn2",
+          "Version": "8.2.9",
+          "Filename": "Packages/php-debuginfo-8.2.9-1.amzn2.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

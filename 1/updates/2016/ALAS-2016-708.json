@@ -1,0 +1,117 @@
+{
+  "ID": "ALAS-2016-708",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-708: medium priority package update for ntp",
+  "Issued": {
+    "Date": "2016-06-02 18:06"
+  },
+  "Updated": {
+    "Date": "2016-06-03 19:44"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-2518:\n\tAn out-of-bounds access flaw was found in the way ntpd processed certain packets. An authenticated attacker could use a crafted packet to create a peer association with hmode of 7 and larger, which could potentially (although highly unlikely) cause ntpd to crash.\n1331468: \nCVE-2016-2518 ntp: out-of-bounds references on crafted packet\n\nCVE-2016-2516:\n\t1331466: \nCVE-2016-2516 ntp: assertion failure in ntpd on duplicate IPs on unconfig directives\n\nCVE-2016-1550:\n\tA flaw was found in the way NTP&#039;s libntp performed message authentication. An attacker able to observe the timing of the comparison function used in packet authentication could potentially use this flaw to recover the message digest.\n1331464: \nCVE-2016-1550 ntp: libntp message digest disclosure\n\nCVE-2016-1548:\n\tIt was found that an ntpd client could be forced to change from basic client/server mode to the interleaved symmetric mode. A remote attacker could use a spoofed packet that, when processed by an ntpd client, would cause that client to reject all future legitimate server responses, effectively disabling time synchronization on that client.\n1331462: \nCVE-2016-1548 ntp: ntpd switching to interleaved mode with spoofed packets\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1548",
+        "ID": "CVE-2016-1548",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1550",
+        "ID": "CVE-2016-1550",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2516",
+        "ID": "CVE-2016-2516",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2518",
+        "ID": "CVE-2016-2518",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "ntp-doc",
+          "Release": "40.30.amzn1",
+          "Version": "4.2.6p5",
+          "Filename": "Packages/ntp-doc-4.2.6p5-40.30.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ntp-debuginfo",
+          "Release": "40.30.amzn1",
+          "Version": "4.2.6p5",
+          "Filename": "Packages/ntp-debuginfo-4.2.6p5-40.30.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ntp",
+          "Release": "40.30.amzn1",
+          "Version": "4.2.6p5",
+          "Filename": "Packages/ntp-4.2.6p5-40.30.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ntpdate",
+          "Release": "40.30.amzn1",
+          "Version": "4.2.6p5",
+          "Filename": "Packages/ntpdate-4.2.6p5-40.30.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "0",
+          "Name": "ntp-perl",
+          "Release": "40.30.amzn1",
+          "Version": "4.2.6p5",
+          "Filename": "Packages/ntp-perl-4.2.6p5-40.30.amzn1.noarch.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ntp-debuginfo",
+          "Release": "40.30.amzn1",
+          "Version": "4.2.6p5",
+          "Filename": "Packages/ntp-debuginfo-4.2.6p5-40.30.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ntpdate",
+          "Release": "40.30.amzn1",
+          "Version": "4.2.6p5",
+          "Filename": "Packages/ntpdate-4.2.6p5-40.30.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "ntp",
+          "Release": "40.30.amzn1",
+          "Version": "4.2.6p5",
+          "Filename": "Packages/ntp-4.2.6p5-40.30.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

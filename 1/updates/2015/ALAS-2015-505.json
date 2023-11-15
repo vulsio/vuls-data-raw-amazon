@@ -1,0 +1,95 @@
+{
+  "ID": "ALAS-2015-505",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-505: important priority package update for flac",
+  "Issued": {
+    "Date": "2015-04-15 21:48"
+  },
+  "Updated": {
+    "Date": "2015-04-15 22:16"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-9028:\n\tA buffer overflow flaw was found in the way flac decoded FLAC audio files. An attacker could create a specially crafted FLAC audio file that could cause an application using the flac library to crash or execute arbitrary code when the file was read.\n\nCVE-2014-8962:\n\tA buffer over-read flaw was found in the way flac processed certain ID3v2 metadata. An attacker could create a specially crafted FLAC audio file that could cause an application using the flac library to crash when the file was read.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8962",
+        "ID": "CVE-2014-8962",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9028",
+        "ID": "CVE-2014-9028",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2015:0767.html",
+        "ID": "RHSA-2015:0767",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "flac-devel",
+          "Release": "7.7.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/flac-devel-1.2.1-7.7.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "flac",
+          "Release": "7.7.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/flac-1.2.1-7.7.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "flac-debuginfo",
+          "Release": "7.7.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/flac-debuginfo-1.2.1-7.7.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "flac",
+          "Release": "7.7.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/flac-1.2.1-7.7.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "flac-devel",
+          "Release": "7.7.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/flac-devel-1.2.1-7.7.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "flac-debuginfo",
+          "Release": "7.7.amzn1",
+          "Version": "1.2.1",
+          "Filename": "Packages/flac-debuginfo-1.2.1-7.7.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

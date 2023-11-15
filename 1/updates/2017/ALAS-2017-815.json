@@ -1,0 +1,139 @@
+{
+  "ID": "ALAS-2017-815",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-815: medium priority package update for gnutls",
+  "Issued": {
+    "Date": "2017-04-06 21:21"
+  },
+  "Updated": {
+    "Date": "2017-04-17 16:36"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-5337:\n\t* Multiple flaws were found in the way gnutls processed OpenPGP certificates. An attacker could create specially crafted OpenPGP certificates which, when parsed by gnutls, would cause it to crash.\n\nCVE-2017-5336:\n\t* Multiple flaws were found in the way gnutls processed OpenPGP certificates. An attacker could create specially crafted OpenPGP certificates which, when parsed by gnutls, would cause it to crash.\n\nCVE-2017-5335:\n\t* Multiple flaws were found in the way gnutls processed OpenPGP certificates. An attacker could create specially crafted OpenPGP certificates which, when parsed by gnutls, would cause it to crash.\n\nCVE-2016-8610:\n\t* A denial of service flaw was found in the way the TLS/SSL protocol defined processing of ALERT packets during a connection handshake. A remote attacker could use this flaw to make a TLS/SSL server consume an excessive amount of CPU and fail to accept connections form other clients.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8610",
+        "ID": "CVE-2016-8610",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5335",
+        "ID": "CVE-2017-5335",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5336",
+        "ID": "CVE-2017-5336",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5337",
+        "ID": "CVE-2017-5337",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2017:0574.html",
+        "ID": "RHSA-2017:0574",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "gnutls-guile",
+          "Release": "21.18.amzn1",
+          "Version": "2.12.23",
+          "Filename": "Packages/gnutls-guile-2.12.23-21.18.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "gnutls-debuginfo",
+          "Release": "21.18.amzn1",
+          "Version": "2.12.23",
+          "Filename": "Packages/gnutls-debuginfo-2.12.23-21.18.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "gnutls-devel",
+          "Release": "21.18.amzn1",
+          "Version": "2.12.23",
+          "Filename": "Packages/gnutls-devel-2.12.23-21.18.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "gnutls-utils",
+          "Release": "21.18.amzn1",
+          "Version": "2.12.23",
+          "Filename": "Packages/gnutls-utils-2.12.23-21.18.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "gnutls",
+          "Release": "21.18.amzn1",
+          "Version": "2.12.23",
+          "Filename": "Packages/gnutls-2.12.23-21.18.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "gnutls",
+          "Release": "21.18.amzn1",
+          "Version": "2.12.23",
+          "Filename": "Packages/gnutls-2.12.23-21.18.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "gnutls-devel",
+          "Release": "21.18.amzn1",
+          "Version": "2.12.23",
+          "Filename": "Packages/gnutls-devel-2.12.23-21.18.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "gnutls-guile",
+          "Release": "21.18.amzn1",
+          "Version": "2.12.23",
+          "Filename": "Packages/gnutls-guile-2.12.23-21.18.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "gnutls-utils",
+          "Release": "21.18.amzn1",
+          "Version": "2.12.23",
+          "Filename": "Packages/gnutls-utils-2.12.23-21.18.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "gnutls-debuginfo",
+          "Release": "21.18.amzn1",
+          "Version": "2.12.23",
+          "Filename": "Packages/gnutls-debuginfo-2.12.23-21.18.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

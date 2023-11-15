@@ -1,0 +1,771 @@
+{
+  "ID": "ALAS2-2019-1274",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1274: important priority package update for libvirt",
+  "Issued": {
+    "Date": "2019-08-23 03:34"
+  },
+  "Updated": {
+    "Date": "2019-08-27 21:30"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2019-11091:\n\tUncacheable memory on some microprocessors utilizing speculative execution may allow an authenticated user to potentially enable information disclosure via a side channel with local access.\n1705312: \nCVE-2019-11091 hardware: Microarchitectural Data Sampling Uncacheable Memory (MDSUM)\n\nCVE-2019-10168:\n\tThe virConnectBaselineHypervisorCPU() and virConnectCompareHypervisorCPU() libvirt APIs accept an &quot;emulator&quot; argument to specify the program providing emulation for a domain. Since v1.2.19, libvirt will execute that program to probe the domain&#039;s capabilities. Read-only clients could specify an arbitrary path for this argument, causing libvirtd to execute a crafted executable with its own privileges.\n1720118: \nCVE-2019-10168 libvirt: arbitrary command execution via virConnectBaselineHypervisorCPU and virConnectCompareHypervisorCPU APIs\n\nCVE-2019-10167:\n\tThe virConnectGetDomainCapabilities() libvirt API accepts an &quot;emulatorbin&quot; argument to specify the program providing emulation for a domain. Since v1.2.19, libvirt will execute that program to probe the domain&#039;s capabilities. Read-only clients could specify an arbitrary path for this argument, causing libvirtd to execute a crafted executable with its own privileges.\n1720117: \nCVE-2019-10167 libvirt: arbitrary command execution via virConnectGetDomainCapabilities API\n\nCVE-2019-10166:\n\tIt was discovered that libvirtd would permit readonly clients to use the virDomainManagedSaveDefineXML() API, which would permit them to modify managed save state files. If a managed save had already been created by a privileged user, a local attacker could modify this file such that libvirtd would execute an arbitrary program when the domain was resumed.\n1720114: \nCVE-2019-10166 libvirt: virDomainManagedSaveDefineXML API exposed to readonly clients\n\nCVE-2019-10161:\n\tIt was discovered that libvirtd would permit read-only clients to use the virDomainSaveImageGetXMLDesc() API, specifying an arbitrary path which would be accessed with the permissions of the libvirtd process. An attacker with access to the libvirtd socket could use this to probe the existence of arbitrary files, cause denial of service or cause libvirtd to execute arbitrary programs.\n1720115: \nCVE-2019-10161 libvirt: arbitrary file read/exec via virDomainSaveImageGetXMLDesc API\n\nCVE-2019-10132:\n\tA vulnerability was found in libvirt &gt;= 4.1.0 in the virtlockd-admin.socket and virtlogd-admin.socket systemd units. A missing SocketMode configuration parameter allows any user on the host to connect using virtlockd-admin-sock or virtlogd-admin-sock and perform administrative tasks against the virtlockd and virtlogd daemons.\n1706067: \nCVE-2019-10132 libvirt: wrong permissions in systemd admin-sock due to missing SocketMode parameter\n\nCVE-2018-12130:\n\tA flaw was found in the implementation of the &quot;fill buffer&quot;, a mechanism used by modern CPUs when a cache-miss is made on L1 CPU cache. If an attacker can generate a load operation that would create a page fault, the execution will continue speculatively with incorrect data from the fill buffer while the data is fetched from higher level caches. This response time can be measured to infer data in the fill buffer.\n1646784: \nCVE-2018-12130 hardware: Microarchitectural Fill Buffer Data Sampling (MFBDS)\n\nCVE-2018-12127:\n\tMicroprocessors use a load port subcomponent to perform load operations from memory or IO. During a load operation, the load port receives data from the memory or IO subsystem and then provides the data to the CPU registers and operations in the CPUs pipelines. Stale load operations results are stored in the &#039;load port&#039; table until overwritten by newer operations. Certain load-port operations triggered by an attacker can be used to reveal data about previous stale requests leaking data back to the attacker via a timing side-channel.\n1667782: \nCVE-2018-12127 hardware: Micro-architectural Load Port Data Sampling - Information Leak (MLPDS)\n\nCVE-2018-12126:\n\tModern Intel microprocessors implement hardware-level micro-optimizations to improve the performance of writing data back to CPU caches. The write operation is split into STA (STore Address) and STD (STore Data) sub-operations. These sub-operations allow the processor to hand-off address generation logic into these sub-operations for optimized writes. Both of these sub-operations write to a shared distributed processor structure called the &#039;processor store buffer&#039;. As a result, an unprivileged attacker could use this flaw to read private data resident within the CPU&#039;s processor store buffer.\n1646781: \nCVE-2018-12126 hardware: Microarchitectural Store Buffer Data Sampling (MSBDS)\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12126",
+        "ID": "CVE-2018-12126",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12127",
+        "ID": "CVE-2018-12127",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12130",
+        "ID": "CVE-2018-12130",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10132",
+        "ID": "CVE-2019-10132",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10161",
+        "ID": "CVE-2019-10161",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10166",
+        "ID": "CVE-2019-10166",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10167",
+        "ID": "CVE-2019-10167",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-10168",
+        "ID": "CVE-2019-10168",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11091",
+        "ID": "CVE-2019-11091",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2",
+      "Name": "Amazon Linux 2",
+      "Package": [
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-docs",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-docs-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-config-network",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-config-network-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-config-nwfilter",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-config-nwfilter-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-network",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-network-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-nwfilter",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-nwfilter-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-nodedev",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-nodedev-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-interface",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-interface-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-secret",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-secret-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-core",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-core-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-logical",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-logical-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-disk",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-disk-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-scsi",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-scsi-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-iscsi",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-iscsi-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-mpath",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-mpath-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-lxc",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-lxc-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-lxc",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-lxc-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-client",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-client-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-libs",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-libs-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-admin",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-admin-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-bash-completion",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-bash-completion-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-login-shell",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-login-shell-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-devel",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-devel-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-nss",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-nss-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "libvirt-debuginfo",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-debuginfo-4.5.0-10.amzn2.12.1.aarch64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-docs",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-docs-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-config-network",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-config-network-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-config-nwfilter",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-config-nwfilter-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-network",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-network-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-nwfilter",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-nwfilter-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-nodedev",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-nodedev-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-interface",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-interface-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-secret",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-secret-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-core",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-core-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-logical",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-logical-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-disk",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-disk-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-scsi",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-scsi-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-iscsi",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-iscsi-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-mpath",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-mpath-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-gluster",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-gluster-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-rbd",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-rbd-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-qemu",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-qemu-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-lxc",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-lxc-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-kvm",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-kvm-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-lxc",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-lxc-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-client",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-client-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-libs",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-libs-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-admin",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-admin-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-bash-completion",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-bash-completion-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-login-shell",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-login-shell-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-devel",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-devel-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-lock-sanlock",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-lock-sanlock-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-nss",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-nss-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "libvirt-debuginfo",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-debuginfo-4.5.0-10.amzn2.12.1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-docs",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-docs-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-daemon",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-config-network",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-config-network-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-config-nwfilter",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-config-nwfilter-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-network",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-network-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-nwfilter",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-nwfilter-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-nodedev",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-nodedev-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-interface",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-interface-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-secret",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-secret-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-core",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-core-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-logical",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-logical-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-disk",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-disk-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-scsi",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-scsi-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-iscsi",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-iscsi-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage-mpath",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-mpath-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-storage",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-storage-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-driver-lxc",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-driver-lxc-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-daemon-lxc",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-daemon-lxc-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-client",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-client-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-libs",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-libs-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-admin",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-admin-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-bash-completion",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-bash-completion-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-login-shell",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-login-shell-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-devel",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-devel-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-nss",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-nss-4.5.0-10.amzn2.12.1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "libvirt-debuginfo",
+          "Release": "10.amzn2.12.1",
+          "Version": "4.5.0",
+          "Filename": "Packages/libvirt-debuginfo-4.5.0-10.amzn2.12.1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

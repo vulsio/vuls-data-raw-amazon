@@ -1,0 +1,111 @@
+{
+  "ID": "ALAS-2013-250",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-250: low priority package update for augeas",
+  "Issued": {
+    "Date": "2013-12-02 20:28"
+  },
+  "Updated": {
+    "Date": "2014-09-16 21:55"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2012-0787:\n\tMultiple flaws were found in the way Augeas handled configuration files when updating them. An application using Augeas to update configuration files in a directory that is writable to by a different user (for example, an application running as root that is updating files in a directory owned by a non-root service user) could have been tricked into overwriting arbitrary files or leaking information via a symbolic link or mount point attack.\n\nCVE-2012-0786:\n\tMultiple flaws were found in the way Augeas handled configuration files when updating them. An application using Augeas to update configuration files in a directory that is writable to by a different user (for example, an application running as root that is updating files in a directory owned by a non-root service user) could have been tricked into overwriting arbitrary files or leaking information via a symbolic link or mount point attack.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0786",
+        "ID": "CVE-2012-0786",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0787",
+        "ID": "CVE-2012-0787",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2013:1537.html",
+        "ID": "RHSA-2013:1537",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "augeas-devel",
+          "Release": "5.5.amzn1",
+          "Version": "1.0.0",
+          "Filename": "Packages/augeas-devel-1.0.0-5.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "augeas",
+          "Release": "5.5.amzn1",
+          "Version": "1.0.0",
+          "Filename": "Packages/augeas-1.0.0-5.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "augeas-debuginfo",
+          "Release": "5.5.amzn1",
+          "Version": "1.0.0",
+          "Filename": "Packages/augeas-debuginfo-1.0.0-5.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "augeas-libs",
+          "Release": "5.5.amzn1",
+          "Version": "1.0.0",
+          "Filename": "Packages/augeas-libs-1.0.0-5.5.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "augeas-libs",
+          "Release": "5.5.amzn1",
+          "Version": "1.0.0",
+          "Filename": "Packages/augeas-libs-1.0.0-5.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "augeas-debuginfo",
+          "Release": "5.5.amzn1",
+          "Version": "1.0.0",
+          "Filename": "Packages/augeas-debuginfo-1.0.0-5.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "augeas",
+          "Release": "5.5.amzn1",
+          "Version": "1.0.0",
+          "Filename": "Packages/augeas-1.0.0-5.5.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "augeas-devel",
+          "Release": "5.5.amzn1",
+          "Version": "1.0.0",
+          "Filename": "Packages/augeas-devel-1.0.0-5.5.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

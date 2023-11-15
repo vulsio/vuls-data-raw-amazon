@@ -1,0 +1,111 @@
+{
+  "ID": "ALAS2023-2023-176",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2023 - ALAS2023-2023-176: Important priority package update for tomcat9",
+  "Issued": {
+    "Date": "2023-04-27 20:00:00"
+  },
+  "Updated": {
+    "Date": "2023-05-03 13:22:00"
+  },
+  "Severity": "Important",
+  "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-28708:\n\tWhen using the RemoteIpFilter with requests received from a reverse proxy via HTTP that include the X-Forwarded-Proto header set to https, session cookies created by Apache Tomcat 11.0.0-M1 to 11.0.0.-M2, 10.1.0-M1 to 10.1.5, 9.0.0-M1 to 9.0.71 and 8.5.0 to 8.5.85 did not include the secure attribute. This could result in the user agent transmitting the session cookie over an insecure channel.\n\nCVE-2022-45143:\n\tThe JsonErrorReportValve in Apache Tomcat 8.5.83, 9.0.40 to 9.0.68 and 10.1.0-M1 to 10.1.1 did not escape the type, message or description values. In some circumstances these are constructed from user provided data and it was therefore possible for users to supply values that invalidated or manipulated the JSON output.\n\nCVE-2021-43980:\n\tThe simplified implementation of blocking reads and writes introduced in Tomcat 10 and back-ported to Tomcat 9.0.47 onwards exposed a long standing (but extremely hard to trigger) concurrency bug in Apache Tomcat 10.1.0 to 10.1.0-M12, 10.0.0-M1 to 10.0.18, 9.0.0-M1 to 9.0.60 and 8.5.0 to 8.5.77 that could cause client connections to share an Http11Processor instance resulting in responses, or part responses, to be received by the wrong client.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43980",
+        "ID": "CVE-2021-43980",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45143",
+        "ID": "CVE-2022-45143",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28708",
+        "ID": "CVE-2023-28708",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2023",
+      "Name": "Amazon Linux 2023",
+      "Package": [
+        {
+          "Arch": "noarch",
+          "Epoch": "1",
+          "Name": "tomcat9-lib",
+          "Release": "1.amzn2023.0.2",
+          "Version": "9.0.71",
+          "Filename": "Packages/tomcat9-lib-9.0.71-1.amzn2023.0.2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "1",
+          "Name": "tomcat9-admin-webapps",
+          "Release": "1.amzn2023.0.2",
+          "Version": "9.0.71",
+          "Filename": "Packages/tomcat9-admin-webapps-9.0.71-1.amzn2023.0.2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "1",
+          "Name": "tomcat9-jsp-2.3-api",
+          "Release": "1.amzn2023.0.2",
+          "Version": "9.0.71",
+          "Filename": "Packages/tomcat9-jsp-2.3-api-9.0.71-1.amzn2023.0.2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "1",
+          "Name": "tomcat9-el-3.0-api",
+          "Release": "1.amzn2023.0.2",
+          "Version": "9.0.71",
+          "Filename": "Packages/tomcat9-el-3.0-api-9.0.71-1.amzn2023.0.2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "1",
+          "Name": "tomcat9-webapps",
+          "Release": "1.amzn2023.0.2",
+          "Version": "9.0.71",
+          "Filename": "Packages/tomcat9-webapps-9.0.71-1.amzn2023.0.2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "1",
+          "Name": "tomcat9-docs-webapp",
+          "Release": "1.amzn2023.0.2",
+          "Version": "9.0.71",
+          "Filename": "Packages/tomcat9-docs-webapp-9.0.71-1.amzn2023.0.2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "1",
+          "Name": "tomcat9-servlet-4.0-api",
+          "Release": "1.amzn2023.0.2",
+          "Version": "9.0.71",
+          "Filename": "Packages/tomcat9-servlet-4.0-api-9.0.71-1.amzn2023.0.2.noarch.rpm"
+        },
+        {
+          "Arch": "noarch",
+          "Epoch": "1",
+          "Name": "tomcat9",
+          "Release": "1.amzn2023.0.2",
+          "Version": "9.0.71",
+          "Filename": "Packages/tomcat9-9.0.71-1.amzn2023.0.2.noarch.rpm"
+        }
+      ]
+    }
+  }
+}

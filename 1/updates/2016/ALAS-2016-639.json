@@ -1,0 +1,67 @@
+{
+  "ID": "ALAS-2016-639",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-639: low priority package update for grep",
+  "Issued": {
+    "Date": "2016-01-18 11:00"
+  },
+  "Updated": {
+    "Date": "2016-01-18 11:00"
+  },
+  "Severity": "low",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-1345:\n\tA heap-based buffer overflow flaw was found in the way grep processed certain pattern and text combinations. An attacker able to trick a user into running grep on specially crafted input could use this flaw to crash grep or, potentially, read from uninitialized memory.\n1183651: \nCVE-2015-1345 grep: heap buffer overrun\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1345",
+        "ID": "CVE-2015-1345",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "grep-debuginfo",
+          "Release": "1.16.amzn1",
+          "Version": "2.20",
+          "Filename": "Packages/grep-debuginfo-2.20-1.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "grep",
+          "Release": "1.16.amzn1",
+          "Version": "2.20",
+          "Filename": "Packages/grep-2.20-1.16.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "grep-debuginfo",
+          "Release": "1.16.amzn1",
+          "Version": "2.20",
+          "Filename": "Packages/grep-debuginfo-2.20-1.16.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "grep",
+          "Release": "1.16.amzn1",
+          "Version": "2.20",
+          "Filename": "Packages/grep-2.20-1.16.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}

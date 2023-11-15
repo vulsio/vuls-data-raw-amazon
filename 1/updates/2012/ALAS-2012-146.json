@@ -1,0 +1,153 @@
+{
+  "ID": "ALAS-2012-146",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux - ALAS-2012-146: important priority package update for bind",
+  "Issued": {
+    "Date": "2012-12-07 09:28"
+  },
+  "Updated": {
+    "Date": "2014-09-14 17:19"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-5688:\n\tISC BIND 9.8.x before 9.8.4-P1 and 9.9.x before 9.9.2-P1, when DNS64 is enabled, allows remote attackers to cause a denial of service (assertion failure and daemon exit) via a crafted query.\nA flaw was found in the DNS64 implementation in BIND. If a remote attacker sent a specially-crafted query to a named server, named could exit unexpectedly with an assertion failure. Note that DNS64 support is not enabled by default.\n883533: \nCVE-2012-5688 bind: DoS on servers using DNS64\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-5688",
+        "ID": "CVE-2012-5688",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "https://rhn.redhat.com/errata/RHSA-2012:1549.html",
+        "ID": "RHSA-2012:1549",
+        "Title": "",
+        "Type": "redhat"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux",
+      "Name": "Amazon Linux",
+      "Package": [
+        {
+          "Arch": "i686",
+          "Epoch": "32",
+          "Name": "bind-chroot",
+          "Release": "0.10.rc1.26.amzn1",
+          "Version": "9.8.2",
+          "Filename": "Packages/bind-chroot-9.8.2-0.10.rc1.26.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "32",
+          "Name": "bind-devel",
+          "Release": "0.10.rc1.26.amzn1",
+          "Version": "9.8.2",
+          "Filename": "Packages/bind-devel-9.8.2-0.10.rc1.26.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "32",
+          "Name": "bind-sdb",
+          "Release": "0.10.rc1.26.amzn1",
+          "Version": "9.8.2",
+          "Filename": "Packages/bind-sdb-9.8.2-0.10.rc1.26.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "32",
+          "Name": "bind-utils",
+          "Release": "0.10.rc1.26.amzn1",
+          "Version": "9.8.2",
+          "Filename": "Packages/bind-utils-9.8.2-0.10.rc1.26.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "32",
+          "Name": "bind",
+          "Release": "0.10.rc1.26.amzn1",
+          "Version": "9.8.2",
+          "Filename": "Packages/bind-9.8.2-0.10.rc1.26.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "32",
+          "Name": "bind-libs",
+          "Release": "0.10.rc1.26.amzn1",
+          "Version": "9.8.2",
+          "Filename": "Packages/bind-libs-9.8.2-0.10.rc1.26.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "32",
+          "Name": "bind-debuginfo",
+          "Release": "0.10.rc1.26.amzn1",
+          "Version": "9.8.2",
+          "Filename": "Packages/bind-debuginfo-9.8.2-0.10.rc1.26.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "32",
+          "Name": "bind-debuginfo",
+          "Release": "0.10.rc1.26.amzn1",
+          "Version": "9.8.2",
+          "Filename": "Packages/bind-debuginfo-9.8.2-0.10.rc1.26.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "32",
+          "Name": "bind-sdb",
+          "Release": "0.10.rc1.26.amzn1",
+          "Version": "9.8.2",
+          "Filename": "Packages/bind-sdb-9.8.2-0.10.rc1.26.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "32",
+          "Name": "bind-libs",
+          "Release": "0.10.rc1.26.amzn1",
+          "Version": "9.8.2",
+          "Filename": "Packages/bind-libs-9.8.2-0.10.rc1.26.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "32",
+          "Name": "bind-chroot",
+          "Release": "0.10.rc1.26.amzn1",
+          "Version": "9.8.2",
+          "Filename": "Packages/bind-chroot-9.8.2-0.10.rc1.26.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "32",
+          "Name": "bind-utils",
+          "Release": "0.10.rc1.26.amzn1",
+          "Version": "9.8.2",
+          "Filename": "Packages/bind-utils-9.8.2-0.10.rc1.26.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "32",
+          "Name": "bind-devel",
+          "Release": "0.10.rc1.26.amzn1",
+          "Version": "9.8.2",
+          "Filename": "Packages/bind-devel-9.8.2-0.10.rc1.26.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "32",
+          "Name": "bind",
+          "Release": "0.10.rc1.26.amzn1",
+          "Version": "9.8.2",
+          "Filename": "Packages/bind-9.8.2-0.10.rc1.26.amzn1.x86_64.rpm"
+        }
+      ]
+    }
+  }
+}

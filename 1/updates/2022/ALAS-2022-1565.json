@@ -1,0 +1,163 @@
+{
+  "ID": "ALAS-2022-1565",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux AMI 2014.03 - ALAS-2022-1565: medium priority package update for openssh",
+  "Issued": {
+    "Date": "2022-02-10 22:00"
+  },
+  "Updated": {
+    "Date": "2022-02-18 22:48"
+  },
+  "Severity": "medium",
+  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2021-41617:\n\tA flaw was found in OpenSSH. Helper programs for AuthorizedKeysCommand and AuthorizedPrincipalsCommand may run with privileges associated with group memberships of the sshd process, if the configuration specifies running the command as a different user. Depending on system configuration, inherited groups may allow AuthorizedKeysCommand/AuthorizedPrincipalsCommand helper programs to gain unintended privileges, potentially leading to local privilege escalation.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41617",
+        "ID": "CVE-2021-41617",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-ami",
+      "Name": "Amazon Linux AMI",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssh-keycat",
+          "Release": "22.77.amzn1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-keycat-7.4p1-22.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssh-debuginfo",
+          "Release": "22.77.amzn1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-debuginfo-7.4p1-22.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "pam_ssh_agent_auth",
+          "Release": "2.22.77.amzn1",
+          "Version": "0.10.3",
+          "Filename": "Packages/pam_ssh_agent_auth-0.10.3-2.22.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssh-cavs",
+          "Release": "22.77.amzn1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-cavs-7.4p1-22.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssh-clients",
+          "Release": "22.77.amzn1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-clients-7.4p1-22.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssh-server",
+          "Release": "22.77.amzn1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-server-7.4p1-22.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssh-ldap",
+          "Release": "22.77.amzn1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-ldap-7.4p1-22.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "openssh",
+          "Release": "22.77.amzn1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-7.4p1-22.77.amzn1.x86_64.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssh-ldap",
+          "Release": "22.77.amzn1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-ldap-7.4p1-22.77.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssh-debuginfo",
+          "Release": "22.77.amzn1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-debuginfo-7.4p1-22.77.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssh",
+          "Release": "22.77.amzn1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-7.4p1-22.77.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssh-keycat",
+          "Release": "22.77.amzn1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-keycat-7.4p1-22.77.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssh-clients",
+          "Release": "22.77.amzn1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-clients-7.4p1-22.77.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "pam_ssh_agent_auth",
+          "Release": "2.22.77.amzn1",
+          "Version": "0.10.3",
+          "Filename": "Packages/pam_ssh_agent_auth-0.10.3-2.22.77.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssh-cavs",
+          "Release": "22.77.amzn1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-cavs-7.4p1-22.77.amzn1.i686.rpm"
+        },
+        {
+          "Arch": "i686",
+          "Epoch": "0",
+          "Name": "openssh-server",
+          "Release": "22.77.amzn1",
+          "Version": "7.4p1",
+          "Filename": "Packages/openssh-server-7.4p1-22.77.amzn1.i686.rpm"
+        }
+      ]
+    }
+  }
+}
