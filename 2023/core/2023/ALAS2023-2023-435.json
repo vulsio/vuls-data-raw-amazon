@@ -1,0 +1,51 @@
+{
+  "ID": "ALAS2023-2023-435",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2023 - ALAS2023-2023-435: Important priority package update for ecs-init",
+  "Issued": {
+    "Date": "2023-11-09 21:29:00"
+  },
+  "Updated": {
+    "Date": "2023-11-09 21:29:00"
+  },
+  "Severity": "Important",
+  "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-39325:\n\tThe HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39325",
+        "ID": "CVE-2023-39325",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2023",
+      "Name": "Amazon Linux 2023",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "ecs-init",
+          "Release": "1.amzn2023",
+          "Version": "1.77.0",
+          "Filename": "Packages/ecs-init-1.77.0-1.amzn2023.x86_64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "ecs-init",
+          "Release": "1.amzn2023",
+          "Version": "1.77.0",
+          "Filename": "Packages/ecs-init-1.77.0-1.amzn2023.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}
