@@ -1,0 +1,181 @@
+{
+  "ID": "ALAS2FIREFOX-2023-017",
+  "Author": "linux-security@amazon.com",
+  "From": "linux-security@amazon.com",
+  "Status": "final",
+  "Type": "security",
+  "Version": "1.4",
+  "Title": "Amazon Linux 2 - Firefox 2.0 - ALAS2FIREFOX-2023-017: important priority package update for firefox",
+  "Issued": {
+    "Date": "2023-11-09 20:27"
+  },
+  "Updated": {
+    "Date": "2023-11-09 20:27"
+  },
+  "Severity": "important",
+  "Description": "Package updates are available for Amazon Linux 2 - Firefox that fix the following vulnerabilities:\nCVE-2023-5732:\n\tThe Mozilla Foundation Security Advisory describes this flaw as:\n\nAn attacker could have created a malicious link using bidirectional characters to spoof the location in the address bar when visited.\n\nCVE-2023-5730:\n\tThe Mozilla Foundation Security Advisory describes this flaw as:\n\nMemory safety bugs present in Firefox 118, Firefox ESR 115.3, and Thunderbird 115.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.\n\nCVE-2023-5728:\n\tThe Mozilla Foundation Security Advisory describes this flaw as:\n\nDuring garbage collection extra operations were performed on a object that should not be. This could have led to a potentially exploitable crash.\n\nCVE-2023-5725:\n\tThe Mozilla Foundation Security Advisory describes this flaw as:\n\nA malicious installed WebExtension could open arbitrary URLs, which under the right circumstance could be leveraged to collect sensitive user data.\n\nCVE-2023-5724:\n\tThe Mozilla Foundation Security Advisory describes this flaw as:\n\nDrivers are not always robust to extremely large draw calls and in some cases this scenario could have led to a crash.\n\nCVE-2023-5721:\n\tThe Mozilla Foundation Security Advisory describes this flaw as:\n\nIt was possible for certain browser prompts and dialogs to be activated or dismissed unintentionally by the user due to an insufficient activation-delay.\n\nCVE-2023-5176:\n\tMemory safety bugs present in Firefox 117, Firefox ESR 115.2, and Thunderbird 115.2. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 118, Firefox ESR < 115.3, and Thunderbird < 115.3.\n\nCVE-2023-5171:\n\tDuring Ion compilation, a Garbage Collection could have resulted in a use-after-free condition, allowing an attacker to write two NUL bytes, and cause a potentially exploitable crash. This vulnerability affects Firefox < 118, Firefox ESR < 115.3, and Thunderbird < 115.3.\n\nCVE-2023-5169:\n\tA compromised content process could have provided malicious data in a `PathRecording` resulting in an out-of-bounds write, leading to a potentially exploitable crash in a privileged process. This vulnerability affects Firefox < 118, Firefox ESR < 115.3, and Thunderbird < 115.3.\n\nCVE-2023-5168:\n\tA compromised content process could have provided malicious data to `FilterNodeD2D1` resulting in an out-of-bounds write, leading to a potentially exploitable crash in a privileged process. This vulnerability affects Firefox < 118, Firefox ESR < 115.3, and Thunderbird < 115.3.\n\nCVE-2023-43669:\n\tThe Tungstenite crate through 0.20.0 for Rust allows remote attackers to cause a denial of service (minutes of CPU consumption) via an excessive length of an HTTP header in a client handshake. The length affects both how many times a parse is attempted (e.g., thousands of times) and the average amount of data for each parse attempt (e.g., millions of bytes).\n\nCVE-2023-37212:\n\tMemory safety bugs present in Firefox 114. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 115.\n\nCVE-2023-37210:\n\tA website could prevent a user from exiting full-screen mode via alert and prompt calls.  This could lead to user confusion and possible spoofing attacks. This vulnerability affects Firefox < 115.\n\nCVE-2023-37209:\n\tA use-after-free condition existed in `NotifyOnHistoryReload` where a `LoadingSessionHistoryEntry` object was freed and a reference to that object remained.  This resulted in a potentially exploitable condition when the reference to that object was later reused. This vulnerability affects Firefox < 115.\n\nCVE-2023-37206:\n\tUploading files which contain symlinks may have allowed an attacker to trick a user into submitting sensitive data to a malicious website. This vulnerability affects Firefox < 115.\n\nCVE-2023-37205:\n\tThe use of RTL Arabic characters in the address bar may have allowed for URL spoofing. This vulnerability affects Firefox < 115.\n\nCVE-2023-37204:\n\tA website could have obscured the fullscreen notification by using an option element by introducing lag via an expensive computational function. This could have led to user confusion and possible spoofing attacks. This vulnerability affects Firefox < 115.\n\nCVE-2023-37203:\n\tInsufficient validation in the Drag and Drop API in conjunction with social engineering, may have allowed an attacker to trick end-users into creating a shortcut to local system files.  This could have been leveraged to execute arbitrary code. This vulnerability affects Firefox < 115.\n\nCVE-2023-3482:\n\tWhen Firefox is configured to block storage of all cookies, it was still possible to store data in localstorage by using an iframe with a source of 'about:blank'. This could have led to malicious websites storing tracking data without permission. This vulnerability affects Firefox < 115.\n\nCVE-2022-46884:\n\tA potential use-after-free vulnerability existed in SVG Images if the Refresh Driver was destroyed at an inopportune time.  This could have lead to memory corruption or a potentially exploitable crash.\n*Note*: This advisory was added on December 13th, 2022 after discovering it was inadvertently left out of the original advisory. The fix was included in the original release of Firefox 106. This vulnerability affects Firefox < 106.\n",
+  "References": {
+    "Reference": [
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-46884",
+        "ID": "CVE-2022-46884",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3482",
+        "ID": "CVE-2023-3482",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-37203",
+        "ID": "CVE-2023-37203",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-37204",
+        "ID": "CVE-2023-37204",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-37205",
+        "ID": "CVE-2023-37205",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-37206",
+        "ID": "CVE-2023-37206",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-37209",
+        "ID": "CVE-2023-37209",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-37210",
+        "ID": "CVE-2023-37210",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-37212",
+        "ID": "CVE-2023-37212",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-43669",
+        "ID": "CVE-2023-43669",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5168",
+        "ID": "CVE-2023-5168",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5169",
+        "ID": "CVE-2023-5169",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5171",
+        "ID": "CVE-2023-5171",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5176",
+        "ID": "CVE-2023-5176",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5721",
+        "ID": "CVE-2023-5721",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5724",
+        "ID": "CVE-2023-5724",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5725",
+        "ID": "CVE-2023-5725",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5728",
+        "ID": "CVE-2023-5728",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5730",
+        "ID": "CVE-2023-5730",
+        "Title": "",
+        "Type": "cve"
+      },
+      {
+        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5732",
+        "ID": "CVE-2023-5732",
+        "Title": "",
+        "Type": "cve"
+      }
+    ]
+  },
+  "Pkglist": {
+    "Collection": {
+      "Short": "amazon-linux-2---firefox",
+      "Name": "Amazon Linux 2 - Firefox",
+      "Package": [
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "firefox",
+          "Release": "1.amzn2.0.1",
+          "Version": "115.4.0",
+          "Filename": "Packages/firefox-115.4.0-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "x86_64",
+          "Epoch": "0",
+          "Name": "firefox-debuginfo",
+          "Release": "1.amzn2.0.1",
+          "Version": "115.4.0",
+          "Filename": "Packages/firefox-debuginfo-115.4.0-1.amzn2.0.1.x86_64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "firefox",
+          "Release": "1.amzn2.0.1",
+          "Version": "115.4.0",
+          "Filename": "Packages/firefox-115.4.0-1.amzn2.0.1.aarch64.rpm"
+        },
+        {
+          "Arch": "aarch64",
+          "Epoch": "0",
+          "Name": "firefox-debuginfo",
+          "Release": "1.amzn2.0.1",
+          "Version": "115.4.0",
+          "Filename": "Packages/firefox-debuginfo-115.4.0-1.amzn2.0.1.aarch64.rpm"
+        }
+      ]
+    }
+  }
+}

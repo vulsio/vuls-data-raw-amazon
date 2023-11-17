@@ -10,7 +10,7 @@
     "Date": "2023-10-31 00:15"
   },
   "Updated": {
-    "Date": "2023-10-31 00:15"
+    "Date": "2023-11-01 00:49"
   },
   "Severity": "important",
   "Description": "Package updates are available for Amazon Linux 2 - Livepatch that fix the following vulnerabilities:\nCVE-2023-4921:\n\tA use-after-free vulnerability in the Linux kernel's net/sched: sch_qfq component can be exploited to achieve local privilege escalation.\n\nWhen the plug qdisc is used as a class of the qfq qdisc, sending network packets triggers use-after-free in qfq_dequeue() due to the incorrect .peek handler of sch_plug and lack of error checking in agg_dequeue().\n\nWe recommend upgrading past commit 8fc134fee27f2263988ae38920bc03da416b03d8.\n\nCVE-2023-4623:\n\tA use-after-free vulnerability in the Linux kernel's net/sched: sch_hfsc (HFSC qdisc traffic control) component can be exploited to achieve local privilege escalation.\n\nIf a class with a link-sharing curve (i.e. with the HFSC_FSC flag set) has a parent without a link-sharing curve, then init_vf() will call vttree_insert() on the parent, but vttree_remove() will be skipped in update_vf(). This leaves a dangling pointer that can cause a use-after-free.\n\nWe recommend upgrading past commit b3d26c5702c7d6c45456326e56d2ccf3f103e60f.\n",
