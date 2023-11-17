@@ -1,125 +1,125 @@
 {
-  "ID": "ALAS2-2023-2311",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2311: important priority package update for oniguruma",
-  "Issued": {
-    "Date": "2023-10-12 15:09"
-  },
-  "Updated": {
-    "Date": "2023-10-19 23:42"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2017-9229:\n\tAn issue was discovered in Oniguruma 6.2.0, as used in Oniguruma-mod in Ruby through 2.4.1 and mbstring in PHP through 7.1.5. A SIGSEGV occurs in left_adjust_char_head() during regular expression compilation. Invalid handling of reg->dmax in forward_search_range() could result in an invalid pointer dereference, normally as an immediate denial-of-service condition.\n\nCVE-2017-9228:\n\tAn issue was discovered in Oniguruma 6.2.0, as used in Oniguruma-mod in Ruby through 2.4.1 and mbstring in PHP through 7.1.5. A heap out-of-bounds write occurs in bitset_set_range() during regular expression compilation due to an uninitialized variable from an incorrect state transition. An incorrect state transition in parse_char_class() could create an execution path that leaves a critical local variable uninitialized until it's used as an index, resulting in an out-of-bounds write memory corruption.\n\nCVE-2017-9227:\n\tAn issue was discovered in Oniguruma 6.2.0, as used in Oniguruma-mod in Ruby through 2.4.1 and mbstring in PHP through 7.1.5. A stack out-of-bounds read occurs in mbc_enc_len() during regular expression searching. Invalid handling of reg->dmin in forward_search_range() could result in an invalid pointer dereference, as an out-of-bounds read from a stack buffer.\n\nCVE-2017-9226:\n\tAn issue was discovered in Oniguruma 6.2.0, as used in Oniguruma-mod in Ruby through 2.4.1 and mbstring in PHP through 7.1.5. A heap out-of-bounds write or read occurs in next_state_val() during regular expression compilation. Octal numbers larger than 0xff are not handled correctly in fetch_token() and fetch_token_in_cc(). A malformed regular expression containing an octal number in the form of '\\700' would produce an invalid code point value larger than 0xff in next_state_val(), resulting in an out-of-bounds write memory corruption.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9226",
-        "ID": "CVE-2017-9226",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9227",
-        "ID": "CVE-2017-9227",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9228",
-        "ID": "CVE-2017-9228",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9229",
-        "ID": "CVE-2017-9229",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "oniguruma",
-          "Release": "1.amzn2.0.7",
-          "Version": "5.9.6",
-          "Filename": "Packages/oniguruma-5.9.6-1.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "oniguruma-devel",
-          "Release": "1.amzn2.0.7",
-          "Version": "5.9.6",
-          "Filename": "Packages/oniguruma-devel-5.9.6-1.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "oniguruma-debuginfo",
-          "Release": "1.amzn2.0.7",
-          "Version": "5.9.6",
-          "Filename": "Packages/oniguruma-debuginfo-5.9.6-1.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "oniguruma",
-          "Release": "1.amzn2.0.7",
-          "Version": "5.9.6",
-          "Filename": "Packages/oniguruma-5.9.6-1.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "oniguruma-devel",
-          "Release": "1.amzn2.0.7",
-          "Version": "5.9.6",
-          "Filename": "Packages/oniguruma-devel-5.9.6-1.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "oniguruma-debuginfo",
-          "Release": "1.amzn2.0.7",
-          "Version": "5.9.6",
-          "Filename": "Packages/oniguruma-debuginfo-5.9.6-1.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "oniguruma",
-          "Release": "1.amzn2.0.7",
-          "Version": "5.9.6",
-          "Filename": "Packages/oniguruma-5.9.6-1.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "oniguruma-devel",
-          "Release": "1.amzn2.0.7",
-          "Version": "5.9.6",
-          "Filename": "Packages/oniguruma-devel-5.9.6-1.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "oniguruma-debuginfo",
-          "Release": "1.amzn2.0.7",
-          "Version": "5.9.6",
-          "Filename": "Packages/oniguruma-debuginfo-5.9.6-1.amzn2.0.7.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2023-2311",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2311: important priority package update for oniguruma",
+	"Issued": {
+		"Date": "2023-10-12 15:09"
+	},
+	"Updated": {
+		"Date": "2023-10-19 23:42"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2017-9229:\n\tAn issue was discovered in Oniguruma 6.2.0, as used in Oniguruma-mod in Ruby through 2.4.1 and mbstring in PHP through 7.1.5. A SIGSEGV occurs in left_adjust_char_head() during regular expression compilation. Invalid handling of reg->dmax in forward_search_range() could result in an invalid pointer dereference, normally as an immediate denial-of-service condition.\n\nCVE-2017-9228:\n\tAn issue was discovered in Oniguruma 6.2.0, as used in Oniguruma-mod in Ruby through 2.4.1 and mbstring in PHP through 7.1.5. A heap out-of-bounds write occurs in bitset_set_range() during regular expression compilation due to an uninitialized variable from an incorrect state transition. An incorrect state transition in parse_char_class() could create an execution path that leaves a critical local variable uninitialized until it's used as an index, resulting in an out-of-bounds write memory corruption.\n\nCVE-2017-9227:\n\tAn issue was discovered in Oniguruma 6.2.0, as used in Oniguruma-mod in Ruby through 2.4.1 and mbstring in PHP through 7.1.5. A stack out-of-bounds read occurs in mbc_enc_len() during regular expression searching. Invalid handling of reg->dmin in forward_search_range() could result in an invalid pointer dereference, as an out-of-bounds read from a stack buffer.\n\nCVE-2017-9226:\n\tAn issue was discovered in Oniguruma 6.2.0, as used in Oniguruma-mod in Ruby through 2.4.1 and mbstring in PHP through 7.1.5. A heap out-of-bounds write or read occurs in next_state_val() during regular expression compilation. Octal numbers larger than 0xff are not handled correctly in fetch_token() and fetch_token_in_cc(). A malformed regular expression containing an octal number in the form of '\\700' would produce an invalid code point value larger than 0xff in next_state_val(), resulting in an out-of-bounds write memory corruption.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9226",
+				"ID": "CVE-2017-9226",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9227",
+				"ID": "CVE-2017-9227",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9228",
+				"ID": "CVE-2017-9228",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-9229",
+				"ID": "CVE-2017-9229",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "oniguruma",
+					"Release": "1.amzn2.0.7",
+					"Version": "5.9.6",
+					"Filename": "Packages/oniguruma-5.9.6-1.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "oniguruma-devel",
+					"Release": "1.amzn2.0.7",
+					"Version": "5.9.6",
+					"Filename": "Packages/oniguruma-devel-5.9.6-1.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "oniguruma-debuginfo",
+					"Release": "1.amzn2.0.7",
+					"Version": "5.9.6",
+					"Filename": "Packages/oniguruma-debuginfo-5.9.6-1.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "oniguruma",
+					"Release": "1.amzn2.0.7",
+					"Version": "5.9.6",
+					"Filename": "Packages/oniguruma-5.9.6-1.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "oniguruma-devel",
+					"Release": "1.amzn2.0.7",
+					"Version": "5.9.6",
+					"Filename": "Packages/oniguruma-devel-5.9.6-1.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "oniguruma-debuginfo",
+					"Release": "1.amzn2.0.7",
+					"Version": "5.9.6",
+					"Filename": "Packages/oniguruma-debuginfo-5.9.6-1.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "oniguruma",
+					"Release": "1.amzn2.0.7",
+					"Version": "5.9.6",
+					"Filename": "Packages/oniguruma-5.9.6-1.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "oniguruma-devel",
+					"Release": "1.amzn2.0.7",
+					"Version": "5.9.6",
+					"Filename": "Packages/oniguruma-devel-5.9.6-1.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "oniguruma-debuginfo",
+					"Release": "1.amzn2.0.7",
+					"Version": "5.9.6",
+					"Filename": "Packages/oniguruma-debuginfo-5.9.6-1.amzn2.0.7.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

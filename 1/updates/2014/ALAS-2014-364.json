@@ -1,83 +1,83 @@
 {
-  "ID": "ALAS-2014-364",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-364: important priority package update for nrpe",
-  "Issued": {
-    "Date": "2014-06-26 10:29"
-  },
-  "Updated": {
-    "Date": "2014-09-19 10:26"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-2913:\n\t1089878: \nCVE-2014-2913 nrpe: remote command execution when command arguments are enabled\n** DISPUTED ** Incomplete blacklist vulnerability in nrpe.c in Nagios Remote Plugin Executor (NRPE) 2.15 and earlier allows remote attackers to execute arbitrary commands via a newline character in the -a option to libexec/check_nrpe.  NOTE: this issue is disputed by multiple parties. It has been reported that the vendor allows newlines as \"expected behavior.\" Also, this issue can only occur when the administrator enables the \"dont_blame_nrpe\" option in nrpe.conf despite the \"HIGH security risk\" warning within the comments.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2913",
-        "ID": "CVE-2014-2913",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nrpe-debuginfo",
-          "Release": "2.7.amzn1",
-          "Version": "2.15",
-          "Filename": "Packages/nrpe-debuginfo-2.15-2.7.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nrpe",
-          "Release": "2.7.amzn1",
-          "Version": "2.15",
-          "Filename": "Packages/nrpe-2.15-2.7.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nagios-plugins-nrpe",
-          "Release": "2.7.amzn1",
-          "Version": "2.15",
-          "Filename": "Packages/nagios-plugins-nrpe-2.15-2.7.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nagios-plugins-nrpe",
-          "Release": "2.7.amzn1",
-          "Version": "2.15",
-          "Filename": "Packages/nagios-plugins-nrpe-2.15-2.7.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nrpe-debuginfo",
-          "Release": "2.7.amzn1",
-          "Version": "2.15",
-          "Filename": "Packages/nrpe-debuginfo-2.15-2.7.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nrpe",
-          "Release": "2.7.amzn1",
-          "Version": "2.15",
-          "Filename": "Packages/nrpe-2.15-2.7.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2014-364",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2012.09 - ALAS-2014-364: important priority package update for nrpe",
+	"Issued": {
+		"Date": "2014-06-26 10:29"
+	},
+	"Updated": {
+		"Date": "2014-09-19 10:26"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-2913:\n\t1089878: \nCVE-2014-2913 nrpe: remote command execution when command arguments are enabled\n** DISPUTED ** Incomplete blacklist vulnerability in nrpe.c in Nagios Remote Plugin Executor (NRPE) 2.15 and earlier allows remote attackers to execute arbitrary commands via a newline character in the -a option to libexec/check_nrpe.  NOTE: this issue is disputed by multiple parties. It has been reported that the vendor allows newlines as \"expected behavior.\" Also, this issue can only occur when the administrator enables the \"dont_blame_nrpe\" option in nrpe.conf despite the \"HIGH security risk\" warning within the comments.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2913",
+				"ID": "CVE-2014-2913",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nrpe-debuginfo",
+					"Release": "2.7.amzn1",
+					"Version": "2.15",
+					"Filename": "Packages/nrpe-debuginfo-2.15-2.7.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nrpe",
+					"Release": "2.7.amzn1",
+					"Version": "2.15",
+					"Filename": "Packages/nrpe-2.15-2.7.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nagios-plugins-nrpe",
+					"Release": "2.7.amzn1",
+					"Version": "2.15",
+					"Filename": "Packages/nagios-plugins-nrpe-2.15-2.7.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nagios-plugins-nrpe",
+					"Release": "2.7.amzn1",
+					"Version": "2.15",
+					"Filename": "Packages/nagios-plugins-nrpe-2.15-2.7.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nrpe-debuginfo",
+					"Release": "2.7.amzn1",
+					"Version": "2.15",
+					"Filename": "Packages/nrpe-debuginfo-2.15-2.7.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nrpe",
+					"Release": "2.7.amzn1",
+					"Version": "2.15",
+					"Filename": "Packages/nrpe-2.15-2.7.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

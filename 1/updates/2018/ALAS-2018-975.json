@@ -1,113 +1,113 @@
 {
-  "ID": "ALAS-2018-975",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2018-975: medium priority package update for golang",
-  "Issued": {
-    "Date": "2018-03-21 22:13"
-  },
-  "Updated": {
-    "Date": "2018-04-19 22:38"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-7187:\n\tThe &quot;go get&quot; implementation in Go 1.9.4, when the -insecure command-line option is used, does not validate the import path (get/vcs.go only checks for &quot;://&quot; anywhere in the string), which allows remote attackers to execute arbitrary OS commands via a crafted web site.\n1546386: \nCVE-2018-7187 golang: arbitrary command execution via VCS path\n\nCVE-2018-6574:\n\tAn arbitrary command execution flaw was found in the way Go&#039;s &quot;go get&quot; command handled gcc and clang sensitive options during the build. A remote attacker capable of hosting malicious repositories could potentially use this flaw to cause arbitrary command execution on the client side.\n1543561: \nCVE-2018-6574 golang: arbitrary code execution during \"go get\" via C compiler options\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-6574",
-        "ID": "CVE-2018-6574",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7187",
-        "ID": "CVE-2018-7187",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "golang-tests",
-          "Release": "2.44.amzn1",
-          "Version": "1.9.4",
-          "Filename": "Packages/golang-tests-1.9.4-2.44.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "golang-race",
-          "Release": "2.44.amzn1",
-          "Version": "1.9.4",
-          "Filename": "Packages/golang-race-1.9.4-2.44.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "golang",
-          "Release": "2.44.amzn1",
-          "Version": "1.9.4",
-          "Filename": "Packages/golang-1.9.4-2.44.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "golang-bin",
-          "Release": "2.44.amzn1",
-          "Version": "1.9.4",
-          "Filename": "Packages/golang-bin-1.9.4-2.44.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "golang-docs",
-          "Release": "2.44.amzn1",
-          "Version": "1.9.4",
-          "Filename": "Packages/golang-docs-1.9.4-2.44.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "golang-src",
-          "Release": "2.44.amzn1",
-          "Version": "1.9.4",
-          "Filename": "Packages/golang-src-1.9.4-2.44.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "golang-misc",
-          "Release": "2.44.amzn1",
-          "Version": "1.9.4",
-          "Filename": "Packages/golang-misc-1.9.4-2.44.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "golang-bin",
-          "Release": "2.44.amzn1",
-          "Version": "1.9.4",
-          "Filename": "Packages/golang-bin-1.9.4-2.44.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "golang",
-          "Release": "2.44.amzn1",
-          "Version": "1.9.4",
-          "Filename": "Packages/golang-1.9.4-2.44.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2018-975",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2018-975: medium priority package update for golang",
+	"Issued": {
+		"Date": "2018-03-21 22:13"
+	},
+	"Updated": {
+		"Date": "2018-04-19 22:38"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-7187:\n\tThe &quot;go get&quot; implementation in Go 1.9.4, when the -insecure command-line option is used, does not validate the import path (get/vcs.go only checks for &quot;://&quot; anywhere in the string), which allows remote attackers to execute arbitrary OS commands via a crafted web site.\n1546386: \nCVE-2018-7187 golang: arbitrary command execution via VCS path\n\nCVE-2018-6574:\n\tAn arbitrary command execution flaw was found in the way Go&#039;s &quot;go get&quot; command handled gcc and clang sensitive options during the build. A remote attacker capable of hosting malicious repositories could potentially use this flaw to cause arbitrary command execution on the client side.\n1543561: \nCVE-2018-6574 golang: arbitrary code execution during \"go get\" via C compiler options\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-6574",
+				"ID": "CVE-2018-6574",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7187",
+				"ID": "CVE-2018-7187",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "golang-tests",
+					"Release": "2.44.amzn1",
+					"Version": "1.9.4",
+					"Filename": "Packages/golang-tests-1.9.4-2.44.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "golang-race",
+					"Release": "2.44.amzn1",
+					"Version": "1.9.4",
+					"Filename": "Packages/golang-race-1.9.4-2.44.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "golang",
+					"Release": "2.44.amzn1",
+					"Version": "1.9.4",
+					"Filename": "Packages/golang-1.9.4-2.44.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "golang-bin",
+					"Release": "2.44.amzn1",
+					"Version": "1.9.4",
+					"Filename": "Packages/golang-bin-1.9.4-2.44.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "golang-docs",
+					"Release": "2.44.amzn1",
+					"Version": "1.9.4",
+					"Filename": "Packages/golang-docs-1.9.4-2.44.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "golang-src",
+					"Release": "2.44.amzn1",
+					"Version": "1.9.4",
+					"Filename": "Packages/golang-src-1.9.4-2.44.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "golang-misc",
+					"Release": "2.44.amzn1",
+					"Version": "1.9.4",
+					"Filename": "Packages/golang-misc-1.9.4-2.44.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "golang-bin",
+					"Release": "2.44.amzn1",
+					"Version": "1.9.4",
+					"Filename": "Packages/golang-bin-1.9.4-2.44.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "golang",
+					"Release": "2.44.amzn1",
+					"Version": "1.9.4",
+					"Filename": "Packages/golang-1.9.4-2.44.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

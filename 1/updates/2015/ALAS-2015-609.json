@@ -1,633 +1,633 @@
 {
-  "ID": "ALAS-2015-609",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-609: medium priority package update for postgresql92 postgresql93 postgresql94",
-  "Issued": {
-    "Date": "2015-11-05 02:14"
-  },
-  "Updated": {
-    "Date": "2015-11-05 03:26"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-5289:\n\tMultiple stack-based buffer overflows in json parsing in PostgreSQL before 9.3.x before 9.3.10 and 9.4.x before 9.4.5 allow attackers to cause a denial of service (server crash) via unspecified vectors, which are not properly handled in (1) json or (2) jsonb values.\n1270312: \nCVE-2015-5289 postgresql: Json or jsonb input values can cause DoS\n\nCVE-2015-5288:\n\tThe crypt function in contrib/pgcrypto in PostgreSQL before 9.0.23, 9.1.x before 9.1.19, 9.2.x before 9.2.14, 9.3.x before 9.3.10, and 9.4.x before 9.4.5 allows attackers to cause a denial of service (server crash) or read arbitrary server memory via a &quot;too-short&quot; salt.\n1270306: \nCVE-2015-5288 postgresql: A few bytes of memory leak in crypt()\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5288",
-        "ID": "CVE-2015-5288",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5289",
-        "ID": "CVE-2015-5289",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql92-test",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-test-9.2.14-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql92-contrib",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-contrib-9.2.14-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql92-devel",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-devel-9.2.14-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql92-plperl",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-plperl-9.2.14-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql92-server",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-server-9.2.14-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql92-debuginfo",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-debuginfo-9.2.14-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql92-plpython27",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-plpython27-9.2.14-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql92",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-9.2.14-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql92-plpython26",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-plpython26-9.2.14-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql92-pltcl",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-pltcl-9.2.14-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql92-docs",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-docs-9.2.14-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql92-server-compat",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-server-compat-9.2.14-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql92-libs",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-libs-9.2.14-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql92-plperl",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-plperl-9.2.14-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql92-server",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-server-9.2.14-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql92-plpython26",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-plpython26-9.2.14-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql92",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-9.2.14-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql92-debuginfo",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-debuginfo-9.2.14-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql92-docs",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-docs-9.2.14-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql92-libs",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-libs-9.2.14-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql92-test",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-test-9.2.14-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql92-devel",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-devel-9.2.14-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql92-server-compat",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-server-compat-9.2.14-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql92-plpython27",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-plpython27-9.2.14-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql92-contrib",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-contrib-9.2.14-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql92-pltcl",
-          "Release": "1.56.amzn1",
-          "Version": "9.2.14",
-          "Filename": "Packages/postgresql92-pltcl-9.2.14-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-plperl",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-plperl-9.3.10-1.60.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-plpython27",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-plpython27-9.3.10-1.60.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-pltcl",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-pltcl-9.3.10-1.60.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-test",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-test-9.3.10-1.60.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-9.3.10-1.60.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-contrib",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-contrib-9.3.10-1.60.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-devel",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-devel-9.3.10-1.60.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-server",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-server-9.3.10-1.60.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-plpython26",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-plpython26-9.3.10-1.60.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-libs",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-libs-9.3.10-1.60.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-debuginfo",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-debuginfo-9.3.10-1.60.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-docs",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-docs-9.3.10-1.60.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-libs",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-libs-9.3.10-1.60.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-plpython26",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-plpython26-9.3.10-1.60.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-plpython27",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-plpython27-9.3.10-1.60.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-docs",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-docs-9.3.10-1.60.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-contrib",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-contrib-9.3.10-1.60.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-devel",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-devel-9.3.10-1.60.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-test",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-test-9.3.10-1.60.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-9.3.10-1.60.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-pltcl",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-pltcl-9.3.10-1.60.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-plperl",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-plperl-9.3.10-1.60.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-server",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-server-9.3.10-1.60.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-debuginfo",
-          "Release": "1.60.amzn1",
-          "Version": "9.3.10",
-          "Filename": "Packages/postgresql93-debuginfo-9.3.10-1.60.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql94-libs",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-libs-9.4.5-1.63.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql94-test",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-test-9.4.5-1.63.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql94-pltcl",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-pltcl-9.4.5-1.63.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql94-contrib",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-contrib-9.4.5-1.63.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql94-plpython26",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-plpython26-9.4.5-1.63.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql94",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-9.4.5-1.63.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql94-devel",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-devel-9.4.5-1.63.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql94-server",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-server-9.4.5-1.63.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql94-docs",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-docs-9.4.5-1.63.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql94-plpython27",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-plpython27-9.4.5-1.63.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql94-plperl",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-plperl-9.4.5-1.63.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql94-debuginfo",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-debuginfo-9.4.5-1.63.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql94-libs",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-libs-9.4.5-1.63.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql94-devel",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-devel-9.4.5-1.63.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql94-test",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-test-9.4.5-1.63.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql94-docs",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-docs-9.4.5-1.63.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql94-server",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-server-9.4.5-1.63.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql94",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-9.4.5-1.63.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql94-pltcl",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-pltcl-9.4.5-1.63.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql94-plperl",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-plperl-9.4.5-1.63.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql94-plpython26",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-plpython26-9.4.5-1.63.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql94-debuginfo",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-debuginfo-9.4.5-1.63.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql94-contrib",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-contrib-9.4.5-1.63.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql94-plpython27",
-          "Release": "1.63.amzn1",
-          "Version": "9.4.5",
-          "Filename": "Packages/postgresql94-plpython27-9.4.5-1.63.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2015-609",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2015-609: medium priority package update for postgresql92 postgresql93 postgresql94",
+	"Issued": {
+		"Date": "2015-11-05 02:14"
+	},
+	"Updated": {
+		"Date": "2015-11-05 03:26"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-5289:\n\tMultiple stack-based buffer overflows in json parsing in PostgreSQL before 9.3.x before 9.3.10 and 9.4.x before 9.4.5 allow attackers to cause a denial of service (server crash) via unspecified vectors, which are not properly handled in (1) json or (2) jsonb values.\n1270312: \nCVE-2015-5289 postgresql: Json or jsonb input values can cause DoS\n\nCVE-2015-5288:\n\tThe crypt function in contrib/pgcrypto in PostgreSQL before 9.0.23, 9.1.x before 9.1.19, 9.2.x before 9.2.14, 9.3.x before 9.3.10, and 9.4.x before 9.4.5 allows attackers to cause a denial of service (server crash) or read arbitrary server memory via a &quot;too-short&quot; salt.\n1270306: \nCVE-2015-5288 postgresql: A few bytes of memory leak in crypt()\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5288",
+				"ID": "CVE-2015-5288",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5289",
+				"ID": "CVE-2015-5289",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql92-test",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-test-9.2.14-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql92-contrib",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-contrib-9.2.14-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql92-devel",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-devel-9.2.14-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql92-plperl",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-plperl-9.2.14-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql92-server",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-server-9.2.14-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql92-debuginfo",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-debuginfo-9.2.14-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql92-plpython27",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-plpython27-9.2.14-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql92",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-9.2.14-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql92-plpython26",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-plpython26-9.2.14-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql92-pltcl",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-pltcl-9.2.14-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql92-docs",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-docs-9.2.14-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql92-server-compat",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-server-compat-9.2.14-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql92-libs",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-libs-9.2.14-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql92-plperl",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-plperl-9.2.14-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql92-server",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-server-9.2.14-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql92-plpython26",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-plpython26-9.2.14-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql92",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-9.2.14-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql92-debuginfo",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-debuginfo-9.2.14-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql92-docs",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-docs-9.2.14-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql92-libs",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-libs-9.2.14-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql92-test",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-test-9.2.14-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql92-devel",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-devel-9.2.14-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql92-server-compat",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-server-compat-9.2.14-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql92-plpython27",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-plpython27-9.2.14-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql92-contrib",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-contrib-9.2.14-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql92-pltcl",
+					"Release": "1.56.amzn1",
+					"Version": "9.2.14",
+					"Filename": "Packages/postgresql92-pltcl-9.2.14-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-plperl",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-plperl-9.3.10-1.60.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-plpython27",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-plpython27-9.3.10-1.60.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-pltcl",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-pltcl-9.3.10-1.60.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-test",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-test-9.3.10-1.60.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-9.3.10-1.60.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-contrib",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-contrib-9.3.10-1.60.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-devel",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-devel-9.3.10-1.60.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-server",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-server-9.3.10-1.60.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-plpython26",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-plpython26-9.3.10-1.60.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-libs",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-libs-9.3.10-1.60.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-debuginfo",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-debuginfo-9.3.10-1.60.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-docs",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-docs-9.3.10-1.60.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-libs",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-libs-9.3.10-1.60.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-plpython26",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-plpython26-9.3.10-1.60.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-plpython27",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-plpython27-9.3.10-1.60.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-docs",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-docs-9.3.10-1.60.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-contrib",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-contrib-9.3.10-1.60.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-devel",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-devel-9.3.10-1.60.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-test",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-test-9.3.10-1.60.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-9.3.10-1.60.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-pltcl",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-pltcl-9.3.10-1.60.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-plperl",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-plperl-9.3.10-1.60.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-server",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-server-9.3.10-1.60.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-debuginfo",
+					"Release": "1.60.amzn1",
+					"Version": "9.3.10",
+					"Filename": "Packages/postgresql93-debuginfo-9.3.10-1.60.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql94-libs",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-libs-9.4.5-1.63.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql94-test",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-test-9.4.5-1.63.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql94-pltcl",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-pltcl-9.4.5-1.63.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql94-contrib",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-contrib-9.4.5-1.63.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql94-plpython26",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-plpython26-9.4.5-1.63.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql94",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-9.4.5-1.63.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql94-devel",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-devel-9.4.5-1.63.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql94-server",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-server-9.4.5-1.63.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql94-docs",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-docs-9.4.5-1.63.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql94-plpython27",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-plpython27-9.4.5-1.63.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql94-plperl",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-plperl-9.4.5-1.63.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql94-debuginfo",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-debuginfo-9.4.5-1.63.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql94-libs",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-libs-9.4.5-1.63.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql94-devel",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-devel-9.4.5-1.63.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql94-test",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-test-9.4.5-1.63.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql94-docs",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-docs-9.4.5-1.63.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql94-server",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-server-9.4.5-1.63.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql94",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-9.4.5-1.63.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql94-pltcl",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-pltcl-9.4.5-1.63.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql94-plperl",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-plperl-9.4.5-1.63.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql94-plpython26",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-plpython26-9.4.5-1.63.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql94-debuginfo",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-debuginfo-9.4.5-1.63.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql94-contrib",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-contrib-9.4.5-1.63.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql94-plpython27",
+					"Release": "1.63.amzn1",
+					"Version": "9.4.5",
+					"Filename": "Packages/postgresql94-plpython27-9.4.5-1.63.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

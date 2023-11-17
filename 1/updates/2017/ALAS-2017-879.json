@@ -1,135 +1,135 @@
 {
-  "ID": "ALAS-2017-879",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-879: medium priority package update for tigervnc",
-  "Issued": {
-    "Date": "2017-08-31 15:56"
-  },
-  "Updated": {
-    "Date": "2017-08-31 23:05"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-7396:\n\tA memory leak flaw was found in the way TigerVNC handled client connections. A remote unauthenticated attacker could repeatedly send connection requests to the Xvnc server, causing it to consume large amounts of memory resources over time, and ultimately leading to a denial of service due to memory exhaustion.\n1438703: \nCVE-2017-7396 tigervnc: SecurityServer and ClientServer memory leaks\n\nCVE-2017-7395:\n\tAn integer overflow flaw was found in the way TigerVNC handled ClientCutText messages. A remote, authenticated attacker could use this flaw to make Xvnc crash by sending specially crafted ClientCutText messages, resulting in denial of service.\n1438701: \nCVE-2017-7395 tigervnc: Integer overflow in SMsgReader::readClientCutText\n\nCVE-2017-7394:\n\tA missing input sanitization flaw was found in the way TigerVNC handled credentials. A remote unauthenticated attacker could use this flaw to make Xvnc crash by sending specially crafted usernames, resulting in denial of service.\n1438700: \nCVE-2017-7394 tigervnc: Server crash via long usernames\n\nCVE-2017-7393:\n\tA double free flaw was found in the way TigerVNC handled ClientFence messages. A remote, authenticated attacker could use this flaw to make Xvnc crash by sending specially crafted ClientFence messages, resulting in denial of service.\n1438697: \nCVE-2017-7393 tigervnc: Double free via crafted fences\n\nCVE-2017-7392:\n\tA memory leak flaw was found in the way TigerVNC handled termination of VeNCrypt connections. A remote unauthenticated attacker could repeatedly send connection requests to the Xvnc server, causing it to consume large amounts of memory resources over time, and ultimately leading to a denial of service due to memory exhaustion.\n1438694: \nCVE-2017-7392 tigervnc: SSecurityVeNCrypt memory leak\n\nCVE-2017-5581:\n\tA buffer overflow flaw, leading to memory corruption, was found in TigerVNC viewer. A remote malicious VNC server could use this flaw to crash the client vncviewer process resulting in denial of service.\n1415712: \nCVE-2017-5581 tigervnc: Buffer overflow in ModifiablePixelBuffer::fillRect\n\nCVE-2016-10207:\n\tA denial of service flaw was found in the TigerVNC&#039;s Xvnc server. A remote unauthenticated attacker could use this flaw to make Xvnc crash by terminating the TLS handshake process early.\n1418761: \nCVE-2016-10207 tigervnc: VNC server can crash when TLS handshake terminates early\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10207",
-        "ID": "CVE-2016-10207",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5581",
-        "ID": "CVE-2017-5581",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7392",
-        "ID": "CVE-2017-7392",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7393",
-        "ID": "CVE-2017-7393",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7394",
-        "ID": "CVE-2017-7394",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7395",
-        "ID": "CVE-2017-7395",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7396",
-        "ID": "CVE-2017-7396",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "tigervnc",
-          "Release": "1.32.amzn1",
-          "Version": "1.8.0",
-          "Filename": "Packages/tigervnc-1.8.0-1.32.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "tigervnc-server-module",
-          "Release": "1.32.amzn1",
-          "Version": "1.8.0",
-          "Filename": "Packages/tigervnc-server-module-1.8.0-1.32.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "tigervnc-server",
-          "Release": "1.32.amzn1",
-          "Version": "1.8.0",
-          "Filename": "Packages/tigervnc-server-1.8.0-1.32.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "tigervnc-debuginfo",
-          "Release": "1.32.amzn1",
-          "Version": "1.8.0",
-          "Filename": "Packages/tigervnc-debuginfo-1.8.0-1.32.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "tigervnc-debuginfo",
-          "Release": "1.32.amzn1",
-          "Version": "1.8.0",
-          "Filename": "Packages/tigervnc-debuginfo-1.8.0-1.32.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "tigervnc-server-module",
-          "Release": "1.32.amzn1",
-          "Version": "1.8.0",
-          "Filename": "Packages/tigervnc-server-module-1.8.0-1.32.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "tigervnc-server",
-          "Release": "1.32.amzn1",
-          "Version": "1.8.0",
-          "Filename": "Packages/tigervnc-server-1.8.0-1.32.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "tigervnc",
-          "Release": "1.32.amzn1",
-          "Version": "1.8.0",
-          "Filename": "Packages/tigervnc-1.8.0-1.32.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2017-879",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2017-879: medium priority package update for tigervnc",
+	"Issued": {
+		"Date": "2017-08-31 15:56"
+	},
+	"Updated": {
+		"Date": "2017-08-31 23:05"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-7396:\n\tA memory leak flaw was found in the way TigerVNC handled client connections. A remote unauthenticated attacker could repeatedly send connection requests to the Xvnc server, causing it to consume large amounts of memory resources over time, and ultimately leading to a denial of service due to memory exhaustion.\n1438703: \nCVE-2017-7396 tigervnc: SecurityServer and ClientServer memory leaks\n\nCVE-2017-7395:\n\tAn integer overflow flaw was found in the way TigerVNC handled ClientCutText messages. A remote, authenticated attacker could use this flaw to make Xvnc crash by sending specially crafted ClientCutText messages, resulting in denial of service.\n1438701: \nCVE-2017-7395 tigervnc: Integer overflow in SMsgReader::readClientCutText\n\nCVE-2017-7394:\n\tA missing input sanitization flaw was found in the way TigerVNC handled credentials. A remote unauthenticated attacker could use this flaw to make Xvnc crash by sending specially crafted usernames, resulting in denial of service.\n1438700: \nCVE-2017-7394 tigervnc: Server crash via long usernames\n\nCVE-2017-7393:\n\tA double free flaw was found in the way TigerVNC handled ClientFence messages. A remote, authenticated attacker could use this flaw to make Xvnc crash by sending specially crafted ClientFence messages, resulting in denial of service.\n1438697: \nCVE-2017-7393 tigervnc: Double free via crafted fences\n\nCVE-2017-7392:\n\tA memory leak flaw was found in the way TigerVNC handled termination of VeNCrypt connections. A remote unauthenticated attacker could repeatedly send connection requests to the Xvnc server, causing it to consume large amounts of memory resources over time, and ultimately leading to a denial of service due to memory exhaustion.\n1438694: \nCVE-2017-7392 tigervnc: SSecurityVeNCrypt memory leak\n\nCVE-2017-5581:\n\tA buffer overflow flaw, leading to memory corruption, was found in TigerVNC viewer. A remote malicious VNC server could use this flaw to crash the client vncviewer process resulting in denial of service.\n1415712: \nCVE-2017-5581 tigervnc: Buffer overflow in ModifiablePixelBuffer::fillRect\n\nCVE-2016-10207:\n\tA denial of service flaw was found in the TigerVNC&#039;s Xvnc server. A remote unauthenticated attacker could use this flaw to make Xvnc crash by terminating the TLS handshake process early.\n1418761: \nCVE-2016-10207 tigervnc: VNC server can crash when TLS handshake terminates early\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-10207",
+				"ID": "CVE-2016-10207",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5581",
+				"ID": "CVE-2017-5581",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7392",
+				"ID": "CVE-2017-7392",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7393",
+				"ID": "CVE-2017-7393",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7394",
+				"ID": "CVE-2017-7394",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7395",
+				"ID": "CVE-2017-7395",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7396",
+				"ID": "CVE-2017-7396",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "tigervnc",
+					"Release": "1.32.amzn1",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-1.8.0-1.32.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "tigervnc-server-module",
+					"Release": "1.32.amzn1",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-server-module-1.8.0-1.32.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "tigervnc-server",
+					"Release": "1.32.amzn1",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-server-1.8.0-1.32.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "tigervnc-debuginfo",
+					"Release": "1.32.amzn1",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-debuginfo-1.8.0-1.32.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "tigervnc-debuginfo",
+					"Release": "1.32.amzn1",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-debuginfo-1.8.0-1.32.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "tigervnc-server-module",
+					"Release": "1.32.amzn1",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-server-module-1.8.0-1.32.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "tigervnc-server",
+					"Release": "1.32.amzn1",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-server-1.8.0-1.32.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "tigervnc",
+					"Release": "1.32.amzn1",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-1.8.0-1.32.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

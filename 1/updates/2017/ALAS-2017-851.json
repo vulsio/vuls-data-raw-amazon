@@ -1,123 +1,123 @@
 {
-  "ID": "ALAS-2017-851",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-851: medium priority package update for httpd",
-  "Issued": {
-    "Date": "2017-06-22 19:25"
-  },
-  "Updated": {
-    "Date": "2017-06-22 22:54"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-8743:\n\tIt was discovered that the HTTP parser in httpd incorrectly allowed certain characters not permitted by the HTTP protocol specification to appear unencoded in HTTP request headers. If httpd was used in conjunction with a proxy or backend server that interpreted those characters differently, a remote attacker could possibly use this flaw to inject data into HTTP responses, resulting in proxy cache poisoning.\n1406822: \nCVE-2016-8743 httpd: Apache HTTP Request Parsing Whitespace Defects\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8743",
-        "ID": "CVE-2016-8743",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "httpd-devel",
-          "Release": "1.9.amzn1",
-          "Version": "2.2.32",
-          "Filename": "Packages/httpd-devel-2.2.32-1.9.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "mod_ssl",
-          "Release": "1.9.amzn1",
-          "Version": "2.2.32",
-          "Filename": "Packages/mod_ssl-2.2.32-1.9.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "httpd-manual",
-          "Release": "1.9.amzn1",
-          "Version": "2.2.32",
-          "Filename": "Packages/httpd-manual-2.2.32-1.9.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "httpd-tools",
-          "Release": "1.9.amzn1",
-          "Version": "2.2.32",
-          "Filename": "Packages/httpd-tools-2.2.32-1.9.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "httpd",
-          "Release": "1.9.amzn1",
-          "Version": "2.2.32",
-          "Filename": "Packages/httpd-2.2.32-1.9.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "httpd-debuginfo",
-          "Release": "1.9.amzn1",
-          "Version": "2.2.32",
-          "Filename": "Packages/httpd-debuginfo-2.2.32-1.9.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "httpd-devel",
-          "Release": "1.9.amzn1",
-          "Version": "2.2.32",
-          "Filename": "Packages/httpd-devel-2.2.32-1.9.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "httpd-debuginfo",
-          "Release": "1.9.amzn1",
-          "Version": "2.2.32",
-          "Filename": "Packages/httpd-debuginfo-2.2.32-1.9.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "httpd",
-          "Release": "1.9.amzn1",
-          "Version": "2.2.32",
-          "Filename": "Packages/httpd-2.2.32-1.9.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "httpd-tools",
-          "Release": "1.9.amzn1",
-          "Version": "2.2.32",
-          "Filename": "Packages/httpd-tools-2.2.32-1.9.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "mod_ssl",
-          "Release": "1.9.amzn1",
-          "Version": "2.2.32",
-          "Filename": "Packages/mod_ssl-2.2.32-1.9.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2017-851",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2017-851: medium priority package update for httpd",
+	"Issued": {
+		"Date": "2017-06-22 19:25"
+	},
+	"Updated": {
+		"Date": "2017-06-22 22:54"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-8743:\n\tIt was discovered that the HTTP parser in httpd incorrectly allowed certain characters not permitted by the HTTP protocol specification to appear unencoded in HTTP request headers. If httpd was used in conjunction with a proxy or backend server that interpreted those characters differently, a remote attacker could possibly use this flaw to inject data into HTTP responses, resulting in proxy cache poisoning.\n1406822: \nCVE-2016-8743 httpd: Apache HTTP Request Parsing Whitespace Defects\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-8743",
+				"ID": "CVE-2016-8743",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "httpd-devel",
+					"Release": "1.9.amzn1",
+					"Version": "2.2.32",
+					"Filename": "Packages/httpd-devel-2.2.32-1.9.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "mod_ssl",
+					"Release": "1.9.amzn1",
+					"Version": "2.2.32",
+					"Filename": "Packages/mod_ssl-2.2.32-1.9.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "httpd-manual",
+					"Release": "1.9.amzn1",
+					"Version": "2.2.32",
+					"Filename": "Packages/httpd-manual-2.2.32-1.9.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "httpd-tools",
+					"Release": "1.9.amzn1",
+					"Version": "2.2.32",
+					"Filename": "Packages/httpd-tools-2.2.32-1.9.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "httpd",
+					"Release": "1.9.amzn1",
+					"Version": "2.2.32",
+					"Filename": "Packages/httpd-2.2.32-1.9.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "httpd-debuginfo",
+					"Release": "1.9.amzn1",
+					"Version": "2.2.32",
+					"Filename": "Packages/httpd-debuginfo-2.2.32-1.9.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "httpd-devel",
+					"Release": "1.9.amzn1",
+					"Version": "2.2.32",
+					"Filename": "Packages/httpd-devel-2.2.32-1.9.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "httpd-debuginfo",
+					"Release": "1.9.amzn1",
+					"Version": "2.2.32",
+					"Filename": "Packages/httpd-debuginfo-2.2.32-1.9.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "httpd",
+					"Release": "1.9.amzn1",
+					"Version": "2.2.32",
+					"Filename": "Packages/httpd-2.2.32-1.9.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "httpd-tools",
+					"Release": "1.9.amzn1",
+					"Version": "2.2.32",
+					"Filename": "Packages/httpd-tools-2.2.32-1.9.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "mod_ssl",
+					"Release": "1.9.amzn1",
+					"Version": "2.2.32",
+					"Filename": "Packages/mod_ssl-2.2.32-1.9.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

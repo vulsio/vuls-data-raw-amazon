@@ -1,193 +1,193 @@
 {
-  "ID": "ALAS2-2022-1870",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2022-1870: important priority package update for dbus",
-  "Issued": {
-    "Date": "2022-10-31 19:40"
-  },
-  "Updated": {
-    "Date": "2022-11-08 22:20"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-12049:\n\tAn uncontrolled resource consumption vulnerability was discovered in D-Bus. The DBusServer leaks file descriptors when a message exceeds the per-message file descriptor limit. This flaw allows a local attacker with access to the D-Bus system bus or another system service's private AF_UNIX socket, to make the system service reach its file descriptor limit, denying service to subsequent D-Bus clients. As a result, the system may become unusable for other users, and some services may stop working. The highest threat from this vulnerability is to system availability.\n\nCVE-2019-12749:\n\tA flaw was found in dbus. The implementation of DBUS_COOKIE_SHA1 is susceptible to a symbolic link attack. A malicious client with write access to its own home directory could manipulate a ~/.dbus-keyrings symlink to cause the DBusServer to read and write in unintended locations resulting in an authentication bypass. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12749",
-        "ID": "CVE-2019-12749",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12049",
-        "ID": "CVE-2020-12049",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "dbus",
-          "Release": "7.amzn2.0.2",
-          "Version": "1.10.24",
-          "Filename": "Packages/dbus-1.10.24-7.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "dbus-libs",
-          "Release": "7.amzn2.0.2",
-          "Version": "1.10.24",
-          "Filename": "Packages/dbus-libs-1.10.24-7.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "1",
-          "Name": "dbus-doc",
-          "Release": "7.amzn2.0.2",
-          "Version": "1.10.24",
-          "Filename": "Packages/dbus-doc-1.10.24-7.amzn2.0.2.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "dbus-devel",
-          "Release": "7.amzn2.0.2",
-          "Version": "1.10.24",
-          "Filename": "Packages/dbus-devel-1.10.24-7.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "dbus-tests",
-          "Release": "7.amzn2.0.2",
-          "Version": "1.10.24",
-          "Filename": "Packages/dbus-tests-1.10.24-7.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "dbus-x11",
-          "Release": "7.amzn2.0.2",
-          "Version": "1.10.24",
-          "Filename": "Packages/dbus-x11-1.10.24-7.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "dbus-debuginfo",
-          "Release": "7.amzn2.0.2",
-          "Version": "1.10.24",
-          "Filename": "Packages/dbus-debuginfo-1.10.24-7.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "dbus",
-          "Release": "7.amzn2.0.2",
-          "Version": "1.10.24",
-          "Filename": "Packages/dbus-1.10.24-7.amzn2.0.2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "dbus-libs",
-          "Release": "7.amzn2.0.2",
-          "Version": "1.10.24",
-          "Filename": "Packages/dbus-libs-1.10.24-7.amzn2.0.2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "dbus-devel",
-          "Release": "7.amzn2.0.2",
-          "Version": "1.10.24",
-          "Filename": "Packages/dbus-devel-1.10.24-7.amzn2.0.2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "dbus-tests",
-          "Release": "7.amzn2.0.2",
-          "Version": "1.10.24",
-          "Filename": "Packages/dbus-tests-1.10.24-7.amzn2.0.2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "dbus-x11",
-          "Release": "7.amzn2.0.2",
-          "Version": "1.10.24",
-          "Filename": "Packages/dbus-x11-1.10.24-7.amzn2.0.2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "dbus-debuginfo",
-          "Release": "7.amzn2.0.2",
-          "Version": "1.10.24",
-          "Filename": "Packages/dbus-debuginfo-1.10.24-7.amzn2.0.2.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "dbus",
-          "Release": "7.amzn2.0.2",
-          "Version": "1.10.24",
-          "Filename": "Packages/dbus-1.10.24-7.amzn2.0.2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "dbus-libs",
-          "Release": "7.amzn2.0.2",
-          "Version": "1.10.24",
-          "Filename": "Packages/dbus-libs-1.10.24-7.amzn2.0.2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "dbus-devel",
-          "Release": "7.amzn2.0.2",
-          "Version": "1.10.24",
-          "Filename": "Packages/dbus-devel-1.10.24-7.amzn2.0.2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "dbus-tests",
-          "Release": "7.amzn2.0.2",
-          "Version": "1.10.24",
-          "Filename": "Packages/dbus-tests-1.10.24-7.amzn2.0.2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "dbus-x11",
-          "Release": "7.amzn2.0.2",
-          "Version": "1.10.24",
-          "Filename": "Packages/dbus-x11-1.10.24-7.amzn2.0.2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "dbus-debuginfo",
-          "Release": "7.amzn2.0.2",
-          "Version": "1.10.24",
-          "Filename": "Packages/dbus-debuginfo-1.10.24-7.amzn2.0.2.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2022-1870",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2022-1870: important priority package update for dbus",
+	"Issued": {
+		"Date": "2022-10-31 19:40"
+	},
+	"Updated": {
+		"Date": "2022-11-08 22:20"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-12049:\n\tAn uncontrolled resource consumption vulnerability was discovered in D-Bus. The DBusServer leaks file descriptors when a message exceeds the per-message file descriptor limit. This flaw allows a local attacker with access to the D-Bus system bus or another system service's private AF_UNIX socket, to make the system service reach its file descriptor limit, denying service to subsequent D-Bus clients. As a result, the system may become unusable for other users, and some services may stop working. The highest threat from this vulnerability is to system availability.\n\nCVE-2019-12749:\n\tA flaw was found in dbus. The implementation of DBUS_COOKIE_SHA1 is susceptible to a symbolic link attack. A malicious client with write access to its own home directory could manipulate a ~/.dbus-keyrings symlink to cause the DBusServer to read and write in unintended locations resulting in an authentication bypass. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12749",
+				"ID": "CVE-2019-12749",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12049",
+				"ID": "CVE-2020-12049",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "dbus",
+					"Release": "7.amzn2.0.2",
+					"Version": "1.10.24",
+					"Filename": "Packages/dbus-1.10.24-7.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "dbus-libs",
+					"Release": "7.amzn2.0.2",
+					"Version": "1.10.24",
+					"Filename": "Packages/dbus-libs-1.10.24-7.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "1",
+					"Name": "dbus-doc",
+					"Release": "7.amzn2.0.2",
+					"Version": "1.10.24",
+					"Filename": "Packages/dbus-doc-1.10.24-7.amzn2.0.2.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "dbus-devel",
+					"Release": "7.amzn2.0.2",
+					"Version": "1.10.24",
+					"Filename": "Packages/dbus-devel-1.10.24-7.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "dbus-tests",
+					"Release": "7.amzn2.0.2",
+					"Version": "1.10.24",
+					"Filename": "Packages/dbus-tests-1.10.24-7.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "dbus-x11",
+					"Release": "7.amzn2.0.2",
+					"Version": "1.10.24",
+					"Filename": "Packages/dbus-x11-1.10.24-7.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "dbus-debuginfo",
+					"Release": "7.amzn2.0.2",
+					"Version": "1.10.24",
+					"Filename": "Packages/dbus-debuginfo-1.10.24-7.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "dbus",
+					"Release": "7.amzn2.0.2",
+					"Version": "1.10.24",
+					"Filename": "Packages/dbus-1.10.24-7.amzn2.0.2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "dbus-libs",
+					"Release": "7.amzn2.0.2",
+					"Version": "1.10.24",
+					"Filename": "Packages/dbus-libs-1.10.24-7.amzn2.0.2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "dbus-devel",
+					"Release": "7.amzn2.0.2",
+					"Version": "1.10.24",
+					"Filename": "Packages/dbus-devel-1.10.24-7.amzn2.0.2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "dbus-tests",
+					"Release": "7.amzn2.0.2",
+					"Version": "1.10.24",
+					"Filename": "Packages/dbus-tests-1.10.24-7.amzn2.0.2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "dbus-x11",
+					"Release": "7.amzn2.0.2",
+					"Version": "1.10.24",
+					"Filename": "Packages/dbus-x11-1.10.24-7.amzn2.0.2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "dbus-debuginfo",
+					"Release": "7.amzn2.0.2",
+					"Version": "1.10.24",
+					"Filename": "Packages/dbus-debuginfo-1.10.24-7.amzn2.0.2.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "dbus",
+					"Release": "7.amzn2.0.2",
+					"Version": "1.10.24",
+					"Filename": "Packages/dbus-1.10.24-7.amzn2.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "dbus-libs",
+					"Release": "7.amzn2.0.2",
+					"Version": "1.10.24",
+					"Filename": "Packages/dbus-libs-1.10.24-7.amzn2.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "dbus-devel",
+					"Release": "7.amzn2.0.2",
+					"Version": "1.10.24",
+					"Filename": "Packages/dbus-devel-1.10.24-7.amzn2.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "dbus-tests",
+					"Release": "7.amzn2.0.2",
+					"Version": "1.10.24",
+					"Filename": "Packages/dbus-tests-1.10.24-7.amzn2.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "dbus-x11",
+					"Release": "7.amzn2.0.2",
+					"Version": "1.10.24",
+					"Filename": "Packages/dbus-x11-1.10.24-7.amzn2.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "dbus-debuginfo",
+					"Release": "7.amzn2.0.2",
+					"Version": "1.10.24",
+					"Filename": "Packages/dbus-debuginfo-1.10.24-7.amzn2.0.2.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

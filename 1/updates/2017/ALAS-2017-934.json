@@ -1,81 +1,81 @@
 {
-  "ID": "ALAS-2017-934",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-934: medium priority package update for qemu-kvm",
-  "Issued": {
-    "Date": "2017-12-20 18:55"
-  },
-  "Updated": {
-    "Date": "2017-12-21 22:59"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-15289:\n\tQuick emulator (QEMU), compiled with the Cirrus CLGD 54xx VGA Emulator support, is vulnerable to an OOB write access issue. The issue could occur while writing to VGA memory via mode4and5 write functions. A privileged user inside guest could use this flaw to crash the QEMU process resulting in Denial of Serivce (DoS).\n1501290: \nCVE-2017-15289 Qemu: cirrus: OOB access issue in mode4and5 write functions\n\nCVE-2017-14167:\n\tQuick Emulator (QEMU), compiled with the PC System Emulator with multiboot feature support, is vulnerable to an OOB r/w memory access issue. The issue could occur due to an integer overflow while loading a kernel image during a guest boot. A user or process could use this flaw to potentially achieve arbitrary code execution on a host.\n1489375: \nCVE-2017-14167 Qemu: i386: multiboot OOB access while loading kernel image\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14167",
-        "ID": "CVE-2017-14167",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15289",
-        "ID": "CVE-2017-15289",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-kvm-common",
-          "Release": "141.5.amzn1",
-          "Version": "1.5.3",
-          "Filename": "Packages/qemu-kvm-common-1.5.3-141.5.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-kvm-tools",
-          "Release": "141.5.amzn1",
-          "Version": "1.5.3",
-          "Filename": "Packages/qemu-kvm-tools-1.5.3-141.5.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-img",
-          "Release": "141.5.amzn1",
-          "Version": "1.5.3",
-          "Filename": "Packages/qemu-img-1.5.3-141.5.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-kvm-debuginfo",
-          "Release": "141.5.amzn1",
-          "Version": "1.5.3",
-          "Filename": "Packages/qemu-kvm-debuginfo-1.5.3-141.5.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-kvm",
-          "Release": "141.5.amzn1",
-          "Version": "1.5.3",
-          "Filename": "Packages/qemu-kvm-1.5.3-141.5.amzn1.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2017-934",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2017-934: medium priority package update for qemu-kvm",
+	"Issued": {
+		"Date": "2017-12-20 18:55"
+	},
+	"Updated": {
+		"Date": "2017-12-21 22:59"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-15289:\n\tQuick emulator (QEMU), compiled with the Cirrus CLGD 54xx VGA Emulator support, is vulnerable to an OOB write access issue. The issue could occur while writing to VGA memory via mode4and5 write functions. A privileged user inside guest could use this flaw to crash the QEMU process resulting in Denial of Serivce (DoS).\n1501290: \nCVE-2017-15289 Qemu: cirrus: OOB access issue in mode4and5 write functions\n\nCVE-2017-14167:\n\tQuick Emulator (QEMU), compiled with the PC System Emulator with multiboot feature support, is vulnerable to an OOB r/w memory access issue. The issue could occur due to an integer overflow while loading a kernel image during a guest boot. A user or process could use this flaw to potentially achieve arbitrary code execution on a host.\n1489375: \nCVE-2017-14167 Qemu: i386: multiboot OOB access while loading kernel image\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-14167",
+				"ID": "CVE-2017-14167",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15289",
+				"ID": "CVE-2017-15289",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-kvm-common",
+					"Release": "141.5.amzn1",
+					"Version": "1.5.3",
+					"Filename": "Packages/qemu-kvm-common-1.5.3-141.5.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-kvm-tools",
+					"Release": "141.5.amzn1",
+					"Version": "1.5.3",
+					"Filename": "Packages/qemu-kvm-tools-1.5.3-141.5.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-img",
+					"Release": "141.5.amzn1",
+					"Version": "1.5.3",
+					"Filename": "Packages/qemu-img-1.5.3-141.5.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-kvm-debuginfo",
+					"Release": "141.5.amzn1",
+					"Version": "1.5.3",
+					"Filename": "Packages/qemu-kvm-debuginfo-1.5.3-141.5.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-kvm",
+					"Release": "141.5.amzn1",
+					"Version": "1.5.3",
+					"Filename": "Packages/qemu-kvm-1.5.3-141.5.amzn1.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

@@ -1,185 +1,185 @@
 {
-  "ID": "ALAS2023-2023-317",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2023 - ALAS2023-2023-317: Important priority package update for python3.11",
-  "Issued": {
-    "Date": "2023-08-31 21:42:00"
-  },
-  "Updated": {
-    "Date": "2023-09-07 21:18:00"
-  },
-  "Severity": "Important",
-  "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-41105:\n\tAn issue was discovered in Python 3.11 through 3.11.4. If a path containing '\\0' bytes is passed to os.path.normpath(), the path will be truncated unexpectedly at the first '\\0' byte. There are plausible cases in which an application would have rejected a filename for security reasons in Python 3.10.x or earlier, but that filename is no longer rejected in Python 3.11.x.\n\nCVE-2023-40217:\n\tAn issue was discovered in Python before 3.8.18, 3.9.x before 3.9.18, 3.10.x before 3.10.13, and 3.11.x before 3.11.5. It primarily affects servers (such as HTTP servers) that use TLS client authentication. If a TLS server-side socket is created, receives data into the socket buffer, and then is closed quickly, there is a brief window where the SSLSocket instance will detect the socket as \"not connected\" and won't initiate a handshake, but buffered data will still be readable from the socket buffer. This data will not be authenticated if the server-side TLS peer is expecting client certificate authentication, and is indistinguishable from valid TLS stream data. Data is limited in size to the amount that will fit in the buffer. (The TLS connection cannot directly be used for data exfiltration because the vulnerable code path requires that the connection be closed on initialization of the SSLSocket.)\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-40217",
-        "ID": "CVE-2023-40217",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-41105",
-        "ID": "CVE-2023-41105",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2023",
-      "Name": "Amazon Linux 2023",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3.11-tkinter",
-          "Release": "2.amzn2023.0.10",
-          "Version": "3.11.2",
-          "Filename": "Packages/python3.11-tkinter-3.11.2-2.amzn2023.0.10.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3.11-debugsource",
-          "Release": "2.amzn2023.0.10",
-          "Version": "3.11.2",
-          "Filename": "Packages/python3.11-debugsource-3.11.2-2.amzn2023.0.10.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3.11-idle",
-          "Release": "2.amzn2023.0.10",
-          "Version": "3.11.2",
-          "Filename": "Packages/python3.11-idle-3.11.2-2.amzn2023.0.10.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3.11",
-          "Release": "2.amzn2023.0.10",
-          "Version": "3.11.2",
-          "Filename": "Packages/python3.11-3.11.2-2.amzn2023.0.10.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3.11-devel",
-          "Release": "2.amzn2023.0.10",
-          "Version": "3.11.2",
-          "Filename": "Packages/python3.11-devel-3.11.2-2.amzn2023.0.10.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3.11-debug",
-          "Release": "2.amzn2023.0.10",
-          "Version": "3.11.2",
-          "Filename": "Packages/python3.11-debug-3.11.2-2.amzn2023.0.10.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3.11-debuginfo",
-          "Release": "2.amzn2023.0.10",
-          "Version": "3.11.2",
-          "Filename": "Packages/python3.11-debuginfo-3.11.2-2.amzn2023.0.10.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3.11-libs",
-          "Release": "2.amzn2023.0.10",
-          "Version": "3.11.2",
-          "Filename": "Packages/python3.11-libs-3.11.2-2.amzn2023.0.10.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3.11-test",
-          "Release": "2.amzn2023.0.10",
-          "Version": "3.11.2",
-          "Filename": "Packages/python3.11-test-3.11.2-2.amzn2023.0.10.x86_64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3.11",
-          "Release": "2.amzn2023.0.10",
-          "Version": "3.11.2",
-          "Filename": "Packages/python3.11-3.11.2-2.amzn2023.0.10.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3.11-idle",
-          "Release": "2.amzn2023.0.10",
-          "Version": "3.11.2",
-          "Filename": "Packages/python3.11-idle-3.11.2-2.amzn2023.0.10.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3.11-tkinter",
-          "Release": "2.amzn2023.0.10",
-          "Version": "3.11.2",
-          "Filename": "Packages/python3.11-tkinter-3.11.2-2.amzn2023.0.10.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3.11-devel",
-          "Release": "2.amzn2023.0.10",
-          "Version": "3.11.2",
-          "Filename": "Packages/python3.11-devel-3.11.2-2.amzn2023.0.10.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3.11-debug",
-          "Release": "2.amzn2023.0.10",
-          "Version": "3.11.2",
-          "Filename": "Packages/python3.11-debug-3.11.2-2.amzn2023.0.10.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3.11-debugsource",
-          "Release": "2.amzn2023.0.10",
-          "Version": "3.11.2",
-          "Filename": "Packages/python3.11-debugsource-3.11.2-2.amzn2023.0.10.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3.11-debuginfo",
-          "Release": "2.amzn2023.0.10",
-          "Version": "3.11.2",
-          "Filename": "Packages/python3.11-debuginfo-3.11.2-2.amzn2023.0.10.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3.11-libs",
-          "Release": "2.amzn2023.0.10",
-          "Version": "3.11.2",
-          "Filename": "Packages/python3.11-libs-3.11.2-2.amzn2023.0.10.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3.11-test",
-          "Release": "2.amzn2023.0.10",
-          "Version": "3.11.2",
-          "Filename": "Packages/python3.11-test-3.11.2-2.amzn2023.0.10.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2023-2023-317",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2023-317: Important priority package update for python3.11",
+	"Issued": {
+		"Date": "2023-08-31 21:42:00"
+	},
+	"Updated": {
+		"Date": "2023-09-07 21:18:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-41105:\n\tAn issue was discovered in Python 3.11 through 3.11.4. If a path containing '\\0' bytes is passed to os.path.normpath(), the path will be truncated unexpectedly at the first '\\0' byte. There are plausible cases in which an application would have rejected a filename for security reasons in Python 3.10.x or earlier, but that filename is no longer rejected in Python 3.11.x.\n\nCVE-2023-40217:\n\tAn issue was discovered in Python before 3.8.18, 3.9.x before 3.9.18, 3.10.x before 3.10.13, and 3.11.x before 3.11.5. It primarily affects servers (such as HTTP servers) that use TLS client authentication. If a TLS server-side socket is created, receives data into the socket buffer, and then is closed quickly, there is a brief window where the SSLSocket instance will detect the socket as \"not connected\" and won't initiate a handshake, but buffered data will still be readable from the socket buffer. This data will not be authenticated if the server-side TLS peer is expecting client certificate authentication, and is indistinguishable from valid TLS stream data. Data is limited in size to the amount that will fit in the buffer. (The TLS connection cannot directly be used for data exfiltration because the vulnerable code path requires that the connection be closed on initialization of the SSLSocket.)\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-40217",
+				"ID": "CVE-2023-40217",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-41105",
+				"ID": "CVE-2023-41105",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.11-tkinter",
+					"Release": "2.amzn2023.0.10",
+					"Version": "3.11.2",
+					"Filename": "Packages/python3.11-tkinter-3.11.2-2.amzn2023.0.10.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.11-debugsource",
+					"Release": "2.amzn2023.0.10",
+					"Version": "3.11.2",
+					"Filename": "Packages/python3.11-debugsource-3.11.2-2.amzn2023.0.10.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.11-idle",
+					"Release": "2.amzn2023.0.10",
+					"Version": "3.11.2",
+					"Filename": "Packages/python3.11-idle-3.11.2-2.amzn2023.0.10.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.11",
+					"Release": "2.amzn2023.0.10",
+					"Version": "3.11.2",
+					"Filename": "Packages/python3.11-3.11.2-2.amzn2023.0.10.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.11-devel",
+					"Release": "2.amzn2023.0.10",
+					"Version": "3.11.2",
+					"Filename": "Packages/python3.11-devel-3.11.2-2.amzn2023.0.10.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.11-debug",
+					"Release": "2.amzn2023.0.10",
+					"Version": "3.11.2",
+					"Filename": "Packages/python3.11-debug-3.11.2-2.amzn2023.0.10.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.11-debuginfo",
+					"Release": "2.amzn2023.0.10",
+					"Version": "3.11.2",
+					"Filename": "Packages/python3.11-debuginfo-3.11.2-2.amzn2023.0.10.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.11-libs",
+					"Release": "2.amzn2023.0.10",
+					"Version": "3.11.2",
+					"Filename": "Packages/python3.11-libs-3.11.2-2.amzn2023.0.10.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.11-test",
+					"Release": "2.amzn2023.0.10",
+					"Version": "3.11.2",
+					"Filename": "Packages/python3.11-test-3.11.2-2.amzn2023.0.10.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.11",
+					"Release": "2.amzn2023.0.10",
+					"Version": "3.11.2",
+					"Filename": "Packages/python3.11-3.11.2-2.amzn2023.0.10.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.11-idle",
+					"Release": "2.amzn2023.0.10",
+					"Version": "3.11.2",
+					"Filename": "Packages/python3.11-idle-3.11.2-2.amzn2023.0.10.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.11-tkinter",
+					"Release": "2.amzn2023.0.10",
+					"Version": "3.11.2",
+					"Filename": "Packages/python3.11-tkinter-3.11.2-2.amzn2023.0.10.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.11-devel",
+					"Release": "2.amzn2023.0.10",
+					"Version": "3.11.2",
+					"Filename": "Packages/python3.11-devel-3.11.2-2.amzn2023.0.10.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.11-debug",
+					"Release": "2.amzn2023.0.10",
+					"Version": "3.11.2",
+					"Filename": "Packages/python3.11-debug-3.11.2-2.amzn2023.0.10.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.11-debugsource",
+					"Release": "2.amzn2023.0.10",
+					"Version": "3.11.2",
+					"Filename": "Packages/python3.11-debugsource-3.11.2-2.amzn2023.0.10.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.11-debuginfo",
+					"Release": "2.amzn2023.0.10",
+					"Version": "3.11.2",
+					"Filename": "Packages/python3.11-debuginfo-3.11.2-2.amzn2023.0.10.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.11-libs",
+					"Release": "2.amzn2023.0.10",
+					"Version": "3.11.2",
+					"Filename": "Packages/python3.11-libs-3.11.2-2.amzn2023.0.10.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.11-test",
+					"Release": "2.amzn2023.0.10",
+					"Version": "3.11.2",
+					"Filename": "Packages/python3.11-test-3.11.2-2.amzn2023.0.10.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

@@ -1,159 +1,159 @@
 {
-  "ID": "ALAS-2012-84",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux - ALAS-2012-84: important priority package update for bind",
-  "Issued": {
-    "Date": "2012-06-10 11:47"
-  },
-  "Updated": {
-    "Date": "2014-09-14 16:18"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-1667:\n\tISC BIND 9.x before 9.7.6-P1, 9.8.x before 9.8.3-P1, 9.9.x before 9.9.1-P1, and 9.4-ESV and 9.6-ESV before 9.6-ESV-R7-P1 does not properly handle resource records with a zero-length RDATA section, which allows remote DNS servers to cause a denial of service (daemon crash or data corruption) or obtain sensitive information from process memory via a crafted record.\nA flaw was found in the way BIND handled zero length resource data records. A malicious owner of a DNS domain could use this flaw to create specially-crafted DNS resource records that would cause a recursive resolver or secondary server to crash or, possibly, disclose portions of its memory.\n828078: \nCVE-2012-1667 bind: handling of zero length rdata can cause named to terminate unexpectedly\n\nCVE-2012-1033:\n\tThe resolver in ISC BIND 9 through 9.8.1-P1 overwrites cached server names and TTL values in NS records during the processing of a response to an A record query, which allows remote attackers to trigger continued resolvability of revoked domain names via a \"ghost domain names\" attack.\nA flaw was found in the way BIND handled the updating of cached name server (NS) resource records. A malicious owner of a DNS domain could use this flaw to keep the domain resolvable by the BIND server even after the delegation was removed from the parent DNS zone. With this update, BIND limits the time-to-live of the replacement record to that of the time-to-live of the record being replaced.\n788650: \nCVE-2012-1033 bind: deleted domain name resolving flaw\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1033",
-        "ID": "CVE-2012-1033",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1667",
-        "ID": "CVE-2012-1667",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2012:0716.html",
-        "ID": "RHSA-2012:0716",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux",
-      "Name": "Amazon Linux",
-      "Package": [
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-chroot",
-          "Release": "1.P1.18.amzn1",
-          "Version": "9.7.6",
-          "Filename": "Packages/bind-chroot-9.7.6-1.P1.18.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-devel",
-          "Release": "1.P1.18.amzn1",
-          "Version": "9.7.6",
-          "Filename": "Packages/bind-devel-9.7.6-1.P1.18.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-utils",
-          "Release": "1.P1.18.amzn1",
-          "Version": "9.7.6",
-          "Filename": "Packages/bind-utils-9.7.6-1.P1.18.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-libs",
-          "Release": "1.P1.18.amzn1",
-          "Version": "9.7.6",
-          "Filename": "Packages/bind-libs-9.7.6-1.P1.18.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-sdb",
-          "Release": "1.P1.18.amzn1",
-          "Version": "9.7.6",
-          "Filename": "Packages/bind-sdb-9.7.6-1.P1.18.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind",
-          "Release": "1.P1.18.amzn1",
-          "Version": "9.7.6",
-          "Filename": "Packages/bind-9.7.6-1.P1.18.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-debuginfo",
-          "Release": "1.P1.18.amzn1",
-          "Version": "9.7.6",
-          "Filename": "Packages/bind-debuginfo-9.7.6-1.P1.18.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-sdb",
-          "Release": "1.P1.18.amzn1",
-          "Version": "9.7.6",
-          "Filename": "Packages/bind-sdb-9.7.6-1.P1.18.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-chroot",
-          "Release": "1.P1.18.amzn1",
-          "Version": "9.7.6",
-          "Filename": "Packages/bind-chroot-9.7.6-1.P1.18.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-libs",
-          "Release": "1.P1.18.amzn1",
-          "Version": "9.7.6",
-          "Filename": "Packages/bind-libs-9.7.6-1.P1.18.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind",
-          "Release": "1.P1.18.amzn1",
-          "Version": "9.7.6",
-          "Filename": "Packages/bind-9.7.6-1.P1.18.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-debuginfo",
-          "Release": "1.P1.18.amzn1",
-          "Version": "9.7.6",
-          "Filename": "Packages/bind-debuginfo-9.7.6-1.P1.18.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-devel",
-          "Release": "1.P1.18.amzn1",
-          "Version": "9.7.6",
-          "Filename": "Packages/bind-devel-9.7.6-1.P1.18.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-utils",
-          "Release": "1.P1.18.amzn1",
-          "Version": "9.7.6",
-          "Filename": "Packages/bind-utils-9.7.6-1.P1.18.amzn1.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2012-84",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux - ALAS-2012-84: important priority package update for bind",
+	"Issued": {
+		"Date": "2012-06-10 11:47"
+	},
+	"Updated": {
+		"Date": "2014-09-14 16:18"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-1667:\n\tISC BIND 9.x before 9.7.6-P1, 9.8.x before 9.8.3-P1, 9.9.x before 9.9.1-P1, and 9.4-ESV and 9.6-ESV before 9.6-ESV-R7-P1 does not properly handle resource records with a zero-length RDATA section, which allows remote DNS servers to cause a denial of service (daemon crash or data corruption) or obtain sensitive information from process memory via a crafted record.\nA flaw was found in the way BIND handled zero length resource data records. A malicious owner of a DNS domain could use this flaw to create specially-crafted DNS resource records that would cause a recursive resolver or secondary server to crash or, possibly, disclose portions of its memory.\n828078: \nCVE-2012-1667 bind: handling of zero length rdata can cause named to terminate unexpectedly\n\nCVE-2012-1033:\n\tThe resolver in ISC BIND 9 through 9.8.1-P1 overwrites cached server names and TTL values in NS records during the processing of a response to an A record query, which allows remote attackers to trigger continued resolvability of revoked domain names via a \"ghost domain names\" attack.\nA flaw was found in the way BIND handled the updating of cached name server (NS) resource records. A malicious owner of a DNS domain could use this flaw to keep the domain resolvable by the BIND server even after the delegation was removed from the parent DNS zone. With this update, BIND limits the time-to-live of the replacement record to that of the time-to-live of the record being replaced.\n788650: \nCVE-2012-1033 bind: deleted domain name resolving flaw\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1033",
+				"ID": "CVE-2012-1033",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1667",
+				"ID": "CVE-2012-1667",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2012:0716.html",
+				"ID": "RHSA-2012:0716",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux",
+			"Name": "Amazon Linux",
+			"Package": [
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-chroot",
+					"Release": "1.P1.18.amzn1",
+					"Version": "9.7.6",
+					"Filename": "Packages/bind-chroot-9.7.6-1.P1.18.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-devel",
+					"Release": "1.P1.18.amzn1",
+					"Version": "9.7.6",
+					"Filename": "Packages/bind-devel-9.7.6-1.P1.18.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-utils",
+					"Release": "1.P1.18.amzn1",
+					"Version": "9.7.6",
+					"Filename": "Packages/bind-utils-9.7.6-1.P1.18.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-libs",
+					"Release": "1.P1.18.amzn1",
+					"Version": "9.7.6",
+					"Filename": "Packages/bind-libs-9.7.6-1.P1.18.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-sdb",
+					"Release": "1.P1.18.amzn1",
+					"Version": "9.7.6",
+					"Filename": "Packages/bind-sdb-9.7.6-1.P1.18.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind",
+					"Release": "1.P1.18.amzn1",
+					"Version": "9.7.6",
+					"Filename": "Packages/bind-9.7.6-1.P1.18.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-debuginfo",
+					"Release": "1.P1.18.amzn1",
+					"Version": "9.7.6",
+					"Filename": "Packages/bind-debuginfo-9.7.6-1.P1.18.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-sdb",
+					"Release": "1.P1.18.amzn1",
+					"Version": "9.7.6",
+					"Filename": "Packages/bind-sdb-9.7.6-1.P1.18.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-chroot",
+					"Release": "1.P1.18.amzn1",
+					"Version": "9.7.6",
+					"Filename": "Packages/bind-chroot-9.7.6-1.P1.18.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-libs",
+					"Release": "1.P1.18.amzn1",
+					"Version": "9.7.6",
+					"Filename": "Packages/bind-libs-9.7.6-1.P1.18.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind",
+					"Release": "1.P1.18.amzn1",
+					"Version": "9.7.6",
+					"Filename": "Packages/bind-9.7.6-1.P1.18.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-debuginfo",
+					"Release": "1.P1.18.amzn1",
+					"Version": "9.7.6",
+					"Filename": "Packages/bind-debuginfo-9.7.6-1.P1.18.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-devel",
+					"Release": "1.P1.18.amzn1",
+					"Version": "9.7.6",
+					"Filename": "Packages/bind-devel-9.7.6-1.P1.18.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-utils",
+					"Release": "1.P1.18.amzn1",
+					"Version": "9.7.6",
+					"Filename": "Packages/bind-utils-9.7.6-1.P1.18.amzn1.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

@@ -1,167 +1,167 @@
 {
-  "ID": "ALAS-2014-392",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-392: medium priority package update for kernel",
-  "Issued": {
-    "Date": "2014-08-21 11:03"
-  },
-  "Updated": {
-    "Date": "2014-09-19 11:43"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-3153:\n\tThe futex_requeue function in kernel/futex.c in the Linux kernel through 3.14.5 does not ensure that calls have two different futex addresses, which allows local users to gain privileges via a crafted FUTEX_REQUEUE command that facilitates unsafe waiter modification.\nA flaw was found in the way the Linux kernel's futex subsystem handled the requeuing of certain Priority Inheritance (PI) futexes. A local, unprivileged user could use this flaw to escalate their privileges on the system.\n1103626: \nCVE-2014-3153 kernel: futex: pi futexes requeue issue\n\nCVE-2014-1739:\n\tThe media_device_enum_entities function in drivers/media/media-device.c in the Linux kernel before 3.14.6 does not initialize a certain data structure, which allows local users to obtain sensitive information from kernel memory by leveraging /dev/media0 read access for a MEDIA_IOC_ENUM_ENTITIES ioctl call.\n1109774: \nCVE-2014-1739 Kernel: drivers: media: an information leakage\n\nCVE-2014-0196:\n\tThe n_tty_write function in drivers/tty/n_tty.c in the Linux kernel through 3.14.3 does not properly manage tty driver access in the \"LECHO & !OPOST\" case, which allows local users to cause a denial of service (memory corruption and system crash) or gain privileges by triggering a race condition involving read and write operations with long strings.\n1094232: \nCVE-2014-0196 kernel: pty layer race condition leading to memory corruption\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0196",
-        "ID": "CVE-2014-0196",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1739",
-        "ID": "CVE-2014-1739",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3153",
-        "ID": "CVE-2014-3153",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "56.140.amzn1",
-          "Version": "3.10.53",
-          "Filename": "Packages/kernel-headers-3.10.53-56.140.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "56.140.amzn1",
-          "Version": "3.10.53",
-          "Filename": "Packages/kernel-3.10.53-56.140.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "56.140.amzn1",
-          "Version": "3.10.53",
-          "Filename": "Packages/kernel-debuginfo-3.10.53-56.140.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "56.140.amzn1",
-          "Version": "3.10.53",
-          "Filename": "Packages/kernel-devel-3.10.53-56.140.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-x86_64",
-          "Release": "56.140.amzn1",
-          "Version": "3.10.53",
-          "Filename": "Packages/kernel-debuginfo-common-x86_64-3.10.53-56.140.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "56.140.amzn1",
-          "Version": "3.10.53",
-          "Filename": "Packages/perf-3.10.53-56.140.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "56.140.amzn1",
-          "Version": "3.10.53",
-          "Filename": "Packages/perf-debuginfo-3.10.53-56.140.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "56.140.amzn1",
-          "Version": "3.10.53",
-          "Filename": "Packages/perf-debuginfo-3.10.53-56.140.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "56.140.amzn1",
-          "Version": "3.10.53",
-          "Filename": "Packages/kernel-headers-3.10.53-56.140.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "56.140.amzn1",
-          "Version": "3.10.53",
-          "Filename": "Packages/perf-3.10.53-56.140.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "56.140.amzn1",
-          "Version": "3.10.53",
-          "Filename": "Packages/kernel-3.10.53-56.140.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "56.140.amzn1",
-          "Version": "3.10.53",
-          "Filename": "Packages/kernel-debuginfo-3.10.53-56.140.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-i686",
-          "Release": "56.140.amzn1",
-          "Version": "3.10.53",
-          "Filename": "Packages/kernel-debuginfo-common-i686-3.10.53-56.140.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "56.140.amzn1",
-          "Version": "3.10.53",
-          "Filename": "Packages/kernel-devel-3.10.53-56.140.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "kernel-doc",
-          "Release": "56.140.amzn1",
-          "Version": "3.10.53",
-          "Filename": "Packages/kernel-doc-3.10.53-56.140.amzn1.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2014-392",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2012.09 - ALAS-2014-392: medium priority package update for kernel",
+	"Issued": {
+		"Date": "2014-08-21 11:03"
+	},
+	"Updated": {
+		"Date": "2014-09-19 11:43"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-3153:\n\tThe futex_requeue function in kernel/futex.c in the Linux kernel through 3.14.5 does not ensure that calls have two different futex addresses, which allows local users to gain privileges via a crafted FUTEX_REQUEUE command that facilitates unsafe waiter modification.\nA flaw was found in the way the Linux kernel's futex subsystem handled the requeuing of certain Priority Inheritance (PI) futexes. A local, unprivileged user could use this flaw to escalate their privileges on the system.\n1103626: \nCVE-2014-3153 kernel: futex: pi futexes requeue issue\n\nCVE-2014-1739:\n\tThe media_device_enum_entities function in drivers/media/media-device.c in the Linux kernel before 3.14.6 does not initialize a certain data structure, which allows local users to obtain sensitive information from kernel memory by leveraging /dev/media0 read access for a MEDIA_IOC_ENUM_ENTITIES ioctl call.\n1109774: \nCVE-2014-1739 Kernel: drivers: media: an information leakage\n\nCVE-2014-0196:\n\tThe n_tty_write function in drivers/tty/n_tty.c in the Linux kernel through 3.14.3 does not properly manage tty driver access in the \"LECHO & !OPOST\" case, which allows local users to cause a denial of service (memory corruption and system crash) or gain privileges by triggering a race condition involving read and write operations with long strings.\n1094232: \nCVE-2014-0196 kernel: pty layer race condition leading to memory corruption\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0196",
+				"ID": "CVE-2014-0196",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1739",
+				"ID": "CVE-2014-1739",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3153",
+				"ID": "CVE-2014-3153",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "56.140.amzn1",
+					"Version": "3.10.53",
+					"Filename": "Packages/kernel-headers-3.10.53-56.140.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "56.140.amzn1",
+					"Version": "3.10.53",
+					"Filename": "Packages/kernel-3.10.53-56.140.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "56.140.amzn1",
+					"Version": "3.10.53",
+					"Filename": "Packages/kernel-debuginfo-3.10.53-56.140.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "56.140.amzn1",
+					"Version": "3.10.53",
+					"Filename": "Packages/kernel-devel-3.10.53-56.140.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-x86_64",
+					"Release": "56.140.amzn1",
+					"Version": "3.10.53",
+					"Filename": "Packages/kernel-debuginfo-common-x86_64-3.10.53-56.140.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "56.140.amzn1",
+					"Version": "3.10.53",
+					"Filename": "Packages/perf-3.10.53-56.140.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "56.140.amzn1",
+					"Version": "3.10.53",
+					"Filename": "Packages/perf-debuginfo-3.10.53-56.140.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "56.140.amzn1",
+					"Version": "3.10.53",
+					"Filename": "Packages/perf-debuginfo-3.10.53-56.140.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "56.140.amzn1",
+					"Version": "3.10.53",
+					"Filename": "Packages/kernel-headers-3.10.53-56.140.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "56.140.amzn1",
+					"Version": "3.10.53",
+					"Filename": "Packages/perf-3.10.53-56.140.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "56.140.amzn1",
+					"Version": "3.10.53",
+					"Filename": "Packages/kernel-3.10.53-56.140.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "56.140.amzn1",
+					"Version": "3.10.53",
+					"Filename": "Packages/kernel-debuginfo-3.10.53-56.140.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-i686",
+					"Release": "56.140.amzn1",
+					"Version": "3.10.53",
+					"Filename": "Packages/kernel-debuginfo-common-i686-3.10.53-56.140.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "56.140.amzn1",
+					"Version": "3.10.53",
+					"Filename": "Packages/kernel-devel-3.10.53-56.140.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "kernel-doc",
+					"Release": "56.140.amzn1",
+					"Version": "3.10.53",
+					"Filename": "Packages/kernel-doc-3.10.53-56.140.amzn1.noarch.rpm"
+				}
+			]
+		}
+	}
 }

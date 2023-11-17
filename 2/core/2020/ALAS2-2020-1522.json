@@ -1,51 +1,51 @@
 {
-  "ID": "ALAS2-2020-1522",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1522: low priority package update for libguestfs-winsupport",
-  "Issued": {
-    "Date": "2020-10-22 18:11"
-  },
-  "Updated": {
-    "Date": "2020-10-22 22:35"
-  },
-  "Severity": "low",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2019-9755:\n\tAn integer underflow issue exists in ntfs-3g 2017.3.23. A local attacker could potentially exploit this by running /bin/ntfs-3g with specially crafted arguments from a specially crafted directory to cause a heap buffer overflow, resulting in a crash or the ability to execute arbitrary code. In installations where /bin/ntfs-3g is a setuid-root binary, this could lead to a local escalation of privileges.\n1691624: CVE-2019-9755 ntfs-3g: heap-based buffer overflow leads to local root privilege escalation\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9755",
-        "ID": "CVE-2019-9755",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libguestfs-winsupport",
-          "Release": "3.amzn2",
-          "Version": "7.2",
-          "Filename": "Packages/libguestfs-winsupport-7.2-3.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libguestfs-winsupport",
-          "Release": "3.amzn2",
-          "Version": "7.2",
-          "Filename": "Packages/libguestfs-winsupport-7.2-3.amzn2.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2020-1522",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1522: low priority package update for libguestfs-winsupport",
+	"Issued": {
+		"Date": "2020-10-22 18:11"
+	},
+	"Updated": {
+		"Date": "2020-10-22 22:35"
+	},
+	"Severity": "low",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2019-9755:\n\tAn integer underflow issue exists in ntfs-3g 2017.3.23. A local attacker could potentially exploit this by running /bin/ntfs-3g with specially crafted arguments from a specially crafted directory to cause a heap buffer overflow, resulting in a crash or the ability to execute arbitrary code. In installations where /bin/ntfs-3g is a setuid-root binary, this could lead to a local escalation of privileges.\n1691624: CVE-2019-9755 ntfs-3g: heap-based buffer overflow leads to local root privilege escalation\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-9755",
+				"ID": "CVE-2019-9755",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libguestfs-winsupport",
+					"Release": "3.amzn2",
+					"Version": "7.2",
+					"Filename": "Packages/libguestfs-winsupport-7.2-3.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libguestfs-winsupport",
+					"Release": "3.amzn2",
+					"Version": "7.2",
+					"Filename": "Packages/libguestfs-winsupport-7.2-3.amzn2.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

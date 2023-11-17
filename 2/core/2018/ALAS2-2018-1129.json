@@ -1,233 +1,233 @@
 {
-  "ID": "ALAS2-2018-1129",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2018-1129: low priority package update for krb5",
-  "Issued": {
-    "Date": "2018-12-13 20:20"
-  },
-  "Updated": {
-    "Date": "2018-12-19 17:41"
-  },
-  "Severity": "low",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-5730:\n\tMIT krb5 1.6 or later allows an authenticated kadmin with permission to add principals to an LDAP Kerberos database to circumvent a DN containership check by supplying both a &quot;linkdn&quot; and &quot;containerdn&quot; database argument, or by supplying a DN string which is a left extension of a container DN string but is not hierarchically within the container DN.\n1551082: \nCVE-2018-5730 krb5: DN container check bypass by supplying special crafted data\n\nCVE-2018-5729:\n\tMIT krb5 1.6 or later allows an authenticated kadmin with permission to add principals to an LDAP Kerberos database to cause a denial of service (NULL pointer dereference) or bypass a DN container check by supplying tagged data that is internal to the database module.\n1551083: \nCVE-2018-5729 krb5: null dereference in kadmind or DN container check bypass by supplying special crafted data\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5729",
-        "ID": "CVE-2018-5729",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5730",
-        "ID": "CVE-2018-5730",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "krb5-devel",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-devel-1.15.1-20.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "krb5-libs",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-libs-1.15.1-20.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "krb5-server",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-server-1.15.1-20.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "krb5-server-ldap",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-server-ldap-1.15.1-20.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "krb5-workstation",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-workstation-1.15.1-20.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "krb5-pkinit",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-pkinit-1.15.1-20.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libkadm5",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/libkadm5-1.15.1-20.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "krb5-debuginfo",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-debuginfo-1.15.1-20.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-devel",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-devel-1.15.1-20.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-libs",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-libs-1.15.1-20.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-server",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-server-1.15.1-20.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-server-ldap",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-server-ldap-1.15.1-20.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-workstation",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-workstation-1.15.1-20.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-pkinit",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-pkinit-1.15.1-20.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libkadm5",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/libkadm5-1.15.1-20.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-debuginfo",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-debuginfo-1.15.1-20.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-devel",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-devel-1.15.1-20.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-libs",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-libs-1.15.1-20.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-server",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-server-1.15.1-20.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-server-ldap",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-server-ldap-1.15.1-20.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-workstation",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-workstation-1.15.1-20.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-pkinit",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-pkinit-1.15.1-20.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libkadm5",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/libkadm5-1.15.1-20.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-debuginfo",
-          "Release": "20.amzn2.0.1",
-          "Version": "1.15.1",
-          "Filename": "Packages/krb5-debuginfo-1.15.1-20.amzn2.0.1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2018-1129",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2018-1129: low priority package update for krb5",
+	"Issued": {
+		"Date": "2018-12-13 20:20"
+	},
+	"Updated": {
+		"Date": "2018-12-19 17:41"
+	},
+	"Severity": "low",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-5730:\n\tMIT krb5 1.6 or later allows an authenticated kadmin with permission to add principals to an LDAP Kerberos database to circumvent a DN containership check by supplying both a &quot;linkdn&quot; and &quot;containerdn&quot; database argument, or by supplying a DN string which is a left extension of a container DN string but is not hierarchically within the container DN.\n1551082: \nCVE-2018-5730 krb5: DN container check bypass by supplying special crafted data\n\nCVE-2018-5729:\n\tMIT krb5 1.6 or later allows an authenticated kadmin with permission to add principals to an LDAP Kerberos database to cause a denial of service (NULL pointer dereference) or bypass a DN container check by supplying tagged data that is internal to the database module.\n1551083: \nCVE-2018-5729 krb5: null dereference in kadmind or DN container check bypass by supplying special crafted data\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5729",
+				"ID": "CVE-2018-5729",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-5730",
+				"ID": "CVE-2018-5730",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "krb5-devel",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-devel-1.15.1-20.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "krb5-libs",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-libs-1.15.1-20.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "krb5-server",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-server-1.15.1-20.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "krb5-server-ldap",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-server-ldap-1.15.1-20.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "krb5-workstation",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-workstation-1.15.1-20.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "krb5-pkinit",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-pkinit-1.15.1-20.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libkadm5",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/libkadm5-1.15.1-20.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "krb5-debuginfo",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-debuginfo-1.15.1-20.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-devel",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-devel-1.15.1-20.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-libs",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-libs-1.15.1-20.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-server",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-server-1.15.1-20.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-server-ldap",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-server-ldap-1.15.1-20.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-workstation",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-workstation-1.15.1-20.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-pkinit",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-pkinit-1.15.1-20.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libkadm5",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/libkadm5-1.15.1-20.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-debuginfo",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-debuginfo-1.15.1-20.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-devel",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-devel-1.15.1-20.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-libs",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-libs-1.15.1-20.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-server",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-server-1.15.1-20.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-server-ldap",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-server-ldap-1.15.1-20.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-workstation",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-workstation-1.15.1-20.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-pkinit",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-pkinit-1.15.1-20.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libkadm5",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/libkadm5-1.15.1-20.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-debuginfo",
+					"Release": "20.amzn2.0.1",
+					"Version": "1.15.1",
+					"Filename": "Packages/krb5-debuginfo-1.15.1-20.amzn2.0.1.i686.rpm"
+				}
+			]
+		}
+	}
 }

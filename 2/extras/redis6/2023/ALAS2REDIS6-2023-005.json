@@ -1,91 +1,91 @@
 {
-  "ID": "ALAS2REDIS6-2023-005",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 - Redis6 2.0 - ALAS2REDIS6-2023-005: important priority package update for redis",
-  "Issued": {
-    "Date": "2023-08-21 21:00"
-  },
-  "Updated": {
-    "Date": "2023-09-25 22:02"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 - Redis6 that fix the following vulnerabilities:\nCVE-2021-32761:\n\tRedis is an in-memory database that persists on disk. A vulnerability involving out-of-bounds read and integer overflow to buffer overflow exists starting with version 2.2 and prior to versions 5.0.13, 6.0.15, and 6.2.5. On 32-bit systems, Redis `*BIT*` command are vulnerable to integer overflow that can potentially be exploited to corrupt the heap, leak arbitrary heap contents or trigger remote code execution. The vulnerability involves changing the default `proto-max-bulk-len` configuration parameter to a very large value and constructing specially crafted commands bit commands. This problem only affects Redis on 32-bit platforms, or compiled as a 32-bit binary. Redis versions 5.0.`3m 6.0.15, and 6.2.5 contain patches for this issue. An additional workaround to mitigate the problem without patching the `redis-server` executable is to prevent users from modifying the `proto-max-bulk-len` configuration parameter. This can be done using ACL to restrict unprivileged users from using the CONFIG SET command.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32761",
-        "ID": "CVE-2021-32761",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2---redis6",
-      "Name": "Amazon Linux 2 - Redis6",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "redis",
-          "Release": "1.amzn2",
-          "Version": "6.2.5",
-          "Filename": "Packages/redis-6.2.5-1.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "redis-devel",
-          "Release": "1.amzn2",
-          "Version": "6.2.5",
-          "Filename": "Packages/redis-devel-6.2.5-1.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "redis-doc",
-          "Release": "1.amzn2",
-          "Version": "6.2.5",
-          "Filename": "Packages/redis-doc-6.2.5-1.amzn2.noarch.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "redis-debuginfo",
-          "Release": "1.amzn2",
-          "Version": "6.2.5",
-          "Filename": "Packages/redis-debuginfo-6.2.5-1.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "redis",
-          "Release": "1.amzn2",
-          "Version": "6.2.5",
-          "Filename": "Packages/redis-6.2.5-1.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "redis-devel",
-          "Release": "1.amzn2",
-          "Version": "6.2.5",
-          "Filename": "Packages/redis-devel-6.2.5-1.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "redis-debuginfo",
-          "Release": "1.amzn2",
-          "Version": "6.2.5",
-          "Filename": "Packages/redis-debuginfo-6.2.5-1.amzn2.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2REDIS6-2023-005",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Redis6 2.0 - ALAS2REDIS6-2023-005: important priority package update for redis",
+	"Issued": {
+		"Date": "2023-08-21 21:00"
+	},
+	"Updated": {
+		"Date": "2023-09-25 22:02"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Redis6 that fix the following vulnerabilities:\nCVE-2021-32761:\n\tRedis is an in-memory database that persists on disk. A vulnerability involving out-of-bounds read and integer overflow to buffer overflow exists starting with version 2.2 and prior to versions 5.0.13, 6.0.15, and 6.2.5. On 32-bit systems, Redis `*BIT*` command are vulnerable to integer overflow that can potentially be exploited to corrupt the heap, leak arbitrary heap contents or trigger remote code execution. The vulnerability involves changing the default `proto-max-bulk-len` configuration parameter to a very large value and constructing specially crafted commands bit commands. This problem only affects Redis on 32-bit platforms, or compiled as a 32-bit binary. Redis versions 5.0.`3m 6.0.15, and 6.2.5 contain patches for this issue. An additional workaround to mitigate the problem without patching the `redis-server` executable is to prevent users from modifying the `proto-max-bulk-len` configuration parameter. This can be done using ACL to restrict unprivileged users from using the CONFIG SET command.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32761",
+				"ID": "CVE-2021-32761",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---redis6",
+			"Name": "Amazon Linux 2 - Redis6",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "redis",
+					"Release": "1.amzn2",
+					"Version": "6.2.5",
+					"Filename": "Packages/redis-6.2.5-1.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "redis-devel",
+					"Release": "1.amzn2",
+					"Version": "6.2.5",
+					"Filename": "Packages/redis-devel-6.2.5-1.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "redis-doc",
+					"Release": "1.amzn2",
+					"Version": "6.2.5",
+					"Filename": "Packages/redis-doc-6.2.5-1.amzn2.noarch.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "redis-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "6.2.5",
+					"Filename": "Packages/redis-debuginfo-6.2.5-1.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "redis",
+					"Release": "1.amzn2",
+					"Version": "6.2.5",
+					"Filename": "Packages/redis-6.2.5-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "redis-devel",
+					"Release": "1.amzn2",
+					"Version": "6.2.5",
+					"Filename": "Packages/redis-devel-6.2.5-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "redis-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "6.2.5",
+					"Filename": "Packages/redis-debuginfo-6.2.5-1.amzn2.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

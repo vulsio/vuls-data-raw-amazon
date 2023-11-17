@@ -1,203 +1,203 @@
 {
-  "ID": "ALAS-2019-1146",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2019-1146: low priority package update for clamav",
-  "Issued": {
-    "Date": "2019-01-09 22:56"
-  },
-  "Updated": {
-    "Date": "2019-01-12 03:28"
-  },
-  "Severity": "low",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-15378:\n\t\n\nCVE-2018-14682:\n\tAn issue was discovered in mspack/chmd.c in libmspack before 0.7alpha. There is an off-by-one error in the TOLOWER() macro for CHM decompression.\n1610941: \nCVE-2018-14682 libmspack: off-by-one error in the TOLOWER() macro for CHM decompression\n\nCVE-2018-14681:\n\tAn issue was discovered in kwajd_read_headers in mspack/kwajd.c in libmspack before 0.7alpha. Bad KWAJ file header extensions could cause a one or two byte overwrite.\n1610896: \nCVE-2018-14681 libmspack: out-of-bounds write in kwajd_read_headers in mspack/kwajd.c\n\nCVE-2018-14680:\n\tAn issue was discovered in mspack/chmd.c in libmspack before 0.7alpha. It does not reject blank CHM filenames.\n1610934: \nCVE-2018-14680 libmspack: off-by-one error in the CHM chunk number validity checks\n\nCVE-2018-14679:\n\tAn issue was discovered in mspack/chmd.c in libmspack before 0.7alpha. There is an off-by-one error in the CHM PMGI/PMGL chunk number validity checks, which could lead to denial of service (uninitialized data dereference and application crash).\n1610890: \nCVE-2018-14679 libmspack: off-by-one error in the CHM PMGI/PMGL chunk number validity checks\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14679",
-        "ID": "CVE-2018-14679",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14680",
-        "ID": "CVE-2018-14680",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14681",
-        "ID": "CVE-2018-14681",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14682",
-        "ID": "CVE-2018-14682",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15378",
-        "ID": "CVE-2018-15378",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "clamav-lib",
-          "Release": "2.35.amzn1",
-          "Version": "0.100.2",
-          "Filename": "Packages/clamav-lib-0.100.2-2.35.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "clamav-milter",
-          "Release": "2.35.amzn1",
-          "Version": "0.100.2",
-          "Filename": "Packages/clamav-milter-0.100.2-2.35.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "clamav-db",
-          "Release": "2.35.amzn1",
-          "Version": "0.100.2",
-          "Filename": "Packages/clamav-db-0.100.2-2.35.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "clamav-filesystem",
-          "Release": "2.35.amzn1",
-          "Version": "0.100.2",
-          "Filename": "Packages/clamav-filesystem-0.100.2-2.35.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "clamav-debuginfo",
-          "Release": "2.35.amzn1",
-          "Version": "0.100.2",
-          "Filename": "Packages/clamav-debuginfo-0.100.2-2.35.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "clamd",
-          "Release": "2.35.amzn1",
-          "Version": "0.100.2",
-          "Filename": "Packages/clamd-0.100.2-2.35.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "clamav-devel",
-          "Release": "2.35.amzn1",
-          "Version": "0.100.2",
-          "Filename": "Packages/clamav-devel-0.100.2-2.35.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "clamav-update",
-          "Release": "2.35.amzn1",
-          "Version": "0.100.2",
-          "Filename": "Packages/clamav-update-0.100.2-2.35.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "clamav",
-          "Release": "2.35.amzn1",
-          "Version": "0.100.2",
-          "Filename": "Packages/clamav-0.100.2-2.35.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "clamav-data",
-          "Release": "2.35.amzn1",
-          "Version": "0.100.2",
-          "Filename": "Packages/clamav-data-0.100.2-2.35.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "clamav-lib",
-          "Release": "2.35.amzn1",
-          "Version": "0.100.2",
-          "Filename": "Packages/clamav-lib-0.100.2-2.35.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "clamav-milter",
-          "Release": "2.35.amzn1",
-          "Version": "0.100.2",
-          "Filename": "Packages/clamav-milter-0.100.2-2.35.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "clamav",
-          "Release": "2.35.amzn1",
-          "Version": "0.100.2",
-          "Filename": "Packages/clamav-0.100.2-2.35.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "clamav-debuginfo",
-          "Release": "2.35.amzn1",
-          "Version": "0.100.2",
-          "Filename": "Packages/clamav-debuginfo-0.100.2-2.35.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "clamav-db",
-          "Release": "2.35.amzn1",
-          "Version": "0.100.2",
-          "Filename": "Packages/clamav-db-0.100.2-2.35.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "clamav-update",
-          "Release": "2.35.amzn1",
-          "Version": "0.100.2",
-          "Filename": "Packages/clamav-update-0.100.2-2.35.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "clamd",
-          "Release": "2.35.amzn1",
-          "Version": "0.100.2",
-          "Filename": "Packages/clamd-0.100.2-2.35.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "clamav-devel",
-          "Release": "2.35.amzn1",
-          "Version": "0.100.2",
-          "Filename": "Packages/clamav-devel-0.100.2-2.35.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2019-1146",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2019-1146: low priority package update for clamav",
+	"Issued": {
+		"Date": "2019-01-09 22:56"
+	},
+	"Updated": {
+		"Date": "2019-01-12 03:28"
+	},
+	"Severity": "low",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-15378:\n\t\n\nCVE-2018-14682:\n\tAn issue was discovered in mspack/chmd.c in libmspack before 0.7alpha. There is an off-by-one error in the TOLOWER() macro for CHM decompression.\n1610941: \nCVE-2018-14682 libmspack: off-by-one error in the TOLOWER() macro for CHM decompression\n\nCVE-2018-14681:\n\tAn issue was discovered in kwajd_read_headers in mspack/kwajd.c in libmspack before 0.7alpha. Bad KWAJ file header extensions could cause a one or two byte overwrite.\n1610896: \nCVE-2018-14681 libmspack: out-of-bounds write in kwajd_read_headers in mspack/kwajd.c\n\nCVE-2018-14680:\n\tAn issue was discovered in mspack/chmd.c in libmspack before 0.7alpha. It does not reject blank CHM filenames.\n1610934: \nCVE-2018-14680 libmspack: off-by-one error in the CHM chunk number validity checks\n\nCVE-2018-14679:\n\tAn issue was discovered in mspack/chmd.c in libmspack before 0.7alpha. There is an off-by-one error in the CHM PMGI/PMGL chunk number validity checks, which could lead to denial of service (uninitialized data dereference and application crash).\n1610890: \nCVE-2018-14679 libmspack: off-by-one error in the CHM PMGI/PMGL chunk number validity checks\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14679",
+				"ID": "CVE-2018-14679",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14680",
+				"ID": "CVE-2018-14680",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14681",
+				"ID": "CVE-2018-14681",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14682",
+				"ID": "CVE-2018-14682",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15378",
+				"ID": "CVE-2018-15378",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-lib",
+					"Release": "2.35.amzn1",
+					"Version": "0.100.2",
+					"Filename": "Packages/clamav-lib-0.100.2-2.35.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-milter",
+					"Release": "2.35.amzn1",
+					"Version": "0.100.2",
+					"Filename": "Packages/clamav-milter-0.100.2-2.35.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-db",
+					"Release": "2.35.amzn1",
+					"Version": "0.100.2",
+					"Filename": "Packages/clamav-db-0.100.2-2.35.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "clamav-filesystem",
+					"Release": "2.35.amzn1",
+					"Version": "0.100.2",
+					"Filename": "Packages/clamav-filesystem-0.100.2-2.35.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-debuginfo",
+					"Release": "2.35.amzn1",
+					"Version": "0.100.2",
+					"Filename": "Packages/clamav-debuginfo-0.100.2-2.35.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamd",
+					"Release": "2.35.amzn1",
+					"Version": "0.100.2",
+					"Filename": "Packages/clamd-0.100.2-2.35.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-devel",
+					"Release": "2.35.amzn1",
+					"Version": "0.100.2",
+					"Filename": "Packages/clamav-devel-0.100.2-2.35.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-update",
+					"Release": "2.35.amzn1",
+					"Version": "0.100.2",
+					"Filename": "Packages/clamav-update-0.100.2-2.35.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav",
+					"Release": "2.35.amzn1",
+					"Version": "0.100.2",
+					"Filename": "Packages/clamav-0.100.2-2.35.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "clamav-data",
+					"Release": "2.35.amzn1",
+					"Version": "0.100.2",
+					"Filename": "Packages/clamav-data-0.100.2-2.35.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "clamav-lib",
+					"Release": "2.35.amzn1",
+					"Version": "0.100.2",
+					"Filename": "Packages/clamav-lib-0.100.2-2.35.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "clamav-milter",
+					"Release": "2.35.amzn1",
+					"Version": "0.100.2",
+					"Filename": "Packages/clamav-milter-0.100.2-2.35.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "clamav",
+					"Release": "2.35.amzn1",
+					"Version": "0.100.2",
+					"Filename": "Packages/clamav-0.100.2-2.35.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "clamav-debuginfo",
+					"Release": "2.35.amzn1",
+					"Version": "0.100.2",
+					"Filename": "Packages/clamav-debuginfo-0.100.2-2.35.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "clamav-db",
+					"Release": "2.35.amzn1",
+					"Version": "0.100.2",
+					"Filename": "Packages/clamav-db-0.100.2-2.35.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "clamav-update",
+					"Release": "2.35.amzn1",
+					"Version": "0.100.2",
+					"Filename": "Packages/clamav-update-0.100.2-2.35.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "clamd",
+					"Release": "2.35.amzn1",
+					"Version": "0.100.2",
+					"Filename": "Packages/clamd-0.100.2-2.35.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "clamav-devel",
+					"Release": "2.35.amzn1",
+					"Version": "0.100.2",
+					"Filename": "Packages/clamav-devel-0.100.2-2.35.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

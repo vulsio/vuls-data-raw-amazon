@@ -1,255 +1,255 @@
 {
-  "ID": "ALAS2023-2023-282",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2023 - ALAS2023-2023-282: Important priority package update for grpc",
-  "Issued": {
-    "Date": "2023-08-03 20:26:00"
-  },
-  "Updated": {
-    "Date": "2023-10-12 16:11:00"
-  },
-  "Severity": "Important",
-  "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-4785:\n\tLack of error handling in the TCP server in Google's gRPC starting version 1.23 on posix-compatible platforms (ex. Linux) allows an attacker to cause a denial of service by initiating a significant number of connections with the server. Note that gRPC C++ Python, and Ruby are affected, but gRPC Java, and Go are NOT affected.\n\nCVE-2023-32732:\n\tgRPC contains a vulnerability whereby a client can cause a termination of connection between a HTTP2 proxy and a gRPC server: a base64 encoding error for `-bin` suffixed headers will result in a disconnection by the gRPC server, but is typically allowed by HTTP2 proxies. We recommend upgrading beyond the commit in  https://github.com/grpc/grpc/pull/32309 https://www.google.com/url\n\nCVE-2023-32731:\n\tWhen gRPC HTTP2 stack raised a header size exceeded error, it skipped parsing the rest of the HPACK frame. This caused any HPACK table mutations to also be skipped, resulting in a desynchronization of HPACK tables between sender and receiver. If leveraged, say, between a proxy and a backend, this could lead to requests from the proxy being interpreted as containing headers from different proxy clients - leading to an information leak that can be used for privilege escalation or data exfiltration. We recommend upgrading beyond the commit contained in  https://github.com/grpc/grpc/pull/33005 https://github.com/grpc/grpc/pull/33005\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-32731",
-        "ID": "CVE-2023-32731",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-32732",
-        "ID": "CVE-2023-32732",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4785",
-        "ID": "CVE-2023-4785",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2023",
-      "Name": "Amazon Linux 2023",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "grpc-debuginfo",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-debuginfo-1.56.2-10.amzn2023.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "grpc-plugins-debuginfo",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-plugins-debuginfo-1.56.2-10.amzn2023.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "grpc-data",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-data-1.56.2-10.amzn2023.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "grpc-cpp-debuginfo",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-cpp-debuginfo-1.56.2-10.amzn2023.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "grpc-plugins",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-plugins-1.56.2-10.amzn2023.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "grpc",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-1.56.2-10.amzn2023.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "grpc-cpp",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-cpp-1.56.2-10.amzn2023.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "grpc-devel",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-devel-1.56.2-10.amzn2023.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "grpc-doc",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-doc-1.56.2-10.amzn2023.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "grpc-debugsource",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-debugsource-1.56.2-10.amzn2023.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "grpc-debuginfo",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-debuginfo-1.56.2-10.amzn2023.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "grpc-cpp-debuginfo",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-cpp-debuginfo-1.56.2-10.amzn2023.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "grpc",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-1.56.2-10.amzn2023.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "grpc-debugsource",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-debugsource-1.56.2-10.amzn2023.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "grpc-cpp",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-cpp-1.56.2-10.amzn2023.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "grpc-devel",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-devel-1.56.2-10.amzn2023.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "grpc-plugins-debuginfo",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-plugins-debuginfo-1.56.2-10.amzn2023.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "grpc-plugins",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-plugins-1.56.2-10.amzn2023.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "grpc-cpp-debuginfo",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-cpp-debuginfo-1.56.2-10.amzn2023.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "grpc-debuginfo",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-debuginfo-1.56.2-10.amzn2023.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "grpc-plugins",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-plugins-1.56.2-10.amzn2023.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "grpc-plugins-debuginfo",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-plugins-debuginfo-1.56.2-10.amzn2023.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "grpc",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-1.56.2-10.amzn2023.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "grpc-cpp",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-cpp-1.56.2-10.amzn2023.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "grpc-devel",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-devel-1.56.2-10.amzn2023.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "grpc-debugsource",
-          "Release": "10.amzn2023",
-          "Version": "1.56.2",
-          "Filename": "Packages/grpc-debugsource-1.56.2-10.amzn2023.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2023-2023-282",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2023-282: Important priority package update for grpc",
+	"Issued": {
+		"Date": "2023-08-03 20:26:00"
+	},
+	"Updated": {
+		"Date": "2023-10-12 16:11:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-4785:\n\tLack of error handling in the TCP server in Google's gRPC starting version 1.23 on posix-compatible platforms (ex. Linux) allows an attacker to cause a denial of service by initiating a significant number of connections with the server. Note that gRPC C++ Python, and Ruby are affected, but gRPC Java, and Go are NOT affected.\n\nCVE-2023-32732:\n\tgRPC contains a vulnerability whereby a client can cause a termination of connection between a HTTP2 proxy and a gRPC server: a base64 encoding error for `-bin` suffixed headers will result in a disconnection by the gRPC server, but is typically allowed by HTTP2 proxies. We recommend upgrading beyond the commit in  https://github.com/grpc/grpc/pull/32309 https://www.google.com/url\n\nCVE-2023-32731:\n\tWhen gRPC HTTP2 stack raised a header size exceeded error, it skipped parsing the rest of the HPACK frame. This caused any HPACK table mutations to also be skipped, resulting in a desynchronization of HPACK tables between sender and receiver. If leveraged, say, between a proxy and a backend, this could lead to requests from the proxy being interpreted as containing headers from different proxy clients - leading to an information leak that can be used for privilege escalation or data exfiltration. We recommend upgrading beyond the commit contained in  https://github.com/grpc/grpc/pull/33005 https://github.com/grpc/grpc/pull/33005\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-32731",
+				"ID": "CVE-2023-32731",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-32732",
+				"ID": "CVE-2023-32732",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4785",
+				"ID": "CVE-2023-4785",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "grpc-debuginfo",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-debuginfo-1.56.2-10.amzn2023.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "grpc-plugins-debuginfo",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-plugins-debuginfo-1.56.2-10.amzn2023.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "grpc-data",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-data-1.56.2-10.amzn2023.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "grpc-cpp-debuginfo",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-cpp-debuginfo-1.56.2-10.amzn2023.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "grpc-plugins",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-plugins-1.56.2-10.amzn2023.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "grpc",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-1.56.2-10.amzn2023.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "grpc-cpp",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-cpp-1.56.2-10.amzn2023.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "grpc-devel",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-devel-1.56.2-10.amzn2023.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "grpc-doc",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-doc-1.56.2-10.amzn2023.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "grpc-debugsource",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-debugsource-1.56.2-10.amzn2023.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "grpc-debuginfo",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-debuginfo-1.56.2-10.amzn2023.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "grpc-cpp-debuginfo",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-cpp-debuginfo-1.56.2-10.amzn2023.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "grpc",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-1.56.2-10.amzn2023.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "grpc-debugsource",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-debugsource-1.56.2-10.amzn2023.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "grpc-cpp",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-cpp-1.56.2-10.amzn2023.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "grpc-devel",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-devel-1.56.2-10.amzn2023.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "grpc-plugins-debuginfo",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-plugins-debuginfo-1.56.2-10.amzn2023.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "grpc-plugins",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-plugins-1.56.2-10.amzn2023.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "grpc-cpp-debuginfo",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-cpp-debuginfo-1.56.2-10.amzn2023.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "grpc-debuginfo",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-debuginfo-1.56.2-10.amzn2023.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "grpc-plugins",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-plugins-1.56.2-10.amzn2023.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "grpc-plugins-debuginfo",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-plugins-debuginfo-1.56.2-10.amzn2023.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "grpc",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-1.56.2-10.amzn2023.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "grpc-cpp",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-cpp-1.56.2-10.amzn2023.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "grpc-devel",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-devel-1.56.2-10.amzn2023.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "grpc-debugsource",
+					"Release": "10.amzn2023",
+					"Version": "1.56.2",
+					"Filename": "Packages/grpc-debugsource-1.56.2-10.amzn2023.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

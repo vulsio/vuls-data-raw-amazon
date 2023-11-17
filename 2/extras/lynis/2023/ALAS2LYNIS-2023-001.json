@@ -1,49 +1,49 @@
 {
-  "ID": "ALAS2LYNIS-2023-001",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 - Lynis 2.0 - ALAS2LYNIS-2023-001: medium priority package update for lynis",
-  "Issued": {
-    "Date": "2023-08-21 21:00"
-  },
-  "Updated": {
-    "Date": "2023-08-21 21:00"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 - Lynis that fix the following vulnerabilities:\nCVE-2020-13882:\n\tCISOfy Lynis before 3.0.0 has Incorrect Access Control because of a TOCTOU race condition. The routine to check the log and report file permissions was not working as intended and could be bypassed locally. Because of the race, an unprivileged attacker can set up a log and report file, and control that up to the point where the specific routine is doing its check. After that, the file can be removed, recreated, and used for additional attacks.\n\nCVE-2019-13033:\n\tIn CISOfy Lynis 2.x through 2.7.5, the license key can be obtained by looking at the process list when a data upload is being performed. This license can be used to upload data to a central Lynis server. Although no data can be extracted by knowing the license key, it may be possible to upload the data of additional scans.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13033",
-        "ID": "CVE-2019-13033",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13882",
-        "ID": "CVE-2020-13882",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2---lynis",
-      "Name": "Amazon Linux 2 - Lynis",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "lynis",
-          "Release": "1.amzn2.0.2",
-          "Version": "3.0.0",
-          "Filename": "Packages/lynis-3.0.0-1.amzn2.0.2.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2LYNIS-2023-001",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Lynis 2.0 - ALAS2LYNIS-2023-001: medium priority package update for lynis",
+	"Issued": {
+		"Date": "2023-08-21 21:00"
+	},
+	"Updated": {
+		"Date": "2023-08-21 21:00"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 - Lynis that fix the following vulnerabilities:\nCVE-2020-13882:\n\tCISOfy Lynis before 3.0.0 has Incorrect Access Control because of a TOCTOU race condition. The routine to check the log and report file permissions was not working as intended and could be bypassed locally. Because of the race, an unprivileged attacker can set up a log and report file, and control that up to the point where the specific routine is doing its check. After that, the file can be removed, recreated, and used for additional attacks.\n\nCVE-2019-13033:\n\tIn CISOfy Lynis 2.x through 2.7.5, the license key can be obtained by looking at the process list when a data upload is being performed. This license can be used to upload data to a central Lynis server. Although no data can be extracted by knowing the license key, it may be possible to upload the data of additional scans.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13033",
+				"ID": "CVE-2019-13033",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13882",
+				"ID": "CVE-2020-13882",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---lynis",
+			"Name": "Amazon Linux 2 - Lynis",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "lynis",
+					"Release": "1.amzn2.0.2",
+					"Version": "3.0.0",
+					"Filename": "Packages/lynis-3.0.0-1.amzn2.0.2.noarch.rpm"
+				}
+			]
+		}
+	}
 }

@@ -1,179 +1,179 @@
 {
-  "ID": "ALAS-2021-1507",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2021-1507: important priority package update for nginx",
-  "Issued": {
-    "Date": "2021-06-01 17:58"
-  },
-  "Updated": {
-    "Date": "2021-06-02 00:04"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2021-23017:\n\tA flaw was found in nginx. An off-by-one error while processing DNS responses allows a network attacker to write a dot character out of bounds in a heap allocated buffer which can allow overwriting the least significant byte of next heap chunk metadata likely leading to a remote code execution in certain circumstances. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n1963121: CVE-2021-23017 nginx: Off-by-one in ngx_resolver_copy() when labels are followed by a pointer to a root domain name\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-23017",
-        "ID": "CVE-2021-23017",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "nginx",
-          "Release": "1.43.amzn1",
-          "Version": "1.18.0",
-          "Filename": "Packages/nginx-1.18.0-1.43.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "nginx-mod-http-image-filter",
-          "Release": "1.43.amzn1",
-          "Version": "1.18.0",
-          "Filename": "Packages/nginx-mod-http-image-filter-1.18.0-1.43.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "nginx-debuginfo",
-          "Release": "1.43.amzn1",
-          "Version": "1.18.0",
-          "Filename": "Packages/nginx-debuginfo-1.18.0-1.43.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "nginx-mod-http-perl",
-          "Release": "1.43.amzn1",
-          "Version": "1.18.0",
-          "Filename": "Packages/nginx-mod-http-perl-1.18.0-1.43.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "nginx-mod-http-xslt-filter",
-          "Release": "1.43.amzn1",
-          "Version": "1.18.0",
-          "Filename": "Packages/nginx-mod-http-xslt-filter-1.18.0-1.43.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "nginx-mod-stream",
-          "Release": "1.43.amzn1",
-          "Version": "1.18.0",
-          "Filename": "Packages/nginx-mod-stream-1.18.0-1.43.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "nginx-mod-mail",
-          "Release": "1.43.amzn1",
-          "Version": "1.18.0",
-          "Filename": "Packages/nginx-mod-mail-1.18.0-1.43.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "nginx-mod-http-geoip",
-          "Release": "1.43.amzn1",
-          "Version": "1.18.0",
-          "Filename": "Packages/nginx-mod-http-geoip-1.18.0-1.43.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "nginx-all-modules",
-          "Release": "1.43.amzn1",
-          "Version": "1.18.0",
-          "Filename": "Packages/nginx-all-modules-1.18.0-1.43.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "nginx-mod-stream",
-          "Release": "1.43.amzn1",
-          "Version": "1.18.0",
-          "Filename": "Packages/nginx-mod-stream-1.18.0-1.43.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "nginx-mod-mail",
-          "Release": "1.43.amzn1",
-          "Version": "1.18.0",
-          "Filename": "Packages/nginx-mod-mail-1.18.0-1.43.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "nginx-mod-http-image-filter",
-          "Release": "1.43.amzn1",
-          "Version": "1.18.0",
-          "Filename": "Packages/nginx-mod-http-image-filter-1.18.0-1.43.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "nginx-mod-http-perl",
-          "Release": "1.43.amzn1",
-          "Version": "1.18.0",
-          "Filename": "Packages/nginx-mod-http-perl-1.18.0-1.43.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "nginx-debuginfo",
-          "Release": "1.43.amzn1",
-          "Version": "1.18.0",
-          "Filename": "Packages/nginx-debuginfo-1.18.0-1.43.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "nginx-mod-http-xslt-filter",
-          "Release": "1.43.amzn1",
-          "Version": "1.18.0",
-          "Filename": "Packages/nginx-mod-http-xslt-filter-1.18.0-1.43.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "nginx",
-          "Release": "1.43.amzn1",
-          "Version": "1.18.0",
-          "Filename": "Packages/nginx-1.18.0-1.43.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "nginx-all-modules",
-          "Release": "1.43.amzn1",
-          "Version": "1.18.0",
-          "Filename": "Packages/nginx-all-modules-1.18.0-1.43.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "nginx-mod-http-geoip",
-          "Release": "1.43.amzn1",
-          "Version": "1.18.0",
-          "Filename": "Packages/nginx-mod-http-geoip-1.18.0-1.43.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2021-1507",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2021-1507: important priority package update for nginx",
+	"Issued": {
+		"Date": "2021-06-01 17:58"
+	},
+	"Updated": {
+		"Date": "2021-06-02 00:04"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2021-23017:\n\tA flaw was found in nginx. An off-by-one error while processing DNS responses allows a network attacker to write a dot character out of bounds in a heap allocated buffer which can allow overwriting the least significant byte of next heap chunk metadata likely leading to a remote code execution in certain circumstances. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n1963121: CVE-2021-23017 nginx: Off-by-one in ngx_resolver_copy() when labels are followed by a pointer to a root domain name\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-23017",
+				"ID": "CVE-2021-23017",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "nginx",
+					"Release": "1.43.amzn1",
+					"Version": "1.18.0",
+					"Filename": "Packages/nginx-1.18.0-1.43.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "nginx-mod-http-image-filter",
+					"Release": "1.43.amzn1",
+					"Version": "1.18.0",
+					"Filename": "Packages/nginx-mod-http-image-filter-1.18.0-1.43.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "nginx-debuginfo",
+					"Release": "1.43.amzn1",
+					"Version": "1.18.0",
+					"Filename": "Packages/nginx-debuginfo-1.18.0-1.43.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "nginx-mod-http-perl",
+					"Release": "1.43.amzn1",
+					"Version": "1.18.0",
+					"Filename": "Packages/nginx-mod-http-perl-1.18.0-1.43.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "nginx-mod-http-xslt-filter",
+					"Release": "1.43.amzn1",
+					"Version": "1.18.0",
+					"Filename": "Packages/nginx-mod-http-xslt-filter-1.18.0-1.43.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "nginx-mod-stream",
+					"Release": "1.43.amzn1",
+					"Version": "1.18.0",
+					"Filename": "Packages/nginx-mod-stream-1.18.0-1.43.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "nginx-mod-mail",
+					"Release": "1.43.amzn1",
+					"Version": "1.18.0",
+					"Filename": "Packages/nginx-mod-mail-1.18.0-1.43.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "nginx-mod-http-geoip",
+					"Release": "1.43.amzn1",
+					"Version": "1.18.0",
+					"Filename": "Packages/nginx-mod-http-geoip-1.18.0-1.43.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "nginx-all-modules",
+					"Release": "1.43.amzn1",
+					"Version": "1.18.0",
+					"Filename": "Packages/nginx-all-modules-1.18.0-1.43.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "nginx-mod-stream",
+					"Release": "1.43.amzn1",
+					"Version": "1.18.0",
+					"Filename": "Packages/nginx-mod-stream-1.18.0-1.43.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "nginx-mod-mail",
+					"Release": "1.43.amzn1",
+					"Version": "1.18.0",
+					"Filename": "Packages/nginx-mod-mail-1.18.0-1.43.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "nginx-mod-http-image-filter",
+					"Release": "1.43.amzn1",
+					"Version": "1.18.0",
+					"Filename": "Packages/nginx-mod-http-image-filter-1.18.0-1.43.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "nginx-mod-http-perl",
+					"Release": "1.43.amzn1",
+					"Version": "1.18.0",
+					"Filename": "Packages/nginx-mod-http-perl-1.18.0-1.43.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "nginx-debuginfo",
+					"Release": "1.43.amzn1",
+					"Version": "1.18.0",
+					"Filename": "Packages/nginx-debuginfo-1.18.0-1.43.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "nginx-mod-http-xslt-filter",
+					"Release": "1.43.amzn1",
+					"Version": "1.18.0",
+					"Filename": "Packages/nginx-mod-http-xslt-filter-1.18.0-1.43.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "nginx",
+					"Release": "1.43.amzn1",
+					"Version": "1.18.0",
+					"Filename": "Packages/nginx-1.18.0-1.43.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "nginx-all-modules",
+					"Release": "1.43.amzn1",
+					"Version": "1.18.0",
+					"Filename": "Packages/nginx-all-modules-1.18.0-1.43.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "nginx-mod-http-geoip",
+					"Release": "1.43.amzn1",
+					"Version": "1.18.0",
+					"Filename": "Packages/nginx-mod-http-geoip-1.18.0-1.43.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

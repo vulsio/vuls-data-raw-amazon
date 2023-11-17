@@ -1,91 +1,91 @@
 {
-  "ID": "ALAS2-2023-1988",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-1988: important priority package update for thunderbird",
-  "Issued": {
-    "Date": "2023-03-17 16:34"
-  },
-  "Updated": {
-    "Date": "2023-03-21 23:24"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-28176:\n\tMozilla Fuzzing Team reported memory safety bugs present in Firefox 110 and ESR 102.8. Some of these bugs showed evidence of memory corruption, and we presume that with enough effort, some of these could have been exploited to run arbitrary code.\n\nCVE-2023-28163:\n\tA flaw was found in Mozilla. The Mozilla Foundation Security Advisory describes the issue that when downloading files through the Save As dialog on Windows with suggested filenames containing environment variable names, Windows would have resolved those in the current user's context. This bug only affects Firefox on Windows. Other versions of Firefox are unaffected.\n\nCVE-2023-28162:\n\tThis issue affects Firefox and Thunderbird ESR 102.8 and earlier. The Mozilla Foundation describes this issue as follows:\n\nWhile implementing AudioWorklets, some code may have casted one type to another, invalid, dynamic type. This could have led to a potentially exploitable crash.\n\nCVE-2023-25752:\n\tThe Mozilla Foundation describes this issue as follows:\n\nWhen accessing throttled streams, the count of available bytes needed to be checked in the calling function to be within bounds. This may have lead future code to be incorrect and vulnerable.\n\nCVE-2023-25751:\n\tThe Mozilla Foundation describes this issue as follows:\n\nSometimes, when invalidating JIT code while following an iterator, the newly generated code could be overwritten incorrectly. This could lead to a potentially exploitable crash.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25751",
-        "ID": "CVE-2023-25751",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25752",
-        "ID": "CVE-2023-25752",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28162",
-        "ID": "CVE-2023-28162",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28163",
-        "ID": "CVE-2023-28163",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28176",
-        "ID": "CVE-2023-28176",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "thunderbird",
-          "Release": "1.amzn2.0.1",
-          "Version": "102.9.0",
-          "Filename": "Packages/thunderbird-102.9.0-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "thunderbird-debuginfo",
-          "Release": "1.amzn2.0.1",
-          "Version": "102.9.0",
-          "Filename": "Packages/thunderbird-debuginfo-102.9.0-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "thunderbird",
-          "Release": "1.amzn2.0.1",
-          "Version": "102.9.0",
-          "Filename": "Packages/thunderbird-102.9.0-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "thunderbird-debuginfo",
-          "Release": "1.amzn2.0.1",
-          "Version": "102.9.0",
-          "Filename": "Packages/thunderbird-debuginfo-102.9.0-1.amzn2.0.1.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2023-1988",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2023-1988: important priority package update for thunderbird",
+	"Issued": {
+		"Date": "2023-03-17 16:34"
+	},
+	"Updated": {
+		"Date": "2023-03-21 23:24"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-28176:\n\tMozilla Fuzzing Team reported memory safety bugs present in Firefox 110 and ESR 102.8. Some of these bugs showed evidence of memory corruption, and we presume that with enough effort, some of these could have been exploited to run arbitrary code.\n\nCVE-2023-28163:\n\tA flaw was found in Mozilla. The Mozilla Foundation Security Advisory describes the issue that when downloading files through the Save As dialog on Windows with suggested filenames containing environment variable names, Windows would have resolved those in the current user's context. This bug only affects Firefox on Windows. Other versions of Firefox are unaffected.\n\nCVE-2023-28162:\n\tThis issue affects Firefox and Thunderbird ESR 102.8 and earlier. The Mozilla Foundation describes this issue as follows:\n\nWhile implementing AudioWorklets, some code may have casted one type to another, invalid, dynamic type. This could have led to a potentially exploitable crash.\n\nCVE-2023-25752:\n\tThe Mozilla Foundation describes this issue as follows:\n\nWhen accessing throttled streams, the count of available bytes needed to be checked in the calling function to be within bounds. This may have lead future code to be incorrect and vulnerable.\n\nCVE-2023-25751:\n\tThe Mozilla Foundation describes this issue as follows:\n\nSometimes, when invalidating JIT code while following an iterator, the newly generated code could be overwritten incorrectly. This could lead to a potentially exploitable crash.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25751",
+				"ID": "CVE-2023-25751",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25752",
+				"ID": "CVE-2023-25752",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28162",
+				"ID": "CVE-2023-28162",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28163",
+				"ID": "CVE-2023-28163",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28176",
+				"ID": "CVE-2023-28176",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "thunderbird",
+					"Release": "1.amzn2.0.1",
+					"Version": "102.9.0",
+					"Filename": "Packages/thunderbird-102.9.0-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "thunderbird-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "102.9.0",
+					"Filename": "Packages/thunderbird-debuginfo-102.9.0-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "thunderbird",
+					"Release": "1.amzn2.0.1",
+					"Version": "102.9.0",
+					"Filename": "Packages/thunderbird-102.9.0-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "thunderbird-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "102.9.0",
+					"Filename": "Packages/thunderbird-debuginfo-102.9.0-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

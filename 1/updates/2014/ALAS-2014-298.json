@@ -1,243 +1,243 @@
 {
-  "ID": "ALAS-2014-298",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-298: medium priority package update for mysql51",
-  "Issued": {
-    "Date": "2014-03-06 14:56"
-  },
-  "Updated": {
-    "Date": "2014-09-16 22:37"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-0437:\n\tThis update fixes several vulnerabilities in the MySQL database server. Information about these flaws can be found on the Oracle Critical Patch Update Advisory page, listed in the References section.\n\nCVE-2014-0412:\n\tThis update fixes several vulnerabilities in the MySQL database server. Information about these flaws can be found on the Oracle Critical Patch Update Advisory page, listed in the References section.\n\nCVE-2014-0402:\n\tThis update fixes several vulnerabilities in the MySQL database server. Information about these flaws can be found on the Oracle Critical Patch Update Advisory page, listed in the References section.\n\nCVE-2014-0401:\n\tThis update fixes several vulnerabilities in the MySQL database server. Information about these flaws can be found on the Oracle Critical Patch Update Advisory page, listed in the References section.\n\nCVE-2014-0393:\n\tThis update fixes several vulnerabilities in the MySQL database server. Information about these flaws can be found on the Oracle Critical Patch Update Advisory page, listed in the References section.\n\nCVE-2014-0386:\n\tThis update fixes several vulnerabilities in the MySQL database server. Information about these flaws can be found on the Oracle Critical Patch Update Advisory page, listed in the References section.\n\nCVE-2014-0001:\n\tA buffer overflow flaw was found in the way the MySQL command line client tool (mysql) processed excessively long version strings. If a user connected to a malicious MySQL server via the mysql client, the server could use this flaw to crash the mysql client or, potentially, execute arbitrary code as the user running the mysql client.\n\nCVE-2013-5908:\n\tThis update fixes several vulnerabilities in the MySQL database server. Information about these flaws can be found on the Oracle Critical Patch Update Advisory page, listed in the References section.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5908",
-        "ID": "CVE-2013-5908",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0001",
-        "ID": "CVE-2014-0001",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0386",
-        "ID": "CVE-2014-0386",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0393",
-        "ID": "CVE-2014-0393",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0401",
-        "ID": "CVE-2014-0401",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0402",
-        "ID": "CVE-2014-0402",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0412",
-        "ID": "CVE-2014-0412",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0437",
-        "ID": "CVE-2014-0437",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2014:0164.html",
-        "ID": "RHSA-2014:0164",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mysql51-server",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-server-5.1.73-3.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mysql51-libs",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-libs-5.1.73-3.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mysql51-test",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-test-5.1.73-3.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mysql51-debuginfo",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-debuginfo-5.1.73-3.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mysql51-embedded-devel",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-embedded-devel-5.1.73-3.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mysql51-embedded",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-embedded-5.1.73-3.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mysql51-bench",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-bench-5.1.73-3.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mysql51-devel",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-devel-5.1.73-3.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mysql51-common",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-common-5.1.73-3.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mysql51",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-5.1.73-3.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mysql51-embedded",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-embedded-5.1.73-3.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mysql51-common",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-common-5.1.73-3.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mysql51",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-5.1.73-3.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mysql51-devel",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-devel-5.1.73-3.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mysql51-server",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-server-5.1.73-3.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mysql51-bench",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-bench-5.1.73-3.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mysql51-debuginfo",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-debuginfo-5.1.73-3.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mysql51-test",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-test-5.1.73-3.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mysql51-embedded-devel",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-embedded-devel-5.1.73-3.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mysql51-libs",
-          "Release": "3.68.amzn1",
-          "Version": "5.1.73",
-          "Filename": "Packages/mysql51-libs-5.1.73-3.68.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2014-298",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2012.09 - ALAS-2014-298: medium priority package update for mysql51",
+	"Issued": {
+		"Date": "2014-03-06 14:56"
+	},
+	"Updated": {
+		"Date": "2014-09-16 22:37"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-0437:\n\tThis update fixes several vulnerabilities in the MySQL database server. Information about these flaws can be found on the Oracle Critical Patch Update Advisory page, listed in the References section.\n\nCVE-2014-0412:\n\tThis update fixes several vulnerabilities in the MySQL database server. Information about these flaws can be found on the Oracle Critical Patch Update Advisory page, listed in the References section.\n\nCVE-2014-0402:\n\tThis update fixes several vulnerabilities in the MySQL database server. Information about these flaws can be found on the Oracle Critical Patch Update Advisory page, listed in the References section.\n\nCVE-2014-0401:\n\tThis update fixes several vulnerabilities in the MySQL database server. Information about these flaws can be found on the Oracle Critical Patch Update Advisory page, listed in the References section.\n\nCVE-2014-0393:\n\tThis update fixes several vulnerabilities in the MySQL database server. Information about these flaws can be found on the Oracle Critical Patch Update Advisory page, listed in the References section.\n\nCVE-2014-0386:\n\tThis update fixes several vulnerabilities in the MySQL database server. Information about these flaws can be found on the Oracle Critical Patch Update Advisory page, listed in the References section.\n\nCVE-2014-0001:\n\tA buffer overflow flaw was found in the way the MySQL command line client tool (mysql) processed excessively long version strings. If a user connected to a malicious MySQL server via the mysql client, the server could use this flaw to crash the mysql client or, potentially, execute arbitrary code as the user running the mysql client.\n\nCVE-2013-5908:\n\tThis update fixes several vulnerabilities in the MySQL database server. Information about these flaws can be found on the Oracle Critical Patch Update Advisory page, listed in the References section.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5908",
+				"ID": "CVE-2013-5908",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0001",
+				"ID": "CVE-2014-0001",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0386",
+				"ID": "CVE-2014-0386",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0393",
+				"ID": "CVE-2014-0393",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0401",
+				"ID": "CVE-2014-0401",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0402",
+				"ID": "CVE-2014-0402",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0412",
+				"ID": "CVE-2014-0412",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0437",
+				"ID": "CVE-2014-0437",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2014:0164.html",
+				"ID": "RHSA-2014:0164",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mysql51-server",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-server-5.1.73-3.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mysql51-libs",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-libs-5.1.73-3.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mysql51-test",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-test-5.1.73-3.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mysql51-debuginfo",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-debuginfo-5.1.73-3.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mysql51-embedded-devel",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-embedded-devel-5.1.73-3.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mysql51-embedded",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-embedded-5.1.73-3.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mysql51-bench",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-bench-5.1.73-3.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mysql51-devel",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-devel-5.1.73-3.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mysql51-common",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-common-5.1.73-3.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mysql51",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-5.1.73-3.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mysql51-embedded",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-embedded-5.1.73-3.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mysql51-common",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-common-5.1.73-3.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mysql51",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-5.1.73-3.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mysql51-devel",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-devel-5.1.73-3.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mysql51-server",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-server-5.1.73-3.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mysql51-bench",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-bench-5.1.73-3.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mysql51-debuginfo",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-debuginfo-5.1.73-3.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mysql51-test",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-test-5.1.73-3.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mysql51-embedded-devel",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-embedded-devel-5.1.73-3.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mysql51-libs",
+					"Release": "3.68.amzn1",
+					"Version": "5.1.73",
+					"Filename": "Packages/mysql51-libs-5.1.73-3.68.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

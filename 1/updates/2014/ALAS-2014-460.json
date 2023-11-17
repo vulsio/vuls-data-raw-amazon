@@ -1,217 +1,217 @@
 {
-  "ID": "ALAS-2014-460",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2014-460: medium priority package update for php-ZendFramework",
-  "Issued": {
-    "Date": "2014-12-11 14:23"
-  },
-  "Updated": {
-    "Date": "2014-12-11 14:34"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-8089:\n\t1151277: \nCVE-2014-8089 php-ZendFramework: SQL injection issue when using the sqlsrv PHP extension (ZF2014-06)\n\nCVE-2014-8088:\n\tThe (1) Zend_Ldap class in Zend before 1.12.9 and (2) Zend\\Ldap component in Zend 2.x before 2.2.8 and 2.3.x before 2.3.3 allows remote attackers to bypass authentication via a password starting with a null byte, which triggers an unauthenticated bind.\n1151276: \nCVE-2014-8088 php-ZendFramework: null byte issue, connect to LDAP without knowing the password (ZF2014-05)\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8088",
-        "ID": "CVE-2014-8088",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8089",
-        "ID": "CVE-2014-8089",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-full",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-full-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-Serializer-Adapter-Igbinary",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-Serializer-Adapter-Igbinary-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-Db-Adapter-Pdo-Pgsql",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-Db-Adapter-Pdo-Pgsql-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-Db-Adapter-Pdo-Mssql",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-Db-Adapter-Pdo-Mssql-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-extras",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-extras-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-Db-Adapter-Pdo",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-Db-Adapter-Pdo-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-Cache-Backend-Memcached",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-Cache-Backend-Memcached-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-Search-Lucene",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-Search-Lucene-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-Cache-Backend-Libmemcached",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-Cache-Backend-Libmemcached-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-Auth-Adapter-Ldap",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-Auth-Adapter-Ldap-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-Db-Adapter-Pdo-Mysql",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-Db-Adapter-Pdo-Mysql-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-Cache-Backend-Apc",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-Cache-Backend-Apc-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-Feed",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-Feed-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-Db-Adapter-Mysqli",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-Db-Adapter-Mysqli-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-Soap",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-Soap-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-Services",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-Services-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-Ldap",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-Ldap-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-Dojo",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-Dojo-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-demos",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-demos-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-Captcha",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-Captcha-1.12.9-1.10.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "php-ZendFramework-Pdf",
-          "Release": "1.10.amzn1",
-          "Version": "1.12.9",
-          "Filename": "Packages/php-ZendFramework-Pdf-1.12.9-1.10.amzn1.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2014-460",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2014-460: medium priority package update for php-ZendFramework",
+	"Issued": {
+		"Date": "2014-12-11 14:23"
+	},
+	"Updated": {
+		"Date": "2014-12-11 14:34"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-8089:\n\t1151277: \nCVE-2014-8089 php-ZendFramework: SQL injection issue when using the sqlsrv PHP extension (ZF2014-06)\n\nCVE-2014-8088:\n\tThe (1) Zend_Ldap class in Zend before 1.12.9 and (2) Zend\\Ldap component in Zend 2.x before 2.2.8 and 2.3.x before 2.3.3 allows remote attackers to bypass authentication via a password starting with a null byte, which triggers an unauthenticated bind.\n1151276: \nCVE-2014-8088 php-ZendFramework: null byte issue, connect to LDAP without knowing the password (ZF2014-05)\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8088",
+				"ID": "CVE-2014-8088",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8089",
+				"ID": "CVE-2014-8089",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-full",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-full-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-Serializer-Adapter-Igbinary",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-Serializer-Adapter-Igbinary-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-Db-Adapter-Pdo-Pgsql",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-Db-Adapter-Pdo-Pgsql-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-Db-Adapter-Pdo-Mssql",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-Db-Adapter-Pdo-Mssql-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-extras",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-extras-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-Db-Adapter-Pdo",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-Db-Adapter-Pdo-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-Cache-Backend-Memcached",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-Cache-Backend-Memcached-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-Search-Lucene",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-Search-Lucene-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-Cache-Backend-Libmemcached",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-Cache-Backend-Libmemcached-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-Auth-Adapter-Ldap",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-Auth-Adapter-Ldap-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-Db-Adapter-Pdo-Mysql",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-Db-Adapter-Pdo-Mysql-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-Cache-Backend-Apc",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-Cache-Backend-Apc-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-Feed",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-Feed-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-Db-Adapter-Mysqli",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-Db-Adapter-Mysqli-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-Soap",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-Soap-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-Services",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-Services-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-Ldap",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-Ldap-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-Dojo",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-Dojo-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-demos",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-demos-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-Captcha",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-Captcha-1.12.9-1.10.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "php-ZendFramework-Pdf",
+					"Release": "1.10.amzn1",
+					"Version": "1.12.9",
+					"Filename": "Packages/php-ZendFramework-Pdf-1.12.9-1.10.amzn1.noarch.rpm"
+				}
+			]
+		}
+	}
 }

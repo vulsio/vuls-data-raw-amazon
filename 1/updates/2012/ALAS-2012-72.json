@@ -1,121 +1,121 @@
 {
-  "ID": "ALAS-2012-72",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux - ALAS-2012-72: important priority package update for openssl",
-  "Issued": {
-    "Date": "2012-05-02 12:28"
-  },
-  "Updated": {
-    "Date": "2014-09-14 15:52"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-2110:\n\tThe asn1_d2i_read_bio function in crypto/asn1/a_d2i_fp.c in OpenSSL before 0.9.8v, 1.0.0 before 1.0.0i, and 1.0.1 before 1.0.1a does not properly interpret integer data, which allows remote attackers to conduct buffer overflow attacks, and cause a denial of service (memory corruption) or possibly have unspecified other impact, via crafted DER data, as demonstrated by an X.509 certificate or an RSA public key.\nMultiple numeric conversion errors, leading to a buffer overflow, were found in the way OpenSSL parsed ASN.1 (Abstract Syntax Notation One) data from BIO (OpenSSL's I/O abstraction) inputs. Specially-crafted DER (Distinguished Encoding Rules) encoded data read from a file or other BIO input could cause an application using the OpenSSL library to crash or, potentially, execute arbitrary code.\n814185: \nCVE-2012-2110 openssl: asn1_d2i_read_bio integer errors leading to buffer overflow\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2110",
-        "ID": "CVE-2012-2110",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2012:0518.html",
-        "ID": "RHSA-2012:0518",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux",
-      "Name": "Amazon Linux",
-      "Package": [
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "openssl-static",
-          "Release": "1.41.amzn1",
-          "Version": "1.0.0i",
-          "Filename": "Packages/openssl-static-1.0.0i-1.41.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "openssl-devel",
-          "Release": "1.41.amzn1",
-          "Version": "1.0.0i",
-          "Filename": "Packages/openssl-devel-1.0.0i-1.41.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "openssl",
-          "Release": "1.41.amzn1",
-          "Version": "1.0.0i",
-          "Filename": "Packages/openssl-1.0.0i-1.41.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "openssl-perl",
-          "Release": "1.41.amzn1",
-          "Version": "1.0.0i",
-          "Filename": "Packages/openssl-perl-1.0.0i-1.41.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "openssl-debuginfo",
-          "Release": "1.41.amzn1",
-          "Version": "1.0.0i",
-          "Filename": "Packages/openssl-debuginfo-1.0.0i-1.41.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "openssl-devel",
-          "Release": "1.41.amzn1",
-          "Version": "1.0.0i",
-          "Filename": "Packages/openssl-devel-1.0.0i-1.41.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "openssl-perl",
-          "Release": "1.41.amzn1",
-          "Version": "1.0.0i",
-          "Filename": "Packages/openssl-perl-1.0.0i-1.41.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "openssl-static",
-          "Release": "1.41.amzn1",
-          "Version": "1.0.0i",
-          "Filename": "Packages/openssl-static-1.0.0i-1.41.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "openssl-debuginfo",
-          "Release": "1.41.amzn1",
-          "Version": "1.0.0i",
-          "Filename": "Packages/openssl-debuginfo-1.0.0i-1.41.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "openssl",
-          "Release": "1.41.amzn1",
-          "Version": "1.0.0i",
-          "Filename": "Packages/openssl-1.0.0i-1.41.amzn1.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2012-72",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux - ALAS-2012-72: important priority package update for openssl",
+	"Issued": {
+		"Date": "2012-05-02 12:28"
+	},
+	"Updated": {
+		"Date": "2014-09-14 15:52"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-2110:\n\tThe asn1_d2i_read_bio function in crypto/asn1/a_d2i_fp.c in OpenSSL before 0.9.8v, 1.0.0 before 1.0.0i, and 1.0.1 before 1.0.1a does not properly interpret integer data, which allows remote attackers to conduct buffer overflow attacks, and cause a denial of service (memory corruption) or possibly have unspecified other impact, via crafted DER data, as demonstrated by an X.509 certificate or an RSA public key.\nMultiple numeric conversion errors, leading to a buffer overflow, were found in the way OpenSSL parsed ASN.1 (Abstract Syntax Notation One) data from BIO (OpenSSL's I/O abstraction) inputs. Specially-crafted DER (Distinguished Encoding Rules) encoded data read from a file or other BIO input could cause an application using the OpenSSL library to crash or, potentially, execute arbitrary code.\n814185: \nCVE-2012-2110 openssl: asn1_d2i_read_bio integer errors leading to buffer overflow\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2110",
+				"ID": "CVE-2012-2110",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2012:0518.html",
+				"ID": "RHSA-2012:0518",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux",
+			"Name": "Amazon Linux",
+			"Package": [
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "openssl-static",
+					"Release": "1.41.amzn1",
+					"Version": "1.0.0i",
+					"Filename": "Packages/openssl-static-1.0.0i-1.41.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "openssl-devel",
+					"Release": "1.41.amzn1",
+					"Version": "1.0.0i",
+					"Filename": "Packages/openssl-devel-1.0.0i-1.41.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "openssl",
+					"Release": "1.41.amzn1",
+					"Version": "1.0.0i",
+					"Filename": "Packages/openssl-1.0.0i-1.41.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "openssl-perl",
+					"Release": "1.41.amzn1",
+					"Version": "1.0.0i",
+					"Filename": "Packages/openssl-perl-1.0.0i-1.41.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "openssl-debuginfo",
+					"Release": "1.41.amzn1",
+					"Version": "1.0.0i",
+					"Filename": "Packages/openssl-debuginfo-1.0.0i-1.41.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "openssl-devel",
+					"Release": "1.41.amzn1",
+					"Version": "1.0.0i",
+					"Filename": "Packages/openssl-devel-1.0.0i-1.41.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "openssl-perl",
+					"Release": "1.41.amzn1",
+					"Version": "1.0.0i",
+					"Filename": "Packages/openssl-perl-1.0.0i-1.41.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "openssl-static",
+					"Release": "1.41.amzn1",
+					"Version": "1.0.0i",
+					"Filename": "Packages/openssl-static-1.0.0i-1.41.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "openssl-debuginfo",
+					"Release": "1.41.amzn1",
+					"Version": "1.0.0i",
+					"Filename": "Packages/openssl-debuginfo-1.0.0i-1.41.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "openssl",
+					"Release": "1.41.amzn1",
+					"Version": "1.0.0i",
+					"Filename": "Packages/openssl-1.0.0i-1.41.amzn1.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

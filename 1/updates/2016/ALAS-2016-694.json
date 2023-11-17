@@ -1,227 +1,227 @@
 {
-  "ID": "ALAS-2016-694",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-694: medium priority package update for kernel",
-  "Issued": {
-    "Date": "2016-04-27 16:15"
-  },
-  "Updated": {
-    "Date": "2017-01-19 16:30"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-7117:\n\tA use-after-free vulnerability was found in the kernel&#039;s socket recvmmsg subsystem. This may allow remote attackers to corrupt memory and may allow execution of arbitrary code. This corruption takes place during the error handling routines within __sys_recvmmsg() function.\n1382268: \nCVE-2016-7117 kernel: Use-after-free in the recvmmsg exit path\n\nCVE-2016-3672:\n\t1324749: \nCVE-2016-3672 kernel: unlimiting the stack disables ASLR\n\nCVE-2016-3156:\n\t1318172: \nCVE-2016-3156 kernel: ipv4: denial of service when destroying a network interface\n\nCVE-2016-3135:\n\t1317386: \nCVE-2016-3135 kernel: netfilter: size overflow in x_tables\n\nCVE-2016-3134:\n\t1317383: \nCVE-2016-3134 kernel: netfilter: missing bounds check in ipt_entry structure\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3134",
-        "ID": "CVE-2016-3134",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3135",
-        "ID": "CVE-2016-3135",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3156",
-        "ID": "CVE-2016-3156",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3672",
-        "ID": "CVE-2016-3672",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7117",
-        "ID": "CVE-2016-7117",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-x86_64",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.4.8-20.46.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/perf-debuginfo-4.4.8-20.46.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/kernel-tools-debuginfo-4.4.8-20.46.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/kernel-tools-4.4.8-20.46.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/kernel-4.4.8-20.46.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/kernel-tools-devel-4.4.8-20.46.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/kernel-debuginfo-4.4.8-20.46.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/perf-4.4.8-20.46.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/kernel-devel-4.4.8-20.46.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/kernel-headers-4.4.8-20.46.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/perf-4.4.8-20.46.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/kernel-4.4.8-20.46.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/kernel-devel-4.4.8-20.46.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/kernel-tools-4.4.8-20.46.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/perf-debuginfo-4.4.8-20.46.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-i686",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/kernel-debuginfo-common-i686-4.4.8-20.46.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/kernel-tools-debuginfo-4.4.8-20.46.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/kernel-debuginfo-4.4.8-20.46.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/kernel-tools-devel-4.4.8-20.46.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/kernel-headers-4.4.8-20.46.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "kernel-doc",
-          "Release": "20.46.amzn1",
-          "Version": "4.4.8",
-          "Filename": "Packages/kernel-doc-4.4.8-20.46.amzn1.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2016-694",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2016-694: medium priority package update for kernel",
+	"Issued": {
+		"Date": "2016-04-27 16:15"
+	},
+	"Updated": {
+		"Date": "2017-01-19 16:30"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-7117:\n\tA use-after-free vulnerability was found in the kernel&#039;s socket recvmmsg subsystem. This may allow remote attackers to corrupt memory and may allow execution of arbitrary code. This corruption takes place during the error handling routines within __sys_recvmmsg() function.\n1382268: \nCVE-2016-7117 kernel: Use-after-free in the recvmmsg exit path\n\nCVE-2016-3672:\n\t1324749: \nCVE-2016-3672 kernel: unlimiting the stack disables ASLR\n\nCVE-2016-3156:\n\t1318172: \nCVE-2016-3156 kernel: ipv4: denial of service when destroying a network interface\n\nCVE-2016-3135:\n\t1317386: \nCVE-2016-3135 kernel: netfilter: size overflow in x_tables\n\nCVE-2016-3134:\n\t1317383: \nCVE-2016-3134 kernel: netfilter: missing bounds check in ipt_entry structure\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3134",
+				"ID": "CVE-2016-3134",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3135",
+				"ID": "CVE-2016-3135",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3156",
+				"ID": "CVE-2016-3156",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3672",
+				"ID": "CVE-2016-3672",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7117",
+				"ID": "CVE-2016-7117",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-x86_64",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/kernel-debuginfo-common-x86_64-4.4.8-20.46.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/perf-debuginfo-4.4.8-20.46.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/kernel-tools-debuginfo-4.4.8-20.46.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/kernel-tools-4.4.8-20.46.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/kernel-4.4.8-20.46.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/kernel-tools-devel-4.4.8-20.46.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/kernel-debuginfo-4.4.8-20.46.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/perf-4.4.8-20.46.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/kernel-devel-4.4.8-20.46.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/kernel-headers-4.4.8-20.46.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/perf-4.4.8-20.46.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/kernel-4.4.8-20.46.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/kernel-devel-4.4.8-20.46.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/kernel-tools-4.4.8-20.46.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/perf-debuginfo-4.4.8-20.46.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-i686",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/kernel-debuginfo-common-i686-4.4.8-20.46.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/kernel-tools-debuginfo-4.4.8-20.46.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/kernel-debuginfo-4.4.8-20.46.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/kernel-tools-devel-4.4.8-20.46.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/kernel-headers-4.4.8-20.46.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "kernel-doc",
+					"Release": "20.46.amzn1",
+					"Version": "4.4.8",
+					"Filename": "Packages/kernel-doc-4.4.8-20.46.amzn1.noarch.rpm"
+				}
+			]
+		}
+	}
 }

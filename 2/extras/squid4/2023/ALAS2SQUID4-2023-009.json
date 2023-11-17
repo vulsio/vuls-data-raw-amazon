@@ -1,95 +1,95 @@
 {
-  "ID": "ALAS2SQUID4-2023-009",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 - Squid4 2.0 - ALAS2SQUID4-2023-009: important priority package update for squid",
-  "Issued": {
-    "Date": "2023-09-14 04:27"
-  },
-  "Updated": {
-    "Date": "2023-09-25 21:59"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 - Squid4 that fix the following vulnerabilities:\nCVE-2022-41317:\n\tA flaw was found in squid. A trusted client can directly access the cache manager information, bypassing the manager ACL protection and resulting in information disclosure.\n\nCVE-2019-12524:\n\tAn issue was discovered in Squid through 4.7. When handling requests from users, Squid checks its rules to see if the request should be denied. Squid by default comes with rules to block access to the Cache Manager, which serves detailed server information meant for the maintainer. This rule is implemented via url_regex. The handler for url_regex rules URL decodes an incoming request. This allows an attacker to encode their URL to bypass the url_regex check, and gain access to the blocked resource.\n\nCVE-2019-12520:\n\tAn issue was discovered in Squid through 4.7 and 5. When receiving a request, Squid checks its cache to see if it can serve up a response. It does this by making a MD5 hash of the absolute URL of the request. If found, it servers the request. The absolute URL can include the decoded UserInfo (username and password) for certain protocols. This decoded info is prepended to the domain. This allows an attacker to provide a username that has special characters to delimit the domain, and treat the rest of the URL as a path or query string. An attacker could first make a request to their domain using an encoded username, then when a request for the target domain comes in that decodes to the exact URL, it will serve the attacker's HTML instead of the real HTML. On Squid servers that also act as reverse proxies, this allows an attacker to gain access to features that only reverse proxies can use, such as ESI.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12520",
-        "ID": "CVE-2019-12520",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12524",
-        "ID": "CVE-2019-12524",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41317",
-        "ID": "CVE-2022-41317",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2---squid4",
-      "Name": "Amazon Linux 2 - Squid4",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "7",
-          "Name": "squid",
-          "Release": "1.amzn2.0.5",
-          "Version": "4.15",
-          "Filename": "Packages/squid-4.15-1.amzn2.0.5.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "7",
-          "Name": "squid-debuginfo",
-          "Release": "1.amzn2.0.5",
-          "Version": "4.15",
-          "Filename": "Packages/squid-debuginfo-4.15-1.amzn2.0.5.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "7",
-          "Name": "squid",
-          "Release": "1.amzn2.0.5",
-          "Version": "4.15",
-          "Filename": "Packages/squid-4.15-1.amzn2.0.5.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "7",
-          "Name": "squid-debuginfo",
-          "Release": "1.amzn2.0.5",
-          "Version": "4.15",
-          "Filename": "Packages/squid-debuginfo-4.15-1.amzn2.0.5.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "7",
-          "Name": "squid",
-          "Release": "1.amzn2.0.5",
-          "Version": "4.15",
-          "Filename": "Packages/squid-4.15-1.amzn2.0.5.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "7",
-          "Name": "squid-debuginfo",
-          "Release": "1.amzn2.0.5",
-          "Version": "4.15",
-          "Filename": "Packages/squid-debuginfo-4.15-1.amzn2.0.5.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2SQUID4-2023-009",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Squid4 2.0 - ALAS2SQUID4-2023-009: important priority package update for squid",
+	"Issued": {
+		"Date": "2023-09-14 04:27"
+	},
+	"Updated": {
+		"Date": "2023-09-25 21:59"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Squid4 that fix the following vulnerabilities:\nCVE-2022-41317:\n\tA flaw was found in squid. A trusted client can directly access the cache manager information, bypassing the manager ACL protection and resulting in information disclosure.\n\nCVE-2019-12524:\n\tAn issue was discovered in Squid through 4.7. When handling requests from users, Squid checks its rules to see if the request should be denied. Squid by default comes with rules to block access to the Cache Manager, which serves detailed server information meant for the maintainer. This rule is implemented via url_regex. The handler for url_regex rules URL decodes an incoming request. This allows an attacker to encode their URL to bypass the url_regex check, and gain access to the blocked resource.\n\nCVE-2019-12520:\n\tAn issue was discovered in Squid through 4.7 and 5. When receiving a request, Squid checks its cache to see if it can serve up a response. It does this by making a MD5 hash of the absolute URL of the request. If found, it servers the request. The absolute URL can include the decoded UserInfo (username and password) for certain protocols. This decoded info is prepended to the domain. This allows an attacker to provide a username that has special characters to delimit the domain, and treat the rest of the URL as a path or query string. An attacker could first make a request to their domain using an encoded username, then when a request for the target domain comes in that decodes to the exact URL, it will serve the attacker's HTML instead of the real HTML. On Squid servers that also act as reverse proxies, this allows an attacker to gain access to features that only reverse proxies can use, such as ESI.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12520",
+				"ID": "CVE-2019-12520",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12524",
+				"ID": "CVE-2019-12524",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41317",
+				"ID": "CVE-2022-41317",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---squid4",
+			"Name": "Amazon Linux 2 - Squid4",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "7",
+					"Name": "squid",
+					"Release": "1.amzn2.0.5",
+					"Version": "4.15",
+					"Filename": "Packages/squid-4.15-1.amzn2.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "7",
+					"Name": "squid-debuginfo",
+					"Release": "1.amzn2.0.5",
+					"Version": "4.15",
+					"Filename": "Packages/squid-debuginfo-4.15-1.amzn2.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "7",
+					"Name": "squid",
+					"Release": "1.amzn2.0.5",
+					"Version": "4.15",
+					"Filename": "Packages/squid-4.15-1.amzn2.0.5.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "7",
+					"Name": "squid-debuginfo",
+					"Release": "1.amzn2.0.5",
+					"Version": "4.15",
+					"Filename": "Packages/squid-debuginfo-4.15-1.amzn2.0.5.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "7",
+					"Name": "squid",
+					"Release": "1.amzn2.0.5",
+					"Version": "4.15",
+					"Filename": "Packages/squid-4.15-1.amzn2.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "7",
+					"Name": "squid-debuginfo",
+					"Release": "1.amzn2.0.5",
+					"Version": "4.15",
+					"Filename": "Packages/squid-debuginfo-4.15-1.amzn2.0.5.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

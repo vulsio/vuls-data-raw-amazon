@@ -1,561 +1,561 @@
 {
-  "ID": "ALAS-2023-1723",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2023-1723: important priority package update for sssd",
-  "Issued": {
-    "Date": "2023-03-30 22:50"
-  },
-  "Updated": {
-    "Date": "2023-04-05 20:23"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2022-4254:\n\tA vulnerability was found in SSSD, in the libsss_certmap functionality. PKINIT enables a client to authenticate to the KDC using an X.509 certificate and the corresponding private key, rather than a passphrase or keytab. FreeIPA uses mapping rules to map a certificate presented during a PKINIT authentication request to the corresponding principal. The mapping filter is vulnerable to LDAP filter injection. The search result can be influenced by values in the certificate, which may be attacker controlled. In the most extreme case, an attacker could gain control of the admin account, leading to full domain takeover.\n\nCVE-2021-3621:\n\tA flaw was found in SSSD, where the sssctl command was vulnerable to shell command injection via the logs-fetch and cache-expire subcommands. This flaw allows an attacker to trick the root user into running a specially crafted sssctl command, such as via sudo, to gain root access. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3621",
-        "ID": "CVE-2021-3621",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4254",
-        "ID": "CVE-2022-4254",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libsss_autofs",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_autofs-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "sssd-krb5-common",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-krb5-common-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "sssd-winbind-idmap",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-winbind-idmap-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libsss_simpleifp",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_simpleifp-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "sssd-common",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-common-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "sssd-dbus",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-dbus-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python27-libsss_nss_idmap",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/python27-libsss_nss_idmap-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libsss_nss_idmap",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_nss_idmap-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libsss_idmap-devel",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_idmap-devel-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "sssd-common-pac",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-common-pac-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libsss_nss_idmap-devel",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_nss_idmap-devel-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libsss_certmap-devel",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_certmap-devel-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libipa_hbac",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libipa_hbac-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libsss_certmap",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_certmap-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python27-sss-murmur",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/python27-sss-murmur-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libsss_sudo",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_sudo-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libsss_idmap",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_idmap-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "sssd-client",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-client-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "sssd-tools",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-tools-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "python27-sssdconfig",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/python27-sssdconfig-1.16.4-21.27.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "sssd-proxy",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-proxy-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "sssd",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python27-libipa_hbac",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/python27-libipa_hbac-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libsss_simpleifp-devel",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_simpleifp-devel-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "sssd-libwbclient-devel",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-libwbclient-devel-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "sssd-debuginfo",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-debuginfo-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "sssd-krb5",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-krb5-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "sssd-ipa",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-ipa-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "sssd-ldap",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-ldap-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python27-sss",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/python27-sss-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "sssd-libwbclient",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-libwbclient-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libipa_hbac-devel",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libipa_hbac-devel-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "sssd-ad",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-ad-1.16.4-21.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "sssd-tools",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-tools-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libsss_simpleifp-devel",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_simpleifp-devel-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python27-sss",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/python27-sss-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "sssd-ipa",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-ipa-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "sssd-libwbclient-devel",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-libwbclient-devel-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libsss_idmap",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_idmap-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libsss_nss_idmap",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_nss_idmap-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libsss_certmap",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_certmap-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "sssd-client",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-client-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "sssd-common",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-common-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libipa_hbac-devel",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libipa_hbac-devel-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "sssd-krb5",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-krb5-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libsss_autofs",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_autofs-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "sssd-common-pac",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-common-pac-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "sssd",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libsss_certmap-devel",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_certmap-devel-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "sssd-debuginfo",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-debuginfo-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "sssd-libwbclient",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-libwbclient-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python27-libipa_hbac",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/python27-libipa_hbac-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libsss_nss_idmap-devel",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_nss_idmap-devel-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "sssd-ad",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-ad-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libipa_hbac",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libipa_hbac-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "sssd-dbus",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-dbus-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libsss_simpleifp",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_simpleifp-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "sssd-krb5-common",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-krb5-common-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python27-libsss_nss_idmap",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/python27-libsss_nss_idmap-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "sssd-winbind-idmap",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-winbind-idmap-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "sssd-ldap",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-ldap-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "sssd-proxy",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/sssd-proxy-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libsss_idmap-devel",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_idmap-devel-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python27-sss-murmur",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/python27-sss-murmur-1.16.4-21.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libsss_sudo",
-          "Release": "21.27.amzn1",
-          "Version": "1.16.4",
-          "Filename": "Packages/libsss_sudo-1.16.4-21.27.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2023-1723",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2023-1723: important priority package update for sssd",
+	"Issued": {
+		"Date": "2023-03-30 22:50"
+	},
+	"Updated": {
+		"Date": "2023-04-05 20:23"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2022-4254:\n\tA vulnerability was found in SSSD, in the libsss_certmap functionality. PKINIT enables a client to authenticate to the KDC using an X.509 certificate and the corresponding private key, rather than a passphrase or keytab. FreeIPA uses mapping rules to map a certificate presented during a PKINIT authentication request to the corresponding principal. The mapping filter is vulnerable to LDAP filter injection. The search result can be influenced by values in the certificate, which may be attacker controlled. In the most extreme case, an attacker could gain control of the admin account, leading to full domain takeover.\n\nCVE-2021-3621:\n\tA flaw was found in SSSD, where the sssctl command was vulnerable to shell command injection via the logs-fetch and cache-expire subcommands. This flaw allows an attacker to trick the root user into running a specially crafted sssctl command, such as via sudo, to gain root access. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3621",
+				"ID": "CVE-2021-3621",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4254",
+				"ID": "CVE-2022-4254",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsss_autofs",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_autofs-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "sssd-krb5-common",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-krb5-common-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "sssd-winbind-idmap",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-winbind-idmap-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsss_simpleifp",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_simpleifp-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "sssd-common",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-common-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "sssd-dbus",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-dbus-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python27-libsss_nss_idmap",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/python27-libsss_nss_idmap-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsss_nss_idmap",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_nss_idmap-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsss_idmap-devel",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_idmap-devel-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "sssd-common-pac",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-common-pac-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsss_nss_idmap-devel",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_nss_idmap-devel-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsss_certmap-devel",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_certmap-devel-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libipa_hbac",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libipa_hbac-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsss_certmap",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_certmap-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python27-sss-murmur",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/python27-sss-murmur-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsss_sudo",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_sudo-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsss_idmap",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_idmap-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "sssd-client",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-client-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "sssd-tools",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-tools-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python27-sssdconfig",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/python27-sssdconfig-1.16.4-21.27.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "sssd-proxy",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-proxy-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "sssd",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python27-libipa_hbac",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/python27-libipa_hbac-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsss_simpleifp-devel",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_simpleifp-devel-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "sssd-libwbclient-devel",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-libwbclient-devel-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "sssd-debuginfo",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-debuginfo-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "sssd-krb5",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-krb5-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "sssd-ipa",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-ipa-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "sssd-ldap",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-ldap-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python27-sss",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/python27-sss-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "sssd-libwbclient",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-libwbclient-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libipa_hbac-devel",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libipa_hbac-devel-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "sssd-ad",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-ad-1.16.4-21.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "sssd-tools",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-tools-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libsss_simpleifp-devel",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_simpleifp-devel-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python27-sss",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/python27-sss-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "sssd-ipa",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-ipa-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "sssd-libwbclient-devel",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-libwbclient-devel-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libsss_idmap",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_idmap-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libsss_nss_idmap",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_nss_idmap-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libsss_certmap",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_certmap-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "sssd-client",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-client-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "sssd-common",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-common-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libipa_hbac-devel",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libipa_hbac-devel-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "sssd-krb5",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-krb5-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libsss_autofs",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_autofs-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "sssd-common-pac",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-common-pac-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "sssd",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libsss_certmap-devel",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_certmap-devel-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "sssd-debuginfo",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-debuginfo-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "sssd-libwbclient",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-libwbclient-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python27-libipa_hbac",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/python27-libipa_hbac-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libsss_nss_idmap-devel",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_nss_idmap-devel-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "sssd-ad",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-ad-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libipa_hbac",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libipa_hbac-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "sssd-dbus",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-dbus-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libsss_simpleifp",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_simpleifp-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "sssd-krb5-common",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-krb5-common-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python27-libsss_nss_idmap",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/python27-libsss_nss_idmap-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "sssd-winbind-idmap",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-winbind-idmap-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "sssd-ldap",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-ldap-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "sssd-proxy",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/sssd-proxy-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libsss_idmap-devel",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_idmap-devel-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python27-sss-murmur",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/python27-sss-murmur-1.16.4-21.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libsss_sudo",
+					"Release": "21.27.amzn1",
+					"Version": "1.16.4",
+					"Filename": "Packages/libsss_sudo-1.16.4-21.27.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

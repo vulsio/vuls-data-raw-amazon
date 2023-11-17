@@ -1,123 +1,123 @@
 {
-  "ID": "ALAS2-2019-1290",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1290: medium priority package update for edk2",
-  "Issued": {
-    "Date": "2019-09-13 23:20"
-  },
-  "Updated": {
-    "Date": "2019-09-19 16:04"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2019-0161:\n\tStack overflow in XHCI for EDK II may allow an unauthenticated user to potentially enable denial of service via local access.\n1694065: \nCVE-2019-0161 edk2: stack overflow in XHCI causing denial of service\n\nCVE-2019-0160:\n\tBuffer overflows were discovered in UDF-related codes under MdeModulePkg\\Universal\\Disk\\PartitionDxe\\Udf.c and MdeModulePkg\\Universal\\Disk\\UdfDxe, which could be triggered with long file names or invalid formatted UDF media.\n1691640: \nCVE-2019-0160 edk2: buffer overflows in PartitionDxe and UdfDxe with long file names and invalid UDF media\n\nCVE-2018-12183:\n\tStack overflow in DxeCore for EDK II may allow an unauthenticated user to potentially enable escalation of privilege, information disclosure and/or denial of service via local access.\n1694077: \nCVE-2018-12183 edk2: stack overflow in DxeCore leads to privilege escalation\n\nCVE-2018-12182:\n\tInsufficient memory write check in SMM service for EDK II may allow an authenticated user to potentially enable escalation of privilege, information disclosure and/or denial of service via local access.\n1694081: \nCVE-2018-12182 edk2: insufficient memory write in SMM service leads to privilege escalation\n\nCVE-2018-12179:\n\tImproper configuration in system firmware for EDK II may allow unauthenticated user to potentially enable escalation of privilege, information disclosure and/or denial of service via local access.\n1694072: \nCVE-2018-12179 edk2: improper configuration insystem firmware leads to privilege escalation\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12179",
-        "ID": "CVE-2018-12179",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12182",
-        "ID": "CVE-2018-12182",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12183",
-        "ID": "CVE-2018-12183",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0160",
-        "ID": "CVE-2019-0160",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0161",
-        "ID": "CVE-2019-0161",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "edk2-tools",
-          "Release": "2.amzn2.0.1",
-          "Version": "20190501stable",
-          "Filename": "Packages/edk2-tools-20190501stable-2.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "edk2-tools-python",
-          "Release": "2.amzn2.0.1",
-          "Version": "20190501stable",
-          "Filename": "Packages/edk2-tools-python-20190501stable-2.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "edk2-tools-doc",
-          "Release": "2.amzn2.0.1",
-          "Version": "20190501stable",
-          "Filename": "Packages/edk2-tools-doc-20190501stable-2.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "edk2-aarch64",
-          "Release": "2.amzn2.0.1",
-          "Version": "20190501stable",
-          "Filename": "Packages/edk2-aarch64-20190501stable-2.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "edk2-debuginfo",
-          "Release": "2.amzn2.0.1",
-          "Version": "20190501stable",
-          "Filename": "Packages/edk2-debuginfo-20190501stable-2.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "edk2-tools",
-          "Release": "2.amzn2.0.1",
-          "Version": "20190501stable",
-          "Filename": "Packages/edk2-tools-20190501stable-2.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "edk2-ovmf",
-          "Release": "2.amzn2.0.1",
-          "Version": "20190501stable",
-          "Filename": "Packages/edk2-ovmf-20190501stable-2.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "edk2-debuginfo",
-          "Release": "2.amzn2.0.1",
-          "Version": "20190501stable",
-          "Filename": "Packages/edk2-debuginfo-20190501stable-2.amzn2.0.1.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2019-1290",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1290: medium priority package update for edk2",
+	"Issued": {
+		"Date": "2019-09-13 23:20"
+	},
+	"Updated": {
+		"Date": "2019-09-19 16:04"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2019-0161:\n\tStack overflow in XHCI for EDK II may allow an unauthenticated user to potentially enable denial of service via local access.\n1694065: \nCVE-2019-0161 edk2: stack overflow in XHCI causing denial of service\n\nCVE-2019-0160:\n\tBuffer overflows were discovered in UDF-related codes under MdeModulePkg\\Universal\\Disk\\PartitionDxe\\Udf.c and MdeModulePkg\\Universal\\Disk\\UdfDxe, which could be triggered with long file names or invalid formatted UDF media.\n1691640: \nCVE-2019-0160 edk2: buffer overflows in PartitionDxe and UdfDxe with long file names and invalid UDF media\n\nCVE-2018-12183:\n\tStack overflow in DxeCore for EDK II may allow an unauthenticated user to potentially enable escalation of privilege, information disclosure and/or denial of service via local access.\n1694077: \nCVE-2018-12183 edk2: stack overflow in DxeCore leads to privilege escalation\n\nCVE-2018-12182:\n\tInsufficient memory write check in SMM service for EDK II may allow an authenticated user to potentially enable escalation of privilege, information disclosure and/or denial of service via local access.\n1694081: \nCVE-2018-12182 edk2: insufficient memory write in SMM service leads to privilege escalation\n\nCVE-2018-12179:\n\tImproper configuration in system firmware for EDK II may allow unauthenticated user to potentially enable escalation of privilege, information disclosure and/or denial of service via local access.\n1694072: \nCVE-2018-12179 edk2: improper configuration insystem firmware leads to privilege escalation\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12179",
+				"ID": "CVE-2018-12179",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12182",
+				"ID": "CVE-2018-12182",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12183",
+				"ID": "CVE-2018-12183",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0160",
+				"ID": "CVE-2019-0160",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-0161",
+				"ID": "CVE-2019-0161",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "edk2-tools",
+					"Release": "2.amzn2.0.1",
+					"Version": "20190501stable",
+					"Filename": "Packages/edk2-tools-20190501stable-2.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "edk2-tools-python",
+					"Release": "2.amzn2.0.1",
+					"Version": "20190501stable",
+					"Filename": "Packages/edk2-tools-python-20190501stable-2.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "edk2-tools-doc",
+					"Release": "2.amzn2.0.1",
+					"Version": "20190501stable",
+					"Filename": "Packages/edk2-tools-doc-20190501stable-2.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "edk2-aarch64",
+					"Release": "2.amzn2.0.1",
+					"Version": "20190501stable",
+					"Filename": "Packages/edk2-aarch64-20190501stable-2.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "edk2-debuginfo",
+					"Release": "2.amzn2.0.1",
+					"Version": "20190501stable",
+					"Filename": "Packages/edk2-debuginfo-20190501stable-2.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "edk2-tools",
+					"Release": "2.amzn2.0.1",
+					"Version": "20190501stable",
+					"Filename": "Packages/edk2-tools-20190501stable-2.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "edk2-ovmf",
+					"Release": "2.amzn2.0.1",
+					"Version": "20190501stable",
+					"Filename": "Packages/edk2-ovmf-20190501stable-2.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "edk2-debuginfo",
+					"Release": "2.amzn2.0.1",
+					"Version": "20190501stable",
+					"Filename": "Packages/edk2-debuginfo-20190501stable-2.amzn2.0.1.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

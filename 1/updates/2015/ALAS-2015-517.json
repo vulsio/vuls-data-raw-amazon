@@ -1,187 +1,187 @@
 {
-  "ID": "ALAS-2015-517",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-517: important priority package update for java-1.8.0-openjdk",
-  "Issued": {
-    "Date": "2015-05-05 15:44"
-  },
-  "Updated": {
-    "Date": "2015-05-05 16:13"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-0488:\n\tA flaw was found in the way the JSSE component in OpenJDK parsed X.509 certificate options. A specially crafted certificate could cause JSSE to raise an exception, possibly causing an application using JSSE to exit unexpectedly.\n\nCVE-2015-0480:\n\tA directory traversal flaw was found in the way the jar tool extracted JAR archive files. A specially crafted JAR archive could cause jar to overwrite arbitrary files writable by the user running jar when the archive was extracted.\n\nCVE-2015-0478:\n\tIt was found that the RSA implementation in the JCE component in OpenJDK did not follow recommended practices for implementing RSA signatures.\n\nCVE-2015-0477:\n\tMultiple flaws were discovered in the Beans and Hotspot components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2015-0470:\n\tMultiple flaws were discovered in the Beans and Hotspot components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2015-0469:\n\tAn off-by-one flaw, leading to a buffer overflow, was found in the font parsing code in the 2D component in OpenJDK. A specially crafted font file could possibly cause the Java Virtual Machine to execute arbitrary code, allowing an untrusted Java application or applet to bypass Java sandbox restrictions.\n\nCVE-2015-0460:\n\tA flaw was found in the way the Hotspot component in OpenJDK handled phantom references. An untrusted Java application or applet could use this flaw to corrupt the Java Virtual Machine memory and, possibly, execute arbitrary code, bypassing Java sandbox restrictions.\n\nCVE-2005-1080:\n\tA directory traversal flaw was found in the way the jar tool extracted JAR archive files. A specially crafted JAR archive could cause jar to overwrite arbitrary files writable by the user running jar when the archive was extracted.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1080",
-        "ID": "CVE-2005-1080",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0460",
-        "ID": "CVE-2015-0460",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0469",
-        "ID": "CVE-2015-0469",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0470",
-        "ID": "CVE-2015-0470",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0477",
-        "ID": "CVE-2015-0477",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0478",
-        "ID": "CVE-2015-0478",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0480",
-        "ID": "CVE-2015-0480",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0488",
-        "ID": "CVE-2015-0488",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2015:0809.html",
-        "ID": "RHSA-2015:0809",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-1.8.0-openjdk-devel",
-          "Release": "30.b13.5.amzn1",
-          "Version": "1.8.0.45",
-          "Filename": "Packages/java-1.8.0-openjdk-devel-1.8.0.45-30.b13.5.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-1.8.0-openjdk-demo",
-          "Release": "30.b13.5.amzn1",
-          "Version": "1.8.0.45",
-          "Filename": "Packages/java-1.8.0-openjdk-demo-1.8.0.45-30.b13.5.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "1",
-          "Name": "java-1.8.0-openjdk-javadoc",
-          "Release": "30.b13.5.amzn1",
-          "Version": "1.8.0.45",
-          "Filename": "Packages/java-1.8.0-openjdk-javadoc-1.8.0.45-30.b13.5.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-1.8.0-openjdk",
-          "Release": "30.b13.5.amzn1",
-          "Version": "1.8.0.45",
-          "Filename": "Packages/java-1.8.0-openjdk-1.8.0.45-30.b13.5.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-1.8.0-openjdk-debuginfo",
-          "Release": "30.b13.5.amzn1",
-          "Version": "1.8.0.45",
-          "Filename": "Packages/java-1.8.0-openjdk-debuginfo-1.8.0.45-30.b13.5.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-1.8.0-openjdk-src",
-          "Release": "30.b13.5.amzn1",
-          "Version": "1.8.0.45",
-          "Filename": "Packages/java-1.8.0-openjdk-src-1.8.0.45-30.b13.5.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-1.8.0-openjdk-headless",
-          "Release": "30.b13.5.amzn1",
-          "Version": "1.8.0.45",
-          "Filename": "Packages/java-1.8.0-openjdk-headless-1.8.0.45-30.b13.5.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "java-1.8.0-openjdk-debuginfo",
-          "Release": "30.b13.5.amzn1",
-          "Version": "1.8.0.45",
-          "Filename": "Packages/java-1.8.0-openjdk-debuginfo-1.8.0.45-30.b13.5.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "java-1.8.0-openjdk-headless",
-          "Release": "30.b13.5.amzn1",
-          "Version": "1.8.0.45",
-          "Filename": "Packages/java-1.8.0-openjdk-headless-1.8.0.45-30.b13.5.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "java-1.8.0-openjdk-src",
-          "Release": "30.b13.5.amzn1",
-          "Version": "1.8.0.45",
-          "Filename": "Packages/java-1.8.0-openjdk-src-1.8.0.45-30.b13.5.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "java-1.8.0-openjdk",
-          "Release": "30.b13.5.amzn1",
-          "Version": "1.8.0.45",
-          "Filename": "Packages/java-1.8.0-openjdk-1.8.0.45-30.b13.5.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "java-1.8.0-openjdk-demo",
-          "Release": "30.b13.5.amzn1",
-          "Version": "1.8.0.45",
-          "Filename": "Packages/java-1.8.0-openjdk-demo-1.8.0.45-30.b13.5.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "java-1.8.0-openjdk-devel",
-          "Release": "30.b13.5.amzn1",
-          "Version": "1.8.0.45",
-          "Filename": "Packages/java-1.8.0-openjdk-devel-1.8.0.45-30.b13.5.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2015-517",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2015-517: important priority package update for java-1.8.0-openjdk",
+	"Issued": {
+		"Date": "2015-05-05 15:44"
+	},
+	"Updated": {
+		"Date": "2015-05-05 16:13"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-0488:\n\tA flaw was found in the way the JSSE component in OpenJDK parsed X.509 certificate options. A specially crafted certificate could cause JSSE to raise an exception, possibly causing an application using JSSE to exit unexpectedly.\n\nCVE-2015-0480:\n\tA directory traversal flaw was found in the way the jar tool extracted JAR archive files. A specially crafted JAR archive could cause jar to overwrite arbitrary files writable by the user running jar when the archive was extracted.\n\nCVE-2015-0478:\n\tIt was found that the RSA implementation in the JCE component in OpenJDK did not follow recommended practices for implementing RSA signatures.\n\nCVE-2015-0477:\n\tMultiple flaws were discovered in the Beans and Hotspot components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2015-0470:\n\tMultiple flaws were discovered in the Beans and Hotspot components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2015-0469:\n\tAn off-by-one flaw, leading to a buffer overflow, was found in the font parsing code in the 2D component in OpenJDK. A specially crafted font file could possibly cause the Java Virtual Machine to execute arbitrary code, allowing an untrusted Java application or applet to bypass Java sandbox restrictions.\n\nCVE-2015-0460:\n\tA flaw was found in the way the Hotspot component in OpenJDK handled phantom references. An untrusted Java application or applet could use this flaw to corrupt the Java Virtual Machine memory and, possibly, execute arbitrary code, bypassing Java sandbox restrictions.\n\nCVE-2005-1080:\n\tA directory traversal flaw was found in the way the jar tool extracted JAR archive files. A specially crafted JAR archive could cause jar to overwrite arbitrary files writable by the user running jar when the archive was extracted.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-1080",
+				"ID": "CVE-2005-1080",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0460",
+				"ID": "CVE-2015-0460",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0469",
+				"ID": "CVE-2015-0469",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0470",
+				"ID": "CVE-2015-0470",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0477",
+				"ID": "CVE-2015-0477",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0478",
+				"ID": "CVE-2015-0478",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0480",
+				"ID": "CVE-2015-0480",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0488",
+				"ID": "CVE-2015-0488",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2015:0809.html",
+				"ID": "RHSA-2015:0809",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-1.8.0-openjdk-devel",
+					"Release": "30.b13.5.amzn1",
+					"Version": "1.8.0.45",
+					"Filename": "Packages/java-1.8.0-openjdk-devel-1.8.0.45-30.b13.5.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-1.8.0-openjdk-demo",
+					"Release": "30.b13.5.amzn1",
+					"Version": "1.8.0.45",
+					"Filename": "Packages/java-1.8.0-openjdk-demo-1.8.0.45-30.b13.5.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "1",
+					"Name": "java-1.8.0-openjdk-javadoc",
+					"Release": "30.b13.5.amzn1",
+					"Version": "1.8.0.45",
+					"Filename": "Packages/java-1.8.0-openjdk-javadoc-1.8.0.45-30.b13.5.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-1.8.0-openjdk",
+					"Release": "30.b13.5.amzn1",
+					"Version": "1.8.0.45",
+					"Filename": "Packages/java-1.8.0-openjdk-1.8.0.45-30.b13.5.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-1.8.0-openjdk-debuginfo",
+					"Release": "30.b13.5.amzn1",
+					"Version": "1.8.0.45",
+					"Filename": "Packages/java-1.8.0-openjdk-debuginfo-1.8.0.45-30.b13.5.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-1.8.0-openjdk-src",
+					"Release": "30.b13.5.amzn1",
+					"Version": "1.8.0.45",
+					"Filename": "Packages/java-1.8.0-openjdk-src-1.8.0.45-30.b13.5.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-1.8.0-openjdk-headless",
+					"Release": "30.b13.5.amzn1",
+					"Version": "1.8.0.45",
+					"Filename": "Packages/java-1.8.0-openjdk-headless-1.8.0.45-30.b13.5.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "java-1.8.0-openjdk-debuginfo",
+					"Release": "30.b13.5.amzn1",
+					"Version": "1.8.0.45",
+					"Filename": "Packages/java-1.8.0-openjdk-debuginfo-1.8.0.45-30.b13.5.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "java-1.8.0-openjdk-headless",
+					"Release": "30.b13.5.amzn1",
+					"Version": "1.8.0.45",
+					"Filename": "Packages/java-1.8.0-openjdk-headless-1.8.0.45-30.b13.5.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "java-1.8.0-openjdk-src",
+					"Release": "30.b13.5.amzn1",
+					"Version": "1.8.0.45",
+					"Filename": "Packages/java-1.8.0-openjdk-src-1.8.0.45-30.b13.5.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "java-1.8.0-openjdk",
+					"Release": "30.b13.5.amzn1",
+					"Version": "1.8.0.45",
+					"Filename": "Packages/java-1.8.0-openjdk-1.8.0.45-30.b13.5.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "java-1.8.0-openjdk-demo",
+					"Release": "30.b13.5.amzn1",
+					"Version": "1.8.0.45",
+					"Filename": "Packages/java-1.8.0-openjdk-demo-1.8.0.45-30.b13.5.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "java-1.8.0-openjdk-devel",
+					"Release": "30.b13.5.amzn1",
+					"Version": "1.8.0.45",
+					"Filename": "Packages/java-1.8.0-openjdk-devel-1.8.0.45-30.b13.5.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

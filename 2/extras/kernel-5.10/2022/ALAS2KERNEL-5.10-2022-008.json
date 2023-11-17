@@ -1,313 +1,313 @@
 {
-  "ID": "ALAS2KERNEL-5.10-2022-008",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 - Kernel-5.10 2.0 - ALAS2KERNEL-5.10-2022-008: medium priority package update for kernel",
-  "Issued": {
-    "Date": "2022-01-21 00:04"
-  },
-  "Updated": {
-    "Date": "2022-12-01 18:21"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2021-42327:\n\tA flaw heap buffer overflow in the Linux kernel's AMD Radeon graphics card driver was found in the way user writes some malicious data to the AMD GPU Display Driver Debug Filesystem (to the VGA sub-directory of the /sys/kernel/debug/ directory). A local user could use this flaw to crash the system or escalate their privileges on the system.\n\nCVE-2021-4002:\n\tA memory leak flaw in the Linux kernel's hugetlbfs memory usage was found in the way the user maps some regions of memory twice using shmget() which are aligned to PUD alignment with the fault of some of the memory pages. A local user could use this flaw to get unauthorized access to some data.\n\nCVE-2021-4001:\n\tA race condition was found in the Linux kernel's ebpf verifier between bpf_map_update_elem and bpf_map_freeze due to a missing lock in kernel/bpf/syscall.c. In this flaw, a local user with a special privilege (cap_sys_admin or cap_bpf) can modify the frozen mapped address space.\n\nCVE-2021-3772:\n\tA flaw was found in the Linux SCTP stack. A blind attacker may be able to kill an existing SCTP association through invalid chunks if the attacker knows the IP-addresses and port numbers being used and the attacker can send packets with spoofed IP addresses.\n\nCVE-2021-3640:\n\tA flaw use-after-free in function sco_sock_sendmsg() of the Linux kernel HCI subsystem was found in the way user calls ioct UFFDIO_REGISTER or other way triggers race condition of the call sco_conn_del() together with the call sco_sock_sendmsg() with the expected controllable faulting memory page. A privileged local user could use this flaw to crash the system or escalate their privileges on the system.\n\nCVE-2020-27820:\n\tA vulnerability was found in Linux kernel, where a use-after-frees in nouveau's postclose() handler could happen if removing device (that is not common to remove video card physically without power-off, but same happens if unbind the driver).\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27820",
-        "ID": "CVE-2020-27820",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3640",
-        "ID": "CVE-2021-3640",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3772",
-        "ID": "CVE-2021-3772",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4001",
-        "ID": "CVE-2021-4001",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4002",
-        "ID": "CVE-2021-4002",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42327",
-        "ID": "CVE-2021-42327",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2---kernel-5.10",
-      "Name": "Amazon Linux 2 - Kernel-5.10",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/kernel-5.10.82-83.359.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/kernel-headers-5.10.82-83.359.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-x86_64",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/kernel-debuginfo-common-x86_64-5.10.82-83.359.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/perf-5.10.82-83.359.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/perf-debuginfo-5.10.82-83.359.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python-perf",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/python-perf-5.10.82-83.359.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python-perf-debuginfo",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/python-perf-debuginfo-5.10.82-83.359.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/kernel-tools-5.10.82-83.359.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/kernel-tools-devel-5.10.82-83.359.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/kernel-tools-debuginfo-5.10.82-83.359.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "bpftool",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/bpftool-5.10.82-83.359.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "bpftool-debuginfo",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/bpftool-debuginfo-5.10.82-83.359.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/kernel-devel-5.10.82-83.359.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/kernel-debuginfo-5.10.82-83.359.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-livepatch-5.10.82-83.359",
-          "Release": "0.amzn2",
-          "Version": "1.0",
-          "Filename": "Packages/kernel-livepatch-5.10.82-83.359-1.0-0.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/kernel-headers-5.10.82-83.359.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/kernel-5.10.82-83.359.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/kernel-headers-5.10.82-83.359.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-aarch64",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/kernel-debuginfo-common-aarch64-5.10.82-83.359.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/perf-5.10.82-83.359.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/perf-debuginfo-5.10.82-83.359.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python-perf",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/python-perf-5.10.82-83.359.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python-perf-debuginfo",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/python-perf-debuginfo-5.10.82-83.359.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/kernel-tools-5.10.82-83.359.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/kernel-tools-devel-5.10.82-83.359.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/kernel-tools-debuginfo-5.10.82-83.359.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "bpftool",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/bpftool-5.10.82-83.359.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "bpftool-debuginfo",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/bpftool-debuginfo-5.10.82-83.359.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/kernel-devel-5.10.82-83.359.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "83.359.amzn2",
-          "Version": "5.10.82",
-          "Filename": "Packages/kernel-debuginfo-5.10.82-83.359.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-livepatch-5.10.82-83.359",
-          "Release": "0.amzn2",
-          "Version": "1.0",
-          "Filename": "Packages/kernel-livepatch-5.10.82-83.359-1.0-0.amzn2.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2KERNEL-5.10-2022-008",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Kernel-5.10 2.0 - ALAS2KERNEL-5.10-2022-008: medium priority package update for kernel",
+	"Issued": {
+		"Date": "2022-01-21 00:04"
+	},
+	"Updated": {
+		"Date": "2022-12-01 18:21"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2021-42327:\n\tA flaw heap buffer overflow in the Linux kernel's AMD Radeon graphics card driver was found in the way user writes some malicious data to the AMD GPU Display Driver Debug Filesystem (to the VGA sub-directory of the /sys/kernel/debug/ directory). A local user could use this flaw to crash the system or escalate their privileges on the system.\n\nCVE-2021-4002:\n\tA memory leak flaw in the Linux kernel's hugetlbfs memory usage was found in the way the user maps some regions of memory twice using shmget() which are aligned to PUD alignment with the fault of some of the memory pages. A local user could use this flaw to get unauthorized access to some data.\n\nCVE-2021-4001:\n\tA race condition was found in the Linux kernel's ebpf verifier between bpf_map_update_elem and bpf_map_freeze due to a missing lock in kernel/bpf/syscall.c. In this flaw, a local user with a special privilege (cap_sys_admin or cap_bpf) can modify the frozen mapped address space.\n\nCVE-2021-3772:\n\tA flaw was found in the Linux SCTP stack. A blind attacker may be able to kill an existing SCTP association through invalid chunks if the attacker knows the IP-addresses and port numbers being used and the attacker can send packets with spoofed IP addresses.\n\nCVE-2021-3640:\n\tA flaw use-after-free in function sco_sock_sendmsg() of the Linux kernel HCI subsystem was found in the way user calls ioct UFFDIO_REGISTER or other way triggers race condition of the call sco_conn_del() together with the call sco_sock_sendmsg() with the expected controllable faulting memory page. A privileged local user could use this flaw to crash the system or escalate their privileges on the system.\n\nCVE-2020-27820:\n\tA vulnerability was found in Linux kernel, where a use-after-frees in nouveau's postclose() handler could happen if removing device (that is not common to remove video card physically without power-off, but same happens if unbind the driver).\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27820",
+				"ID": "CVE-2020-27820",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3640",
+				"ID": "CVE-2021-3640",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3772",
+				"ID": "CVE-2021-3772",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4001",
+				"ID": "CVE-2021-4001",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4002",
+				"ID": "CVE-2021-4002",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-42327",
+				"ID": "CVE-2021-42327",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---kernel-5.10",
+			"Name": "Amazon Linux 2 - Kernel-5.10",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/kernel-5.10.82-83.359.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/kernel-headers-5.10.82-83.359.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-x86_64",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/kernel-debuginfo-common-x86_64-5.10.82-83.359.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/perf-5.10.82-83.359.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/perf-debuginfo-5.10.82-83.359.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-perf",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/python-perf-5.10.82-83.359.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-perf-debuginfo",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/python-perf-debuginfo-5.10.82-83.359.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/kernel-tools-5.10.82-83.359.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/kernel-tools-devel-5.10.82-83.359.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/kernel-tools-debuginfo-5.10.82-83.359.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "bpftool",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/bpftool-5.10.82-83.359.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "bpftool-debuginfo",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/bpftool-debuginfo-5.10.82-83.359.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/kernel-devel-5.10.82-83.359.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/kernel-debuginfo-5.10.82-83.359.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-livepatch-5.10.82-83.359",
+					"Release": "0.amzn2",
+					"Version": "1.0",
+					"Filename": "Packages/kernel-livepatch-5.10.82-83.359-1.0-0.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/kernel-headers-5.10.82-83.359.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/kernel-5.10.82-83.359.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/kernel-headers-5.10.82-83.359.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-aarch64",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/kernel-debuginfo-common-aarch64-5.10.82-83.359.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/perf-5.10.82-83.359.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/perf-debuginfo-5.10.82-83.359.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-perf",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/python-perf-5.10.82-83.359.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-perf-debuginfo",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/python-perf-debuginfo-5.10.82-83.359.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/kernel-tools-5.10.82-83.359.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/kernel-tools-devel-5.10.82-83.359.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/kernel-tools-debuginfo-5.10.82-83.359.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "bpftool",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/bpftool-5.10.82-83.359.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "bpftool-debuginfo",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/bpftool-debuginfo-5.10.82-83.359.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/kernel-devel-5.10.82-83.359.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "83.359.amzn2",
+					"Version": "5.10.82",
+					"Filename": "Packages/kernel-debuginfo-5.10.82-83.359.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-livepatch-5.10.82-83.359",
+					"Release": "0.amzn2",
+					"Version": "1.0",
+					"Filename": "Packages/kernel-livepatch-5.10.82-83.359-1.0-0.amzn2.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

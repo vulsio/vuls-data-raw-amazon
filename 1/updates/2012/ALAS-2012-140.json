@@ -1,121 +1,121 @@
 {
-  "ID": "ALAS-2012-140",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux - ALAS-2012-140: medium priority package update for libproxy",
-  "Issued": {
-    "Date": "2012-11-20 06:25"
-  },
-  "Updated": {
-    "Date": "2014-09-14 17:15"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-4505:\n\tHeap-based buffer overflow in the px_pac_reload function in lib/pac.c in libproxy 0.2.x and 0.3.x allows remote servers to have an unspecified impact via a crafted Content-Length size in an HTTP response header for a proxy.pac file request, a different vulnerability than CVE-2012-4504.\nA buffer overflow flaw was found in the way libproxy handled the downloading of proxy auto-configuration (PAC) files. A malicious server hosting a PAC file or a man-in-the-middle attacker could use this flaw to cause an application using libproxy to crash or, possibly, execute arbitrary code, if the proxy settings obtained by libproxy (from the environment or the desktop environment settings) instructed the use of a PAC proxy configuration.\n864612: \nCVE-2012-4505 libproxy: PAC handling insufficient content length check leading to buffer overflow\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4505",
-        "ID": "CVE-2012-4505",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2012:1461.html",
-        "ID": "RHSA-2012:1461",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux",
-      "Name": "Amazon Linux",
-      "Package": [
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libproxy-bin",
-          "Release": "3.7.amzn1",
-          "Version": "0.3.0",
-          "Filename": "Packages/libproxy-bin-0.3.0-3.7.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libproxy-devel",
-          "Release": "3.7.amzn1",
-          "Version": "0.3.0",
-          "Filename": "Packages/libproxy-devel-0.3.0-3.7.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libproxy-python",
-          "Release": "3.7.amzn1",
-          "Version": "0.3.0",
-          "Filename": "Packages/libproxy-python-0.3.0-3.7.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libproxy-debuginfo",
-          "Release": "3.7.amzn1",
-          "Version": "0.3.0",
-          "Filename": "Packages/libproxy-debuginfo-0.3.0-3.7.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libproxy",
-          "Release": "3.7.amzn1",
-          "Version": "0.3.0",
-          "Filename": "Packages/libproxy-0.3.0-3.7.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libproxy-python",
-          "Release": "3.7.amzn1",
-          "Version": "0.3.0",
-          "Filename": "Packages/libproxy-python-0.3.0-3.7.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libproxy",
-          "Release": "3.7.amzn1",
-          "Version": "0.3.0",
-          "Filename": "Packages/libproxy-0.3.0-3.7.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libproxy-bin",
-          "Release": "3.7.amzn1",
-          "Version": "0.3.0",
-          "Filename": "Packages/libproxy-bin-0.3.0-3.7.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libproxy-devel",
-          "Release": "3.7.amzn1",
-          "Version": "0.3.0",
-          "Filename": "Packages/libproxy-devel-0.3.0-3.7.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libproxy-debuginfo",
-          "Release": "3.7.amzn1",
-          "Version": "0.3.0",
-          "Filename": "Packages/libproxy-debuginfo-0.3.0-3.7.amzn1.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2012-140",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux - ALAS-2012-140: medium priority package update for libproxy",
+	"Issued": {
+		"Date": "2012-11-20 06:25"
+	},
+	"Updated": {
+		"Date": "2014-09-14 17:15"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-4505:\n\tHeap-based buffer overflow in the px_pac_reload function in lib/pac.c in libproxy 0.2.x and 0.3.x allows remote servers to have an unspecified impact via a crafted Content-Length size in an HTTP response header for a proxy.pac file request, a different vulnerability than CVE-2012-4504.\nA buffer overflow flaw was found in the way libproxy handled the downloading of proxy auto-configuration (PAC) files. A malicious server hosting a PAC file or a man-in-the-middle attacker could use this flaw to cause an application using libproxy to crash or, possibly, execute arbitrary code, if the proxy settings obtained by libproxy (from the environment or the desktop environment settings) instructed the use of a PAC proxy configuration.\n864612: \nCVE-2012-4505 libproxy: PAC handling insufficient content length check leading to buffer overflow\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-4505",
+				"ID": "CVE-2012-4505",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2012:1461.html",
+				"ID": "RHSA-2012:1461",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux",
+			"Name": "Amazon Linux",
+			"Package": [
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libproxy-bin",
+					"Release": "3.7.amzn1",
+					"Version": "0.3.0",
+					"Filename": "Packages/libproxy-bin-0.3.0-3.7.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libproxy-devel",
+					"Release": "3.7.amzn1",
+					"Version": "0.3.0",
+					"Filename": "Packages/libproxy-devel-0.3.0-3.7.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libproxy-python",
+					"Release": "3.7.amzn1",
+					"Version": "0.3.0",
+					"Filename": "Packages/libproxy-python-0.3.0-3.7.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libproxy-debuginfo",
+					"Release": "3.7.amzn1",
+					"Version": "0.3.0",
+					"Filename": "Packages/libproxy-debuginfo-0.3.0-3.7.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libproxy",
+					"Release": "3.7.amzn1",
+					"Version": "0.3.0",
+					"Filename": "Packages/libproxy-0.3.0-3.7.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libproxy-python",
+					"Release": "3.7.amzn1",
+					"Version": "0.3.0",
+					"Filename": "Packages/libproxy-python-0.3.0-3.7.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libproxy",
+					"Release": "3.7.amzn1",
+					"Version": "0.3.0",
+					"Filename": "Packages/libproxy-0.3.0-3.7.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libproxy-bin",
+					"Release": "3.7.amzn1",
+					"Version": "0.3.0",
+					"Filename": "Packages/libproxy-bin-0.3.0-3.7.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libproxy-devel",
+					"Release": "3.7.amzn1",
+					"Version": "0.3.0",
+					"Filename": "Packages/libproxy-devel-0.3.0-3.7.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libproxy-debuginfo",
+					"Release": "3.7.amzn1",
+					"Version": "0.3.0",
+					"Filename": "Packages/libproxy-debuginfo-0.3.0-3.7.amzn1.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

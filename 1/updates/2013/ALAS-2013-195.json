@@ -1,211 +1,211 @@
 {
-  "ID": "ALAS-2013-195",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-195: medium priority package update for ruby19",
-  "Issued": {
-    "Date": "2013-05-24 13:57"
-  },
-  "Updated": {
-    "Date": "2014-09-15 23:07"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-1821:\n\tlib/rexml/text.rb in the REXML parser in Ruby before 1.9.3-p392 allows remote attackers to cause a denial of service (memory consumption and crash) via crafted text nodes in an XML document, aka an XML Entity Expansion (XEE) attack.\nIt was discovered that Ruby's REXML library did not properly restrict XML entity expansion. An attacker could use this flaw to cause a denial of service by tricking a Ruby application using REXML to read text nodes from specially-crafted XML content, which will result in REXML consuming large amounts of system memory.\n914716: \nCVE-2013-1821 ruby: entity expansion DoS vulnerability in REXML\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1821",
-        "ID": "CVE-2013-1821",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "ruby19-debuginfo",
-          "Release": "29.38.amzn1",
-          "Version": "1.9.3.392",
-          "Filename": "Packages/ruby19-debuginfo-1.9.3.392-29.38.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "ruby19-libs",
-          "Release": "29.38.amzn1",
-          "Version": "1.9.3.392",
-          "Filename": "Packages/ruby19-libs-1.9.3.392-29.38.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "rubygem19-minitest",
-          "Release": "29.38.amzn1",
-          "Version": "2.5.1",
-          "Filename": "Packages/rubygem19-minitest-2.5.1-29.38.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "ruby19-irb",
-          "Release": "29.38.amzn1",
-          "Version": "1.9.3.392",
-          "Filename": "Packages/ruby19-irb-1.9.3.392-29.38.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "ruby19-devel",
-          "Release": "29.38.amzn1",
-          "Version": "1.9.3.392",
-          "Filename": "Packages/ruby19-devel-1.9.3.392-29.38.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "rubygems19-devel",
-          "Release": "29.38.amzn1",
-          "Version": "1.8.23",
-          "Filename": "Packages/rubygems19-devel-1.8.23-29.38.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "rubygem19-bigdecimal",
-          "Release": "29.38.amzn1",
-          "Version": "1.1.0",
-          "Filename": "Packages/rubygem19-bigdecimal-1.1.0-29.38.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "rubygem19-rdoc",
-          "Release": "29.38.amzn1",
-          "Version": "3.9.5",
-          "Filename": "Packages/rubygem19-rdoc-3.9.5-29.38.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "ruby19",
-          "Release": "29.38.amzn1",
-          "Version": "1.9.3.392",
-          "Filename": "Packages/ruby19-1.9.3.392-29.38.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "ruby19-doc",
-          "Release": "29.38.amzn1",
-          "Version": "1.9.3.392",
-          "Filename": "Packages/ruby19-doc-1.9.3.392-29.38.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "rubygems19",
-          "Release": "29.38.amzn1",
-          "Version": "1.8.23",
-          "Filename": "Packages/rubygems19-1.8.23-29.38.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "rubygem19-io-console",
-          "Release": "29.38.amzn1",
-          "Version": "0.3",
-          "Filename": "Packages/rubygem19-io-console-0.3-29.38.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "rubygem19-json",
-          "Release": "29.38.amzn1",
-          "Version": "1.5.5",
-          "Filename": "Packages/rubygem19-json-1.5.5-29.38.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "rubygem19-rake",
-          "Release": "29.38.amzn1",
-          "Version": "0.9.2.2",
-          "Filename": "Packages/rubygem19-rake-0.9.2.2-29.38.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "ruby19",
-          "Release": "29.38.amzn1",
-          "Version": "1.9.3.392",
-          "Filename": "Packages/ruby19-1.9.3.392-29.38.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "rubygem19-json",
-          "Release": "29.38.amzn1",
-          "Version": "1.5.5",
-          "Filename": "Packages/rubygem19-json-1.5.5-29.38.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "ruby19-devel",
-          "Release": "29.38.amzn1",
-          "Version": "1.9.3.392",
-          "Filename": "Packages/ruby19-devel-1.9.3.392-29.38.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "ruby19-libs",
-          "Release": "29.38.amzn1",
-          "Version": "1.9.3.392",
-          "Filename": "Packages/ruby19-libs-1.9.3.392-29.38.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "ruby19-debuginfo",
-          "Release": "29.38.amzn1",
-          "Version": "1.9.3.392",
-          "Filename": "Packages/ruby19-debuginfo-1.9.3.392-29.38.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "rubygem19-io-console",
-          "Release": "29.38.amzn1",
-          "Version": "0.3",
-          "Filename": "Packages/rubygem19-io-console-0.3-29.38.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "rubygem19-bigdecimal",
-          "Release": "29.38.amzn1",
-          "Version": "1.1.0",
-          "Filename": "Packages/rubygem19-bigdecimal-1.1.0-29.38.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "ruby19-doc",
-          "Release": "29.38.amzn1",
-          "Version": "1.9.3.392",
-          "Filename": "Packages/ruby19-doc-1.9.3.392-29.38.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2013-195",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2012.09 - ALAS-2013-195: medium priority package update for ruby19",
+	"Issued": {
+		"Date": "2013-05-24 13:57"
+	},
+	"Updated": {
+		"Date": "2014-09-15 23:07"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-1821:\n\tlib/rexml/text.rb in the REXML parser in Ruby before 1.9.3-p392 allows remote attackers to cause a denial of service (memory consumption and crash) via crafted text nodes in an XML document, aka an XML Entity Expansion (XEE) attack.\nIt was discovered that Ruby's REXML library did not properly restrict XML entity expansion. An attacker could use this flaw to cause a denial of service by tricking a Ruby application using REXML to read text nodes from specially-crafted XML content, which will result in REXML consuming large amounts of system memory.\n914716: \nCVE-2013-1821 ruby: entity expansion DoS vulnerability in REXML\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1821",
+				"ID": "CVE-2013-1821",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ruby19-debuginfo",
+					"Release": "29.38.amzn1",
+					"Version": "1.9.3.392",
+					"Filename": "Packages/ruby19-debuginfo-1.9.3.392-29.38.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ruby19-libs",
+					"Release": "29.38.amzn1",
+					"Version": "1.9.3.392",
+					"Filename": "Packages/ruby19-libs-1.9.3.392-29.38.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "rubygem19-minitest",
+					"Release": "29.38.amzn1",
+					"Version": "2.5.1",
+					"Filename": "Packages/rubygem19-minitest-2.5.1-29.38.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "ruby19-irb",
+					"Release": "29.38.amzn1",
+					"Version": "1.9.3.392",
+					"Filename": "Packages/ruby19-irb-1.9.3.392-29.38.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ruby19-devel",
+					"Release": "29.38.amzn1",
+					"Version": "1.9.3.392",
+					"Filename": "Packages/ruby19-devel-1.9.3.392-29.38.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "rubygems19-devel",
+					"Release": "29.38.amzn1",
+					"Version": "1.8.23",
+					"Filename": "Packages/rubygems19-devel-1.8.23-29.38.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rubygem19-bigdecimal",
+					"Release": "29.38.amzn1",
+					"Version": "1.1.0",
+					"Filename": "Packages/rubygem19-bigdecimal-1.1.0-29.38.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "rubygem19-rdoc",
+					"Release": "29.38.amzn1",
+					"Version": "3.9.5",
+					"Filename": "Packages/rubygem19-rdoc-3.9.5-29.38.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ruby19",
+					"Release": "29.38.amzn1",
+					"Version": "1.9.3.392",
+					"Filename": "Packages/ruby19-1.9.3.392-29.38.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ruby19-doc",
+					"Release": "29.38.amzn1",
+					"Version": "1.9.3.392",
+					"Filename": "Packages/ruby19-doc-1.9.3.392-29.38.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "rubygems19",
+					"Release": "29.38.amzn1",
+					"Version": "1.8.23",
+					"Filename": "Packages/rubygems19-1.8.23-29.38.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rubygem19-io-console",
+					"Release": "29.38.amzn1",
+					"Version": "0.3",
+					"Filename": "Packages/rubygem19-io-console-0.3-29.38.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rubygem19-json",
+					"Release": "29.38.amzn1",
+					"Version": "1.5.5",
+					"Filename": "Packages/rubygem19-json-1.5.5-29.38.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "rubygem19-rake",
+					"Release": "29.38.amzn1",
+					"Version": "0.9.2.2",
+					"Filename": "Packages/rubygem19-rake-0.9.2.2-29.38.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "ruby19",
+					"Release": "29.38.amzn1",
+					"Version": "1.9.3.392",
+					"Filename": "Packages/ruby19-1.9.3.392-29.38.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "rubygem19-json",
+					"Release": "29.38.amzn1",
+					"Version": "1.5.5",
+					"Filename": "Packages/rubygem19-json-1.5.5-29.38.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "ruby19-devel",
+					"Release": "29.38.amzn1",
+					"Version": "1.9.3.392",
+					"Filename": "Packages/ruby19-devel-1.9.3.392-29.38.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "ruby19-libs",
+					"Release": "29.38.amzn1",
+					"Version": "1.9.3.392",
+					"Filename": "Packages/ruby19-libs-1.9.3.392-29.38.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "ruby19-debuginfo",
+					"Release": "29.38.amzn1",
+					"Version": "1.9.3.392",
+					"Filename": "Packages/ruby19-debuginfo-1.9.3.392-29.38.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "rubygem19-io-console",
+					"Release": "29.38.amzn1",
+					"Version": "0.3",
+					"Filename": "Packages/rubygem19-io-console-0.3-29.38.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "rubygem19-bigdecimal",
+					"Release": "29.38.amzn1",
+					"Version": "1.1.0",
+					"Filename": "Packages/rubygem19-bigdecimal-1.1.0-29.38.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "ruby19-doc",
+					"Release": "29.38.amzn1",
+					"Version": "1.9.3.392",
+					"Filename": "Packages/ruby19-doc-1.9.3.392-29.38.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

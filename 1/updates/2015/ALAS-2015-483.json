@@ -1,189 +1,189 @@
 {
-  "ID": "ALAS-2015-483",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-483: low priority package update for httpd24",
-  "Issued": {
-    "Date": "2015-02-12 10:57"
-  },
-  "Updated": {
-    "Date": "2015-02-12 11:32"
-  },
-  "Severity": "low",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-8109:\n\tmod_lua.c in the mod_lua module in the Apache HTTP Server 2.3.x and 2.4.x through 2.4.10 does not support an httpd configuration in which the same Lua authorization provider is used with different arguments within different contexts, which allows remote attackers to bypass intended access restrictions in opportunistic circumstances by leveraging multiple Require directives, as demonstrated by a configuration that specifies authorization for one group to access a certain directory, and authorization for a second group to access a second directory.\n1174077: \nCVE-2014-8109 httpd: LuaAuthzProvider argument handling issue\n\nCVE-2014-3583:\n\tThe handle_headers function in mod_proxy_fcgi.c in the mod_proxy_fcgi module in the Apache HTTP Server 2.4.10 allows remote FastCGI servers to cause a denial of service (buffer over-read and daemon crash) via long response headers.\n1163555: \nCVE-2014-3583 httpd: mod_proxy_fcgi handle_headers() buffer over read\n\nCVE-2014-3581:\n\tA NULL pointer dereference flaw was found in the way the mod_cache httpd module handled Content-Type headers. A malicious HTTP server could cause the httpd child process to crash when the Apache HTTP server was configured to proxy to a server with caching enabled.\n1149709: \nCVE-2014-3581 httpd: NULL pointer dereference in mod_cache if Content-Type has empty value\n\nCVE-2013-5704:\n\tThe mod_headers module in the Apache HTTP Server 2.2.22 allows remote attackers to bypass \"RequestHeader unset\" directives by placing a header in the trailer portion of data sent with chunked transfer coding.  NOTE: the vendor states \"this is not a security issue in httpd as such.\"\nA flaw was found in the way httpd handled HTTP Trailer headers when processing requests using chunked encoding. A malicious client could use Trailer headers to set additional HTTP headers after header processing was performed by other modules. This could, for example, lead to a bypass of header restrictions defined with mod_headers.\n1082903: \nCVE-2013-5704 httpd: bypass of mod_headers rules via chunked requests\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5704",
-        "ID": "CVE-2013-5704",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3581",
-        "ID": "CVE-2014-3581",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3583",
-        "ID": "CVE-2014-3583",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8109",
-        "ID": "CVE-2014-8109",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "httpd24-manual",
-          "Release": "15.58.amzn1",
-          "Version": "2.4.10",
-          "Filename": "Packages/httpd24-manual-2.4.10-15.58.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mod24_session",
-          "Release": "15.58.amzn1",
-          "Version": "2.4.10",
-          "Filename": "Packages/mod24_session-2.4.10-15.58.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "httpd24-tools",
-          "Release": "15.58.amzn1",
-          "Version": "2.4.10",
-          "Filename": "Packages/httpd24-tools-2.4.10-15.58.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mod24_ldap",
-          "Release": "15.58.amzn1",
-          "Version": "2.4.10",
-          "Filename": "Packages/mod24_ldap-2.4.10-15.58.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "httpd24-debuginfo",
-          "Release": "15.58.amzn1",
-          "Version": "2.4.10",
-          "Filename": "Packages/httpd24-debuginfo-2.4.10-15.58.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "mod24_ssl",
-          "Release": "15.58.amzn1",
-          "Version": "2.4.10",
-          "Filename": "Packages/mod24_ssl-2.4.10-15.58.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "mod24_proxy_html",
-          "Release": "15.58.amzn1",
-          "Version": "2.4.10",
-          "Filename": "Packages/mod24_proxy_html-2.4.10-15.58.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "httpd24-devel",
-          "Release": "15.58.amzn1",
-          "Version": "2.4.10",
-          "Filename": "Packages/httpd24-devel-2.4.10-15.58.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "httpd24",
-          "Release": "15.58.amzn1",
-          "Version": "2.4.10",
-          "Filename": "Packages/httpd24-2.4.10-15.58.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "mod24_proxy_html",
-          "Release": "15.58.amzn1",
-          "Version": "2.4.10",
-          "Filename": "Packages/mod24_proxy_html-2.4.10-15.58.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "httpd24-tools",
-          "Release": "15.58.amzn1",
-          "Version": "2.4.10",
-          "Filename": "Packages/httpd24-tools-2.4.10-15.58.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "httpd24-devel",
-          "Release": "15.58.amzn1",
-          "Version": "2.4.10",
-          "Filename": "Packages/httpd24-devel-2.4.10-15.58.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "mod24_ssl",
-          "Release": "15.58.amzn1",
-          "Version": "2.4.10",
-          "Filename": "Packages/mod24_ssl-2.4.10-15.58.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mod24_ldap",
-          "Release": "15.58.amzn1",
-          "Version": "2.4.10",
-          "Filename": "Packages/mod24_ldap-2.4.10-15.58.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mod24_session",
-          "Release": "15.58.amzn1",
-          "Version": "2.4.10",
-          "Filename": "Packages/mod24_session-2.4.10-15.58.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "httpd24",
-          "Release": "15.58.amzn1",
-          "Version": "2.4.10",
-          "Filename": "Packages/httpd24-2.4.10-15.58.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "httpd24-debuginfo",
-          "Release": "15.58.amzn1",
-          "Version": "2.4.10",
-          "Filename": "Packages/httpd24-debuginfo-2.4.10-15.58.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2015-483",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2015-483: low priority package update for httpd24",
+	"Issued": {
+		"Date": "2015-02-12 10:57"
+	},
+	"Updated": {
+		"Date": "2015-02-12 11:32"
+	},
+	"Severity": "low",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-8109:\n\tmod_lua.c in the mod_lua module in the Apache HTTP Server 2.3.x and 2.4.x through 2.4.10 does not support an httpd configuration in which the same Lua authorization provider is used with different arguments within different contexts, which allows remote attackers to bypass intended access restrictions in opportunistic circumstances by leveraging multiple Require directives, as demonstrated by a configuration that specifies authorization for one group to access a certain directory, and authorization for a second group to access a second directory.\n1174077: \nCVE-2014-8109 httpd: LuaAuthzProvider argument handling issue\n\nCVE-2014-3583:\n\tThe handle_headers function in mod_proxy_fcgi.c in the mod_proxy_fcgi module in the Apache HTTP Server 2.4.10 allows remote FastCGI servers to cause a denial of service (buffer over-read and daemon crash) via long response headers.\n1163555: \nCVE-2014-3583 httpd: mod_proxy_fcgi handle_headers() buffer over read\n\nCVE-2014-3581:\n\tA NULL pointer dereference flaw was found in the way the mod_cache httpd module handled Content-Type headers. A malicious HTTP server could cause the httpd child process to crash when the Apache HTTP server was configured to proxy to a server with caching enabled.\n1149709: \nCVE-2014-3581 httpd: NULL pointer dereference in mod_cache if Content-Type has empty value\n\nCVE-2013-5704:\n\tThe mod_headers module in the Apache HTTP Server 2.2.22 allows remote attackers to bypass \"RequestHeader unset\" directives by placing a header in the trailer portion of data sent with chunked transfer coding.  NOTE: the vendor states \"this is not a security issue in httpd as such.\"\nA flaw was found in the way httpd handled HTTP Trailer headers when processing requests using chunked encoding. A malicious client could use Trailer headers to set additional HTTP headers after header processing was performed by other modules. This could, for example, lead to a bypass of header restrictions defined with mod_headers.\n1082903: \nCVE-2013-5704 httpd: bypass of mod_headers rules via chunked requests\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5704",
+				"ID": "CVE-2013-5704",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3581",
+				"ID": "CVE-2014-3581",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3583",
+				"ID": "CVE-2014-3583",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8109",
+				"ID": "CVE-2014-8109",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "httpd24-manual",
+					"Release": "15.58.amzn1",
+					"Version": "2.4.10",
+					"Filename": "Packages/httpd24-manual-2.4.10-15.58.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mod24_session",
+					"Release": "15.58.amzn1",
+					"Version": "2.4.10",
+					"Filename": "Packages/mod24_session-2.4.10-15.58.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "httpd24-tools",
+					"Release": "15.58.amzn1",
+					"Version": "2.4.10",
+					"Filename": "Packages/httpd24-tools-2.4.10-15.58.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mod24_ldap",
+					"Release": "15.58.amzn1",
+					"Version": "2.4.10",
+					"Filename": "Packages/mod24_ldap-2.4.10-15.58.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "httpd24-debuginfo",
+					"Release": "15.58.amzn1",
+					"Version": "2.4.10",
+					"Filename": "Packages/httpd24-debuginfo-2.4.10-15.58.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "mod24_ssl",
+					"Release": "15.58.amzn1",
+					"Version": "2.4.10",
+					"Filename": "Packages/mod24_ssl-2.4.10-15.58.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "mod24_proxy_html",
+					"Release": "15.58.amzn1",
+					"Version": "2.4.10",
+					"Filename": "Packages/mod24_proxy_html-2.4.10-15.58.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "httpd24-devel",
+					"Release": "15.58.amzn1",
+					"Version": "2.4.10",
+					"Filename": "Packages/httpd24-devel-2.4.10-15.58.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "httpd24",
+					"Release": "15.58.amzn1",
+					"Version": "2.4.10",
+					"Filename": "Packages/httpd24-2.4.10-15.58.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "mod24_proxy_html",
+					"Release": "15.58.amzn1",
+					"Version": "2.4.10",
+					"Filename": "Packages/mod24_proxy_html-2.4.10-15.58.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "httpd24-tools",
+					"Release": "15.58.amzn1",
+					"Version": "2.4.10",
+					"Filename": "Packages/httpd24-tools-2.4.10-15.58.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "httpd24-devel",
+					"Release": "15.58.amzn1",
+					"Version": "2.4.10",
+					"Filename": "Packages/httpd24-devel-2.4.10-15.58.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "mod24_ssl",
+					"Release": "15.58.amzn1",
+					"Version": "2.4.10",
+					"Filename": "Packages/mod24_ssl-2.4.10-15.58.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mod24_ldap",
+					"Release": "15.58.amzn1",
+					"Version": "2.4.10",
+					"Filename": "Packages/mod24_ldap-2.4.10-15.58.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mod24_session",
+					"Release": "15.58.amzn1",
+					"Version": "2.4.10",
+					"Filename": "Packages/mod24_session-2.4.10-15.58.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "httpd24",
+					"Release": "15.58.amzn1",
+					"Version": "2.4.10",
+					"Filename": "Packages/httpd24-2.4.10-15.58.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "httpd24-debuginfo",
+					"Release": "15.58.amzn1",
+					"Version": "2.4.10",
+					"Filename": "Packages/httpd24-debuginfo-2.4.10-15.58.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

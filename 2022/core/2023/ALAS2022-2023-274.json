@@ -1,257 +1,257 @@
 {
-  "ID": "ALAS2022-2023-274",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2022 - ALAS2022-2023-274: Important priority package update for python3.10",
-  "Issued": {
-    "Date": "2023-01-20 16:44"
-  },
-  "Updated": {
-    "Date": "2023-01-20 16:44"
-  },
-  "Severity": "Important",
-  "Description": "Package updates are available for Amazon Linux 2022 that fix the following vulnerabilities:\nCVE-2022-45061:\n\tAn issue was discovered in Python before 3.11.1. An unnecessary quadratic algorithm exists in one path when processing some inputs to the IDNA (RFC 3490) decoder, such that a crafted, unreasonably long name being presented to the decoder could lead to a CPU denial of service. Hostnames are often supplied by remote servers that could be controlled by a malicious actor; in such a scenario, they could trigger excessive CPU consumption on the client attempting to make use of an attacker-supplied supposed hostname. For example, the attack payload could be placed in the Location header of an HTTP response with status code 302. A fix is planned in 3.11.1, 3.10.9, 3.9.16, 3.8.16, and 3.7.16.\n\nCVE-2022-42919:\n\tPython 3.9.x before 3.9.16 and 3.10.x before 3.10.9 on Linux allows local privilege escalation in a non-default configuration. The Python multiprocessing library, when used with the forkserver start method on Linux, allows pickles to be deserialized from any user in the same machine local network namespace, which in many system configurations means any user on the same machine. Pickles can execute arbitrary code. Thus, this allows for local user privilege escalation to the user that any forkserver process is running as. Setting multiprocessing.util.abstract_sockets_supported to False is a workaround. The forkserver start method for multiprocessing is not the default start method. This issue is Linux specific because only Linux supports abstract namespace sockets. CPython before 3.9 does not make use of Linux abstract namespace sockets by default. Support for users manually specifying an abstract namespace socket was added as a bugfix in 3.7.8 and 3.8.3, but users would need to make specific uncommon API calls in order to do that in CPython before 3.9.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42919",
-        "ID": "CVE-2022-42919",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45061",
-        "ID": "CVE-2022-45061",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2022",
-      "Name": "Amazon Linux 2022",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3.10",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-3.10.9-1.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3.10-tkinter",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-tkinter-3.10.9-1.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3.10-devel",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-devel-3.10.9-1.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3.10-idle",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-idle-3.10.9-1.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3.10-debugsource",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-debugsource-3.10.9-1.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3.10-debug",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-debug-3.10.9-1.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3.10-debuginfo",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-debuginfo-3.10.9-1.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3.10-libs",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-libs-3.10.9-1.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3.10-test",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-test-3.10.9-1.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python3.10-debugsource",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-debugsource-3.10.9-1.amzn2022.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python3.10-debuginfo",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-debuginfo-3.10.9-1.amzn2022.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python3.10-libs",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-libs-3.10.9-1.amzn2022.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python3.10-test",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-test-3.10.9-1.amzn2022.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python3.10-debug",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-debug-3.10.9-1.amzn2022.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python3.10-idle",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-idle-3.10.9-1.amzn2022.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python3.10-tkinter",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-tkinter-3.10.9-1.amzn2022.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python3.10-devel",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-devel-3.10.9-1.amzn2022.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python3.10",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-3.10.9-1.amzn2022.0.1.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3.10-idle",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-idle-3.10.9-1.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3.10",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-3.10.9-1.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3.10-tkinter",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-tkinter-3.10.9-1.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3.10-devel",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-devel-3.10.9-1.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3.10-debug",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-debug-3.10.9-1.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3.10-debugsource",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-debugsource-3.10.9-1.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3.10-debuginfo",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-debuginfo-3.10.9-1.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3.10-libs",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-libs-3.10.9-1.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3.10-test",
-          "Release": "1.amzn2022.0.1",
-          "Version": "3.10.9",
-          "Filename": "Packages/python3.10-test-3.10.9-1.amzn2022.0.1.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2022-2023-274",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2022 - ALAS2022-2023-274: Important priority package update for python3.10",
+	"Issued": {
+		"Date": "2023-01-20 16:44"
+	},
+	"Updated": {
+		"Date": "2023-01-20 16:44"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2022 that fix the following vulnerabilities:\nCVE-2022-45061:\n\tAn issue was discovered in Python before 3.11.1. An unnecessary quadratic algorithm exists in one path when processing some inputs to the IDNA (RFC 3490) decoder, such that a crafted, unreasonably long name being presented to the decoder could lead to a CPU denial of service. Hostnames are often supplied by remote servers that could be controlled by a malicious actor; in such a scenario, they could trigger excessive CPU consumption on the client attempting to make use of an attacker-supplied supposed hostname. For example, the attack payload could be placed in the Location header of an HTTP response with status code 302. A fix is planned in 3.11.1, 3.10.9, 3.9.16, 3.8.16, and 3.7.16.\n\nCVE-2022-42919:\n\tPython 3.9.x before 3.9.16 and 3.10.x before 3.10.9 on Linux allows local privilege escalation in a non-default configuration. The Python multiprocessing library, when used with the forkserver start method on Linux, allows pickles to be deserialized from any user in the same machine local network namespace, which in many system configurations means any user on the same machine. Pickles can execute arbitrary code. Thus, this allows for local user privilege escalation to the user that any forkserver process is running as. Setting multiprocessing.util.abstract_sockets_supported to False is a workaround. The forkserver start method for multiprocessing is not the default start method. This issue is Linux specific because only Linux supports abstract namespace sockets. CPython before 3.9 does not make use of Linux abstract namespace sockets by default. Support for users manually specifying an abstract namespace socket was added as a bugfix in 3.7.8 and 3.8.3, but users would need to make specific uncommon API calls in order to do that in CPython before 3.9.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42919",
+				"ID": "CVE-2022-42919",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45061",
+				"ID": "CVE-2022-45061",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2022",
+			"Name": "Amazon Linux 2022",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.10",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-3.10.9-1.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.10-tkinter",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-tkinter-3.10.9-1.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.10-devel",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-devel-3.10.9-1.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.10-idle",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-idle-3.10.9-1.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.10-debugsource",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-debugsource-3.10.9-1.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.10-debug",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-debug-3.10.9-1.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.10-debuginfo",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-debuginfo-3.10.9-1.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.10-libs",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-libs-3.10.9-1.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.10-test",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-test-3.10.9-1.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3.10-debugsource",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-debugsource-3.10.9-1.amzn2022.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3.10-debuginfo",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-debuginfo-3.10.9-1.amzn2022.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3.10-libs",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-libs-3.10.9-1.amzn2022.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3.10-test",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-test-3.10.9-1.amzn2022.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3.10-debug",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-debug-3.10.9-1.amzn2022.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3.10-idle",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-idle-3.10.9-1.amzn2022.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3.10-tkinter",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-tkinter-3.10.9-1.amzn2022.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3.10-devel",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-devel-3.10.9-1.amzn2022.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3.10",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-3.10.9-1.amzn2022.0.1.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.10-idle",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-idle-3.10.9-1.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.10",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-3.10.9-1.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.10-tkinter",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-tkinter-3.10.9-1.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.10-devel",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-devel-3.10.9-1.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.10-debug",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-debug-3.10.9-1.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.10-debugsource",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-debugsource-3.10.9-1.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.10-debuginfo",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-debuginfo-3.10.9-1.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.10-libs",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-libs-3.10.9-1.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.10-test",
+					"Release": "1.amzn2022.0.1",
+					"Version": "3.10.9",
+					"Filename": "Packages/python3.10-test-3.10.9-1.amzn2022.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

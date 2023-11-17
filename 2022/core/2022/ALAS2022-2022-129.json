@@ -1,75 +1,75 @@
 {
-  "ID": "ALAS2022-2022-129",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2022 - ALAS2022-2022-129: Medium priority package update for microcode_ctl",
-  "Issued": {
-    "Date": "2022-08-29 21:21"
-  },
-  "Updated": {
-    "Date": "2022-11-01 21:25"
-  },
-  "Severity": "Medium",
-  "Description": "Package updates are available for Amazon Linux 2022 that fix the following vulnerabilities:\nCVE-2022-21233:\n\tA flaw was found in hw. The APIC can operate in xAPIC mode (also known as a legacy mode), in which APIC configuration registers are exposed through a memory-mapped I/O (MMIO) page. This flaw allows an attacker who can execute code on a target CPU to query the APIC configuration page. When reading the APIC configuration page with an unaligned read from the MMIO page, the registers may return stale data from previous requests made by the same processor core to the same configuration page, leading to unauthorized access.\n\nCVE-2022-21151:\n\tA flaw was found in hw. Processor optimization removal or modification of security-critical code for some Intel(R) processors may potentially allow an authenticated user to enable information disclosure via local access.\n\nCVE-2022-21136:\n\tA flaw was found in hw. Improper input validation for some Intel(R) Xeon(R) processors may allow a privileged user to enable a denial of service via local access.\n\nCVE-2022-21131:\n\tA flaw was found in hw. Improper access control for some Intel(R) Xeon(R) processors may potentially allow an authenticated user to enable information disclosure via local access.\n\nCVE-2022-0005:\n\tSensitive information accessible by physical probing of JTAG interface for some Intel(R) Processors with SGX may allow an unprivileged user to potentially enable information disclosure via physical access.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0005",
-        "ID": "CVE-2022-0005",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21131",
-        "ID": "CVE-2022-21131",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21136",
-        "ID": "CVE-2022-21136",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21151",
-        "ID": "CVE-2022-21151",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21233",
-        "ID": "CVE-2022-21233",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2022",
-      "Name": "Amazon Linux 2022",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "microcode_ctl",
-          "Release": "53.amzn2022",
-          "Version": "2.1",
-          "Filename": "Packages/microcode_ctl-2.1-53.amzn2022.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "2",
-          "Name": "microcode_ctl",
-          "Release": "53.amzn2022",
-          "Version": "2.1",
-          "Filename": "Packages/microcode_ctl-2.1-53.amzn2022.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2022-2022-129",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2022 - ALAS2022-2022-129: Medium priority package update for microcode_ctl",
+	"Issued": {
+		"Date": "2022-08-29 21:21"
+	},
+	"Updated": {
+		"Date": "2022-11-01 21:25"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2022 that fix the following vulnerabilities:\nCVE-2022-21233:\n\tA flaw was found in hw. The APIC can operate in xAPIC mode (also known as a legacy mode), in which APIC configuration registers are exposed through a memory-mapped I/O (MMIO) page. This flaw allows an attacker who can execute code on a target CPU to query the APIC configuration page. When reading the APIC configuration page with an unaligned read from the MMIO page, the registers may return stale data from previous requests made by the same processor core to the same configuration page, leading to unauthorized access.\n\nCVE-2022-21151:\n\tA flaw was found in hw. Processor optimization removal or modification of security-critical code for some Intel(R) processors may potentially allow an authenticated user to enable information disclosure via local access.\n\nCVE-2022-21136:\n\tA flaw was found in hw. Improper input validation for some Intel(R) Xeon(R) processors may allow a privileged user to enable a denial of service via local access.\n\nCVE-2022-21131:\n\tA flaw was found in hw. Improper access control for some Intel(R) Xeon(R) processors may potentially allow an authenticated user to enable information disclosure via local access.\n\nCVE-2022-0005:\n\tSensitive information accessible by physical probing of JTAG interface for some Intel(R) Processors with SGX may allow an unprivileged user to potentially enable information disclosure via physical access.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0005",
+				"ID": "CVE-2022-0005",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21131",
+				"ID": "CVE-2022-21131",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21136",
+				"ID": "CVE-2022-21136",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21151",
+				"ID": "CVE-2022-21151",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21233",
+				"ID": "CVE-2022-21233",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2022",
+			"Name": "Amazon Linux 2022",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "microcode_ctl",
+					"Release": "53.amzn2022",
+					"Version": "2.1",
+					"Filename": "Packages/microcode_ctl-2.1-53.amzn2022.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "2",
+					"Name": "microcode_ctl",
+					"Release": "53.amzn2022",
+					"Version": "2.1",
+					"Filename": "Packages/microcode_ctl-2.1-53.amzn2022.i686.rpm"
+				}
+			]
+		}
+	}
 }

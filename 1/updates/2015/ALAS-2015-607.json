@@ -1,147 +1,147 @@
 {
-  "ID": "ALAS-2015-607",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-607: important priority package update for ntp",
-  "Issued": {
-    "Date": "2015-10-27 16:42"
-  },
-  "Updated": {
-    "Date": "2015-10-27 16:53"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-7871:\n\t1274265: \nCVE-2015-7871 ntp: crypto-NAK symmetric association authentication bypass vulnerability\n\nCVE-2015-7852:\n\t1274261: \nCVE-2015-7852 ntp: ntpq atoascii memory corruption vulnerability\n\nCVE-2015-7704:\n\tIt was discovered that ntpd as a client did not correctly check timestamps in Kiss-of-Death packets. A remote attacker could use this flaw to send a crafted Kiss-of-Death packet to an ntpd client that would increase the client&#039;s polling interval value, and effectively disable synchronization with the server.\n1271070: \nCVE-2015-7704 ntp: disabling synchronization via crafted KoD packet\n\nCVE-2015-7702:\n\t1274254: \nCVE-2015-7691 CVE-2015-7692 CVE-2015-7702 ntp: incomplete checks in ntp_crypto.c\n\nCVE-2015-7701:\n\t1274255: \nCVE-2015-7701 ntp: slow memory leak in CRYPTO_ASSOC\n\nCVE-2015-7692:\n\t1274254: \nCVE-2015-7691 CVE-2015-7692 CVE-2015-7702 ntp: incomplete checks in ntp_crypto.c\n\nCVE-2015-7691:\n\t1274254: \nCVE-2015-7691 CVE-2015-7692 CVE-2015-7702 ntp: incomplete checks in ntp_crypto.c\n\nCVE-2015-5300:\n\t1271076: \nCVE-2015-5300 ntp: MITM attacker can force ntpd to make a step larger than the panic threshold\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5300",
-        "ID": "CVE-2015-5300",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7691",
-        "ID": "CVE-2015-7691",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7692",
-        "ID": "CVE-2015-7692",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7701",
-        "ID": "CVE-2015-7701",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7702",
-        "ID": "CVE-2015-7702",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7704",
-        "ID": "CVE-2015-7704",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7852",
-        "ID": "CVE-2015-7852",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7871",
-        "ID": "CVE-2015-7871",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2015:1930.html",
-        "ID": "RHSA-2015:1930",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "ntp",
-          "Release": "34.27.amzn1",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-4.2.6p5-34.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "ntp-doc",
-          "Release": "34.27.amzn1",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-doc-4.2.6p5-34.27.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "ntpdate",
-          "Release": "34.27.amzn1",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntpdate-4.2.6p5-34.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "ntp-perl",
-          "Release": "34.27.amzn1",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-perl-4.2.6p5-34.27.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "ntp-debuginfo",
-          "Release": "34.27.amzn1",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-debuginfo-4.2.6p5-34.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "ntpdate",
-          "Release": "34.27.amzn1",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntpdate-4.2.6p5-34.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "ntp",
-          "Release": "34.27.amzn1",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-4.2.6p5-34.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "ntp-debuginfo",
-          "Release": "34.27.amzn1",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-debuginfo-4.2.6p5-34.27.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2015-607",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2015-607: important priority package update for ntp",
+	"Issued": {
+		"Date": "2015-10-27 16:42"
+	},
+	"Updated": {
+		"Date": "2015-10-27 16:53"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-7871:\n\t1274265: \nCVE-2015-7871 ntp: crypto-NAK symmetric association authentication bypass vulnerability\n\nCVE-2015-7852:\n\t1274261: \nCVE-2015-7852 ntp: ntpq atoascii memory corruption vulnerability\n\nCVE-2015-7704:\n\tIt was discovered that ntpd as a client did not correctly check timestamps in Kiss-of-Death packets. A remote attacker could use this flaw to send a crafted Kiss-of-Death packet to an ntpd client that would increase the client&#039;s polling interval value, and effectively disable synchronization with the server.\n1271070: \nCVE-2015-7704 ntp: disabling synchronization via crafted KoD packet\n\nCVE-2015-7702:\n\t1274254: \nCVE-2015-7691 CVE-2015-7692 CVE-2015-7702 ntp: incomplete checks in ntp_crypto.c\n\nCVE-2015-7701:\n\t1274255: \nCVE-2015-7701 ntp: slow memory leak in CRYPTO_ASSOC\n\nCVE-2015-7692:\n\t1274254: \nCVE-2015-7691 CVE-2015-7692 CVE-2015-7702 ntp: incomplete checks in ntp_crypto.c\n\nCVE-2015-7691:\n\t1274254: \nCVE-2015-7691 CVE-2015-7692 CVE-2015-7702 ntp: incomplete checks in ntp_crypto.c\n\nCVE-2015-5300:\n\t1271076: \nCVE-2015-5300 ntp: MITM attacker can force ntpd to make a step larger than the panic threshold\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5300",
+				"ID": "CVE-2015-5300",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7691",
+				"ID": "CVE-2015-7691",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7692",
+				"ID": "CVE-2015-7692",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7701",
+				"ID": "CVE-2015-7701",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7702",
+				"ID": "CVE-2015-7702",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7704",
+				"ID": "CVE-2015-7704",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7852",
+				"ID": "CVE-2015-7852",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7871",
+				"ID": "CVE-2015-7871",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2015:1930.html",
+				"ID": "RHSA-2015:1930",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ntp",
+					"Release": "34.27.amzn1",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-4.2.6p5-34.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "ntp-doc",
+					"Release": "34.27.amzn1",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-doc-4.2.6p5-34.27.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ntpdate",
+					"Release": "34.27.amzn1",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntpdate-4.2.6p5-34.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "ntp-perl",
+					"Release": "34.27.amzn1",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-perl-4.2.6p5-34.27.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ntp-debuginfo",
+					"Release": "34.27.amzn1",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-debuginfo-4.2.6p5-34.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "ntpdate",
+					"Release": "34.27.amzn1",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntpdate-4.2.6p5-34.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "ntp",
+					"Release": "34.27.amzn1",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-4.2.6p5-34.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "ntp-debuginfo",
+					"Release": "34.27.amzn1",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-debuginfo-4.2.6p5-34.27.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

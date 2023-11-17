@@ -1,189 +1,189 @@
 {
-  "ID": "ALAS-2015-579",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-579: medium priority package update for httpd24",
-  "Issued": {
-    "Date": "2015-08-17 12:27"
-  },
-  "Updated": {
-    "Date": "2015-08-17 12:27"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-3185:\n\tIt was discovered that in httpd 2.4, the internal API function ap_some_auth_required() could incorrectly indicate that a request was authenticated even when no authentication was used. An httpd module using this API function could consequently allow access that should have been denied.\n1243888: \nCVE-2015-3185 httpd: ap_some_auth_required() does not properly indicate authenticated request in 2.4\n\nCVE-2015-3183:\n\tMultiple flaws were found in the way httpd parsed HTTP requests and responses using chunked transfer encoding. A remote attacker could use these flaws to create a specially crafted request, which httpd would decode differently from an HTTP proxy software in front of it, possibly leading to HTTP request smuggling attacks.\n1243887: \nCVE-2015-3183 httpd: HTTP request smuggling attack against chunked request parser\n\nCVE-2015-0253:\n\tA NULL pointer dereference flaw was found in the way httpd generated certain error responses. A remote attacker could possibly use this flaw crash the httpd child process using a request that triggers a certain HTTP error.\n1243891: \nCVE-2015-0253 httpd: NULL pointer dereference crash with ErrorDocument 400 pointing to a local URL-path\n\nCVE-2015-0228:\n\tA denial of service flaw was found in the way the mod_lua httpd module processed certain WebSocket Ping requests. A remote attacker could send a specially crafted WebSocket Ping packet that would cause the httpd child process to crash.\n1202988: \nCVE-2015-0228 httpd: Possible mod_lua crash due to websocket bug\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0228",
-        "ID": "CVE-2015-0228",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0253",
-        "ID": "CVE-2015-0253",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3183",
-        "ID": "CVE-2015-3183",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3185",
-        "ID": "CVE-2015-3185",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "httpd24-devel",
-          "Release": "1.62.amzn1",
-          "Version": "2.4.16",
-          "Filename": "Packages/httpd24-devel-2.4.16-1.62.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "httpd24-tools",
-          "Release": "1.62.amzn1",
-          "Version": "2.4.16",
-          "Filename": "Packages/httpd24-tools-2.4.16-1.62.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mod24_ldap",
-          "Release": "1.62.amzn1",
-          "Version": "2.4.16",
-          "Filename": "Packages/mod24_ldap-2.4.16-1.62.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "mod24_proxy_html",
-          "Release": "1.62.amzn1",
-          "Version": "2.4.16",
-          "Filename": "Packages/mod24_proxy_html-2.4.16-1.62.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "httpd24-manual",
-          "Release": "1.62.amzn1",
-          "Version": "2.4.16",
-          "Filename": "Packages/httpd24-manual-2.4.16-1.62.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "httpd24",
-          "Release": "1.62.amzn1",
-          "Version": "2.4.16",
-          "Filename": "Packages/httpd24-2.4.16-1.62.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mod24_session",
-          "Release": "1.62.amzn1",
-          "Version": "2.4.16",
-          "Filename": "Packages/mod24_session-2.4.16-1.62.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "mod24_ssl",
-          "Release": "1.62.amzn1",
-          "Version": "2.4.16",
-          "Filename": "Packages/mod24_ssl-2.4.16-1.62.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "httpd24-debuginfo",
-          "Release": "1.62.amzn1",
-          "Version": "2.4.16",
-          "Filename": "Packages/httpd24-debuginfo-2.4.16-1.62.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mod24_ldap",
-          "Release": "1.62.amzn1",
-          "Version": "2.4.16",
-          "Filename": "Packages/mod24_ldap-2.4.16-1.62.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mod24_session",
-          "Release": "1.62.amzn1",
-          "Version": "2.4.16",
-          "Filename": "Packages/mod24_session-2.4.16-1.62.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "mod24_ssl",
-          "Release": "1.62.amzn1",
-          "Version": "2.4.16",
-          "Filename": "Packages/mod24_ssl-2.4.16-1.62.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "httpd24-devel",
-          "Release": "1.62.amzn1",
-          "Version": "2.4.16",
-          "Filename": "Packages/httpd24-devel-2.4.16-1.62.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "mod24_proxy_html",
-          "Release": "1.62.amzn1",
-          "Version": "2.4.16",
-          "Filename": "Packages/mod24_proxy_html-2.4.16-1.62.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "httpd24-tools",
-          "Release": "1.62.amzn1",
-          "Version": "2.4.16",
-          "Filename": "Packages/httpd24-tools-2.4.16-1.62.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "httpd24",
-          "Release": "1.62.amzn1",
-          "Version": "2.4.16",
-          "Filename": "Packages/httpd24-2.4.16-1.62.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "httpd24-debuginfo",
-          "Release": "1.62.amzn1",
-          "Version": "2.4.16",
-          "Filename": "Packages/httpd24-debuginfo-2.4.16-1.62.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2015-579",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2015-579: medium priority package update for httpd24",
+	"Issued": {
+		"Date": "2015-08-17 12:27"
+	},
+	"Updated": {
+		"Date": "2015-08-17 12:27"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-3185:\n\tIt was discovered that in httpd 2.4, the internal API function ap_some_auth_required() could incorrectly indicate that a request was authenticated even when no authentication was used. An httpd module using this API function could consequently allow access that should have been denied.\n1243888: \nCVE-2015-3185 httpd: ap_some_auth_required() does not properly indicate authenticated request in 2.4\n\nCVE-2015-3183:\n\tMultiple flaws were found in the way httpd parsed HTTP requests and responses using chunked transfer encoding. A remote attacker could use these flaws to create a specially crafted request, which httpd would decode differently from an HTTP proxy software in front of it, possibly leading to HTTP request smuggling attacks.\n1243887: \nCVE-2015-3183 httpd: HTTP request smuggling attack against chunked request parser\n\nCVE-2015-0253:\n\tA NULL pointer dereference flaw was found in the way httpd generated certain error responses. A remote attacker could possibly use this flaw crash the httpd child process using a request that triggers a certain HTTP error.\n1243891: \nCVE-2015-0253 httpd: NULL pointer dereference crash with ErrorDocument 400 pointing to a local URL-path\n\nCVE-2015-0228:\n\tA denial of service flaw was found in the way the mod_lua httpd module processed certain WebSocket Ping requests. A remote attacker could send a specially crafted WebSocket Ping packet that would cause the httpd child process to crash.\n1202988: \nCVE-2015-0228 httpd: Possible mod_lua crash due to websocket bug\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0228",
+				"ID": "CVE-2015-0228",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0253",
+				"ID": "CVE-2015-0253",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3183",
+				"ID": "CVE-2015-3183",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3185",
+				"ID": "CVE-2015-3185",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "httpd24-devel",
+					"Release": "1.62.amzn1",
+					"Version": "2.4.16",
+					"Filename": "Packages/httpd24-devel-2.4.16-1.62.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "httpd24-tools",
+					"Release": "1.62.amzn1",
+					"Version": "2.4.16",
+					"Filename": "Packages/httpd24-tools-2.4.16-1.62.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mod24_ldap",
+					"Release": "1.62.amzn1",
+					"Version": "2.4.16",
+					"Filename": "Packages/mod24_ldap-2.4.16-1.62.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "mod24_proxy_html",
+					"Release": "1.62.amzn1",
+					"Version": "2.4.16",
+					"Filename": "Packages/mod24_proxy_html-2.4.16-1.62.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "httpd24-manual",
+					"Release": "1.62.amzn1",
+					"Version": "2.4.16",
+					"Filename": "Packages/httpd24-manual-2.4.16-1.62.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "httpd24",
+					"Release": "1.62.amzn1",
+					"Version": "2.4.16",
+					"Filename": "Packages/httpd24-2.4.16-1.62.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mod24_session",
+					"Release": "1.62.amzn1",
+					"Version": "2.4.16",
+					"Filename": "Packages/mod24_session-2.4.16-1.62.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "mod24_ssl",
+					"Release": "1.62.amzn1",
+					"Version": "2.4.16",
+					"Filename": "Packages/mod24_ssl-2.4.16-1.62.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "httpd24-debuginfo",
+					"Release": "1.62.amzn1",
+					"Version": "2.4.16",
+					"Filename": "Packages/httpd24-debuginfo-2.4.16-1.62.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mod24_ldap",
+					"Release": "1.62.amzn1",
+					"Version": "2.4.16",
+					"Filename": "Packages/mod24_ldap-2.4.16-1.62.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mod24_session",
+					"Release": "1.62.amzn1",
+					"Version": "2.4.16",
+					"Filename": "Packages/mod24_session-2.4.16-1.62.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "mod24_ssl",
+					"Release": "1.62.amzn1",
+					"Version": "2.4.16",
+					"Filename": "Packages/mod24_ssl-2.4.16-1.62.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "httpd24-devel",
+					"Release": "1.62.amzn1",
+					"Version": "2.4.16",
+					"Filename": "Packages/httpd24-devel-2.4.16-1.62.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "mod24_proxy_html",
+					"Release": "1.62.amzn1",
+					"Version": "2.4.16",
+					"Filename": "Packages/mod24_proxy_html-2.4.16-1.62.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "httpd24-tools",
+					"Release": "1.62.amzn1",
+					"Version": "2.4.16",
+					"Filename": "Packages/httpd24-tools-2.4.16-1.62.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "httpd24",
+					"Release": "1.62.amzn1",
+					"Version": "2.4.16",
+					"Filename": "Packages/httpd24-2.4.16-1.62.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "httpd24-debuginfo",
+					"Release": "1.62.amzn1",
+					"Version": "2.4.16",
+					"Filename": "Packages/httpd24-debuginfo-2.4.16-1.62.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

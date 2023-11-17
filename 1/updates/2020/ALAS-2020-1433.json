@@ -1,191 +1,191 @@
 {
-  "ID": "ALAS-2020-1433",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2020-1433: important priority package update for clamav",
-  "Issued": {
-    "Date": "2020-09-14 20:55"
-  },
-  "Updated": {
-    "Date": "2020-09-16 18:15"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-3481:\n\tFixed a vulnerability in the EGG archive module in ClamAV 0.102.0 - 0.102.3 that could cause a denial-of-service (DoS) condition. Improper error handling could cause a crash due to a NULL pointer dereference. This vulnerability is mitigated for those using the official ClamAV signature databases because the file type signatures in daily.cvd will not enable the EGG archive parser in affected versions.\nCVE-2020-3481\n\nCVE-2020-3350:\n\tFixed a vulnerability a malicious user could exploit to replace a scan target directory with a symlink to another path to trick clamscan, clamdscan, or clamonacc into removing or moving a different file (such as a critical system file). The issue would affect users that use the --move or --remove options for clamscan, clamdscan and clamonacc.\nCVE-2020-3350\n\nCVE-2020-3327:\n\tFixed a vulnerability in the ARJ archive-parsing module in ClamAV 0.102.3 that could cause a denial-of-service (DoS) condition. Improper bounds checking resulted in an out-of-bounds read that could cause a crash. The previous fix for this CVE in version 0.102.3 was incomplete. This fix correctly resolves the issue.\nCVE-2020-3327\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-3327",
-        "ID": "CVE-2020-3327",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-3350",
-        "ID": "CVE-2020-3350",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-3481",
-        "ID": "CVE-2020-3481",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "clamav-data",
-          "Release": "1.44.amzn1",
-          "Version": "0.102.4",
-          "Filename": "Packages/clamav-data-0.102.4-1.44.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "clamav-devel",
-          "Release": "1.44.amzn1",
-          "Version": "0.102.4",
-          "Filename": "Packages/clamav-devel-0.102.4-1.44.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "clamav-milter",
-          "Release": "1.44.amzn1",
-          "Version": "0.102.4",
-          "Filename": "Packages/clamav-milter-0.102.4-1.44.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "clamav-debuginfo",
-          "Release": "1.44.amzn1",
-          "Version": "0.102.4",
-          "Filename": "Packages/clamav-debuginfo-0.102.4-1.44.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "clamav-filesystem",
-          "Release": "1.44.amzn1",
-          "Version": "0.102.4",
-          "Filename": "Packages/clamav-filesystem-0.102.4-1.44.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "clamd",
-          "Release": "1.44.amzn1",
-          "Version": "0.102.4",
-          "Filename": "Packages/clamd-0.102.4-1.44.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "clamav",
-          "Release": "1.44.amzn1",
-          "Version": "0.102.4",
-          "Filename": "Packages/clamav-0.102.4-1.44.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "clamav-lib",
-          "Release": "1.44.amzn1",
-          "Version": "0.102.4",
-          "Filename": "Packages/clamav-lib-0.102.4-1.44.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "clamav-update",
-          "Release": "1.44.amzn1",
-          "Version": "0.102.4",
-          "Filename": "Packages/clamav-update-0.102.4-1.44.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "clamav-db",
-          "Release": "1.44.amzn1",
-          "Version": "0.102.4",
-          "Filename": "Packages/clamav-db-0.102.4-1.44.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "clamav-db",
-          "Release": "1.44.amzn1",
-          "Version": "0.102.4",
-          "Filename": "Packages/clamav-db-0.102.4-1.44.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "clamav-debuginfo",
-          "Release": "1.44.amzn1",
-          "Version": "0.102.4",
-          "Filename": "Packages/clamav-debuginfo-0.102.4-1.44.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "clamav-update",
-          "Release": "1.44.amzn1",
-          "Version": "0.102.4",
-          "Filename": "Packages/clamav-update-0.102.4-1.44.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "clamd",
-          "Release": "1.44.amzn1",
-          "Version": "0.102.4",
-          "Filename": "Packages/clamd-0.102.4-1.44.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "clamav",
-          "Release": "1.44.amzn1",
-          "Version": "0.102.4",
-          "Filename": "Packages/clamav-0.102.4-1.44.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "clamav-lib",
-          "Release": "1.44.amzn1",
-          "Version": "0.102.4",
-          "Filename": "Packages/clamav-lib-0.102.4-1.44.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "clamav-devel",
-          "Release": "1.44.amzn1",
-          "Version": "0.102.4",
-          "Filename": "Packages/clamav-devel-0.102.4-1.44.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "clamav-milter",
-          "Release": "1.44.amzn1",
-          "Version": "0.102.4",
-          "Filename": "Packages/clamav-milter-0.102.4-1.44.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2020-1433",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2020-1433: important priority package update for clamav",
+	"Issued": {
+		"Date": "2020-09-14 20:55"
+	},
+	"Updated": {
+		"Date": "2020-09-16 18:15"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-3481:\n\tFixed a vulnerability in the EGG archive module in ClamAV 0.102.0 - 0.102.3 that could cause a denial-of-service (DoS) condition. Improper error handling could cause a crash due to a NULL pointer dereference. This vulnerability is mitigated for those using the official ClamAV signature databases because the file type signatures in daily.cvd will not enable the EGG archive parser in affected versions.\nCVE-2020-3481\n\nCVE-2020-3350:\n\tFixed a vulnerability a malicious user could exploit to replace a scan target directory with a symlink to another path to trick clamscan, clamdscan, or clamonacc into removing or moving a different file (such as a critical system file). The issue would affect users that use the --move or --remove options for clamscan, clamdscan and clamonacc.\nCVE-2020-3350\n\nCVE-2020-3327:\n\tFixed a vulnerability in the ARJ archive-parsing module in ClamAV 0.102.3 that could cause a denial-of-service (DoS) condition. Improper bounds checking resulted in an out-of-bounds read that could cause a crash. The previous fix for this CVE in version 0.102.3 was incomplete. This fix correctly resolves the issue.\nCVE-2020-3327\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-3327",
+				"ID": "CVE-2020-3327",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-3350",
+				"ID": "CVE-2020-3350",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-3481",
+				"ID": "CVE-2020-3481",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "clamav-data",
+					"Release": "1.44.amzn1",
+					"Version": "0.102.4",
+					"Filename": "Packages/clamav-data-0.102.4-1.44.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-devel",
+					"Release": "1.44.amzn1",
+					"Version": "0.102.4",
+					"Filename": "Packages/clamav-devel-0.102.4-1.44.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-milter",
+					"Release": "1.44.amzn1",
+					"Version": "0.102.4",
+					"Filename": "Packages/clamav-milter-0.102.4-1.44.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-debuginfo",
+					"Release": "1.44.amzn1",
+					"Version": "0.102.4",
+					"Filename": "Packages/clamav-debuginfo-0.102.4-1.44.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "clamav-filesystem",
+					"Release": "1.44.amzn1",
+					"Version": "0.102.4",
+					"Filename": "Packages/clamav-filesystem-0.102.4-1.44.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamd",
+					"Release": "1.44.amzn1",
+					"Version": "0.102.4",
+					"Filename": "Packages/clamd-0.102.4-1.44.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav",
+					"Release": "1.44.amzn1",
+					"Version": "0.102.4",
+					"Filename": "Packages/clamav-0.102.4-1.44.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-lib",
+					"Release": "1.44.amzn1",
+					"Version": "0.102.4",
+					"Filename": "Packages/clamav-lib-0.102.4-1.44.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-update",
+					"Release": "1.44.amzn1",
+					"Version": "0.102.4",
+					"Filename": "Packages/clamav-update-0.102.4-1.44.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-db",
+					"Release": "1.44.amzn1",
+					"Version": "0.102.4",
+					"Filename": "Packages/clamav-db-0.102.4-1.44.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "clamav-db",
+					"Release": "1.44.amzn1",
+					"Version": "0.102.4",
+					"Filename": "Packages/clamav-db-0.102.4-1.44.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "clamav-debuginfo",
+					"Release": "1.44.amzn1",
+					"Version": "0.102.4",
+					"Filename": "Packages/clamav-debuginfo-0.102.4-1.44.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "clamav-update",
+					"Release": "1.44.amzn1",
+					"Version": "0.102.4",
+					"Filename": "Packages/clamav-update-0.102.4-1.44.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "clamd",
+					"Release": "1.44.amzn1",
+					"Version": "0.102.4",
+					"Filename": "Packages/clamd-0.102.4-1.44.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "clamav",
+					"Release": "1.44.amzn1",
+					"Version": "0.102.4",
+					"Filename": "Packages/clamav-0.102.4-1.44.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "clamav-lib",
+					"Release": "1.44.amzn1",
+					"Version": "0.102.4",
+					"Filename": "Packages/clamav-lib-0.102.4-1.44.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "clamav-devel",
+					"Release": "1.44.amzn1",
+					"Version": "0.102.4",
+					"Filename": "Packages/clamav-devel-0.102.4-1.44.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "clamav-milter",
+					"Release": "1.44.amzn1",
+					"Version": "0.102.4",
+					"Filename": "Packages/clamav-milter-0.102.4-1.44.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

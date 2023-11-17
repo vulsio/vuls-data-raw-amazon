@@ -1,443 +1,443 @@
 {
-  "ID": "ALAS2-2021-1722",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1722: critical priority package update for nss nss-util nss-softokn nspr",
-  "Issued": {
-    "Date": "2021-12-01 07:11"
-  },
-  "Updated": {
-    "Date": "2021-12-01 20:14"
-  },
-  "Severity": "critical",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-43527:\n\tNSS (Network Security Services) up to and including 3.73 is vulnerable to a heap overflow when handling DER-encoded DSA or RSA-PSS signatures. Applications using NSS for handling signatures encoded within CMS, S/MIME, PKCS \\#7, or PKCS \\#12 are likely to be impacted. Applications using NSS for certificate validation or other TLS, X.509, OCSP or CRL functionality may be impacted, depending on how they configure NSS.\nWhen verifying a DER-encoded signature, NSS decodes the signature into a fixed-size buffer and passes the buffer to the underlying PKCS \\#11 module. The length of the signature is not correctly checked when processing DSA and RSA-PSS signatures. DSA and RSA-PSS signatures larger than 16384 bits will overflow the buffer in VFYContextStr. The vulnerable code is located within secvfy.c:vfy_CreateContext.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43527",
-        "ID": "CVE-2021-43527",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nspr",
-          "Release": "1.amzn2",
-          "Version": "4.32.0",
-          "Filename": "Packages/nspr-4.32.0-1.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nspr-devel",
-          "Release": "1.amzn2",
-          "Version": "4.32.0",
-          "Filename": "Packages/nspr-devel-4.32.0-1.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nspr-debuginfo",
-          "Release": "1.amzn2",
-          "Version": "4.32.0",
-          "Filename": "Packages/nspr-debuginfo-4.32.0-1.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nspr",
-          "Release": "1.amzn2",
-          "Version": "4.32.0",
-          "Filename": "Packages/nspr-4.32.0-1.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nspr-devel",
-          "Release": "1.amzn2",
-          "Version": "4.32.0",
-          "Filename": "Packages/nspr-devel-4.32.0-1.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nspr-debuginfo",
-          "Release": "1.amzn2",
-          "Version": "4.32.0",
-          "Filename": "Packages/nspr-debuginfo-4.32.0-1.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "nspr",
-          "Release": "1.amzn2",
-          "Version": "4.32.0",
-          "Filename": "Packages/nspr-4.32.0-1.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "nspr-devel",
-          "Release": "1.amzn2",
-          "Version": "4.32.0",
-          "Filename": "Packages/nspr-devel-4.32.0-1.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "nspr-debuginfo",
-          "Release": "1.amzn2",
-          "Version": "4.32.0",
-          "Filename": "Packages/nspr-debuginfo-4.32.0-1.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-util",
-          "Release": "1.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-util-3.67.0-1.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-util-devel",
-          "Release": "1.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-util-devel-3.67.0-1.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-util-debuginfo",
-          "Release": "1.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-util-debuginfo-3.67.0-1.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-util",
-          "Release": "1.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-util-3.67.0-1.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-util-devel",
-          "Release": "1.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-util-devel-3.67.0-1.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-util-debuginfo",
-          "Release": "1.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-util-debuginfo-3.67.0-1.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "nss-util",
-          "Release": "1.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-util-3.67.0-1.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "nss-util-devel",
-          "Release": "1.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-util-devel-3.67.0-1.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "nss-util-debuginfo",
-          "Release": "1.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-util-debuginfo-3.67.0-1.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-softokn",
-          "Release": "3.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-softokn-3.67.0-3.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-softokn-freebl",
-          "Release": "3.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-softokn-freebl-3.67.0-3.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-softokn-freebl-devel",
-          "Release": "3.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-softokn-freebl-devel-3.67.0-3.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-softokn-devel",
-          "Release": "3.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-softokn-devel-3.67.0-3.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-softokn-debuginfo",
-          "Release": "3.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-softokn-debuginfo-3.67.0-3.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-softokn",
-          "Release": "3.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-softokn-3.67.0-3.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-softokn-freebl",
-          "Release": "3.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-softokn-freebl-3.67.0-3.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-softokn-freebl-devel",
-          "Release": "3.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-softokn-freebl-devel-3.67.0-3.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-softokn-devel",
-          "Release": "3.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-softokn-devel-3.67.0-3.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-softokn-debuginfo",
-          "Release": "3.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-softokn-debuginfo-3.67.0-3.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "nss-softokn",
-          "Release": "3.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-softokn-3.67.0-3.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "nss-softokn-freebl",
-          "Release": "3.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-softokn-freebl-3.67.0-3.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "nss-softokn-freebl-devel",
-          "Release": "3.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-softokn-freebl-devel-3.67.0-3.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "nss-softokn-devel",
-          "Release": "3.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-softokn-devel-3.67.0-3.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "nss-softokn-debuginfo",
-          "Release": "3.amzn2",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-softokn-debuginfo-3.67.0-3.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss",
-          "Release": "4.amzn2.0.1",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-3.67.0-4.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-tools",
-          "Release": "4.amzn2.0.1",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-tools-3.67.0-4.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-sysinit",
-          "Release": "4.amzn2.0.1",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-sysinit-3.67.0-4.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-devel",
-          "Release": "4.amzn2.0.1",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-devel-3.67.0-4.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-pkcs11-devel",
-          "Release": "4.amzn2.0.1",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-pkcs11-devel-3.67.0-4.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-debuginfo",
-          "Release": "4.amzn2.0.1",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-debuginfo-3.67.0-4.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss",
-          "Release": "4.amzn2.0.1",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-3.67.0-4.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-tools",
-          "Release": "4.amzn2.0.1",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-tools-3.67.0-4.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-sysinit",
-          "Release": "4.amzn2.0.1",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-sysinit-3.67.0-4.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-devel",
-          "Release": "4.amzn2.0.1",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-devel-3.67.0-4.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-pkcs11-devel",
-          "Release": "4.amzn2.0.1",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-pkcs11-devel-3.67.0-4.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-debuginfo",
-          "Release": "4.amzn2.0.1",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-debuginfo-3.67.0-4.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "nss",
-          "Release": "4.amzn2.0.1",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-3.67.0-4.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "nss-tools",
-          "Release": "4.amzn2.0.1",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-tools-3.67.0-4.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "nss-sysinit",
-          "Release": "4.amzn2.0.1",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-sysinit-3.67.0-4.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "nss-devel",
-          "Release": "4.amzn2.0.1",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-devel-3.67.0-4.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "nss-pkcs11-devel",
-          "Release": "4.amzn2.0.1",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-pkcs11-devel-3.67.0-4.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "nss-debuginfo",
-          "Release": "4.amzn2.0.1",
-          "Version": "3.67.0",
-          "Filename": "Packages/nss-debuginfo-3.67.0-4.amzn2.0.1.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2021-1722",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1722: critical priority package update for nss nss-util nss-softokn nspr",
+	"Issued": {
+		"Date": "2021-12-01 07:11"
+	},
+	"Updated": {
+		"Date": "2021-12-01 20:14"
+	},
+	"Severity": "critical",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-43527:\n\tNSS (Network Security Services) up to and including 3.73 is vulnerable to a heap overflow when handling DER-encoded DSA or RSA-PSS signatures. Applications using NSS for handling signatures encoded within CMS, S/MIME, PKCS \\#7, or PKCS \\#12 are likely to be impacted. Applications using NSS for certificate validation or other TLS, X.509, OCSP or CRL functionality may be impacted, depending on how they configure NSS.\nWhen verifying a DER-encoded signature, NSS decodes the signature into a fixed-size buffer and passes the buffer to the underlying PKCS \\#11 module. The length of the signature is not correctly checked when processing DSA and RSA-PSS signatures. DSA and RSA-PSS signatures larger than 16384 bits will overflow the buffer in VFYContextStr. The vulnerable code is located within secvfy.c:vfy_CreateContext.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43527",
+				"ID": "CVE-2021-43527",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nspr",
+					"Release": "1.amzn2",
+					"Version": "4.32.0",
+					"Filename": "Packages/nspr-4.32.0-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nspr-devel",
+					"Release": "1.amzn2",
+					"Version": "4.32.0",
+					"Filename": "Packages/nspr-devel-4.32.0-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nspr-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "4.32.0",
+					"Filename": "Packages/nspr-debuginfo-4.32.0-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nspr",
+					"Release": "1.amzn2",
+					"Version": "4.32.0",
+					"Filename": "Packages/nspr-4.32.0-1.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nspr-devel",
+					"Release": "1.amzn2",
+					"Version": "4.32.0",
+					"Filename": "Packages/nspr-devel-4.32.0-1.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nspr-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "4.32.0",
+					"Filename": "Packages/nspr-debuginfo-4.32.0-1.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nspr",
+					"Release": "1.amzn2",
+					"Version": "4.32.0",
+					"Filename": "Packages/nspr-4.32.0-1.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nspr-devel",
+					"Release": "1.amzn2",
+					"Version": "4.32.0",
+					"Filename": "Packages/nspr-devel-4.32.0-1.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nspr-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "4.32.0",
+					"Filename": "Packages/nspr-debuginfo-4.32.0-1.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-util",
+					"Release": "1.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-util-3.67.0-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-util-devel",
+					"Release": "1.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-util-devel-3.67.0-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-util-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-util-debuginfo-3.67.0-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-util",
+					"Release": "1.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-util-3.67.0-1.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-util-devel",
+					"Release": "1.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-util-devel-3.67.0-1.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-util-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-util-debuginfo-3.67.0-1.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nss-util",
+					"Release": "1.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-util-3.67.0-1.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nss-util-devel",
+					"Release": "1.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-util-devel-3.67.0-1.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nss-util-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-util-debuginfo-3.67.0-1.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-softokn",
+					"Release": "3.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-softokn-3.67.0-3.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-softokn-freebl",
+					"Release": "3.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-softokn-freebl-3.67.0-3.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-softokn-freebl-devel",
+					"Release": "3.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-softokn-freebl-devel-3.67.0-3.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-softokn-devel",
+					"Release": "3.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-softokn-devel-3.67.0-3.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-softokn-debuginfo",
+					"Release": "3.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-softokn-debuginfo-3.67.0-3.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-softokn",
+					"Release": "3.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-softokn-3.67.0-3.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-softokn-freebl",
+					"Release": "3.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-softokn-freebl-3.67.0-3.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-softokn-freebl-devel",
+					"Release": "3.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-softokn-freebl-devel-3.67.0-3.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-softokn-devel",
+					"Release": "3.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-softokn-devel-3.67.0-3.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-softokn-debuginfo",
+					"Release": "3.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-softokn-debuginfo-3.67.0-3.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nss-softokn",
+					"Release": "3.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-softokn-3.67.0-3.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nss-softokn-freebl",
+					"Release": "3.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-softokn-freebl-3.67.0-3.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nss-softokn-freebl-devel",
+					"Release": "3.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-softokn-freebl-devel-3.67.0-3.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nss-softokn-devel",
+					"Release": "3.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-softokn-devel-3.67.0-3.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nss-softokn-debuginfo",
+					"Release": "3.amzn2",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-softokn-debuginfo-3.67.0-3.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-3.67.0-4.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-tools",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-tools-3.67.0-4.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-sysinit",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-sysinit-3.67.0-4.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-devel",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-devel-3.67.0-4.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-pkcs11-devel",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-pkcs11-devel-3.67.0-4.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-debuginfo",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-debuginfo-3.67.0-4.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-3.67.0-4.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-tools",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-tools-3.67.0-4.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-sysinit",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-sysinit-3.67.0-4.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-devel",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-devel-3.67.0-4.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-pkcs11-devel",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-pkcs11-devel-3.67.0-4.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-debuginfo",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-debuginfo-3.67.0-4.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nss",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-3.67.0-4.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nss-tools",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-tools-3.67.0-4.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nss-sysinit",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-sysinit-3.67.0-4.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nss-devel",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-devel-3.67.0-4.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nss-pkcs11-devel",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-pkcs11-devel-3.67.0-4.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nss-debuginfo",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.67.0",
+					"Filename": "Packages/nss-debuginfo-3.67.0-4.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

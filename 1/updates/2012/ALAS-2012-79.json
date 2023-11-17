@@ -1,51 +1,51 @@
 {
-  "ID": "ALAS-2012-79",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux - ALAS-2012-79: medium priority package update for rubygems",
-  "Issued": {
-    "Date": "2012-05-21 16:48"
-  },
-  "Updated": {
-    "Date": "2014-09-14 16:36"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-2125:\n\tRubyGems before 1.8.23 can redirect HTTPS connections to HTTP, which makes it easier for remote attackers to observe or modify a gem during installation via a man-in-the-middle attack.\nIt was found that, when using RubyGems, the connection could be redirected from HTTPS to HTTP. This could lead to a user believing they are installing a gem via HTTPS, when the connection may have been silently downgraded to HTTP.\n814718: \nCVE-2012-2125 CVE-2012-2126 rubygems: Two security fixes in v1.8.23\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2125",
-        "ID": "CVE-2012-2125",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux",
-      "Name": "Amazon Linux",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "rubygems-devel",
-          "Release": "3.1.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/rubygems-devel-1.8.11-3.1.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "rubygems",
-          "Release": "3.1.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/rubygems-1.8.11-3.1.amzn1.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2012-79",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux - ALAS-2012-79: medium priority package update for rubygems",
+	"Issued": {
+		"Date": "2012-05-21 16:48"
+	},
+	"Updated": {
+		"Date": "2014-09-14 16:36"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-2125:\n\tRubyGems before 1.8.23 can redirect HTTPS connections to HTTP, which makes it easier for remote attackers to observe or modify a gem during installation via a man-in-the-middle attack.\nIt was found that, when using RubyGems, the connection could be redirected from HTTPS to HTTP. This could lead to a user believing they are installing a gem via HTTPS, when the connection may have been silently downgraded to HTTP.\n814718: \nCVE-2012-2125 CVE-2012-2126 rubygems: Two security fixes in v1.8.23\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2125",
+				"ID": "CVE-2012-2125",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux",
+			"Name": "Amazon Linux",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "rubygems-devel",
+					"Release": "3.1.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/rubygems-devel-1.8.11-3.1.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "rubygems",
+					"Release": "3.1.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/rubygems-1.8.11-3.1.amzn1.noarch.rpm"
+				}
+			]
+		}
+	}
 }

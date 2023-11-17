@@ -1,155 +1,155 @@
 {
-  "ID": "ALAS-2015-497",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-497: medium priority package update for file",
-  "Issued": {
-    "Date": "2015-03-23 08:32"
-  },
-  "Updated": {
-    "Date": "2015-03-23 09:02"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-9653:\n\t1190116: \nCVE-2014-9653 file: malformed elf file causes access to uninitialized memory\n\nCVE-2014-9621:\n\tThe ELF parser in file 5.16 through 5.21 allows remote attackers to cause a denial of service via a long string.\n1180642: \nCVE-2014-9621 file: limit string printing to 100 chars\n\nCVE-2014-9620:\n\tThe ELF parser in file 5.08 through 5.21 allows remote attackers to cause a denial of service via a large number of notes.\n1180639: \nCVE-2014-9620 file: limit the number of ELF notes processed\n\nCVE-2014-8117:\n\tsoftmagic.c in file before 5.21 does not properly limit recursion, which allows remote attackers to cause a denial of service (CPU consumption or crash) via unspecified vectors.\n1174606: \nCVE-2014-8117 file: denial of service issue (resource consumption)\n\nCVE-2014-8116:\n\tThe ELF parser (readelf.c) in file before 5.21 allows remote attackers to cause a denial of service (CPU consumption or crash) via a large number of (1) program or (2) section headers or (3) invalid capabilities.\n1171580: \nCVE-2014-8116 file: multiple denial of service issues (resource consumption)\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8116",
-        "ID": "CVE-2014-8116",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8117",
-        "ID": "CVE-2014-8117",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9620",
-        "ID": "CVE-2014-9620",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9621",
-        "ID": "CVE-2014-9621",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9653",
-        "ID": "CVE-2014-9653",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "file-devel",
-          "Release": "2.29.amzn1",
-          "Version": "5.22",
-          "Filename": "Packages/file-devel-5.22-2.29.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "python26-magic",
-          "Release": "2.29.amzn1",
-          "Version": "5.22",
-          "Filename": "Packages/python26-magic-5.22-2.29.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "file-debuginfo",
-          "Release": "2.29.amzn1",
-          "Version": "5.22",
-          "Filename": "Packages/file-debuginfo-5.22-2.29.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "python27-magic",
-          "Release": "2.29.amzn1",
-          "Version": "5.22",
-          "Filename": "Packages/python27-magic-5.22-2.29.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "file",
-          "Release": "2.29.amzn1",
-          "Version": "5.22",
-          "Filename": "Packages/file-5.22-2.29.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "file-libs",
-          "Release": "2.29.amzn1",
-          "Version": "5.22",
-          "Filename": "Packages/file-libs-5.22-2.29.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "file-static",
-          "Release": "2.29.amzn1",
-          "Version": "5.22",
-          "Filename": "Packages/file-static-5.22-2.29.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "file-debuginfo",
-          "Release": "2.29.amzn1",
-          "Version": "5.22",
-          "Filename": "Packages/file-debuginfo-5.22-2.29.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "file-devel",
-          "Release": "2.29.amzn1",
-          "Version": "5.22",
-          "Filename": "Packages/file-devel-5.22-2.29.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "file-libs",
-          "Release": "2.29.amzn1",
-          "Version": "5.22",
-          "Filename": "Packages/file-libs-5.22-2.29.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "file-static",
-          "Release": "2.29.amzn1",
-          "Version": "5.22",
-          "Filename": "Packages/file-static-5.22-2.29.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "file",
-          "Release": "2.29.amzn1",
-          "Version": "5.22",
-          "Filename": "Packages/file-5.22-2.29.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2015-497",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2015-497: medium priority package update for file",
+	"Issued": {
+		"Date": "2015-03-23 08:32"
+	},
+	"Updated": {
+		"Date": "2015-03-23 09:02"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-9653:\n\t1190116: \nCVE-2014-9653 file: malformed elf file causes access to uninitialized memory\n\nCVE-2014-9621:\n\tThe ELF parser in file 5.16 through 5.21 allows remote attackers to cause a denial of service via a long string.\n1180642: \nCVE-2014-9621 file: limit string printing to 100 chars\n\nCVE-2014-9620:\n\tThe ELF parser in file 5.08 through 5.21 allows remote attackers to cause a denial of service via a large number of notes.\n1180639: \nCVE-2014-9620 file: limit the number of ELF notes processed\n\nCVE-2014-8117:\n\tsoftmagic.c in file before 5.21 does not properly limit recursion, which allows remote attackers to cause a denial of service (CPU consumption or crash) via unspecified vectors.\n1174606: \nCVE-2014-8117 file: denial of service issue (resource consumption)\n\nCVE-2014-8116:\n\tThe ELF parser (readelf.c) in file before 5.21 allows remote attackers to cause a denial of service (CPU consumption or crash) via a large number of (1) program or (2) section headers or (3) invalid capabilities.\n1171580: \nCVE-2014-8116 file: multiple denial of service issues (resource consumption)\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8116",
+				"ID": "CVE-2014-8116",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8117",
+				"ID": "CVE-2014-8117",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9620",
+				"ID": "CVE-2014-9620",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9621",
+				"ID": "CVE-2014-9621",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9653",
+				"ID": "CVE-2014-9653",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "file-devel",
+					"Release": "2.29.amzn1",
+					"Version": "5.22",
+					"Filename": "Packages/file-devel-5.22-2.29.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python26-magic",
+					"Release": "2.29.amzn1",
+					"Version": "5.22",
+					"Filename": "Packages/python26-magic-5.22-2.29.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "file-debuginfo",
+					"Release": "2.29.amzn1",
+					"Version": "5.22",
+					"Filename": "Packages/file-debuginfo-5.22-2.29.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python27-magic",
+					"Release": "2.29.amzn1",
+					"Version": "5.22",
+					"Filename": "Packages/python27-magic-5.22-2.29.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "file",
+					"Release": "2.29.amzn1",
+					"Version": "5.22",
+					"Filename": "Packages/file-5.22-2.29.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "file-libs",
+					"Release": "2.29.amzn1",
+					"Version": "5.22",
+					"Filename": "Packages/file-libs-5.22-2.29.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "file-static",
+					"Release": "2.29.amzn1",
+					"Version": "5.22",
+					"Filename": "Packages/file-static-5.22-2.29.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "file-debuginfo",
+					"Release": "2.29.amzn1",
+					"Version": "5.22",
+					"Filename": "Packages/file-debuginfo-5.22-2.29.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "file-devel",
+					"Release": "2.29.amzn1",
+					"Version": "5.22",
+					"Filename": "Packages/file-devel-5.22-2.29.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "file-libs",
+					"Release": "2.29.amzn1",
+					"Version": "5.22",
+					"Filename": "Packages/file-libs-5.22-2.29.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "file-static",
+					"Release": "2.29.amzn1",
+					"Version": "5.22",
+					"Filename": "Packages/file-static-5.22-2.29.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "file",
+					"Release": "2.29.amzn1",
+					"Version": "5.22",
+					"Filename": "Packages/file-5.22-2.29.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

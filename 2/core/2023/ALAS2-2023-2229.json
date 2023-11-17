@@ -1,67 +1,67 @@
 {
-  "ID": "ALAS2-2023-2229",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2229: medium priority package update for cri-tools",
-  "Issued": {
-    "Date": "2023-08-31 22:28"
-  },
-  "Updated": {
-    "Date": "2023-10-11 18:36"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-29409:\n\tExtremely large RSA keys in certificate chains can cause a client/server to expend significant CPU time verifying signatures. With fix, the size of RSA keys transmitted during handshakes is restricted to <= 8192 bits. Based on a survey of publicly trusted RSA keys, there are currently only three certificates in circulation with keys larger than this, and all three appear to be test certificates that are not actively deployed. It is possible there are larger keys in use in private PKIs, but we target the web PKI, so causing breakage here in the interests of increasing the default safety of users of crypto/tls seems reasonable.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29409",
-        "ID": "CVE-2023-29409",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "cri-tools",
-          "Release": "1.amzn2.0.2",
-          "Version": "1.26.1",
-          "Filename": "Packages/cri-tools-1.26.1-1.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "cri-tools-debuginfo",
-          "Release": "1.amzn2.0.2",
-          "Version": "1.26.1",
-          "Filename": "Packages/cri-tools-debuginfo-1.26.1-1.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "cri-tools",
-          "Release": "1.amzn2.0.2",
-          "Version": "1.26.1",
-          "Filename": "Packages/cri-tools-1.26.1-1.amzn2.0.2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "cri-tools-debuginfo",
-          "Release": "1.amzn2.0.2",
-          "Version": "1.26.1",
-          "Filename": "Packages/cri-tools-debuginfo-1.26.1-1.amzn2.0.2.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2023-2229",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2229: medium priority package update for cri-tools",
+	"Issued": {
+		"Date": "2023-08-31 22:28"
+	},
+	"Updated": {
+		"Date": "2023-10-11 18:36"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-29409:\n\tExtremely large RSA keys in certificate chains can cause a client/server to expend significant CPU time verifying signatures. With fix, the size of RSA keys transmitted during handshakes is restricted to <= 8192 bits. Based on a survey of publicly trusted RSA keys, there are currently only three certificates in circulation with keys larger than this, and all three appear to be test certificates that are not actively deployed. It is possible there are larger keys in use in private PKIs, but we target the web PKI, so causing breakage here in the interests of increasing the default safety of users of crypto/tls seems reasonable.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29409",
+				"ID": "CVE-2023-29409",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "cri-tools",
+					"Release": "1.amzn2.0.2",
+					"Version": "1.26.1",
+					"Filename": "Packages/cri-tools-1.26.1-1.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "cri-tools-debuginfo",
+					"Release": "1.amzn2.0.2",
+					"Version": "1.26.1",
+					"Filename": "Packages/cri-tools-debuginfo-1.26.1-1.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "cri-tools",
+					"Release": "1.amzn2.0.2",
+					"Version": "1.26.1",
+					"Filename": "Packages/cri-tools-1.26.1-1.amzn2.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "cri-tools-debuginfo",
+					"Release": "1.amzn2.0.2",
+					"Version": "1.26.1",
+					"Filename": "Packages/cri-tools-debuginfo-1.26.1-1.amzn2.0.2.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

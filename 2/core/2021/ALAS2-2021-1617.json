@@ -1,705 +1,705 @@
 {
-  "ID": "ALAS2-2021-1617",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1617: medium priority package update for qemu",
-  "Issued": {
-    "Date": "2021-03-18 01:13"
-  },
-  "Updated": {
-    "Date": "2021-03-19 22:46"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-16092:\n\tAn assertion failure flaw was found in QEMU in the network packet processing component. This issue affects the \"e1000e\" and \"vmxnet3\" network devices. This flaw allows a malicious guest user or process to abort the QEMU process on the host, resulting in a denial of service.\n1860283: CVE-2020-16092 QEMU: reachable assertion failure in net_tx_pkt_add_raw_fragment() in hw/net/net_tx_pkt.c\n\nCVE-2020-13765:\n\tAn out-of-bound write access flaw was found in the way QEMU loads ROM contents at boot time. This flaw occurs in the rom_copy() routine while loading the contents of a 32-bit -kernel image into memory. Running an untrusted -kernel image may load contents at arbitrary memory locations, potentially leading to code execution with the privileges of the QEMU process.\n1842912: CVE-2020-13765 QEMU: loader: OOB access while loading registered ROM may lead to code execution\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13765",
-        "ID": "CVE-2020-13765",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-16092",
-        "ID": "CVE-2020-16092",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-common",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-common-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-guest-agent",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-guest-agent-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-img",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-img-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "ivshmem-tools",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/ivshmem-tools-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-block-curl",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-block-curl-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-block-dmg",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-block-dmg-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-block-iscsi",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-block-iscsi-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-block-nfs",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-block-nfs-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-block-rbd",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-block-rbd-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-block-ssh",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-block-ssh-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-audio-alsa",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-audio-alsa-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-audio-oss",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-audio-oss-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-audio-pa",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-audio-pa-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-audio-sdl",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-audio-sdl-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-ui-curses",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-ui-curses-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-ui-gtk",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-ui-gtk-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-ui-sdl",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-ui-sdl-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-kvm",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-kvm-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-kvm-core",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-kvm-core-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-user",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-user-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-user-binfmt",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-user-binfmt-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-user-static",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-user-static-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-system-aarch64",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-system-aarch64-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-system-aarch64-core",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-system-aarch64-core-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-system-x86",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-system-x86-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-system-x86-core",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-system-x86-core-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "10",
-          "Name": "qemu-debuginfo",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-debuginfo-3.1.0-8.amzn2.0.7.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-common",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-common-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-guest-agent",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-guest-agent-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-img",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-img-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "ivshmem-tools",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/ivshmem-tools-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-block-curl",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-block-curl-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-block-dmg",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-block-dmg-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-block-iscsi",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-block-iscsi-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-block-nfs",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-block-nfs-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-block-rbd",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-block-rbd-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-block-ssh",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-block-ssh-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-audio-alsa",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-audio-alsa-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-audio-oss",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-audio-oss-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-audio-pa",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-audio-pa-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-audio-sdl",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-audio-sdl-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-ui-curses",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-ui-curses-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-ui-gtk",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-ui-gtk-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-ui-sdl",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-ui-sdl-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-kvm",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-kvm-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-kvm-core",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-kvm-core-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-user",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-user-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-user-binfmt",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-user-binfmt-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-user-static",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-user-static-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-system-aarch64",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-system-aarch64-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-system-aarch64-core",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-system-aarch64-core-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-system-x86",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-system-x86-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-system-x86-core",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-system-x86-core-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "10",
-          "Name": "qemu-debuginfo",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-debuginfo-3.1.0-8.amzn2.0.7.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-common",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-common-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-guest-agent",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-guest-agent-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-img",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-img-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "ivshmem-tools",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/ivshmem-tools-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-block-curl",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-block-curl-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-block-dmg",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-block-dmg-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-block-iscsi",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-block-iscsi-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-block-nfs",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-block-nfs-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-block-ssh",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-block-ssh-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-audio-alsa",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-audio-alsa-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-audio-oss",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-audio-oss-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-audio-pa",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-audio-pa-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-audio-sdl",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-audio-sdl-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-ui-curses",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-ui-curses-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-ui-gtk",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-ui-gtk-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-ui-sdl",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-ui-sdl-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-kvm",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-kvm-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-kvm-core",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-kvm-core-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-user",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-user-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-user-binfmt",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-user-binfmt-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-user-static",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-user-static-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-system-aarch64",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-system-aarch64-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-system-aarch64-core",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-system-aarch64-core-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-system-x86",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-system-x86-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-system-x86-core",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-system-x86-core-3.1.0-8.amzn2.0.7.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "10",
-          "Name": "qemu-debuginfo",
-          "Release": "8.amzn2.0.7",
-          "Version": "3.1.0",
-          "Filename": "Packages/qemu-debuginfo-3.1.0-8.amzn2.0.7.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2021-1617",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1617: medium priority package update for qemu",
+	"Issued": {
+		"Date": "2021-03-18 01:13"
+	},
+	"Updated": {
+		"Date": "2021-03-19 22:46"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-16092:\n\tAn assertion failure flaw was found in QEMU in the network packet processing component. This issue affects the \"e1000e\" and \"vmxnet3\" network devices. This flaw allows a malicious guest user or process to abort the QEMU process on the host, resulting in a denial of service.\n1860283: CVE-2020-16092 QEMU: reachable assertion failure in net_tx_pkt_add_raw_fragment() in hw/net/net_tx_pkt.c\n\nCVE-2020-13765:\n\tAn out-of-bound write access flaw was found in the way QEMU loads ROM contents at boot time. This flaw occurs in the rom_copy() routine while loading the contents of a 32-bit -kernel image into memory. Running an untrusted -kernel image may load contents at arbitrary memory locations, potentially leading to code execution with the privileges of the QEMU process.\n1842912: CVE-2020-13765 QEMU: loader: OOB access while loading registered ROM may lead to code execution\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13765",
+				"ID": "CVE-2020-13765",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-16092",
+				"ID": "CVE-2020-16092",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-common",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-common-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-guest-agent",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-guest-agent-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-img",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-img-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "ivshmem-tools",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/ivshmem-tools-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-block-curl",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-block-curl-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-block-dmg",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-block-dmg-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-block-iscsi",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-block-iscsi-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-block-nfs",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-block-nfs-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-block-rbd",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-block-rbd-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-block-ssh",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-block-ssh-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-audio-alsa",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-audio-alsa-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-audio-oss",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-audio-oss-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-audio-pa",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-audio-pa-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-audio-sdl",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-audio-sdl-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-ui-curses",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-ui-curses-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-ui-gtk",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-ui-gtk-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-ui-sdl",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-ui-sdl-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-kvm",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-kvm-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-kvm-core",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-kvm-core-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-user",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-user-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-user-binfmt",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-user-binfmt-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-user-static",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-user-static-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-system-aarch64",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-system-aarch64-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-system-aarch64-core",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-system-aarch64-core-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-system-x86",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-system-x86-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-system-x86-core",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-system-x86-core-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "10",
+					"Name": "qemu-debuginfo",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-debuginfo-3.1.0-8.amzn2.0.7.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-common",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-common-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-guest-agent",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-guest-agent-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-img",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-img-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "ivshmem-tools",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/ivshmem-tools-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-block-curl",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-block-curl-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-block-dmg",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-block-dmg-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-block-iscsi",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-block-iscsi-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-block-nfs",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-block-nfs-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-block-rbd",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-block-rbd-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-block-ssh",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-block-ssh-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-audio-alsa",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-audio-alsa-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-audio-oss",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-audio-oss-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-audio-pa",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-audio-pa-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-audio-sdl",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-audio-sdl-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-ui-curses",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-ui-curses-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-ui-gtk",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-ui-gtk-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-ui-sdl",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-ui-sdl-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-kvm",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-kvm-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-kvm-core",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-kvm-core-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-user",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-user-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-user-binfmt",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-user-binfmt-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-user-static",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-user-static-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-system-aarch64",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-system-aarch64-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-system-aarch64-core",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-system-aarch64-core-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-system-x86",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-system-x86-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-system-x86-core",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-system-x86-core-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "10",
+					"Name": "qemu-debuginfo",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-debuginfo-3.1.0-8.amzn2.0.7.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-common",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-common-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-guest-agent",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-guest-agent-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-img",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-img-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "ivshmem-tools",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/ivshmem-tools-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-block-curl",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-block-curl-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-block-dmg",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-block-dmg-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-block-iscsi",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-block-iscsi-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-block-nfs",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-block-nfs-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-block-ssh",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-block-ssh-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-audio-alsa",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-audio-alsa-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-audio-oss",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-audio-oss-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-audio-pa",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-audio-pa-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-audio-sdl",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-audio-sdl-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-ui-curses",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-ui-curses-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-ui-gtk",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-ui-gtk-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-ui-sdl",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-ui-sdl-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-kvm",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-kvm-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-kvm-core",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-kvm-core-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-user",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-user-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-user-binfmt",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-user-binfmt-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-user-static",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-user-static-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-system-aarch64",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-system-aarch64-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-system-aarch64-core",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-system-aarch64-core-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-system-x86",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-system-x86-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-system-x86-core",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-system-x86-core-3.1.0-8.amzn2.0.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "10",
+					"Name": "qemu-debuginfo",
+					"Release": "8.amzn2.0.7",
+					"Version": "3.1.0",
+					"Filename": "Packages/qemu-debuginfo-3.1.0-8.amzn2.0.7.i686.rpm"
+				}
+			]
+		}
+	}
 }

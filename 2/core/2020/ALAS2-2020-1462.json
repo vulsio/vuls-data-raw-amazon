@@ -1,69 +1,69 @@
 {
-  "ID": "ALAS2-2020-1462",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1462: important priority package update for thunderbird",
-  "Issued": {
-    "Date": "2020-07-14 02:50"
-  },
-  "Updated": {
-    "Date": "2020-07-17 00:42"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-12410:\n\tMozilla developers reported memory safety bugs present in Firefox 76 and Firefox ESR 68.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Thunderbird < 68.9.0, Firefox < 77, and Firefox ESR < 68.9.\n1843030: CVE-2020-12410 Mozilla: Memory safety bugs fixed in Firefox 77 and Firefox ESR 68.9\n\nCVE-2020-12406:\n\tMozilla Developer Iain Ireland discovered a missing type check during unboxed objects removal, resulting in a crash. We presume that with enough effort that it could be exploited to run arbitrary code. This vulnerability affects Thunderbird < 68.9.0, Firefox < 77, and Firefox ESR < 68.9.\n1843312: CVE-2020-12406 Mozilla: JavaScript Type confusion with NativeTypes\n\nCVE-2020-12405:\n\tWhen browsing a malicious page, a race condition in our SharedWorkerService could occur and lead to a potentially exploitable crash. This vulnerability affects Thunderbird < 68.9.0, Firefox < 77, and Firefox ESR < 68.9.\n1843313: CVE-2020-12405 Mozilla: Use-after-free in SharedWorkerService\n\nCVE-2020-12398:\n\tIf Thunderbird is configured to use STARTTLS for an IMAP server, and the server sends a PREAUTH response, then Thunderbird will continue with an unencrypted connection, causing email data to be sent without protection. This vulnerability affects Thunderbird < 68.9.0.\n1846556: CVE-2020-12398 Mozilla: Security downgrade with IMAP STARTTLS leads to information leakage\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12398",
-        "ID": "CVE-2020-12398",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12405",
-        "ID": "CVE-2020-12405",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12406",
-        "ID": "CVE-2020-12406",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12410",
-        "ID": "CVE-2020-12410",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "thunderbird",
-          "Release": "1.amzn2",
-          "Version": "68.9.0",
-          "Filename": "Packages/thunderbird-68.9.0-1.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "thunderbird-debuginfo",
-          "Release": "1.amzn2",
-          "Version": "68.9.0",
-          "Filename": "Packages/thunderbird-debuginfo-68.9.0-1.amzn2.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2020-1462",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1462: important priority package update for thunderbird",
+	"Issued": {
+		"Date": "2020-07-14 02:50"
+	},
+	"Updated": {
+		"Date": "2020-07-17 00:42"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-12410:\n\tMozilla developers reported memory safety bugs present in Firefox 76 and Firefox ESR 68.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Thunderbird < 68.9.0, Firefox < 77, and Firefox ESR < 68.9.\n1843030: CVE-2020-12410 Mozilla: Memory safety bugs fixed in Firefox 77 and Firefox ESR 68.9\n\nCVE-2020-12406:\n\tMozilla Developer Iain Ireland discovered a missing type check during unboxed objects removal, resulting in a crash. We presume that with enough effort that it could be exploited to run arbitrary code. This vulnerability affects Thunderbird < 68.9.0, Firefox < 77, and Firefox ESR < 68.9.\n1843312: CVE-2020-12406 Mozilla: JavaScript Type confusion with NativeTypes\n\nCVE-2020-12405:\n\tWhen browsing a malicious page, a race condition in our SharedWorkerService could occur and lead to a potentially exploitable crash. This vulnerability affects Thunderbird < 68.9.0, Firefox < 77, and Firefox ESR < 68.9.\n1843313: CVE-2020-12405 Mozilla: Use-after-free in SharedWorkerService\n\nCVE-2020-12398:\n\tIf Thunderbird is configured to use STARTTLS for an IMAP server, and the server sends a PREAUTH response, then Thunderbird will continue with an unencrypted connection, causing email data to be sent without protection. This vulnerability affects Thunderbird < 68.9.0.\n1846556: CVE-2020-12398 Mozilla: Security downgrade with IMAP STARTTLS leads to information leakage\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12398",
+				"ID": "CVE-2020-12398",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12405",
+				"ID": "CVE-2020-12405",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12406",
+				"ID": "CVE-2020-12406",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12410",
+				"ID": "CVE-2020-12410",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "thunderbird",
+					"Release": "1.amzn2",
+					"Version": "68.9.0",
+					"Filename": "Packages/thunderbird-68.9.0-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "thunderbird-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "68.9.0",
+					"Filename": "Packages/thunderbird-debuginfo-68.9.0-1.amzn2.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

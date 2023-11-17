@@ -1,115 +1,115 @@
 {
-  "ID": "ALAS-2021-1473",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2021-1473: medium priority package update for tomcat8",
-  "Issued": {
-    "Date": "2021-01-12 22:52"
-  },
-  "Updated": {
-    "Date": "2021-01-13 18:29"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-17527:\n\tWhile investigating bug 64830 it was discovered that Apache Tomcat 10.0.0-M1 to 10.0.0-M9, 9.0.0-M1 to 9.0.39 and 8.5.0 to 8.5.59 could re-use an HTTP request header value from the previous stream received on an HTTP/2 connection for the request associated with the subsequent stream. While this would most likely lead to an error and the closure of the HTTP/2 connection, it is possible that information could leak between requests.\n1904221: CVE-2020-17527 tomcat: HTTP/2 request header mix-up\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-17527",
-        "ID": "CVE-2020-17527",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-admin-webapps",
-          "Release": "1.86.amzn1",
-          "Version": "8.5.60",
-          "Filename": "Packages/tomcat8-admin-webapps-8.5.60-1.86.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-lib",
-          "Release": "1.86.amzn1",
-          "Version": "8.5.60",
-          "Filename": "Packages/tomcat8-lib-8.5.60-1.86.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-log4j",
-          "Release": "1.86.amzn1",
-          "Version": "8.5.60",
-          "Filename": "Packages/tomcat8-log4j-8.5.60-1.86.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-jsp-2.3-api",
-          "Release": "1.86.amzn1",
-          "Version": "8.5.60",
-          "Filename": "Packages/tomcat8-jsp-2.3-api-8.5.60-1.86.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-javadoc",
-          "Release": "1.86.amzn1",
-          "Version": "8.5.60",
-          "Filename": "Packages/tomcat8-javadoc-8.5.60-1.86.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-webapps",
-          "Release": "1.86.amzn1",
-          "Version": "8.5.60",
-          "Filename": "Packages/tomcat8-webapps-8.5.60-1.86.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-el-3.0-api",
-          "Release": "1.86.amzn1",
-          "Version": "8.5.60",
-          "Filename": "Packages/tomcat8-el-3.0-api-8.5.60-1.86.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-servlet-3.1-api",
-          "Release": "1.86.amzn1",
-          "Version": "8.5.60",
-          "Filename": "Packages/tomcat8-servlet-3.1-api-8.5.60-1.86.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-docs-webapp",
-          "Release": "1.86.amzn1",
-          "Version": "8.5.60",
-          "Filename": "Packages/tomcat8-docs-webapp-8.5.60-1.86.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8",
-          "Release": "1.86.amzn1",
-          "Version": "8.5.60",
-          "Filename": "Packages/tomcat8-8.5.60-1.86.amzn1.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2021-1473",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2021-1473: medium priority package update for tomcat8",
+	"Issued": {
+		"Date": "2021-01-12 22:52"
+	},
+	"Updated": {
+		"Date": "2021-01-13 18:29"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-17527:\n\tWhile investigating bug 64830 it was discovered that Apache Tomcat 10.0.0-M1 to 10.0.0-M9, 9.0.0-M1 to 9.0.39 and 8.5.0 to 8.5.59 could re-use an HTTP request header value from the previous stream received on an HTTP/2 connection for the request associated with the subsequent stream. While this would most likely lead to an error and the closure of the HTTP/2 connection, it is possible that information could leak between requests.\n1904221: CVE-2020-17527 tomcat: HTTP/2 request header mix-up\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-17527",
+				"ID": "CVE-2020-17527",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-admin-webapps",
+					"Release": "1.86.amzn1",
+					"Version": "8.5.60",
+					"Filename": "Packages/tomcat8-admin-webapps-8.5.60-1.86.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-lib",
+					"Release": "1.86.amzn1",
+					"Version": "8.5.60",
+					"Filename": "Packages/tomcat8-lib-8.5.60-1.86.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-log4j",
+					"Release": "1.86.amzn1",
+					"Version": "8.5.60",
+					"Filename": "Packages/tomcat8-log4j-8.5.60-1.86.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-jsp-2.3-api",
+					"Release": "1.86.amzn1",
+					"Version": "8.5.60",
+					"Filename": "Packages/tomcat8-jsp-2.3-api-8.5.60-1.86.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-javadoc",
+					"Release": "1.86.amzn1",
+					"Version": "8.5.60",
+					"Filename": "Packages/tomcat8-javadoc-8.5.60-1.86.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-webapps",
+					"Release": "1.86.amzn1",
+					"Version": "8.5.60",
+					"Filename": "Packages/tomcat8-webapps-8.5.60-1.86.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-el-3.0-api",
+					"Release": "1.86.amzn1",
+					"Version": "8.5.60",
+					"Filename": "Packages/tomcat8-el-3.0-api-8.5.60-1.86.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-servlet-3.1-api",
+					"Release": "1.86.amzn1",
+					"Version": "8.5.60",
+					"Filename": "Packages/tomcat8-servlet-3.1-api-8.5.60-1.86.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-docs-webapp",
+					"Release": "1.86.amzn1",
+					"Version": "8.5.60",
+					"Filename": "Packages/tomcat8-docs-webapp-8.5.60-1.86.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8",
+					"Release": "1.86.amzn1",
+					"Version": "8.5.60",
+					"Filename": "Packages/tomcat8-8.5.60-1.86.amzn1.noarch.rpm"
+				}
+			]
+		}
+	}
 }

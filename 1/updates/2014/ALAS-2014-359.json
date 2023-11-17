@@ -1,117 +1,117 @@
 {
-  "ID": "ALAS-2014-359",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-359: medium priority package update for libtasn1",
-  "Issued": {
-    "Date": "2014-06-15 16:22"
-  },
-  "Updated": {
-    "Date": "2014-09-19 10:24"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-3469:\n\tMultiple NULL pointer dereference flaws were found in libtasn1's asn1_read_value() function. Specially crafted ASN.1 input could cause an application using libtasn1 to crash, if the application used the aforementioned function in a certain way.\n\nCVE-2014-3468:\n\tIt was discovered that the asn1_get_bit_der() function of the libtasn1 library incorrectly reported the length of ASN.1-encoded data. Specially crafted ASN.1 input could cause an application using libtasn1 to perform an out-of-bounds access operation, causing the application to crash or, possibly, execute arbitrary code.\n\nCVE-2014-3467:\n\tMultiple incorrect buffer boundary check issues were discovered in libtasn1. Specially crafted ASN.1 input could cause an application using libtasn1 to crash.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3467",
-        "ID": "CVE-2014-3467",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3468",
-        "ID": "CVE-2014-3468",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3469",
-        "ID": "CVE-2014-3469",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2014:0596.html",
-        "ID": "RHSA-2014:0596",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libtasn1-debuginfo",
-          "Release": "6.6.amzn1",
-          "Version": "2.3",
-          "Filename": "Packages/libtasn1-debuginfo-2.3-6.6.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libtasn1",
-          "Release": "6.6.amzn1",
-          "Version": "2.3",
-          "Filename": "Packages/libtasn1-2.3-6.6.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libtasn1-devel",
-          "Release": "6.6.amzn1",
-          "Version": "2.3",
-          "Filename": "Packages/libtasn1-devel-2.3-6.6.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libtasn1-tools",
-          "Release": "6.6.amzn1",
-          "Version": "2.3",
-          "Filename": "Packages/libtasn1-tools-2.3-6.6.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libtasn1-devel",
-          "Release": "6.6.amzn1",
-          "Version": "2.3",
-          "Filename": "Packages/libtasn1-devel-2.3-6.6.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libtasn1",
-          "Release": "6.6.amzn1",
-          "Version": "2.3",
-          "Filename": "Packages/libtasn1-2.3-6.6.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libtasn1-tools",
-          "Release": "6.6.amzn1",
-          "Version": "2.3",
-          "Filename": "Packages/libtasn1-tools-2.3-6.6.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libtasn1-debuginfo",
-          "Release": "6.6.amzn1",
-          "Version": "2.3",
-          "Filename": "Packages/libtasn1-debuginfo-2.3-6.6.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2014-359",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2012.09 - ALAS-2014-359: medium priority package update for libtasn1",
+	"Issued": {
+		"Date": "2014-06-15 16:22"
+	},
+	"Updated": {
+		"Date": "2014-09-19 10:24"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-3469:\n\tMultiple NULL pointer dereference flaws were found in libtasn1's asn1_read_value() function. Specially crafted ASN.1 input could cause an application using libtasn1 to crash, if the application used the aforementioned function in a certain way.\n\nCVE-2014-3468:\n\tIt was discovered that the asn1_get_bit_der() function of the libtasn1 library incorrectly reported the length of ASN.1-encoded data. Specially crafted ASN.1 input could cause an application using libtasn1 to perform an out-of-bounds access operation, causing the application to crash or, possibly, execute arbitrary code.\n\nCVE-2014-3467:\n\tMultiple incorrect buffer boundary check issues were discovered in libtasn1. Specially crafted ASN.1 input could cause an application using libtasn1 to crash.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3467",
+				"ID": "CVE-2014-3467",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3468",
+				"ID": "CVE-2014-3468",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3469",
+				"ID": "CVE-2014-3469",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2014:0596.html",
+				"ID": "RHSA-2014:0596",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libtasn1-debuginfo",
+					"Release": "6.6.amzn1",
+					"Version": "2.3",
+					"Filename": "Packages/libtasn1-debuginfo-2.3-6.6.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libtasn1",
+					"Release": "6.6.amzn1",
+					"Version": "2.3",
+					"Filename": "Packages/libtasn1-2.3-6.6.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libtasn1-devel",
+					"Release": "6.6.amzn1",
+					"Version": "2.3",
+					"Filename": "Packages/libtasn1-devel-2.3-6.6.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libtasn1-tools",
+					"Release": "6.6.amzn1",
+					"Version": "2.3",
+					"Filename": "Packages/libtasn1-tools-2.3-6.6.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libtasn1-devel",
+					"Release": "6.6.amzn1",
+					"Version": "2.3",
+					"Filename": "Packages/libtasn1-devel-2.3-6.6.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libtasn1",
+					"Release": "6.6.amzn1",
+					"Version": "2.3",
+					"Filename": "Packages/libtasn1-2.3-6.6.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libtasn1-tools",
+					"Release": "6.6.amzn1",
+					"Version": "2.3",
+					"Filename": "Packages/libtasn1-tools-2.3-6.6.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libtasn1-debuginfo",
+					"Release": "6.6.amzn1",
+					"Version": "2.3",
+					"Filename": "Packages/libtasn1-debuginfo-2.3-6.6.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

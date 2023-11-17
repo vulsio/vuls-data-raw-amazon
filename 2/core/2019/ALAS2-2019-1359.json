@@ -1,121 +1,121 @@
 {
-  "ID": "ALAS2-2019-1359",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1359: medium priority package update for libevent",
-  "Issued": {
-    "Date": "2019-11-11 17:38"
-  },
-  "Updated": {
-    "Date": "2019-11-14 03:19"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2015-6525:\n\tMultiple integer overflow flaws were found in the libevent&#039;s evbuffer API. An attacker able to make an application pass an excessively long input to libevent using the API could use these flaws to make the application enter an infinite loop, crash, and, possibly, execute arbitrary code.\n99999: \nCVE-2015-6525 libevent: multiple integer overflows in the evbuffer APIs\n\nCVE-2014-6272:\n\tMultiple integer overflows in the evbuffer API in Libevent 1.4.x before 1.4.15, 2.0.x before 2.0.22, and 2.1.x before 2.1.5-beta allow context-dependent attackers to cause a denial of service or possibly have other unspecified impact via &quot;insanely large inputs&quot; to the (1) evbuffer_add, (2) evbuffer_expand, or (3) bufferevent_write function, which triggers a heap-based buffer overflow or an infinite loop.  NOTE: this identifier has been SPLIT per ADT3 due to different affected versions. See CVE-2015-6525 for the functions that are only affected in 2.0 and later.\n99999: \nCVE-2014-6272 libevent: potential heap overflow in buffer/bufferevent APIs\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6272",
-        "ID": "CVE-2014-6272",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-6525",
-        "ID": "CVE-2015-6525",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libevent",
-          "Release": "4.amzn2.0.3",
-          "Version": "2.0.21",
-          "Filename": "Packages/libevent-2.0.21-4.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libevent-devel",
-          "Release": "4.amzn2.0.3",
-          "Version": "2.0.21",
-          "Filename": "Packages/libevent-devel-2.0.21-4.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "libevent-doc",
-          "Release": "4.amzn2.0.3",
-          "Version": "2.0.21",
-          "Filename": "Packages/libevent-doc-2.0.21-4.amzn2.0.3.noarch.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libevent-debuginfo",
-          "Release": "4.amzn2.0.3",
-          "Version": "2.0.21",
-          "Filename": "Packages/libevent-debuginfo-2.0.21-4.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libevent",
-          "Release": "4.amzn2.0.3",
-          "Version": "2.0.21",
-          "Filename": "Packages/libevent-2.0.21-4.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libevent-devel",
-          "Release": "4.amzn2.0.3",
-          "Version": "2.0.21",
-          "Filename": "Packages/libevent-devel-2.0.21-4.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libevent-debuginfo",
-          "Release": "4.amzn2.0.3",
-          "Version": "2.0.21",
-          "Filename": "Packages/libevent-debuginfo-2.0.21-4.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libevent",
-          "Release": "4.amzn2.0.3",
-          "Version": "2.0.21",
-          "Filename": "Packages/libevent-2.0.21-4.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libevent-devel",
-          "Release": "4.amzn2.0.3",
-          "Version": "2.0.21",
-          "Filename": "Packages/libevent-devel-2.0.21-4.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libevent-debuginfo",
-          "Release": "4.amzn2.0.3",
-          "Version": "2.0.21",
-          "Filename": "Packages/libevent-debuginfo-2.0.21-4.amzn2.0.3.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2019-1359",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1359: medium priority package update for libevent",
+	"Issued": {
+		"Date": "2019-11-11 17:38"
+	},
+	"Updated": {
+		"Date": "2019-11-14 03:19"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2015-6525:\n\tMultiple integer overflow flaws were found in the libevent&#039;s evbuffer API. An attacker able to make an application pass an excessively long input to libevent using the API could use these flaws to make the application enter an infinite loop, crash, and, possibly, execute arbitrary code.\n99999: \nCVE-2015-6525 libevent: multiple integer overflows in the evbuffer APIs\n\nCVE-2014-6272:\n\tMultiple integer overflows in the evbuffer API in Libevent 1.4.x before 1.4.15, 2.0.x before 2.0.22, and 2.1.x before 2.1.5-beta allow context-dependent attackers to cause a denial of service or possibly have other unspecified impact via &quot;insanely large inputs&quot; to the (1) evbuffer_add, (2) evbuffer_expand, or (3) bufferevent_write function, which triggers a heap-based buffer overflow or an infinite loop.  NOTE: this identifier has been SPLIT per ADT3 due to different affected versions. See CVE-2015-6525 for the functions that are only affected in 2.0 and later.\n99999: \nCVE-2014-6272 libevent: potential heap overflow in buffer/bufferevent APIs\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6272",
+				"ID": "CVE-2014-6272",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-6525",
+				"ID": "CVE-2015-6525",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libevent",
+					"Release": "4.amzn2.0.3",
+					"Version": "2.0.21",
+					"Filename": "Packages/libevent-2.0.21-4.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libevent-devel",
+					"Release": "4.amzn2.0.3",
+					"Version": "2.0.21",
+					"Filename": "Packages/libevent-devel-2.0.21-4.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "libevent-doc",
+					"Release": "4.amzn2.0.3",
+					"Version": "2.0.21",
+					"Filename": "Packages/libevent-doc-2.0.21-4.amzn2.0.3.noarch.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libevent-debuginfo",
+					"Release": "4.amzn2.0.3",
+					"Version": "2.0.21",
+					"Filename": "Packages/libevent-debuginfo-2.0.21-4.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libevent",
+					"Release": "4.amzn2.0.3",
+					"Version": "2.0.21",
+					"Filename": "Packages/libevent-2.0.21-4.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libevent-devel",
+					"Release": "4.amzn2.0.3",
+					"Version": "2.0.21",
+					"Filename": "Packages/libevent-devel-2.0.21-4.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libevent-debuginfo",
+					"Release": "4.amzn2.0.3",
+					"Version": "2.0.21",
+					"Filename": "Packages/libevent-debuginfo-2.0.21-4.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libevent",
+					"Release": "4.amzn2.0.3",
+					"Version": "2.0.21",
+					"Filename": "Packages/libevent-2.0.21-4.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libevent-devel",
+					"Release": "4.amzn2.0.3",
+					"Version": "2.0.21",
+					"Filename": "Packages/libevent-devel-2.0.21-4.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libevent-debuginfo",
+					"Release": "4.amzn2.0.3",
+					"Version": "2.0.21",
+					"Filename": "Packages/libevent-debuginfo-2.0.21-4.amzn2.0.3.i686.rpm"
+				}
+			]
+		}
+	}
 }

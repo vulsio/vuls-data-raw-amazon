@@ -1,145 +1,145 @@
 {
-  "ID": "ALAS2-2023-2329",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2329: important priority package update for open-vm-tools",
-  "Issued": {
-    "Date": "2023-10-30 23:59"
-  },
-  "Updated": {
-    "Date": "2023-11-01 22:22"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-34059:\n\topen-vm-tools contains a file descriptor hijack vulnerability in the vmware-user-suid-wrapper. A malicious actor with non-root privileges may be able to hijack the /dev/uinput file descriptor allowing them to simulate user inputs.\n\nCVE-2023-34058:\n\tVMware Tools contains a SAML token signature bypass vulnerability. A malicious actor that has been granted  Guest Operation Privileges https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-security/GUID-6A952214-0E5E-4CCF-9D2A-90948FF643EC.html  in a target virtual machine may be able to elevate their privileges if that target virtual machine has been assigned a more privileged  Guest Alias https://vdc-download.vmware.com/vmwb-repository/dcr-public/d1902b0e-d479-46bf-8ac9-cee0e31e8ec0/07ce8dbd-db48-4261-9b8f-c6d3ad8ba472/vim.vm.guest.AliasManager.html .\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-34058",
-        "ID": "CVE-2023-34058",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-34059",
-        "ID": "CVE-2023-34059",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "open-vm-tools",
-          "Release": "1.amzn2.0.1",
-          "Version": "12.3.0",
-          "Filename": "Packages/open-vm-tools-12.3.0-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "open-vm-tools-desktop",
-          "Release": "1.amzn2.0.1",
-          "Version": "12.3.0",
-          "Filename": "Packages/open-vm-tools-desktop-12.3.0-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "open-vm-tools-sdmp",
-          "Release": "1.amzn2.0.1",
-          "Version": "12.3.0",
-          "Filename": "Packages/open-vm-tools-sdmp-12.3.0-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "open-vm-tools-salt-minion",
-          "Release": "1.amzn2.0.1",
-          "Version": "12.3.0",
-          "Filename": "Packages/open-vm-tools-salt-minion-12.3.0-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "open-vm-tools-devel",
-          "Release": "1.amzn2.0.1",
-          "Version": "12.3.0",
-          "Filename": "Packages/open-vm-tools-devel-12.3.0-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "open-vm-tools-test",
-          "Release": "1.amzn2.0.1",
-          "Version": "12.3.0",
-          "Filename": "Packages/open-vm-tools-test-12.3.0-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "open-vm-tools-debuginfo",
-          "Release": "1.amzn2.0.1",
-          "Version": "12.3.0",
-          "Filename": "Packages/open-vm-tools-debuginfo-12.3.0-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "open-vm-tools",
-          "Release": "1.amzn2.0.1",
-          "Version": "12.3.0",
-          "Filename": "Packages/open-vm-tools-12.3.0-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "open-vm-tools-desktop",
-          "Release": "1.amzn2.0.1",
-          "Version": "12.3.0",
-          "Filename": "Packages/open-vm-tools-desktop-12.3.0-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "open-vm-tools-sdmp",
-          "Release": "1.amzn2.0.1",
-          "Version": "12.3.0",
-          "Filename": "Packages/open-vm-tools-sdmp-12.3.0-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "open-vm-tools-devel",
-          "Release": "1.amzn2.0.1",
-          "Version": "12.3.0",
-          "Filename": "Packages/open-vm-tools-devel-12.3.0-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "open-vm-tools-test",
-          "Release": "1.amzn2.0.1",
-          "Version": "12.3.0",
-          "Filename": "Packages/open-vm-tools-test-12.3.0-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "open-vm-tools-debuginfo",
-          "Release": "1.amzn2.0.1",
-          "Version": "12.3.0",
-          "Filename": "Packages/open-vm-tools-debuginfo-12.3.0-1.amzn2.0.1.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2023-2329",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2329: important priority package update for open-vm-tools",
+	"Issued": {
+		"Date": "2023-10-30 23:59"
+	},
+	"Updated": {
+		"Date": "2023-11-01 22:22"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-34059:\n\topen-vm-tools contains a file descriptor hijack vulnerability in the vmware-user-suid-wrapper. A malicious actor with non-root privileges may be able to hijack the /dev/uinput file descriptor allowing them to simulate user inputs.\n\nCVE-2023-34058:\n\tVMware Tools contains a SAML token signature bypass vulnerability. A malicious actor that has been granted  Guest Operation Privileges https://docs.vmware.com/en/VMware-vSphere/8.0/vsphere-security/GUID-6A952214-0E5E-4CCF-9D2A-90948FF643EC.html  in a target virtual machine may be able to elevate their privileges if that target virtual machine has been assigned a more privileged  Guest Alias https://vdc-download.vmware.com/vmwb-repository/dcr-public/d1902b0e-d479-46bf-8ac9-cee0e31e8ec0/07ce8dbd-db48-4261-9b8f-c6d3ad8ba472/vim.vm.guest.AliasManager.html .\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-34058",
+				"ID": "CVE-2023-34058",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-34059",
+				"ID": "CVE-2023-34059",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "open-vm-tools",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.3.0",
+					"Filename": "Packages/open-vm-tools-12.3.0-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "open-vm-tools-desktop",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.3.0",
+					"Filename": "Packages/open-vm-tools-desktop-12.3.0-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "open-vm-tools-sdmp",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.3.0",
+					"Filename": "Packages/open-vm-tools-sdmp-12.3.0-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "open-vm-tools-salt-minion",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.3.0",
+					"Filename": "Packages/open-vm-tools-salt-minion-12.3.0-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "open-vm-tools-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.3.0",
+					"Filename": "Packages/open-vm-tools-devel-12.3.0-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "open-vm-tools-test",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.3.0",
+					"Filename": "Packages/open-vm-tools-test-12.3.0-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "open-vm-tools-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.3.0",
+					"Filename": "Packages/open-vm-tools-debuginfo-12.3.0-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "open-vm-tools",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.3.0",
+					"Filename": "Packages/open-vm-tools-12.3.0-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "open-vm-tools-desktop",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.3.0",
+					"Filename": "Packages/open-vm-tools-desktop-12.3.0-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "open-vm-tools-sdmp",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.3.0",
+					"Filename": "Packages/open-vm-tools-sdmp-12.3.0-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "open-vm-tools-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.3.0",
+					"Filename": "Packages/open-vm-tools-devel-12.3.0-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "open-vm-tools-test",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.3.0",
+					"Filename": "Packages/open-vm-tools-test-12.3.0-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "open-vm-tools-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.3.0",
+					"Filename": "Packages/open-vm-tools-debuginfo-12.3.0-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

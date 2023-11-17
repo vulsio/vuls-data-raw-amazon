@@ -1,123 +1,123 @@
 {
-  "ID": "ALAS-2017-807",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-807: medium priority package update for openjpeg",
-  "Issued": {
-    "Date": "2017-03-22 16:00"
-  },
-  "Updated": {
-    "Date": "2017-03-22 16:00"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-9675:\n\tA vulnerability was found in the patch for CVE-2013-6045 for OpenJPEG. A specially crafted JPEG2000 image, when read by an application using OpenJPEG, could cause heap-based buffer overflows leading to a crash or possible code execution.\n1382202: \nCVE-2016-9675 openjpeg: incorrect fix for CVE-2013-6045\n\nCVE-2016-7163:\n\tAn integer overflow, leading to a heap buffer overflow, was found in OpenJPEG. An attacker could create a crafted JPEG2000 image that, when loaded by an application using openjpeg, could lead to a crash or, potentially, code execution.\n1374329: \nCVE-2016-7163 openjpeg: Integer overflow in opj_pi_create_decode\n\nCVE-2016-5159:\n\tAn integer overflow, leading to a heap buffer overflow, was found in openjpeg, also affecting the PDF viewer in Chromium. A specially crafted JPEG2000 image could cause an incorrect calculation when allocating memory for code blocks, which could lead to a crash, or potentially, code execution.\n1372220: \nCVE-2016-5159 chromium-browser, openjpeg: heap overflow in parsing of JPEG2000 code blocks\n\nCVE-2016-5158:\n\tAn integer overflow, leading to a heap buffer overflow, was found in openjpeg, also affecting the PDF viewer in Chromium. A specially crafted JPEG2000 image could cause incorrect calculations when allocating various data structures, which could lead to a crash, or potentially, code execution.\n1372219: \nCVE-2016-5158 chromium-browser, openjpeg: heap overflow due to unsafe use of opj_aligned_malloc\n\nCVE-2016-5139:\n\tAn integer overflow, leading to a heap buffer overflow, was found in openjpeg, also affecting the PDF viewer in Chromium. A specially crafted JPEG2000 image could cause an incorrect calculation when allocating precinct data structures, which could lead to a crash, or potentially, code execution.\n1363982: \nCVE-2016-5139 chromium-browser, openjpeg: Heap overflow in parsing of JPEG2000 precincts\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5139",
-        "ID": "CVE-2016-5139",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5158",
-        "ID": "CVE-2016-5158",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5159",
-        "ID": "CVE-2016-5159",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7163",
-        "ID": "CVE-2016-7163",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9675",
-        "ID": "CVE-2016-9675",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "openjpeg-devel",
-          "Release": "16.9.amzn1",
-          "Version": "1.3",
-          "Filename": "Packages/openjpeg-devel-1.3-16.9.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "openjpeg-debuginfo",
-          "Release": "16.9.amzn1",
-          "Version": "1.3",
-          "Filename": "Packages/openjpeg-debuginfo-1.3-16.9.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "openjpeg-libs",
-          "Release": "16.9.amzn1",
-          "Version": "1.3",
-          "Filename": "Packages/openjpeg-libs-1.3-16.9.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "openjpeg",
-          "Release": "16.9.amzn1",
-          "Version": "1.3",
-          "Filename": "Packages/openjpeg-1.3-16.9.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "openjpeg-libs",
-          "Release": "16.9.amzn1",
-          "Version": "1.3",
-          "Filename": "Packages/openjpeg-libs-1.3-16.9.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "openjpeg",
-          "Release": "16.9.amzn1",
-          "Version": "1.3",
-          "Filename": "Packages/openjpeg-1.3-16.9.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "openjpeg-debuginfo",
-          "Release": "16.9.amzn1",
-          "Version": "1.3",
-          "Filename": "Packages/openjpeg-debuginfo-1.3-16.9.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "openjpeg-devel",
-          "Release": "16.9.amzn1",
-          "Version": "1.3",
-          "Filename": "Packages/openjpeg-devel-1.3-16.9.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2017-807",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2017-807: medium priority package update for openjpeg",
+	"Issued": {
+		"Date": "2017-03-22 16:00"
+	},
+	"Updated": {
+		"Date": "2017-03-22 16:00"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-9675:\n\tA vulnerability was found in the patch for CVE-2013-6045 for OpenJPEG. A specially crafted JPEG2000 image, when read by an application using OpenJPEG, could cause heap-based buffer overflows leading to a crash or possible code execution.\n1382202: \nCVE-2016-9675 openjpeg: incorrect fix for CVE-2013-6045\n\nCVE-2016-7163:\n\tAn integer overflow, leading to a heap buffer overflow, was found in OpenJPEG. An attacker could create a crafted JPEG2000 image that, when loaded by an application using openjpeg, could lead to a crash or, potentially, code execution.\n1374329: \nCVE-2016-7163 openjpeg: Integer overflow in opj_pi_create_decode\n\nCVE-2016-5159:\n\tAn integer overflow, leading to a heap buffer overflow, was found in openjpeg, also affecting the PDF viewer in Chromium. A specially crafted JPEG2000 image could cause an incorrect calculation when allocating memory for code blocks, which could lead to a crash, or potentially, code execution.\n1372220: \nCVE-2016-5159 chromium-browser, openjpeg: heap overflow in parsing of JPEG2000 code blocks\n\nCVE-2016-5158:\n\tAn integer overflow, leading to a heap buffer overflow, was found in openjpeg, also affecting the PDF viewer in Chromium. A specially crafted JPEG2000 image could cause incorrect calculations when allocating various data structures, which could lead to a crash, or potentially, code execution.\n1372219: \nCVE-2016-5158 chromium-browser, openjpeg: heap overflow due to unsafe use of opj_aligned_malloc\n\nCVE-2016-5139:\n\tAn integer overflow, leading to a heap buffer overflow, was found in openjpeg, also affecting the PDF viewer in Chromium. A specially crafted JPEG2000 image could cause an incorrect calculation when allocating precinct data structures, which could lead to a crash, or potentially, code execution.\n1363982: \nCVE-2016-5139 chromium-browser, openjpeg: Heap overflow in parsing of JPEG2000 precincts\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5139",
+				"ID": "CVE-2016-5139",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5158",
+				"ID": "CVE-2016-5158",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5159",
+				"ID": "CVE-2016-5159",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-7163",
+				"ID": "CVE-2016-7163",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9675",
+				"ID": "CVE-2016-9675",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "openjpeg-devel",
+					"Release": "16.9.amzn1",
+					"Version": "1.3",
+					"Filename": "Packages/openjpeg-devel-1.3-16.9.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "openjpeg-debuginfo",
+					"Release": "16.9.amzn1",
+					"Version": "1.3",
+					"Filename": "Packages/openjpeg-debuginfo-1.3-16.9.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "openjpeg-libs",
+					"Release": "16.9.amzn1",
+					"Version": "1.3",
+					"Filename": "Packages/openjpeg-libs-1.3-16.9.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "openjpeg",
+					"Release": "16.9.amzn1",
+					"Version": "1.3",
+					"Filename": "Packages/openjpeg-1.3-16.9.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "openjpeg-libs",
+					"Release": "16.9.amzn1",
+					"Version": "1.3",
+					"Filename": "Packages/openjpeg-libs-1.3-16.9.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "openjpeg",
+					"Release": "16.9.amzn1",
+					"Version": "1.3",
+					"Filename": "Packages/openjpeg-1.3-16.9.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "openjpeg-debuginfo",
+					"Release": "16.9.amzn1",
+					"Version": "1.3",
+					"Filename": "Packages/openjpeg-debuginfo-1.3-16.9.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "openjpeg-devel",
+					"Release": "16.9.amzn1",
+					"Version": "1.3",
+					"Filename": "Packages/openjpeg-devel-1.3-16.9.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

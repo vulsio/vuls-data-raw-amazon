@@ -1,215 +1,215 @@
 {
-  "ID": "ALAS-2017-868",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-868: critical priority package update for kernel",
-  "Issued": {
-    "Date": "2017-08-10 16:31"
-  },
-  "Updated": {
-    "Date": "2017-10-26 23:11"
-  },
-  "Severity": "critical",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-11176:\n\tThe mq_notify function in the Linux kernel through 4.11.9 does not set the sock pointer to NULL upon entry into the retry logic. During a user-space close of a Netlink socket, it allows attackers to possibly cause a situation where a value may be used after being freed (use-after-free) which may lead to memory corruption or other unspecified other impact.\n1470659: \nCVE-2017-11176 kernel: Use-after-free in sys_mq_notify()\n\nCVE-2017-1000112:\n\tExploitable memory corruption due to UFO to non-UFO path switch\n\nCVE-2017-1000111:\n\theap out-of-bounds in AF_PACKET sockets\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1000111",
-        "ID": "CVE-2017-1000111",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1000112",
-        "ID": "CVE-2017-1000112",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11176",
-        "ID": "CVE-2017-11176",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/perf-debuginfo-4.9.38-16.35.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/kernel-tools-4.9.38-16.35.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/perf-4.9.38-16.35.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/kernel-devel-4.9.38-16.35.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/kernel-tools-devel-4.9.38-16.35.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/kernel-headers-4.9.38-16.35.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-x86_64",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.9.38-16.35.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/kernel-debuginfo-4.9.38-16.35.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/kernel-4.9.38-16.35.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/kernel-tools-debuginfo-4.9.38-16.35.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/kernel-tools-debuginfo-4.9.38-16.35.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/kernel-tools-4.9.38-16.35.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/kernel-debuginfo-4.9.38-16.35.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-i686",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/kernel-debuginfo-common-i686-4.9.38-16.35.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/kernel-tools-devel-4.9.38-16.35.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/kernel-devel-4.9.38-16.35.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/kernel-4.9.38-16.35.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/perf-debuginfo-4.9.38-16.35.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/perf-4.9.38-16.35.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/kernel-headers-4.9.38-16.35.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "kernel-doc",
-          "Release": "16.35.amzn1",
-          "Version": "4.9.38",
-          "Filename": "Packages/kernel-doc-4.9.38-16.35.amzn1.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2017-868",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2017-868: critical priority package update for kernel",
+	"Issued": {
+		"Date": "2017-08-10 16:31"
+	},
+	"Updated": {
+		"Date": "2017-10-26 23:11"
+	},
+	"Severity": "critical",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-11176:\n\tThe mq_notify function in the Linux kernel through 4.11.9 does not set the sock pointer to NULL upon entry into the retry logic. During a user-space close of a Netlink socket, it allows attackers to possibly cause a situation where a value may be used after being freed (use-after-free) which may lead to memory corruption or other unspecified other impact.\n1470659: \nCVE-2017-11176 kernel: Use-after-free in sys_mq_notify()\n\nCVE-2017-1000112:\n\tExploitable memory corruption due to UFO to non-UFO path switch\n\nCVE-2017-1000111:\n\theap out-of-bounds in AF_PACKET sockets\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1000111",
+				"ID": "CVE-2017-1000111",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1000112",
+				"ID": "CVE-2017-1000112",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-11176",
+				"ID": "CVE-2017-11176",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/perf-debuginfo-4.9.38-16.35.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/kernel-tools-4.9.38-16.35.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/perf-4.9.38-16.35.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/kernel-devel-4.9.38-16.35.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/kernel-tools-devel-4.9.38-16.35.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/kernel-headers-4.9.38-16.35.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-x86_64",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/kernel-debuginfo-common-x86_64-4.9.38-16.35.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/kernel-debuginfo-4.9.38-16.35.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/kernel-4.9.38-16.35.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/kernel-tools-debuginfo-4.9.38-16.35.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/kernel-tools-debuginfo-4.9.38-16.35.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/kernel-tools-4.9.38-16.35.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/kernel-debuginfo-4.9.38-16.35.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-i686",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/kernel-debuginfo-common-i686-4.9.38-16.35.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/kernel-tools-devel-4.9.38-16.35.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/kernel-devel-4.9.38-16.35.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/kernel-4.9.38-16.35.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/perf-debuginfo-4.9.38-16.35.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/perf-4.9.38-16.35.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/kernel-headers-4.9.38-16.35.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "kernel-doc",
+					"Release": "16.35.amzn1",
+					"Version": "4.9.38",
+					"Filename": "Packages/kernel-doc-4.9.38-16.35.amzn1.noarch.rpm"
+				}
+			]
+		}
+	}
 }

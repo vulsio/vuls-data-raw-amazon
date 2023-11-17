@@ -1,113 +1,113 @@
 {
-  "ID": "ALAS-2016-656",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-656: medium priority package update for tomcat6",
-  "Issued": {
-    "Date": "2016-03-10 16:30"
-  },
-  "Updated": {
-    "Date": "2016-03-10 16:30"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-7810:\n\tIt was found that the expression language resolver evaluated expressions within a privileged code section. A malicious web application could use this flaw to bypass security manager protections.\n1222573: \nCVE-2014-7810 Tomcat/JbossWeb: security manager bypass via EL expressions\n\nCVE-2014-0230:\n\tIt was found that Tomcat would keep connections open after processing requests with a large enough request body. A remote attacker could potentially use this flaw to exhaust the pool of available connections and preventing further, legitimate connections to the Tomcat server to be made.\n1191200: \nCVE-2014-0230 tomcat: non-persistent DoS attack by feeding data by aborting an upload\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0230",
-        "ID": "CVE-2014-0230",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7810",
-        "ID": "CVE-2014-7810",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat6-el-2.1-api",
-          "Release": "1.3.amzn1",
-          "Version": "6.0.44",
-          "Filename": "Packages/tomcat6-el-2.1-api-6.0.44-1.3.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat6",
-          "Release": "1.3.amzn1",
-          "Version": "6.0.44",
-          "Filename": "Packages/tomcat6-6.0.44-1.3.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat6-lib",
-          "Release": "1.3.amzn1",
-          "Version": "6.0.44",
-          "Filename": "Packages/tomcat6-lib-6.0.44-1.3.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat6-servlet-2.5-api",
-          "Release": "1.3.amzn1",
-          "Version": "6.0.44",
-          "Filename": "Packages/tomcat6-servlet-2.5-api-6.0.44-1.3.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat6-admin-webapps",
-          "Release": "1.3.amzn1",
-          "Version": "6.0.44",
-          "Filename": "Packages/tomcat6-admin-webapps-6.0.44-1.3.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat6-javadoc",
-          "Release": "1.3.amzn1",
-          "Version": "6.0.44",
-          "Filename": "Packages/tomcat6-javadoc-6.0.44-1.3.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat6-jsp-2.1-api",
-          "Release": "1.3.amzn1",
-          "Version": "6.0.44",
-          "Filename": "Packages/tomcat6-jsp-2.1-api-6.0.44-1.3.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat6-webapps",
-          "Release": "1.3.amzn1",
-          "Version": "6.0.44",
-          "Filename": "Packages/tomcat6-webapps-6.0.44-1.3.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat6-docs-webapp",
-          "Release": "1.3.amzn1",
-          "Version": "6.0.44",
-          "Filename": "Packages/tomcat6-docs-webapp-6.0.44-1.3.amzn1.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2016-656",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2016-656: medium priority package update for tomcat6",
+	"Issued": {
+		"Date": "2016-03-10 16:30"
+	},
+	"Updated": {
+		"Date": "2016-03-10 16:30"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-7810:\n\tIt was found that the expression language resolver evaluated expressions within a privileged code section. A malicious web application could use this flaw to bypass security manager protections.\n1222573: \nCVE-2014-7810 Tomcat/JbossWeb: security manager bypass via EL expressions\n\nCVE-2014-0230:\n\tIt was found that Tomcat would keep connections open after processing requests with a large enough request body. A remote attacker could potentially use this flaw to exhaust the pool of available connections and preventing further, legitimate connections to the Tomcat server to be made.\n1191200: \nCVE-2014-0230 tomcat: non-persistent DoS attack by feeding data by aborting an upload\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0230",
+				"ID": "CVE-2014-0230",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-7810",
+				"ID": "CVE-2014-7810",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat6-el-2.1-api",
+					"Release": "1.3.amzn1",
+					"Version": "6.0.44",
+					"Filename": "Packages/tomcat6-el-2.1-api-6.0.44-1.3.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat6",
+					"Release": "1.3.amzn1",
+					"Version": "6.0.44",
+					"Filename": "Packages/tomcat6-6.0.44-1.3.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat6-lib",
+					"Release": "1.3.amzn1",
+					"Version": "6.0.44",
+					"Filename": "Packages/tomcat6-lib-6.0.44-1.3.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat6-servlet-2.5-api",
+					"Release": "1.3.amzn1",
+					"Version": "6.0.44",
+					"Filename": "Packages/tomcat6-servlet-2.5-api-6.0.44-1.3.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat6-admin-webapps",
+					"Release": "1.3.amzn1",
+					"Version": "6.0.44",
+					"Filename": "Packages/tomcat6-admin-webapps-6.0.44-1.3.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat6-javadoc",
+					"Release": "1.3.amzn1",
+					"Version": "6.0.44",
+					"Filename": "Packages/tomcat6-javadoc-6.0.44-1.3.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat6-jsp-2.1-api",
+					"Release": "1.3.amzn1",
+					"Version": "6.0.44",
+					"Filename": "Packages/tomcat6-jsp-2.1-api-6.0.44-1.3.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat6-webapps",
+					"Release": "1.3.amzn1",
+					"Version": "6.0.44",
+					"Filename": "Packages/tomcat6-webapps-6.0.44-1.3.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat6-docs-webapp",
+					"Release": "1.3.amzn1",
+					"Version": "6.0.44",
+					"Filename": "Packages/tomcat6-docs-webapp-6.0.44-1.3.amzn1.noarch.rpm"
+				}
+			]
+		}
+	}
 }

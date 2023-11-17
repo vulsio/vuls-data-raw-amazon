@@ -1,185 +1,185 @@
 {
-  "ID": "ALAS-2015-569",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-569: medium priority package update for nss nss-util",
-  "Issued": {
-    "Date": "2015-07-22 10:00"
-  },
-  "Updated": {
-    "Date": "2015-07-22 10:00"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-4000:\n\tA flaw was found in the way the TLS protocol composes the Diffie-Hellman exchange (for both export and non-export grade cipher suites). An attacker could use this flaw to downgrade a DHE connection to use export-grade key sizes, which could then be broken by sufficient pre-computation. This can lead to a passive man-in-the-middle attack in which the attacker is able to decrypt all traffic.\n1223211: \nCVE-2015-4000 LOGJAM: TLS connections which support export grade DHE key-exchange are vulnerable to MITM attacks\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4000",
-        "ID": "CVE-2015-4000",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2015:1185.html",
-        "ID": "RHSA-2015:1185",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-util-debuginfo",
-          "Release": "1.41.amzn1",
-          "Version": "3.19.1",
-          "Filename": "Packages/nss-util-debuginfo-3.19.1-1.41.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-util",
-          "Release": "1.41.amzn1",
-          "Version": "3.19.1",
-          "Filename": "Packages/nss-util-3.19.1-1.41.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-util-devel",
-          "Release": "1.41.amzn1",
-          "Version": "3.19.1",
-          "Filename": "Packages/nss-util-devel-3.19.1-1.41.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-util",
-          "Release": "1.41.amzn1",
-          "Version": "3.19.1",
-          "Filename": "Packages/nss-util-3.19.1-1.41.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-util-devel",
-          "Release": "1.41.amzn1",
-          "Version": "3.19.1",
-          "Filename": "Packages/nss-util-devel-3.19.1-1.41.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-util-debuginfo",
-          "Release": "1.41.amzn1",
-          "Version": "3.19.1",
-          "Filename": "Packages/nss-util-debuginfo-3.19.1-1.41.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-pkcs11-devel",
-          "Release": "3.71.amzn1",
-          "Version": "3.19.1",
-          "Filename": "Packages/nss-pkcs11-devel-3.19.1-3.71.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-tools",
-          "Release": "3.71.amzn1",
-          "Version": "3.19.1",
-          "Filename": "Packages/nss-tools-3.19.1-3.71.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-devel",
-          "Release": "3.71.amzn1",
-          "Version": "3.19.1",
-          "Filename": "Packages/nss-devel-3.19.1-3.71.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-sysinit",
-          "Release": "3.71.amzn1",
-          "Version": "3.19.1",
-          "Filename": "Packages/nss-sysinit-3.19.1-3.71.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss",
-          "Release": "3.71.amzn1",
-          "Version": "3.19.1",
-          "Filename": "Packages/nss-3.19.1-3.71.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nss-debuginfo",
-          "Release": "3.71.amzn1",
-          "Version": "3.19.1",
-          "Filename": "Packages/nss-debuginfo-3.19.1-3.71.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-sysinit",
-          "Release": "3.71.amzn1",
-          "Version": "3.19.1",
-          "Filename": "Packages/nss-sysinit-3.19.1-3.71.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-tools",
-          "Release": "3.71.amzn1",
-          "Version": "3.19.1",
-          "Filename": "Packages/nss-tools-3.19.1-3.71.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-devel",
-          "Release": "3.71.amzn1",
-          "Version": "3.19.1",
-          "Filename": "Packages/nss-devel-3.19.1-3.71.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-pkcs11-devel",
-          "Release": "3.71.amzn1",
-          "Version": "3.19.1",
-          "Filename": "Packages/nss-pkcs11-devel-3.19.1-3.71.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss",
-          "Release": "3.71.amzn1",
-          "Version": "3.19.1",
-          "Filename": "Packages/nss-3.19.1-3.71.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nss-debuginfo",
-          "Release": "3.71.amzn1",
-          "Version": "3.19.1",
-          "Filename": "Packages/nss-debuginfo-3.19.1-3.71.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2015-569",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2015-569: medium priority package update for nss nss-util",
+	"Issued": {
+		"Date": "2015-07-22 10:00"
+	},
+	"Updated": {
+		"Date": "2015-07-22 10:00"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-4000:\n\tA flaw was found in the way the TLS protocol composes the Diffie-Hellman exchange (for both export and non-export grade cipher suites). An attacker could use this flaw to downgrade a DHE connection to use export-grade key sizes, which could then be broken by sufficient pre-computation. This can lead to a passive man-in-the-middle attack in which the attacker is able to decrypt all traffic.\n1223211: \nCVE-2015-4000 LOGJAM: TLS connections which support export grade DHE key-exchange are vulnerable to MITM attacks\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-4000",
+				"ID": "CVE-2015-4000",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2015:1185.html",
+				"ID": "RHSA-2015:1185",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-util-debuginfo",
+					"Release": "1.41.amzn1",
+					"Version": "3.19.1",
+					"Filename": "Packages/nss-util-debuginfo-3.19.1-1.41.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-util",
+					"Release": "1.41.amzn1",
+					"Version": "3.19.1",
+					"Filename": "Packages/nss-util-3.19.1-1.41.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-util-devel",
+					"Release": "1.41.amzn1",
+					"Version": "3.19.1",
+					"Filename": "Packages/nss-util-devel-3.19.1-1.41.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-util",
+					"Release": "1.41.amzn1",
+					"Version": "3.19.1",
+					"Filename": "Packages/nss-util-3.19.1-1.41.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-util-devel",
+					"Release": "1.41.amzn1",
+					"Version": "3.19.1",
+					"Filename": "Packages/nss-util-devel-3.19.1-1.41.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-util-debuginfo",
+					"Release": "1.41.amzn1",
+					"Version": "3.19.1",
+					"Filename": "Packages/nss-util-debuginfo-3.19.1-1.41.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-pkcs11-devel",
+					"Release": "3.71.amzn1",
+					"Version": "3.19.1",
+					"Filename": "Packages/nss-pkcs11-devel-3.19.1-3.71.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-tools",
+					"Release": "3.71.amzn1",
+					"Version": "3.19.1",
+					"Filename": "Packages/nss-tools-3.19.1-3.71.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-devel",
+					"Release": "3.71.amzn1",
+					"Version": "3.19.1",
+					"Filename": "Packages/nss-devel-3.19.1-3.71.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-sysinit",
+					"Release": "3.71.amzn1",
+					"Version": "3.19.1",
+					"Filename": "Packages/nss-sysinit-3.19.1-3.71.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss",
+					"Release": "3.71.amzn1",
+					"Version": "3.19.1",
+					"Filename": "Packages/nss-3.19.1-3.71.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-debuginfo",
+					"Release": "3.71.amzn1",
+					"Version": "3.19.1",
+					"Filename": "Packages/nss-debuginfo-3.19.1-3.71.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-sysinit",
+					"Release": "3.71.amzn1",
+					"Version": "3.19.1",
+					"Filename": "Packages/nss-sysinit-3.19.1-3.71.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-tools",
+					"Release": "3.71.amzn1",
+					"Version": "3.19.1",
+					"Filename": "Packages/nss-tools-3.19.1-3.71.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-devel",
+					"Release": "3.71.amzn1",
+					"Version": "3.19.1",
+					"Filename": "Packages/nss-devel-3.19.1-3.71.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-pkcs11-devel",
+					"Release": "3.71.amzn1",
+					"Version": "3.19.1",
+					"Filename": "Packages/nss-pkcs11-devel-3.19.1-3.71.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss",
+					"Release": "3.71.amzn1",
+					"Version": "3.19.1",
+					"Filename": "Packages/nss-3.19.1-3.71.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-debuginfo",
+					"Release": "3.71.amzn1",
+					"Version": "3.19.1",
+					"Filename": "Packages/nss-debuginfo-3.19.1-3.71.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

@@ -1,67 +1,67 @@
 {
-  "ID": "ALAS-2020-1431",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2020-1431: medium priority package update for chrony",
-  "Issued": {
-    "Date": "2020-09-03 22:01"
-  },
-  "Updated": {
-    "Date": "2020-09-04 04:14"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-14367:\n\tA flaw was found in chrony when creating the PID file under the /var/run/chrony folder. The file is created during chronyd startup while still running as the root user, and when it&#039;s opened for writing, chronyd does not check for an existing symbolic link with the same file name. This flaw allows an attacker with privileged access to create a symlink with the default PID file name pointing to any destination file in the system, resulting in data loss and a denial of service due to the path traversal.\n99999: \nCVE-2020-14367 chrony: Insecure writing to PID file\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14367",
-        "ID": "CVE-2020-14367",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "chrony-debuginfo",
-          "Release": "1.27.amzn1",
-          "Version": "3.2",
-          "Filename": "Packages/chrony-debuginfo-3.2-1.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "chrony",
-          "Release": "1.27.amzn1",
-          "Version": "3.2",
-          "Filename": "Packages/chrony-3.2-1.27.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "chrony-debuginfo",
-          "Release": "1.27.amzn1",
-          "Version": "3.2",
-          "Filename": "Packages/chrony-debuginfo-3.2-1.27.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "chrony",
-          "Release": "1.27.amzn1",
-          "Version": "3.2",
-          "Filename": "Packages/chrony-3.2-1.27.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2020-1431",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2020-1431: medium priority package update for chrony",
+	"Issued": {
+		"Date": "2020-09-03 22:01"
+	},
+	"Updated": {
+		"Date": "2020-09-04 04:14"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-14367:\n\tA flaw was found in chrony when creating the PID file under the /var/run/chrony folder. The file is created during chronyd startup while still running as the root user, and when it&#039;s opened for writing, chronyd does not check for an existing symbolic link with the same file name. This flaw allows an attacker with privileged access to create a symlink with the default PID file name pointing to any destination file in the system, resulting in data loss and a denial of service due to the path traversal.\n99999: \nCVE-2020-14367 chrony: Insecure writing to PID file\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14367",
+				"ID": "CVE-2020-14367",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "chrony-debuginfo",
+					"Release": "1.27.amzn1",
+					"Version": "3.2",
+					"Filename": "Packages/chrony-debuginfo-3.2-1.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "chrony",
+					"Release": "1.27.amzn1",
+					"Version": "3.2",
+					"Filename": "Packages/chrony-3.2-1.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "chrony-debuginfo",
+					"Release": "1.27.amzn1",
+					"Version": "3.2",
+					"Filename": "Packages/chrony-debuginfo-3.2-1.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "chrony",
+					"Release": "1.27.amzn1",
+					"Version": "3.2",
+					"Filename": "Packages/chrony-3.2-1.27.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

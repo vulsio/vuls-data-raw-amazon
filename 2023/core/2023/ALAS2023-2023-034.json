@@ -1,113 +1,113 @@
 {
-  "ID": "ALAS2023-2023-034",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2023 - ALAS2023-2023-034: Important priority package update for python-lxml",
-  "Issued": {
-    "Date": "2023-02-17 20:44:00"
-  },
-  "Updated": {
-    "Date": "2023-02-22 23:52:00"
-  },
-  "Severity": "Important",
-  "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2022-2309:\n\tNULL Pointer Dereference allows attackers to cause a denial of service (or application crash). This only applies when lxml is used together with libxml2 2.9.10 through 2.9.14. libxml2 2.9.9 and earlier are not affected. It allows triggering crashes through forged input data, given a vulnerable code sequence in the application. The vulnerability is caused by the iterwalk function (also used by the canonicalize function). Such code shouldn't be in wide-spread use, given that parsing + iterwalk would usually be replaced with the more efficient iterparse function. However, an XML converter that serialises to C14N would also be vulnerable, for example, and there are legitimate use cases for this code sequence. If untrusted input is received (also remotely) and processed via iterwalk function, a crash can be triggered.\n\nCVE-2021-43818:\n\tThere's a flaw in python-lxml's HTML Cleaner component, which is responsible for sanitizing HTML and Javascript. An attacker who is able to submit a crafted payload to a web service using python-lxml's HTML Cleaner may be able to trigger script execution in clients such as web browsers. This can occur because the HTML Cleaner did not remove scripts within SVG images in data URLs such as <img src=>. XSS can result in impacts to the integrity and availability of the web page, as well as a potential impact to data confidentiality in some circumstances.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43818",
-        "ID": "CVE-2021-43818",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2309",
-        "ID": "CVE-2022-2309",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2023",
-      "Name": "Amazon Linux 2023",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python-lxml-debugsource",
-          "Release": "3.amzn2023.0.1",
-          "Version": "4.7.1",
-          "Filename": "Packages/python-lxml-debugsource-4.7.1-3.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3-lxml-debuginfo",
-          "Release": "3.amzn2023.0.1",
-          "Version": "4.7.1",
-          "Filename": "Packages/python3-lxml-debuginfo-4.7.1-3.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3-lxml",
-          "Release": "3.amzn2023.0.1",
-          "Version": "4.7.1",
-          "Filename": "Packages/python3-lxml-4.7.1-3.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python-lxml-debugsource",
-          "Release": "3.amzn2023.0.1",
-          "Version": "4.7.1",
-          "Filename": "Packages/python-lxml-debugsource-4.7.1-3.amzn2023.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python3-lxml-debuginfo",
-          "Release": "3.amzn2023.0.1",
-          "Version": "4.7.1",
-          "Filename": "Packages/python3-lxml-debuginfo-4.7.1-3.amzn2023.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python3-lxml",
-          "Release": "3.amzn2023.0.1",
-          "Version": "4.7.1",
-          "Filename": "Packages/python3-lxml-4.7.1-3.amzn2023.0.1.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python-lxml-debugsource",
-          "Release": "3.amzn2023.0.1",
-          "Version": "4.7.1",
-          "Filename": "Packages/python-lxml-debugsource-4.7.1-3.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3-lxml-debuginfo",
-          "Release": "3.amzn2023.0.1",
-          "Version": "4.7.1",
-          "Filename": "Packages/python3-lxml-debuginfo-4.7.1-3.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3-lxml",
-          "Release": "3.amzn2023.0.1",
-          "Version": "4.7.1",
-          "Filename": "Packages/python3-lxml-4.7.1-3.amzn2023.0.1.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2023-2023-034",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2023-034: Important priority package update for python-lxml",
+	"Issued": {
+		"Date": "2023-02-17 20:44:00"
+	},
+	"Updated": {
+		"Date": "2023-02-22 23:52:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2022-2309:\n\tNULL Pointer Dereference allows attackers to cause a denial of service (or application crash). This only applies when lxml is used together with libxml2 2.9.10 through 2.9.14. libxml2 2.9.9 and earlier are not affected. It allows triggering crashes through forged input data, given a vulnerable code sequence in the application. The vulnerability is caused by the iterwalk function (also used by the canonicalize function). Such code shouldn't be in wide-spread use, given that parsing + iterwalk would usually be replaced with the more efficient iterparse function. However, an XML converter that serialises to C14N would also be vulnerable, for example, and there are legitimate use cases for this code sequence. If untrusted input is received (also remotely) and processed via iterwalk function, a crash can be triggered.\n\nCVE-2021-43818:\n\tThere's a flaw in python-lxml's HTML Cleaner component, which is responsible for sanitizing HTML and Javascript. An attacker who is able to submit a crafted payload to a web service using python-lxml's HTML Cleaner may be able to trigger script execution in clients such as web browsers. This can occur because the HTML Cleaner did not remove scripts within SVG images in data URLs such as <img src=>. XSS can result in impacts to the integrity and availability of the web page, as well as a potential impact to data confidentiality in some circumstances.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43818",
+				"ID": "CVE-2021-43818",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2309",
+				"ID": "CVE-2022-2309",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-lxml-debugsource",
+					"Release": "3.amzn2023.0.1",
+					"Version": "4.7.1",
+					"Filename": "Packages/python-lxml-debugsource-4.7.1-3.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-lxml-debuginfo",
+					"Release": "3.amzn2023.0.1",
+					"Version": "4.7.1",
+					"Filename": "Packages/python3-lxml-debuginfo-4.7.1-3.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-lxml",
+					"Release": "3.amzn2023.0.1",
+					"Version": "4.7.1",
+					"Filename": "Packages/python3-lxml-4.7.1-3.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python-lxml-debugsource",
+					"Release": "3.amzn2023.0.1",
+					"Version": "4.7.1",
+					"Filename": "Packages/python-lxml-debugsource-4.7.1-3.amzn2023.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3-lxml-debuginfo",
+					"Release": "3.amzn2023.0.1",
+					"Version": "4.7.1",
+					"Filename": "Packages/python3-lxml-debuginfo-4.7.1-3.amzn2023.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3-lxml",
+					"Release": "3.amzn2023.0.1",
+					"Version": "4.7.1",
+					"Filename": "Packages/python3-lxml-4.7.1-3.amzn2023.0.1.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-lxml-debugsource",
+					"Release": "3.amzn2023.0.1",
+					"Version": "4.7.1",
+					"Filename": "Packages/python-lxml-debugsource-4.7.1-3.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-lxml-debuginfo",
+					"Release": "3.amzn2023.0.1",
+					"Version": "4.7.1",
+					"Filename": "Packages/python3-lxml-debuginfo-4.7.1-3.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-lxml",
+					"Release": "3.amzn2023.0.1",
+					"Version": "4.7.1",
+					"Filename": "Packages/python3-lxml-4.7.1-3.amzn2023.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

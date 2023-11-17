@@ -1,59 +1,59 @@
 {
-  "ID": "ALAS2023-2023-236",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2023 - ALAS2023-2023-236: Medium priority package update for python-requests",
-  "Issued": {
-    "Date": "2023-07-05 20:13:00"
-  },
-  "Updated": {
-    "Date": "2023-07-20 00:56:00"
-  },
-  "Severity": "Medium",
-  "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-32681:\n\tA flaw was found in the Python-requests package, where it is vulnerable to potentially leaking Proxy-Authorization headers to destination servers, specifically during redirects to an HTTPS origin. This is a product of how rebuild_proxies is used to recompute and reattach the Proxy-Authorization header to requests when redirected. This behavior only affects proxied requests when credentials are supplied in the URL user information component (for example, https://username:password@proxy:8080).\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-32681",
-        "ID": "CVE-2023-32681",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2023",
-      "Name": "Amazon Linux 2023",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "python3-requests+security",
-          "Release": "1.amzn2023.0.3",
-          "Version": "2.25.1",
-          "Filename": "Packages/python3-requests+security-2.25.1-1.amzn2023.0.3.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "python3-requests+socks",
-          "Release": "1.amzn2023.0.3",
-          "Version": "2.25.1",
-          "Filename": "Packages/python3-requests+socks-2.25.1-1.amzn2023.0.3.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "python3-requests",
-          "Release": "1.amzn2023.0.3",
-          "Version": "2.25.1",
-          "Filename": "Packages/python3-requests-2.25.1-1.amzn2023.0.3.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2023-2023-236",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2023-236: Medium priority package update for python-requests",
+	"Issued": {
+		"Date": "2023-07-05 20:13:00"
+	},
+	"Updated": {
+		"Date": "2023-07-20 00:56:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-32681:\n\tA flaw was found in the Python-requests package, where it is vulnerable to potentially leaking Proxy-Authorization headers to destination servers, specifically during redirects to an HTTPS origin. This is a product of how rebuild_proxies is used to recompute and reattach the Proxy-Authorization header to requests when redirected. This behavior only affects proxied requests when credentials are supplied in the URL user information component (for example, https://username:password@proxy:8080).\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-32681",
+				"ID": "CVE-2023-32681",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python3-requests+security",
+					"Release": "1.amzn2023.0.3",
+					"Version": "2.25.1",
+					"Filename": "Packages/python3-requests+security-2.25.1-1.amzn2023.0.3.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python3-requests+socks",
+					"Release": "1.amzn2023.0.3",
+					"Version": "2.25.1",
+					"Filename": "Packages/python3-requests+socks-2.25.1-1.amzn2023.0.3.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python3-requests",
+					"Release": "1.amzn2023.0.3",
+					"Version": "2.25.1",
+					"Filename": "Packages/python3-requests-2.25.1-1.amzn2023.0.3.noarch.rpm"
+				}
+			]
+		}
+	}
 }

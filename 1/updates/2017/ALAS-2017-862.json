@@ -1,121 +1,121 @@
 {
-  "ID": "ALAS-2017-862",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-862: important priority package update for tomcat8",
-  "Issued": {
-    "Date": "2017-08-03 18:49"
-  },
-  "Updated": {
-    "Date": "2017-08-31 23:17"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-7674:\n\tThe CORS Filter in Apache Tomcat 9.0.0.M1 to 9.0.0.M21, 8.5.0 to 8.5.15, 8.0.0.RC1 to 8.0.44 and 7.0.41 to 7.0.78 did not add an HTTP Vary header indicating that the response varies depending on Origin. This permitted client and server side cache poisoning in some circumstances.\n1480618: \nCVE-2017-7674 tomcat: Vary header not added by CORS filter leading to cache poisoning\n\nCVE-2017-5664:\n\tA vulnerability was discovered in the error page mechanism in Tomcat&#039;s DefaultServlet implementation. A crafted HTTP request could cause undesired side effects, possibly including the removal or replacement of the custom error page.\n1459158: \nCVE-2017-5664 tomcat: Security constrained bypass in error page mechanism\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5664",
-        "ID": "CVE-2017-5664",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7674",
-        "ID": "CVE-2017-7674",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-webapps",
-          "Release": "1.72.amzn1",
-          "Version": "8.0.45",
-          "Filename": "Packages/tomcat8-webapps-8.0.45-1.72.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-docs-webapp",
-          "Release": "1.72.amzn1",
-          "Version": "8.0.45",
-          "Filename": "Packages/tomcat8-docs-webapp-8.0.45-1.72.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8",
-          "Release": "1.72.amzn1",
-          "Version": "8.0.45",
-          "Filename": "Packages/tomcat8-8.0.45-1.72.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-javadoc",
-          "Release": "1.72.amzn1",
-          "Version": "8.0.45",
-          "Filename": "Packages/tomcat8-javadoc-8.0.45-1.72.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-lib",
-          "Release": "1.72.amzn1",
-          "Version": "8.0.45",
-          "Filename": "Packages/tomcat8-lib-8.0.45-1.72.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-servlet-3.1-api",
-          "Release": "1.72.amzn1",
-          "Version": "8.0.45",
-          "Filename": "Packages/tomcat8-servlet-3.1-api-8.0.45-1.72.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-admin-webapps",
-          "Release": "1.72.amzn1",
-          "Version": "8.0.45",
-          "Filename": "Packages/tomcat8-admin-webapps-8.0.45-1.72.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-el-3.0-api",
-          "Release": "1.72.amzn1",
-          "Version": "8.0.45",
-          "Filename": "Packages/tomcat8-el-3.0-api-8.0.45-1.72.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-jsp-2.3-api",
-          "Release": "1.72.amzn1",
-          "Version": "8.0.45",
-          "Filename": "Packages/tomcat8-jsp-2.3-api-8.0.45-1.72.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-log4j",
-          "Release": "1.72.amzn1",
-          "Version": "8.0.45",
-          "Filename": "Packages/tomcat8-log4j-8.0.45-1.72.amzn1.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2017-862",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2017-862: important priority package update for tomcat8",
+	"Issued": {
+		"Date": "2017-08-03 18:49"
+	},
+	"Updated": {
+		"Date": "2017-08-31 23:17"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-7674:\n\tThe CORS Filter in Apache Tomcat 9.0.0.M1 to 9.0.0.M21, 8.5.0 to 8.5.15, 8.0.0.RC1 to 8.0.44 and 7.0.41 to 7.0.78 did not add an HTTP Vary header indicating that the response varies depending on Origin. This permitted client and server side cache poisoning in some circumstances.\n1480618: \nCVE-2017-7674 tomcat: Vary header not added by CORS filter leading to cache poisoning\n\nCVE-2017-5664:\n\tA vulnerability was discovered in the error page mechanism in Tomcat&#039;s DefaultServlet implementation. A crafted HTTP request could cause undesired side effects, possibly including the removal or replacement of the custom error page.\n1459158: \nCVE-2017-5664 tomcat: Security constrained bypass in error page mechanism\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5664",
+				"ID": "CVE-2017-5664",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-7674",
+				"ID": "CVE-2017-7674",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-webapps",
+					"Release": "1.72.amzn1",
+					"Version": "8.0.45",
+					"Filename": "Packages/tomcat8-webapps-8.0.45-1.72.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-docs-webapp",
+					"Release": "1.72.amzn1",
+					"Version": "8.0.45",
+					"Filename": "Packages/tomcat8-docs-webapp-8.0.45-1.72.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8",
+					"Release": "1.72.amzn1",
+					"Version": "8.0.45",
+					"Filename": "Packages/tomcat8-8.0.45-1.72.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-javadoc",
+					"Release": "1.72.amzn1",
+					"Version": "8.0.45",
+					"Filename": "Packages/tomcat8-javadoc-8.0.45-1.72.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-lib",
+					"Release": "1.72.amzn1",
+					"Version": "8.0.45",
+					"Filename": "Packages/tomcat8-lib-8.0.45-1.72.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-servlet-3.1-api",
+					"Release": "1.72.amzn1",
+					"Version": "8.0.45",
+					"Filename": "Packages/tomcat8-servlet-3.1-api-8.0.45-1.72.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-admin-webapps",
+					"Release": "1.72.amzn1",
+					"Version": "8.0.45",
+					"Filename": "Packages/tomcat8-admin-webapps-8.0.45-1.72.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-el-3.0-api",
+					"Release": "1.72.amzn1",
+					"Version": "8.0.45",
+					"Filename": "Packages/tomcat8-el-3.0-api-8.0.45-1.72.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-jsp-2.3-api",
+					"Release": "1.72.amzn1",
+					"Version": "8.0.45",
+					"Filename": "Packages/tomcat8-jsp-2.3-api-8.0.45-1.72.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-log4j",
+					"Release": "1.72.amzn1",
+					"Version": "8.0.45",
+					"Filename": "Packages/tomcat8-log4j-8.0.45-1.72.amzn1.noarch.rpm"
+				}
+			]
+		}
+	}
 }

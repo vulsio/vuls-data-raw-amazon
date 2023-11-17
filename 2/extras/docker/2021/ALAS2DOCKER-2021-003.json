@@ -1,79 +1,79 @@
 {
-  "ID": "ALAS2DOCKER-2021-003",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 - Docker 2.0 - ALAS2DOCKER-2021-003: medium priority package update for docker",
-  "Issued": {
-    "Date": "2021-10-22 22:40"
-  },
-  "Updated": {
-    "Date": "2021-11-18 21:30"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 - Docker that fix the following vulnerabilities:\nCVE-2019-13509:\n\tIn Docker CE and EE before 18.09.8 (as well as Docker EE before 17.06.2-ee-23 and 18.x before 18.03.1-ee-10), Docker Engine in debug mode may sometimes add secrets to the debug log. This applies to a scenario where docker stack deploy is run to redeploy a stack that includes (non external) secrets. It potentially applies to other API users of the stack API if they resend the secret.\n1732418: CVE-2019-13509 docker: Docker Engine in debug mode may sometimes add secrets to the debug log leading to information disclosure\n\nCVE-2019-13139:\n\tA command injection flaw was discovered in Docker during the `docker build` command. By providing a specially crafted path argument for the container to build, it is possible to inject command options to the `git fetch`/`git checkout` commands that are executed by Docker and to execute code with the privileges of the user running Docker. A local attacker who can run `docker build` with a controlled build path, or a remote attacker who has control over the docker build path, could elevate their privileges or execute code.\n1732627: CVE-2019-13139 docker: command injection due to a missing validation of the git ref command\n\nCVE-2018-20699:\n\tDocker Engine before 18.09 allows attackers to cause a denial of service (dockerd memory consumption) via a large integer in a --cpuset-mems or --cpuset-cpus value, related to daemon/daemon_unix.go, pkg/parsers/parsers.go, and pkg/sysinfo/sysinfo.go.\n1666565: CVE-2018-20699 docker: Memory exhaustion via large integer used with --cpuset-mems or --cpuset-cpus\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20699",
-        "ID": "CVE-2018-20699",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13139",
-        "ID": "CVE-2019-13139",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13509",
-        "ID": "CVE-2019-13509",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2---docker",
-      "Name": "Amazon Linux 2 - Docker",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "docker",
-          "Release": "2.amzn2",
-          "Version": "18.09.9ce",
-          "Filename": "Packages/docker-18.09.9ce-2.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "docker-debuginfo",
-          "Release": "2.amzn2",
-          "Version": "18.09.9ce",
-          "Filename": "Packages/docker-debuginfo-18.09.9ce-2.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "docker",
-          "Release": "2.amzn2",
-          "Version": "18.09.9ce",
-          "Filename": "Packages/docker-18.09.9ce-2.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "docker-debuginfo",
-          "Release": "2.amzn2",
-          "Version": "18.09.9ce",
-          "Filename": "Packages/docker-debuginfo-18.09.9ce-2.amzn2.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2DOCKER-2021-003",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Docker 2.0 - ALAS2DOCKER-2021-003: medium priority package update for docker",
+	"Issued": {
+		"Date": "2021-10-22 22:40"
+	},
+	"Updated": {
+		"Date": "2021-11-18 21:30"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 - Docker that fix the following vulnerabilities:\nCVE-2019-13509:\n\tIn Docker CE and EE before 18.09.8 (as well as Docker EE before 17.06.2-ee-23 and 18.x before 18.03.1-ee-10), Docker Engine in debug mode may sometimes add secrets to the debug log. This applies to a scenario where docker stack deploy is run to redeploy a stack that includes (non external) secrets. It potentially applies to other API users of the stack API if they resend the secret.\n1732418: CVE-2019-13509 docker: Docker Engine in debug mode may sometimes add secrets to the debug log leading to information disclosure\n\nCVE-2019-13139:\n\tA command injection flaw was discovered in Docker during the `docker build` command. By providing a specially crafted path argument for the container to build, it is possible to inject command options to the `git fetch`/`git checkout` commands that are executed by Docker and to execute code with the privileges of the user running Docker. A local attacker who can run `docker build` with a controlled build path, or a remote attacker who has control over the docker build path, could elevate their privileges or execute code.\n1732627: CVE-2019-13139 docker: command injection due to a missing validation of the git ref command\n\nCVE-2018-20699:\n\tDocker Engine before 18.09 allows attackers to cause a denial of service (dockerd memory consumption) via a large integer in a --cpuset-mems or --cpuset-cpus value, related to daemon/daemon_unix.go, pkg/parsers/parsers.go, and pkg/sysinfo/sysinfo.go.\n1666565: CVE-2018-20699 docker: Memory exhaustion via large integer used with --cpuset-mems or --cpuset-cpus\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20699",
+				"ID": "CVE-2018-20699",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13139",
+				"ID": "CVE-2019-13139",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-13509",
+				"ID": "CVE-2019-13509",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---docker",
+			"Name": "Amazon Linux 2 - Docker",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "docker",
+					"Release": "2.amzn2",
+					"Version": "18.09.9ce",
+					"Filename": "Packages/docker-18.09.9ce-2.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "docker-debuginfo",
+					"Release": "2.amzn2",
+					"Version": "18.09.9ce",
+					"Filename": "Packages/docker-debuginfo-18.09.9ce-2.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "docker",
+					"Release": "2.amzn2",
+					"Version": "18.09.9ce",
+					"Filename": "Packages/docker-18.09.9ce-2.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "docker-debuginfo",
+					"Release": "2.amzn2",
+					"Version": "18.09.9ce",
+					"Filename": "Packages/docker-debuginfo-18.09.9ce-2.amzn2.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

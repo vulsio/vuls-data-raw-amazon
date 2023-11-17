@@ -1,119 +1,119 @@
 {
-  "ID": "ALAS-2023-1687",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2023-1687: medium priority package update for squid",
-  "Issued": {
-    "Date": "2023-02-17 00:02"
-  },
-  "Updated": {
-    "Date": "2023-02-23 01:35"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2022-41317:\n\tA flaw was found in squid. A trusted client can directly access the cache manager information, bypassing the manager ACL protection and resulting in information disclosure.\n\nCVE-2021-33620:\n\tSquid before 4.15 and 5.x before 5.0.6 allows remote servers to cause a denial of service (affecting availability to all clients) via an HTTP response. The issue trigger is a header that can be expected to exist in HTTP traffic without any malicious intent by the server.\n\nCVE-2021-31808:\n\tAn issue was discovered in Squid before 4.15 and 5.x before 5.0.6. Due to an input-validation bug, it is vulnerable to a Denial of Service attack (against all clients using the proxy). A client sends an HTTP Range request to trigger this.\n\nCVE-2021-31807:\n\tAn issue was discovered in Squid before 4.15 and 5.x before 5.0.6. An integer overflow problem allows a remote server to achieve Denial of Service when delivering responses to HTTP Range requests. The issue trigger is a header that can be expected to exist in HTTP traffic without any malicious intent.\n\nCVE-2021-31806:\n\tAn issue was discovered in Squid before 4.15 and 5.x before 5.0.6. Due to a memory-management bug, it is vulnerable to a Denial of Service attack (against all clients using the proxy) via HTTP Range request processing.\n\nCVE-2021-28652:\n\tAn issue was discovered in Squid before 4.15 and 5.x before 5.0.6. Due to incorrect parser validation, it allows a Denial of Service attack against the Cache Manager API. This allows a trusted client to trigger memory leaks that. over time, lead to a Denial of Service via an unspecified short query string. This attack is limited to clients with Cache Manager API access privilege.\n\nCVE-2021-28651:\n\tAn issue was discovered in Squid before 4.15 and 5.x before 5.0.6. Due to a buffer-management bug, it allows a denial of service. When resolving a request with the urn: scheme, the parser leaks a small amount of memory. However, there is an unspecified attack methodology that can easily trigger a large amount of memory consumption.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28651",
-        "ID": "CVE-2021-28651",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28652",
-        "ID": "CVE-2021-28652",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-31806",
-        "ID": "CVE-2021-31806",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-31807",
-        "ID": "CVE-2021-31807",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-31808",
-        "ID": "CVE-2021-31808",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33620",
-        "ID": "CVE-2021-33620",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41317",
-        "ID": "CVE-2022-41317",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "7",
-          "Name": "squid-debuginfo",
-          "Release": "17.44.amzn1",
-          "Version": "3.5.20",
-          "Filename": "Packages/squid-debuginfo-3.5.20-17.44.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "7",
-          "Name": "squid-migration-script",
-          "Release": "17.44.amzn1",
-          "Version": "3.5.20",
-          "Filename": "Packages/squid-migration-script-3.5.20-17.44.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "7",
-          "Name": "squid",
-          "Release": "17.44.amzn1",
-          "Version": "3.5.20",
-          "Filename": "Packages/squid-3.5.20-17.44.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "7",
-          "Name": "squid-migration-script",
-          "Release": "17.44.amzn1",
-          "Version": "3.5.20",
-          "Filename": "Packages/squid-migration-script-3.5.20-17.44.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "7",
-          "Name": "squid",
-          "Release": "17.44.amzn1",
-          "Version": "3.5.20",
-          "Filename": "Packages/squid-3.5.20-17.44.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "7",
-          "Name": "squid-debuginfo",
-          "Release": "17.44.amzn1",
-          "Version": "3.5.20",
-          "Filename": "Packages/squid-debuginfo-3.5.20-17.44.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2023-1687",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2023-1687: medium priority package update for squid",
+	"Issued": {
+		"Date": "2023-02-17 00:02"
+	},
+	"Updated": {
+		"Date": "2023-02-23 01:35"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2022-41317:\n\tA flaw was found in squid. A trusted client can directly access the cache manager information, bypassing the manager ACL protection and resulting in information disclosure.\n\nCVE-2021-33620:\n\tSquid before 4.15 and 5.x before 5.0.6 allows remote servers to cause a denial of service (affecting availability to all clients) via an HTTP response. The issue trigger is a header that can be expected to exist in HTTP traffic without any malicious intent by the server.\n\nCVE-2021-31808:\n\tAn issue was discovered in Squid before 4.15 and 5.x before 5.0.6. Due to an input-validation bug, it is vulnerable to a Denial of Service attack (against all clients using the proxy). A client sends an HTTP Range request to trigger this.\n\nCVE-2021-31807:\n\tAn issue was discovered in Squid before 4.15 and 5.x before 5.0.6. An integer overflow problem allows a remote server to achieve Denial of Service when delivering responses to HTTP Range requests. The issue trigger is a header that can be expected to exist in HTTP traffic without any malicious intent.\n\nCVE-2021-31806:\n\tAn issue was discovered in Squid before 4.15 and 5.x before 5.0.6. Due to a memory-management bug, it is vulnerable to a Denial of Service attack (against all clients using the proxy) via HTTP Range request processing.\n\nCVE-2021-28652:\n\tAn issue was discovered in Squid before 4.15 and 5.x before 5.0.6. Due to incorrect parser validation, it allows a Denial of Service attack against the Cache Manager API. This allows a trusted client to trigger memory leaks that. over time, lead to a Denial of Service via an unspecified short query string. This attack is limited to clients with Cache Manager API access privilege.\n\nCVE-2021-28651:\n\tAn issue was discovered in Squid before 4.15 and 5.x before 5.0.6. Due to a buffer-management bug, it allows a denial of service. When resolving a request with the urn: scheme, the parser leaks a small amount of memory. However, there is an unspecified attack methodology that can easily trigger a large amount of memory consumption.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28651",
+				"ID": "CVE-2021-28651",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28652",
+				"ID": "CVE-2021-28652",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-31806",
+				"ID": "CVE-2021-31806",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-31807",
+				"ID": "CVE-2021-31807",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-31808",
+				"ID": "CVE-2021-31808",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33620",
+				"ID": "CVE-2021-33620",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41317",
+				"ID": "CVE-2022-41317",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "7",
+					"Name": "squid-debuginfo",
+					"Release": "17.44.amzn1",
+					"Version": "3.5.20",
+					"Filename": "Packages/squid-debuginfo-3.5.20-17.44.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "7",
+					"Name": "squid-migration-script",
+					"Release": "17.44.amzn1",
+					"Version": "3.5.20",
+					"Filename": "Packages/squid-migration-script-3.5.20-17.44.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "7",
+					"Name": "squid",
+					"Release": "17.44.amzn1",
+					"Version": "3.5.20",
+					"Filename": "Packages/squid-3.5.20-17.44.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "7",
+					"Name": "squid-migration-script",
+					"Release": "17.44.amzn1",
+					"Version": "3.5.20",
+					"Filename": "Packages/squid-migration-script-3.5.20-17.44.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "7",
+					"Name": "squid",
+					"Release": "17.44.amzn1",
+					"Version": "3.5.20",
+					"Filename": "Packages/squid-3.5.20-17.44.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "7",
+					"Name": "squid-debuginfo",
+					"Release": "17.44.amzn1",
+					"Version": "3.5.20",
+					"Filename": "Packages/squid-debuginfo-3.5.20-17.44.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

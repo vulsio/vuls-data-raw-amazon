@@ -1,51 +1,51 @@
 {
-  "ID": "ALAS-2020-1420",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2020-1420: medium priority package update for python-httplib2",
-  "Issued": {
-    "Date": "2020-08-26 23:09"
-  },
-  "Updated": {
-    "Date": "2020-08-31 20:09"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-11078:\n\tIn httplib2 before version 0.18.0, an attacker controlling unescaped part of uri for `httplib2.Http.request()` could change request headers and body, send additional hidden requests to same server. This vulnerability impacts software that uses httplib2 with uri constructed by string concatenation, as opposed to proper urllib building with escaping. This has been fixed in 0.18.0.\n1845937: CVE-2020-11078 python-httplib2: CRLF injection via an attacker controlling unescaped part of uri for httplib2.Http.request function\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11078",
-        "ID": "CVE-2020-11078",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "python26-httplib2",
-          "Release": "1.13.amzn1",
-          "Version": "0.18.1",
-          "Filename": "Packages/python26-httplib2-0.18.1-1.13.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "python27-httplib2",
-          "Release": "1.13.amzn1",
-          "Version": "0.18.1",
-          "Filename": "Packages/python27-httplib2-0.18.1-1.13.amzn1.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2020-1420",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2020-1420: medium priority package update for python-httplib2",
+	"Issued": {
+		"Date": "2020-08-26 23:09"
+	},
+	"Updated": {
+		"Date": "2020-08-31 20:09"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-11078:\n\tIn httplib2 before version 0.18.0, an attacker controlling unescaped part of uri for `httplib2.Http.request()` could change request headers and body, send additional hidden requests to same server. This vulnerability impacts software that uses httplib2 with uri constructed by string concatenation, as opposed to proper urllib building with escaping. This has been fixed in 0.18.0.\n1845937: CVE-2020-11078 python-httplib2: CRLF injection via an attacker controlling unescaped part of uri for httplib2.Http.request function\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11078",
+				"ID": "CVE-2020-11078",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python26-httplib2",
+					"Release": "1.13.amzn1",
+					"Version": "0.18.1",
+					"Filename": "Packages/python26-httplib2-0.18.1-1.13.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python27-httplib2",
+					"Release": "1.13.amzn1",
+					"Version": "0.18.1",
+					"Filename": "Packages/python27-httplib2-0.18.1-1.13.amzn1.noarch.rpm"
+				}
+			]
+		}
+	}
 }

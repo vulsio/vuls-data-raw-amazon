@@ -1,179 +1,179 @@
 {
-  "ID": "ALAS2-2022-1772",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2022-1772: important priority package update for zlib",
-  "Issued": {
-    "Date": "2022-04-04 23:23"
-  },
-  "Updated": {
-    "Date": "2022-04-06 23:15"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-25032:\n\tAn out-of-bounds access flaw was found in zlib, which allows memory corruption when deflating (ex: when compressing) if the input has many distant matches. For some rare inputs with a large number of distant matches (crafted payloads), the buffer into which the compressed or deflated data is written can overwrite the distance symbol table which it overlays. This issue results in corrupted output due to invalid distances, which leads to out-of-bound access, corrupting the memory and potentially crashing the application.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-25032",
-        "ID": "CVE-2018-25032",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "zlib",
-          "Release": "19.amzn2.0.1",
-          "Version": "1.2.7",
-          "Filename": "Packages/zlib-1.2.7-19.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "zlib-devel",
-          "Release": "19.amzn2.0.1",
-          "Version": "1.2.7",
-          "Filename": "Packages/zlib-devel-1.2.7-19.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "zlib-static",
-          "Release": "19.amzn2.0.1",
-          "Version": "1.2.7",
-          "Filename": "Packages/zlib-static-1.2.7-19.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "minizip",
-          "Release": "19.amzn2.0.1",
-          "Version": "1.2.7",
-          "Filename": "Packages/minizip-1.2.7-19.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "minizip-devel",
-          "Release": "19.amzn2.0.1",
-          "Version": "1.2.7",
-          "Filename": "Packages/minizip-devel-1.2.7-19.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "zlib-debuginfo",
-          "Release": "19.amzn2.0.1",
-          "Version": "1.2.7",
-          "Filename": "Packages/zlib-debuginfo-1.2.7-19.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "zlib",
-          "Release": "19.amzn2.0.1",
-          "Version": "1.2.7",
-          "Filename": "Packages/zlib-1.2.7-19.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "zlib-devel",
-          "Release": "19.amzn2.0.1",
-          "Version": "1.2.7",
-          "Filename": "Packages/zlib-devel-1.2.7-19.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "zlib-static",
-          "Release": "19.amzn2.0.1",
-          "Version": "1.2.7",
-          "Filename": "Packages/zlib-static-1.2.7-19.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "minizip",
-          "Release": "19.amzn2.0.1",
-          "Version": "1.2.7",
-          "Filename": "Packages/minizip-1.2.7-19.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "minizip-devel",
-          "Release": "19.amzn2.0.1",
-          "Version": "1.2.7",
-          "Filename": "Packages/minizip-devel-1.2.7-19.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "zlib-debuginfo",
-          "Release": "19.amzn2.0.1",
-          "Version": "1.2.7",
-          "Filename": "Packages/zlib-debuginfo-1.2.7-19.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "zlib",
-          "Release": "19.amzn2.0.1",
-          "Version": "1.2.7",
-          "Filename": "Packages/zlib-1.2.7-19.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "zlib-devel",
-          "Release": "19.amzn2.0.1",
-          "Version": "1.2.7",
-          "Filename": "Packages/zlib-devel-1.2.7-19.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "zlib-static",
-          "Release": "19.amzn2.0.1",
-          "Version": "1.2.7",
-          "Filename": "Packages/zlib-static-1.2.7-19.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "minizip",
-          "Release": "19.amzn2.0.1",
-          "Version": "1.2.7",
-          "Filename": "Packages/minizip-1.2.7-19.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "minizip-devel",
-          "Release": "19.amzn2.0.1",
-          "Version": "1.2.7",
-          "Filename": "Packages/minizip-devel-1.2.7-19.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "zlib-debuginfo",
-          "Release": "19.amzn2.0.1",
-          "Version": "1.2.7",
-          "Filename": "Packages/zlib-debuginfo-1.2.7-19.amzn2.0.1.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2022-1772",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2022-1772: important priority package update for zlib",
+	"Issued": {
+		"Date": "2022-04-04 23:23"
+	},
+	"Updated": {
+		"Date": "2022-04-06 23:15"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-25032:\n\tAn out-of-bounds access flaw was found in zlib, which allows memory corruption when deflating (ex: when compressing) if the input has many distant matches. For some rare inputs with a large number of distant matches (crafted payloads), the buffer into which the compressed or deflated data is written can overwrite the distance symbol table which it overlays. This issue results in corrupted output due to invalid distances, which leads to out-of-bound access, corrupting the memory and potentially crashing the application.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-25032",
+				"ID": "CVE-2018-25032",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "zlib",
+					"Release": "19.amzn2.0.1",
+					"Version": "1.2.7",
+					"Filename": "Packages/zlib-1.2.7-19.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "zlib-devel",
+					"Release": "19.amzn2.0.1",
+					"Version": "1.2.7",
+					"Filename": "Packages/zlib-devel-1.2.7-19.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "zlib-static",
+					"Release": "19.amzn2.0.1",
+					"Version": "1.2.7",
+					"Filename": "Packages/zlib-static-1.2.7-19.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "minizip",
+					"Release": "19.amzn2.0.1",
+					"Version": "1.2.7",
+					"Filename": "Packages/minizip-1.2.7-19.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "minizip-devel",
+					"Release": "19.amzn2.0.1",
+					"Version": "1.2.7",
+					"Filename": "Packages/minizip-devel-1.2.7-19.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "zlib-debuginfo",
+					"Release": "19.amzn2.0.1",
+					"Version": "1.2.7",
+					"Filename": "Packages/zlib-debuginfo-1.2.7-19.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "zlib",
+					"Release": "19.amzn2.0.1",
+					"Version": "1.2.7",
+					"Filename": "Packages/zlib-1.2.7-19.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "zlib-devel",
+					"Release": "19.amzn2.0.1",
+					"Version": "1.2.7",
+					"Filename": "Packages/zlib-devel-1.2.7-19.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "zlib-static",
+					"Release": "19.amzn2.0.1",
+					"Version": "1.2.7",
+					"Filename": "Packages/zlib-static-1.2.7-19.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "minizip",
+					"Release": "19.amzn2.0.1",
+					"Version": "1.2.7",
+					"Filename": "Packages/minizip-1.2.7-19.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "minizip-devel",
+					"Release": "19.amzn2.0.1",
+					"Version": "1.2.7",
+					"Filename": "Packages/minizip-devel-1.2.7-19.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "zlib-debuginfo",
+					"Release": "19.amzn2.0.1",
+					"Version": "1.2.7",
+					"Filename": "Packages/zlib-debuginfo-1.2.7-19.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "zlib",
+					"Release": "19.amzn2.0.1",
+					"Version": "1.2.7",
+					"Filename": "Packages/zlib-1.2.7-19.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "zlib-devel",
+					"Release": "19.amzn2.0.1",
+					"Version": "1.2.7",
+					"Filename": "Packages/zlib-devel-1.2.7-19.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "zlib-static",
+					"Release": "19.amzn2.0.1",
+					"Version": "1.2.7",
+					"Filename": "Packages/zlib-static-1.2.7-19.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "minizip",
+					"Release": "19.amzn2.0.1",
+					"Version": "1.2.7",
+					"Filename": "Packages/minizip-1.2.7-19.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "minizip-devel",
+					"Release": "19.amzn2.0.1",
+					"Version": "1.2.7",
+					"Filename": "Packages/minizip-devel-1.2.7-19.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "zlib-debuginfo",
+					"Release": "19.amzn2.0.1",
+					"Version": "1.2.7",
+					"Filename": "Packages/zlib-debuginfo-1.2.7-19.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

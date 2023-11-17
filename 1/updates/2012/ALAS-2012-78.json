@@ -1,155 +1,155 @@
 {
-  "ID": "ALAS-2012-78",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux - ALAS-2012-78: low priority package update for kernel",
-  "Issued": {
-    "Date": "2012-05-21 16:47"
-  },
-  "Updated": {
-    "Date": "2014-09-14 16:11"
-  },
-  "Severity": "low",
-  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-2313:\n\tThe rio_ioctl function in drivers/net/ethernet/dlink/dl2k.c in the Linux kernel before 3.3.7 does not restrict access to the SIOCSMIIREG command, which allows local users to write data to an Ethernet adapter via an ioctl call.\n818820: \nCVE-2012-2313 kernel: unfiltered netdev rio_ioctl access by users\n* A flaw was found in the way the Linux kernel's dl2k driver, used by certain D-Link Gigabit Ethernet adapters, restricted IOCTLs. A local, unprivileged user could use this flaw to issue potentially harmful IOCTLs, which could cause Ethernet adapters using the dl2k driver to malfunction (for example, losing network connectivity).\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2313",
-        "ID": "CVE-2012-2313",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux",
-      "Name": "Amazon Linux",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "kernel-doc",
-          "Release": "1.26.6.amzn1",
-          "Version": "3.2.18",
-          "Filename": "Packages/kernel-doc-3.2.18-1.26.6.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "1.26.6.amzn1",
-          "Version": "3.2.18",
-          "Filename": "Packages/kernel-tools-3.2.18-1.26.6.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "1.26.6.amzn1",
-          "Version": "3.2.18",
-          "Filename": "Packages/kernel-headers-3.2.18-1.26.6.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "1.26.6.amzn1",
-          "Version": "3.2.18",
-          "Filename": "Packages/kernel-3.2.18-1.26.6.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-i686",
-          "Release": "1.26.6.amzn1",
-          "Version": "3.2.18",
-          "Filename": "Packages/kernel-debuginfo-common-i686-3.2.18-1.26.6.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "1.26.6.amzn1",
-          "Version": "3.2.18",
-          "Filename": "Packages/kernel-debuginfo-3.2.18-1.26.6.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "1.26.6.amzn1",
-          "Version": "3.2.18",
-          "Filename": "Packages/kernel-tools-debuginfo-3.2.18-1.26.6.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "1.26.6.amzn1",
-          "Version": "3.2.18",
-          "Filename": "Packages/kernel-devel-3.2.18-1.26.6.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "1.26.6.amzn1",
-          "Version": "3.2.18",
-          "Filename": "Packages/kernel-tools-3.2.18-1.26.6.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "1.26.6.amzn1",
-          "Version": "3.2.18",
-          "Filename": "Packages/kernel-debuginfo-3.2.18-1.26.6.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "1.26.6.amzn1",
-          "Version": "3.2.18",
-          "Filename": "Packages/kernel-3.2.18-1.26.6.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "1.26.6.amzn1",
-          "Version": "3.2.18",
-          "Filename": "Packages/kernel-tools-debuginfo-3.2.18-1.26.6.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "1.26.6.amzn1",
-          "Version": "3.2.18",
-          "Filename": "Packages/kernel-devel-3.2.18-1.26.6.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "1.26.6.amzn1",
-          "Version": "3.2.18",
-          "Filename": "Packages/kernel-headers-3.2.18-1.26.6.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-x86_64",
-          "Release": "1.26.6.amzn1",
-          "Version": "3.2.18",
-          "Filename": "Packages/kernel-debuginfo-common-x86_64-3.2.18-1.26.6.amzn1.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2012-78",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux - ALAS-2012-78: low priority package update for kernel",
+	"Issued": {
+		"Date": "2012-05-21 16:47"
+	},
+	"Updated": {
+		"Date": "2014-09-14 16:11"
+	},
+	"Severity": "low",
+	"Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-2313:\n\tThe rio_ioctl function in drivers/net/ethernet/dlink/dl2k.c in the Linux kernel before 3.3.7 does not restrict access to the SIOCSMIIREG command, which allows local users to write data to an Ethernet adapter via an ioctl call.\n818820: \nCVE-2012-2313 kernel: unfiltered netdev rio_ioctl access by users\n* A flaw was found in the way the Linux kernel's dl2k driver, used by certain D-Link Gigabit Ethernet adapters, restricted IOCTLs. A local, unprivileged user could use this flaw to issue potentially harmful IOCTLs, which could cause Ethernet adapters using the dl2k driver to malfunction (for example, losing network connectivity).\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2313",
+				"ID": "CVE-2012-2313",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux",
+			"Name": "Amazon Linux",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "kernel-doc",
+					"Release": "1.26.6.amzn1",
+					"Version": "3.2.18",
+					"Filename": "Packages/kernel-doc-3.2.18-1.26.6.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "1.26.6.amzn1",
+					"Version": "3.2.18",
+					"Filename": "Packages/kernel-tools-3.2.18-1.26.6.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "1.26.6.amzn1",
+					"Version": "3.2.18",
+					"Filename": "Packages/kernel-headers-3.2.18-1.26.6.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "1.26.6.amzn1",
+					"Version": "3.2.18",
+					"Filename": "Packages/kernel-3.2.18-1.26.6.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-i686",
+					"Release": "1.26.6.amzn1",
+					"Version": "3.2.18",
+					"Filename": "Packages/kernel-debuginfo-common-i686-3.2.18-1.26.6.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "1.26.6.amzn1",
+					"Version": "3.2.18",
+					"Filename": "Packages/kernel-debuginfo-3.2.18-1.26.6.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "1.26.6.amzn1",
+					"Version": "3.2.18",
+					"Filename": "Packages/kernel-tools-debuginfo-3.2.18-1.26.6.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "1.26.6.amzn1",
+					"Version": "3.2.18",
+					"Filename": "Packages/kernel-devel-3.2.18-1.26.6.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "1.26.6.amzn1",
+					"Version": "3.2.18",
+					"Filename": "Packages/kernel-tools-3.2.18-1.26.6.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "1.26.6.amzn1",
+					"Version": "3.2.18",
+					"Filename": "Packages/kernel-debuginfo-3.2.18-1.26.6.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "1.26.6.amzn1",
+					"Version": "3.2.18",
+					"Filename": "Packages/kernel-3.2.18-1.26.6.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "1.26.6.amzn1",
+					"Version": "3.2.18",
+					"Filename": "Packages/kernel-tools-debuginfo-3.2.18-1.26.6.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "1.26.6.amzn1",
+					"Version": "3.2.18",
+					"Filename": "Packages/kernel-devel-3.2.18-1.26.6.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "1.26.6.amzn1",
+					"Version": "3.2.18",
+					"Filename": "Packages/kernel-headers-3.2.18-1.26.6.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-x86_64",
+					"Release": "1.26.6.amzn1",
+					"Version": "3.2.18",
+					"Filename": "Packages/kernel-debuginfo-common-x86_64-3.2.18-1.26.6.amzn1.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

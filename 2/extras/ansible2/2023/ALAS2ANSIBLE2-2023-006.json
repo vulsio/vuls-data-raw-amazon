@@ -1,63 +1,63 @@
 {
-  "ID": "ALAS2ANSIBLE2-2023-006",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 - Ansible2 2.0 - ALAS2ANSIBLE2-2023-006: medium priority package update for ansible",
-  "Issued": {
-    "Date": "2023-08-21 21:01"
-  },
-  "Updated": {
-    "Date": "2023-09-25 22:13"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 - Ansible2 that fix the following vulnerabilities:\nCVE-2020-1736:\n\tA flaw was found in Ansible Engine when a file is moved using atomic_move primitive as the file mode cannot be specified. This sets the destination files world-readable if the destination file does not exist and if the file exists, the file could be changed to have less restrictive permissions before the move. This could lead to the disclosure of sensitive data. All versions in 2.7.x, 2.8.x and 2.9.x branches are believed to be vulnerable.\n\nCVE-2020-14332:\n\tA flaw was found in the Ansible Engine when using module_args. Tasks executed with check mode (--check-mode) do not properly neutralize sensitive data exposed in the event data. This flaw allows unauthorized users to read this data. The highest threat from this vulnerability is to confidentiality.\n\nCVE-2020-14330:\n\tAn Improper Output Neutralization for Logs flaw was found in Ansible when using the uri module, where sensitive data is exposed to content and json output. This flaw allows an attacker to access the logs or outputs of performed tasks to read keys used in playbooks from other users within the uri module. The highest threat from this vulnerability is to data confidentiality.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14330",
-        "ID": "CVE-2020-14330",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14332",
-        "ID": "CVE-2020-14332",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-1736",
-        "ID": "CVE-2020-1736",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2---ansible2",
-      "Name": "Amazon Linux 2 - Ansible2",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "ansible",
-          "Release": "1.amzn2",
-          "Version": "2.9.12",
-          "Filename": "Packages/ansible-2.9.12-1.amzn2.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "ansible-doc",
-          "Release": "1.amzn2",
-          "Version": "2.9.12",
-          "Filename": "Packages/ansible-doc-2.9.12-1.amzn2.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2ANSIBLE2-2023-006",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Ansible2 2.0 - ALAS2ANSIBLE2-2023-006: medium priority package update for ansible",
+	"Issued": {
+		"Date": "2023-08-21 21:01"
+	},
+	"Updated": {
+		"Date": "2023-09-25 22:13"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 - Ansible2 that fix the following vulnerabilities:\nCVE-2020-1736:\n\tA flaw was found in Ansible Engine when a file is moved using atomic_move primitive as the file mode cannot be specified. This sets the destination files world-readable if the destination file does not exist and if the file exists, the file could be changed to have less restrictive permissions before the move. This could lead to the disclosure of sensitive data. All versions in 2.7.x, 2.8.x and 2.9.x branches are believed to be vulnerable.\n\nCVE-2020-14332:\n\tA flaw was found in the Ansible Engine when using module_args. Tasks executed with check mode (--check-mode) do not properly neutralize sensitive data exposed in the event data. This flaw allows unauthorized users to read this data. The highest threat from this vulnerability is to confidentiality.\n\nCVE-2020-14330:\n\tAn Improper Output Neutralization for Logs flaw was found in Ansible when using the uri module, where sensitive data is exposed to content and json output. This flaw allows an attacker to access the logs or outputs of performed tasks to read keys used in playbooks from other users within the uri module. The highest threat from this vulnerability is to data confidentiality.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14330",
+				"ID": "CVE-2020-14330",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14332",
+				"ID": "CVE-2020-14332",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-1736",
+				"ID": "CVE-2020-1736",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---ansible2",
+			"Name": "Amazon Linux 2 - Ansible2",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "ansible",
+					"Release": "1.amzn2",
+					"Version": "2.9.12",
+					"Filename": "Packages/ansible-2.9.12-1.amzn2.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "ansible-doc",
+					"Release": "1.amzn2",
+					"Version": "2.9.12",
+					"Filename": "Packages/ansible-doc-2.9.12-1.amzn2.noarch.rpm"
+				}
+			]
+		}
+	}
 }

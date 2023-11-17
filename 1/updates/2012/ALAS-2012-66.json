@@ -1,111 +1,111 @@
 {
-  "ID": "ALAS-2012-66",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux - ALAS-2012-66: important priority package update for freetype",
-  "Issued": {
-    "Date": "2012-04-30 14:46"
-  },
-  "Updated": {
-    "Date": "2014-09-14 15:48"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-1134:\n\tMultiple flaws were found in the way FreeType handled TrueType Font (TTF), Glyph Bitmap Distribution Format (BDF), Windows .fnt and .fon, and PostScript Type 1 fonts. If a specially-crafted font file was loaded by an application linked against FreeType, it could cause the application to crash or, potentially, execute arbitrary code with the privileges of the user running the application.\nFreeType before 2.4.9, as used in Mozilla Firefox Mobile before 10.0.4 and other products, allows remote attackers to cause a denial of service (invalid heap write operation and memory corruption) or possibly execute arbitrary code via crafted private-dictionary data in a Type 1 font.\n800592: \nCVE-2012-1134 freetype: limited heap buffer overflow in Type1 parser T1_Get_Private_Dict() (#35608)\n\nCVE-2012-1126:\n\tMultiple flaws were found in the way FreeType handled fonts in various formats. If a specially-crafted font file was loaded by an application linked against FreeType, it could cause the application to crash.\nFreeType before 2.4.9, as used in Mozilla Firefox Mobile before 10.0.4 and other products, allows remote attackers to cause a denial of service (invalid heap read operation and memory corruption) or possibly execute arbitrary code via crafted property data in a BDF font.\n800581: \nCVE-2012-1126 freetype: heap buffer over-read in BDF parsing _bdf_is_atom() (#35597, #35598)\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1126",
-        "ID": "CVE-2012-1126",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1134",
-        "ID": "CVE-2012-1134",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2012:0467.html",
-        "ID": "RHSA-2012:0467",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux",
-      "Name": "Amazon Linux",
-      "Package": [
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "freetype",
-          "Release": "6.12.amzn1",
-          "Version": "2.3.11",
-          "Filename": "Packages/freetype-2.3.11-6.12.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "freetype-demos",
-          "Release": "6.12.amzn1",
-          "Version": "2.3.11",
-          "Filename": "Packages/freetype-demos-2.3.11-6.12.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "freetype-devel",
-          "Release": "6.12.amzn1",
-          "Version": "2.3.11",
-          "Filename": "Packages/freetype-devel-2.3.11-6.12.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "freetype-debuginfo",
-          "Release": "6.12.amzn1",
-          "Version": "2.3.11",
-          "Filename": "Packages/freetype-debuginfo-2.3.11-6.12.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "freetype-demos",
-          "Release": "6.12.amzn1",
-          "Version": "2.3.11",
-          "Filename": "Packages/freetype-demos-2.3.11-6.12.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "freetype-debuginfo",
-          "Release": "6.12.amzn1",
-          "Version": "2.3.11",
-          "Filename": "Packages/freetype-debuginfo-2.3.11-6.12.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "freetype-devel",
-          "Release": "6.12.amzn1",
-          "Version": "2.3.11",
-          "Filename": "Packages/freetype-devel-2.3.11-6.12.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "freetype",
-          "Release": "6.12.amzn1",
-          "Version": "2.3.11",
-          "Filename": "Packages/freetype-2.3.11-6.12.amzn1.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2012-66",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux - ALAS-2012-66: important priority package update for freetype",
+	"Issued": {
+		"Date": "2012-04-30 14:46"
+	},
+	"Updated": {
+		"Date": "2014-09-14 15:48"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-1134:\n\tMultiple flaws were found in the way FreeType handled TrueType Font (TTF), Glyph Bitmap Distribution Format (BDF), Windows .fnt and .fon, and PostScript Type 1 fonts. If a specially-crafted font file was loaded by an application linked against FreeType, it could cause the application to crash or, potentially, execute arbitrary code with the privileges of the user running the application.\nFreeType before 2.4.9, as used in Mozilla Firefox Mobile before 10.0.4 and other products, allows remote attackers to cause a denial of service (invalid heap write operation and memory corruption) or possibly execute arbitrary code via crafted private-dictionary data in a Type 1 font.\n800592: \nCVE-2012-1134 freetype: limited heap buffer overflow in Type1 parser T1_Get_Private_Dict() (#35608)\n\nCVE-2012-1126:\n\tMultiple flaws were found in the way FreeType handled fonts in various formats. If a specially-crafted font file was loaded by an application linked against FreeType, it could cause the application to crash.\nFreeType before 2.4.9, as used in Mozilla Firefox Mobile before 10.0.4 and other products, allows remote attackers to cause a denial of service (invalid heap read operation and memory corruption) or possibly execute arbitrary code via crafted property data in a BDF font.\n800581: \nCVE-2012-1126 freetype: heap buffer over-read in BDF parsing _bdf_is_atom() (#35597, #35598)\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1126",
+				"ID": "CVE-2012-1126",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1134",
+				"ID": "CVE-2012-1134",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2012:0467.html",
+				"ID": "RHSA-2012:0467",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux",
+			"Name": "Amazon Linux",
+			"Package": [
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "freetype",
+					"Release": "6.12.amzn1",
+					"Version": "2.3.11",
+					"Filename": "Packages/freetype-2.3.11-6.12.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "freetype-demos",
+					"Release": "6.12.amzn1",
+					"Version": "2.3.11",
+					"Filename": "Packages/freetype-demos-2.3.11-6.12.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "freetype-devel",
+					"Release": "6.12.amzn1",
+					"Version": "2.3.11",
+					"Filename": "Packages/freetype-devel-2.3.11-6.12.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "freetype-debuginfo",
+					"Release": "6.12.amzn1",
+					"Version": "2.3.11",
+					"Filename": "Packages/freetype-debuginfo-2.3.11-6.12.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "freetype-demos",
+					"Release": "6.12.amzn1",
+					"Version": "2.3.11",
+					"Filename": "Packages/freetype-demos-2.3.11-6.12.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "freetype-debuginfo",
+					"Release": "6.12.amzn1",
+					"Version": "2.3.11",
+					"Filename": "Packages/freetype-debuginfo-2.3.11-6.12.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "freetype-devel",
+					"Release": "6.12.amzn1",
+					"Version": "2.3.11",
+					"Filename": "Packages/freetype-devel-2.3.11-6.12.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "freetype",
+					"Release": "6.12.amzn1",
+					"Version": "2.3.11",
+					"Filename": "Packages/freetype-2.3.11-6.12.amzn1.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

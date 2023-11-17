@@ -1,95 +1,95 @@
 {
-  "ID": "ALAS-2012-89",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux - ALAS-2012-89: medium priority package update for expat",
-  "Issued": {
-    "Date": "2012-06-19 15:59"
-  },
-  "Updated": {
-    "Date": "2014-09-14 16:21"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-1148:\n\tMemory leak in the poolGrow function in expat/lib/xmlparse.c in expat before 2.1.0 allows context-dependent attackers to cause a denial of service (memory consumption) via a large number of crafted XML files that cause improperly-handled reallocation failures when expanding entities.\nA memory leak flaw was found in Expat. If an XML file processed by an application linked against Expat triggered a memory re-allocation failure, Expat failed to free the previously allocated memory. This could cause the application to exit unexpectedly or crash when all available memory is exhausted.\n801648: \nCVE-2012-1148 expat: Memory leak in poolGrow\n\nCVE-2012-0876:\n\tThe XML parser (xmlparse.c) in expat before 2.1.0 computes hash values without restricting the ability to trigger hash collisions predictably, which allows context-dependent attackers to cause a denial of service (CPU consumption) via an XML file with many identifiers with the same value.\nA denial of service flaw was found in the implementation of hash arrays in Expat. An attacker could use this flaw to make an application using Expat consume an excessive amount of CPU time by providing a specially-crafted XML file that triggers multiple hash function collisions. To mitigate this issue, randomization has been added to the hash function to reduce the chance of an attacker successfully causing intentional collisions.\n786617: \nCVE-2012-0876 expat: hash table collisions CPU usage DoS\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0876",
-        "ID": "CVE-2012-0876",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1148",
-        "ID": "CVE-2012-1148",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2012:0731.html",
-        "ID": "RHSA-2012:0731",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux",
-      "Name": "Amazon Linux",
-      "Package": [
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "expat-devel",
-          "Release": "11.9.amzn1",
-          "Version": "2.0.1",
-          "Filename": "Packages/expat-devel-2.0.1-11.9.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "expat-debuginfo",
-          "Release": "11.9.amzn1",
-          "Version": "2.0.1",
-          "Filename": "Packages/expat-debuginfo-2.0.1-11.9.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "expat",
-          "Release": "11.9.amzn1",
-          "Version": "2.0.1",
-          "Filename": "Packages/expat-2.0.1-11.9.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "expat-devel",
-          "Release": "11.9.amzn1",
-          "Version": "2.0.1",
-          "Filename": "Packages/expat-devel-2.0.1-11.9.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "expat",
-          "Release": "11.9.amzn1",
-          "Version": "2.0.1",
-          "Filename": "Packages/expat-2.0.1-11.9.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "expat-debuginfo",
-          "Release": "11.9.amzn1",
-          "Version": "2.0.1",
-          "Filename": "Packages/expat-debuginfo-2.0.1-11.9.amzn1.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2012-89",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux - ALAS-2012-89: medium priority package update for expat",
+	"Issued": {
+		"Date": "2012-06-19 15:59"
+	},
+	"Updated": {
+		"Date": "2014-09-14 16:21"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-1148:\n\tMemory leak in the poolGrow function in expat/lib/xmlparse.c in expat before 2.1.0 allows context-dependent attackers to cause a denial of service (memory consumption) via a large number of crafted XML files that cause improperly-handled reallocation failures when expanding entities.\nA memory leak flaw was found in Expat. If an XML file processed by an application linked against Expat triggered a memory re-allocation failure, Expat failed to free the previously allocated memory. This could cause the application to exit unexpectedly or crash when all available memory is exhausted.\n801648: \nCVE-2012-1148 expat: Memory leak in poolGrow\n\nCVE-2012-0876:\n\tThe XML parser (xmlparse.c) in expat before 2.1.0 computes hash values without restricting the ability to trigger hash collisions predictably, which allows context-dependent attackers to cause a denial of service (CPU consumption) via an XML file with many identifiers with the same value.\nA denial of service flaw was found in the implementation of hash arrays in Expat. An attacker could use this flaw to make an application using Expat consume an excessive amount of CPU time by providing a specially-crafted XML file that triggers multiple hash function collisions. To mitigate this issue, randomization has been added to the hash function to reduce the chance of an attacker successfully causing intentional collisions.\n786617: \nCVE-2012-0876 expat: hash table collisions CPU usage DoS\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0876",
+				"ID": "CVE-2012-0876",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1148",
+				"ID": "CVE-2012-1148",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2012:0731.html",
+				"ID": "RHSA-2012:0731",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux",
+			"Name": "Amazon Linux",
+			"Package": [
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "expat-devel",
+					"Release": "11.9.amzn1",
+					"Version": "2.0.1",
+					"Filename": "Packages/expat-devel-2.0.1-11.9.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "expat-debuginfo",
+					"Release": "11.9.amzn1",
+					"Version": "2.0.1",
+					"Filename": "Packages/expat-debuginfo-2.0.1-11.9.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "expat",
+					"Release": "11.9.amzn1",
+					"Version": "2.0.1",
+					"Filename": "Packages/expat-2.0.1-11.9.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "expat-devel",
+					"Release": "11.9.amzn1",
+					"Version": "2.0.1",
+					"Filename": "Packages/expat-devel-2.0.1-11.9.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "expat",
+					"Release": "11.9.amzn1",
+					"Version": "2.0.1",
+					"Filename": "Packages/expat-2.0.1-11.9.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "expat-debuginfo",
+					"Release": "11.9.amzn1",
+					"Version": "2.0.1",
+					"Filename": "Packages/expat-debuginfo-2.0.1-11.9.amzn1.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

@@ -1,195 +1,195 @@
 {
-  "ID": "ALAS-2018-1087",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2018-1087: important priority package update for kernel",
-  "Issued": {
-    "Date": "2018-10-03 19:23"
-  },
-  "Updated": {
-    "Date": "2018-10-04 22:14"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-14634:\n\tAn integer overflow flaw was found in the Linux kernel&#039;s create_elf_tables() function.  An unprivileged local user with access to SUID (or otherwise privileged) binary could use this flaw to escalate their privileges on the system.\n1624498: \nCVE-2018-14634 kernel: Integer overflow in Linux's create_elf_tables function\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14634",
-        "ID": "CVE-2018-14634",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/kernel-4.14.26-46.32.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/perf-4.14.26-46.32.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/kernel-tools-4.14.26-46.32.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/kernel-headers-4.14.26-46.32.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/kernel-tools-devel-4.14.26-46.32.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/kernel-tools-debuginfo-4.14.26-46.32.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/perf-debuginfo-4.14.26-46.32.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/kernel-devel-4.14.26-46.32.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-x86_64",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.14.26-46.32.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/kernel-debuginfo-4.14.26-46.32.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/kernel-devel-4.14.26-46.32.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/kernel-debuginfo-4.14.26-46.32.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/perf-4.14.26-46.32.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/kernel-tools-4.14.26-46.32.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/kernel-tools-devel-4.14.26-46.32.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/kernel-headers-4.14.26-46.32.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/kernel-tools-debuginfo-4.14.26-46.32.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/perf-debuginfo-4.14.26-46.32.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/kernel-4.14.26-46.32.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-i686",
-          "Release": "46.32.amzn1",
-          "Version": "4.14.26",
-          "Filename": "Packages/kernel-debuginfo-common-i686-4.14.26-46.32.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2018-1087",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2018-1087: important priority package update for kernel",
+	"Issued": {
+		"Date": "2018-10-03 19:23"
+	},
+	"Updated": {
+		"Date": "2018-10-04 22:14"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-14634:\n\tAn integer overflow flaw was found in the Linux kernel&#039;s create_elf_tables() function.  An unprivileged local user with access to SUID (or otherwise privileged) binary could use this flaw to escalate their privileges on the system.\n1624498: \nCVE-2018-14634 kernel: Integer overflow in Linux's create_elf_tables function\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14634",
+				"ID": "CVE-2018-14634",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/kernel-4.14.26-46.32.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/perf-4.14.26-46.32.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/kernel-tools-4.14.26-46.32.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/kernel-headers-4.14.26-46.32.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/kernel-tools-devel-4.14.26-46.32.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/kernel-tools-debuginfo-4.14.26-46.32.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/perf-debuginfo-4.14.26-46.32.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/kernel-devel-4.14.26-46.32.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-x86_64",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/kernel-debuginfo-common-x86_64-4.14.26-46.32.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/kernel-debuginfo-4.14.26-46.32.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/kernel-devel-4.14.26-46.32.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/kernel-debuginfo-4.14.26-46.32.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/perf-4.14.26-46.32.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/kernel-tools-4.14.26-46.32.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/kernel-tools-devel-4.14.26-46.32.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/kernel-headers-4.14.26-46.32.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/kernel-tools-debuginfo-4.14.26-46.32.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/perf-debuginfo-4.14.26-46.32.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/kernel-4.14.26-46.32.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-i686",
+					"Release": "46.32.amzn1",
+					"Version": "4.14.26",
+					"Filename": "Packages/kernel-debuginfo-common-i686-4.14.26-46.32.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

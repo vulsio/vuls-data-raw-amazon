@@ -1,67 +1,67 @@
 {
-  "ID": "ALAS-2016-760",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-760: important priority package update for python-twisted-web",
-  "Issued": {
-    "Date": "2016-10-27 17:00"
-  },
-  "Updated": {
-    "Date": "2016-10-27 17:00"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-1000111:\n\tIt was discovered that python-twisted-web used the value of the Proxy header from HTTP requests to initialize the HTTP_PROXY environment variable for CGI scripts, which in turn was incorrectly used by certain HTTP client implementations to configure the proxy for outgoing HTTP requests. A remote attacker could possibly use this flaw to redirect HTTP requests performed by a CGI script to an attacker-controlled proxy via a malicious HTTP request.\n1357345: \nCVE-2016-1000111 Python Twisted: sets environmental variable based on user supplied Proxy request header\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1000111",
-        "ID": "CVE-2016-1000111",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python27-twisted-web",
-          "Release": "5.5.amzn1",
-          "Version": "8.2.0",
-          "Filename": "Packages/python27-twisted-web-8.2.0-5.5.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python26-twisted-web",
-          "Release": "5.5.amzn1",
-          "Version": "8.2.0",
-          "Filename": "Packages/python26-twisted-web-8.2.0-5.5.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python26-twisted-web",
-          "Release": "5.5.amzn1",
-          "Version": "8.2.0",
-          "Filename": "Packages/python26-twisted-web-8.2.0-5.5.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python27-twisted-web",
-          "Release": "5.5.amzn1",
-          "Version": "8.2.0",
-          "Filename": "Packages/python27-twisted-web-8.2.0-5.5.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2016-760",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2016-760: important priority package update for python-twisted-web",
+	"Issued": {
+		"Date": "2016-10-27 17:00"
+	},
+	"Updated": {
+		"Date": "2016-10-27 17:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-1000111:\n\tIt was discovered that python-twisted-web used the value of the Proxy header from HTTP requests to initialize the HTTP_PROXY environment variable for CGI scripts, which in turn was incorrectly used by certain HTTP client implementations to configure the proxy for outgoing HTTP requests. A remote attacker could possibly use this flaw to redirect HTTP requests performed by a CGI script to an attacker-controlled proxy via a malicious HTTP request.\n1357345: \nCVE-2016-1000111 Python Twisted: sets environmental variable based on user supplied Proxy request header\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1000111",
+				"ID": "CVE-2016-1000111",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python27-twisted-web",
+					"Release": "5.5.amzn1",
+					"Version": "8.2.0",
+					"Filename": "Packages/python27-twisted-web-8.2.0-5.5.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python26-twisted-web",
+					"Release": "5.5.amzn1",
+					"Version": "8.2.0",
+					"Filename": "Packages/python26-twisted-web-8.2.0-5.5.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python26-twisted-web",
+					"Release": "5.5.amzn1",
+					"Version": "8.2.0",
+					"Filename": "Packages/python26-twisted-web-8.2.0-5.5.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python27-twisted-web",
+					"Release": "5.5.amzn1",
+					"Version": "8.2.0",
+					"Filename": "Packages/python27-twisted-web-8.2.0-5.5.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

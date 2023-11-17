@@ -1,99 +1,99 @@
 {
-  "ID": "ALAS-2023-1782",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2023-1782: medium priority package update for libX11",
-  "Issued": {
-    "Date": "2023-07-13 23:57"
-  },
-  "Updated": {
-    "Date": "2023-07-19 21:51"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2023-3138:\n\tA vulnerability was found in libX11. The security flaw occurs because the functions in src/InitExt.c in libX11 do not check that the values provided for the Request, Event, or Error IDs are within the bounds of the arrays that those functions write to, using those IDs as array indexes. They trust that they were called with values provided by an Xserver adhering to the bounds specified in the X11 protocol, as all X servers provided by X.Org do. As the protocol only specifies a single byte for these values, an out-of-bounds value provided by a malicious server (or a malicious proxy-in-the-middle) can only overwrite other portions of the Display structure and not write outside the bounds of the Display structure itself, possibly causing the client to crash with this memory corruption.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3138",
-        "ID": "CVE-2023-3138",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libX11",
-          "Release": "2.2.15.amzn1",
-          "Version": "1.6.0",
-          "Filename": "Packages/libX11-1.6.0-2.2.15.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libX11-common",
-          "Release": "2.2.15.amzn1",
-          "Version": "1.6.0",
-          "Filename": "Packages/libX11-common-1.6.0-2.2.15.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libX11-debuginfo",
-          "Release": "2.2.15.amzn1",
-          "Version": "1.6.0",
-          "Filename": "Packages/libX11-debuginfo-1.6.0-2.2.15.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libX11-devel",
-          "Release": "2.2.15.amzn1",
-          "Version": "1.6.0",
-          "Filename": "Packages/libX11-devel-1.6.0-2.2.15.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libX11",
-          "Release": "2.2.15.amzn1",
-          "Version": "1.6.0",
-          "Filename": "Packages/libX11-1.6.0-2.2.15.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libX11-devel",
-          "Release": "2.2.15.amzn1",
-          "Version": "1.6.0",
-          "Filename": "Packages/libX11-devel-1.6.0-2.2.15.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libX11-debuginfo",
-          "Release": "2.2.15.amzn1",
-          "Version": "1.6.0",
-          "Filename": "Packages/libX11-debuginfo-1.6.0-2.2.15.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libX11-common",
-          "Release": "2.2.15.amzn1",
-          "Version": "1.6.0",
-          "Filename": "Packages/libX11-common-1.6.0-2.2.15.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2023-1782",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2023-1782: medium priority package update for libX11",
+	"Issued": {
+		"Date": "2023-07-13 23:57"
+	},
+	"Updated": {
+		"Date": "2023-07-19 21:51"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2023-3138:\n\tA vulnerability was found in libX11. The security flaw occurs because the functions in src/InitExt.c in libX11 do not check that the values provided for the Request, Event, or Error IDs are within the bounds of the arrays that those functions write to, using those IDs as array indexes. They trust that they were called with values provided by an Xserver adhering to the bounds specified in the X11 protocol, as all X servers provided by X.Org do. As the protocol only specifies a single byte for these values, an out-of-bounds value provided by a malicious server (or a malicious proxy-in-the-middle) can only overwrite other portions of the Display structure and not write outside the bounds of the Display structure itself, possibly causing the client to crash with this memory corruption.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3138",
+				"ID": "CVE-2023-3138",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libX11",
+					"Release": "2.2.15.amzn1",
+					"Version": "1.6.0",
+					"Filename": "Packages/libX11-1.6.0-2.2.15.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libX11-common",
+					"Release": "2.2.15.amzn1",
+					"Version": "1.6.0",
+					"Filename": "Packages/libX11-common-1.6.0-2.2.15.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libX11-debuginfo",
+					"Release": "2.2.15.amzn1",
+					"Version": "1.6.0",
+					"Filename": "Packages/libX11-debuginfo-1.6.0-2.2.15.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libX11-devel",
+					"Release": "2.2.15.amzn1",
+					"Version": "1.6.0",
+					"Filename": "Packages/libX11-devel-1.6.0-2.2.15.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libX11",
+					"Release": "2.2.15.amzn1",
+					"Version": "1.6.0",
+					"Filename": "Packages/libX11-1.6.0-2.2.15.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libX11-devel",
+					"Release": "2.2.15.amzn1",
+					"Version": "1.6.0",
+					"Filename": "Packages/libX11-devel-1.6.0-2.2.15.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libX11-debuginfo",
+					"Release": "2.2.15.amzn1",
+					"Version": "1.6.0",
+					"Filename": "Packages/libX11-debuginfo-1.6.0-2.2.15.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libX11-common",
+					"Release": "2.2.15.amzn1",
+					"Version": "1.6.0",
+					"Filename": "Packages/libX11-common-1.6.0-2.2.15.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

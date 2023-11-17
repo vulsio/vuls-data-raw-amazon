@@ -1,121 +1,121 @@
 {
-  "ID": "ALAS-2020-1409",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2020-1409: important priority package update for tomcat8",
-  "Issued": {
-    "Date": "2020-07-27 23:58"
-  },
-  "Updated": {
-    "Date": "2020-07-29 21:35"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-13935:\n\tThe payload length in a WebSocket frame was not correctly validated in Apache Tomcat 10.0.0-M1 to 10.0.0-M6, 9.0.0.M1 to 9.0.36, 8.5.0 to 8.5.56 and 7.0.27 to 7.0.104. Invalid payload lengths could trigger an infinite loop. Multiple requests with invalid payload lengths could lead to a denial of service.\n1857024: CVE-2020-13935 tomcat: multiple requests with invalid payload length in a WebSocket frame could lead to DoS\n\nCVE-2020-13934:\n\tAn h2c direct connection to Apache Tomcat 10.0.0-M1 to 10.0.0-M6, 9.0.0.M5 to 9.0.36 and 8.5.1 to 8.5.56 did not release the HTTP/1.1 processor after the upgrade to HTTP/2. If a sufficient number of such requests were made, an OutOfMemoryException could occur leading to a denial of service.\n1857040: CVE-2020-13934 tomcat: OutOfMemoryException caused by HTTP/2 connection leak could lead to DoS\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13934",
-        "ID": "CVE-2020-13934",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13935",
-        "ID": "CVE-2020-13935",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-log4j",
-          "Release": "1.85.amzn1",
-          "Version": "8.5.57",
-          "Filename": "Packages/tomcat8-log4j-8.5.57-1.85.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-javadoc",
-          "Release": "1.85.amzn1",
-          "Version": "8.5.57",
-          "Filename": "Packages/tomcat8-javadoc-8.5.57-1.85.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8",
-          "Release": "1.85.amzn1",
-          "Version": "8.5.57",
-          "Filename": "Packages/tomcat8-8.5.57-1.85.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-admin-webapps",
-          "Release": "1.85.amzn1",
-          "Version": "8.5.57",
-          "Filename": "Packages/tomcat8-admin-webapps-8.5.57-1.85.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-lib",
-          "Release": "1.85.amzn1",
-          "Version": "8.5.57",
-          "Filename": "Packages/tomcat8-lib-8.5.57-1.85.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-webapps",
-          "Release": "1.85.amzn1",
-          "Version": "8.5.57",
-          "Filename": "Packages/tomcat8-webapps-8.5.57-1.85.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-docs-webapp",
-          "Release": "1.85.amzn1",
-          "Version": "8.5.57",
-          "Filename": "Packages/tomcat8-docs-webapp-8.5.57-1.85.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-el-3.0-api",
-          "Release": "1.85.amzn1",
-          "Version": "8.5.57",
-          "Filename": "Packages/tomcat8-el-3.0-api-8.5.57-1.85.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-servlet-3.1-api",
-          "Release": "1.85.amzn1",
-          "Version": "8.5.57",
-          "Filename": "Packages/tomcat8-servlet-3.1-api-8.5.57-1.85.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-jsp-2.3-api",
-          "Release": "1.85.amzn1",
-          "Version": "8.5.57",
-          "Filename": "Packages/tomcat8-jsp-2.3-api-8.5.57-1.85.amzn1.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2020-1409",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2020-1409: important priority package update for tomcat8",
+	"Issued": {
+		"Date": "2020-07-27 23:58"
+	},
+	"Updated": {
+		"Date": "2020-07-29 21:35"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-13935:\n\tThe payload length in a WebSocket frame was not correctly validated in Apache Tomcat 10.0.0-M1 to 10.0.0-M6, 9.0.0.M1 to 9.0.36, 8.5.0 to 8.5.56 and 7.0.27 to 7.0.104. Invalid payload lengths could trigger an infinite loop. Multiple requests with invalid payload lengths could lead to a denial of service.\n1857024: CVE-2020-13935 tomcat: multiple requests with invalid payload length in a WebSocket frame could lead to DoS\n\nCVE-2020-13934:\n\tAn h2c direct connection to Apache Tomcat 10.0.0-M1 to 10.0.0-M6, 9.0.0.M5 to 9.0.36 and 8.5.1 to 8.5.56 did not release the HTTP/1.1 processor after the upgrade to HTTP/2. If a sufficient number of such requests were made, an OutOfMemoryException could occur leading to a denial of service.\n1857040: CVE-2020-13934 tomcat: OutOfMemoryException caused by HTTP/2 connection leak could lead to DoS\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13934",
+				"ID": "CVE-2020-13934",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13935",
+				"ID": "CVE-2020-13935",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-log4j",
+					"Release": "1.85.amzn1",
+					"Version": "8.5.57",
+					"Filename": "Packages/tomcat8-log4j-8.5.57-1.85.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-javadoc",
+					"Release": "1.85.amzn1",
+					"Version": "8.5.57",
+					"Filename": "Packages/tomcat8-javadoc-8.5.57-1.85.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8",
+					"Release": "1.85.amzn1",
+					"Version": "8.5.57",
+					"Filename": "Packages/tomcat8-8.5.57-1.85.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-admin-webapps",
+					"Release": "1.85.amzn1",
+					"Version": "8.5.57",
+					"Filename": "Packages/tomcat8-admin-webapps-8.5.57-1.85.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-lib",
+					"Release": "1.85.amzn1",
+					"Version": "8.5.57",
+					"Filename": "Packages/tomcat8-lib-8.5.57-1.85.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-webapps",
+					"Release": "1.85.amzn1",
+					"Version": "8.5.57",
+					"Filename": "Packages/tomcat8-webapps-8.5.57-1.85.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-docs-webapp",
+					"Release": "1.85.amzn1",
+					"Version": "8.5.57",
+					"Filename": "Packages/tomcat8-docs-webapp-8.5.57-1.85.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-el-3.0-api",
+					"Release": "1.85.amzn1",
+					"Version": "8.5.57",
+					"Filename": "Packages/tomcat8-el-3.0-api-8.5.57-1.85.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-servlet-3.1-api",
+					"Release": "1.85.amzn1",
+					"Version": "8.5.57",
+					"Filename": "Packages/tomcat8-servlet-3.1-api-8.5.57-1.85.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-jsp-2.3-api",
+					"Release": "1.85.amzn1",
+					"Version": "8.5.57",
+					"Filename": "Packages/tomcat8-jsp-2.3-api-8.5.57-1.85.amzn1.noarch.rpm"
+				}
+			]
+		}
+	}
 }

@@ -1,137 +1,137 @@
 {
-  "ID": "ALAS-2017-893",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-893: important priority package update for mercurial",
-  "Issued": {
-    "Date": "2017-09-13 22:52"
-  },
-  "Updated": {
-    "Date": "2017-09-14 22:21"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-1000116:\n\tA shell command injection flaw related to the handling of &quot;ssh&quot; URLs has been discovered in Mercurial. This can be exploited to execute shell commands with the privileges of the user running the Mercurial client, for example, when performing a &quot;checkout&quot; or &quot;update&quot; action on a sub-repository within a malicious repository or a legitimate repository containing a malicious commit.\n1479915: \nCVE-2017-1000116 mercurial: command injection on clients through malicious ssh URLs\n\nCVE-2017-1000115:\n\tA vulnerability was found in the way Mercurial handles path auditing and caches the results. An attacker could abuse a repository with a series of commits mixing symlinks and regular files/directories to trick Mercurial into writing outside of a given repository.\n1480330: \nCVE-2017-1000115 Mercurial: pathaudit: path traversal via symlink\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1000115",
-        "ID": "CVE-2017-1000115",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1000116",
-        "ID": "CVE-2017-1000116",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mercurial-python27",
-          "Release": "1.29.amzn1",
-          "Version": "4.2.3",
-          "Filename": "Packages/mercurial-python27-4.2.3-1.29.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "emacs-mercurial",
-          "Release": "1.29.amzn1",
-          "Version": "4.2.3",
-          "Filename": "Packages/emacs-mercurial-4.2.3-1.29.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mercurial-debuginfo",
-          "Release": "1.29.amzn1",
-          "Version": "4.2.3",
-          "Filename": "Packages/mercurial-debuginfo-4.2.3-1.29.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mercurial-common",
-          "Release": "1.29.amzn1",
-          "Version": "4.2.3",
-          "Filename": "Packages/mercurial-common-4.2.3-1.29.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mercurial-python26",
-          "Release": "1.29.amzn1",
-          "Version": "4.2.3",
-          "Filename": "Packages/mercurial-python26-4.2.3-1.29.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "emacs-mercurial-el",
-          "Release": "1.29.amzn1",
-          "Version": "4.2.3",
-          "Filename": "Packages/emacs-mercurial-el-4.2.3-1.29.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mercurial-common",
-          "Release": "1.29.amzn1",
-          "Version": "4.2.3",
-          "Filename": "Packages/mercurial-common-4.2.3-1.29.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "emacs-mercurial",
-          "Release": "1.29.amzn1",
-          "Version": "4.2.3",
-          "Filename": "Packages/emacs-mercurial-4.2.3-1.29.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mercurial-python26",
-          "Release": "1.29.amzn1",
-          "Version": "4.2.3",
-          "Filename": "Packages/mercurial-python26-4.2.3-1.29.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mercurial-debuginfo",
-          "Release": "1.29.amzn1",
-          "Version": "4.2.3",
-          "Filename": "Packages/mercurial-debuginfo-4.2.3-1.29.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mercurial-python27",
-          "Release": "1.29.amzn1",
-          "Version": "4.2.3",
-          "Filename": "Packages/mercurial-python27-4.2.3-1.29.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "emacs-mercurial-el",
-          "Release": "1.29.amzn1",
-          "Version": "4.2.3",
-          "Filename": "Packages/emacs-mercurial-el-4.2.3-1.29.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2017-893",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2017-893: important priority package update for mercurial",
+	"Issued": {
+		"Date": "2017-09-13 22:52"
+	},
+	"Updated": {
+		"Date": "2017-09-14 22:21"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-1000116:\n\tA shell command injection flaw related to the handling of &quot;ssh&quot; URLs has been discovered in Mercurial. This can be exploited to execute shell commands with the privileges of the user running the Mercurial client, for example, when performing a &quot;checkout&quot; or &quot;update&quot; action on a sub-repository within a malicious repository or a legitimate repository containing a malicious commit.\n1479915: \nCVE-2017-1000116 mercurial: command injection on clients through malicious ssh URLs\n\nCVE-2017-1000115:\n\tA vulnerability was found in the way Mercurial handles path auditing and caches the results. An attacker could abuse a repository with a series of commits mixing symlinks and regular files/directories to trick Mercurial into writing outside of a given repository.\n1480330: \nCVE-2017-1000115 Mercurial: pathaudit: path traversal via symlink\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1000115",
+				"ID": "CVE-2017-1000115",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1000116",
+				"ID": "CVE-2017-1000116",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mercurial-python27",
+					"Release": "1.29.amzn1",
+					"Version": "4.2.3",
+					"Filename": "Packages/mercurial-python27-4.2.3-1.29.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "emacs-mercurial",
+					"Release": "1.29.amzn1",
+					"Version": "4.2.3",
+					"Filename": "Packages/emacs-mercurial-4.2.3-1.29.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mercurial-debuginfo",
+					"Release": "1.29.amzn1",
+					"Version": "4.2.3",
+					"Filename": "Packages/mercurial-debuginfo-4.2.3-1.29.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mercurial-common",
+					"Release": "1.29.amzn1",
+					"Version": "4.2.3",
+					"Filename": "Packages/mercurial-common-4.2.3-1.29.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mercurial-python26",
+					"Release": "1.29.amzn1",
+					"Version": "4.2.3",
+					"Filename": "Packages/mercurial-python26-4.2.3-1.29.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "emacs-mercurial-el",
+					"Release": "1.29.amzn1",
+					"Version": "4.2.3",
+					"Filename": "Packages/emacs-mercurial-el-4.2.3-1.29.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mercurial-common",
+					"Release": "1.29.amzn1",
+					"Version": "4.2.3",
+					"Filename": "Packages/mercurial-common-4.2.3-1.29.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "emacs-mercurial",
+					"Release": "1.29.amzn1",
+					"Version": "4.2.3",
+					"Filename": "Packages/emacs-mercurial-4.2.3-1.29.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mercurial-python26",
+					"Release": "1.29.amzn1",
+					"Version": "4.2.3",
+					"Filename": "Packages/mercurial-python26-4.2.3-1.29.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mercurial-debuginfo",
+					"Release": "1.29.amzn1",
+					"Version": "4.2.3",
+					"Filename": "Packages/mercurial-debuginfo-4.2.3-1.29.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mercurial-python27",
+					"Release": "1.29.amzn1",
+					"Version": "4.2.3",
+					"Filename": "Packages/mercurial-python27-4.2.3-1.29.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "emacs-mercurial-el",
+					"Release": "1.29.amzn1",
+					"Version": "4.2.3",
+					"Filename": "Packages/emacs-mercurial-el-4.2.3-1.29.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

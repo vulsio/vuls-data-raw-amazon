@@ -1,311 +1,311 @@
 {
-  "ID": "ALAS2-2019-1160",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1160: important priority package update for systemd",
-  "Issued": {
-    "Date": "2019-02-13 18:37"
-  },
-  "Updated": {
-    "Date": "2019-02-14 04:04"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-16865:\n\tAn allocation of memory without limits, that could result in the stack clashing with another memory region, was discovered in systemd-journald when many entries are sent to the journal socket. A local attacker, or a remote one if systemd-journal-remote is used, may use this flaw to crash systemd-journald or execute code with journald privileges.\n1653861: \nCVE-2018-16865 systemd: stack overflow when receiving many journald entries\n\nCVE-2018-16864:\n\tAn allocation of memory without limits, that could result in the stack clashing with another memory region, was discovered in systemd-journald when a program with long command line arguments calls syslog. A local attacker may use this flaw to crash systemd-journald or escalate privileges.\n1653855: \nCVE-2018-16864 systemd: stack overflow when calling syslog from a command with long cmdline\n\nCVE-2018-15688:\n\tIt was discovered that systemd-network does not correctly keep track of a buffer size when constructing DHCPv6 packets. This flaw may lead to an integer underflow that can be used to produce an heap-based buffer overflow. A malicious host on the same network segment as the victim&#039;s one may advertise itself as a DHCPv6 server and exploit this flaw to cause a Denial of Service or potentially gain code execution on the victim&#039;s machine.\n1639067: \nCVE-2018-15688 systemd: Out-of-bounds heap write in systemd-networkd dhcpv6 option handling\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15688",
-        "ID": "CVE-2018-15688",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16864",
-        "ID": "CVE-2018-16864",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16865",
-        "ID": "CVE-2018-16865",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "systemd",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-219-57.amzn2.0.8.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "systemd-libs",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-libs-219-57.amzn2.0.8.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "systemd-devel",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-devel-219-57.amzn2.0.8.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "systemd-sysv",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-sysv-219-57.amzn2.0.8.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "systemd-python",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-python-219-57.amzn2.0.8.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libgudev1",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/libgudev1-219-57.amzn2.0.8.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libgudev1-devel",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/libgudev1-devel-219-57.amzn2.0.8.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "systemd-journal-gateway",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-journal-gateway-219-57.amzn2.0.8.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "systemd-networkd",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-networkd-219-57.amzn2.0.8.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "systemd-resolved",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-resolved-219-57.amzn2.0.8.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "systemd-debuginfo",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-debuginfo-219-57.amzn2.0.8.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemd",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-219-57.amzn2.0.8.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemd-libs",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-libs-219-57.amzn2.0.8.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemd-devel",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-devel-219-57.amzn2.0.8.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemd-sysv",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-sysv-219-57.amzn2.0.8.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemd-python",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-python-219-57.amzn2.0.8.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libgudev1",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/libgudev1-219-57.amzn2.0.8.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libgudev1-devel",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/libgudev1-devel-219-57.amzn2.0.8.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemd-journal-gateway",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-journal-gateway-219-57.amzn2.0.8.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemd-networkd",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-networkd-219-57.amzn2.0.8.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemd-resolved",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-resolved-219-57.amzn2.0.8.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemd-debuginfo",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-debuginfo-219-57.amzn2.0.8.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemd",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-219-57.amzn2.0.8.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemd-libs",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-libs-219-57.amzn2.0.8.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemd-devel",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-devel-219-57.amzn2.0.8.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemd-sysv",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-sysv-219-57.amzn2.0.8.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemd-python",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-python-219-57.amzn2.0.8.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libgudev1",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/libgudev1-219-57.amzn2.0.8.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libgudev1-devel",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/libgudev1-devel-219-57.amzn2.0.8.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemd-journal-gateway",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-journal-gateway-219-57.amzn2.0.8.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemd-networkd",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-networkd-219-57.amzn2.0.8.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemd-resolved",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-resolved-219-57.amzn2.0.8.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemd-debuginfo",
-          "Release": "57.amzn2.0.8",
-          "Version": "219",
-          "Filename": "Packages/systemd-debuginfo-219-57.amzn2.0.8.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2019-1160",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1160: important priority package update for systemd",
+	"Issued": {
+		"Date": "2019-02-13 18:37"
+	},
+	"Updated": {
+		"Date": "2019-02-14 04:04"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-16865:\n\tAn allocation of memory without limits, that could result in the stack clashing with another memory region, was discovered in systemd-journald when many entries are sent to the journal socket. A local attacker, or a remote one if systemd-journal-remote is used, may use this flaw to crash systemd-journald or execute code with journald privileges.\n1653861: \nCVE-2018-16865 systemd: stack overflow when receiving many journald entries\n\nCVE-2018-16864:\n\tAn allocation of memory without limits, that could result in the stack clashing with another memory region, was discovered in systemd-journald when a program with long command line arguments calls syslog. A local attacker may use this flaw to crash systemd-journald or escalate privileges.\n1653855: \nCVE-2018-16864 systemd: stack overflow when calling syslog from a command with long cmdline\n\nCVE-2018-15688:\n\tIt was discovered that systemd-network does not correctly keep track of a buffer size when constructing DHCPv6 packets. This flaw may lead to an integer underflow that can be used to produce an heap-based buffer overflow. A malicious host on the same network segment as the victim&#039;s one may advertise itself as a DHCPv6 server and exploit this flaw to cause a Denial of Service or potentially gain code execution on the victim&#039;s machine.\n1639067: \nCVE-2018-15688 systemd: Out-of-bounds heap write in systemd-networkd dhcpv6 option handling\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15688",
+				"ID": "CVE-2018-15688",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16864",
+				"ID": "CVE-2018-16864",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16865",
+				"ID": "CVE-2018-16865",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "systemd",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-219-57.amzn2.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "systemd-libs",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-libs-219-57.amzn2.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "systemd-devel",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-devel-219-57.amzn2.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "systemd-sysv",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-sysv-219-57.amzn2.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "systemd-python",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-python-219-57.amzn2.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libgudev1",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/libgudev1-219-57.amzn2.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libgudev1-devel",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/libgudev1-devel-219-57.amzn2.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "systemd-journal-gateway",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-journal-gateway-219-57.amzn2.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "systemd-networkd",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-networkd-219-57.amzn2.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "systemd-resolved",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-resolved-219-57.amzn2.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "systemd-debuginfo",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-debuginfo-219-57.amzn2.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemd",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-219-57.amzn2.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemd-libs",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-libs-219-57.amzn2.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemd-devel",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-devel-219-57.amzn2.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemd-sysv",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-sysv-219-57.amzn2.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemd-python",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-python-219-57.amzn2.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libgudev1",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/libgudev1-219-57.amzn2.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libgudev1-devel",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/libgudev1-devel-219-57.amzn2.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemd-journal-gateway",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-journal-gateway-219-57.amzn2.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemd-networkd",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-networkd-219-57.amzn2.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemd-resolved",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-resolved-219-57.amzn2.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemd-debuginfo",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-debuginfo-219-57.amzn2.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemd",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-219-57.amzn2.0.8.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemd-libs",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-libs-219-57.amzn2.0.8.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemd-devel",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-devel-219-57.amzn2.0.8.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemd-sysv",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-sysv-219-57.amzn2.0.8.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemd-python",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-python-219-57.amzn2.0.8.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libgudev1",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/libgudev1-219-57.amzn2.0.8.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libgudev1-devel",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/libgudev1-devel-219-57.amzn2.0.8.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemd-journal-gateway",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-journal-gateway-219-57.amzn2.0.8.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemd-networkd",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-networkd-219-57.amzn2.0.8.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemd-resolved",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-resolved-219-57.amzn2.0.8.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemd-debuginfo",
+					"Release": "57.amzn2.0.8",
+					"Version": "219",
+					"Filename": "Packages/systemd-debuginfo-219-57.amzn2.0.8.i686.rpm"
+				}
+			]
+		}
+	}
 }

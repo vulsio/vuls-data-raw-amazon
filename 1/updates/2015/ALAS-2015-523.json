@@ -1,209 +1,209 @@
 {
-  "ID": "ALAS-2015-523",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-523: medium priority package update for kernel",
-  "Issued": {
-    "Date": "2015-05-14 14:27"
-  },
-  "Updated": {
-    "Date": "2015-05-14 23:48"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-3636:\n\tIt was found that the Linux kernel's ping socket implementation did not properly handle socket unhashing during spurious disconnects, which could lead to a use-after-free flaw. On x86-64 architecture systems, a local user able to create ping sockets could use this flaw to crash the system. On non-x86-64 architecture systems, a local user able to create ping sockets could use this flaw to escalate their privileges on the system.\n1218074: \nCVE-2015-3636 kernel: ping sockets: use-after-free leading to local privilege escalation\n\nCVE-2015-3331:\n\tIt was found that the Linux kernel did not correctly decrypt fragmented network packets when using the Intel AES-NI instructions for the AES algorithm. A remote attacker could use this flaw to crash a system by sending specially crafted AES-encrypted packets to that system.\nA buffer overflow flaw was found in the way the Linux kernel's Intel AES-NI instructions optimized version of the RFC4106 GCM mode decryption functionality handled fragmented packets. A remote attacker could use this flaw to crash, or potentially escalate their privileges on, a system over a connection with an active AEC-GCM mode IPSec security association.\n1213322: \nCVE-2015-3331 Kernel: crypto: buffer overruns in RFC4106 implementation using AESNI\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3331",
-        "ID": "CVE-2015-3331",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3636",
-        "ID": "CVE-2015-3636",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/kernel-3.14.42-31.38.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-x86_64",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/kernel-debuginfo-common-x86_64-3.14.42-31.38.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/kernel-debuginfo-3.14.42-31.38.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/perf-debuginfo-3.14.42-31.38.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/kernel-tools-debuginfo-3.14.42-31.38.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/kernel-devel-3.14.42-31.38.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/kernel-headers-3.14.42-31.38.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/kernel-tools-devel-3.14.42-31.38.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/kernel-tools-3.14.42-31.38.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/perf-3.14.42-31.38.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/kernel-3.14.42-31.38.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/perf-debuginfo-3.14.42-31.38.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/kernel-tools-devel-3.14.42-31.38.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/kernel-tools-debuginfo-3.14.42-31.38.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/kernel-tools-3.14.42-31.38.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/perf-3.14.42-31.38.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/kernel-debuginfo-3.14.42-31.38.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-i686",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/kernel-debuginfo-common-i686-3.14.42-31.38.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/kernel-headers-3.14.42-31.38.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/kernel-devel-3.14.42-31.38.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "kernel-doc",
-          "Release": "31.38.amzn1",
-          "Version": "3.14.42",
-          "Filename": "Packages/kernel-doc-3.14.42-31.38.amzn1.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2015-523",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2015-523: medium priority package update for kernel",
+	"Issued": {
+		"Date": "2015-05-14 14:27"
+	},
+	"Updated": {
+		"Date": "2015-05-14 23:48"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-3636:\n\tIt was found that the Linux kernel's ping socket implementation did not properly handle socket unhashing during spurious disconnects, which could lead to a use-after-free flaw. On x86-64 architecture systems, a local user able to create ping sockets could use this flaw to crash the system. On non-x86-64 architecture systems, a local user able to create ping sockets could use this flaw to escalate their privileges on the system.\n1218074: \nCVE-2015-3636 kernel: ping sockets: use-after-free leading to local privilege escalation\n\nCVE-2015-3331:\n\tIt was found that the Linux kernel did not correctly decrypt fragmented network packets when using the Intel AES-NI instructions for the AES algorithm. A remote attacker could use this flaw to crash a system by sending specially crafted AES-encrypted packets to that system.\nA buffer overflow flaw was found in the way the Linux kernel's Intel AES-NI instructions optimized version of the RFC4106 GCM mode decryption functionality handled fragmented packets. A remote attacker could use this flaw to crash, or potentially escalate their privileges on, a system over a connection with an active AEC-GCM mode IPSec security association.\n1213322: \nCVE-2015-3331 Kernel: crypto: buffer overruns in RFC4106 implementation using AESNI\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3331",
+				"ID": "CVE-2015-3331",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3636",
+				"ID": "CVE-2015-3636",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/kernel-3.14.42-31.38.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-x86_64",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/kernel-debuginfo-common-x86_64-3.14.42-31.38.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/kernel-debuginfo-3.14.42-31.38.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/perf-debuginfo-3.14.42-31.38.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/kernel-tools-debuginfo-3.14.42-31.38.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/kernel-devel-3.14.42-31.38.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/kernel-headers-3.14.42-31.38.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/kernel-tools-devel-3.14.42-31.38.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/kernel-tools-3.14.42-31.38.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/perf-3.14.42-31.38.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/kernel-3.14.42-31.38.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/perf-debuginfo-3.14.42-31.38.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/kernel-tools-devel-3.14.42-31.38.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/kernel-tools-debuginfo-3.14.42-31.38.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/kernel-tools-3.14.42-31.38.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/perf-3.14.42-31.38.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/kernel-debuginfo-3.14.42-31.38.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-i686",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/kernel-debuginfo-common-i686-3.14.42-31.38.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/kernel-headers-3.14.42-31.38.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/kernel-devel-3.14.42-31.38.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "kernel-doc",
+					"Release": "31.38.amzn1",
+					"Version": "3.14.42",
+					"Filename": "Packages/kernel-doc-3.14.42-31.38.amzn1.noarch.rpm"
+				}
+			]
+		}
+	}
 }

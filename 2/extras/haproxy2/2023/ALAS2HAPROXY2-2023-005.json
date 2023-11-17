@@ -1,85 +1,85 @@
 {
-  "ID": "ALAS2HAPROXY2-2023-005",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 - Haproxy2 2.0 - ALAS2HAPROXY2-2023-005: medium priority package update for haproxy2",
-  "Issued": {
-    "Date": "2023-08-21 21:01"
-  },
-  "Updated": {
-    "Date": "2023-09-25 22:11"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 - Haproxy2 that fix the following vulnerabilities:\nCVE-2021-40346:\n\tProxy server haproxy has a flaw that can could allow an HTTP request smuggling attack with the goal of bypassing access-control list rules defined by haproxy. The attack was made possible by utilizing an integer overflow vulnerability that allowed reaching an unexpected state in haproxy while parsing an HTTP request. The highest threat from this vulnerability is integrity.\n\nCVE-2021-39242:\n\tAn issue was discovered in HAProxy 2.2 before 2.2.16, 2.3 before 2.3.13, and 2.4 before 2.4.3. It can lead to a situation with an attacker-controlled HTTP Host header, because a mismatch between Host and authority is mishandled.\n\nCVE-2021-39241:\n\thaproxy has an input validation flaw that could allow a remote attacker to bypass implemented security restrictions.  An HTTP method name may contain a space followed by the name of a protected resource. Given this, It is possible that an server would interpret this as a request for that protected resource. The highest threat from this vulnerability is possible confidentiality concerns.\n\nCVE-2021-39240:\n\tA flaw was found in haproxy. An input validation flaw when processing HTTP/2 requests causes haproxy to not ensure that the scheme and path portions of a URI have the expected characters.  This may cause specially crafted input to bypass implemented security restrictions. The highest threat from this vulnerability is confidentiality.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-39240",
-        "ID": "CVE-2021-39240",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-39241",
-        "ID": "CVE-2021-39241",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-39242",
-        "ID": "CVE-2021-39242",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-40346",
-        "ID": "CVE-2021-40346",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2---haproxy2",
-      "Name": "Amazon Linux 2 - Haproxy2",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "haproxy2",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.2.17",
-          "Filename": "Packages/haproxy2-2.2.17-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "haproxy2-debuginfo",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.2.17",
-          "Filename": "Packages/haproxy2-debuginfo-2.2.17-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "haproxy2",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.2.17",
-          "Filename": "Packages/haproxy2-2.2.17-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "haproxy2-debuginfo",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.2.17",
-          "Filename": "Packages/haproxy2-debuginfo-2.2.17-1.amzn2.0.1.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2HAPROXY2-2023-005",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Haproxy2 2.0 - ALAS2HAPROXY2-2023-005: medium priority package update for haproxy2",
+	"Issued": {
+		"Date": "2023-08-21 21:01"
+	},
+	"Updated": {
+		"Date": "2023-09-25 22:11"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 - Haproxy2 that fix the following vulnerabilities:\nCVE-2021-40346:\n\tProxy server haproxy has a flaw that can could allow an HTTP request smuggling attack with the goal of bypassing access-control list rules defined by haproxy. The attack was made possible by utilizing an integer overflow vulnerability that allowed reaching an unexpected state in haproxy while parsing an HTTP request. The highest threat from this vulnerability is integrity.\n\nCVE-2021-39242:\n\tAn issue was discovered in HAProxy 2.2 before 2.2.16, 2.3 before 2.3.13, and 2.4 before 2.4.3. It can lead to a situation with an attacker-controlled HTTP Host header, because a mismatch between Host and authority is mishandled.\n\nCVE-2021-39241:\n\thaproxy has an input validation flaw that could allow a remote attacker to bypass implemented security restrictions.  An HTTP method name may contain a space followed by the name of a protected resource. Given this, It is possible that an server would interpret this as a request for that protected resource. The highest threat from this vulnerability is possible confidentiality concerns.\n\nCVE-2021-39240:\n\tA flaw was found in haproxy. An input validation flaw when processing HTTP/2 requests causes haproxy to not ensure that the scheme and path portions of a URI have the expected characters.  This may cause specially crafted input to bypass implemented security restrictions. The highest threat from this vulnerability is confidentiality.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-39240",
+				"ID": "CVE-2021-39240",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-39241",
+				"ID": "CVE-2021-39241",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-39242",
+				"ID": "CVE-2021-39242",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-40346",
+				"ID": "CVE-2021-40346",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---haproxy2",
+			"Name": "Amazon Linux 2 - Haproxy2",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "haproxy2",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.2.17",
+					"Filename": "Packages/haproxy2-2.2.17-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "haproxy2-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.2.17",
+					"Filename": "Packages/haproxy2-debuginfo-2.2.17-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "haproxy2",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.2.17",
+					"Filename": "Packages/haproxy2-2.2.17-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "haproxy2-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.2.17",
+					"Filename": "Packages/haproxy2-debuginfo-2.2.17-1.amzn2.0.1.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

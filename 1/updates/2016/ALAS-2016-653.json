@@ -1,179 +1,179 @@
 {
-  "ID": "ALAS-2016-653",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-653: critical priority package update for glibc",
-  "Issued": {
-    "Date": "2016-02-16 06:00"
-  },
-  "Updated": {
-    "Date": "2016-02-16 06:45"
-  },
-  "Severity": "critical",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-7547:\n\tA stack-based buffer overflow flaw was found in the send_dg() and send_vc() functions, used by getaddrinfo() and other higher-level interfaces of glibc. A remote attacker able to cause an application to call either of these functions could use this flaw to execute arbitrary code with the permissions of the user running the application.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7547",
-        "ID": "CVE-2015-7547",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "glibc-devel",
-          "Release": "106.166.amzn1",
-          "Version": "2.17",
-          "Filename": "Packages/glibc-devel-2.17-106.166.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "glibc-utils",
-          "Release": "106.166.amzn1",
-          "Version": "2.17",
-          "Filename": "Packages/glibc-utils-2.17-106.166.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "glibc",
-          "Release": "106.166.amzn1",
-          "Version": "2.17",
-          "Filename": "Packages/glibc-2.17-106.166.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "nscd",
-          "Release": "106.166.amzn1",
-          "Version": "2.17",
-          "Filename": "Packages/nscd-2.17-106.166.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "glibc-debuginfo",
-          "Release": "106.166.amzn1",
-          "Version": "2.17",
-          "Filename": "Packages/glibc-debuginfo-2.17-106.166.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "glibc-debuginfo-common",
-          "Release": "106.166.amzn1",
-          "Version": "2.17",
-          "Filename": "Packages/glibc-debuginfo-common-2.17-106.166.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "glibc-common",
-          "Release": "106.166.amzn1",
-          "Version": "2.17",
-          "Filename": "Packages/glibc-common-2.17-106.166.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "glibc-static",
-          "Release": "106.166.amzn1",
-          "Version": "2.17",
-          "Filename": "Packages/glibc-static-2.17-106.166.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "glibc-headers",
-          "Release": "106.166.amzn1",
-          "Version": "2.17",
-          "Filename": "Packages/glibc-headers-2.17-106.166.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "glibc-static",
-          "Release": "106.166.amzn1",
-          "Version": "2.17",
-          "Filename": "Packages/glibc-static-2.17-106.166.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "glibc-debuginfo",
-          "Release": "106.166.amzn1",
-          "Version": "2.17",
-          "Filename": "Packages/glibc-debuginfo-2.17-106.166.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "glibc-debuginfo-common",
-          "Release": "106.166.amzn1",
-          "Version": "2.17",
-          "Filename": "Packages/glibc-debuginfo-common-2.17-106.166.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "glibc-headers",
-          "Release": "106.166.amzn1",
-          "Version": "2.17",
-          "Filename": "Packages/glibc-headers-2.17-106.166.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "glibc",
-          "Release": "106.166.amzn1",
-          "Version": "2.17",
-          "Filename": "Packages/glibc-2.17-106.166.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "glibc-common",
-          "Release": "106.166.amzn1",
-          "Version": "2.17",
-          "Filename": "Packages/glibc-common-2.17-106.166.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "glibc-devel",
-          "Release": "106.166.amzn1",
-          "Version": "2.17",
-          "Filename": "Packages/glibc-devel-2.17-106.166.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "nscd",
-          "Release": "106.166.amzn1",
-          "Version": "2.17",
-          "Filename": "Packages/nscd-2.17-106.166.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "glibc-utils",
-          "Release": "106.166.amzn1",
-          "Version": "2.17",
-          "Filename": "Packages/glibc-utils-2.17-106.166.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2016-653",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2016-653: critical priority package update for glibc",
+	"Issued": {
+		"Date": "2016-02-16 06:00"
+	},
+	"Updated": {
+		"Date": "2016-02-16 06:45"
+	},
+	"Severity": "critical",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-7547:\n\tA stack-based buffer overflow flaw was found in the send_dg() and send_vc() functions, used by getaddrinfo() and other higher-level interfaces of glibc. A remote attacker able to cause an application to call either of these functions could use this flaw to execute arbitrary code with the permissions of the user running the application.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7547",
+				"ID": "CVE-2015-7547",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "glibc-devel",
+					"Release": "106.166.amzn1",
+					"Version": "2.17",
+					"Filename": "Packages/glibc-devel-2.17-106.166.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "glibc-utils",
+					"Release": "106.166.amzn1",
+					"Version": "2.17",
+					"Filename": "Packages/glibc-utils-2.17-106.166.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "glibc",
+					"Release": "106.166.amzn1",
+					"Version": "2.17",
+					"Filename": "Packages/glibc-2.17-106.166.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nscd",
+					"Release": "106.166.amzn1",
+					"Version": "2.17",
+					"Filename": "Packages/nscd-2.17-106.166.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "glibc-debuginfo",
+					"Release": "106.166.amzn1",
+					"Version": "2.17",
+					"Filename": "Packages/glibc-debuginfo-2.17-106.166.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "glibc-debuginfo-common",
+					"Release": "106.166.amzn1",
+					"Version": "2.17",
+					"Filename": "Packages/glibc-debuginfo-common-2.17-106.166.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "glibc-common",
+					"Release": "106.166.amzn1",
+					"Version": "2.17",
+					"Filename": "Packages/glibc-common-2.17-106.166.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "glibc-static",
+					"Release": "106.166.amzn1",
+					"Version": "2.17",
+					"Filename": "Packages/glibc-static-2.17-106.166.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "glibc-headers",
+					"Release": "106.166.amzn1",
+					"Version": "2.17",
+					"Filename": "Packages/glibc-headers-2.17-106.166.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "glibc-static",
+					"Release": "106.166.amzn1",
+					"Version": "2.17",
+					"Filename": "Packages/glibc-static-2.17-106.166.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "glibc-debuginfo",
+					"Release": "106.166.amzn1",
+					"Version": "2.17",
+					"Filename": "Packages/glibc-debuginfo-2.17-106.166.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "glibc-debuginfo-common",
+					"Release": "106.166.amzn1",
+					"Version": "2.17",
+					"Filename": "Packages/glibc-debuginfo-common-2.17-106.166.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "glibc-headers",
+					"Release": "106.166.amzn1",
+					"Version": "2.17",
+					"Filename": "Packages/glibc-headers-2.17-106.166.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "glibc",
+					"Release": "106.166.amzn1",
+					"Version": "2.17",
+					"Filename": "Packages/glibc-2.17-106.166.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "glibc-common",
+					"Release": "106.166.amzn1",
+					"Version": "2.17",
+					"Filename": "Packages/glibc-common-2.17-106.166.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "glibc-devel",
+					"Release": "106.166.amzn1",
+					"Version": "2.17",
+					"Filename": "Packages/glibc-devel-2.17-106.166.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nscd",
+					"Release": "106.166.amzn1",
+					"Version": "2.17",
+					"Filename": "Packages/nscd-2.17-106.166.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "glibc-utils",
+					"Release": "106.166.amzn1",
+					"Version": "2.17",
+					"Filename": "Packages/glibc-utils-2.17-106.166.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

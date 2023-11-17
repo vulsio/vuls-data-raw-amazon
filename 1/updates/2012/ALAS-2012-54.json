@@ -1,153 +1,153 @@
 {
-  "ID": "ALAS-2012-54",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux - ALAS-2012-54: medium priority package update for systemtap",
-  "Issued": {
-    "Date": "2012-03-15 19:21"
-  },
-  "Updated": {
-    "Date": "2014-09-14 15:40"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-0875:\n\tAn invalid pointer read flaw was found in the way SystemTap handled malformed debugging information in DWARF format. When SystemTap unprivileged mode was enabled, an unprivileged user in the stapusr group could use this flaw to crash the system or, potentially, read arbitrary kernel memory. Additionally, a privileged user (root, or a member of the stapdev group) could trigger this flaw when tricked into instrumenting a specially-crafted ELF binary, even when unprivileged mode was not enabled.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0875",
-        "ID": "CVE-2012-0875",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2012:0376.html",
-        "ID": "RHSA-2012:0376",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux",
-      "Name": "Amazon Linux",
-      "Package": [
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemtap-debuginfo",
-          "Release": "5.12.amzn1",
-          "Version": "1.6",
-          "Filename": "Packages/systemtap-debuginfo-1.6-5.12.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemtap",
-          "Release": "5.12.amzn1",
-          "Version": "1.6",
-          "Filename": "Packages/systemtap-1.6-5.12.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemtap-server",
-          "Release": "5.12.amzn1",
-          "Version": "1.6",
-          "Filename": "Packages/systemtap-server-1.6-5.12.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemtap-sdt-devel",
-          "Release": "5.12.amzn1",
-          "Version": "1.6",
-          "Filename": "Packages/systemtap-sdt-devel-1.6-5.12.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemtap-testsuite",
-          "Release": "5.12.amzn1",
-          "Version": "1.6",
-          "Filename": "Packages/systemtap-testsuite-1.6-5.12.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemtap-initscript",
-          "Release": "5.12.amzn1",
-          "Version": "1.6",
-          "Filename": "Packages/systemtap-initscript-1.6-5.12.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemtap-runtime",
-          "Release": "5.12.amzn1",
-          "Version": "1.6",
-          "Filename": "Packages/systemtap-runtime-1.6-5.12.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemtap-sdt-devel",
-          "Release": "5.12.amzn1",
-          "Version": "1.6",
-          "Filename": "Packages/systemtap-sdt-devel-1.6-5.12.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemtap-testsuite",
-          "Release": "5.12.amzn1",
-          "Version": "1.6",
-          "Filename": "Packages/systemtap-testsuite-1.6-5.12.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemtap-runtime",
-          "Release": "5.12.amzn1",
-          "Version": "1.6",
-          "Filename": "Packages/systemtap-runtime-1.6-5.12.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemtap-debuginfo",
-          "Release": "5.12.amzn1",
-          "Version": "1.6",
-          "Filename": "Packages/systemtap-debuginfo-1.6-5.12.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemtap",
-          "Release": "5.12.amzn1",
-          "Version": "1.6",
-          "Filename": "Packages/systemtap-1.6-5.12.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemtap-server",
-          "Release": "5.12.amzn1",
-          "Version": "1.6",
-          "Filename": "Packages/systemtap-server-1.6-5.12.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemtap-initscript",
-          "Release": "5.12.amzn1",
-          "Version": "1.6",
-          "Filename": "Packages/systemtap-initscript-1.6-5.12.amzn1.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2012-54",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux - ALAS-2012-54: medium priority package update for systemtap",
+	"Issued": {
+		"Date": "2012-03-15 19:21"
+	},
+	"Updated": {
+		"Date": "2014-09-14 15:40"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-0875:\n\tAn invalid pointer read flaw was found in the way SystemTap handled malformed debugging information in DWARF format. When SystemTap unprivileged mode was enabled, an unprivileged user in the stapusr group could use this flaw to crash the system or, potentially, read arbitrary kernel memory. Additionally, a privileged user (root, or a member of the stapdev group) could trigger this flaw when tricked into instrumenting a specially-crafted ELF binary, even when unprivileged mode was not enabled.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0875",
+				"ID": "CVE-2012-0875",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2012:0376.html",
+				"ID": "RHSA-2012:0376",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux",
+			"Name": "Amazon Linux",
+			"Package": [
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemtap-debuginfo",
+					"Release": "5.12.amzn1",
+					"Version": "1.6",
+					"Filename": "Packages/systemtap-debuginfo-1.6-5.12.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemtap",
+					"Release": "5.12.amzn1",
+					"Version": "1.6",
+					"Filename": "Packages/systemtap-1.6-5.12.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemtap-server",
+					"Release": "5.12.amzn1",
+					"Version": "1.6",
+					"Filename": "Packages/systemtap-server-1.6-5.12.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemtap-sdt-devel",
+					"Release": "5.12.amzn1",
+					"Version": "1.6",
+					"Filename": "Packages/systemtap-sdt-devel-1.6-5.12.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemtap-testsuite",
+					"Release": "5.12.amzn1",
+					"Version": "1.6",
+					"Filename": "Packages/systemtap-testsuite-1.6-5.12.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemtap-initscript",
+					"Release": "5.12.amzn1",
+					"Version": "1.6",
+					"Filename": "Packages/systemtap-initscript-1.6-5.12.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemtap-runtime",
+					"Release": "5.12.amzn1",
+					"Version": "1.6",
+					"Filename": "Packages/systemtap-runtime-1.6-5.12.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemtap-sdt-devel",
+					"Release": "5.12.amzn1",
+					"Version": "1.6",
+					"Filename": "Packages/systemtap-sdt-devel-1.6-5.12.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemtap-testsuite",
+					"Release": "5.12.amzn1",
+					"Version": "1.6",
+					"Filename": "Packages/systemtap-testsuite-1.6-5.12.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemtap-runtime",
+					"Release": "5.12.amzn1",
+					"Version": "1.6",
+					"Filename": "Packages/systemtap-runtime-1.6-5.12.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemtap-debuginfo",
+					"Release": "5.12.amzn1",
+					"Version": "1.6",
+					"Filename": "Packages/systemtap-debuginfo-1.6-5.12.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemtap",
+					"Release": "5.12.amzn1",
+					"Version": "1.6",
+					"Filename": "Packages/systemtap-1.6-5.12.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemtap-server",
+					"Release": "5.12.amzn1",
+					"Version": "1.6",
+					"Filename": "Packages/systemtap-server-1.6-5.12.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemtap-initscript",
+					"Release": "5.12.amzn1",
+					"Version": "1.6",
+					"Filename": "Packages/systemtap-initscript-1.6-5.12.amzn1.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

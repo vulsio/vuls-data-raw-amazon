@@ -1,73 +1,73 @@
 {
-  "ID": "ALAS2-2018-1029",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2018-1029: important priority package update for curl",
-  "Issued": {
-    "Date": "2018-06-07 23:23"
-  },
-  "Updated": {
-    "Date": "2018-06-11 22:03"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-1000301:\n\tcurl version curl 7.20.0 to and including curl 7.59.0 contains a CWE-126: Buffer Over-read vulnerability in denial of service that can result in curl can be tricked into reading data beyond the end of a heap based buffer used to store downloaded RTSP content.. This vulnerability appears to have been fixed in curl &lt; 7.20.0 and curl &gt;= 7.60.0.\n1575536: \nCVE-2018-1000301 curl: Out-of-bounds heap read when missing RTSP headers allows information leak of denial of service\n\nCVE-2018-1000300:\n\tcurl version curl 7.54.1 to and including curl 7.59.0 contains a CWE-122: Heap-based Buffer Overflow vulnerability in denial of service and more that can result in curl might overflow a heap based memory buffer when closing down an FTP connection with very long server command replies.. This vulnerability appears to have been fixed in curl &lt; 7.54.1 and curl &gt;= 7.60.0.\n1575533: \nCVE-2018-1000300 curl: FTP shutdown response heap-based buffer overflow can potentially lead to RCE\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000300",
-        "ID": "CVE-2018-1000300",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000301",
-        "ID": "CVE-2018-1000301",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "curl",
-          "Release": "12.amzn2.0.1",
-          "Version": "7.55.1",
-          "Filename": "Packages/curl-7.55.1-12.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libcurl",
-          "Release": "12.amzn2.0.1",
-          "Version": "7.55.1",
-          "Filename": "Packages/libcurl-7.55.1-12.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libcurl-devel",
-          "Release": "12.amzn2.0.1",
-          "Version": "7.55.1",
-          "Filename": "Packages/libcurl-devel-7.55.1-12.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "curl-debuginfo",
-          "Release": "12.amzn2.0.1",
-          "Version": "7.55.1",
-          "Filename": "Packages/curl-debuginfo-7.55.1-12.amzn2.0.1.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2018-1029",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2018-1029: important priority package update for curl",
+	"Issued": {
+		"Date": "2018-06-07 23:23"
+	},
+	"Updated": {
+		"Date": "2018-06-11 22:03"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-1000301:\n\tcurl version curl 7.20.0 to and including curl 7.59.0 contains a CWE-126: Buffer Over-read vulnerability in denial of service that can result in curl can be tricked into reading data beyond the end of a heap based buffer used to store downloaded RTSP content.. This vulnerability appears to have been fixed in curl &lt; 7.20.0 and curl &gt;= 7.60.0.\n1575536: \nCVE-2018-1000301 curl: Out-of-bounds heap read when missing RTSP headers allows information leak of denial of service\n\nCVE-2018-1000300:\n\tcurl version curl 7.54.1 to and including curl 7.59.0 contains a CWE-122: Heap-based Buffer Overflow vulnerability in denial of service and more that can result in curl might overflow a heap based memory buffer when closing down an FTP connection with very long server command replies.. This vulnerability appears to have been fixed in curl &lt; 7.54.1 and curl &gt;= 7.60.0.\n1575533: \nCVE-2018-1000300 curl: FTP shutdown response heap-based buffer overflow can potentially lead to RCE\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000300",
+				"ID": "CVE-2018-1000300",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000301",
+				"ID": "CVE-2018-1000301",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "curl",
+					"Release": "12.amzn2.0.1",
+					"Version": "7.55.1",
+					"Filename": "Packages/curl-7.55.1-12.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libcurl",
+					"Release": "12.amzn2.0.1",
+					"Version": "7.55.1",
+					"Filename": "Packages/libcurl-7.55.1-12.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libcurl-devel",
+					"Release": "12.amzn2.0.1",
+					"Version": "7.55.1",
+					"Filename": "Packages/libcurl-devel-7.55.1-12.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "curl-debuginfo",
+					"Release": "12.amzn2.0.1",
+					"Version": "7.55.1",
+					"Filename": "Packages/curl-debuginfo-7.55.1-12.amzn2.0.1.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

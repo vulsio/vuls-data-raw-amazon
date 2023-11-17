@@ -1,201 +1,201 @@
 {
-  "ID": "ALAS-2013-269",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-269: medium priority package update for subversion",
-  "Issued": {
-    "Date": "2013-12-17 21:39"
-  },
-  "Updated": {
-    "Date": "2014-09-16 22:14"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-4558:\n\tThe get_parent_resource function in repos.c in mod_dav_svn Apache HTTPD server module in Subversion 1.7.11 through 1.7.13 and 1.8.1 through 1.8.4, when built with assertions enabled and SVNAutoversioning is enabled, allows remote attackers to cause a denial of service (assertion failure and Apache process abort) via a non-canonical URL in a request, as demonstrated using a trailing /.\n1033431: \nCVE-2013-4558 subversion: mod_dav_svn assertion when handling certain requests with autoversioning enabled\n\nCVE-2013-4505:\n\tThe is_this_legal function in mod_dontdothat for Apache Subversion 1.4.0 through 1.7.13 and 1.8.0 through 1.8.4 allows remote attackers to bypass intended access restrictions and possibly cause a denial of service (resource consumption) via a relative URL in a REPORT request.\n1033995: \nCVE-2013-4505 subversion: mod_dontdothat does not block requests from certain clients\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4505",
-        "ID": "CVE-2013-4505",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4558",
-        "ID": "CVE-2013-4558",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "subversion-devel",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/subversion-devel-1.7.14-1.36.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "subversion-perl",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/subversion-perl-1.7.14-1.36.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "subversion-ruby",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/subversion-ruby-1.7.14-1.36.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "subversion-debuginfo",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/subversion-debuginfo-1.7.14-1.36.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "subversion-javahl",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/subversion-javahl-1.7.14-1.36.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "subversion",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/subversion-1.7.14-1.36.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mod_dav_svn",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/mod_dav_svn-1.7.14-1.36.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "subversion-libs",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/subversion-libs-1.7.14-1.36.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "subversion-tools",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/subversion-tools-1.7.14-1.36.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "subversion-python",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/subversion-python-1.7.14-1.36.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "subversion-ruby",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/subversion-ruby-1.7.14-1.36.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "subversion",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/subversion-1.7.14-1.36.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "subversion-javahl",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/subversion-javahl-1.7.14-1.36.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "subversion-tools",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/subversion-tools-1.7.14-1.36.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "subversion-libs",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/subversion-libs-1.7.14-1.36.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "subversion-devel",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/subversion-devel-1.7.14-1.36.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mod_dav_svn",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/mod_dav_svn-1.7.14-1.36.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "subversion-perl",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/subversion-perl-1.7.14-1.36.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "subversion-python",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/subversion-python-1.7.14-1.36.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "subversion-debuginfo",
-          "Release": "1.36.amzn1",
-          "Version": "1.7.14",
-          "Filename": "Packages/subversion-debuginfo-1.7.14-1.36.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2013-269",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2012.09 - ALAS-2013-269: medium priority package update for subversion",
+	"Issued": {
+		"Date": "2013-12-17 21:39"
+	},
+	"Updated": {
+		"Date": "2014-09-16 22:14"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-4558:\n\tThe get_parent_resource function in repos.c in mod_dav_svn Apache HTTPD server module in Subversion 1.7.11 through 1.7.13 and 1.8.1 through 1.8.4, when built with assertions enabled and SVNAutoversioning is enabled, allows remote attackers to cause a denial of service (assertion failure and Apache process abort) via a non-canonical URL in a request, as demonstrated using a trailing /.\n1033431: \nCVE-2013-4558 subversion: mod_dav_svn assertion when handling certain requests with autoversioning enabled\n\nCVE-2013-4505:\n\tThe is_this_legal function in mod_dontdothat for Apache Subversion 1.4.0 through 1.7.13 and 1.8.0 through 1.8.4 allows remote attackers to bypass intended access restrictions and possibly cause a denial of service (resource consumption) via a relative URL in a REPORT request.\n1033995: \nCVE-2013-4505 subversion: mod_dontdothat does not block requests from certain clients\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4505",
+				"ID": "CVE-2013-4505",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4558",
+				"ID": "CVE-2013-4558",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "subversion-devel",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/subversion-devel-1.7.14-1.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "subversion-perl",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/subversion-perl-1.7.14-1.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "subversion-ruby",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/subversion-ruby-1.7.14-1.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "subversion-debuginfo",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/subversion-debuginfo-1.7.14-1.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "subversion-javahl",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/subversion-javahl-1.7.14-1.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "subversion",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/subversion-1.7.14-1.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mod_dav_svn",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/mod_dav_svn-1.7.14-1.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "subversion-libs",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/subversion-libs-1.7.14-1.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "subversion-tools",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/subversion-tools-1.7.14-1.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "subversion-python",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/subversion-python-1.7.14-1.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "subversion-ruby",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/subversion-ruby-1.7.14-1.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "subversion",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/subversion-1.7.14-1.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "subversion-javahl",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/subversion-javahl-1.7.14-1.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "subversion-tools",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/subversion-tools-1.7.14-1.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "subversion-libs",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/subversion-libs-1.7.14-1.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "subversion-devel",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/subversion-devel-1.7.14-1.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mod_dav_svn",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/mod_dav_svn-1.7.14-1.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "subversion-perl",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/subversion-perl-1.7.14-1.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "subversion-python",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/subversion-python-1.7.14-1.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "subversion-debuginfo",
+					"Release": "1.36.amzn1",
+					"Version": "1.7.14",
+					"Filename": "Packages/subversion-debuginfo-1.7.14-1.36.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

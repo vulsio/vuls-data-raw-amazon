@@ -1,43 +1,43 @@
 {
-  "ID": "ALAS2-2019-1159",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1159: medium priority package update for php-pear",
-  "Issued": {
-    "Date": "2019-02-13 18:35"
-  },
-  "Updated": {
-    "Date": "2019-02-14 04:03"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-1000888:\n\tPEAR Archive_Tar version 1.4.3 and earlier contains a CWE-502, CWE-915 vulnerability in the Archive_Tar class. There are several file operations with `$v_header[&#039;filename&#039;]` as parameter (such as file_exists, is_file, is_dir, etc). When extract is called without a specific prefix path, we can trigger unserialization by crafting a tar file with `phar://[path_to_malicious_phar_file]` as path. Object injection can be used to trigger destruct in the loaded PHP classes, e.g. the Archive_Tar class itself. With Archive_Tar object injection, arbitrary file deletion can occur because `@unlink($this-&gt;_temp_tarname)` is called. If another class with useful gadget is loaded, it may possible to cause remote code execution that can result in files being deleted or possibly modified. This vulnerability appears to have been fixed in 1.4.4.\n1669615: \nCVE-2018-1000888 php-pear: Unsafe deserialization of data in Archive_Tar class\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000888",
-        "ID": "CVE-2018-1000888",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "1",
-          "Name": "php-pear",
-          "Release": "3.amzn2.0.1",
-          "Version": "1.10.7",
-          "Filename": "Packages/php-pear-1.10.7-3.amzn2.0.1.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2019-1159",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1159: medium priority package update for php-pear",
+	"Issued": {
+		"Date": "2019-02-13 18:35"
+	},
+	"Updated": {
+		"Date": "2019-02-14 04:03"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-1000888:\n\tPEAR Archive_Tar version 1.4.3 and earlier contains a CWE-502, CWE-915 vulnerability in the Archive_Tar class. There are several file operations with `$v_header[&#039;filename&#039;]` as parameter (such as file_exists, is_file, is_dir, etc). When extract is called without a specific prefix path, we can trigger unserialization by crafting a tar file with `phar://[path_to_malicious_phar_file]` as path. Object injection can be used to trigger destruct in the loaded PHP classes, e.g. the Archive_Tar class itself. With Archive_Tar object injection, arbitrary file deletion can occur because `@unlink($this-&gt;_temp_tarname)` is called. If another class with useful gadget is loaded, it may possible to cause remote code execution that can result in files being deleted or possibly modified. This vulnerability appears to have been fixed in 1.4.4.\n1669615: \nCVE-2018-1000888 php-pear: Unsafe deserialization of data in Archive_Tar class\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000888",
+				"ID": "CVE-2018-1000888",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "1",
+					"Name": "php-pear",
+					"Release": "3.amzn2.0.1",
+					"Version": "1.10.7",
+					"Filename": "Packages/php-pear-1.10.7-3.amzn2.0.1.noarch.rpm"
+				}
+			]
+		}
+	}
 }

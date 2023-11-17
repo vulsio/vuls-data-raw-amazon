@@ -1,137 +1,137 @@
 {
-  "ID": "ALAS2-2021-1581",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1581: important priority package update for libuv",
-  "Issued": {
-    "Date": "2021-01-05 23:34"
-  },
-  "Updated": {
-    "Date": "2021-01-06 20:38"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-8251:\n\tA flaw was found in Node.js 14.x, in versions before 14.11, where it is vulnerable to a denial of service caused by delayed requests. When used as an edge server, this flaw allows an attacker to initiate a large number of HTTP requests, causing resource exhaustion and leaving the service unable to accept new connections. The highest threat from this vulnerability is to system availability.\n1879314: CVE-2020-8251 nodejs: Denial of Service by resource exhaustion CWE-400 due to unfinished HTTP/1.1 requests\n\nCVE-2020-8201:\n\tNode.js < 12.18.4 and < 14.11 can be exploited to perform HTTP desync attacks and deliver malicious payloads to unsuspecting users. The payloads can be crafted by an attacker to hijack user sessions, poison cookies, perform clickjacking, and a multitude of other attacks depending on the architecture of the underlying system. The attack was possible due to a bug in processing of carrier-return symbols in the HTTP header names.\n1879311: CVE-2020-8201 nodejs: HTTP request smuggling due to CR-to-Hyphen conversion\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8201",
-        "ID": "CVE-2020-8201",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8251",
-        "ID": "CVE-2020-8251",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "libuv",
-          "Release": "1.amzn2",
-          "Version": "1.39.0",
-          "Filename": "Packages/libuv-1.39.0-1.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "libuv-devel",
-          "Release": "1.amzn2",
-          "Version": "1.39.0",
-          "Filename": "Packages/libuv-devel-1.39.0-1.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "libuv-static",
-          "Release": "1.amzn2",
-          "Version": "1.39.0",
-          "Filename": "Packages/libuv-static-1.39.0-1.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "libuv-debuginfo",
-          "Release": "1.amzn2",
-          "Version": "1.39.0",
-          "Filename": "Packages/libuv-debuginfo-1.39.0-1.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "libuv",
-          "Release": "1.amzn2",
-          "Version": "1.39.0",
-          "Filename": "Packages/libuv-1.39.0-1.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "libuv-devel",
-          "Release": "1.amzn2",
-          "Version": "1.39.0",
-          "Filename": "Packages/libuv-devel-1.39.0-1.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "libuv-static",
-          "Release": "1.amzn2",
-          "Version": "1.39.0",
-          "Filename": "Packages/libuv-static-1.39.0-1.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "libuv-debuginfo",
-          "Release": "1.amzn2",
-          "Version": "1.39.0",
-          "Filename": "Packages/libuv-debuginfo-1.39.0-1.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "libuv",
-          "Release": "1.amzn2",
-          "Version": "1.39.0",
-          "Filename": "Packages/libuv-1.39.0-1.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "libuv-devel",
-          "Release": "1.amzn2",
-          "Version": "1.39.0",
-          "Filename": "Packages/libuv-devel-1.39.0-1.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "libuv-static",
-          "Release": "1.amzn2",
-          "Version": "1.39.0",
-          "Filename": "Packages/libuv-static-1.39.0-1.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "libuv-debuginfo",
-          "Release": "1.amzn2",
-          "Version": "1.39.0",
-          "Filename": "Packages/libuv-debuginfo-1.39.0-1.amzn2.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2021-1581",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1581: important priority package update for libuv",
+	"Issued": {
+		"Date": "2021-01-05 23:34"
+	},
+	"Updated": {
+		"Date": "2021-01-06 20:38"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-8251:\n\tA flaw was found in Node.js 14.x, in versions before 14.11, where it is vulnerable to a denial of service caused by delayed requests. When used as an edge server, this flaw allows an attacker to initiate a large number of HTTP requests, causing resource exhaustion and leaving the service unable to accept new connections. The highest threat from this vulnerability is to system availability.\n1879314: CVE-2020-8251 nodejs: Denial of Service by resource exhaustion CWE-400 due to unfinished HTTP/1.1 requests\n\nCVE-2020-8201:\n\tNode.js < 12.18.4 and < 14.11 can be exploited to perform HTTP desync attacks and deliver malicious payloads to unsuspecting users. The payloads can be crafted by an attacker to hijack user sessions, poison cookies, perform clickjacking, and a multitude of other attacks depending on the architecture of the underlying system. The attack was possible due to a bug in processing of carrier-return symbols in the HTTP header names.\n1879311: CVE-2020-8201 nodejs: HTTP request smuggling due to CR-to-Hyphen conversion\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8201",
+				"ID": "CVE-2020-8201",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8251",
+				"ID": "CVE-2020-8251",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "libuv",
+					"Release": "1.amzn2",
+					"Version": "1.39.0",
+					"Filename": "Packages/libuv-1.39.0-1.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "libuv-devel",
+					"Release": "1.amzn2",
+					"Version": "1.39.0",
+					"Filename": "Packages/libuv-devel-1.39.0-1.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "libuv-static",
+					"Release": "1.amzn2",
+					"Version": "1.39.0",
+					"Filename": "Packages/libuv-static-1.39.0-1.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "libuv-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "1.39.0",
+					"Filename": "Packages/libuv-debuginfo-1.39.0-1.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "libuv",
+					"Release": "1.amzn2",
+					"Version": "1.39.0",
+					"Filename": "Packages/libuv-1.39.0-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "libuv-devel",
+					"Release": "1.amzn2",
+					"Version": "1.39.0",
+					"Filename": "Packages/libuv-devel-1.39.0-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "libuv-static",
+					"Release": "1.amzn2",
+					"Version": "1.39.0",
+					"Filename": "Packages/libuv-static-1.39.0-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "libuv-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "1.39.0",
+					"Filename": "Packages/libuv-debuginfo-1.39.0-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "libuv",
+					"Release": "1.amzn2",
+					"Version": "1.39.0",
+					"Filename": "Packages/libuv-1.39.0-1.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "libuv-devel",
+					"Release": "1.amzn2",
+					"Version": "1.39.0",
+					"Filename": "Packages/libuv-devel-1.39.0-1.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "libuv-static",
+					"Release": "1.amzn2",
+					"Version": "1.39.0",
+					"Filename": "Packages/libuv-static-1.39.0-1.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "libuv-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "1.39.0",
+					"Filename": "Packages/libuv-debuginfo-1.39.0-1.amzn2.i686.rpm"
+				}
+			]
+		}
+	}
 }

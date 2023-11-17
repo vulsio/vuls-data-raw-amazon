@@ -1,233 +1,233 @@
 {
-  "ID": "ALAS2-2021-1670",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1670: medium priority package update for python3",
-  "Issued": {
-    "Date": "2021-06-16 20:37"
-  },
-  "Updated": {
-    "Date": "2021-06-22 22:42"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-27619:\n\tIn Python3's Lib/test/multibytecodec_support.py CJK codec tests call eval() on content retrieved via HTTP.\n1889886: CVE-2020-27619 python: Unsafe use of eval() on data retrieved via HTTP in the test suite\n\nCVE-2020-26116:\n\tA flaw was found in Python. The built-in modules httplib and http.client (included in Python 2 and Python 3, respectively) do not properly validate CRLF sequences in the HTTP request method, potentially allowing manipulation to the request by injecting additional HTTP headers. The highest threat from this vulnerability is to confidentiality and integrity.\n1883014: CVE-2020-26116 python: CRLF injection via HTTP request method in httplib/http.client\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26116",
-        "ID": "CVE-2020-26116",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27619",
-        "ID": "CVE-2020-27619",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-3.7.10-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3-libs",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-libs-3.7.10-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3-devel",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-devel-3.7.10-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3-tools",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-tools-3.7.10-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3-tkinter",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-tkinter-3.7.10-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3-test",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-test-3.7.10-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3-debug",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-debug-3.7.10-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python3-debuginfo",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-debuginfo-3.7.10-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-3.7.10-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3-libs",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-libs-3.7.10-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3-devel",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-devel-3.7.10-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3-tools",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-tools-3.7.10-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3-tkinter",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-tkinter-3.7.10-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3-test",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-test-3.7.10-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3-debug",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-debug-3.7.10-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python3-debuginfo",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-debuginfo-3.7.10-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python3",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-3.7.10-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python3-libs",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-libs-3.7.10-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python3-devel",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-devel-3.7.10-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python3-tools",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-tools-3.7.10-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python3-tkinter",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-tkinter-3.7.10-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python3-test",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-test-3.7.10-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python3-debug",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-debug-3.7.10-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python3-debuginfo",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.7.10",
-          "Filename": "Packages/python3-debuginfo-3.7.10-1.amzn2.0.1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2021-1670",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1670: medium priority package update for python3",
+	"Issued": {
+		"Date": "2021-06-16 20:37"
+	},
+	"Updated": {
+		"Date": "2021-06-22 22:42"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-27619:\n\tIn Python3's Lib/test/multibytecodec_support.py CJK codec tests call eval() on content retrieved via HTTP.\n1889886: CVE-2020-27619 python: Unsafe use of eval() on data retrieved via HTTP in the test suite\n\nCVE-2020-26116:\n\tA flaw was found in Python. The built-in modules httplib and http.client (included in Python 2 and Python 3, respectively) do not properly validate CRLF sequences in the HTTP request method, potentially allowing manipulation to the request by injecting additional HTTP headers. The highest threat from this vulnerability is to confidentiality and integrity.\n1883014: CVE-2020-26116 python: CRLF injection via HTTP request method in httplib/http.client\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-26116",
+				"ID": "CVE-2020-26116",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27619",
+				"ID": "CVE-2020-27619",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-3.7.10-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-libs",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-libs-3.7.10-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-devel-3.7.10-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-tools",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-tools-3.7.10-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-tkinter",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-tkinter-3.7.10-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-test",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-test-3.7.10-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-debug",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-debug-3.7.10-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-debuginfo-3.7.10-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-3.7.10-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-libs",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-libs-3.7.10-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-devel-3.7.10-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-tools",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-tools-3.7.10-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-tkinter",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-tkinter-3.7.10-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-test",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-test-3.7.10-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-debug",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-debug-3.7.10-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-debuginfo-3.7.10-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-3.7.10-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3-libs",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-libs-3.7.10-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-devel-3.7.10-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3-tools",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-tools-3.7.10-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3-tkinter",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-tkinter-3.7.10-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3-test",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-test-3.7.10-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3-debug",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-debug-3.7.10-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.7.10",
+					"Filename": "Packages/python3-debuginfo-3.7.10-1.amzn2.0.1.i686.rpm"
+				}
+			]
+		}
+	}
 }

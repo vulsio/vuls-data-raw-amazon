@@ -1,49 +1,49 @@
 {
-  "ID": "ALAS2-2021-1584",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1584: medium priority package update for php-pear",
-  "Issued": {
-    "Date": "2021-01-05 23:34"
-  },
-  "Updated": {
-    "Date": "2021-01-06 20:55"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-28949:\n\tArchive_Tar through 1.4.10 has :// filename sanitization only to address phar attacks, and thus any other stream-wrapper attack (such as file:// to overwrite files) can still succeed.\n1910323: CVE-2020-28949 Archive_Tar: improper filename sanitization leads to file overwrites\n\nCVE-2020-28948:\n\tArchive_Tar through 1.4.10 allows an unserialization attack because phar: is blocked but PHAR: is not blocked.\n1904001: CVE-2020-28948 Archive_Tar: allows an unserialization attack because phar: is blocked but PHAR: is not blocked\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28948",
-        "ID": "CVE-2020-28948",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28949",
-        "ID": "CVE-2020-28949",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "1",
-          "Name": "php-pear",
-          "Release": "4.amzn2.0.1",
-          "Version": "1.10.12",
-          "Filename": "Packages/php-pear-1.10.12-4.amzn2.0.1.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2021-1584",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1584: medium priority package update for php-pear",
+	"Issued": {
+		"Date": "2021-01-05 23:34"
+	},
+	"Updated": {
+		"Date": "2021-01-06 20:55"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-28949:\n\tArchive_Tar through 1.4.10 has :// filename sanitization only to address phar attacks, and thus any other stream-wrapper attack (such as file:// to overwrite files) can still succeed.\n1910323: CVE-2020-28949 Archive_Tar: improper filename sanitization leads to file overwrites\n\nCVE-2020-28948:\n\tArchive_Tar through 1.4.10 allows an unserialization attack because phar: is blocked but PHAR: is not blocked.\n1904001: CVE-2020-28948 Archive_Tar: allows an unserialization attack because phar: is blocked but PHAR: is not blocked\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28948",
+				"ID": "CVE-2020-28948",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28949",
+				"ID": "CVE-2020-28949",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "1",
+					"Name": "php-pear",
+					"Release": "4.amzn2.0.1",
+					"Version": "1.10.12",
+					"Filename": "Packages/php-pear-1.10.12-4.amzn2.0.1.noarch.rpm"
+				}
+			]
+		}
+	}
 }

@@ -1,59 +1,59 @@
 {
-  "ID": "ALAS-2022-1568",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2022-1568: medium priority package update for containerd",
-  "Issued": {
-    "Date": "2022-03-01 18:04"
-  },
-  "Updated": {
-    "Date": "2022-03-04 21:16"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2022-23648:\n\tA bug was found in containerd where containers launched through containerd's CRI implementation with a specially-crafted image configuration could gain access to read-only copies of arbitrary files and directories on the host. This may bypass any policy-based enforcement on container setup (including a Kubernetes Pod Security Policy) and expose potentially sensitive information. Kubernetes and crictl can both be configured to use containerd's CRI implementation.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23648",
-        "ID": "CVE-2022-23648",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "containerd-debuginfo",
-          "Release": "8.12.amzn1",
-          "Version": "1.4.6",
-          "Filename": "Packages/containerd-debuginfo-1.4.6-8.12.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "containerd",
-          "Release": "8.12.amzn1",
-          "Version": "1.4.6",
-          "Filename": "Packages/containerd-1.4.6-8.12.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "containerd-stress",
-          "Release": "8.12.amzn1",
-          "Version": "1.4.6",
-          "Filename": "Packages/containerd-stress-1.4.6-8.12.amzn1.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2022-1568",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2022-1568: medium priority package update for containerd",
+	"Issued": {
+		"Date": "2022-03-01 18:04"
+	},
+	"Updated": {
+		"Date": "2022-03-04 21:16"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2022-23648:\n\tA bug was found in containerd where containers launched through containerd's CRI implementation with a specially-crafted image configuration could gain access to read-only copies of arbitrary files and directories on the host. This may bypass any policy-based enforcement on container setup (including a Kubernetes Pod Security Policy) and expose potentially sensitive information. Kubernetes and crictl can both be configured to use containerd's CRI implementation.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23648",
+				"ID": "CVE-2022-23648",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "containerd-debuginfo",
+					"Release": "8.12.amzn1",
+					"Version": "1.4.6",
+					"Filename": "Packages/containerd-debuginfo-1.4.6-8.12.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "containerd",
+					"Release": "8.12.amzn1",
+					"Version": "1.4.6",
+					"Filename": "Packages/containerd-1.4.6-8.12.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "containerd-stress",
+					"Release": "8.12.amzn1",
+					"Version": "1.4.6",
+					"Filename": "Packages/containerd-stress-1.4.6-8.12.amzn1.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

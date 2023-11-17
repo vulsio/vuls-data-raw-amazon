@@ -1,289 +1,289 @@
 {
-  "ID": "ALAS2KERNEL-5.10-2022-010",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 - Kernel-5.10 2.0 - ALAS2KERNEL-5.10-2022-010: important priority package update for kernel",
-  "Issued": {
-    "Date": "2022-02-05 00:20"
-  },
-  "Updated": {
-    "Date": "2022-02-11 21:47"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2022-0492:\n\tThe cgroup release_agent is called with call_usermodehelper. The function call_usermodehelper starts the release_agent with a full set of capabilities. Therefore require capabilities when setting the release_agent.\n\nCVE-2022-0330:\n\tA random memory access flaw was found in the Linux kernel's GPU i915 kernel driver functionality in the way a user may run malicious code on the GPU. This flaw allows a local user to crash the system or escalate their privileges on the system.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0330",
-        "ID": "CVE-2022-0330",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0492",
-        "ID": "CVE-2022-0492",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2---kernel-5.10",
-      "Name": "Amazon Linux 2 - Kernel-5.10",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/kernel-5.10.96-90.460.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/kernel-headers-5.10.96-90.460.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-x86_64",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/kernel-debuginfo-common-x86_64-5.10.96-90.460.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/perf-5.10.96-90.460.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/perf-debuginfo-5.10.96-90.460.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python-perf",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/python-perf-5.10.96-90.460.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python-perf-debuginfo",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/python-perf-debuginfo-5.10.96-90.460.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/kernel-tools-5.10.96-90.460.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/kernel-tools-devel-5.10.96-90.460.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/kernel-tools-debuginfo-5.10.96-90.460.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "bpftool",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/bpftool-5.10.96-90.460.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "bpftool-debuginfo",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/bpftool-debuginfo-5.10.96-90.460.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/kernel-devel-5.10.96-90.460.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/kernel-debuginfo-5.10.96-90.460.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-livepatch-5.10.96-90.460",
-          "Release": "0.amzn2",
-          "Version": "1.0",
-          "Filename": "Packages/kernel-livepatch-5.10.96-90.460-1.0-0.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/kernel-headers-5.10.96-90.460.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/kernel-5.10.96-90.460.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/kernel-headers-5.10.96-90.460.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-aarch64",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/kernel-debuginfo-common-aarch64-5.10.96-90.460.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/perf-5.10.96-90.460.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/perf-debuginfo-5.10.96-90.460.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python-perf",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/python-perf-5.10.96-90.460.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python-perf-debuginfo",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/python-perf-debuginfo-5.10.96-90.460.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/kernel-tools-5.10.96-90.460.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/kernel-tools-devel-5.10.96-90.460.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/kernel-tools-debuginfo-5.10.96-90.460.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "bpftool",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/bpftool-5.10.96-90.460.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "bpftool-debuginfo",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/bpftool-debuginfo-5.10.96-90.460.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/kernel-devel-5.10.96-90.460.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "90.460.amzn2",
-          "Version": "5.10.96",
-          "Filename": "Packages/kernel-debuginfo-5.10.96-90.460.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-livepatch-5.10.96-90.460",
-          "Release": "0.amzn2",
-          "Version": "1.0",
-          "Filename": "Packages/kernel-livepatch-5.10.96-90.460-1.0-0.amzn2.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2KERNEL-5.10-2022-010",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Kernel-5.10 2.0 - ALAS2KERNEL-5.10-2022-010: important priority package update for kernel",
+	"Issued": {
+		"Date": "2022-02-05 00:20"
+	},
+	"Updated": {
+		"Date": "2022-02-11 21:47"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2022-0492:\n\tThe cgroup release_agent is called with call_usermodehelper. The function call_usermodehelper starts the release_agent with a full set of capabilities. Therefore require capabilities when setting the release_agent.\n\nCVE-2022-0330:\n\tA random memory access flaw was found in the Linux kernel's GPU i915 kernel driver functionality in the way a user may run malicious code on the GPU. This flaw allows a local user to crash the system or escalate their privileges on the system.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0330",
+				"ID": "CVE-2022-0330",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0492",
+				"ID": "CVE-2022-0492",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---kernel-5.10",
+			"Name": "Amazon Linux 2 - Kernel-5.10",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/kernel-5.10.96-90.460.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/kernel-headers-5.10.96-90.460.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-x86_64",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/kernel-debuginfo-common-x86_64-5.10.96-90.460.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/perf-5.10.96-90.460.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/perf-debuginfo-5.10.96-90.460.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-perf",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/python-perf-5.10.96-90.460.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-perf-debuginfo",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/python-perf-debuginfo-5.10.96-90.460.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/kernel-tools-5.10.96-90.460.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/kernel-tools-devel-5.10.96-90.460.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/kernel-tools-debuginfo-5.10.96-90.460.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "bpftool",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/bpftool-5.10.96-90.460.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "bpftool-debuginfo",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/bpftool-debuginfo-5.10.96-90.460.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/kernel-devel-5.10.96-90.460.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/kernel-debuginfo-5.10.96-90.460.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-livepatch-5.10.96-90.460",
+					"Release": "0.amzn2",
+					"Version": "1.0",
+					"Filename": "Packages/kernel-livepatch-5.10.96-90.460-1.0-0.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/kernel-headers-5.10.96-90.460.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/kernel-5.10.96-90.460.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/kernel-headers-5.10.96-90.460.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-aarch64",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/kernel-debuginfo-common-aarch64-5.10.96-90.460.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/perf-5.10.96-90.460.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/perf-debuginfo-5.10.96-90.460.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-perf",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/python-perf-5.10.96-90.460.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-perf-debuginfo",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/python-perf-debuginfo-5.10.96-90.460.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/kernel-tools-5.10.96-90.460.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/kernel-tools-devel-5.10.96-90.460.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/kernel-tools-debuginfo-5.10.96-90.460.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "bpftool",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/bpftool-5.10.96-90.460.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "bpftool-debuginfo",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/bpftool-debuginfo-5.10.96-90.460.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/kernel-devel-5.10.96-90.460.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "90.460.amzn2",
+					"Version": "5.10.96",
+					"Filename": "Packages/kernel-debuginfo-5.10.96-90.460.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-livepatch-5.10.96-90.460",
+					"Release": "0.amzn2",
+					"Version": "1.0",
+					"Filename": "Packages/kernel-livepatch-5.10.96-90.460-1.0-0.amzn2.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

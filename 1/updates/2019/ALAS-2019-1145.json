@@ -1,201 +1,201 @@
 {
-  "ID": "ALAS-2019-1145",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2019-1145: medium priority package update for kernel",
-  "Issued": {
-    "Date": "2019-01-09 22:47"
-  },
-  "Updated": {
-    "Date": "2019-01-12 03:25"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-20169:\n\tAn issue was discovered in the Linux kernel before 4.19.9. The USB subsystem mishandles size checks during the reading of an extra descriptor, related to __usb_get_extra_descriptor in drivers/usb/core/usb.c.\n1660385: \nCVE-2018-20169 kernel: Mishandled size checks during the reading of an extra descriptor\n\nCVE-2018-14625:\n\tA flaw was found where an attacker may be able to have an uncontrolled read to kernel-memory from within a vm guest.  A race condition between connect() and close() function may allow an attacker using the AF_VSOCK protocol to gather a 4 byte information leak or possibly impersonate AF_VSOCK messages destined to other clients or leak kernel memory.\n1619846: \nCVE-2018-14625 kernel: use-after-free Read in vhost_transport_send_pkt\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14625",
-        "ID": "CVE-2018-14625",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20169",
-        "ID": "CVE-2018-20169",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/kernel-devel-4.14.88-72.76.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/kernel-tools-4.14.88-72.76.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/perf-debuginfo-4.14.88-72.76.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/kernel-headers-4.14.88-72.76.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-x86_64",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.14.88-72.76.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/kernel-tools-devel-4.14.88-72.76.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/kernel-tools-debuginfo-4.14.88-72.76.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/kernel-4.14.88-72.76.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/perf-4.14.88-72.76.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/kernel-debuginfo-4.14.88-72.76.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-i686",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/kernel-debuginfo-common-i686-4.14.88-72.76.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/kernel-tools-devel-4.14.88-72.76.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/kernel-headers-4.14.88-72.76.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/kernel-tools-debuginfo-4.14.88-72.76.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/kernel-devel-4.14.88-72.76.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/kernel-tools-4.14.88-72.76.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/kernel-debuginfo-4.14.88-72.76.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/perf-4.14.88-72.76.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/kernel-4.14.88-72.76.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "72.76.amzn1",
-          "Version": "4.14.88",
-          "Filename": "Packages/perf-debuginfo-4.14.88-72.76.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2019-1145",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2019-1145: medium priority package update for kernel",
+	"Issued": {
+		"Date": "2019-01-09 22:47"
+	},
+	"Updated": {
+		"Date": "2019-01-12 03:25"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-20169:\n\tAn issue was discovered in the Linux kernel before 4.19.9. The USB subsystem mishandles size checks during the reading of an extra descriptor, related to __usb_get_extra_descriptor in drivers/usb/core/usb.c.\n1660385: \nCVE-2018-20169 kernel: Mishandled size checks during the reading of an extra descriptor\n\nCVE-2018-14625:\n\tA flaw was found where an attacker may be able to have an uncontrolled read to kernel-memory from within a vm guest.  A race condition between connect() and close() function may allow an attacker using the AF_VSOCK protocol to gather a 4 byte information leak or possibly impersonate AF_VSOCK messages destined to other clients or leak kernel memory.\n1619846: \nCVE-2018-14625 kernel: use-after-free Read in vhost_transport_send_pkt\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14625",
+				"ID": "CVE-2018-14625",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20169",
+				"ID": "CVE-2018-20169",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/kernel-devel-4.14.88-72.76.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/kernel-tools-4.14.88-72.76.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/perf-debuginfo-4.14.88-72.76.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/kernel-headers-4.14.88-72.76.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-x86_64",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/kernel-debuginfo-common-x86_64-4.14.88-72.76.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/kernel-tools-devel-4.14.88-72.76.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/kernel-tools-debuginfo-4.14.88-72.76.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/kernel-4.14.88-72.76.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/perf-4.14.88-72.76.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/kernel-debuginfo-4.14.88-72.76.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-i686",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/kernel-debuginfo-common-i686-4.14.88-72.76.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/kernel-tools-devel-4.14.88-72.76.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/kernel-headers-4.14.88-72.76.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/kernel-tools-debuginfo-4.14.88-72.76.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/kernel-devel-4.14.88-72.76.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/kernel-tools-4.14.88-72.76.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/kernel-debuginfo-4.14.88-72.76.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/perf-4.14.88-72.76.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/kernel-4.14.88-72.76.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "72.76.amzn1",
+					"Version": "4.14.88",
+					"Filename": "Packages/perf-debuginfo-4.14.88-72.76.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

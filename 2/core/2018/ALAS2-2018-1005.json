@@ -1,71 +1,71 @@
 {
-  "ID": "ALAS2-2018-1005",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2018-1005: important priority package update for pcs",
-  "Issued": {
-    "Date": "2018-04-26 17:41"
-  },
-  "Updated": {
-    "Date": "2018-04-26 22:41"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-1086:\n\tIt was found that the REST interface of the pcsd service did not properly remove the pcs debug argument from the /run_pcs query, possibly disclosing sensitive information. A remote attacker with a valid token could use this flaw to elevate their privilege.\n1557366: \nCVE-2018-1086 pcs: Debug parameter removal bypass, allowing information disclosure\n\nCVE-2018-1079:\n\tIt was found that the REST interface of the pcsd service did not properly sanitize the file name from the /remote/put_file query. If the /etc/booth directory exists, an authenticated attacker with write permissions could create or overwrite arbitrary files with arbitrary data outside of the /etc/booth directory, in the context of the pcsd process.\n1550243: \nCVE-2018-1079 pcs: Privilege escalation via authorized user malicious REST call\n\nCVE-2018-1000119:\n\tSinatra rack-protection versions 1.5.4 and 2.0.0.rc3 and earlier contains a timing attack vulnerability in the CSRF token checking that can result in signatures can be exposed. This attack appear to be exploitable via network connectivity to the ruby application. This vulnerability appears to have been fixed in 1.5.5 and 2.0.0.\n1534027: \nCVE-2018-1000119 rack-protection: Timing attack in authenticity_token.rb\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000119",
-        "ID": "CVE-2018-1000119",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1079",
-        "ID": "CVE-2018-1079",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1086",
-        "ID": "CVE-2018-1086",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "pcs",
-          "Release": "5.amzn2.1.1",
-          "Version": "0.9.162",
-          "Filename": "Packages/pcs-0.9.162-5.amzn2.1.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "pcs-snmp",
-          "Release": "5.amzn2.1.1",
-          "Version": "0.9.162",
-          "Filename": "Packages/pcs-snmp-0.9.162-5.amzn2.1.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "pcs-debuginfo",
-          "Release": "5.amzn2.1.1",
-          "Version": "0.9.162",
-          "Filename": "Packages/pcs-debuginfo-0.9.162-5.amzn2.1.1.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2018-1005",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2018-1005: important priority package update for pcs",
+	"Issued": {
+		"Date": "2018-04-26 17:41"
+	},
+	"Updated": {
+		"Date": "2018-04-26 22:41"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-1086:\n\tIt was found that the REST interface of the pcsd service did not properly remove the pcs debug argument from the /run_pcs query, possibly disclosing sensitive information. A remote attacker with a valid token could use this flaw to elevate their privilege.\n1557366: \nCVE-2018-1086 pcs: Debug parameter removal bypass, allowing information disclosure\n\nCVE-2018-1079:\n\tIt was found that the REST interface of the pcsd service did not properly sanitize the file name from the /remote/put_file query. If the /etc/booth directory exists, an authenticated attacker with write permissions could create or overwrite arbitrary files with arbitrary data outside of the /etc/booth directory, in the context of the pcsd process.\n1550243: \nCVE-2018-1079 pcs: Privilege escalation via authorized user malicious REST call\n\nCVE-2018-1000119:\n\tSinatra rack-protection versions 1.5.4 and 2.0.0.rc3 and earlier contains a timing attack vulnerability in the CSRF token checking that can result in signatures can be exposed. This attack appear to be exploitable via network connectivity to the ruby application. This vulnerability appears to have been fixed in 1.5.5 and 2.0.0.\n1534027: \nCVE-2018-1000119 rack-protection: Timing attack in authenticity_token.rb\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000119",
+				"ID": "CVE-2018-1000119",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1079",
+				"ID": "CVE-2018-1079",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1086",
+				"ID": "CVE-2018-1086",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "pcs",
+					"Release": "5.amzn2.1.1",
+					"Version": "0.9.162",
+					"Filename": "Packages/pcs-0.9.162-5.amzn2.1.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "pcs-snmp",
+					"Release": "5.amzn2.1.1",
+					"Version": "0.9.162",
+					"Filename": "Packages/pcs-snmp-0.9.162-5.amzn2.1.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "pcs-debuginfo",
+					"Release": "5.amzn2.1.1",
+					"Version": "0.9.162",
+					"Filename": "Packages/pcs-debuginfo-0.9.162-5.amzn2.1.1.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

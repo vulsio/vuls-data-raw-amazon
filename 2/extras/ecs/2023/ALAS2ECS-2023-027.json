@@ -1,83 +1,83 @@
 {
-  "ID": "ALAS2ECS-2023-027",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 - Ecs 2.0 - ALAS2ECS-2023-027: medium priority package update for containerd",
-  "Issued": {
-    "Date": "2023-11-09 20:27"
-  },
-  "Updated": {
-    "Date": "2023-11-09 20:27"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 - Ecs that fix the following vulnerabilities:\nCVE-2021-41103:\n\tcontainerd is an open source container runtime with an emphasis on simplicity, robustness and portability. A bug was found in containerd where container root directories and some plugins had insufficiently restricted permissions, allowing otherwise unprivileged Linux users to traverse directory contents and execute programs. When containers included executable programs with extended permission bits (such as setuid), unprivileged Linux users could discover and execute those programs. When the UID of an unprivileged Linux user on the host collided with the file owner or group inside a container, the unprivileged Linux user on the host could discover, read, and modify those files. This vulnerability has been fixed in containerd 1.4.11 and containerd 1.5.7. Users should update to these version when they are released and may restart containers or update directory permissions to mitigate the vulnerability. Users unable to update should limit access to the host to trusted users. Update directory permission on container bundles directories.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41103",
-        "ID": "CVE-2021-41103",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2---ecs",
-      "Name": "Amazon Linux 2 - Ecs",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "containerd",
-          "Release": "3.amzn2",
-          "Version": "1.4.6",
-          "Filename": "Packages/containerd-1.4.6-3.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "containerd-stress",
-          "Release": "3.amzn2",
-          "Version": "1.4.6",
-          "Filename": "Packages/containerd-stress-1.4.6-3.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "containerd-debuginfo",
-          "Release": "3.amzn2",
-          "Version": "1.4.6",
-          "Filename": "Packages/containerd-debuginfo-1.4.6-3.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "containerd",
-          "Release": "3.amzn2",
-          "Version": "1.4.6",
-          "Filename": "Packages/containerd-1.4.6-3.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "containerd-stress",
-          "Release": "3.amzn2",
-          "Version": "1.4.6",
-          "Filename": "Packages/containerd-stress-1.4.6-3.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "containerd-debuginfo",
-          "Release": "3.amzn2",
-          "Version": "1.4.6",
-          "Filename": "Packages/containerd-debuginfo-1.4.6-3.amzn2.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2ECS-2023-027",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Ecs 2.0 - ALAS2ECS-2023-027: medium priority package update for containerd",
+	"Issued": {
+		"Date": "2023-11-09 20:27"
+	},
+	"Updated": {
+		"Date": "2023-11-09 20:27"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 - Ecs that fix the following vulnerabilities:\nCVE-2021-41103:\n\tcontainerd is an open source container runtime with an emphasis on simplicity, robustness and portability. A bug was found in containerd where container root directories and some plugins had insufficiently restricted permissions, allowing otherwise unprivileged Linux users to traverse directory contents and execute programs. When containers included executable programs with extended permission bits (such as setuid), unprivileged Linux users could discover and execute those programs. When the UID of an unprivileged Linux user on the host collided with the file owner or group inside a container, the unprivileged Linux user on the host could discover, read, and modify those files. This vulnerability has been fixed in containerd 1.4.11 and containerd 1.5.7. Users should update to these version when they are released and may restart containers or update directory permissions to mitigate the vulnerability. Users unable to update should limit access to the host to trusted users. Update directory permission on container bundles directories.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41103",
+				"ID": "CVE-2021-41103",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---ecs",
+			"Name": "Amazon Linux 2 - Ecs",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "containerd",
+					"Release": "3.amzn2",
+					"Version": "1.4.6",
+					"Filename": "Packages/containerd-1.4.6-3.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "containerd-stress",
+					"Release": "3.amzn2",
+					"Version": "1.4.6",
+					"Filename": "Packages/containerd-stress-1.4.6-3.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "containerd-debuginfo",
+					"Release": "3.amzn2",
+					"Version": "1.4.6",
+					"Filename": "Packages/containerd-debuginfo-1.4.6-3.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "containerd",
+					"Release": "3.amzn2",
+					"Version": "1.4.6",
+					"Filename": "Packages/containerd-1.4.6-3.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "containerd-stress",
+					"Release": "3.amzn2",
+					"Version": "1.4.6",
+					"Filename": "Packages/containerd-stress-1.4.6-3.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "containerd-debuginfo",
+					"Release": "3.amzn2",
+					"Version": "1.4.6",
+					"Filename": "Packages/containerd-debuginfo-1.4.6-3.amzn2.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

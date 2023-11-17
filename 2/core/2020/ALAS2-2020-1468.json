@@ -1,75 +1,75 @@
 {
-  "ID": "ALAS2-2020-1468",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1468: important priority package update for thunderbird",
-  "Issued": {
-    "Date": "2020-07-21 16:34"
-  },
-  "Updated": {
-    "Date": "2020-07-21 20:57"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-12421:\n\tWhen performing add-on updates, certificate chains terminating in non-built-in-roots were rejected (even if they were legitimately added by an administrator.) This could have caused add-ons to become out-of-date silently without notification to the user. This vulnerability affects Firefox ESR < 68.10, Firefox < 78, and Thunderbird < 68.10.0.\n1853018: CVE-2020-12421 Mozilla: Add-On updates did not respect the same certificate trust rules as software updates\n\nCVE-2020-12420:\n\tWhen trying to connect to a STUN server, a race condition could have caused a use-after-free of a pointer, leading to memory corruption and a potentially exploitable crash. This vulnerability affects Firefox ESR < 68.10, Firefox < 78, and Thunderbird < 68.10.0.\n1853017: CVE-2020-12420 Mozilla: Use-After-Free when trying to connect to a STUN server\n\nCVE-2020-12419:\n\tWhen processing callbacks that occurred during window flushing in the parent process, the associated window may die; causing a use-after-free condition. This could have led to memory corruption and a potentially exploitable crash. This vulnerability affects Firefox ESR < 68.10, Firefox < 78, and Thunderbird < 68.10.0.\n1853016: CVE-2020-12419 Mozilla: Use-after-free in nsGlobalWindowInner\n\nCVE-2020-12418:\n\tManipulating individual parts of a URL object could have caused an out-of-bounds read, leaking process memory to malicious JavaScript. This vulnerability affects Firefox ESR < 68.10, Firefox < 78, and Thunderbird < 68.10.0.\n1853015: CVE-2020-12418 Mozilla: Information disclosure due to manipulated URL object\n\nCVE-2020-12417:\n\tDue to confusion about ValueTags on JavaScript Objects, an object may pass through the type barrier, resulting in memory corruption and a potentially exploitable crash. *Note: this issue only affects Firefox on ARM64 platforms.* This vulnerability affects Firefox ESR < 68.10, Firefox < 78, and Thunderbird < 68.10.0.\n1853014: CVE-2020-12417 Mozilla: Memory corruption due to missing sign-extension for ValueTags on ARM64\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12417",
-        "ID": "CVE-2020-12417",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12418",
-        "ID": "CVE-2020-12418",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12419",
-        "ID": "CVE-2020-12419",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12420",
-        "ID": "CVE-2020-12420",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12421",
-        "ID": "CVE-2020-12421",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "thunderbird",
-          "Release": "1.amzn2",
-          "Version": "68.9.0",
-          "Filename": "Packages/thunderbird-68.9.0-1.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "thunderbird-debuginfo",
-          "Release": "1.amzn2",
-          "Version": "68.9.0",
-          "Filename": "Packages/thunderbird-debuginfo-68.9.0-1.amzn2.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2020-1468",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1468: important priority package update for thunderbird",
+	"Issued": {
+		"Date": "2020-07-21 16:34"
+	},
+	"Updated": {
+		"Date": "2020-07-21 20:57"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-12421:\n\tWhen performing add-on updates, certificate chains terminating in non-built-in-roots were rejected (even if they were legitimately added by an administrator.) This could have caused add-ons to become out-of-date silently without notification to the user. This vulnerability affects Firefox ESR < 68.10, Firefox < 78, and Thunderbird < 68.10.0.\n1853018: CVE-2020-12421 Mozilla: Add-On updates did not respect the same certificate trust rules as software updates\n\nCVE-2020-12420:\n\tWhen trying to connect to a STUN server, a race condition could have caused a use-after-free of a pointer, leading to memory corruption and a potentially exploitable crash. This vulnerability affects Firefox ESR < 68.10, Firefox < 78, and Thunderbird < 68.10.0.\n1853017: CVE-2020-12420 Mozilla: Use-After-Free when trying to connect to a STUN server\n\nCVE-2020-12419:\n\tWhen processing callbacks that occurred during window flushing in the parent process, the associated window may die; causing a use-after-free condition. This could have led to memory corruption and a potentially exploitable crash. This vulnerability affects Firefox ESR < 68.10, Firefox < 78, and Thunderbird < 68.10.0.\n1853016: CVE-2020-12419 Mozilla: Use-after-free in nsGlobalWindowInner\n\nCVE-2020-12418:\n\tManipulating individual parts of a URL object could have caused an out-of-bounds read, leaking process memory to malicious JavaScript. This vulnerability affects Firefox ESR < 68.10, Firefox < 78, and Thunderbird < 68.10.0.\n1853015: CVE-2020-12418 Mozilla: Information disclosure due to manipulated URL object\n\nCVE-2020-12417:\n\tDue to confusion about ValueTags on JavaScript Objects, an object may pass through the type barrier, resulting in memory corruption and a potentially exploitable crash. *Note: this issue only affects Firefox on ARM64 platforms.* This vulnerability affects Firefox ESR < 68.10, Firefox < 78, and Thunderbird < 68.10.0.\n1853014: CVE-2020-12417 Mozilla: Memory corruption due to missing sign-extension for ValueTags on ARM64\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12417",
+				"ID": "CVE-2020-12417",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12418",
+				"ID": "CVE-2020-12418",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12419",
+				"ID": "CVE-2020-12419",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12420",
+				"ID": "CVE-2020-12420",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12421",
+				"ID": "CVE-2020-12421",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "thunderbird",
+					"Release": "1.amzn2",
+					"Version": "68.9.0",
+					"Filename": "Packages/thunderbird-68.9.0-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "thunderbird-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "68.9.0",
+					"Filename": "Packages/thunderbird-debuginfo-68.9.0-1.amzn2.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

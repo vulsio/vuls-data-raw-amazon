@@ -1,905 +1,905 @@
 {
-  "ID": "ALAS2023-2023-416",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2023 - ALAS2023-2023-416: Important priority package update for samba",
-  "Issued": {
-    "Date": "2023-10-30 23:44:00"
-  },
-  "Updated": {
-    "Date": "2023-11-03 22:39:00"
-  },
-  "Severity": "Important",
-  "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-4091:\n\tSMB client can truncate files to 0 bytes by opening files with OVERWRITE disposition when using the acl_xattr Samba VFS module with the smb.conf setting \"acl_xattr:ignore system acls = yes\"\n\nCVE-2023-3961:\n\tSamba is vulnerable to path traversal due to insufficient sanitization of clients incoming pipe names. This can lead to the client connecting to as root to a Unix domain socket outside of the Samba private directory.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3961",
-        "ID": "CVE-2023-3961",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4091",
-        "ID": "CVE-2023-4091",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2023",
-      "Name": "Amazon Linux 2023",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-client-libs-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-client-libs-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-libs-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-libs-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-dcerpc-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-dcerpc-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "python3-samba-test",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/python3-samba-test-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "python3-samba-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/python3-samba-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-client",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-client-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "libsmbclient",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/libsmbclient-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-devel",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-devel-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "libsmbclient-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/libsmbclient-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "python3-samba-dc-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/python3-samba-dc-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-winbind-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-winbind-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "python3-samba-dc",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/python3-samba-dc-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "libwbclient-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/libwbclient-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-winbind-clients-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-winbind-clients-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "libnetapi-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/libnetapi-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-client-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-client-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-debugsource",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-debugsource-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-common-libs",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-common-libs-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-test-libs-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-test-libs-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-common-tools-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-common-tools-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-test-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-test-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-winbind-modules-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-winbind-modules-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "2",
-          "Name": "samba-common",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-common-4.17.12-1.amzn2023.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "2",
-          "Name": "samba-pidl",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-pidl-4.17.12-1.amzn2023.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-common-libs-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-common-libs-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "python3-samba",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/python3-samba-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-common-tools",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-common-tools-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-winbind-clients",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-winbind-clients-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-test",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-test-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-libs",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-libs-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-dcerpc",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-dcerpc-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "libnetapi",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/libnetapi-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-winbind",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-winbind-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-client-libs",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-client-libs-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "libsmbclient-devel",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/libsmbclient-devel-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-winbind-krb5-locator-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-winbind-krb5-locator-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-winbind-modules",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-winbind-modules-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-test-libs",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-test-libs-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-dc-libs-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-dc-libs-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-ldb-ldap-modules-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-ldb-ldap-modules-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "libnetapi-devel",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/libnetapi-devel-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-vfs-iouring-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-vfs-iouring-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "libwbclient",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/libwbclient-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "libwbclient-devel",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/libwbclient-devel-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-dc-libs",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-dc-libs-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-ldb-ldap-modules",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-ldb-ldap-modules-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-winbind-krb5-locator",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-winbind-krb5-locator-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-vfs-iouring",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-vfs-iouring-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-krb5-printing-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-krb5-printing-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-krb5-printing",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-krb5-printing-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-tools",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-tools-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "python3-samba-devel",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/python3-samba-devel-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "samba-usershares",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-usershares-4.17.12-1.amzn2023.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "libnetapi-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/libnetapi-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "libnetapi",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/libnetapi-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-dcerpc-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-dcerpc-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-test-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-test-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-common-tools-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-common-tools-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-winbind-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-winbind-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-libs",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-libs-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "python3-samba-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/python3-samba-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-common-libs",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-common-libs-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-winbind-krb5-locator",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-winbind-krb5-locator-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-winbind-modules-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-winbind-modules-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-devel",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-devel-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-winbind-clients",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-winbind-clients-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-vfs-iouring",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-vfs-iouring-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "python3-samba-dc",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/python3-samba-dc-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "python3-samba-test",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/python3-samba-test-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "python3-samba",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/python3-samba-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "libsmbclient-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/libsmbclient-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-client-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-client-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-winbind-modules",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-winbind-modules-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-debugsource",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-debugsource-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-winbind-krb5-locator-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-winbind-krb5-locator-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-test",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-test-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-client-libs-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-client-libs-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "libsmbclient",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/libsmbclient-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-winbind",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-winbind-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "libwbclient-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/libwbclient-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-common-tools",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-common-tools-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-test-libs",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-test-libs-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-ldb-ldap-modules",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-ldb-ldap-modules-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-common-libs-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-common-libs-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-libs-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-libs-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-dc-libs",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-dc-libs-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "libsmbclient-devel",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/libsmbclient-devel-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-winbind-clients-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-winbind-clients-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-dcerpc",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-dcerpc-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "libwbclient",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/libwbclient-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-ldb-ldap-modules-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-ldb-ldap-modules-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-client",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-client-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-krb5-printing",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-krb5-printing-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-client-libs",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-client-libs-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-test-libs-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-test-libs-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-dc-libs-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-dc-libs-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "python3-samba-dc-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/python3-samba-dc-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "libnetapi-devel",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/libnetapi-devel-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-vfs-iouring-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-vfs-iouring-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "libwbclient-devel",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/libwbclient-devel-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-krb5-printing-debuginfo",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-krb5-printing-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-tools",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-tools-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "python3-samba-devel",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/python3-samba-devel-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "2",
-          "Name": "samba-usershares",
-          "Release": "1.amzn2023.0.1",
-          "Version": "4.17.12",
-          "Filename": "Packages/samba-usershares-4.17.12-1.amzn2023.0.1.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2023-2023-416",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2023-416: Important priority package update for samba",
+	"Issued": {
+		"Date": "2023-10-30 23:44:00"
+	},
+	"Updated": {
+		"Date": "2023-11-03 22:39:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-4091:\n\tSMB client can truncate files to 0 bytes by opening files with OVERWRITE disposition when using the acl_xattr Samba VFS module with the smb.conf setting \"acl_xattr:ignore system acls = yes\"\n\nCVE-2023-3961:\n\tSamba is vulnerable to path traversal due to insufficient sanitization of clients incoming pipe names. This can lead to the client connecting to as root to a Unix domain socket outside of the Samba private directory.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3961",
+				"ID": "CVE-2023-3961",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4091",
+				"ID": "CVE-2023-4091",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-client-libs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-client-libs-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-libs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-libs-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-dcerpc-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-dcerpc-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "python3-samba-test",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/python3-samba-test-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "python3-samba-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/python3-samba-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-client",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-client-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "libsmbclient",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/libsmbclient-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-devel-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "libsmbclient-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/libsmbclient-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "python3-samba-dc-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/python3-samba-dc-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-winbind-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-winbind-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "python3-samba-dc",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/python3-samba-dc-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "libwbclient-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/libwbclient-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-winbind-clients-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-winbind-clients-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "libnetapi-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/libnetapi-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-client-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-client-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-debugsource",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-debugsource-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-common-libs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-common-libs-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-test-libs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-test-libs-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-common-tools-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-common-tools-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-test-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-test-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-winbind-modules-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-winbind-modules-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "2",
+					"Name": "samba-common",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-common-4.17.12-1.amzn2023.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "2",
+					"Name": "samba-pidl",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-pidl-4.17.12-1.amzn2023.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-common-libs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-common-libs-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "python3-samba",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/python3-samba-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-common-tools",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-common-tools-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-winbind-clients",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-winbind-clients-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-test",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-test-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-libs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-libs-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-dcerpc",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-dcerpc-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "libnetapi",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/libnetapi-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-winbind",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-winbind-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-client-libs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-client-libs-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "libsmbclient-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/libsmbclient-devel-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-winbind-krb5-locator-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-winbind-krb5-locator-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-winbind-modules",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-winbind-modules-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-test-libs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-test-libs-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-dc-libs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-dc-libs-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-ldb-ldap-modules-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-ldb-ldap-modules-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "libnetapi-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/libnetapi-devel-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-vfs-iouring-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-vfs-iouring-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "libwbclient",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/libwbclient-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "libwbclient-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/libwbclient-devel-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-dc-libs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-dc-libs-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-ldb-ldap-modules",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-ldb-ldap-modules-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-winbind-krb5-locator",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-winbind-krb5-locator-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-vfs-iouring",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-vfs-iouring-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-krb5-printing-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-krb5-printing-debuginfo-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-krb5-printing",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-krb5-printing-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-tools",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-tools-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "python3-samba-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/python3-samba-devel-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "samba-usershares",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-usershares-4.17.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "libnetapi-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/libnetapi-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "libnetapi",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/libnetapi-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-dcerpc-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-dcerpc-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-test-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-test-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-common-tools-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-common-tools-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-winbind-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-winbind-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-libs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-libs-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "python3-samba-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/python3-samba-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-common-libs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-common-libs-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-winbind-krb5-locator",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-winbind-krb5-locator-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-winbind-modules-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-winbind-modules-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-devel-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-winbind-clients",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-winbind-clients-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-vfs-iouring",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-vfs-iouring-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "python3-samba-dc",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/python3-samba-dc-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "python3-samba-test",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/python3-samba-test-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "python3-samba",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/python3-samba-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "libsmbclient-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/libsmbclient-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-client-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-client-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-winbind-modules",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-winbind-modules-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-debugsource",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-debugsource-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-winbind-krb5-locator-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-winbind-krb5-locator-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-test",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-test-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-client-libs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-client-libs-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "libsmbclient",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/libsmbclient-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-winbind",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-winbind-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "libwbclient-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/libwbclient-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-common-tools",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-common-tools-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-test-libs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-test-libs-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-ldb-ldap-modules",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-ldb-ldap-modules-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-common-libs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-common-libs-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-libs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-libs-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-dc-libs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-dc-libs-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "libsmbclient-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/libsmbclient-devel-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-winbind-clients-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-winbind-clients-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-dcerpc",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-dcerpc-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "libwbclient",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/libwbclient-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-ldb-ldap-modules-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-ldb-ldap-modules-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-client",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-client-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-krb5-printing",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-krb5-printing-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-client-libs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-client-libs-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-test-libs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-test-libs-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-dc-libs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-dc-libs-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "python3-samba-dc-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/python3-samba-dc-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "libnetapi-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/libnetapi-devel-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-vfs-iouring-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-vfs-iouring-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "libwbclient-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/libwbclient-devel-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-krb5-printing-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-krb5-printing-debuginfo-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-tools",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-tools-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "python3-samba-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/python3-samba-devel-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "samba-usershares",
+					"Release": "1.amzn2023.0.1",
+					"Version": "4.17.12",
+					"Filename": "Packages/samba-usershares-4.17.12-1.amzn2023.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

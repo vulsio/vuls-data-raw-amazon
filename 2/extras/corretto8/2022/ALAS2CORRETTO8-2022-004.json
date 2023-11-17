@@ -1,85 +1,85 @@
 {
-  "ID": "ALAS2CORRETTO8-2022-004",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 - Corretto8 2.0 - ALAS2CORRETTO8-2022-004: medium priority package update for java-1.8.0-amazon-corretto",
-  "Issued": {
-    "Date": "2022-10-17 22:06"
-  },
-  "Updated": {
-    "Date": "2023-05-11 16:24"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 - Corretto8 that fix the following vulnerabilities:\nCVE-2022-21628:\n\tTitle: Better HttpServer service\n  HttpServer eagerly accepts connections which may exceed the limit.\n\nCVE-2022-21626:\n\tTitle: Key X509 usages\n  Decoding of X509 keys may use excessive amount of heap memory.\n\nCVE-2022-21624:\n\tTitle: Improve JNDI lookups\n  JNDI DNS port numbers can be easily guessed and should be more random.\n\nCVE-2022-21619:\n\tTitle: Improve NTLM support\n  writeSecurityBuffer() writes a serialized security buffer to be used for NTLM\n  auth. One of the fields that are serialized is a hostname provided by the\n  name resolver. If this hostname is very long, integer truncation occurs,\n  which would allow a malicious hostname to be partially re-interpreted as\n  something else following a hostname, once the security buffer is deserialized\n  on the other size.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21619",
-        "ID": "CVE-2022-21619",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21624",
-        "ID": "CVE-2022-21624",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21626",
-        "ID": "CVE-2022-21626",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21628",
-        "ID": "CVE-2022-21628",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2---corretto8",
-      "Name": "Amazon Linux 2 - Corretto8",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-1.8.0-amazon-corretto",
-          "Release": "1.amzn2",
-          "Version": "1.8.0_352.b08",
-          "Filename": "Packages/java-1.8.0-amazon-corretto-1.8.0_352.b08-1.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-1.8.0-amazon-corretto",
-          "Release": "1.amzn2",
-          "Version": "1.8.0_352.b08",
-          "Filename": "Packages/java-1.8.0-amazon-corretto-1.8.0_352.b08-1.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-1.8.0-amazon-corretto-devel",
-          "Release": "1.amzn2",
-          "Version": "1.8.0_352.b08",
-          "Filename": "Packages/java-1.8.0-amazon-corretto-devel-1.8.0_352.b08-1.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-1.8.0-amazon-corretto-devel",
-          "Release": "1.amzn2",
-          "Version": "1.8.0_352.b08",
-          "Filename": "Packages/java-1.8.0-amazon-corretto-devel-1.8.0_352.b08-1.amzn2.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2CORRETTO8-2022-004",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Corretto8 2.0 - ALAS2CORRETTO8-2022-004: medium priority package update for java-1.8.0-amazon-corretto",
+	"Issued": {
+		"Date": "2022-10-17 22:06"
+	},
+	"Updated": {
+		"Date": "2023-05-11 16:24"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 - Corretto8 that fix the following vulnerabilities:\nCVE-2022-21628:\n\tTitle: Better HttpServer service\n  HttpServer eagerly accepts connections which may exceed the limit.\n\nCVE-2022-21626:\n\tTitle: Key X509 usages\n  Decoding of X509 keys may use excessive amount of heap memory.\n\nCVE-2022-21624:\n\tTitle: Improve JNDI lookups\n  JNDI DNS port numbers can be easily guessed and should be more random.\n\nCVE-2022-21619:\n\tTitle: Improve NTLM support\n  writeSecurityBuffer() writes a serialized security buffer to be used for NTLM\n  auth. One of the fields that are serialized is a hostname provided by the\n  name resolver. If this hostname is very long, integer truncation occurs,\n  which would allow a malicious hostname to be partially re-interpreted as\n  something else following a hostname, once the security buffer is deserialized\n  on the other size.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21619",
+				"ID": "CVE-2022-21619",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21624",
+				"ID": "CVE-2022-21624",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21626",
+				"ID": "CVE-2022-21626",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-21628",
+				"ID": "CVE-2022-21628",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---corretto8",
+			"Name": "Amazon Linux 2 - Corretto8",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-1.8.0-amazon-corretto",
+					"Release": "1.amzn2",
+					"Version": "1.8.0_352.b08",
+					"Filename": "Packages/java-1.8.0-amazon-corretto-1.8.0_352.b08-1.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-1.8.0-amazon-corretto",
+					"Release": "1.amzn2",
+					"Version": "1.8.0_352.b08",
+					"Filename": "Packages/java-1.8.0-amazon-corretto-1.8.0_352.b08-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-1.8.0-amazon-corretto-devel",
+					"Release": "1.amzn2",
+					"Version": "1.8.0_352.b08",
+					"Filename": "Packages/java-1.8.0-amazon-corretto-devel-1.8.0_352.b08-1.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-1.8.0-amazon-corretto-devel",
+					"Release": "1.amzn2",
+					"Version": "1.8.0_352.b08",
+					"Filename": "Packages/java-1.8.0-amazon-corretto-devel-1.8.0_352.b08-1.amzn2.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

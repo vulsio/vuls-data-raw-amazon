@@ -1,105 +1,105 @@
 {
-  "ID": "ALAS-2013-223",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-223: important priority package update for 389-ds-base",
-  "Issued": {
-    "Date": "2013-09-19 15:02"
-  },
-  "Updated": {
-    "Date": "2014-09-15 23:23"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-4283:\n\tns-slapd in 389 Directory Server before 1.3.0.8 allows remote attackers to cause a denial of service (server crash) via a crafted Distinguished Name (DN) in a MOD operation request.\nIt was discovered that the 389 Directory Server did not properly handle the receipt of certain MOD operations with a bogus Distinguished Name (DN). A remote, unauthenticated attacker could use this flaw to cause the 389 Directory Server to crash.\n999634: \nCVE-2013-4283 389-ds-base: ns-slapd crash due to bogus DN\n\nCVE-2013-2219:\n\tThe Red Hat Directory Server before 8.2.11-13 and 389 Directory Server do not properly restrict access to entity attributes, which allows remote authenticated users to obtain sensitive information via a search query for the attribute.\nIt was discovered that the 389 Directory Server did not honor defined attribute access controls when evaluating search filter expressions. A remote attacker (with permission to query the Directory Server) could use this flaw to determine the values of restricted attributes via a series of search queries with filter conditions that used restricted attributes.\n979508: \nCVE-2013-2219 Directory Server: ACLs inoperative in some search scenarios\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2219",
-        "ID": "CVE-2013-2219",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4283",
-        "ID": "CVE-2013-4283",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "389-ds-base-debuginfo",
-          "Release": "1.5.amzn1",
-          "Version": "1.3.1.8",
-          "Filename": "Packages/389-ds-base-debuginfo-1.3.1.8-1.5.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "389-ds-base-libs",
-          "Release": "1.5.amzn1",
-          "Version": "1.3.1.8",
-          "Filename": "Packages/389-ds-base-libs-1.3.1.8-1.5.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "389-ds-base-devel",
-          "Release": "1.5.amzn1",
-          "Version": "1.3.1.8",
-          "Filename": "Packages/389-ds-base-devel-1.3.1.8-1.5.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "389-ds-base",
-          "Release": "1.5.amzn1",
-          "Version": "1.3.1.8",
-          "Filename": "Packages/389-ds-base-1.3.1.8-1.5.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "389-ds-base-devel",
-          "Release": "1.5.amzn1",
-          "Version": "1.3.1.8",
-          "Filename": "Packages/389-ds-base-devel-1.3.1.8-1.5.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "389-ds-base",
-          "Release": "1.5.amzn1",
-          "Version": "1.3.1.8",
-          "Filename": "Packages/389-ds-base-1.3.1.8-1.5.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "389-ds-base-libs",
-          "Release": "1.5.amzn1",
-          "Version": "1.3.1.8",
-          "Filename": "Packages/389-ds-base-libs-1.3.1.8-1.5.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "389-ds-base-debuginfo",
-          "Release": "1.5.amzn1",
-          "Version": "1.3.1.8",
-          "Filename": "Packages/389-ds-base-debuginfo-1.3.1.8-1.5.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2013-223",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2012.09 - ALAS-2013-223: important priority package update for 389-ds-base",
+	"Issued": {
+		"Date": "2013-09-19 15:02"
+	},
+	"Updated": {
+		"Date": "2014-09-15 23:23"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-4283:\n\tns-slapd in 389 Directory Server before 1.3.0.8 allows remote attackers to cause a denial of service (server crash) via a crafted Distinguished Name (DN) in a MOD operation request.\nIt was discovered that the 389 Directory Server did not properly handle the receipt of certain MOD operations with a bogus Distinguished Name (DN). A remote, unauthenticated attacker could use this flaw to cause the 389 Directory Server to crash.\n999634: \nCVE-2013-4283 389-ds-base: ns-slapd crash due to bogus DN\n\nCVE-2013-2219:\n\tThe Red Hat Directory Server before 8.2.11-13 and 389 Directory Server do not properly restrict access to entity attributes, which allows remote authenticated users to obtain sensitive information via a search query for the attribute.\nIt was discovered that the 389 Directory Server did not honor defined attribute access controls when evaluating search filter expressions. A remote attacker (with permission to query the Directory Server) could use this flaw to determine the values of restricted attributes via a series of search queries with filter conditions that used restricted attributes.\n979508: \nCVE-2013-2219 Directory Server: ACLs inoperative in some search scenarios\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2219",
+				"ID": "CVE-2013-2219",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4283",
+				"ID": "CVE-2013-4283",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "389-ds-base-debuginfo",
+					"Release": "1.5.amzn1",
+					"Version": "1.3.1.8",
+					"Filename": "Packages/389-ds-base-debuginfo-1.3.1.8-1.5.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "389-ds-base-libs",
+					"Release": "1.5.amzn1",
+					"Version": "1.3.1.8",
+					"Filename": "Packages/389-ds-base-libs-1.3.1.8-1.5.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "389-ds-base-devel",
+					"Release": "1.5.amzn1",
+					"Version": "1.3.1.8",
+					"Filename": "Packages/389-ds-base-devel-1.3.1.8-1.5.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "389-ds-base",
+					"Release": "1.5.amzn1",
+					"Version": "1.3.1.8",
+					"Filename": "Packages/389-ds-base-1.3.1.8-1.5.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "389-ds-base-devel",
+					"Release": "1.5.amzn1",
+					"Version": "1.3.1.8",
+					"Filename": "Packages/389-ds-base-devel-1.3.1.8-1.5.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "389-ds-base",
+					"Release": "1.5.amzn1",
+					"Version": "1.3.1.8",
+					"Filename": "Packages/389-ds-base-1.3.1.8-1.5.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "389-ds-base-libs",
+					"Release": "1.5.amzn1",
+					"Version": "1.3.1.8",
+					"Filename": "Packages/389-ds-base-libs-1.3.1.8-1.5.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "389-ds-base-debuginfo",
+					"Release": "1.5.amzn1",
+					"Version": "1.3.1.8",
+					"Filename": "Packages/389-ds-base-debuginfo-1.3.1.8-1.5.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

@@ -1,51 +1,51 @@
 {
-  "ID": "ALAS2-2023-2007",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2007: important priority package update for xstream",
-  "Issued": {
-    "Date": "2023-03-30 18:56"
-  },
-  "Updated": {
-    "Date": "2023-04-04 22:10"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-41966:\n\tXStream serializes Java objects to XML and back again. Versions prior to 1.4.20 may allow a remote attacker to terminate the application with a stack overflow error, resulting in a denial of service only via manipulation the processed input stream. The attack uses the hash code implementation for collections and maps to force recursive hash calculation causing a stack overflow. This issue is patched in version 1.4.20 which handles the stack overflow and raises an InputManipulationException instead. A potential workaround for users who only use HashMap or HashSet and whose XML refers these only as default map or set, is to change the default implementation of java.util.Map and java.util per the code example in the referenced advisory. However, this implies that your application does not care about the implementation of the map and all elements are comparable.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41966",
-        "ID": "CVE-2022-41966",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "xstream",
-          "Release": "16.amzn2.0.1",
-          "Version": "1.3.1",
-          "Filename": "Packages/xstream-1.3.1-16.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "xstream-javadoc",
-          "Release": "16.amzn2.0.1",
-          "Version": "1.3.1",
-          "Filename": "Packages/xstream-javadoc-1.3.1-16.amzn2.0.1.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2023-2007",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2007: important priority package update for xstream",
+	"Issued": {
+		"Date": "2023-03-30 18:56"
+	},
+	"Updated": {
+		"Date": "2023-04-04 22:10"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-41966:\n\tXStream serializes Java objects to XML and back again. Versions prior to 1.4.20 may allow a remote attacker to terminate the application with a stack overflow error, resulting in a denial of service only via manipulation the processed input stream. The attack uses the hash code implementation for collections and maps to force recursive hash calculation causing a stack overflow. This issue is patched in version 1.4.20 which handles the stack overflow and raises an InputManipulationException instead. A potential workaround for users who only use HashMap or HashSet and whose XML refers these only as default map or set, is to change the default implementation of java.util.Map and java.util per the code example in the referenced advisory. However, this implies that your application does not care about the implementation of the map and all elements are comparable.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41966",
+				"ID": "CVE-2022-41966",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "xstream",
+					"Release": "16.amzn2.0.1",
+					"Version": "1.3.1",
+					"Filename": "Packages/xstream-1.3.1-16.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "xstream-javadoc",
+					"Release": "16.amzn2.0.1",
+					"Version": "1.3.1",
+					"Filename": "Packages/xstream-javadoc-1.3.1-16.amzn2.0.1.noarch.rpm"
+				}
+			]
+		}
+	}
 }

@@ -1,209 +1,209 @@
 {
-  "ID": "ALAS2-2023-2083",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2083: important priority package update for python-pillow",
-  "Issued": {
-    "Date": "2023-06-05 16:39"
-  },
-  "Updated": {
-    "Date": "2023-06-07 22:37"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-34552:\n\tPillow through 8.2.0 and PIL (aka Python Imaging Library) through 1.1.7 allow an attacker to pass controlled parameters directly into a convert function to trigger a buffer overflow in Convert.c.\n\nCVE-2021-28677:\n\tAn issue was discovered in Pillow before 8.2.0. For EPS data, the readline implementation used in EPSImageFile has to deal with any combination of \\r and \\n as line endings. It used an accidentally quadratic method of accumulating lines while looking for a line ending. A malicious EPS file could use this to perform a DoS of Pillow in the open phase, before an image was accepted for opening.\n\nCVE-2021-28676:\n\tAn issue was discovered in Pillow before 8.2.0. For FLI data, FliDecode did not properly check that the block advance was non-zero, potentially leading to an infinite loop on load.\n\nCVE-2020-35653:\n\tIn Pillow before 8.1.0, PcxDecode has a buffer over-read when decoding a crafted PCX file because the user-supplied stride value is trusted for buffer calculations.\n\nCVE-2016-9190:\n\tPillow before 3.3.2 allows context-dependent attackers to execute arbitrary code by using the \"crafted image file\" approach, related to an \"Insecure Sign Extension\" issue affecting the ImagingNew in Storage.c component.\n\nCVE-2014-9601:\n\tPillow before 2.7.0 allows remote attackers to cause a denial of service via a compressed text chunk in a PNG image that has a large size when it is decompressed.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9601",
-        "ID": "CVE-2014-9601",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9190",
-        "ID": "CVE-2016-9190",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35653",
-        "ID": "CVE-2020-35653",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28676",
-        "ID": "CVE-2021-28676",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28677",
-        "ID": "CVE-2021-28677",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-34552",
-        "ID": "CVE-2021-34552",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python-pillow",
-          "Release": "23.gitd1c6db8.amzn2.0.4",
-          "Version": "2.0.0",
-          "Filename": "Packages/python-pillow-2.0.0-23.gitd1c6db8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python-pillow-devel",
-          "Release": "23.gitd1c6db8.amzn2.0.4",
-          "Version": "2.0.0",
-          "Filename": "Packages/python-pillow-devel-2.0.0-23.gitd1c6db8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python-pillow-doc",
-          "Release": "23.gitd1c6db8.amzn2.0.4",
-          "Version": "2.0.0",
-          "Filename": "Packages/python-pillow-doc-2.0.0-23.gitd1c6db8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python-pillow-sane",
-          "Release": "23.gitd1c6db8.amzn2.0.4",
-          "Version": "2.0.0",
-          "Filename": "Packages/python-pillow-sane-2.0.0-23.gitd1c6db8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python-pillow-tk",
-          "Release": "23.gitd1c6db8.amzn2.0.4",
-          "Version": "2.0.0",
-          "Filename": "Packages/python-pillow-tk-2.0.0-23.gitd1c6db8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python-pillow-debuginfo",
-          "Release": "23.gitd1c6db8.amzn2.0.4",
-          "Version": "2.0.0",
-          "Filename": "Packages/python-pillow-debuginfo-2.0.0-23.gitd1c6db8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python-pillow",
-          "Release": "23.gitd1c6db8.amzn2.0.4",
-          "Version": "2.0.0",
-          "Filename": "Packages/python-pillow-2.0.0-23.gitd1c6db8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python-pillow-devel",
-          "Release": "23.gitd1c6db8.amzn2.0.4",
-          "Version": "2.0.0",
-          "Filename": "Packages/python-pillow-devel-2.0.0-23.gitd1c6db8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python-pillow-doc",
-          "Release": "23.gitd1c6db8.amzn2.0.4",
-          "Version": "2.0.0",
-          "Filename": "Packages/python-pillow-doc-2.0.0-23.gitd1c6db8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python-pillow-sane",
-          "Release": "23.gitd1c6db8.amzn2.0.4",
-          "Version": "2.0.0",
-          "Filename": "Packages/python-pillow-sane-2.0.0-23.gitd1c6db8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python-pillow-tk",
-          "Release": "23.gitd1c6db8.amzn2.0.4",
-          "Version": "2.0.0",
-          "Filename": "Packages/python-pillow-tk-2.0.0-23.gitd1c6db8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "python-pillow-debuginfo",
-          "Release": "23.gitd1c6db8.amzn2.0.4",
-          "Version": "2.0.0",
-          "Filename": "Packages/python-pillow-debuginfo-2.0.0-23.gitd1c6db8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python-pillow",
-          "Release": "23.gitd1c6db8.amzn2.0.4",
-          "Version": "2.0.0",
-          "Filename": "Packages/python-pillow-2.0.0-23.gitd1c6db8.amzn2.0.4.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python-pillow-devel",
-          "Release": "23.gitd1c6db8.amzn2.0.4",
-          "Version": "2.0.0",
-          "Filename": "Packages/python-pillow-devel-2.0.0-23.gitd1c6db8.amzn2.0.4.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python-pillow-doc",
-          "Release": "23.gitd1c6db8.amzn2.0.4",
-          "Version": "2.0.0",
-          "Filename": "Packages/python-pillow-doc-2.0.0-23.gitd1c6db8.amzn2.0.4.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python-pillow-sane",
-          "Release": "23.gitd1c6db8.amzn2.0.4",
-          "Version": "2.0.0",
-          "Filename": "Packages/python-pillow-sane-2.0.0-23.gitd1c6db8.amzn2.0.4.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python-pillow-tk",
-          "Release": "23.gitd1c6db8.amzn2.0.4",
-          "Version": "2.0.0",
-          "Filename": "Packages/python-pillow-tk-2.0.0-23.gitd1c6db8.amzn2.0.4.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python-pillow-debuginfo",
-          "Release": "23.gitd1c6db8.amzn2.0.4",
-          "Version": "2.0.0",
-          "Filename": "Packages/python-pillow-debuginfo-2.0.0-23.gitd1c6db8.amzn2.0.4.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2023-2083",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2083: important priority package update for python-pillow",
+	"Issued": {
+		"Date": "2023-06-05 16:39"
+	},
+	"Updated": {
+		"Date": "2023-06-07 22:37"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-34552:\n\tPillow through 8.2.0 and PIL (aka Python Imaging Library) through 1.1.7 allow an attacker to pass controlled parameters directly into a convert function to trigger a buffer overflow in Convert.c.\n\nCVE-2021-28677:\n\tAn issue was discovered in Pillow before 8.2.0. For EPS data, the readline implementation used in EPSImageFile has to deal with any combination of \\r and \\n as line endings. It used an accidentally quadratic method of accumulating lines while looking for a line ending. A malicious EPS file could use this to perform a DoS of Pillow in the open phase, before an image was accepted for opening.\n\nCVE-2021-28676:\n\tAn issue was discovered in Pillow before 8.2.0. For FLI data, FliDecode did not properly check that the block advance was non-zero, potentially leading to an infinite loop on load.\n\nCVE-2020-35653:\n\tIn Pillow before 8.1.0, PcxDecode has a buffer over-read when decoding a crafted PCX file because the user-supplied stride value is trusted for buffer calculations.\n\nCVE-2016-9190:\n\tPillow before 3.3.2 allows context-dependent attackers to execute arbitrary code by using the \"crafted image file\" approach, related to an \"Insecure Sign Extension\" issue affecting the ImagingNew in Storage.c component.\n\nCVE-2014-9601:\n\tPillow before 2.7.0 allows remote attackers to cause a denial of service via a compressed text chunk in a PNG image that has a large size when it is decompressed.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9601",
+				"ID": "CVE-2014-9601",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9190",
+				"ID": "CVE-2016-9190",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35653",
+				"ID": "CVE-2020-35653",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28676",
+				"ID": "CVE-2021-28676",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28677",
+				"ID": "CVE-2021-28677",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-34552",
+				"ID": "CVE-2021-34552",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-pillow",
+					"Release": "23.gitd1c6db8.amzn2.0.4",
+					"Version": "2.0.0",
+					"Filename": "Packages/python-pillow-2.0.0-23.gitd1c6db8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-pillow-devel",
+					"Release": "23.gitd1c6db8.amzn2.0.4",
+					"Version": "2.0.0",
+					"Filename": "Packages/python-pillow-devel-2.0.0-23.gitd1c6db8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-pillow-doc",
+					"Release": "23.gitd1c6db8.amzn2.0.4",
+					"Version": "2.0.0",
+					"Filename": "Packages/python-pillow-doc-2.0.0-23.gitd1c6db8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-pillow-sane",
+					"Release": "23.gitd1c6db8.amzn2.0.4",
+					"Version": "2.0.0",
+					"Filename": "Packages/python-pillow-sane-2.0.0-23.gitd1c6db8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-pillow-tk",
+					"Release": "23.gitd1c6db8.amzn2.0.4",
+					"Version": "2.0.0",
+					"Filename": "Packages/python-pillow-tk-2.0.0-23.gitd1c6db8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-pillow-debuginfo",
+					"Release": "23.gitd1c6db8.amzn2.0.4",
+					"Version": "2.0.0",
+					"Filename": "Packages/python-pillow-debuginfo-2.0.0-23.gitd1c6db8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python-pillow",
+					"Release": "23.gitd1c6db8.amzn2.0.4",
+					"Version": "2.0.0",
+					"Filename": "Packages/python-pillow-2.0.0-23.gitd1c6db8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python-pillow-devel",
+					"Release": "23.gitd1c6db8.amzn2.0.4",
+					"Version": "2.0.0",
+					"Filename": "Packages/python-pillow-devel-2.0.0-23.gitd1c6db8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python-pillow-doc",
+					"Release": "23.gitd1c6db8.amzn2.0.4",
+					"Version": "2.0.0",
+					"Filename": "Packages/python-pillow-doc-2.0.0-23.gitd1c6db8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python-pillow-sane",
+					"Release": "23.gitd1c6db8.amzn2.0.4",
+					"Version": "2.0.0",
+					"Filename": "Packages/python-pillow-sane-2.0.0-23.gitd1c6db8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python-pillow-tk",
+					"Release": "23.gitd1c6db8.amzn2.0.4",
+					"Version": "2.0.0",
+					"Filename": "Packages/python-pillow-tk-2.0.0-23.gitd1c6db8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python-pillow-debuginfo",
+					"Release": "23.gitd1c6db8.amzn2.0.4",
+					"Version": "2.0.0",
+					"Filename": "Packages/python-pillow-debuginfo-2.0.0-23.gitd1c6db8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-pillow",
+					"Release": "23.gitd1c6db8.amzn2.0.4",
+					"Version": "2.0.0",
+					"Filename": "Packages/python-pillow-2.0.0-23.gitd1c6db8.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-pillow-devel",
+					"Release": "23.gitd1c6db8.amzn2.0.4",
+					"Version": "2.0.0",
+					"Filename": "Packages/python-pillow-devel-2.0.0-23.gitd1c6db8.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-pillow-doc",
+					"Release": "23.gitd1c6db8.amzn2.0.4",
+					"Version": "2.0.0",
+					"Filename": "Packages/python-pillow-doc-2.0.0-23.gitd1c6db8.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-pillow-sane",
+					"Release": "23.gitd1c6db8.amzn2.0.4",
+					"Version": "2.0.0",
+					"Filename": "Packages/python-pillow-sane-2.0.0-23.gitd1c6db8.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-pillow-tk",
+					"Release": "23.gitd1c6db8.amzn2.0.4",
+					"Version": "2.0.0",
+					"Filename": "Packages/python-pillow-tk-2.0.0-23.gitd1c6db8.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-pillow-debuginfo",
+					"Release": "23.gitd1c6db8.amzn2.0.4",
+					"Version": "2.0.0",
+					"Filename": "Packages/python-pillow-debuginfo-2.0.0-23.gitd1c6db8.amzn2.0.4.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

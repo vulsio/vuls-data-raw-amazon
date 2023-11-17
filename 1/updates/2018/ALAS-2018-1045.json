@@ -1,115 +1,115 @@
 {
-  "ID": "ALAS-2018-1045",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2018-1045: important priority package update for gnupg gnupg2",
-  "Issued": {
-    "Date": "2018-06-27 21:57"
-  },
-  "Updated": {
-    "Date": "2018-07-24 21:05"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-12020:\n\tA data validation flaw was found in the way gnupg processes file names during decryption and signature validation. An attacker may be able to inject messages into gnupg verbose message logging which may have the potential to bypass the integrity of signature authentication mechanisms and could have other unintended consequences if applications take action(s) based on parsed verbose gnupg output.\n1589620: \nCVE-2018-12020 gnupg2: Improper sanitization of filenames allows for the display of fake status messages and the bypass of signature verification\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12020",
-        "ID": "CVE-2018-12020",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gnupg",
-          "Release": "1.29.amzn1",
-          "Version": "1.4.19",
-          "Filename": "Packages/gnupg-1.4.19-1.29.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gnupg-debuginfo",
-          "Release": "1.29.amzn1",
-          "Version": "1.4.19",
-          "Filename": "Packages/gnupg-debuginfo-1.4.19-1.29.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gnupg",
-          "Release": "1.29.amzn1",
-          "Version": "1.4.19",
-          "Filename": "Packages/gnupg-1.4.19-1.29.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gnupg-debuginfo",
-          "Release": "1.29.amzn1",
-          "Version": "1.4.19",
-          "Filename": "Packages/gnupg-debuginfo-1.4.19-1.29.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gnupg2-smime",
-          "Release": "2.32.amzn1",
-          "Version": "2.0.28",
-          "Filename": "Packages/gnupg2-smime-2.0.28-2.32.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gnupg2-debuginfo",
-          "Release": "2.32.amzn1",
-          "Version": "2.0.28",
-          "Filename": "Packages/gnupg2-debuginfo-2.0.28-2.32.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gnupg2",
-          "Release": "2.32.amzn1",
-          "Version": "2.0.28",
-          "Filename": "Packages/gnupg2-2.0.28-2.32.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gnupg2-smime",
-          "Release": "2.32.amzn1",
-          "Version": "2.0.28",
-          "Filename": "Packages/gnupg2-smime-2.0.28-2.32.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gnupg2-debuginfo",
-          "Release": "2.32.amzn1",
-          "Version": "2.0.28",
-          "Filename": "Packages/gnupg2-debuginfo-2.0.28-2.32.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gnupg2",
-          "Release": "2.32.amzn1",
-          "Version": "2.0.28",
-          "Filename": "Packages/gnupg2-2.0.28-2.32.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2018-1045",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2018-1045: important priority package update for gnupg gnupg2",
+	"Issued": {
+		"Date": "2018-06-27 21:57"
+	},
+	"Updated": {
+		"Date": "2018-07-24 21:05"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-12020:\n\tA data validation flaw was found in the way gnupg processes file names during decryption and signature validation. An attacker may be able to inject messages into gnupg verbose message logging which may have the potential to bypass the integrity of signature authentication mechanisms and could have other unintended consequences if applications take action(s) based on parsed verbose gnupg output.\n1589620: \nCVE-2018-12020 gnupg2: Improper sanitization of filenames allows for the display of fake status messages and the bypass of signature verification\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-12020",
+				"ID": "CVE-2018-12020",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gnupg",
+					"Release": "1.29.amzn1",
+					"Version": "1.4.19",
+					"Filename": "Packages/gnupg-1.4.19-1.29.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gnupg-debuginfo",
+					"Release": "1.29.amzn1",
+					"Version": "1.4.19",
+					"Filename": "Packages/gnupg-debuginfo-1.4.19-1.29.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gnupg",
+					"Release": "1.29.amzn1",
+					"Version": "1.4.19",
+					"Filename": "Packages/gnupg-1.4.19-1.29.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gnupg-debuginfo",
+					"Release": "1.29.amzn1",
+					"Version": "1.4.19",
+					"Filename": "Packages/gnupg-debuginfo-1.4.19-1.29.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gnupg2-smime",
+					"Release": "2.32.amzn1",
+					"Version": "2.0.28",
+					"Filename": "Packages/gnupg2-smime-2.0.28-2.32.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gnupg2-debuginfo",
+					"Release": "2.32.amzn1",
+					"Version": "2.0.28",
+					"Filename": "Packages/gnupg2-debuginfo-2.0.28-2.32.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gnupg2",
+					"Release": "2.32.amzn1",
+					"Version": "2.0.28",
+					"Filename": "Packages/gnupg2-2.0.28-2.32.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gnupg2-smime",
+					"Release": "2.32.amzn1",
+					"Version": "2.0.28",
+					"Filename": "Packages/gnupg2-smime-2.0.28-2.32.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gnupg2-debuginfo",
+					"Release": "2.32.amzn1",
+					"Version": "2.0.28",
+					"Filename": "Packages/gnupg2-debuginfo-2.0.28-2.32.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gnupg2",
+					"Release": "2.32.amzn1",
+					"Version": "2.0.28",
+					"Filename": "Packages/gnupg2-2.0.28-2.32.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

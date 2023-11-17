@@ -1,121 +1,121 @@
 {
-  "ID": "ALAS-2023-1843",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2023-1843: medium priority package update for openssl",
-  "Issued": {
-    "Date": "2023-09-27 22:15"
-  },
-  "Updated": {
-    "Date": "2023-10-06 00:53"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2023-3817:\n\tIssue summary: Checking excessively long DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_check(), DH_check_ex()\nor EVP_PKEY_param_check() to check a DH key or DH parameters may experience long\ndelays. Where the key or parameters that are being checked have been obtained\nfrom an untrusted source this may lead to a Denial of Service.\n\nThe function DH_check() performs various checks on DH parameters. After fixing\nCVE-2023-3446 it was discovered that a large q parameter value can also trigger\nan overly long computation during some of these checks. A correct q value,\nif present, cannot be larger than the modulus p parameter, thus it is\nunnecessary to perform these checks if q is larger than p.\n\nAn application that calls DH_check() and supplies a key or parameters obtained\nfrom an untrusted source could be vulnerable to a Denial of Service attack.\n\nThe function DH_check() is itself called by a number of other OpenSSL functions.\nAn application calling any of those other functions may similarly be affected.\nThe other functions affected by this are DH_check_ex() and\nEVP_PKEY_param_check().\n\nAlso vulnerable are the OpenSSL dhparam and pkeyparam command line applications\nwhen using the \"-check\" option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.\n\nCVE-2023-3446:\n\tIssue summary: Checking excessively long DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_check(), DH_check_ex()\nor EVP_PKEY_param_check() to check a DH key or DH parameters may experience long\ndelays. Where the key or parameters that are being checked have been obtained\nfrom an untrusted source this may lead to a Denial of Service.\n\nThe function DH_check() performs various checks on DH parameters. One of those\nchecks confirms that the modulus ('p' parameter) is not too large. Trying to use\na very large modulus is slow and OpenSSL will not normally use a modulus which\nis over 10,000 bits in length.\n\nHowever the DH_check() function checks numerous aspects of the key or parameters\nthat have been supplied. Some of those checks use the supplied modulus value\neven if it has already been found to be too large.\n\nAn application that calls DH_check() and supplies a key or parameters obtained\nfrom an untrusted source could be vulernable to a Denial of Service attack.\n\nThe function DH_check() is itself called by a number of other OpenSSL functions.\nAn application calling any of those other functions may similarly be affected.\nThe other functions affected by this are DH_check_ex() and\nEVP_PKEY_param_check().\n\nAlso vulnerable are the OpenSSL dhparam and pkeyparam command line applications\nwhen using the '-check' option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3446",
-        "ID": "CVE-2023-3446",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3817",
-        "ID": "CVE-2023-3817",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "openssl-perl",
-          "Release": "16.164.amzn1",
-          "Version": "1.0.2k",
-          "Filename": "Packages/openssl-perl-1.0.2k-16.164.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "openssl",
-          "Release": "16.164.amzn1",
-          "Version": "1.0.2k",
-          "Filename": "Packages/openssl-1.0.2k-16.164.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "openssl-devel",
-          "Release": "16.164.amzn1",
-          "Version": "1.0.2k",
-          "Filename": "Packages/openssl-devel-1.0.2k-16.164.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "openssl-static",
-          "Release": "16.164.amzn1",
-          "Version": "1.0.2k",
-          "Filename": "Packages/openssl-static-1.0.2k-16.164.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "openssl-debuginfo",
-          "Release": "16.164.amzn1",
-          "Version": "1.0.2k",
-          "Filename": "Packages/openssl-debuginfo-1.0.2k-16.164.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "openssl-debuginfo",
-          "Release": "16.164.amzn1",
-          "Version": "1.0.2k",
-          "Filename": "Packages/openssl-debuginfo-1.0.2k-16.164.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "openssl-devel",
-          "Release": "16.164.amzn1",
-          "Version": "1.0.2k",
-          "Filename": "Packages/openssl-devel-1.0.2k-16.164.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "openssl-perl",
-          "Release": "16.164.amzn1",
-          "Version": "1.0.2k",
-          "Filename": "Packages/openssl-perl-1.0.2k-16.164.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "openssl-static",
-          "Release": "16.164.amzn1",
-          "Version": "1.0.2k",
-          "Filename": "Packages/openssl-static-1.0.2k-16.164.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "openssl",
-          "Release": "16.164.amzn1",
-          "Version": "1.0.2k",
-          "Filename": "Packages/openssl-1.0.2k-16.164.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2023-1843",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2023-1843: medium priority package update for openssl",
+	"Issued": {
+		"Date": "2023-09-27 22:15"
+	},
+	"Updated": {
+		"Date": "2023-10-06 00:53"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2023-3817:\n\tIssue summary: Checking excessively long DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_check(), DH_check_ex()\nor EVP_PKEY_param_check() to check a DH key or DH parameters may experience long\ndelays. Where the key or parameters that are being checked have been obtained\nfrom an untrusted source this may lead to a Denial of Service.\n\nThe function DH_check() performs various checks on DH parameters. After fixing\nCVE-2023-3446 it was discovered that a large q parameter value can also trigger\nan overly long computation during some of these checks. A correct q value,\nif present, cannot be larger than the modulus p parameter, thus it is\nunnecessary to perform these checks if q is larger than p.\n\nAn application that calls DH_check() and supplies a key or parameters obtained\nfrom an untrusted source could be vulnerable to a Denial of Service attack.\n\nThe function DH_check() is itself called by a number of other OpenSSL functions.\nAn application calling any of those other functions may similarly be affected.\nThe other functions affected by this are DH_check_ex() and\nEVP_PKEY_param_check().\n\nAlso vulnerable are the OpenSSL dhparam and pkeyparam command line applications\nwhen using the \"-check\" option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.\n\nCVE-2023-3446:\n\tIssue summary: Checking excessively long DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_check(), DH_check_ex()\nor EVP_PKEY_param_check() to check a DH key or DH parameters may experience long\ndelays. Where the key or parameters that are being checked have been obtained\nfrom an untrusted source this may lead to a Denial of Service.\n\nThe function DH_check() performs various checks on DH parameters. One of those\nchecks confirms that the modulus ('p' parameter) is not too large. Trying to use\na very large modulus is slow and OpenSSL will not normally use a modulus which\nis over 10,000 bits in length.\n\nHowever the DH_check() function checks numerous aspects of the key or parameters\nthat have been supplied. Some of those checks use the supplied modulus value\neven if it has already been found to be too large.\n\nAn application that calls DH_check() and supplies a key or parameters obtained\nfrom an untrusted source could be vulernable to a Denial of Service attack.\n\nThe function DH_check() is itself called by a number of other OpenSSL functions.\nAn application calling any of those other functions may similarly be affected.\nThe other functions affected by this are DH_check_ex() and\nEVP_PKEY_param_check().\n\nAlso vulnerable are the OpenSSL dhparam and pkeyparam command line applications\nwhen using the '-check' option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3446",
+				"ID": "CVE-2023-3446",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3817",
+				"ID": "CVE-2023-3817",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "openssl-perl",
+					"Release": "16.164.amzn1",
+					"Version": "1.0.2k",
+					"Filename": "Packages/openssl-perl-1.0.2k-16.164.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "openssl",
+					"Release": "16.164.amzn1",
+					"Version": "1.0.2k",
+					"Filename": "Packages/openssl-1.0.2k-16.164.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "openssl-devel",
+					"Release": "16.164.amzn1",
+					"Version": "1.0.2k",
+					"Filename": "Packages/openssl-devel-1.0.2k-16.164.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "openssl-static",
+					"Release": "16.164.amzn1",
+					"Version": "1.0.2k",
+					"Filename": "Packages/openssl-static-1.0.2k-16.164.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "openssl-debuginfo",
+					"Release": "16.164.amzn1",
+					"Version": "1.0.2k",
+					"Filename": "Packages/openssl-debuginfo-1.0.2k-16.164.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "openssl-debuginfo",
+					"Release": "16.164.amzn1",
+					"Version": "1.0.2k",
+					"Filename": "Packages/openssl-debuginfo-1.0.2k-16.164.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "openssl-devel",
+					"Release": "16.164.amzn1",
+					"Version": "1.0.2k",
+					"Filename": "Packages/openssl-devel-1.0.2k-16.164.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "openssl-perl",
+					"Release": "16.164.amzn1",
+					"Version": "1.0.2k",
+					"Filename": "Packages/openssl-perl-1.0.2k-16.164.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "openssl-static",
+					"Release": "16.164.amzn1",
+					"Version": "1.0.2k",
+					"Filename": "Packages/openssl-static-1.0.2k-16.164.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "openssl",
+					"Release": "16.164.amzn1",
+					"Version": "1.0.2k",
+					"Filename": "Packages/openssl-1.0.2k-16.164.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

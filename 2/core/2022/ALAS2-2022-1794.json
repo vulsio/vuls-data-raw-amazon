@@ -1,51 +1,51 @@
 {
-  "ID": "ALAS2-2022-1794",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2022-1794: critical priority package update for maven-shared-utils",
-  "Issued": {
-    "Date": "2022-05-04 01:01"
-  },
-  "Updated": {
-    "Date": "2022-05-05 14:02"
-  },
-  "Severity": "critical",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-29599:\n\torg.apache.maven.shared:maven-shared-utils is a functional replacement for plexus-utils in Maven. Affected versions of this package are vulnerable to Command Injection. The Commandline class can emit double-quoted strings without proper escaping, allowing shell injection attacks. The BourneShell class should unconditionally single-quote emitted strings (including the name of the command itself being quoted), with {{'\"'\"'}} used for embedded single quotes, for maximum safety across shells implementing a superset of POSIX quoting rules.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29599",
-        "ID": "CVE-2022-29599",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "maven-shared-utils",
-          "Release": "4.amzn2",
-          "Version": "0.4",
-          "Filename": "Packages/maven-shared-utils-0.4-4.amzn2.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "maven-shared-utils-javadoc",
-          "Release": "4.amzn2",
-          "Version": "0.4",
-          "Filename": "Packages/maven-shared-utils-javadoc-0.4-4.amzn2.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2022-1794",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2022-1794: critical priority package update for maven-shared-utils",
+	"Issued": {
+		"Date": "2022-05-04 01:01"
+	},
+	"Updated": {
+		"Date": "2022-05-05 14:02"
+	},
+	"Severity": "critical",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-29599:\n\torg.apache.maven.shared:maven-shared-utils is a functional replacement for plexus-utils in Maven. Affected versions of this package are vulnerable to Command Injection. The Commandline class can emit double-quoted strings without proper escaping, allowing shell injection attacks. The BourneShell class should unconditionally single-quote emitted strings (including the name of the command itself being quoted), with {{'\"'\"'}} used for embedded single quotes, for maximum safety across shells implementing a superset of POSIX quoting rules.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-29599",
+				"ID": "CVE-2022-29599",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "maven-shared-utils",
+					"Release": "4.amzn2",
+					"Version": "0.4",
+					"Filename": "Packages/maven-shared-utils-0.4-4.amzn2.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "maven-shared-utils-javadoc",
+					"Release": "4.amzn2",
+					"Version": "0.4",
+					"Filename": "Packages/maven-shared-utils-javadoc-0.4-4.amzn2.noarch.rpm"
+				}
+			]
+		}
+	}
 }

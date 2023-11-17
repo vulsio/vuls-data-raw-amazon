@@ -1,161 +1,161 @@
 {
-  "ID": "ALAS2-2021-1622",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1622: important priority package update for openssl11",
-  "Issued": {
-    "Date": "2021-03-25 18:31"
-  },
-  "Updated": {
-    "Date": "2021-03-25 20:52"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-3450:\n\tA flaw was found in openssl. The flag that enables additional security checks of certificates present in a certificate chain was not enabled allowing a confirmation step to verify that certificates in the chain are valid CA certificates is bypassed. The highest threat from this vulnerability is to data confidentiality and integrity.\n1941547: CVE-2021-3450 openssl: CA certificate check bypass with X509_V_FLAG_X509_STRICT\n\nCVE-2021-3449:\n\tA flaw was found in openssl. A server crash and denial of service attack could occur if a client sends a TLSv1.2 renegotiation ClientHello and omits the signature_algorithms extension but includes a signature_algorithms_cert extension. The highest threat from this vulnerability is to system availability.\n1941554: CVE-2021-3449 openssl: NULL pointer deref in signature_algorithms processing\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3449",
-        "ID": "CVE-2021-3449",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3450",
-        "ID": "CVE-2021-3450",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "openssl11",
-          "Release": "12.amzn2.0.3",
-          "Version": "1.1.1g",
-          "Filename": "Packages/openssl11-1.1.1g-12.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "openssl11-libs",
-          "Release": "12.amzn2.0.3",
-          "Version": "1.1.1g",
-          "Filename": "Packages/openssl11-libs-1.1.1g-12.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "openssl11-devel",
-          "Release": "12.amzn2.0.3",
-          "Version": "1.1.1g",
-          "Filename": "Packages/openssl11-devel-1.1.1g-12.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "openssl11-static",
-          "Release": "12.amzn2.0.3",
-          "Version": "1.1.1g",
-          "Filename": "Packages/openssl11-static-1.1.1g-12.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "openssl11-debuginfo",
-          "Release": "12.amzn2.0.3",
-          "Version": "1.1.1g",
-          "Filename": "Packages/openssl11-debuginfo-1.1.1g-12.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "openssl11",
-          "Release": "12.amzn2.0.3",
-          "Version": "1.1.1g",
-          "Filename": "Packages/openssl11-1.1.1g-12.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "openssl11-libs",
-          "Release": "12.amzn2.0.3",
-          "Version": "1.1.1g",
-          "Filename": "Packages/openssl11-libs-1.1.1g-12.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "openssl11-devel",
-          "Release": "12.amzn2.0.3",
-          "Version": "1.1.1g",
-          "Filename": "Packages/openssl11-devel-1.1.1g-12.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "openssl11-static",
-          "Release": "12.amzn2.0.3",
-          "Version": "1.1.1g",
-          "Filename": "Packages/openssl11-static-1.1.1g-12.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "openssl11-debuginfo",
-          "Release": "12.amzn2.0.3",
-          "Version": "1.1.1g",
-          "Filename": "Packages/openssl11-debuginfo-1.1.1g-12.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "openssl11",
-          "Release": "12.amzn2.0.3",
-          "Version": "1.1.1g",
-          "Filename": "Packages/openssl11-1.1.1g-12.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "openssl11-libs",
-          "Release": "12.amzn2.0.3",
-          "Version": "1.1.1g",
-          "Filename": "Packages/openssl11-libs-1.1.1g-12.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "openssl11-devel",
-          "Release": "12.amzn2.0.3",
-          "Version": "1.1.1g",
-          "Filename": "Packages/openssl11-devel-1.1.1g-12.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "openssl11-static",
-          "Release": "12.amzn2.0.3",
-          "Version": "1.1.1g",
-          "Filename": "Packages/openssl11-static-1.1.1g-12.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "openssl11-debuginfo",
-          "Release": "12.amzn2.0.3",
-          "Version": "1.1.1g",
-          "Filename": "Packages/openssl11-debuginfo-1.1.1g-12.amzn2.0.3.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2021-1622",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1622: important priority package update for openssl11",
+	"Issued": {
+		"Date": "2021-03-25 18:31"
+	},
+	"Updated": {
+		"Date": "2021-03-25 20:52"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-3450:\n\tA flaw was found in openssl. The flag that enables additional security checks of certificates present in a certificate chain was not enabled allowing a confirmation step to verify that certificates in the chain are valid CA certificates is bypassed. The highest threat from this vulnerability is to data confidentiality and integrity.\n1941547: CVE-2021-3450 openssl: CA certificate check bypass with X509_V_FLAG_X509_STRICT\n\nCVE-2021-3449:\n\tA flaw was found in openssl. A server crash and denial of service attack could occur if a client sends a TLSv1.2 renegotiation ClientHello and omits the signature_algorithms extension but includes a signature_algorithms_cert extension. The highest threat from this vulnerability is to system availability.\n1941554: CVE-2021-3449 openssl: NULL pointer deref in signature_algorithms processing\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3449",
+				"ID": "CVE-2021-3449",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3450",
+				"ID": "CVE-2021-3450",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "openssl11",
+					"Release": "12.amzn2.0.3",
+					"Version": "1.1.1g",
+					"Filename": "Packages/openssl11-1.1.1g-12.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "openssl11-libs",
+					"Release": "12.amzn2.0.3",
+					"Version": "1.1.1g",
+					"Filename": "Packages/openssl11-libs-1.1.1g-12.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "openssl11-devel",
+					"Release": "12.amzn2.0.3",
+					"Version": "1.1.1g",
+					"Filename": "Packages/openssl11-devel-1.1.1g-12.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "openssl11-static",
+					"Release": "12.amzn2.0.3",
+					"Version": "1.1.1g",
+					"Filename": "Packages/openssl11-static-1.1.1g-12.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "openssl11-debuginfo",
+					"Release": "12.amzn2.0.3",
+					"Version": "1.1.1g",
+					"Filename": "Packages/openssl11-debuginfo-1.1.1g-12.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "openssl11",
+					"Release": "12.amzn2.0.3",
+					"Version": "1.1.1g",
+					"Filename": "Packages/openssl11-1.1.1g-12.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "openssl11-libs",
+					"Release": "12.amzn2.0.3",
+					"Version": "1.1.1g",
+					"Filename": "Packages/openssl11-libs-1.1.1g-12.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "openssl11-devel",
+					"Release": "12.amzn2.0.3",
+					"Version": "1.1.1g",
+					"Filename": "Packages/openssl11-devel-1.1.1g-12.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "openssl11-static",
+					"Release": "12.amzn2.0.3",
+					"Version": "1.1.1g",
+					"Filename": "Packages/openssl11-static-1.1.1g-12.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "openssl11-debuginfo",
+					"Release": "12.amzn2.0.3",
+					"Version": "1.1.1g",
+					"Filename": "Packages/openssl11-debuginfo-1.1.1g-12.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "openssl11",
+					"Release": "12.amzn2.0.3",
+					"Version": "1.1.1g",
+					"Filename": "Packages/openssl11-1.1.1g-12.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "openssl11-libs",
+					"Release": "12.amzn2.0.3",
+					"Version": "1.1.1g",
+					"Filename": "Packages/openssl11-libs-1.1.1g-12.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "openssl11-devel",
+					"Release": "12.amzn2.0.3",
+					"Version": "1.1.1g",
+					"Filename": "Packages/openssl11-devel-1.1.1g-12.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "openssl11-static",
+					"Release": "12.amzn2.0.3",
+					"Version": "1.1.1g",
+					"Filename": "Packages/openssl11-static-1.1.1g-12.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "openssl11-debuginfo",
+					"Release": "12.amzn2.0.3",
+					"Version": "1.1.1g",
+					"Filename": "Packages/openssl11-debuginfo-1.1.1g-12.amzn2.0.3.i686.rpm"
+				}
+			]
+		}
+	}
 }

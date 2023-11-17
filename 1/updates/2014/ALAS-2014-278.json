@@ -1,67 +1,67 @@
 {
-  "ID": "ALAS-2014-278",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-278: medium priority package update for gnupg",
-  "Issued": {
-    "Date": "2014-01-14 16:18"
-  },
-  "Updated": {
-    "Date": "2014-09-16 22:19"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-4576:\n\tIt was found that GnuPG was vulnerable to side-channel attacks via acoustic cryptanalysis. An attacker in close range to a target system that is decrypting ciphertexts could possibly use this flaw to recover the RSA secret key from that system.\nGnuPG 1.x before 1.4.16 generates RSA keys using sequences of introductions with certain patterns that introduce a side channel, which allows physically proximate attackers to extract RSA keys via a chosen-ciphertext attack and acoustic cryptanalysis during decryption. NOTE: applications are not typically expected to protect themselves from acoustic side-channel attacks, since this is arguably the responsibility of the physical device. Accordingly, issues of this type would not normally receive a CVE identifier. However, for this issue, the developer has specified a security policy in which GnuPG should offer side-channel resistance, and developer-specified security-policy violations are within the scope of CVE.\n1043327: \nCVE-2013-4576 gnupg: RSA secret key recovery via acoustic cryptanalysis\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4576",
-        "ID": "CVE-2013-4576",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gnupg-debuginfo",
-          "Release": "2.23.amzn1",
-          "Version": "1.4.16",
-          "Filename": "Packages/gnupg-debuginfo-1.4.16-2.23.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gnupg",
-          "Release": "2.23.amzn1",
-          "Version": "1.4.16",
-          "Filename": "Packages/gnupg-1.4.16-2.23.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gnupg",
-          "Release": "2.23.amzn1",
-          "Version": "1.4.16",
-          "Filename": "Packages/gnupg-1.4.16-2.23.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gnupg-debuginfo",
-          "Release": "2.23.amzn1",
-          "Version": "1.4.16",
-          "Filename": "Packages/gnupg-debuginfo-1.4.16-2.23.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2014-278",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2012.09 - ALAS-2014-278: medium priority package update for gnupg",
+	"Issued": {
+		"Date": "2014-01-14 16:18"
+	},
+	"Updated": {
+		"Date": "2014-09-16 22:19"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-4576:\n\tIt was found that GnuPG was vulnerable to side-channel attacks via acoustic cryptanalysis. An attacker in close range to a target system that is decrypting ciphertexts could possibly use this flaw to recover the RSA secret key from that system.\nGnuPG 1.x before 1.4.16 generates RSA keys using sequences of introductions with certain patterns that introduce a side channel, which allows physically proximate attackers to extract RSA keys via a chosen-ciphertext attack and acoustic cryptanalysis during decryption. NOTE: applications are not typically expected to protect themselves from acoustic side-channel attacks, since this is arguably the responsibility of the physical device. Accordingly, issues of this type would not normally receive a CVE identifier. However, for this issue, the developer has specified a security policy in which GnuPG should offer side-channel resistance, and developer-specified security-policy violations are within the scope of CVE.\n1043327: \nCVE-2013-4576 gnupg: RSA secret key recovery via acoustic cryptanalysis\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4576",
+				"ID": "CVE-2013-4576",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gnupg-debuginfo",
+					"Release": "2.23.amzn1",
+					"Version": "1.4.16",
+					"Filename": "Packages/gnupg-debuginfo-1.4.16-2.23.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gnupg",
+					"Release": "2.23.amzn1",
+					"Version": "1.4.16",
+					"Filename": "Packages/gnupg-1.4.16-2.23.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gnupg",
+					"Release": "2.23.amzn1",
+					"Version": "1.4.16",
+					"Filename": "Packages/gnupg-1.4.16-2.23.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gnupg-debuginfo",
+					"Release": "2.23.amzn1",
+					"Version": "1.4.16",
+					"Filename": "Packages/gnupg-debuginfo-1.4.16-2.23.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

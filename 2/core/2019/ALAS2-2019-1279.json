@@ -1,235 +1,235 @@
 {
-  "ID": "ALAS2-2019-1279",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1279: low priority package update for kernel",
-  "Issued": {
-    "Date": "2019-09-13 23:08"
-  },
-  "Updated": {
-    "Date": "2019-09-19 16:05"
-  },
-  "Severity": "low",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-7755:\n\tAn issue was discovered in the fd_locked_ioctl function in drivers/block/floppy.c in the Linux kernel. The floppy driver will copy a kernel pointer to user memory in response to the FDGETPRM ioctl. An attacker can send the FDGETPRM ioctl and use the obtained kernel pointer to discover the location of kernel code and data and bypass kernel security protections such as KASLR.\n1553216: \nCVE-2018-7755 kernel: Information exposure in fd_locked_ioctl function in drivers/block/floppy.c\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7755",
-        "ID": "CVE-2018-7755",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/kernel-4.14.77-80.57.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/kernel-headers-4.14.77-80.57.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-aarch64",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/kernel-debuginfo-common-aarch64-4.14.77-80.57.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/perf-4.14.77-80.57.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/perf-debuginfo-4.14.77-80.57.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python-perf",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/python-perf-4.14.77-80.57.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python-perf-debuginfo",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/python-perf-debuginfo-4.14.77-80.57.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/kernel-tools-4.14.77-80.57.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/kernel-tools-devel-4.14.77-80.57.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/kernel-tools-debuginfo-4.14.77-80.57.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/kernel-devel-4.14.77-80.57.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/kernel-debuginfo-4.14.77-80.57.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/kernel-4.14.77-80.57.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/kernel-headers-4.14.77-80.57.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-x86_64",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.14.77-80.57.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/perf-4.14.77-80.57.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/perf-debuginfo-4.14.77-80.57.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python-perf",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/python-perf-4.14.77-80.57.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python-perf-debuginfo",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/python-perf-debuginfo-4.14.77-80.57.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/kernel-tools-4.14.77-80.57.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/kernel-tools-devel-4.14.77-80.57.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/kernel-tools-debuginfo-4.14.77-80.57.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/kernel-devel-4.14.77-80.57.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/kernel-debuginfo-4.14.77-80.57.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "80.57.amzn2",
-          "Version": "4.14.77",
-          "Filename": "Packages/kernel-headers-4.14.77-80.57.amzn2.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2019-1279",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1279: low priority package update for kernel",
+	"Issued": {
+		"Date": "2019-09-13 23:08"
+	},
+	"Updated": {
+		"Date": "2019-09-19 16:05"
+	},
+	"Severity": "low",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-7755:\n\tAn issue was discovered in the fd_locked_ioctl function in drivers/block/floppy.c in the Linux kernel. The floppy driver will copy a kernel pointer to user memory in response to the FDGETPRM ioctl. An attacker can send the FDGETPRM ioctl and use the obtained kernel pointer to discover the location of kernel code and data and bypass kernel security protections such as KASLR.\n1553216: \nCVE-2018-7755 kernel: Information exposure in fd_locked_ioctl function in drivers/block/floppy.c\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7755",
+				"ID": "CVE-2018-7755",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/kernel-4.14.77-80.57.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/kernel-headers-4.14.77-80.57.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-aarch64",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/kernel-debuginfo-common-aarch64-4.14.77-80.57.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/perf-4.14.77-80.57.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/perf-debuginfo-4.14.77-80.57.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-perf",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/python-perf-4.14.77-80.57.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-perf-debuginfo",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/python-perf-debuginfo-4.14.77-80.57.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/kernel-tools-4.14.77-80.57.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/kernel-tools-devel-4.14.77-80.57.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/kernel-tools-debuginfo-4.14.77-80.57.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/kernel-devel-4.14.77-80.57.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/kernel-debuginfo-4.14.77-80.57.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/kernel-4.14.77-80.57.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/kernel-headers-4.14.77-80.57.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-x86_64",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/kernel-debuginfo-common-x86_64-4.14.77-80.57.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/perf-4.14.77-80.57.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/perf-debuginfo-4.14.77-80.57.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-perf",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/python-perf-4.14.77-80.57.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-perf-debuginfo",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/python-perf-debuginfo-4.14.77-80.57.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/kernel-tools-4.14.77-80.57.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/kernel-tools-devel-4.14.77-80.57.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/kernel-tools-debuginfo-4.14.77-80.57.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/kernel-devel-4.14.77-80.57.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/kernel-debuginfo-4.14.77-80.57.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "80.57.amzn2",
+					"Version": "4.14.77",
+					"Filename": "Packages/kernel-headers-4.14.77-80.57.amzn2.i686.rpm"
+				}
+			]
+		}
+	}
 }

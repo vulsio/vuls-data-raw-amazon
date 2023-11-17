@@ -1,133 +1,133 @@
 {
-  "ID": "ALAS-2015-527",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-527: medium priority package update for tomcat8",
-  "Issued": {
-    "Date": "2015-05-14 14:40"
-  },
-  "Updated": {
-    "Date": "2015-05-14 23:52"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-0227:\n\tIt was discovered that the ChunkedInputFilter in Tomcat did not fail subsequent attempts to read input after malformed chunked encoding was detected. A remote attacker could possibly use this flaw to make Tomcat process part of the request body as new request, or cause a denial of service.\n1109196: \nCVE-2014-0227 Tomcat/JBossWeb: request smuggling and limited DoS in ChunkedInputFilter\n\nCVE-2014-0099:\n\tIt was found that JBoss Web / Apache Tomcat did not check for overflowing values when parsing request content length headers. A remote attacker could use this flaw to perform an HTTP request smuggling attack on a JBoss Web / Apache Tomcat server located behind a reverse proxy that processed the content length header correctly.\n1102030: \nCVE-2014-0099 Tomcat/JBossWeb: Request smuggling via malicious content length header\n\nCVE-2014-0096:\n\tIt was found that the org.apache.catalina.servlets.DefaultServlet implementation in JBoss Web / Apache Tomcat allowed the definition of XML External Entities (XXEs) in provided XSLTs. A malicious application could use this to circumvent intended security restrictions to disclose sensitive information.\n1088342: \nCVE-2014-0096 Tomcat/JBossWeb: XXE vulnerability via user supplied XSLTs\n\nCVE-2014-0075:\n\tIt was discovered that JBoss Web / Apache Tomcat did not limit the length of chunk sizes when using chunked transfer encoding. A remote attacker could use this flaw to perform a denial of service attack against JBoss Web / Apache Tomcat by streaming an unlimited quantity of data, leading to excessive consumption of server resources.\n1072776: \nCVE-2014-0075 Tomcat/JBossWeb: Limited DoS in chunked transfer encoding input filter\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0075",
-        "ID": "CVE-2014-0075",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0096",
-        "ID": "CVE-2014-0096",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0099",
-        "ID": "CVE-2014-0099",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0227",
-        "ID": "CVE-2014-0227",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-admin-webapps",
-          "Release": "1.53.amzn1",
-          "Version": "8.0.20",
-          "Filename": "Packages/tomcat8-admin-webapps-8.0.20-1.53.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-servlet-3.1-api",
-          "Release": "1.53.amzn1",
-          "Version": "8.0.20",
-          "Filename": "Packages/tomcat8-servlet-3.1-api-8.0.20-1.53.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-docs-webapp",
-          "Release": "1.53.amzn1",
-          "Version": "8.0.20",
-          "Filename": "Packages/tomcat8-docs-webapp-8.0.20-1.53.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-jsp-2.3-api",
-          "Release": "1.53.amzn1",
-          "Version": "8.0.20",
-          "Filename": "Packages/tomcat8-jsp-2.3-api-8.0.20-1.53.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-webapps",
-          "Release": "1.53.amzn1",
-          "Version": "8.0.20",
-          "Filename": "Packages/tomcat8-webapps-8.0.20-1.53.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-log4j",
-          "Release": "1.53.amzn1",
-          "Version": "8.0.20",
-          "Filename": "Packages/tomcat8-log4j-8.0.20-1.53.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-javadoc",
-          "Release": "1.53.amzn1",
-          "Version": "8.0.20",
-          "Filename": "Packages/tomcat8-javadoc-8.0.20-1.53.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-lib",
-          "Release": "1.53.amzn1",
-          "Version": "8.0.20",
-          "Filename": "Packages/tomcat8-lib-8.0.20-1.53.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8-el-3.0-api",
-          "Release": "1.53.amzn1",
-          "Version": "8.0.20",
-          "Filename": "Packages/tomcat8-el-3.0-api-8.0.20-1.53.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "tomcat8",
-          "Release": "1.53.amzn1",
-          "Version": "8.0.20",
-          "Filename": "Packages/tomcat8-8.0.20-1.53.amzn1.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2015-527",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2015-527: medium priority package update for tomcat8",
+	"Issued": {
+		"Date": "2015-05-14 14:40"
+	},
+	"Updated": {
+		"Date": "2015-05-14 23:52"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-0227:\n\tIt was discovered that the ChunkedInputFilter in Tomcat did not fail subsequent attempts to read input after malformed chunked encoding was detected. A remote attacker could possibly use this flaw to make Tomcat process part of the request body as new request, or cause a denial of service.\n1109196: \nCVE-2014-0227 Tomcat/JBossWeb: request smuggling and limited DoS in ChunkedInputFilter\n\nCVE-2014-0099:\n\tIt was found that JBoss Web / Apache Tomcat did not check for overflowing values when parsing request content length headers. A remote attacker could use this flaw to perform an HTTP request smuggling attack on a JBoss Web / Apache Tomcat server located behind a reverse proxy that processed the content length header correctly.\n1102030: \nCVE-2014-0099 Tomcat/JBossWeb: Request smuggling via malicious content length header\n\nCVE-2014-0096:\n\tIt was found that the org.apache.catalina.servlets.DefaultServlet implementation in JBoss Web / Apache Tomcat allowed the definition of XML External Entities (XXEs) in provided XSLTs. A malicious application could use this to circumvent intended security restrictions to disclose sensitive information.\n1088342: \nCVE-2014-0096 Tomcat/JBossWeb: XXE vulnerability via user supplied XSLTs\n\nCVE-2014-0075:\n\tIt was discovered that JBoss Web / Apache Tomcat did not limit the length of chunk sizes when using chunked transfer encoding. A remote attacker could use this flaw to perform a denial of service attack against JBoss Web / Apache Tomcat by streaming an unlimited quantity of data, leading to excessive consumption of server resources.\n1072776: \nCVE-2014-0075 Tomcat/JBossWeb: Limited DoS in chunked transfer encoding input filter\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0075",
+				"ID": "CVE-2014-0075",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0096",
+				"ID": "CVE-2014-0096",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0099",
+				"ID": "CVE-2014-0099",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0227",
+				"ID": "CVE-2014-0227",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-admin-webapps",
+					"Release": "1.53.amzn1",
+					"Version": "8.0.20",
+					"Filename": "Packages/tomcat8-admin-webapps-8.0.20-1.53.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-servlet-3.1-api",
+					"Release": "1.53.amzn1",
+					"Version": "8.0.20",
+					"Filename": "Packages/tomcat8-servlet-3.1-api-8.0.20-1.53.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-docs-webapp",
+					"Release": "1.53.amzn1",
+					"Version": "8.0.20",
+					"Filename": "Packages/tomcat8-docs-webapp-8.0.20-1.53.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-jsp-2.3-api",
+					"Release": "1.53.amzn1",
+					"Version": "8.0.20",
+					"Filename": "Packages/tomcat8-jsp-2.3-api-8.0.20-1.53.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-webapps",
+					"Release": "1.53.amzn1",
+					"Version": "8.0.20",
+					"Filename": "Packages/tomcat8-webapps-8.0.20-1.53.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-log4j",
+					"Release": "1.53.amzn1",
+					"Version": "8.0.20",
+					"Filename": "Packages/tomcat8-log4j-8.0.20-1.53.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-javadoc",
+					"Release": "1.53.amzn1",
+					"Version": "8.0.20",
+					"Filename": "Packages/tomcat8-javadoc-8.0.20-1.53.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-lib",
+					"Release": "1.53.amzn1",
+					"Version": "8.0.20",
+					"Filename": "Packages/tomcat8-lib-8.0.20-1.53.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8-el-3.0-api",
+					"Release": "1.53.amzn1",
+					"Version": "8.0.20",
+					"Filename": "Packages/tomcat8-el-3.0-api-8.0.20-1.53.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat8",
+					"Release": "1.53.amzn1",
+					"Version": "8.0.20",
+					"Filename": "Packages/tomcat8-8.0.20-1.53.amzn1.noarch.rpm"
+				}
+			]
+		}
+	}
 }

@@ -1,251 +1,251 @@
 {
-  "ID": "ALAS-2014-326",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-326: important priority package update for java-1.6.0-openjdk",
-  "Issued": {
-    "Date": "2014-04-17 23:53"
-  },
-  "Updated": {
-    "Date": "2014-09-18 00:22"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-2427:\n\tMultiple improper permission check issues were discovered in the AWT, JAX-WS, JAXB, Libraries, and Sound components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2014-2423:\n\tMultiple improper permission check issues were discovered in the AWT, JAX-WS, JAXB, Libraries, and Sound components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2014-2421:\n\tMultiple flaws were discovered in the Hotspot and 2D components in OpenJDK. An untrusted Java application or applet could use these flaws to trigger Java Virtual Machine memory corruption and possibly bypass Java sandbox restrictions.\n\nCVE-2014-2414:\n\tMultiple improper permission check issues were discovered in the AWT, JAX-WS, JAXB, Libraries, and Sound components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2014-2412:\n\tMultiple improper permission check issues were discovered in the AWT, JAX-WS, JAXB, Libraries, and Sound components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2014-2403:\n\tIt was discovered that the JAXP component did not properly prevent access to arbitrary files when a SecurityManager was present. This flaw could cause a Java application using JAXP to leak sensitive information, or affect application availability.\n\nCVE-2014-2398:\n\tIt was discovered that the fix for CVE-2013-5797 did not properly resolve input sanitization flaws in javadoc. When javadoc documentation was generated from an untrusted Java source code and hosted on a domain not controlled by the code author, these issues could make it easier to perform cross-site scripting (XSS) attacks.\n\nCVE-2014-2397:\n\tMultiple flaws were discovered in the Hotspot and 2D components in OpenJDK. An untrusted Java application or applet could use these flaws to trigger Java Virtual Machine memory corruption and possibly bypass Java sandbox restrictions.\n\nCVE-2014-1876:\n\tAn insecure temporary file use flaw was found in the way the unpack200 utility created log files. A local attacker could possibly use this flaw to perform a symbolic link attack and overwrite arbitrary files with the privileges of the user running unpack200.\n\nCVE-2014-0461:\n\tMultiple improper permission check issues were discovered in the Libraries component in OpenJDK. An untrusted Java application or applet could use these flaws to bypass Java sandbox restrictions.\n\nCVE-2014-0460:\n\tMultiple flaws were identified in the Java Naming and Directory Interface (JNDI) DNS client. These flaws could make it easier for a remote attacker to perform DNS spoofing attacks.\n\nCVE-2014-0458:\n\tMultiple improper permission check issues were discovered in the AWT, JAX-WS, JAXB, Libraries, and Sound components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2014-0457:\n\tMultiple improper permission check issues were discovered in the Libraries component in OpenJDK. An untrusted Java application or applet could use these flaws to bypass Java sandbox restrictions.\n\nCVE-2014-0456:\n\tMultiple flaws were discovered in the Hotspot and 2D components in OpenJDK. An untrusted Java application or applet could use these flaws to trigger Java Virtual Machine memory corruption and possibly bypass Java sandbox restrictions.\n\nCVE-2014-0453:\n\tIt was discovered that the Security component in OpenJDK could leak some timing information when performing PKCS#1 unpadding. This could possibly lead to the disclosure of some information that was meant to be protected by encryption.\n\nCVE-2014-0452:\n\tMultiple improper permission check issues were discovered in the AWT, JAX-WS, JAXB, Libraries, and Sound components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2014-0451:\n\tMultiple improper permission check issues were discovered in the AWT, JAX-WS, JAXB, Libraries, and Sound components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2014-0446:\n\tMultiple improper permission check issues were discovered in the AWT, JAX-WS, JAXB, Libraries, and Sound components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2014-0429:\n\tAn input validation flaw was discovered in the medialib library in the 2D component. A specially crafted image could trigger Java Virtual Machine memory corruption when processed. A remote attacker, or an untrusted Java application or applet, could possibly use this flaw to execute arbitrary code with the privileges of the user running the Java Virtual Machine.\n\nCVE-2013-5797:\n\tIt was discovered that the fix for CVE-2013-5797 did not properly resolve input sanitization flaws in javadoc. When javadoc documentation was generated from an untrusted Java source code and hosted on a domain not controlled by the code author, these issues could make it easier to perform cross-site scripting (XSS) attacks.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5797",
-        "ID": "CVE-2013-5797",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0429",
-        "ID": "CVE-2014-0429",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0446",
-        "ID": "CVE-2014-0446",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0451",
-        "ID": "CVE-2014-0451",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0452",
-        "ID": "CVE-2014-0452",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0453",
-        "ID": "CVE-2014-0453",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0456",
-        "ID": "CVE-2014-0456",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0457",
-        "ID": "CVE-2014-0457",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0458",
-        "ID": "CVE-2014-0458",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0460",
-        "ID": "CVE-2014-0460",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0461",
-        "ID": "CVE-2014-0461",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1876",
-        "ID": "CVE-2014-1876",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2397",
-        "ID": "CVE-2014-2397",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2398",
-        "ID": "CVE-2014-2398",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2403",
-        "ID": "CVE-2014-2403",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2412",
-        "ID": "CVE-2014-2412",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2414",
-        "ID": "CVE-2014-2414",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2421",
-        "ID": "CVE-2014-2421",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2423",
-        "ID": "CVE-2014-2423",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2427",
-        "ID": "CVE-2014-2427",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2014:0408.html",
-        "ID": "RHSA-2014:0408",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-1.6.0-openjdk-devel",
-          "Release": "67.1.13.3.64.amzn1",
-          "Version": "1.6.0.0",
-          "Filename": "Packages/java-1.6.0-openjdk-devel-1.6.0.0-67.1.13.3.64.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-1.6.0-openjdk-src",
-          "Release": "67.1.13.3.64.amzn1",
-          "Version": "1.6.0.0",
-          "Filename": "Packages/java-1.6.0-openjdk-src-1.6.0.0-67.1.13.3.64.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-1.6.0-openjdk-demo",
-          "Release": "67.1.13.3.64.amzn1",
-          "Version": "1.6.0.0",
-          "Filename": "Packages/java-1.6.0-openjdk-demo-1.6.0.0-67.1.13.3.64.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-1.6.0-openjdk-debuginfo",
-          "Release": "67.1.13.3.64.amzn1",
-          "Version": "1.6.0.0",
-          "Filename": "Packages/java-1.6.0-openjdk-debuginfo-1.6.0.0-67.1.13.3.64.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-1.6.0-openjdk-javadoc",
-          "Release": "67.1.13.3.64.amzn1",
-          "Version": "1.6.0.0",
-          "Filename": "Packages/java-1.6.0-openjdk-javadoc-1.6.0.0-67.1.13.3.64.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-1.6.0-openjdk",
-          "Release": "67.1.13.3.64.amzn1",
-          "Version": "1.6.0.0",
-          "Filename": "Packages/java-1.6.0-openjdk-1.6.0.0-67.1.13.3.64.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "java-1.6.0-openjdk-demo",
-          "Release": "67.1.13.3.64.amzn1",
-          "Version": "1.6.0.0",
-          "Filename": "Packages/java-1.6.0-openjdk-demo-1.6.0.0-67.1.13.3.64.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "java-1.6.0-openjdk-javadoc",
-          "Release": "67.1.13.3.64.amzn1",
-          "Version": "1.6.0.0",
-          "Filename": "Packages/java-1.6.0-openjdk-javadoc-1.6.0.0-67.1.13.3.64.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "java-1.6.0-openjdk-src",
-          "Release": "67.1.13.3.64.amzn1",
-          "Version": "1.6.0.0",
-          "Filename": "Packages/java-1.6.0-openjdk-src-1.6.0.0-67.1.13.3.64.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "java-1.6.0-openjdk",
-          "Release": "67.1.13.3.64.amzn1",
-          "Version": "1.6.0.0",
-          "Filename": "Packages/java-1.6.0-openjdk-1.6.0.0-67.1.13.3.64.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "java-1.6.0-openjdk-devel",
-          "Release": "67.1.13.3.64.amzn1",
-          "Version": "1.6.0.0",
-          "Filename": "Packages/java-1.6.0-openjdk-devel-1.6.0.0-67.1.13.3.64.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "java-1.6.0-openjdk-debuginfo",
-          "Release": "67.1.13.3.64.amzn1",
-          "Version": "1.6.0.0",
-          "Filename": "Packages/java-1.6.0-openjdk-debuginfo-1.6.0.0-67.1.13.3.64.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2014-326",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2012.09 - ALAS-2014-326: important priority package update for java-1.6.0-openjdk",
+	"Issued": {
+		"Date": "2014-04-17 23:53"
+	},
+	"Updated": {
+		"Date": "2014-09-18 00:22"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-2427:\n\tMultiple improper permission check issues were discovered in the AWT, JAX-WS, JAXB, Libraries, and Sound components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2014-2423:\n\tMultiple improper permission check issues were discovered in the AWT, JAX-WS, JAXB, Libraries, and Sound components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2014-2421:\n\tMultiple flaws were discovered in the Hotspot and 2D components in OpenJDK. An untrusted Java application or applet could use these flaws to trigger Java Virtual Machine memory corruption and possibly bypass Java sandbox restrictions.\n\nCVE-2014-2414:\n\tMultiple improper permission check issues were discovered in the AWT, JAX-WS, JAXB, Libraries, and Sound components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2014-2412:\n\tMultiple improper permission check issues were discovered in the AWT, JAX-WS, JAXB, Libraries, and Sound components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2014-2403:\n\tIt was discovered that the JAXP component did not properly prevent access to arbitrary files when a SecurityManager was present. This flaw could cause a Java application using JAXP to leak sensitive information, or affect application availability.\n\nCVE-2014-2398:\n\tIt was discovered that the fix for CVE-2013-5797 did not properly resolve input sanitization flaws in javadoc. When javadoc documentation was generated from an untrusted Java source code and hosted on a domain not controlled by the code author, these issues could make it easier to perform cross-site scripting (XSS) attacks.\n\nCVE-2014-2397:\n\tMultiple flaws were discovered in the Hotspot and 2D components in OpenJDK. An untrusted Java application or applet could use these flaws to trigger Java Virtual Machine memory corruption and possibly bypass Java sandbox restrictions.\n\nCVE-2014-1876:\n\tAn insecure temporary file use flaw was found in the way the unpack200 utility created log files. A local attacker could possibly use this flaw to perform a symbolic link attack and overwrite arbitrary files with the privileges of the user running unpack200.\n\nCVE-2014-0461:\n\tMultiple improper permission check issues were discovered in the Libraries component in OpenJDK. An untrusted Java application or applet could use these flaws to bypass Java sandbox restrictions.\n\nCVE-2014-0460:\n\tMultiple flaws were identified in the Java Naming and Directory Interface (JNDI) DNS client. These flaws could make it easier for a remote attacker to perform DNS spoofing attacks.\n\nCVE-2014-0458:\n\tMultiple improper permission check issues were discovered in the AWT, JAX-WS, JAXB, Libraries, and Sound components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2014-0457:\n\tMultiple improper permission check issues were discovered in the Libraries component in OpenJDK. An untrusted Java application or applet could use these flaws to bypass Java sandbox restrictions.\n\nCVE-2014-0456:\n\tMultiple flaws were discovered in the Hotspot and 2D components in OpenJDK. An untrusted Java application or applet could use these flaws to trigger Java Virtual Machine memory corruption and possibly bypass Java sandbox restrictions.\n\nCVE-2014-0453:\n\tIt was discovered that the Security component in OpenJDK could leak some timing information when performing PKCS#1 unpadding. This could possibly lead to the disclosure of some information that was meant to be protected by encryption.\n\nCVE-2014-0452:\n\tMultiple improper permission check issues were discovered in the AWT, JAX-WS, JAXB, Libraries, and Sound components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2014-0451:\n\tMultiple improper permission check issues were discovered in the AWT, JAX-WS, JAXB, Libraries, and Sound components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2014-0446:\n\tMultiple improper permission check issues were discovered in the AWT, JAX-WS, JAXB, Libraries, and Sound components in OpenJDK. An untrusted Java application or applet could use these flaws to bypass certain Java sandbox restrictions.\n\nCVE-2014-0429:\n\tAn input validation flaw was discovered in the medialib library in the 2D component. A specially crafted image could trigger Java Virtual Machine memory corruption when processed. A remote attacker, or an untrusted Java application or applet, could possibly use this flaw to execute arbitrary code with the privileges of the user running the Java Virtual Machine.\n\nCVE-2013-5797:\n\tIt was discovered that the fix for CVE-2013-5797 did not properly resolve input sanitization flaws in javadoc. When javadoc documentation was generated from an untrusted Java source code and hosted on a domain not controlled by the code author, these issues could make it easier to perform cross-site scripting (XSS) attacks.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-5797",
+				"ID": "CVE-2013-5797",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0429",
+				"ID": "CVE-2014-0429",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0446",
+				"ID": "CVE-2014-0446",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0451",
+				"ID": "CVE-2014-0451",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0452",
+				"ID": "CVE-2014-0452",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0453",
+				"ID": "CVE-2014-0453",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0456",
+				"ID": "CVE-2014-0456",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0457",
+				"ID": "CVE-2014-0457",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0458",
+				"ID": "CVE-2014-0458",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0460",
+				"ID": "CVE-2014-0460",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0461",
+				"ID": "CVE-2014-0461",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-1876",
+				"ID": "CVE-2014-1876",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2397",
+				"ID": "CVE-2014-2397",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2398",
+				"ID": "CVE-2014-2398",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2403",
+				"ID": "CVE-2014-2403",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2412",
+				"ID": "CVE-2014-2412",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2414",
+				"ID": "CVE-2014-2414",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2421",
+				"ID": "CVE-2014-2421",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2423",
+				"ID": "CVE-2014-2423",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2427",
+				"ID": "CVE-2014-2427",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2014:0408.html",
+				"ID": "RHSA-2014:0408",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-1.6.0-openjdk-devel",
+					"Release": "67.1.13.3.64.amzn1",
+					"Version": "1.6.0.0",
+					"Filename": "Packages/java-1.6.0-openjdk-devel-1.6.0.0-67.1.13.3.64.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-1.6.0-openjdk-src",
+					"Release": "67.1.13.3.64.amzn1",
+					"Version": "1.6.0.0",
+					"Filename": "Packages/java-1.6.0-openjdk-src-1.6.0.0-67.1.13.3.64.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-1.6.0-openjdk-demo",
+					"Release": "67.1.13.3.64.amzn1",
+					"Version": "1.6.0.0",
+					"Filename": "Packages/java-1.6.0-openjdk-demo-1.6.0.0-67.1.13.3.64.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-1.6.0-openjdk-debuginfo",
+					"Release": "67.1.13.3.64.amzn1",
+					"Version": "1.6.0.0",
+					"Filename": "Packages/java-1.6.0-openjdk-debuginfo-1.6.0.0-67.1.13.3.64.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-1.6.0-openjdk-javadoc",
+					"Release": "67.1.13.3.64.amzn1",
+					"Version": "1.6.0.0",
+					"Filename": "Packages/java-1.6.0-openjdk-javadoc-1.6.0.0-67.1.13.3.64.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-1.6.0-openjdk",
+					"Release": "67.1.13.3.64.amzn1",
+					"Version": "1.6.0.0",
+					"Filename": "Packages/java-1.6.0-openjdk-1.6.0.0-67.1.13.3.64.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "java-1.6.0-openjdk-demo",
+					"Release": "67.1.13.3.64.amzn1",
+					"Version": "1.6.0.0",
+					"Filename": "Packages/java-1.6.0-openjdk-demo-1.6.0.0-67.1.13.3.64.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "java-1.6.0-openjdk-javadoc",
+					"Release": "67.1.13.3.64.amzn1",
+					"Version": "1.6.0.0",
+					"Filename": "Packages/java-1.6.0-openjdk-javadoc-1.6.0.0-67.1.13.3.64.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "java-1.6.0-openjdk-src",
+					"Release": "67.1.13.3.64.amzn1",
+					"Version": "1.6.0.0",
+					"Filename": "Packages/java-1.6.0-openjdk-src-1.6.0.0-67.1.13.3.64.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "java-1.6.0-openjdk",
+					"Release": "67.1.13.3.64.amzn1",
+					"Version": "1.6.0.0",
+					"Filename": "Packages/java-1.6.0-openjdk-1.6.0.0-67.1.13.3.64.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "java-1.6.0-openjdk-devel",
+					"Release": "67.1.13.3.64.amzn1",
+					"Version": "1.6.0.0",
+					"Filename": "Packages/java-1.6.0-openjdk-devel-1.6.0.0-67.1.13.3.64.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "java-1.6.0-openjdk-debuginfo",
+					"Release": "67.1.13.3.64.amzn1",
+					"Version": "1.6.0.0",
+					"Filename": "Packages/java-1.6.0-openjdk-debuginfo-1.6.0.0-67.1.13.3.64.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

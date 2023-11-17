@@ -1,153 +1,153 @@
 {
-  "ID": "ALAS2-2020-1455",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1455: medium priority package update for ntp",
-  "Issued": {
-    "Date": "2020-07-14 02:38"
-  },
-  "Updated": {
-    "Date": "2020-07-17 00:46"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-13817:\n\tntpd in ntp before 4.2.8p14 and 4.3.x before 4.3.100 allows remote attackers to cause a denial of service (daemon exit or system time change) by predicting transmit timestamps for use in spoofed packets. The victim must be relying on unauthenticated IPv4 time sources. There must be an off-path attacker who can query time from the victim's ntpd instance.\n1811627: CVE-2020-13817 ntp: ntpd using highly predictable transmit timestamps could result in time change or DoS\n\nCVE-2020-11868:\n\tntpd in ntp before 4.2.8p14 and 4.3.x before 4.3.100 allows an off-path attacker to block unauthenticated synchronization via a server mode packet with a spoofed source IP address, because transmissions are rescheduled even when a packet lacks a valid origin timestamp.\n1716665: CVE-2020-11868 ntp: DoS on client ntpd using server mode packet\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11868",
-        "ID": "CVE-2020-11868",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13817",
-        "ID": "CVE-2020-13817",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "ntp",
-          "Release": "29.amzn2.0.2",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-4.2.6p5-29.amzn2.0.2.aarch64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "ntp-perl",
-          "Release": "29.amzn2.0.2",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-perl-4.2.6p5-29.amzn2.0.2.noarch.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "ntpdate",
-          "Release": "29.amzn2.0.2",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntpdate-4.2.6p5-29.amzn2.0.2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "sntp",
-          "Release": "29.amzn2.0.2",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/sntp-4.2.6p5-29.amzn2.0.2.aarch64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "ntp-doc",
-          "Release": "29.amzn2.0.2",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-doc-4.2.6p5-29.amzn2.0.2.noarch.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "ntp-debuginfo",
-          "Release": "29.amzn2.0.2",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-debuginfo-4.2.6p5-29.amzn2.0.2.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "ntp",
-          "Release": "29.amzn2.0.2",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-4.2.6p5-29.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "ntpdate",
-          "Release": "29.amzn2.0.2",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntpdate-4.2.6p5-29.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "sntp",
-          "Release": "29.amzn2.0.2",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/sntp-4.2.6p5-29.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "ntp-debuginfo",
-          "Release": "29.amzn2.0.2",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-debuginfo-4.2.6p5-29.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "ntp",
-          "Release": "29.amzn2.0.2",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-4.2.6p5-29.amzn2.0.2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "ntpdate",
-          "Release": "29.amzn2.0.2",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntpdate-4.2.6p5-29.amzn2.0.2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "sntp",
-          "Release": "29.amzn2.0.2",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/sntp-4.2.6p5-29.amzn2.0.2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "ntp-debuginfo",
-          "Release": "29.amzn2.0.2",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-debuginfo-4.2.6p5-29.amzn2.0.2.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2020-1455",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1455: medium priority package update for ntp",
+	"Issued": {
+		"Date": "2020-07-14 02:38"
+	},
+	"Updated": {
+		"Date": "2020-07-17 00:46"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-13817:\n\tntpd in ntp before 4.2.8p14 and 4.3.x before 4.3.100 allows remote attackers to cause a denial of service (daemon exit or system time change) by predicting transmit timestamps for use in spoofed packets. The victim must be relying on unauthenticated IPv4 time sources. There must be an off-path attacker who can query time from the victim's ntpd instance.\n1811627: CVE-2020-13817 ntp: ntpd using highly predictable transmit timestamps could result in time change or DoS\n\nCVE-2020-11868:\n\tntpd in ntp before 4.2.8p14 and 4.3.x before 4.3.100 allows an off-path attacker to block unauthenticated synchronization via a server mode packet with a spoofed source IP address, because transmissions are rescheduled even when a packet lacks a valid origin timestamp.\n1716665: CVE-2020-11868 ntp: DoS on client ntpd using server mode packet\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11868",
+				"ID": "CVE-2020-11868",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-13817",
+				"ID": "CVE-2020-13817",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "ntp",
+					"Release": "29.amzn2.0.2",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-4.2.6p5-29.amzn2.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "ntp-perl",
+					"Release": "29.amzn2.0.2",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-perl-4.2.6p5-29.amzn2.0.2.noarch.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "ntpdate",
+					"Release": "29.amzn2.0.2",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntpdate-4.2.6p5-29.amzn2.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "sntp",
+					"Release": "29.amzn2.0.2",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/sntp-4.2.6p5-29.amzn2.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "ntp-doc",
+					"Release": "29.amzn2.0.2",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-doc-4.2.6p5-29.amzn2.0.2.noarch.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "ntp-debuginfo",
+					"Release": "29.amzn2.0.2",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-debuginfo-4.2.6p5-29.amzn2.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ntp",
+					"Release": "29.amzn2.0.2",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-4.2.6p5-29.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ntpdate",
+					"Release": "29.amzn2.0.2",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntpdate-4.2.6p5-29.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "sntp",
+					"Release": "29.amzn2.0.2",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/sntp-4.2.6p5-29.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ntp-debuginfo",
+					"Release": "29.amzn2.0.2",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-debuginfo-4.2.6p5-29.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "ntp",
+					"Release": "29.amzn2.0.2",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-4.2.6p5-29.amzn2.0.2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "ntpdate",
+					"Release": "29.amzn2.0.2",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntpdate-4.2.6p5-29.amzn2.0.2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "sntp",
+					"Release": "29.amzn2.0.2",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/sntp-4.2.6p5-29.amzn2.0.2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "ntp-debuginfo",
+					"Release": "29.amzn2.0.2",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-debuginfo-4.2.6p5-29.amzn2.0.2.i686.rpm"
+				}
+			]
+		}
+	}
 }

@@ -1,141 +1,141 @@
 {
-  "ID": "ALAS-2014-307",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-307: medium priority package update for libtiff",
-  "Issued": {
-    "Date": "2014-03-13 18:13"
-  },
-  "Updated": {
-    "Date": "2014-09-17 22:52"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-4244:\n\tMultiple buffer overflow flaws were found in the gif2tiff tool. An attacker could use these flaws to create a specially crafted GIF file that could cause gif2tiff to crash or, possibly, execute arbitrary code.\n\nCVE-2013-4243:\n\tMultiple buffer overflow flaws were found in the gif2tiff tool. An attacker could use these flaws to create a specially crafted GIF file that could cause gif2tiff to crash or, possibly, execute arbitrary code.\n\nCVE-2013-4232:\n\tA heap-based buffer overflow and a use-after-free flaw were found in the tiff2pdf tool. An attacker could use these flaws to create a specially crafted TIFF file that would cause tiff2pdf to crash or, possibly, execute arbitrary code.\n\nCVE-2013-4231:\n\tMultiple buffer overflow flaws were found in the gif2tiff tool. An attacker could use these flaws to create a specially crafted GIF file that could cause gif2tiff to crash or, possibly, execute arbitrary code.\n\nCVE-2013-1961:\n\tMultiple buffer overflow flaws were found in the tiff2pdf tool. An attacker could use these flaws to create a specially crafted TIFF file that would cause tiff2pdf to crash.\n\nCVE-2013-1960:\n\tA heap-based buffer overflow and a use-after-free flaw were found in the tiff2pdf tool. An attacker could use these flaws to create a specially crafted TIFF file that would cause tiff2pdf to crash or, possibly, execute arbitrary code.\n\nCVE-2010-2596:\n\tA flaw was found in the way libtiff handled OJPEG-encoded TIFF images. An attacker could use this flaw to create a specially crafted TIFF file that would cause an application using libtiff to crash.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2596",
-        "ID": "CVE-2010-2596",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1960",
-        "ID": "CVE-2013-1960",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1961",
-        "ID": "CVE-2013-1961",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4231",
-        "ID": "CVE-2013-4231",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4232",
-        "ID": "CVE-2013-4232",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4243",
-        "ID": "CVE-2013-4243",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4244",
-        "ID": "CVE-2013-4244",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2014:0222.html",
-        "ID": "RHSA-2014:0222",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libtiff-debuginfo",
-          "Release": "10.12.amzn1",
-          "Version": "3.9.4",
-          "Filename": "Packages/libtiff-debuginfo-3.9.4-10.12.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libtiff-devel",
-          "Release": "10.12.amzn1",
-          "Version": "3.9.4",
-          "Filename": "Packages/libtiff-devel-3.9.4-10.12.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libtiff",
-          "Release": "10.12.amzn1",
-          "Version": "3.9.4",
-          "Filename": "Packages/libtiff-3.9.4-10.12.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libtiff-static",
-          "Release": "10.12.amzn1",
-          "Version": "3.9.4",
-          "Filename": "Packages/libtiff-static-3.9.4-10.12.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libtiff",
-          "Release": "10.12.amzn1",
-          "Version": "3.9.4",
-          "Filename": "Packages/libtiff-3.9.4-10.12.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libtiff-static",
-          "Release": "10.12.amzn1",
-          "Version": "3.9.4",
-          "Filename": "Packages/libtiff-static-3.9.4-10.12.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libtiff-debuginfo",
-          "Release": "10.12.amzn1",
-          "Version": "3.9.4",
-          "Filename": "Packages/libtiff-debuginfo-3.9.4-10.12.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libtiff-devel",
-          "Release": "10.12.amzn1",
-          "Version": "3.9.4",
-          "Filename": "Packages/libtiff-devel-3.9.4-10.12.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2014-307",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2012.09 - ALAS-2014-307: medium priority package update for libtiff",
+	"Issued": {
+		"Date": "2014-03-13 18:13"
+	},
+	"Updated": {
+		"Date": "2014-09-17 22:52"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-4244:\n\tMultiple buffer overflow flaws were found in the gif2tiff tool. An attacker could use these flaws to create a specially crafted GIF file that could cause gif2tiff to crash or, possibly, execute arbitrary code.\n\nCVE-2013-4243:\n\tMultiple buffer overflow flaws were found in the gif2tiff tool. An attacker could use these flaws to create a specially crafted GIF file that could cause gif2tiff to crash or, possibly, execute arbitrary code.\n\nCVE-2013-4232:\n\tA heap-based buffer overflow and a use-after-free flaw were found in the tiff2pdf tool. An attacker could use these flaws to create a specially crafted TIFF file that would cause tiff2pdf to crash or, possibly, execute arbitrary code.\n\nCVE-2013-4231:\n\tMultiple buffer overflow flaws were found in the gif2tiff tool. An attacker could use these flaws to create a specially crafted GIF file that could cause gif2tiff to crash or, possibly, execute arbitrary code.\n\nCVE-2013-1961:\n\tMultiple buffer overflow flaws were found in the tiff2pdf tool. An attacker could use these flaws to create a specially crafted TIFF file that would cause tiff2pdf to crash.\n\nCVE-2013-1960:\n\tA heap-based buffer overflow and a use-after-free flaw were found in the tiff2pdf tool. An attacker could use these flaws to create a specially crafted TIFF file that would cause tiff2pdf to crash or, possibly, execute arbitrary code.\n\nCVE-2010-2596:\n\tA flaw was found in the way libtiff handled OJPEG-encoded TIFF images. An attacker could use this flaw to create a specially crafted TIFF file that would cause an application using libtiff to crash.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2596",
+				"ID": "CVE-2010-2596",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1960",
+				"ID": "CVE-2013-1960",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1961",
+				"ID": "CVE-2013-1961",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4231",
+				"ID": "CVE-2013-4231",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4232",
+				"ID": "CVE-2013-4232",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4243",
+				"ID": "CVE-2013-4243",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4244",
+				"ID": "CVE-2013-4244",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2014:0222.html",
+				"ID": "RHSA-2014:0222",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libtiff-debuginfo",
+					"Release": "10.12.amzn1",
+					"Version": "3.9.4",
+					"Filename": "Packages/libtiff-debuginfo-3.9.4-10.12.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libtiff-devel",
+					"Release": "10.12.amzn1",
+					"Version": "3.9.4",
+					"Filename": "Packages/libtiff-devel-3.9.4-10.12.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libtiff",
+					"Release": "10.12.amzn1",
+					"Version": "3.9.4",
+					"Filename": "Packages/libtiff-3.9.4-10.12.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libtiff-static",
+					"Release": "10.12.amzn1",
+					"Version": "3.9.4",
+					"Filename": "Packages/libtiff-static-3.9.4-10.12.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libtiff",
+					"Release": "10.12.amzn1",
+					"Version": "3.9.4",
+					"Filename": "Packages/libtiff-3.9.4-10.12.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libtiff-static",
+					"Release": "10.12.amzn1",
+					"Version": "3.9.4",
+					"Filename": "Packages/libtiff-static-3.9.4-10.12.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libtiff-debuginfo",
+					"Release": "10.12.amzn1",
+					"Version": "3.9.4",
+					"Filename": "Packages/libtiff-debuginfo-3.9.4-10.12.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libtiff-devel",
+					"Release": "10.12.amzn1",
+					"Version": "3.9.4",
+					"Filename": "Packages/libtiff-devel-3.9.4-10.12.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

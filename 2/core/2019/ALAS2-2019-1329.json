@@ -1,89 +1,89 @@
 {
-  "ID": "ALAS2-2019-1329",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1329: medium priority package update for mod_auth_openidc",
-  "Issued": {
-    "Date": "2019-10-21 18:01"
-  },
-  "Updated": {
-    "Date": "2019-10-23 23:53"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2017-6413:\n\tIt was found that mod_auth_openidc did not properly sanitize HTTP headers for certain request paths. A remote attacker could potentially use this flaw to bypass authentication and access sensitive information by sending crafted HTTP requests.\n99999: \nCVE-2017-6413 mod_auth_openidc: OIDC_CLAIM and OIDCAuthNHeader not skipped in an &quot;AuthType oauth20&quot; configuration\n\nCVE-2017-6059:\n\tA text injection flaw was found in how mod_auth_openidc handled error pages. An attacker could potentially use this flaw to conduct content spoofing and phishing attacks by tricking users into opening specially crafted URLs.\n99999: \nCVE-2017-6059 mod_auth_openidc: Shows user-supplied content on error pages\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6059",
-        "ID": "CVE-2017-6059",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6413",
-        "ID": "CVE-2017-6413",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "mod_auth_openidc",
-          "Release": "5.amzn2",
-          "Version": "1.8.8",
-          "Filename": "Packages/mod_auth_openidc-1.8.8-5.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "mod_auth_openidc-debuginfo",
-          "Release": "5.amzn2",
-          "Version": "1.8.8",
-          "Filename": "Packages/mod_auth_openidc-debuginfo-1.8.8-5.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mod_auth_openidc",
-          "Release": "5.amzn2",
-          "Version": "1.8.8",
-          "Filename": "Packages/mod_auth_openidc-1.8.8-5.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mod_auth_openidc-debuginfo",
-          "Release": "5.amzn2",
-          "Version": "1.8.8",
-          "Filename": "Packages/mod_auth_openidc-debuginfo-1.8.8-5.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mod_auth_openidc",
-          "Release": "5.amzn2",
-          "Version": "1.8.8",
-          "Filename": "Packages/mod_auth_openidc-1.8.8-5.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mod_auth_openidc-debuginfo",
-          "Release": "5.amzn2",
-          "Version": "1.8.8",
-          "Filename": "Packages/mod_auth_openidc-debuginfo-1.8.8-5.amzn2.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2019-1329",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1329: medium priority package update for mod_auth_openidc",
+	"Issued": {
+		"Date": "2019-10-21 18:01"
+	},
+	"Updated": {
+		"Date": "2019-10-23 23:53"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2017-6413:\n\tIt was found that mod_auth_openidc did not properly sanitize HTTP headers for certain request paths. A remote attacker could potentially use this flaw to bypass authentication and access sensitive information by sending crafted HTTP requests.\n99999: \nCVE-2017-6413 mod_auth_openidc: OIDC_CLAIM and OIDCAuthNHeader not skipped in an &quot;AuthType oauth20&quot; configuration\n\nCVE-2017-6059:\n\tA text injection flaw was found in how mod_auth_openidc handled error pages. An attacker could potentially use this flaw to conduct content spoofing and phishing attacks by tricking users into opening specially crafted URLs.\n99999: \nCVE-2017-6059 mod_auth_openidc: Shows user-supplied content on error pages\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6059",
+				"ID": "CVE-2017-6059",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6413",
+				"ID": "CVE-2017-6413",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "mod_auth_openidc",
+					"Release": "5.amzn2",
+					"Version": "1.8.8",
+					"Filename": "Packages/mod_auth_openidc-1.8.8-5.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "mod_auth_openidc-debuginfo",
+					"Release": "5.amzn2",
+					"Version": "1.8.8",
+					"Filename": "Packages/mod_auth_openidc-debuginfo-1.8.8-5.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mod_auth_openidc",
+					"Release": "5.amzn2",
+					"Version": "1.8.8",
+					"Filename": "Packages/mod_auth_openidc-1.8.8-5.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mod_auth_openidc-debuginfo",
+					"Release": "5.amzn2",
+					"Version": "1.8.8",
+					"Filename": "Packages/mod_auth_openidc-debuginfo-1.8.8-5.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mod_auth_openidc",
+					"Release": "5.amzn2",
+					"Version": "1.8.8",
+					"Filename": "Packages/mod_auth_openidc-1.8.8-5.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mod_auth_openidc-debuginfo",
+					"Release": "5.amzn2",
+					"Version": "1.8.8",
+					"Filename": "Packages/mod_auth_openidc-debuginfo-1.8.8-5.amzn2.i686.rpm"
+				}
+			]
+		}
+	}
 }

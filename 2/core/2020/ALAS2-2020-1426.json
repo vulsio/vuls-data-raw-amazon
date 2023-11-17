@@ -1,433 +1,433 @@
 {
-  "ID": "ALAS2-2020-1426",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1426: important priority package update for bind",
-  "Issued": {
-    "Date": "2020-05-19 18:32"
-  },
-  "Updated": {
-    "Date": "2020-05-20 20:14"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-8617:\n\tAn assertion failure was found in BIND, which checks the validity of messages containing TSIG resource records. This flaw allows an attacker that knows or successfully guesses the name of the TSIG key used by the server to use a specially-crafted message, potentially causing a BIND server to reach an inconsistent state or cause a denial of service. A majority of BIND servers have an internally-generated TSIG session key whose name is trivially guessable, and that key exposes the vulnerability unless specifically disabled.\n1836124: CVE-2020-8617 bind: A logic error in code which checks TSIG validity can be used to trigger an assertion failure in tsig.c\n\nCVE-2020-8616:\n\tA flaw was found in BIND, where it does not sufficiently limit the number of fetches that can be performed while processing a referral response. This flaw allows an attacker to cause a denial of service attack. The attacker can also exploit this behavior to use the recursing server as a reflector in a reflection attack with a high amplification factor.\n1836118: CVE-2020-8616 bind: BIND does not sufficiently limit the number of fetches performed when processing referrals\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8616",
-        "ID": "CVE-2020-8616",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8617",
-        "ID": "CVE-2020-8617",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "32",
-          "Name": "bind",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "32",
-          "Name": "bind-pkcs11",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-pkcs11-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "32",
-          "Name": "bind-pkcs11-utils",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-pkcs11-utils-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "32",
-          "Name": "bind-pkcs11-libs",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-pkcs11-libs-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "32",
-          "Name": "bind-pkcs11-devel",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-pkcs11-devel-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "32",
-          "Name": "bind-sdb",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-sdb-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "32",
-          "Name": "bind-libs-lite",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-libs-lite-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "32",
-          "Name": "bind-libs",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-libs-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "32",
-          "Name": "bind-license",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-license-9.11.4-9.P2.amzn2.0.3.noarch.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "32",
-          "Name": "bind-utils",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-utils-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "32",
-          "Name": "bind-devel",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-devel-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "32",
-          "Name": "bind-lite-devel",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-lite-devel-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "32",
-          "Name": "bind-chroot",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-chroot-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "32",
-          "Name": "bind-sdb-chroot",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-sdb-chroot-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "32",
-          "Name": "bind-export-libs",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-export-libs-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "32",
-          "Name": "bind-export-devel",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-export-devel-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "32",
-          "Name": "bind-debuginfo",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-debuginfo-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-pkcs11",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-pkcs11-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-pkcs11-utils",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-pkcs11-utils-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-pkcs11-libs",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-pkcs11-libs-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-pkcs11-devel",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-pkcs11-devel-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-sdb",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-sdb-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-libs-lite",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-libs-lite-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-libs",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-libs-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-utils",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-utils-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-devel",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-devel-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-lite-devel",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-lite-devel-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-chroot",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-chroot-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-sdb-chroot",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-sdb-chroot-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-export-libs",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-export-libs-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-export-devel",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-export-devel-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-debuginfo",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-debuginfo-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-9.11.4-9.P2.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-pkcs11",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-pkcs11-9.11.4-9.P2.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-pkcs11-utils",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-pkcs11-utils-9.11.4-9.P2.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-pkcs11-libs",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-pkcs11-libs-9.11.4-9.P2.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-pkcs11-devel",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-pkcs11-devel-9.11.4-9.P2.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-sdb",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-sdb-9.11.4-9.P2.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-libs-lite",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-libs-lite-9.11.4-9.P2.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-libs",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-libs-9.11.4-9.P2.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-utils",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-utils-9.11.4-9.P2.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-devel",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-devel-9.11.4-9.P2.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-lite-devel",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-lite-devel-9.11.4-9.P2.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-chroot",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-chroot-9.11.4-9.P2.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-sdb-chroot",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-sdb-chroot-9.11.4-9.P2.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-export-libs",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-export-libs-9.11.4-9.P2.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-export-devel",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-export-devel-9.11.4-9.P2.amzn2.0.3.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-debuginfo",
-          "Release": "9.P2.amzn2.0.3",
-          "Version": "9.11.4",
-          "Filename": "Packages/bind-debuginfo-9.11.4-9.P2.amzn2.0.3.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2020-1426",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1426: important priority package update for bind",
+	"Issued": {
+		"Date": "2020-05-19 18:32"
+	},
+	"Updated": {
+		"Date": "2020-05-20 20:14"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-8617:\n\tAn assertion failure was found in BIND, which checks the validity of messages containing TSIG resource records. This flaw allows an attacker that knows or successfully guesses the name of the TSIG key used by the server to use a specially-crafted message, potentially causing a BIND server to reach an inconsistent state or cause a denial of service. A majority of BIND servers have an internally-generated TSIG session key whose name is trivially guessable, and that key exposes the vulnerability unless specifically disabled.\n1836124: CVE-2020-8617 bind: A logic error in code which checks TSIG validity can be used to trigger an assertion failure in tsig.c\n\nCVE-2020-8616:\n\tA flaw was found in BIND, where it does not sufficiently limit the number of fetches that can be performed while processing a referral response. This flaw allows an attacker to cause a denial of service attack. The attacker can also exploit this behavior to use the recursing server as a reflector in a reflection attack with a high amplification factor.\n1836118: CVE-2020-8616 bind: BIND does not sufficiently limit the number of fetches performed when processing referrals\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8616",
+				"ID": "CVE-2020-8616",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8617",
+				"ID": "CVE-2020-8617",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-pkcs11",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-pkcs11-utils",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-utils-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-pkcs11-libs",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-libs-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-pkcs11-devel",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-devel-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-sdb",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-sdb-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-libs-lite",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-libs-lite-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-libs",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-libs-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "32",
+					"Name": "bind-license",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-license-9.11.4-9.P2.amzn2.0.3.noarch.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-utils",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-utils-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-devel",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-devel-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-lite-devel",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-lite-devel-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-chroot",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-chroot-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-sdb-chroot",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-sdb-chroot-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-export-libs",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-export-libs-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-export-devel",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-export-devel-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-debuginfo",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-debuginfo-9.11.4-9.P2.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-pkcs11",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-pkcs11-utils",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-utils-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-pkcs11-libs",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-libs-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-pkcs11-devel",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-devel-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-sdb",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-sdb-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-libs-lite",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-libs-lite-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-libs",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-libs-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-utils",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-utils-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-devel",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-devel-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-lite-devel",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-lite-devel-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-chroot",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-chroot-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-sdb-chroot",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-sdb-chroot-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-export-libs",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-export-libs-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-export-devel",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-export-devel-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-debuginfo",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-debuginfo-9.11.4-9.P2.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-9.11.4-9.P2.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-pkcs11",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-9.11.4-9.P2.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-pkcs11-utils",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-utils-9.11.4-9.P2.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-pkcs11-libs",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-libs-9.11.4-9.P2.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-pkcs11-devel",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-devel-9.11.4-9.P2.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-sdb",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-sdb-9.11.4-9.P2.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-libs-lite",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-libs-lite-9.11.4-9.P2.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-libs",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-libs-9.11.4-9.P2.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-utils",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-utils-9.11.4-9.P2.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-devel",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-devel-9.11.4-9.P2.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-lite-devel",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-lite-devel-9.11.4-9.P2.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-chroot",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-chroot-9.11.4-9.P2.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-sdb-chroot",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-sdb-chroot-9.11.4-9.P2.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-export-libs",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-export-libs-9.11.4-9.P2.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-export-devel",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-export-devel-9.11.4-9.P2.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-debuginfo",
+					"Release": "9.P2.amzn2.0.3",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-debuginfo-9.11.4-9.P2.amzn2.0.3.i686.rpm"
+				}
+			]
+		}
+	}
 }

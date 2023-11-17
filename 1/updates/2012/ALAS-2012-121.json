@@ -1,211 +1,211 @@
 {
-  "ID": "ALAS-2012-121",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux - ALAS-2012-121: medium priority package update for postgresql9",
-  "Issued": {
-    "Date": "2012-09-04 10:23"
-  },
-  "Updated": {
-    "Date": "2014-09-14 16:55"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-3488:\n\tIt was found that the optional PostgreSQL xml2 contrib module allowed local files and remote URLs to be read and written to with the privileges of the database server when parsing Extensible Stylesheet Language Transformations (XSLT). An unprivileged database user could use this flaw to read and write to local files (such as the database's configuration files) and remote URLs they would otherwise not have access to by issuing a specially-crafted SQL query.\n849172: \nCVE-2012-3488 postgresql (xml2 contrib module): XXE by applying XSL stylesheet to the document\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3488",
-        "ID": "CVE-2012-3488",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux",
-      "Name": "Amazon Linux",
-      "Package": [
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql9-devel",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-devel-9.1.5-1.23.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql9-docs",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-docs-9.1.5-1.23.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql9-test",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-test-9.1.5-1.23.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql9-pltcl",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-pltcl-9.1.5-1.23.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql9",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-9.1.5-1.23.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql9-debuginfo",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-debuginfo-9.1.5-1.23.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql9-plperl",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-plperl-9.1.5-1.23.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql9-plpython",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-plpython-9.1.5-1.23.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql9-contrib",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-contrib-9.1.5-1.23.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql9-server",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-server-9.1.5-1.23.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql9-libs",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-libs-9.1.5-1.23.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql9-devel",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-devel-9.1.5-1.23.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql9-server",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-server-9.1.5-1.23.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql9-plperl",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-plperl-9.1.5-1.23.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql9",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-9.1.5-1.23.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql9-pltcl",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-pltcl-9.1.5-1.23.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql9-libs",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-libs-9.1.5-1.23.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql9-docs",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-docs-9.1.5-1.23.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql9-test",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-test-9.1.5-1.23.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql9-debuginfo",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-debuginfo-9.1.5-1.23.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql9-contrib",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-contrib-9.1.5-1.23.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql9-plpython",
-          "Release": "1.23.amzn1",
-          "Version": "9.1.5",
-          "Filename": "Packages/postgresql9-plpython-9.1.5-1.23.amzn1.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2012-121",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux - ALAS-2012-121: medium priority package update for postgresql9",
+	"Issued": {
+		"Date": "2012-09-04 10:23"
+	},
+	"Updated": {
+		"Date": "2014-09-14 16:55"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-3488:\n\tIt was found that the optional PostgreSQL xml2 contrib module allowed local files and remote URLs to be read and written to with the privileges of the database server when parsing Extensible Stylesheet Language Transformations (XSLT). An unprivileged database user could use this flaw to read and write to local files (such as the database's configuration files) and remote URLs they would otherwise not have access to by issuing a specially-crafted SQL query.\n849172: \nCVE-2012-3488 postgresql (xml2 contrib module): XXE by applying XSL stylesheet to the document\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-3488",
+				"ID": "CVE-2012-3488",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux",
+			"Name": "Amazon Linux",
+			"Package": [
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql9-devel",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-devel-9.1.5-1.23.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql9-docs",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-docs-9.1.5-1.23.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql9-test",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-test-9.1.5-1.23.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql9-pltcl",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-pltcl-9.1.5-1.23.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql9",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-9.1.5-1.23.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql9-debuginfo",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-debuginfo-9.1.5-1.23.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql9-plperl",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-plperl-9.1.5-1.23.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql9-plpython",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-plpython-9.1.5-1.23.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql9-contrib",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-contrib-9.1.5-1.23.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql9-server",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-server-9.1.5-1.23.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql9-libs",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-libs-9.1.5-1.23.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql9-devel",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-devel-9.1.5-1.23.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql9-server",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-server-9.1.5-1.23.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql9-plperl",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-plperl-9.1.5-1.23.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql9",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-9.1.5-1.23.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql9-pltcl",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-pltcl-9.1.5-1.23.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql9-libs",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-libs-9.1.5-1.23.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql9-docs",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-docs-9.1.5-1.23.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql9-test",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-test-9.1.5-1.23.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql9-debuginfo",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-debuginfo-9.1.5-1.23.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql9-contrib",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-contrib-9.1.5-1.23.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql9-plpython",
+					"Release": "1.23.amzn1",
+					"Version": "9.1.5",
+					"Filename": "Packages/postgresql9-plpython-9.1.5-1.23.amzn1.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

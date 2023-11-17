@@ -1,67 +1,67 @@
 {
-  "ID": "ALAS-2016-750",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-750: medium priority package update for openvpn",
-  "Issued": {
-    "Date": "2016-09-27 10:30"
-  },
-  "Updated": {
-    "Date": "2016-09-27 10:30"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-6329:\n\tCiphers with 64-bit block sizes used in CBC mode were found to be vulnerable to birthday attack when key renegotiation doesn't happen frequently or at all in long running connections. Blowfish cipher as used in OpenVPN by default is vulnerable to this attack, that allows remote attacker to recover partial plaintext information (XOR of two plaintext blocks).\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6329",
-        "ID": "CVE-2016-6329",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "openvpn",
-          "Release": "1.16.amzn1",
-          "Version": "2.3.12",
-          "Filename": "Packages/openvpn-2.3.12-1.16.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "openvpn-debuginfo",
-          "Release": "1.16.amzn1",
-          "Version": "2.3.12",
-          "Filename": "Packages/openvpn-debuginfo-2.3.12-1.16.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "openvpn-debuginfo",
-          "Release": "1.16.amzn1",
-          "Version": "2.3.12",
-          "Filename": "Packages/openvpn-debuginfo-2.3.12-1.16.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "openvpn",
-          "Release": "1.16.amzn1",
-          "Version": "2.3.12",
-          "Filename": "Packages/openvpn-2.3.12-1.16.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2016-750",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2016-750: medium priority package update for openvpn",
+	"Issued": {
+		"Date": "2016-09-27 10:30"
+	},
+	"Updated": {
+		"Date": "2016-09-27 10:30"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-6329:\n\tCiphers with 64-bit block sizes used in CBC mode were found to be vulnerable to birthday attack when key renegotiation doesn't happen frequently or at all in long running connections. Blowfish cipher as used in OpenVPN by default is vulnerable to this attack, that allows remote attacker to recover partial plaintext information (XOR of two plaintext blocks).\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-6329",
+				"ID": "CVE-2016-6329",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "openvpn",
+					"Release": "1.16.amzn1",
+					"Version": "2.3.12",
+					"Filename": "Packages/openvpn-2.3.12-1.16.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "openvpn-debuginfo",
+					"Release": "1.16.amzn1",
+					"Version": "2.3.12",
+					"Filename": "Packages/openvpn-debuginfo-2.3.12-1.16.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "openvpn-debuginfo",
+					"Release": "1.16.amzn1",
+					"Version": "2.3.12",
+					"Filename": "Packages/openvpn-debuginfo-2.3.12-1.16.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "openvpn",
+					"Release": "1.16.amzn1",
+					"Version": "2.3.12",
+					"Filename": "Packages/openvpn-2.3.12-1.16.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

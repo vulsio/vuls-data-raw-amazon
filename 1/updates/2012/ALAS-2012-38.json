@@ -1,139 +1,139 @@
 {
-  "ID": "ALAS-2012-38",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux - ALAS-2012-38: medium priority package update for openssl",
-  "Issued": {
-    "Date": "2012-02-02 14:24"
-  },
-  "Updated": {
-    "Date": "2014-09-14 15:14"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2011-4619:\n\tThe Server Gated Cryptography (SGC) implementation in OpenSSL before 0.9.8s and 1.x before 1.0.0f does not properly handle handshake restarts, which allows remote attackers to cause a denial of service via unspecified vectors.\nIt was discovered that OpenSSL did not limit the number of TLS/SSL handshake restarts required to support Server Gated Cryptography. A remote attacker could use this flaw to make a TLS/SSL server using OpenSSL consume an excessive amount of CPU by continuously restarting the handshake.\n\nCVE-2011-4577:\n\tOpenSSL before 0.9.8s and 1.x before 1.0.0f, when RFC 3779 support is enabled, allows remote attackers to cause a denial of service (assertion failure) via an X.509 certificate containing certificate-extension data associated with (1) IP address blocks or (2) Autonomous System (AS) identifiers.\nA denial of service flaw was found in the RFC 3779 implementation in OpenSSL. A remote attacker could use this flaw to make an application using OpenSSL exit unexpectedly by providing a specially-crafted X.509 certificate that has malformed RFC 3779 extension data.\n\nCVE-2011-4576:\n\tThe SSL 3.0 implementation in OpenSSL before 0.9.8s and 1.x before 1.0.0f does not properly initialize data structures for block cipher padding, which might allow remote attackers to obtain sensitive information by decrypting the padding data sent by an SSL peer.\nAn information leak flaw was found in the SSL 3.0 protocol implementation in OpenSSL. Incorrect initialization of SSL record padding bytes could cause an SSL client or server to send a limited amount of possibly sensitive data to its SSL peer via the encrypted connection.\n\nCVE-2011-4108:\n\tThe DTLS implementation in OpenSSL before 0.9.8s and 1.x before 1.0.0f performs a MAC check only if certain padding is valid, which makes it easier for remote attackers to recover plaintext via a padding oracle attack.\nIt was discovered that the Datagram Transport Layer Security (DTLS) protocol implementation in OpenSSL leaked timing information when performing certain operations. A remote attacker could possibly use this flaw to retrieve plain text from the encrypted packets by using a DTLS server as a padding oracle.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4108",
-        "ID": "CVE-2011-4108",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4576",
-        "ID": "CVE-2011-4576",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4577",
-        "ID": "CVE-2011-4577",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4619",
-        "ID": "CVE-2011-4619",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2012:0059.html",
-        "ID": "RHSA-2012:0059",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux",
-      "Name": "Amazon Linux",
-      "Package": [
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "openssl",
-          "Release": "1.26.amzn1",
-          "Version": "1.0.0g",
-          "Filename": "Packages/openssl-1.0.0g-1.26.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "openssl-perl",
-          "Release": "1.26.amzn1",
-          "Version": "1.0.0g",
-          "Filename": "Packages/openssl-perl-1.0.0g-1.26.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "openssl-devel",
-          "Release": "1.26.amzn1",
-          "Version": "1.0.0g",
-          "Filename": "Packages/openssl-devel-1.0.0g-1.26.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "openssl-debuginfo",
-          "Release": "1.26.amzn1",
-          "Version": "1.0.0g",
-          "Filename": "Packages/openssl-debuginfo-1.0.0g-1.26.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "openssl-static",
-          "Release": "1.26.amzn1",
-          "Version": "1.0.0g",
-          "Filename": "Packages/openssl-static-1.0.0g-1.26.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "openssl-static",
-          "Release": "1.26.amzn1",
-          "Version": "1.0.0g",
-          "Filename": "Packages/openssl-static-1.0.0g-1.26.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "openssl-debuginfo",
-          "Release": "1.26.amzn1",
-          "Version": "1.0.0g",
-          "Filename": "Packages/openssl-debuginfo-1.0.0g-1.26.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "openssl-devel",
-          "Release": "1.26.amzn1",
-          "Version": "1.0.0g",
-          "Filename": "Packages/openssl-devel-1.0.0g-1.26.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "openssl-perl",
-          "Release": "1.26.amzn1",
-          "Version": "1.0.0g",
-          "Filename": "Packages/openssl-perl-1.0.0g-1.26.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "openssl",
-          "Release": "1.26.amzn1",
-          "Version": "1.0.0g",
-          "Filename": "Packages/openssl-1.0.0g-1.26.amzn1.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2012-38",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux - ALAS-2012-38: medium priority package update for openssl",
+	"Issued": {
+		"Date": "2012-02-02 14:24"
+	},
+	"Updated": {
+		"Date": "2014-09-14 15:14"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2011-4619:\n\tThe Server Gated Cryptography (SGC) implementation in OpenSSL before 0.9.8s and 1.x before 1.0.0f does not properly handle handshake restarts, which allows remote attackers to cause a denial of service via unspecified vectors.\nIt was discovered that OpenSSL did not limit the number of TLS/SSL handshake restarts required to support Server Gated Cryptography. A remote attacker could use this flaw to make a TLS/SSL server using OpenSSL consume an excessive amount of CPU by continuously restarting the handshake.\n\nCVE-2011-4577:\n\tOpenSSL before 0.9.8s and 1.x before 1.0.0f, when RFC 3779 support is enabled, allows remote attackers to cause a denial of service (assertion failure) via an X.509 certificate containing certificate-extension data associated with (1) IP address blocks or (2) Autonomous System (AS) identifiers.\nA denial of service flaw was found in the RFC 3779 implementation in OpenSSL. A remote attacker could use this flaw to make an application using OpenSSL exit unexpectedly by providing a specially-crafted X.509 certificate that has malformed RFC 3779 extension data.\n\nCVE-2011-4576:\n\tThe SSL 3.0 implementation in OpenSSL before 0.9.8s and 1.x before 1.0.0f does not properly initialize data structures for block cipher padding, which might allow remote attackers to obtain sensitive information by decrypting the padding data sent by an SSL peer.\nAn information leak flaw was found in the SSL 3.0 protocol implementation in OpenSSL. Incorrect initialization of SSL record padding bytes could cause an SSL client or server to send a limited amount of possibly sensitive data to its SSL peer via the encrypted connection.\n\nCVE-2011-4108:\n\tThe DTLS implementation in OpenSSL before 0.9.8s and 1.x before 1.0.0f performs a MAC check only if certain padding is valid, which makes it easier for remote attackers to recover plaintext via a padding oracle attack.\nIt was discovered that the Datagram Transport Layer Security (DTLS) protocol implementation in OpenSSL leaked timing information when performing certain operations. A remote attacker could possibly use this flaw to retrieve plain text from the encrypted packets by using a DTLS server as a padding oracle.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4108",
+				"ID": "CVE-2011-4108",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4576",
+				"ID": "CVE-2011-4576",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4577",
+				"ID": "CVE-2011-4577",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4619",
+				"ID": "CVE-2011-4619",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2012:0059.html",
+				"ID": "RHSA-2012:0059",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux",
+			"Name": "Amazon Linux",
+			"Package": [
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "openssl",
+					"Release": "1.26.amzn1",
+					"Version": "1.0.0g",
+					"Filename": "Packages/openssl-1.0.0g-1.26.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "openssl-perl",
+					"Release": "1.26.amzn1",
+					"Version": "1.0.0g",
+					"Filename": "Packages/openssl-perl-1.0.0g-1.26.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "openssl-devel",
+					"Release": "1.26.amzn1",
+					"Version": "1.0.0g",
+					"Filename": "Packages/openssl-devel-1.0.0g-1.26.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "openssl-debuginfo",
+					"Release": "1.26.amzn1",
+					"Version": "1.0.0g",
+					"Filename": "Packages/openssl-debuginfo-1.0.0g-1.26.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "openssl-static",
+					"Release": "1.26.amzn1",
+					"Version": "1.0.0g",
+					"Filename": "Packages/openssl-static-1.0.0g-1.26.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "openssl-static",
+					"Release": "1.26.amzn1",
+					"Version": "1.0.0g",
+					"Filename": "Packages/openssl-static-1.0.0g-1.26.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "openssl-debuginfo",
+					"Release": "1.26.amzn1",
+					"Version": "1.0.0g",
+					"Filename": "Packages/openssl-debuginfo-1.0.0g-1.26.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "openssl-devel",
+					"Release": "1.26.amzn1",
+					"Version": "1.0.0g",
+					"Filename": "Packages/openssl-devel-1.0.0g-1.26.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "openssl-perl",
+					"Release": "1.26.amzn1",
+					"Version": "1.0.0g",
+					"Filename": "Packages/openssl-perl-1.0.0g-1.26.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "openssl",
+					"Release": "1.26.amzn1",
+					"Version": "1.0.0g",
+					"Filename": "Packages/openssl-1.0.0g-1.26.amzn1.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

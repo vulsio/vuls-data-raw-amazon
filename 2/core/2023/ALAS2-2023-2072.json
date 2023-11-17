@@ -1,265 +1,265 @@
 {
-  "ID": "ALAS2-2023-2072",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2072: medium priority package update for git",
-  "Issued": {
-    "Date": "2023-06-05 16:39"
-  },
-  "Updated": {
-    "Date": "2023-06-07 22:38"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-29007:\n\tGit is a revision control system. Prior to versions 2.30.9, 2.31.8, 2.32.7, 2.33.8, 2.34.8, 2.35.8, 2.36.6, 2.37.7, 2.38.5, 2.39.3, and 2.40.1, a specially crafted `.gitmodules` file with submodule URLs that are longer than 1024 characters can used to exploit a bug in `config.c::git_config_copy_or_rename_section_in_file()`. This bug can be used to inject arbitrary configuration into a user's `$GIT_DIR/config` when attempting to remove the configuration section associated with that submodule. When the attacker injects configuration values which specify executables to run (such as `core.pager`, `core.editor`, `core.sshCommand`, etc.) this can lead to a remote code execution. A fix A fix is available in versions 2.30.9, 2.31.8, 2.32.7, 2.33.8, 2.34.8, 2.35.8, 2.36.6, 2.37.7, 2.38.5, 2.39.3, and 2.40.1. As a workaround, avoid running `git submodule deinit` on untrusted repositories or without prior inspection of any submodule sections in `$GIT_DIR/config`.\n\nCVE-2023-25652:\n\tGit is a revision control system. Prior to versions 2.30.9, 2.31.8, 2.32.7, 2.33.8, 2.34.8, 2.35.8, 2.36.6, 2.37.7, 2.38.5, 2.39.3, and 2.40.1, by feeding specially crafted input to `git apply --reject`, a path outside the working tree can be overwritten with partially controlled contents (corresponding to the rejected hunk(s) from the given patch). A fix is available in versions 2.30.9, 2.31.8, 2.32.7, 2.33.8, 2.34.8, 2.35.8, 2.36.6, 2.37.7, 2.38.5, 2.39.3, and 2.40.1. As a workaround, avoid using `git apply` with `--reject` when applying patches from an untrusted source. Use `git apply --stat` to inspect a patch before applying; avoid applying one that create a conflict where a link corresponding to the `*.rej` file exists.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25652",
-        "ID": "CVE-2023-25652",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29007",
-        "ID": "CVE-2023-29007",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "git",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-2.40.1-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "git-all",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-all-2.40.1-1.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "git-core",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-core-2.40.1-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "git-core-doc",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-core-doc-2.40.1-1.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "git-credential-libsecret",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-credential-libsecret-2.40.1-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "git-cvs",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-cvs-2.40.1-1.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "git-daemon",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-daemon-2.40.1-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "git-email",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-email-2.40.1-1.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "gitk",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/gitk-2.40.1-1.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "gitweb",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/gitweb-2.40.1-1.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "git-gui",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-gui-2.40.1-1.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "git-instaweb",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-instaweb-2.40.1-1.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "git-p4",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-p4-2.40.1-1.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "perl-Git",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/perl-Git-2.40.1-1.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "perl-Git-SVN",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/perl-Git-SVN-2.40.1-1.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "git-subtree",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-subtree-2.40.1-1.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "git-svn",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-svn-2.40.1-1.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "git-debuginfo",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-debuginfo-2.40.1-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "git",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-2.40.1-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "git-core",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-core-2.40.1-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "git-credential-libsecret",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-credential-libsecret-2.40.1-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "git-daemon",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-daemon-2.40.1-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "git-debuginfo",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-debuginfo-2.40.1-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "git",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-2.40.1-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "git-core",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-core-2.40.1-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "git-credential-libsecret",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-credential-libsecret-2.40.1-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "git-daemon",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-daemon-2.40.1-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "git-debuginfo",
-          "Release": "1.amzn2.0.1",
-          "Version": "2.40.1",
-          "Filename": "Packages/git-debuginfo-2.40.1-1.amzn2.0.1.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2023-2072",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2072: medium priority package update for git",
+	"Issued": {
+		"Date": "2023-06-05 16:39"
+	},
+	"Updated": {
+		"Date": "2023-06-07 22:38"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-29007:\n\tGit is a revision control system. Prior to versions 2.30.9, 2.31.8, 2.32.7, 2.33.8, 2.34.8, 2.35.8, 2.36.6, 2.37.7, 2.38.5, 2.39.3, and 2.40.1, a specially crafted `.gitmodules` file with submodule URLs that are longer than 1024 characters can used to exploit a bug in `config.c::git_config_copy_or_rename_section_in_file()`. This bug can be used to inject arbitrary configuration into a user's `$GIT_DIR/config` when attempting to remove the configuration section associated with that submodule. When the attacker injects configuration values which specify executables to run (such as `core.pager`, `core.editor`, `core.sshCommand`, etc.) this can lead to a remote code execution. A fix A fix is available in versions 2.30.9, 2.31.8, 2.32.7, 2.33.8, 2.34.8, 2.35.8, 2.36.6, 2.37.7, 2.38.5, 2.39.3, and 2.40.1. As a workaround, avoid running `git submodule deinit` on untrusted repositories or without prior inspection of any submodule sections in `$GIT_DIR/config`.\n\nCVE-2023-25652:\n\tGit is a revision control system. Prior to versions 2.30.9, 2.31.8, 2.32.7, 2.33.8, 2.34.8, 2.35.8, 2.36.6, 2.37.7, 2.38.5, 2.39.3, and 2.40.1, by feeding specially crafted input to `git apply --reject`, a path outside the working tree can be overwritten with partially controlled contents (corresponding to the rejected hunk(s) from the given patch). A fix is available in versions 2.30.9, 2.31.8, 2.32.7, 2.33.8, 2.34.8, 2.35.8, 2.36.6, 2.37.7, 2.38.5, 2.39.3, and 2.40.1. As a workaround, avoid using `git apply` with `--reject` when applying patches from an untrusted source. Use `git apply --stat` to inspect a patch before applying; avoid applying one that create a conflict where a link corresponding to the `*.rej` file exists.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25652",
+				"ID": "CVE-2023-25652",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29007",
+				"ID": "CVE-2023-29007",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "git",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-2.40.1-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "git-all",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-all-2.40.1-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "git-core",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-core-2.40.1-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "git-core-doc",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-core-doc-2.40.1-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "git-credential-libsecret",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-credential-libsecret-2.40.1-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "git-cvs",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-cvs-2.40.1-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "git-daemon",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-daemon-2.40.1-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "git-email",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-email-2.40.1-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "gitk",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/gitk-2.40.1-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "gitweb",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/gitweb-2.40.1-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "git-gui",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-gui-2.40.1-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "git-instaweb",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-instaweb-2.40.1-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "git-p4",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-p4-2.40.1-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "perl-Git",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/perl-Git-2.40.1-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "perl-Git-SVN",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/perl-Git-SVN-2.40.1-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "git-subtree",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-subtree-2.40.1-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "git-svn",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-svn-2.40.1-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "git-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-debuginfo-2.40.1-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "git",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-2.40.1-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "git-core",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-core-2.40.1-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "git-credential-libsecret",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-credential-libsecret-2.40.1-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "git-daemon",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-daemon-2.40.1-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "git-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-debuginfo-2.40.1-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "git",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-2.40.1-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "git-core",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-core-2.40.1-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "git-credential-libsecret",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-credential-libsecret-2.40.1-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "git-daemon",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-daemon-2.40.1-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "git-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "2.40.1",
+					"Filename": "Packages/git-debuginfo-2.40.1-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

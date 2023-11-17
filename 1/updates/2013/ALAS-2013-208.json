@@ -1,153 +1,153 @@
 {
-  "ID": "ALAS-2013-208",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-208: medium priority package update for krb5",
-  "Issued": {
-    "Date": "2013-07-12 15:31"
-  },
-  "Updated": {
-    "Date": "2014-09-15 23:15"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2002-2443:\n\tIt was found that kadmind's kpasswd service did not perform any validation on incoming network packets, causing it to reply to all requests. A remote attacker could use this flaw to send spoofed packets to a kpasswd service that appear to come from kadmind on a different server, causing the services to keep replying packets to each other, consuming network bandwidth and CPU.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-2443",
-        "ID": "CVE-2002-2443",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2013:0942.html",
-        "ID": "RHSA-2013:0942",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-server-ldap",
-          "Release": "10.26.amzn1",
-          "Version": "1.10.3",
-          "Filename": "Packages/krb5-server-ldap-1.10.3-10.26.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-workstation",
-          "Release": "10.26.amzn1",
-          "Version": "1.10.3",
-          "Filename": "Packages/krb5-workstation-1.10.3-10.26.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-server",
-          "Release": "10.26.amzn1",
-          "Version": "1.10.3",
-          "Filename": "Packages/krb5-server-1.10.3-10.26.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-libs",
-          "Release": "10.26.amzn1",
-          "Version": "1.10.3",
-          "Filename": "Packages/krb5-libs-1.10.3-10.26.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-pkinit-openssl",
-          "Release": "10.26.amzn1",
-          "Version": "1.10.3",
-          "Filename": "Packages/krb5-pkinit-openssl-1.10.3-10.26.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-debuginfo",
-          "Release": "10.26.amzn1",
-          "Version": "1.10.3",
-          "Filename": "Packages/krb5-debuginfo-1.10.3-10.26.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-devel",
-          "Release": "10.26.amzn1",
-          "Version": "1.10.3",
-          "Filename": "Packages/krb5-devel-1.10.3-10.26.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-workstation",
-          "Release": "10.26.amzn1",
-          "Version": "1.10.3",
-          "Filename": "Packages/krb5-workstation-1.10.3-10.26.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-devel",
-          "Release": "10.26.amzn1",
-          "Version": "1.10.3",
-          "Filename": "Packages/krb5-devel-1.10.3-10.26.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-server",
-          "Release": "10.26.amzn1",
-          "Version": "1.10.3",
-          "Filename": "Packages/krb5-server-1.10.3-10.26.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-pkinit-openssl",
-          "Release": "10.26.amzn1",
-          "Version": "1.10.3",
-          "Filename": "Packages/krb5-pkinit-openssl-1.10.3-10.26.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-libs",
-          "Release": "10.26.amzn1",
-          "Version": "1.10.3",
-          "Filename": "Packages/krb5-libs-1.10.3-10.26.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-debuginfo",
-          "Release": "10.26.amzn1",
-          "Version": "1.10.3",
-          "Filename": "Packages/krb5-debuginfo-1.10.3-10.26.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-server-ldap",
-          "Release": "10.26.amzn1",
-          "Version": "1.10.3",
-          "Filename": "Packages/krb5-server-ldap-1.10.3-10.26.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2013-208",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2012.09 - ALAS-2013-208: medium priority package update for krb5",
+	"Issued": {
+		"Date": "2013-07-12 15:31"
+	},
+	"Updated": {
+		"Date": "2014-09-15 23:15"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2002-2443:\n\tIt was found that kadmind's kpasswd service did not perform any validation on incoming network packets, causing it to reply to all requests. A remote attacker could use this flaw to send spoofed packets to a kpasswd service that appear to come from kadmind on a different server, causing the services to keep replying packets to each other, consuming network bandwidth and CPU.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2002-2443",
+				"ID": "CVE-2002-2443",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2013:0942.html",
+				"ID": "RHSA-2013:0942",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-server-ldap",
+					"Release": "10.26.amzn1",
+					"Version": "1.10.3",
+					"Filename": "Packages/krb5-server-ldap-1.10.3-10.26.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-workstation",
+					"Release": "10.26.amzn1",
+					"Version": "1.10.3",
+					"Filename": "Packages/krb5-workstation-1.10.3-10.26.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-server",
+					"Release": "10.26.amzn1",
+					"Version": "1.10.3",
+					"Filename": "Packages/krb5-server-1.10.3-10.26.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-libs",
+					"Release": "10.26.amzn1",
+					"Version": "1.10.3",
+					"Filename": "Packages/krb5-libs-1.10.3-10.26.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-pkinit-openssl",
+					"Release": "10.26.amzn1",
+					"Version": "1.10.3",
+					"Filename": "Packages/krb5-pkinit-openssl-1.10.3-10.26.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-debuginfo",
+					"Release": "10.26.amzn1",
+					"Version": "1.10.3",
+					"Filename": "Packages/krb5-debuginfo-1.10.3-10.26.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-devel",
+					"Release": "10.26.amzn1",
+					"Version": "1.10.3",
+					"Filename": "Packages/krb5-devel-1.10.3-10.26.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-workstation",
+					"Release": "10.26.amzn1",
+					"Version": "1.10.3",
+					"Filename": "Packages/krb5-workstation-1.10.3-10.26.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-devel",
+					"Release": "10.26.amzn1",
+					"Version": "1.10.3",
+					"Filename": "Packages/krb5-devel-1.10.3-10.26.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-server",
+					"Release": "10.26.amzn1",
+					"Version": "1.10.3",
+					"Filename": "Packages/krb5-server-1.10.3-10.26.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-pkinit-openssl",
+					"Release": "10.26.amzn1",
+					"Version": "1.10.3",
+					"Filename": "Packages/krb5-pkinit-openssl-1.10.3-10.26.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-libs",
+					"Release": "10.26.amzn1",
+					"Version": "1.10.3",
+					"Filename": "Packages/krb5-libs-1.10.3-10.26.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-debuginfo",
+					"Release": "10.26.amzn1",
+					"Version": "1.10.3",
+					"Filename": "Packages/krb5-debuginfo-1.10.3-10.26.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-server-ldap",
+					"Release": "10.26.amzn1",
+					"Version": "1.10.3",
+					"Filename": "Packages/krb5-server-ldap-1.10.3-10.26.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

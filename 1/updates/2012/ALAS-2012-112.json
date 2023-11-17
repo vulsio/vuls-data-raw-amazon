@@ -1,73 +1,73 @@
 {
-  "ID": "ALAS-2012-112",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux - ALAS-2012-112: medium priority package update for perl-DBD-Pg",
-  "Issued": {
-    "Date": "2012-08-03 13:50"
-  },
-  "Updated": {
-    "Date": "2014-09-14 16:48"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-1151:\n\tTwo format string flaws were found in perl-DBD-Pg. A specially-crafted database warning or error message from a server could cause an application using perl-DBD-Pg to crash or, potentially, execute arbitrary code with the privileges of the user running the application.\nMultiple format string vulnerabilities in dbdimp.c in DBD::Pg (aka DBD-Pg or libdbd-pg-perl) module before 2.19.0 for Perl allow remote PostgreSQL database servers to cause a denial of service (process crash) via format string specifiers in (1) a crafted database warning to the pg_warn function or (2) a crafted DBD statement to the dbd_st_prepare function.\n801733: \nCVE-2012-1151 perl-DBD-Pg: Format string flaws by turning db notices into Perl warnings and by preparing DBD statement\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1151",
-        "ID": "CVE-2012-1151",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2012:1116.html",
-        "ID": "RHSA-2012:1116",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux",
-      "Name": "Amazon Linux",
-      "Package": [
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "perl-DBD-Pg",
-          "Release": "4.3.amzn1",
-          "Version": "2.15.1",
-          "Filename": "Packages/perl-DBD-Pg-2.15.1-4.3.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "perl-DBD-Pg-debuginfo",
-          "Release": "4.3.amzn1",
-          "Version": "2.15.1",
-          "Filename": "Packages/perl-DBD-Pg-debuginfo-2.15.1-4.3.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perl-DBD-Pg-debuginfo",
-          "Release": "4.3.amzn1",
-          "Version": "2.15.1",
-          "Filename": "Packages/perl-DBD-Pg-debuginfo-2.15.1-4.3.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perl-DBD-Pg",
-          "Release": "4.3.amzn1",
-          "Version": "2.15.1",
-          "Filename": "Packages/perl-DBD-Pg-2.15.1-4.3.amzn1.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2012-112",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux - ALAS-2012-112: medium priority package update for perl-DBD-Pg",
+	"Issued": {
+		"Date": "2012-08-03 13:50"
+	},
+	"Updated": {
+		"Date": "2014-09-14 16:48"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2012-1151:\n\tTwo format string flaws were found in perl-DBD-Pg. A specially-crafted database warning or error message from a server could cause an application using perl-DBD-Pg to crash or, potentially, execute arbitrary code with the privileges of the user running the application.\nMultiple format string vulnerabilities in dbdimp.c in DBD::Pg (aka DBD-Pg or libdbd-pg-perl) module before 2.19.0 for Perl allow remote PostgreSQL database servers to cause a denial of service (process crash) via format string specifiers in (1) a crafted database warning to the pg_warn function or (2) a crafted DBD statement to the dbd_st_prepare function.\n801733: \nCVE-2012-1151 perl-DBD-Pg: Format string flaws by turning db notices into Perl warnings and by preparing DBD statement\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-1151",
+				"ID": "CVE-2012-1151",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2012:1116.html",
+				"ID": "RHSA-2012:1116",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux",
+			"Name": "Amazon Linux",
+			"Package": [
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "perl-DBD-Pg",
+					"Release": "4.3.amzn1",
+					"Version": "2.15.1",
+					"Filename": "Packages/perl-DBD-Pg-2.15.1-4.3.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "perl-DBD-Pg-debuginfo",
+					"Release": "4.3.amzn1",
+					"Version": "2.15.1",
+					"Filename": "Packages/perl-DBD-Pg-debuginfo-2.15.1-4.3.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perl-DBD-Pg-debuginfo",
+					"Release": "4.3.amzn1",
+					"Version": "2.15.1",
+					"Filename": "Packages/perl-DBD-Pg-debuginfo-2.15.1-4.3.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perl-DBD-Pg",
+					"Release": "4.3.amzn1",
+					"Version": "2.15.1",
+					"Filename": "Packages/perl-DBD-Pg-2.15.1-4.3.amzn1.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

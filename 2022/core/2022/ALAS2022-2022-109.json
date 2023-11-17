@@ -1,357 +1,357 @@
 {
-  "ID": "ALAS2022-2022-109",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2022 - ALAS2022-2022-109: Important priority package update for grub2",
-  "Issued": {
-    "Date": "2022-07-20 16:02"
-  },
-  "Updated": {
-    "Date": "2022-12-06 16:46"
-  },
-  "Severity": "Important",
-  "Description": "Package updates are available for Amazon Linux 2022 that fix the following vulnerabilities:\nCVE-2022-28736:\n\tA use-after-free vulnerability was found on grub2's chainloader command. This flaw allows an attacker to gain access to restricted data or cause arbitrary code execution if they can establish control from grub's memory allocation pattern.\n\nCVE-2022-28735:\n\tA flaw was found in grub2. The shim_lock verifier from grub2 allows non-kernel files to be loaded when secure boot is enabled, giving the possibility of unverified code or modules to be loaded when it should not be allowed.\n\nCVE-2022-28734:\n\tA flaw was found in grub2 when handling split HTTP headers. While processing a split HTTP header, grub2 wrongly advances its control pointer to the internal buffer by one position, which can lead to an out-of-bounds write. This flaw allows an attacker to leverage this issue by crafting a malicious set of HTTP packages making grub2 corrupt its internal memory metadata structure. This leads to data integrity and confidentiality issues or forces grub to crash, resulting in a denial of service attack.\n\nCVE-2022-28733:\n\tA flaw was found in grub2 when handling IPv4 packets. This flaw allows an attacker to craft a malicious packet, triggering an integer underflow in grub code. Consequently, the memory allocation for handling the packet data may be smaller than the size needed. This issue causes an out-of-bands write during packet handling, compromising data integrity, confidentiality issues, a denial of service, and remote code execution.\n\nCVE-2021-3981:\n\tA flaw in grub2 was found where its configuration file, known as grub.cfg, is being created with the wrong permission set allowing non privileged users to read its content. This represents a low severity confidentiality issue, as those users can eventually read any encrypted passwords present in grub.cfg.\n\nCVE-2021-3697:\n\tA flaw was found in grub2 when handling JPEG images. This flaw allows an attacker to craft a malicious JPEG image, which leads to an underflow on a grub2's internal pointer, leading to a heap-based out-of-bounds write. Secure-boot mechanisms circumvention and arbitrary code execution may also be achievable.\n\nCVE-2021-3696:\n\tA flaw was found in grub2 when handling a PNG image header. When decoding the data contained in the Huffman table at the PNG file header, an out-of-bounds write may happen on grub's heap.\n\nCVE-2021-3695:\n\tA flaw was found in grub 2, where a crafted 16-bit grayscale PNG image may lead to an out-of-bounds write. This flaw allows an attacker to corrupt the data on the heap portion of the grub2's memory, leading to possible code execution and the circumvention of the secure boot mechanism.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3695",
-        "ID": "CVE-2021-3695",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3696",
-        "ID": "CVE-2021-3696",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3697",
-        "ID": "CVE-2021-3697",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3981",
-        "ID": "CVE-2021-3981",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28733",
-        "ID": "CVE-2022-28733",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28734",
-        "ID": "CVE-2022-28734",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28735",
-        "ID": "CVE-2022-28735",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28736",
-        "ID": "CVE-2022-28736",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2022",
-      "Name": "Amazon Linux 2022",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "grub2-emu-debuginfo",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-emu-debuginfo-2.06-42.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "grub2-emu-modules",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-emu-modules-2.06-42.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "grub2-tools-extra",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-tools-extra-2.06-42.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "grub2-efi-x64",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-efi-x64-2.06-42.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "grub2-tools",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-tools-2.06-42.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "grub2-debuginfo",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-debuginfo-2.06-42.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "grub2-tools-extra-debuginfo",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-tools-extra-debuginfo-2.06-42.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "grub2-tools-debuginfo",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-tools-debuginfo-2.06-42.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "grub2-emu",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-emu-2.06-42.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "grub2-efi-x64-ec2",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-efi-x64-ec2-2.06-42.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "grub2-tools-minimal",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-tools-minimal-2.06-42.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "1",
-          "Name": "grub2-efi-x64-modules",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-efi-x64-modules-2.06-42.amzn2022.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "1",
-          "Name": "grub2-pc-modules",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-pc-modules-2.06-42.amzn2022.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "grub2-efi-x64-cdboot",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-efi-x64-cdboot-2.06-42.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "grub2-tools-minimal-debuginfo",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-tools-minimal-debuginfo-2.06-42.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "grub2-tools-efi",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-tools-efi-2.06-42.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "grub2-tools-efi-debuginfo",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-tools-efi-debuginfo-2.06-42.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "1",
-          "Name": "grub2-common",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-common-2.06-42.amzn2022.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "grub2-pc",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-pc-2.06-42.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "grub2-debugsource",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-debugsource-2.06-42.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "grub2-tools-minimal-debuginfo",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-tools-minimal-debuginfo-2.06-42.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "grub2-efi-aa64-cdboot",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-efi-aa64-cdboot-2.06-42.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "grub2-emu-modules",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-emu-modules-2.06-42.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "1",
-          "Name": "grub2-efi-aa64-modules",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-efi-aa64-modules-2.06-42.amzn2022.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "grub2-emu",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-emu-2.06-42.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "grub2-efi-aa64-ec2",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-efi-aa64-ec2-2.06-42.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "grub2-tools-extra",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-tools-extra-2.06-42.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "grub2-emu-debuginfo",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-emu-debuginfo-2.06-42.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "grub2-tools-debuginfo",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-tools-debuginfo-2.06-42.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "grub2-tools",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-tools-2.06-42.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "grub2-debuginfo",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-debuginfo-2.06-42.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "grub2-efi-aa64",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-efi-aa64-2.06-42.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "grub2-debugsource",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-debugsource-2.06-42.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "grub2-tools-extra-debuginfo",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-tools-extra-debuginfo-2.06-42.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "grub2-tools-minimal",
-          "Release": "42.amzn2022.0.1",
-          "Version": "2.06",
-          "Filename": "Packages/grub2-tools-minimal-2.06-42.amzn2022.0.1.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2022-2022-109",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2022 - ALAS2022-2022-109: Important priority package update for grub2",
+	"Issued": {
+		"Date": "2022-07-20 16:02"
+	},
+	"Updated": {
+		"Date": "2022-12-06 16:46"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2022 that fix the following vulnerabilities:\nCVE-2022-28736:\n\tA use-after-free vulnerability was found on grub2's chainloader command. This flaw allows an attacker to gain access to restricted data or cause arbitrary code execution if they can establish control from grub's memory allocation pattern.\n\nCVE-2022-28735:\n\tA flaw was found in grub2. The shim_lock verifier from grub2 allows non-kernel files to be loaded when secure boot is enabled, giving the possibility of unverified code or modules to be loaded when it should not be allowed.\n\nCVE-2022-28734:\n\tA flaw was found in grub2 when handling split HTTP headers. While processing a split HTTP header, grub2 wrongly advances its control pointer to the internal buffer by one position, which can lead to an out-of-bounds write. This flaw allows an attacker to leverage this issue by crafting a malicious set of HTTP packages making grub2 corrupt its internal memory metadata structure. This leads to data integrity and confidentiality issues or forces grub to crash, resulting in a denial of service attack.\n\nCVE-2022-28733:\n\tA flaw was found in grub2 when handling IPv4 packets. This flaw allows an attacker to craft a malicious packet, triggering an integer underflow in grub code. Consequently, the memory allocation for handling the packet data may be smaller than the size needed. This issue causes an out-of-bands write during packet handling, compromising data integrity, confidentiality issues, a denial of service, and remote code execution.\n\nCVE-2021-3981:\n\tA flaw in grub2 was found where its configuration file, known as grub.cfg, is being created with the wrong permission set allowing non privileged users to read its content. This represents a low severity confidentiality issue, as those users can eventually read any encrypted passwords present in grub.cfg.\n\nCVE-2021-3697:\n\tA flaw was found in grub2 when handling JPEG images. This flaw allows an attacker to craft a malicious JPEG image, which leads to an underflow on a grub2's internal pointer, leading to a heap-based out-of-bounds write. Secure-boot mechanisms circumvention and arbitrary code execution may also be achievable.\n\nCVE-2021-3696:\n\tA flaw was found in grub2 when handling a PNG image header. When decoding the data contained in the Huffman table at the PNG file header, an out-of-bounds write may happen on grub's heap.\n\nCVE-2021-3695:\n\tA flaw was found in grub 2, where a crafted 16-bit grayscale PNG image may lead to an out-of-bounds write. This flaw allows an attacker to corrupt the data on the heap portion of the grub2's memory, leading to possible code execution and the circumvention of the secure boot mechanism.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3695",
+				"ID": "CVE-2021-3695",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3696",
+				"ID": "CVE-2021-3696",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3697",
+				"ID": "CVE-2021-3697",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3981",
+				"ID": "CVE-2021-3981",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28733",
+				"ID": "CVE-2022-28733",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28734",
+				"ID": "CVE-2022-28734",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28735",
+				"ID": "CVE-2022-28735",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28736",
+				"ID": "CVE-2022-28736",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2022",
+			"Name": "Amazon Linux 2022",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-emu-debuginfo",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-emu-debuginfo-2.06-42.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-emu-modules",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-emu-modules-2.06-42.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-tools-extra",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-extra-2.06-42.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-efi-x64",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-efi-x64-2.06-42.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-tools",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-2.06-42.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-debuginfo",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-debuginfo-2.06-42.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-tools-extra-debuginfo",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-extra-debuginfo-2.06-42.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-tools-debuginfo",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-debuginfo-2.06-42.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-emu",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-emu-2.06-42.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-efi-x64-ec2",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-efi-x64-ec2-2.06-42.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-tools-minimal",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-minimal-2.06-42.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "1",
+					"Name": "grub2-efi-x64-modules",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-efi-x64-modules-2.06-42.amzn2022.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "1",
+					"Name": "grub2-pc-modules",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-pc-modules-2.06-42.amzn2022.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-efi-x64-cdboot",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-efi-x64-cdboot-2.06-42.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-tools-minimal-debuginfo",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-minimal-debuginfo-2.06-42.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-tools-efi",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-efi-2.06-42.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-tools-efi-debuginfo",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-efi-debuginfo-2.06-42.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "1",
+					"Name": "grub2-common",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-common-2.06-42.amzn2022.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-pc",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-pc-2.06-42.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-debugsource",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-debugsource-2.06-42.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-tools-minimal-debuginfo",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-minimal-debuginfo-2.06-42.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-efi-aa64-cdboot",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-efi-aa64-cdboot-2.06-42.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-emu-modules",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-emu-modules-2.06-42.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "1",
+					"Name": "grub2-efi-aa64-modules",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-efi-aa64-modules-2.06-42.amzn2022.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-emu",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-emu-2.06-42.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-efi-aa64-ec2",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-efi-aa64-ec2-2.06-42.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-tools-extra",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-extra-2.06-42.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-emu-debuginfo",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-emu-debuginfo-2.06-42.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-tools-debuginfo",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-debuginfo-2.06-42.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-tools",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-2.06-42.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-debuginfo",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-debuginfo-2.06-42.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-efi-aa64",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-efi-aa64-2.06-42.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-debugsource",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-debugsource-2.06-42.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-tools-extra-debuginfo",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-extra-debuginfo-2.06-42.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-tools-minimal",
+					"Release": "42.amzn2022.0.1",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-minimal-2.06-42.amzn2022.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

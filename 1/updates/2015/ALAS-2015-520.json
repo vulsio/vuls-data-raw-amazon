@@ -1,105 +1,105 @@
 {
-  "ID": "ALAS-2015-520",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-520: important priority package update for ntp",
-  "Issued": {
-    "Date": "2015-05-05 15:56"
-  },
-  "Updated": {
-    "Date": "2015-05-24 14:16"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-1799:\n\tThe symmetric-key feature in the receive function in ntp_proto.c in ntpd in NTP 3.x and 4.x before 4.2.8p2 performs state-variable updates upon receiving certain invalid packets, which makes it easier for man-in-the-middle attackers to cause a denial of service (synchronization loss) by spoofing the source IP address of a peer.\n1199435: \nCVE-2015-1799 ntp: authentication doesn't protect symmetric associations against DoS attacks\n\nCVE-2015-1798:\n\tThe symmetric-key feature in the receive function in ntp_proto.c in ntpd in NTP 4.x before 4.2.8p2 requires a correct MAC only if the MAC field has a nonzero length, which makes it easier for man-in-the-middle attackers to spoof packets by omitting the MAC.\n1199430: \nCVE-2015-1798 ntp: ntpd accepts unauthenticated packets with symmetric key crypto\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1798",
-        "ID": "CVE-2015-1798",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1799",
-        "ID": "CVE-2015-1799",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "ntp",
-          "Release": "30.24.amzn1",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-4.2.6p5-30.24.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "ntpdate",
-          "Release": "30.24.amzn1",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntpdate-4.2.6p5-30.24.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "ntp-doc",
-          "Release": "30.24.amzn1",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-doc-4.2.6p5-30.24.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "ntp-debuginfo",
-          "Release": "30.24.amzn1",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-debuginfo-4.2.6p5-30.24.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "ntp-perl",
-          "Release": "30.24.amzn1",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-perl-4.2.6p5-30.24.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "ntp-debuginfo",
-          "Release": "30.24.amzn1",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-debuginfo-4.2.6p5-30.24.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "ntp",
-          "Release": "30.24.amzn1",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntp-4.2.6p5-30.24.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "ntpdate",
-          "Release": "30.24.amzn1",
-          "Version": "4.2.6p5",
-          "Filename": "Packages/ntpdate-4.2.6p5-30.24.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2015-520",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2015-520: important priority package update for ntp",
+	"Issued": {
+		"Date": "2015-05-05 15:56"
+	},
+	"Updated": {
+		"Date": "2015-05-24 14:16"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-1799:\n\tThe symmetric-key feature in the receive function in ntp_proto.c in ntpd in NTP 3.x and 4.x before 4.2.8p2 performs state-variable updates upon receiving certain invalid packets, which makes it easier for man-in-the-middle attackers to cause a denial of service (synchronization loss) by spoofing the source IP address of a peer.\n1199435: \nCVE-2015-1799 ntp: authentication doesn't protect symmetric associations against DoS attacks\n\nCVE-2015-1798:\n\tThe symmetric-key feature in the receive function in ntp_proto.c in ntpd in NTP 4.x before 4.2.8p2 requires a correct MAC only if the MAC field has a nonzero length, which makes it easier for man-in-the-middle attackers to spoof packets by omitting the MAC.\n1199430: \nCVE-2015-1798 ntp: ntpd accepts unauthenticated packets with symmetric key crypto\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1798",
+				"ID": "CVE-2015-1798",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1799",
+				"ID": "CVE-2015-1799",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ntp",
+					"Release": "30.24.amzn1",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-4.2.6p5-30.24.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ntpdate",
+					"Release": "30.24.amzn1",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntpdate-4.2.6p5-30.24.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "ntp-doc",
+					"Release": "30.24.amzn1",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-doc-4.2.6p5-30.24.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ntp-debuginfo",
+					"Release": "30.24.amzn1",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-debuginfo-4.2.6p5-30.24.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "ntp-perl",
+					"Release": "30.24.amzn1",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-perl-4.2.6p5-30.24.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "ntp-debuginfo",
+					"Release": "30.24.amzn1",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-debuginfo-4.2.6p5-30.24.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "ntp",
+					"Release": "30.24.amzn1",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntp-4.2.6p5-30.24.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "ntpdate",
+					"Release": "30.24.amzn1",
+					"Version": "4.2.6p5",
+					"Filename": "Packages/ntpdate-4.2.6p5-30.24.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

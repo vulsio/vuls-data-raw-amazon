@@ -1,115 +1,115 @@
 {
-  "ID": "ALAS-2021-1510",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2021-1510: important priority package update for dhcp",
-  "Issued": {
-    "Date": "2021-07-08 18:38"
-  },
-  "Updated": {
-    "Date": "2021-07-12 21:48"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2021-25217:\n\tA flaw was found in the Dynamic Host Configuration Protocol (DHCP). There is a discrepancy between the code that handles encapsulated option information in leases transmitted \"on the wire\" and the code which reads and parses lease information after it has been written to disk storage. This flaw allows an attacker to deliberately cause a situation where dhcpd while running in DHCPv4 or DHCPv6 mode, or the dhclient attempts to read a stored lease that contains option information, to trigger a stack-based buffer overflow in the option parsing code for colon-separated hex digits values. The highest threat from this vulnerability is to data confidentiality and integrity as well as service availability.\n1963258: CVE-2021-25217 dhcp: stack-based buffer overflow when parsing statements with colon-separated hex digits in config or lease files in dhcpd and dhclient\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-25217",
-        "ID": "CVE-2021-25217",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "12",
-          "Name": "dhcp",
-          "Release": "53.P1.29.amzn1",
-          "Version": "4.1.1",
-          "Filename": "Packages/dhcp-4.1.1-53.P1.29.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "12",
-          "Name": "dhclient",
-          "Release": "53.P1.29.amzn1",
-          "Version": "4.1.1",
-          "Filename": "Packages/dhclient-4.1.1-53.P1.29.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "12",
-          "Name": "dhcp-devel",
-          "Release": "53.P1.29.amzn1",
-          "Version": "4.1.1",
-          "Filename": "Packages/dhcp-devel-4.1.1-53.P1.29.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "12",
-          "Name": "dhcp-common",
-          "Release": "53.P1.29.amzn1",
-          "Version": "4.1.1",
-          "Filename": "Packages/dhcp-common-4.1.1-53.P1.29.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "12",
-          "Name": "dhcp-debuginfo",
-          "Release": "53.P1.29.amzn1",
-          "Version": "4.1.1",
-          "Filename": "Packages/dhcp-debuginfo-4.1.1-53.P1.29.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "12",
-          "Name": "dhclient",
-          "Release": "53.P1.29.amzn1",
-          "Version": "4.1.1",
-          "Filename": "Packages/dhclient-4.1.1-53.P1.29.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "12",
-          "Name": "dhcp",
-          "Release": "53.P1.29.amzn1",
-          "Version": "4.1.1",
-          "Filename": "Packages/dhcp-4.1.1-53.P1.29.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "12",
-          "Name": "dhcp-devel",
-          "Release": "53.P1.29.amzn1",
-          "Version": "4.1.1",
-          "Filename": "Packages/dhcp-devel-4.1.1-53.P1.29.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "12",
-          "Name": "dhcp-debuginfo",
-          "Release": "53.P1.29.amzn1",
-          "Version": "4.1.1",
-          "Filename": "Packages/dhcp-debuginfo-4.1.1-53.P1.29.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "12",
-          "Name": "dhcp-common",
-          "Release": "53.P1.29.amzn1",
-          "Version": "4.1.1",
-          "Filename": "Packages/dhcp-common-4.1.1-53.P1.29.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2021-1510",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2021-1510: important priority package update for dhcp",
+	"Issued": {
+		"Date": "2021-07-08 18:38"
+	},
+	"Updated": {
+		"Date": "2021-07-12 21:48"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2021-25217:\n\tA flaw was found in the Dynamic Host Configuration Protocol (DHCP). There is a discrepancy between the code that handles encapsulated option information in leases transmitted \"on the wire\" and the code which reads and parses lease information after it has been written to disk storage. This flaw allows an attacker to deliberately cause a situation where dhcpd while running in DHCPv4 or DHCPv6 mode, or the dhclient attempts to read a stored lease that contains option information, to trigger a stack-based buffer overflow in the option parsing code for colon-separated hex digits values. The highest threat from this vulnerability is to data confidentiality and integrity as well as service availability.\n1963258: CVE-2021-25217 dhcp: stack-based buffer overflow when parsing statements with colon-separated hex digits in config or lease files in dhcpd and dhclient\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-25217",
+				"ID": "CVE-2021-25217",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "12",
+					"Name": "dhcp",
+					"Release": "53.P1.29.amzn1",
+					"Version": "4.1.1",
+					"Filename": "Packages/dhcp-4.1.1-53.P1.29.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "12",
+					"Name": "dhclient",
+					"Release": "53.P1.29.amzn1",
+					"Version": "4.1.1",
+					"Filename": "Packages/dhclient-4.1.1-53.P1.29.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "12",
+					"Name": "dhcp-devel",
+					"Release": "53.P1.29.amzn1",
+					"Version": "4.1.1",
+					"Filename": "Packages/dhcp-devel-4.1.1-53.P1.29.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "12",
+					"Name": "dhcp-common",
+					"Release": "53.P1.29.amzn1",
+					"Version": "4.1.1",
+					"Filename": "Packages/dhcp-common-4.1.1-53.P1.29.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "12",
+					"Name": "dhcp-debuginfo",
+					"Release": "53.P1.29.amzn1",
+					"Version": "4.1.1",
+					"Filename": "Packages/dhcp-debuginfo-4.1.1-53.P1.29.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "12",
+					"Name": "dhclient",
+					"Release": "53.P1.29.amzn1",
+					"Version": "4.1.1",
+					"Filename": "Packages/dhclient-4.1.1-53.P1.29.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "12",
+					"Name": "dhcp",
+					"Release": "53.P1.29.amzn1",
+					"Version": "4.1.1",
+					"Filename": "Packages/dhcp-4.1.1-53.P1.29.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "12",
+					"Name": "dhcp-devel",
+					"Release": "53.P1.29.amzn1",
+					"Version": "4.1.1",
+					"Filename": "Packages/dhcp-devel-4.1.1-53.P1.29.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "12",
+					"Name": "dhcp-debuginfo",
+					"Release": "53.P1.29.amzn1",
+					"Version": "4.1.1",
+					"Filename": "Packages/dhcp-debuginfo-4.1.1-53.P1.29.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "12",
+					"Name": "dhcp-common",
+					"Release": "53.P1.29.amzn1",
+					"Version": "4.1.1",
+					"Filename": "Packages/dhcp-common-4.1.1-53.P1.29.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

@@ -1,275 +1,275 @@
 {
-  "ID": "ALAS-2018-1057",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2018-1057: important priority package update for yum-utils",
-  "Issued": {
-    "Date": "2018-08-09 16:13"
-  },
-  "Updated": {
-    "Date": "2018-08-09 21:46"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-10897:\n\tA directory traversal issue was found in reposync, a part of yum-utils, where reposync fails to sanitize paths in remote repository configuration files. If an attacker controls a repository, they may be able to copy files outside of the destination directory on the targeted system via path traversal. If reposync is running with heightened privileges on a targeted system, this flaw could potentially result in system compromise via the overwriting of critical system files.\n1600221: \nCVE-2018-10897 yum-utils: reposync: improper path validation may lead to directory traversal\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-10897",
-        "ID": "CVE-2018-10897",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-updateonboot",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-updateonboot-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-ps",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-ps-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-rpm-warm-cache",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-rpm-warm-cache-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-tmprepo",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-tmprepo-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-ovl",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-ovl-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-fastestmirror",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-fastestmirror-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-auto-update-debug-info",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-auto-update-debug-info-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-filter-data",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-filter-data-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-versionlock",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-versionlock-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-remove-with-leaves",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-remove-with-leaves-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-pre-transaction-actions",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-pre-transaction-actions-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-show-leaves",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-show-leaves-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-tsflags",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-tsflags-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-utils",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-utils-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-local",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-local-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-upgrade-helper",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-upgrade-helper-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-refresh-updatesd",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-refresh-updatesd-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-changelog",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-changelog-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-protectbase",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-protectbase-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-copr",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-copr-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-aliases",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-aliases-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-merge-conf",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-merge-conf-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-keys",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-keys-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-post-transaction-actions",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-post-transaction-actions-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-priorities",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-priorities-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-verify",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-verify-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-puppetverify",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-puppetverify-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-list-data",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-list-data-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-NetworkManager-dispatcher",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-NetworkManager-dispatcher-1.1.31-46.30.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "yum-plugin-fs-snapshot",
-          "Release": "46.30.amzn1",
-          "Version": "1.1.31",
-          "Filename": "Packages/yum-plugin-fs-snapshot-1.1.31-46.30.amzn1.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2018-1057",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2018-1057: important priority package update for yum-utils",
+	"Issued": {
+		"Date": "2018-08-09 16:13"
+	},
+	"Updated": {
+		"Date": "2018-08-09 21:46"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-10897:\n\tA directory traversal issue was found in reposync, a part of yum-utils, where reposync fails to sanitize paths in remote repository configuration files. If an attacker controls a repository, they may be able to copy files outside of the destination directory on the targeted system via path traversal. If reposync is running with heightened privileges on a targeted system, this flaw could potentially result in system compromise via the overwriting of critical system files.\n1600221: \nCVE-2018-10897 yum-utils: reposync: improper path validation may lead to directory traversal\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-10897",
+				"ID": "CVE-2018-10897",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-updateonboot",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-updateonboot-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-ps",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-ps-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-rpm-warm-cache",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-rpm-warm-cache-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-tmprepo",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-tmprepo-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-ovl",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-ovl-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-fastestmirror",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-fastestmirror-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-auto-update-debug-info",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-auto-update-debug-info-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-filter-data",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-filter-data-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-versionlock",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-versionlock-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-remove-with-leaves",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-remove-with-leaves-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-pre-transaction-actions",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-pre-transaction-actions-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-show-leaves",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-show-leaves-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-tsflags",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-tsflags-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-utils",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-utils-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-local",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-local-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-upgrade-helper",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-upgrade-helper-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-refresh-updatesd",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-refresh-updatesd-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-changelog",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-changelog-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-protectbase",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-protectbase-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-copr",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-copr-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-aliases",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-aliases-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-merge-conf",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-merge-conf-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-keys",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-keys-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-post-transaction-actions",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-post-transaction-actions-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-priorities",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-priorities-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-verify",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-verify-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-puppetverify",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-puppetverify-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-list-data",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-list-data-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-NetworkManager-dispatcher",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-NetworkManager-dispatcher-1.1.31-46.30.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "yum-plugin-fs-snapshot",
+					"Release": "46.30.amzn1",
+					"Version": "1.1.31",
+					"Filename": "Packages/yum-plugin-fs-snapshot-1.1.31-46.30.amzn1.noarch.rpm"
+				}
+			]
+		}
+	}
 }

@@ -1,127 +1,127 @@
 {
-  "ID": "ALAS-2016-773",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-773: medium priority package update for 389-ds-base",
-  "Issued": {
-    "Date": "2016-12-15 00:28"
-  },
-  "Updated": {
-    "Date": "2016-12-15 23:48"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-5416:\n\tIt was found that 389 Directory Server was vulnerable to a flaw in which the default ACI (Access Control Instructions) could be read by an anonymous user. This could lead to leakage of sensitive information.\n1349540: \nCVE-2016-5416 389-ds-base: ACI readable by anonymous user\n\nCVE-2016-5405:\n\tIt was found that 389 Directory Server was vulnerable to a remote password disclosure via timing attack. A remote attacker could possibly use this flaw to retrieve directory server password after many tries.\n1358865: \nCVE-2016-5405 389-ds-base: Password verification vulnerable to timing attack\n\nCVE-2016-4992:\n\tAn information disclosure flaw was found in 389 Directory Server. A user with no access to objects in certain LDAP sub-tree could send LDAP ADD operations with a specific object name. The error message returned to the user was different based on whether the target object existed or not.\n1347760: \nCVE-2016-4992 389-ds-base: Information disclosure via repeated use of LDAP ADD operation\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4992",
-        "ID": "CVE-2016-4992",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5405",
-        "ID": "CVE-2016-5405",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5416",
-        "ID": "CVE-2016-5416",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "389-ds-base",
-          "Release": "11.49.amzn1",
-          "Version": "1.3.5.10",
-          "Filename": "Packages/389-ds-base-1.3.5.10-11.49.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "389-ds-base-snmp",
-          "Release": "11.49.amzn1",
-          "Version": "1.3.5.10",
-          "Filename": "Packages/389-ds-base-snmp-1.3.5.10-11.49.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "389-ds-base-libs",
-          "Release": "11.49.amzn1",
-          "Version": "1.3.5.10",
-          "Filename": "Packages/389-ds-base-libs-1.3.5.10-11.49.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "389-ds-base-debuginfo",
-          "Release": "11.49.amzn1",
-          "Version": "1.3.5.10",
-          "Filename": "Packages/389-ds-base-debuginfo-1.3.5.10-11.49.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "389-ds-base-devel",
-          "Release": "11.49.amzn1",
-          "Version": "1.3.5.10",
-          "Filename": "Packages/389-ds-base-devel-1.3.5.10-11.49.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "389-ds-base-debuginfo",
-          "Release": "11.49.amzn1",
-          "Version": "1.3.5.10",
-          "Filename": "Packages/389-ds-base-debuginfo-1.3.5.10-11.49.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "389-ds-base-devel",
-          "Release": "11.49.amzn1",
-          "Version": "1.3.5.10",
-          "Filename": "Packages/389-ds-base-devel-1.3.5.10-11.49.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "389-ds-base-snmp",
-          "Release": "11.49.amzn1",
-          "Version": "1.3.5.10",
-          "Filename": "Packages/389-ds-base-snmp-1.3.5.10-11.49.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "389-ds-base",
-          "Release": "11.49.amzn1",
-          "Version": "1.3.5.10",
-          "Filename": "Packages/389-ds-base-1.3.5.10-11.49.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "389-ds-base-libs",
-          "Release": "11.49.amzn1",
-          "Version": "1.3.5.10",
-          "Filename": "Packages/389-ds-base-libs-1.3.5.10-11.49.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2016-773",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2016-773: medium priority package update for 389-ds-base",
+	"Issued": {
+		"Date": "2016-12-15 00:28"
+	},
+	"Updated": {
+		"Date": "2016-12-15 23:48"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-5416:\n\tIt was found that 389 Directory Server was vulnerable to a flaw in which the default ACI (Access Control Instructions) could be read by an anonymous user. This could lead to leakage of sensitive information.\n1349540: \nCVE-2016-5416 389-ds-base: ACI readable by anonymous user\n\nCVE-2016-5405:\n\tIt was found that 389 Directory Server was vulnerable to a remote password disclosure via timing attack. A remote attacker could possibly use this flaw to retrieve directory server password after many tries.\n1358865: \nCVE-2016-5405 389-ds-base: Password verification vulnerable to timing attack\n\nCVE-2016-4992:\n\tAn information disclosure flaw was found in 389 Directory Server. A user with no access to objects in certain LDAP sub-tree could send LDAP ADD operations with a specific object name. The error message returned to the user was different based on whether the target object existed or not.\n1347760: \nCVE-2016-4992 389-ds-base: Information disclosure via repeated use of LDAP ADD operation\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4992",
+				"ID": "CVE-2016-4992",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5405",
+				"ID": "CVE-2016-5405",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5416",
+				"ID": "CVE-2016-5416",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "389-ds-base",
+					"Release": "11.49.amzn1",
+					"Version": "1.3.5.10",
+					"Filename": "Packages/389-ds-base-1.3.5.10-11.49.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "389-ds-base-snmp",
+					"Release": "11.49.amzn1",
+					"Version": "1.3.5.10",
+					"Filename": "Packages/389-ds-base-snmp-1.3.5.10-11.49.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "389-ds-base-libs",
+					"Release": "11.49.amzn1",
+					"Version": "1.3.5.10",
+					"Filename": "Packages/389-ds-base-libs-1.3.5.10-11.49.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "389-ds-base-debuginfo",
+					"Release": "11.49.amzn1",
+					"Version": "1.3.5.10",
+					"Filename": "Packages/389-ds-base-debuginfo-1.3.5.10-11.49.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "389-ds-base-devel",
+					"Release": "11.49.amzn1",
+					"Version": "1.3.5.10",
+					"Filename": "Packages/389-ds-base-devel-1.3.5.10-11.49.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "389-ds-base-debuginfo",
+					"Release": "11.49.amzn1",
+					"Version": "1.3.5.10",
+					"Filename": "Packages/389-ds-base-debuginfo-1.3.5.10-11.49.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "389-ds-base-devel",
+					"Release": "11.49.amzn1",
+					"Version": "1.3.5.10",
+					"Filename": "Packages/389-ds-base-devel-1.3.5.10-11.49.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "389-ds-base-snmp",
+					"Release": "11.49.amzn1",
+					"Version": "1.3.5.10",
+					"Filename": "Packages/389-ds-base-snmp-1.3.5.10-11.49.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "389-ds-base",
+					"Release": "11.49.amzn1",
+					"Version": "1.3.5.10",
+					"Filename": "Packages/389-ds-base-1.3.5.10-11.49.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "389-ds-base-libs",
+					"Release": "11.49.amzn1",
+					"Version": "1.3.5.10",
+					"Filename": "Packages/389-ds-base-libs-1.3.5.10-11.49.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

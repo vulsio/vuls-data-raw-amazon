@@ -1,345 +1,345 @@
 {
-  "ID": "ALAS2JAVA-OPENJDK11-2021-001",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 - Java-openjdk11 2.0 - ALAS2JAVA-OPENJDK11-2021-001: critical priority package update for java-11-openjdk",
-  "Issued": {
-    "Date": "2021-12-17 18:40"
-  },
-  "Updated": {
-    "Date": "2021-12-17 22:58"
-  },
-  "Severity": "critical",
-  "Description": "Package updates are available for Amazon Linux 2 - Java-openjdk11 that fix the following vulnerabilities:\nCVE-2021-45046:\n\tIt was found that the fix to address CVE-2021-44228 in Apache Log4j 2.15.0 was incomplete in certain non-default configurations. This could allows attackers with control over Thread Context Map (MDC) input data when the logging configuration uses a non-default Pattern Layout with either a Context Lookup (for example, $${ctx:loginId}) or a Thread Context Map pattern (%X, %mdc, or %MDC) to craft malicious input data using a JNDI Lookup pattern resulting in a denial of service (DOS) attack. Log4j 2.15.0 makes a best-effort attempt to restrict JNDI LDAP lookups to localhost by default. Log4j 2.16.0 fixes this issue by removing support for message lookup patterns and disabling JNDI functionality by default.\n\nCVE-2021-44228:\n\tA flaw was found in the Java logging library Apache Log4j 2 in versions from 2.0-beta9 and before and including 2.14.1. This could allow a remote attacker to execute code on the server if the system logs an attacker-controlled string value with the attacker's JNDI LDAP server lookup.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228",
-        "ID": "CVE-2021-44228",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45046",
-        "ID": "CVE-2021-45046",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2---java-openjdk11",
-      "Name": "Amazon Linux 2 - Java-openjdk11",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-debug",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-debug-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-headless",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-headless-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-headless-debug",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-headless-debug-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-devel",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-devel-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-devel-debug",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-devel-debug-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-static-libs",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-static-libs-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-static-libs-debug",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-static-libs-debug-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-jmods",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-jmods-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-jmods-debug",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-jmods-debug-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-demo",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-demo-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-demo-debug",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-demo-debug-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-src",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-src-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-src-debug",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-src-debug-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-javadoc",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-javadoc-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-javadoc-zip",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-javadoc-zip-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-javadoc-debug",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-javadoc-debug-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-javadoc-zip-debug",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-javadoc-zip-debug-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-debuginfo",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-debuginfo-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-debug",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-debug-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-headless",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-headless-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-headless-debug",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-headless-debug-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-devel",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-devel-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-devel-debug",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-devel-debug-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-static-libs",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-static-libs-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-static-libs-debug",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-static-libs-debug-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-jmods",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-jmods-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-jmods-debug",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-jmods-debug-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-demo",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-demo-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-demo-debug",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-demo-debug-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-src",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-src-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-src-debug",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-src-debug-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-javadoc",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-javadoc-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-javadoc-zip",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-javadoc-zip-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-javadoc-debug",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-javadoc-debug-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-javadoc-zip-debug",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-javadoc-zip-debug-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-11-openjdk-debuginfo",
-          "Release": "1.amzn2.0.3",
-          "Version": "11.0.13.0.8",
-          "Filename": "Packages/java-11-openjdk-debuginfo-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2JAVA-OPENJDK11-2021-001",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Java-openjdk11 2.0 - ALAS2JAVA-OPENJDK11-2021-001: critical priority package update for java-11-openjdk",
+	"Issued": {
+		"Date": "2021-12-17 18:40"
+	},
+	"Updated": {
+		"Date": "2021-12-17 22:58"
+	},
+	"Severity": "critical",
+	"Description": "Package updates are available for Amazon Linux 2 - Java-openjdk11 that fix the following vulnerabilities:\nCVE-2021-45046:\n\tIt was found that the fix to address CVE-2021-44228 in Apache Log4j 2.15.0 was incomplete in certain non-default configurations. This could allows attackers with control over Thread Context Map (MDC) input data when the logging configuration uses a non-default Pattern Layout with either a Context Lookup (for example, $${ctx:loginId}) or a Thread Context Map pattern (%X, %mdc, or %MDC) to craft malicious input data using a JNDI Lookup pattern resulting in a denial of service (DOS) attack. Log4j 2.15.0 makes a best-effort attempt to restrict JNDI LDAP lookups to localhost by default. Log4j 2.16.0 fixes this issue by removing support for message lookup patterns and disabling JNDI functionality by default.\n\nCVE-2021-44228:\n\tA flaw was found in the Java logging library Apache Log4j 2 in versions from 2.0-beta9 and before and including 2.14.1. This could allow a remote attacker to execute code on the server if the system logs an attacker-controlled string value with the attacker's JNDI LDAP server lookup.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228",
+				"ID": "CVE-2021-44228",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45046",
+				"ID": "CVE-2021-45046",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---java-openjdk11",
+			"Name": "Amazon Linux 2 - Java-openjdk11",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-debug",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-debug-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-headless",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-headless-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-headless-debug",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-headless-debug-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-devel",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-devel-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-devel-debug",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-devel-debug-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-static-libs",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-static-libs-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-static-libs-debug",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-static-libs-debug-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-jmods",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-jmods-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-jmods-debug",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-jmods-debug-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-demo",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-demo-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-demo-debug",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-demo-debug-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-src",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-src-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-src-debug",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-src-debug-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-javadoc",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-javadoc-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-javadoc-zip",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-javadoc-zip-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-javadoc-debug",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-javadoc-debug-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-javadoc-zip-debug",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-javadoc-zip-debug-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-debuginfo",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-debuginfo-11.0.13.0.8-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-debug",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-debug-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-headless",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-headless-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-headless-debug",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-headless-debug-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-devel",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-devel-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-devel-debug",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-devel-debug-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-static-libs",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-static-libs-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-static-libs-debug",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-static-libs-debug-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-jmods",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-jmods-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-jmods-debug",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-jmods-debug-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-demo",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-demo-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-demo-debug",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-demo-debug-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-src",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-src-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-src-debug",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-src-debug-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-javadoc",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-javadoc-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-javadoc-zip",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-javadoc-zip-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-javadoc-debug",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-javadoc-debug-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-javadoc-zip-debug",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-javadoc-zip-debug-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-11-openjdk-debuginfo",
+					"Release": "1.amzn2.0.3",
+					"Version": "11.0.13.0.8",
+					"Filename": "Packages/java-11-openjdk-debuginfo-11.0.13.0.8-1.amzn2.0.3.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

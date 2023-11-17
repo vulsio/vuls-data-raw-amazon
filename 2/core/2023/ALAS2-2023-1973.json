@@ -1,371 +1,371 @@
 {
-  "ID": "ALAS2-2023-1973",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-1973: medium priority package update for protobuf",
-  "Issued": {
-    "Date": "2023-03-02 22:35"
-  },
-  "Updated": {
-    "Date": "2023-03-07 00:20"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-1941:\n\tA parsing vulnerability for the MessageSet type in the ProtocolBuffers versions prior to and including 3.16.1, 3.17.3, 3.18.2, 3.19.4, 3.20.1 and 3.21.5 for protobuf-cpp, and versions prior to and including 3.16.1, \n3.17.3, 3.18.2, 3.19.4, 3.20.1 and 4.21.5 for protobuf-python can lead to out of memory failures. A specially crafted message with multiple key-value per elements creates parsing issues, and can lead to a Denial of Service against\n services receiving unsanitized input. We recommend upgrading to versions 3.18.3, 3.19.5, 3.20.2, 3.21.6 for protobuf-cpp and 3.18.3, 3.19.5, 3.20.2, 4.21.6 for protobuf-python. Versions for 3.16 and 3.17 are no longer updated.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1941",
-        "ID": "CVE-2022-1941",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "protobuf",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-2.5.0-8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "protobuf-compiler",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-compiler-2.5.0-8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "protobuf-devel",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-devel-2.5.0-8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "protobuf-static",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-static-2.5.0-8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "protobuf-lite",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-lite-2.5.0-8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "protobuf-lite-devel",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-lite-devel-2.5.0-8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "protobuf-lite-static",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-lite-static-2.5.0-8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "protobuf-python",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-python-2.5.0-8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "protobuf-vim",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-vim-2.5.0-8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "protobuf-emacs",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-emacs-2.5.0-8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "protobuf-emacs-el",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-emacs-el-2.5.0-8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "protobuf-java",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-java-2.5.0-8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "protobuf-javadoc",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-javadoc-2.5.0-8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "protobuf-debuginfo",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-debuginfo-2.5.0-8.amzn2.0.4.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "protobuf",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-2.5.0-8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "protobuf-compiler",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-compiler-2.5.0-8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "protobuf-devel",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-devel-2.5.0-8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "protobuf-static",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-static-2.5.0-8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "protobuf-lite",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-lite-2.5.0-8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "protobuf-lite-devel",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-lite-devel-2.5.0-8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "protobuf-lite-static",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-lite-static-2.5.0-8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "protobuf-python",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-python-2.5.0-8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "protobuf-vim",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-vim-2.5.0-8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "protobuf-emacs",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-emacs-2.5.0-8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "protobuf-emacs-el",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-emacs-el-2.5.0-8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "protobuf-java",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-java-2.5.0-8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "protobuf-javadoc",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-javadoc-2.5.0-8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "protobuf-debuginfo",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-debuginfo-2.5.0-8.amzn2.0.4.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "protobuf",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-2.5.0-8.amzn2.0.4.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "protobuf-compiler",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-compiler-2.5.0-8.amzn2.0.4.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "protobuf-devel",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-devel-2.5.0-8.amzn2.0.4.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "protobuf-static",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-static-2.5.0-8.amzn2.0.4.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "protobuf-lite",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-lite-2.5.0-8.amzn2.0.4.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "protobuf-lite-devel",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-lite-devel-2.5.0-8.amzn2.0.4.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "protobuf-lite-static",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-lite-static-2.5.0-8.amzn2.0.4.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "protobuf-python",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-python-2.5.0-8.amzn2.0.4.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "protobuf-vim",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-vim-2.5.0-8.amzn2.0.4.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "protobuf-emacs",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-emacs-2.5.0-8.amzn2.0.4.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "protobuf-emacs-el",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-emacs-el-2.5.0-8.amzn2.0.4.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "protobuf-java",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-java-2.5.0-8.amzn2.0.4.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "protobuf-javadoc",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-javadoc-2.5.0-8.amzn2.0.4.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "protobuf-debuginfo",
-          "Release": "8.amzn2.0.4",
-          "Version": "2.5.0",
-          "Filename": "Packages/protobuf-debuginfo-2.5.0-8.amzn2.0.4.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2023-1973",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2023-1973: medium priority package update for protobuf",
+	"Issued": {
+		"Date": "2023-03-02 22:35"
+	},
+	"Updated": {
+		"Date": "2023-03-07 00:20"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-1941:\n\tA parsing vulnerability for the MessageSet type in the ProtocolBuffers versions prior to and including 3.16.1, 3.17.3, 3.18.2, 3.19.4, 3.20.1 and 3.21.5 for protobuf-cpp, and versions prior to and including 3.16.1, \n3.17.3, 3.18.2, 3.19.4, 3.20.1 and 4.21.5 for protobuf-python can lead to out of memory failures. A specially crafted message with multiple key-value per elements creates parsing issues, and can lead to a Denial of Service against\n services receiving unsanitized input. We recommend upgrading to versions 3.18.3, 3.19.5, 3.20.2, 3.21.6 for protobuf-cpp and 3.18.3, 3.19.5, 3.20.2, 4.21.6 for protobuf-python. Versions for 3.16 and 3.17 are no longer updated.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1941",
+				"ID": "CVE-2022-1941",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "protobuf",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-2.5.0-8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "protobuf-compiler",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-compiler-2.5.0-8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "protobuf-devel",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-devel-2.5.0-8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "protobuf-static",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-static-2.5.0-8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "protobuf-lite",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-lite-2.5.0-8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "protobuf-lite-devel",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-lite-devel-2.5.0-8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "protobuf-lite-static",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-lite-static-2.5.0-8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "protobuf-python",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-python-2.5.0-8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "protobuf-vim",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-vim-2.5.0-8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "protobuf-emacs",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-emacs-2.5.0-8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "protobuf-emacs-el",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-emacs-el-2.5.0-8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "protobuf-java",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-java-2.5.0-8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "protobuf-javadoc",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-javadoc-2.5.0-8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "protobuf-debuginfo",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-debuginfo-2.5.0-8.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "protobuf",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-2.5.0-8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "protobuf-compiler",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-compiler-2.5.0-8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "protobuf-devel",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-devel-2.5.0-8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "protobuf-static",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-static-2.5.0-8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "protobuf-lite",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-lite-2.5.0-8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "protobuf-lite-devel",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-lite-devel-2.5.0-8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "protobuf-lite-static",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-lite-static-2.5.0-8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "protobuf-python",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-python-2.5.0-8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "protobuf-vim",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-vim-2.5.0-8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "protobuf-emacs",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-emacs-2.5.0-8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "protobuf-emacs-el",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-emacs-el-2.5.0-8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "protobuf-java",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-java-2.5.0-8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "protobuf-javadoc",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-javadoc-2.5.0-8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "protobuf-debuginfo",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-debuginfo-2.5.0-8.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "protobuf",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-2.5.0-8.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "protobuf-compiler",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-compiler-2.5.0-8.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "protobuf-devel",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-devel-2.5.0-8.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "protobuf-static",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-static-2.5.0-8.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "protobuf-lite",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-lite-2.5.0-8.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "protobuf-lite-devel",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-lite-devel-2.5.0-8.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "protobuf-lite-static",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-lite-static-2.5.0-8.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "protobuf-python",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-python-2.5.0-8.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "protobuf-vim",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-vim-2.5.0-8.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "protobuf-emacs",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-emacs-2.5.0-8.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "protobuf-emacs-el",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-emacs-el-2.5.0-8.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "protobuf-java",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-java-2.5.0-8.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "protobuf-javadoc",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-javadoc-2.5.0-8.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "protobuf-debuginfo",
+					"Release": "8.amzn2.0.4",
+					"Version": "2.5.0",
+					"Filename": "Packages/protobuf-debuginfo-2.5.0-8.amzn2.0.4.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

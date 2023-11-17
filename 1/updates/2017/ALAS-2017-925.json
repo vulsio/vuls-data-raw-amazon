@@ -1,227 +1,227 @@
 {
-  "ID": "ALAS-2017-925",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-925: medium priority package update for kernel",
-  "Issued": {
-    "Date": "2017-11-18 02:03"
-  },
-  "Updated": {
-    "Date": "2017-11-20 21:42"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-15951:\n\tThe KEYS subsystem in the Linux kernel before 4.13.10 does not correctly synchronize the actions of updating versus finding a key in the &quot;negative&quot; state to avoid a race condition, which allows local users to cause a denial of service or possibly have unspecified other impact via crafted system calls.\n1507539: \nCVE-2017-15951 kernel: Race condition in the KEYS subsystem\n\nCVE-2017-15299:\n\tA vulnerability was found in the key management subsystem of the Linux kernel. An update on an uninstantiated key could cause a kernel panic, leading to denial of service (DoS).\n1498016: \nCVE-2017-15299 kernel: Incorrect updates of uninstantiated keys crash the kernel\n\nCVE-2017-12193:\n\tA flaw was found in the Linux kernel&#039;s implementation of associative arrays introduced in 3.13. This functionality was backported to the 3.10 kernels in Red Hat Enterprise Linux 7. The flaw involved a null pointer dereference in assoc_array_apply_edit() due to incorrect node-splitting in assoc_array implementation.  This affects the keyring key type and thus key addition and link creation operations may cause the kernel to panic.\n1501215: \nCVE-2017-12193 kernel: Null pointer dereference due to incorrect node-splitting in assoc_array implementation\n\nCVE-2017-12190:\n\tIt was found that in the Linux kernel through v4.14-rc5, bio_map_user_iov() and bio_unmap_user() in &#039;block/bio.c&#039; do unbalanced pages refcounting if IO vector has small consecutive buffers belonging to the same page. bio_add_pc_page() merges them into one, but the page reference is never dropped, causing a memory leak and possible system lockup due to out-of-memory condition.\n1495089: \nCVE-2017-12190 kernel: memory leak when merging buffers in SCSI IO vectors\n\nCVE-2017-1000255:\n\tA flaw was found in the Linux kernel&#039;s handling of signal frame on PowerPC systems. A malicious local user process could craft a signal frame allowing an attacker to corrupt memory.\n1498067: \nCVE-2017-1000255 kernel: Arbitrary stack overwrite causing oops via crafted signal frame\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1000255",
-        "ID": "CVE-2017-1000255",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12190",
-        "ID": "CVE-2017-12190",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12193",
-        "ID": "CVE-2017-12193",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15299",
-        "ID": "CVE-2017-15299",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15951",
-        "ID": "CVE-2017-15951",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/kernel-debuginfo-4.9.62-21.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/kernel-headers-4.9.62-21.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/kernel-tools-debuginfo-4.9.62-21.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-x86_64",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.9.62-21.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/perf-debuginfo-4.9.62-21.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/kernel-tools-devel-4.9.62-21.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/kernel-4.9.62-21.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/kernel-devel-4.9.62-21.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/perf-4.9.62-21.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/kernel-tools-4.9.62-21.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/perf-debuginfo-4.9.62-21.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/kernel-tools-devel-4.9.62-21.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/kernel-debuginfo-4.9.62-21.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/kernel-devel-4.9.62-21.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/perf-4.9.62-21.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/kernel-headers-4.9.62-21.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-i686",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/kernel-debuginfo-common-i686-4.9.62-21.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/kernel-4.9.62-21.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/kernel-tools-4.9.62-21.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/kernel-tools-debuginfo-4.9.62-21.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "kernel-doc",
-          "Release": "21.56.amzn1",
-          "Version": "4.9.62",
-          "Filename": "Packages/kernel-doc-4.9.62-21.56.amzn1.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2017-925",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2017-925: medium priority package update for kernel",
+	"Issued": {
+		"Date": "2017-11-18 02:03"
+	},
+	"Updated": {
+		"Date": "2017-11-20 21:42"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-15951:\n\tThe KEYS subsystem in the Linux kernel before 4.13.10 does not correctly synchronize the actions of updating versus finding a key in the &quot;negative&quot; state to avoid a race condition, which allows local users to cause a denial of service or possibly have unspecified other impact via crafted system calls.\n1507539: \nCVE-2017-15951 kernel: Race condition in the KEYS subsystem\n\nCVE-2017-15299:\n\tA vulnerability was found in the key management subsystem of the Linux kernel. An update on an uninstantiated key could cause a kernel panic, leading to denial of service (DoS).\n1498016: \nCVE-2017-15299 kernel: Incorrect updates of uninstantiated keys crash the kernel\n\nCVE-2017-12193:\n\tA flaw was found in the Linux kernel&#039;s implementation of associative arrays introduced in 3.13. This functionality was backported to the 3.10 kernels in Red Hat Enterprise Linux 7. The flaw involved a null pointer dereference in assoc_array_apply_edit() due to incorrect node-splitting in assoc_array implementation.  This affects the keyring key type and thus key addition and link creation operations may cause the kernel to panic.\n1501215: \nCVE-2017-12193 kernel: Null pointer dereference due to incorrect node-splitting in assoc_array implementation\n\nCVE-2017-12190:\n\tIt was found that in the Linux kernel through v4.14-rc5, bio_map_user_iov() and bio_unmap_user() in &#039;block/bio.c&#039; do unbalanced pages refcounting if IO vector has small consecutive buffers belonging to the same page. bio_add_pc_page() merges them into one, but the page reference is never dropped, causing a memory leak and possible system lockup due to out-of-memory condition.\n1495089: \nCVE-2017-12190 kernel: memory leak when merging buffers in SCSI IO vectors\n\nCVE-2017-1000255:\n\tA flaw was found in the Linux kernel&#039;s handling of signal frame on PowerPC systems. A malicious local user process could craft a signal frame allowing an attacker to corrupt memory.\n1498067: \nCVE-2017-1000255 kernel: Arbitrary stack overwrite causing oops via crafted signal frame\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-1000255",
+				"ID": "CVE-2017-1000255",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12190",
+				"ID": "CVE-2017-12190",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12193",
+				"ID": "CVE-2017-12193",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15299",
+				"ID": "CVE-2017-15299",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15951",
+				"ID": "CVE-2017-15951",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/kernel-debuginfo-4.9.62-21.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/kernel-headers-4.9.62-21.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/kernel-tools-debuginfo-4.9.62-21.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-x86_64",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/kernel-debuginfo-common-x86_64-4.9.62-21.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/perf-debuginfo-4.9.62-21.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/kernel-tools-devel-4.9.62-21.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/kernel-4.9.62-21.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/kernel-devel-4.9.62-21.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/perf-4.9.62-21.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/kernel-tools-4.9.62-21.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/perf-debuginfo-4.9.62-21.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/kernel-tools-devel-4.9.62-21.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/kernel-debuginfo-4.9.62-21.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/kernel-devel-4.9.62-21.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/perf-4.9.62-21.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/kernel-headers-4.9.62-21.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-i686",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/kernel-debuginfo-common-i686-4.9.62-21.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/kernel-4.9.62-21.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/kernel-tools-4.9.62-21.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/kernel-tools-debuginfo-4.9.62-21.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "kernel-doc",
+					"Release": "21.56.amzn1",
+					"Version": "4.9.62",
+					"Filename": "Packages/kernel-doc-4.9.62-21.56.amzn1.noarch.rpm"
+				}
+			]
+		}
+	}
 }

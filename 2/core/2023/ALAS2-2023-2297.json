@@ -1,227 +1,227 @@
 {
-  "ID": "ALAS2-2023-2297",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2297: medium priority package update for ceph-common",
-  "Issued": {
-    "Date": "2023-10-12 15:09"
-  },
-  "Updated": {
-    "Date": "2023-10-19 23:40"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-43040:\n\tA flaw was found in rgw. This flaw allows an unprivileged user to write to any bucket(s) accessible by a given key if a POST's form-data contains a key called 'bucket' with a value matching the bucket's name used to sign the request. This issue results in a user being able to upload to any bucket accessible by the specified access key as long as the bucket in the POST policy matches the bucket in the said POST form part.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-43040",
-        "ID": "CVE-2023-43040",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "ceph-common",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/ceph-common-10.2.5-4.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "librados2",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/librados2-10.2.5-4.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "librados2-devel",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/librados2-devel-10.2.5-4.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "python-rados",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/python-rados-10.2.5-4.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "librbd1",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/librbd1-10.2.5-4.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "librbd1-devel",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/librbd1-devel-10.2.5-4.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "python-rbd",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/python-rbd-10.2.5-4.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "ceph-common-debuginfo",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/ceph-common-debuginfo-10.2.5-4.amzn2.0.2.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "ceph-common",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/ceph-common-10.2.5-4.amzn2.0.2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "librados2",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/librados2-10.2.5-4.amzn2.0.2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "librados2-devel",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/librados2-devel-10.2.5-4.amzn2.0.2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "python-rados",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/python-rados-10.2.5-4.amzn2.0.2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "librbd1",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/librbd1-10.2.5-4.amzn2.0.2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "librbd1-devel",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/librbd1-devel-10.2.5-4.amzn2.0.2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "python-rbd",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/python-rbd-10.2.5-4.amzn2.0.2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "ceph-common-debuginfo",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/ceph-common-debuginfo-10.2.5-4.amzn2.0.2.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "ceph-common",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/ceph-common-10.2.5-4.amzn2.0.2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "librados2",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/librados2-10.2.5-4.amzn2.0.2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "librados2-devel",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/librados2-devel-10.2.5-4.amzn2.0.2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "python-rados",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/python-rados-10.2.5-4.amzn2.0.2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "librbd1",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/librbd1-10.2.5-4.amzn2.0.2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "librbd1-devel",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/librbd1-devel-10.2.5-4.amzn2.0.2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "python-rbd",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/python-rbd-10.2.5-4.amzn2.0.2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "ceph-common-debuginfo",
-          "Release": "4.amzn2.0.2",
-          "Version": "10.2.5",
-          "Filename": "Packages/ceph-common-debuginfo-10.2.5-4.amzn2.0.2.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2023-2297",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2297: medium priority package update for ceph-common",
+	"Issued": {
+		"Date": "2023-10-12 15:09"
+	},
+	"Updated": {
+		"Date": "2023-10-19 23:40"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-43040:\n\tA flaw was found in rgw. This flaw allows an unprivileged user to write to any bucket(s) accessible by a given key if a POST's form-data contains a key called 'bucket' with a value matching the bucket's name used to sign the request. This issue results in a user being able to upload to any bucket accessible by the specified access key as long as the bucket in the POST policy matches the bucket in the said POST form part.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-43040",
+				"ID": "CVE-2023-43040",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "ceph-common",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/ceph-common-10.2.5-4.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "librados2",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/librados2-10.2.5-4.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "librados2-devel",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/librados2-devel-10.2.5-4.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "python-rados",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/python-rados-10.2.5-4.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "librbd1",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/librbd1-10.2.5-4.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "librbd1-devel",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/librbd1-devel-10.2.5-4.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "python-rbd",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/python-rbd-10.2.5-4.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "ceph-common-debuginfo",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/ceph-common-debuginfo-10.2.5-4.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "ceph-common",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/ceph-common-10.2.5-4.amzn2.0.2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "librados2",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/librados2-10.2.5-4.amzn2.0.2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "librados2-devel",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/librados2-devel-10.2.5-4.amzn2.0.2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "python-rados",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/python-rados-10.2.5-4.amzn2.0.2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "librbd1",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/librbd1-10.2.5-4.amzn2.0.2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "librbd1-devel",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/librbd1-devel-10.2.5-4.amzn2.0.2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "python-rbd",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/python-rbd-10.2.5-4.amzn2.0.2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "ceph-common-debuginfo",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/ceph-common-debuginfo-10.2.5-4.amzn2.0.2.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "ceph-common",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/ceph-common-10.2.5-4.amzn2.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "librados2",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/librados2-10.2.5-4.amzn2.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "librados2-devel",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/librados2-devel-10.2.5-4.amzn2.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "python-rados",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/python-rados-10.2.5-4.amzn2.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "librbd1",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/librbd1-10.2.5-4.amzn2.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "librbd1-devel",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/librbd1-devel-10.2.5-4.amzn2.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "python-rbd",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/python-rbd-10.2.5-4.amzn2.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "ceph-common-debuginfo",
+					"Release": "4.amzn2.0.2",
+					"Version": "10.2.5",
+					"Filename": "Packages/ceph-common-debuginfo-10.2.5-4.amzn2.0.2.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

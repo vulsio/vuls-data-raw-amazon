@@ -1,63 +1,63 @@
 {
-  "ID": "ALAS-2021-1537",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2021-1537: medium priority package update for docker",
-  "Issued": {
-    "Date": "2021-09-30 19:22"
-  },
-  "Updated": {
-    "Date": "2021-10-04 22:22"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2021-41092:\n\tCVE-2021-41092 docker:\nA bug was found in the Docker CLI where running docker login my-private-registry.example.com with a misconfigured configuration file (typically ~/.docker/config.json) listing a credsStore or credHelpers that could not be executed would result in any provided credentials being sent to registry-1.docker.io rather than the intended private registry.\n\nCVE-2021-41091:\n\tCVE-2021-41091 docker:\nA bug was found in Moby (Docker Engine) where the data directory (typically /var/lib/docker) contained subdirectories with insufficiently restricted permissions, allowing otherwise unprivileged Linux users to traverse directory contents and execute programs. When containers included executable programs with extended permission bits (such as setuid), unprivileged Linux users could discover and execute those programs. When the UID of an unprivileged Linux user on the host collided with the file owner or group inside a container, the unprivileged Linux user on the host could discover, read, and modify those files.\n\nCVE-2021-41089:\n\tCVE-2021-41089 docker:\nA bug was found in Moby (Docker Engine) where attempting to copy files using docker cp into a specially-crafted container can result in Unix file permission changes for existing files in the host 2019s filesystem, widening access to others. This bug does not directly allow files to be read, modified, or executed without an additional cooperating process.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41089",
-        "ID": "CVE-2021-41089",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41091",
-        "ID": "CVE-2021-41091",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41092",
-        "ID": "CVE-2021-41092",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "docker",
-          "Release": "3.71.amzn1",
-          "Version": "20.10.7",
-          "Filename": "Packages/docker-20.10.7-3.71.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "docker-debuginfo",
-          "Release": "3.71.amzn1",
-          "Version": "20.10.7",
-          "Filename": "Packages/docker-debuginfo-20.10.7-3.71.amzn1.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2021-1537",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2021-1537: medium priority package update for docker",
+	"Issued": {
+		"Date": "2021-09-30 19:22"
+	},
+	"Updated": {
+		"Date": "2021-10-04 22:22"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2021-41092:\n\tCVE-2021-41092 docker:\nA bug was found in the Docker CLI where running docker login my-private-registry.example.com with a misconfigured configuration file (typically ~/.docker/config.json) listing a credsStore or credHelpers that could not be executed would result in any provided credentials being sent to registry-1.docker.io rather than the intended private registry.\n\nCVE-2021-41091:\n\tCVE-2021-41091 docker:\nA bug was found in Moby (Docker Engine) where the data directory (typically /var/lib/docker) contained subdirectories with insufficiently restricted permissions, allowing otherwise unprivileged Linux users to traverse directory contents and execute programs. When containers included executable programs with extended permission bits (such as setuid), unprivileged Linux users could discover and execute those programs. When the UID of an unprivileged Linux user on the host collided with the file owner or group inside a container, the unprivileged Linux user on the host could discover, read, and modify those files.\n\nCVE-2021-41089:\n\tCVE-2021-41089 docker:\nA bug was found in Moby (Docker Engine) where attempting to copy files using docker cp into a specially-crafted container can result in Unix file permission changes for existing files in the host 2019s filesystem, widening access to others. This bug does not directly allow files to be read, modified, or executed without an additional cooperating process.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41089",
+				"ID": "CVE-2021-41089",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41091",
+				"ID": "CVE-2021-41091",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-41092",
+				"ID": "CVE-2021-41092",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "docker",
+					"Release": "3.71.amzn1",
+					"Version": "20.10.7",
+					"Filename": "Packages/docker-20.10.7-3.71.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "docker-debuginfo",
+					"Release": "3.71.amzn1",
+					"Version": "20.10.7",
+					"Filename": "Packages/docker-debuginfo-20.10.7-3.71.amzn1.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

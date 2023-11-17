@@ -1,89 +1,89 @@
 {
-  "ID": "ALAS-2021-1459",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2021-1459: medium priority package update for expat",
-  "Issued": {
-    "Date": "2021-01-12 22:51"
-  },
-  "Updated": {
-    "Date": "2021-01-13 18:05"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2019-15903:\n\tIn libexpat before 2.2.8, crafted XML input could fool the parser into changing from DTD parsing to document parsing too early; a consecutive call to XML_GetCurrentLineNumber (or XML_GetCurrentColumnNumber) then resulted in a heap-based buffer over-read.\n1752592: CVE-2019-15903 expat: heap-based buffer over-read via crafted XML input\n\nCVE-2018-20843:\n\tIt was discovered that the \"setElementTypePrefix()\" function incorrectly extracted XML namespace prefixes. By tricking an application into processing a specially crafted XML file, an attacker could cause unusually high consumption of memory resources and possibly lead to a denial of service.\n1723723: CVE-2018-20843 expat: large number of colons in input makes parser consume high amount of resources, leading to DoS\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20843",
-        "ID": "CVE-2018-20843",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-15903",
-        "ID": "CVE-2019-15903",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "expat-debuginfo",
-          "Release": "12.24.amzn1",
-          "Version": "2.1.0",
-          "Filename": "Packages/expat-debuginfo-2.1.0-12.24.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "expat-devel",
-          "Release": "12.24.amzn1",
-          "Version": "2.1.0",
-          "Filename": "Packages/expat-devel-2.1.0-12.24.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "expat",
-          "Release": "12.24.amzn1",
-          "Version": "2.1.0",
-          "Filename": "Packages/expat-2.1.0-12.24.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "expat",
-          "Release": "12.24.amzn1",
-          "Version": "2.1.0",
-          "Filename": "Packages/expat-2.1.0-12.24.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "expat-debuginfo",
-          "Release": "12.24.amzn1",
-          "Version": "2.1.0",
-          "Filename": "Packages/expat-debuginfo-2.1.0-12.24.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "expat-devel",
-          "Release": "12.24.amzn1",
-          "Version": "2.1.0",
-          "Filename": "Packages/expat-devel-2.1.0-12.24.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2021-1459",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2021-1459: medium priority package update for expat",
+	"Issued": {
+		"Date": "2021-01-12 22:51"
+	},
+	"Updated": {
+		"Date": "2021-01-13 18:05"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2019-15903:\n\tIn libexpat before 2.2.8, crafted XML input could fool the parser into changing from DTD parsing to document parsing too early; a consecutive call to XML_GetCurrentLineNumber (or XML_GetCurrentColumnNumber) then resulted in a heap-based buffer over-read.\n1752592: CVE-2019-15903 expat: heap-based buffer over-read via crafted XML input\n\nCVE-2018-20843:\n\tIt was discovered that the \"setElementTypePrefix()\" function incorrectly extracted XML namespace prefixes. By tricking an application into processing a specially crafted XML file, an attacker could cause unusually high consumption of memory resources and possibly lead to a denial of service.\n1723723: CVE-2018-20843 expat: large number of colons in input makes parser consume high amount of resources, leading to DoS\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20843",
+				"ID": "CVE-2018-20843",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-15903",
+				"ID": "CVE-2019-15903",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "expat-debuginfo",
+					"Release": "12.24.amzn1",
+					"Version": "2.1.0",
+					"Filename": "Packages/expat-debuginfo-2.1.0-12.24.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "expat-devel",
+					"Release": "12.24.amzn1",
+					"Version": "2.1.0",
+					"Filename": "Packages/expat-devel-2.1.0-12.24.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "expat",
+					"Release": "12.24.amzn1",
+					"Version": "2.1.0",
+					"Filename": "Packages/expat-2.1.0-12.24.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "expat",
+					"Release": "12.24.amzn1",
+					"Version": "2.1.0",
+					"Filename": "Packages/expat-2.1.0-12.24.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "expat-debuginfo",
+					"Release": "12.24.amzn1",
+					"Version": "2.1.0",
+					"Filename": "Packages/expat-debuginfo-2.1.0-12.24.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "expat-devel",
+					"Release": "12.24.amzn1",
+					"Version": "2.1.0",
+					"Filename": "Packages/expat-devel-2.1.0-12.24.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

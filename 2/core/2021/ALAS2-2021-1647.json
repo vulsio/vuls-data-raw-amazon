@@ -1,317 +1,317 @@
 {
-  "ID": "ALAS2-2021-1647",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1647: medium priority package update for systemd",
-  "Issued": {
-    "Date": "2021-06-16 20:36"
-  },
-  "Updated": {
-    "Date": "2021-06-22 21:37"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2019-3815:\n\tA memory leak was discovered in the backport of fixes for CVE-2018-16864 in Red Hat Enterprise Linux. Function dispatch_message_real() in journald-server.c does not free the memory allocated by set_iovec_field_free() to store the `_CMDLINE=` entry. A local attacker may use this flaw to make systemd-journald crash.\n1666690: CVE-2019-3815 systemd: memory leak in journald-server.c introduced by fix for CVE-2018-16864\n\nCVE-2019-20386:\n\tA memory leak was discovered in the systemd-login when a power-switch event is received. A physical attacker may trigger one of these events and leak bytes due to a missing free.\n1793979: CVE-2019-20386 systemd: memory leak in button_open() in login/logind-button.c when udev events are received\n\nCVE-2018-16866:\n\tAn out of bounds read was discovered in systemd-journald in the way it parses log messages that terminate with a colon ':'. A local attacker can use this flaw to disclose process memory data.\n1653867: CVE-2018-16866 systemd: out-of-bounds read when parsing a crafted syslog message\n\nCVE-2018-15686:\n\tIt was discovered that systemd is vulnerable to a state injection attack when deserializing the state of a service. Properties longer than LINE_MAX are not correctly parsed and an attacker may abuse this flaw in particularly configured services to inject, change, or corrupt the service state.\n1639071: CVE-2018-15686 systemd: line splitting via fgets() allows for state injection during daemon-reexec\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15686",
-        "ID": "CVE-2018-15686",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16866",
-        "ID": "CVE-2018-16866",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-20386",
-        "ID": "CVE-2019-20386",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3815",
-        "ID": "CVE-2019-3815",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "systemd",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-219-78.amzn2.0.14.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "systemd-libs",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-libs-219-78.amzn2.0.14.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "systemd-devel",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-devel-219-78.amzn2.0.14.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "systemd-sysv",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-sysv-219-78.amzn2.0.14.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "systemd-python",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-python-219-78.amzn2.0.14.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libgudev1",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/libgudev1-219-78.amzn2.0.14.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libgudev1-devel",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/libgudev1-devel-219-78.amzn2.0.14.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "systemd-journal-gateway",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-journal-gateway-219-78.amzn2.0.14.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "systemd-networkd",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-networkd-219-78.amzn2.0.14.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "systemd-resolved",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-resolved-219-78.amzn2.0.14.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "systemd-debuginfo",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-debuginfo-219-78.amzn2.0.14.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemd",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-219-78.amzn2.0.14.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemd-libs",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-libs-219-78.amzn2.0.14.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemd-devel",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-devel-219-78.amzn2.0.14.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemd-sysv",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-sysv-219-78.amzn2.0.14.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemd-python",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-python-219-78.amzn2.0.14.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libgudev1",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/libgudev1-219-78.amzn2.0.14.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libgudev1-devel",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/libgudev1-devel-219-78.amzn2.0.14.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemd-journal-gateway",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-journal-gateway-219-78.amzn2.0.14.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemd-networkd",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-networkd-219-78.amzn2.0.14.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemd-resolved",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-resolved-219-78.amzn2.0.14.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "systemd-debuginfo",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-debuginfo-219-78.amzn2.0.14.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemd",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-219-78.amzn2.0.14.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemd-libs",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-libs-219-78.amzn2.0.14.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemd-devel",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-devel-219-78.amzn2.0.14.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemd-sysv",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-sysv-219-78.amzn2.0.14.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemd-python",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-python-219-78.amzn2.0.14.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libgudev1",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/libgudev1-219-78.amzn2.0.14.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libgudev1-devel",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/libgudev1-devel-219-78.amzn2.0.14.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemd-journal-gateway",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-journal-gateway-219-78.amzn2.0.14.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemd-networkd",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-networkd-219-78.amzn2.0.14.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemd-resolved",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-resolved-219-78.amzn2.0.14.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "systemd-debuginfo",
-          "Release": "78.amzn2.0.14",
-          "Version": "219",
-          "Filename": "Packages/systemd-debuginfo-219-78.amzn2.0.14.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2021-1647",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1647: medium priority package update for systemd",
+	"Issued": {
+		"Date": "2021-06-16 20:36"
+	},
+	"Updated": {
+		"Date": "2021-06-22 21:37"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2019-3815:\n\tA memory leak was discovered in the backport of fixes for CVE-2018-16864 in Red Hat Enterprise Linux. Function dispatch_message_real() in journald-server.c does not free the memory allocated by set_iovec_field_free() to store the `_CMDLINE=` entry. A local attacker may use this flaw to make systemd-journald crash.\n1666690: CVE-2019-3815 systemd: memory leak in journald-server.c introduced by fix for CVE-2018-16864\n\nCVE-2019-20386:\n\tA memory leak was discovered in the systemd-login when a power-switch event is received. A physical attacker may trigger one of these events and leak bytes due to a missing free.\n1793979: CVE-2019-20386 systemd: memory leak in button_open() in login/logind-button.c when udev events are received\n\nCVE-2018-16866:\n\tAn out of bounds read was discovered in systemd-journald in the way it parses log messages that terminate with a colon ':'. A local attacker can use this flaw to disclose process memory data.\n1653867: CVE-2018-16866 systemd: out-of-bounds read when parsing a crafted syslog message\n\nCVE-2018-15686:\n\tIt was discovered that systemd is vulnerable to a state injection attack when deserializing the state of a service. Properties longer than LINE_MAX are not correctly parsed and an attacker may abuse this flaw in particularly configured services to inject, change, or corrupt the service state.\n1639071: CVE-2018-15686 systemd: line splitting via fgets() allows for state injection during daemon-reexec\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15686",
+				"ID": "CVE-2018-15686",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16866",
+				"ID": "CVE-2018-16866",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-20386",
+				"ID": "CVE-2019-20386",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-3815",
+				"ID": "CVE-2019-3815",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "systemd",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-219-78.amzn2.0.14.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "systemd-libs",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-libs-219-78.amzn2.0.14.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "systemd-devel",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-devel-219-78.amzn2.0.14.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "systemd-sysv",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-sysv-219-78.amzn2.0.14.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "systemd-python",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-python-219-78.amzn2.0.14.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libgudev1",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/libgudev1-219-78.amzn2.0.14.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libgudev1-devel",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/libgudev1-devel-219-78.amzn2.0.14.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "systemd-journal-gateway",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-journal-gateway-219-78.amzn2.0.14.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "systemd-networkd",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-networkd-219-78.amzn2.0.14.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "systemd-resolved",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-resolved-219-78.amzn2.0.14.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "systemd-debuginfo",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-debuginfo-219-78.amzn2.0.14.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemd",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-219-78.amzn2.0.14.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemd-libs",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-libs-219-78.amzn2.0.14.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemd-devel",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-devel-219-78.amzn2.0.14.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemd-sysv",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-sysv-219-78.amzn2.0.14.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemd-python",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-python-219-78.amzn2.0.14.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libgudev1",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/libgudev1-219-78.amzn2.0.14.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libgudev1-devel",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/libgudev1-devel-219-78.amzn2.0.14.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemd-journal-gateway",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-journal-gateway-219-78.amzn2.0.14.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemd-networkd",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-networkd-219-78.amzn2.0.14.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemd-resolved",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-resolved-219-78.amzn2.0.14.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "systemd-debuginfo",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-debuginfo-219-78.amzn2.0.14.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemd",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-219-78.amzn2.0.14.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemd-libs",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-libs-219-78.amzn2.0.14.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemd-devel",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-devel-219-78.amzn2.0.14.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemd-sysv",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-sysv-219-78.amzn2.0.14.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemd-python",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-python-219-78.amzn2.0.14.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libgudev1",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/libgudev1-219-78.amzn2.0.14.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libgudev1-devel",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/libgudev1-devel-219-78.amzn2.0.14.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemd-journal-gateway",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-journal-gateway-219-78.amzn2.0.14.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemd-networkd",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-networkd-219-78.amzn2.0.14.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemd-resolved",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-resolved-219-78.amzn2.0.14.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "systemd-debuginfo",
+					"Release": "78.amzn2.0.14",
+					"Version": "219",
+					"Filename": "Packages/systemd-debuginfo-219-78.amzn2.0.14.i686.rpm"
+				}
+			]
+		}
+	}
 }

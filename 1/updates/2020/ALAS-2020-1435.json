@@ -1,143 +1,143 @@
 {
-  "ID": "ALAS-2020-1435",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2020-1435: important priority package update for dovecot",
-  "Issued": {
-    "Date": "2020-10-26 17:59"
-  },
-  "Updated": {
-    "Date": "2020-10-27 21:32"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-12674:\n\tIn Dovecot before 2.3.11.3, sending a specially formatted RPA request will crash the auth service because a length of zero is mishandled.\nA flaw was found in dovecot. An attacker can use the way dovecot handles RPA (Remote Passphrase Authentication) to crash the authentication process repeatedly preventing login. The highest threat from this vulnerability is to system availability.\n1866317: CVE-2020-12674 dovecot: Crash due to assert in RPA implementation\n\nCVE-2020-12673:\n\tIn Dovecot before 2.3.11.3, sending a specially formatted NTLM request will crash the auth service because of an out-of-bounds read.\nA flaw was found in dovecot. An out-of-bounds read flaw was found in the way dovecot handled NTLM authentication allowing an attacker to crash the dovecot auth process repeatedly preventing login. The highest threat from this vulnerability is to system availability.\n1866313: CVE-2020-12673 dovecot: Out of bound reads in dovecot NTLM implementation\n\nCVE-2020-12100:\n\tIn Dovecot before 2.3.11.3, uncontrolled recursion in submission, lmtp, and lda allows remote attackers to cause a denial of service (resource consumption) via a crafted e-mail message with deeply nested MIME parts.\nA flaw was found in dovecot. A remote attacker could cause a denial of service by repeatedly sending emails containing MIME parts containing malicious content of which dovecot will attempt to parse. The highest threat from this vulnerability is to system availability.\n1866309: CVE-2020-12100 dovecot: Resource exhaustion via deeply nested MIME parts\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12100",
-        "ID": "CVE-2020-12100",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12673",
-        "ID": "CVE-2020-12673",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12674",
-        "ID": "CVE-2020-12674",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "dovecot-pgsql",
-          "Release": "6.21.amzn1",
-          "Version": "2.2.36",
-          "Filename": "Packages/dovecot-pgsql-2.2.36-6.21.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "dovecot-mysql",
-          "Release": "6.21.amzn1",
-          "Version": "2.2.36",
-          "Filename": "Packages/dovecot-mysql-2.2.36-6.21.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "dovecot-devel",
-          "Release": "6.21.amzn1",
-          "Version": "2.2.36",
-          "Filename": "Packages/dovecot-devel-2.2.36-6.21.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "dovecot-pigeonhole",
-          "Release": "6.21.amzn1",
-          "Version": "2.2.36",
-          "Filename": "Packages/dovecot-pigeonhole-2.2.36-6.21.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "dovecot-debuginfo",
-          "Release": "6.21.amzn1",
-          "Version": "2.2.36",
-          "Filename": "Packages/dovecot-debuginfo-2.2.36-6.21.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "dovecot",
-          "Release": "6.21.amzn1",
-          "Version": "2.2.36",
-          "Filename": "Packages/dovecot-2.2.36-6.21.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "dovecot-devel",
-          "Release": "6.21.amzn1",
-          "Version": "2.2.36",
-          "Filename": "Packages/dovecot-devel-2.2.36-6.21.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "dovecot-pgsql",
-          "Release": "6.21.amzn1",
-          "Version": "2.2.36",
-          "Filename": "Packages/dovecot-pgsql-2.2.36-6.21.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "dovecot-mysql",
-          "Release": "6.21.amzn1",
-          "Version": "2.2.36",
-          "Filename": "Packages/dovecot-mysql-2.2.36-6.21.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "dovecot",
-          "Release": "6.21.amzn1",
-          "Version": "2.2.36",
-          "Filename": "Packages/dovecot-2.2.36-6.21.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "dovecot-debuginfo",
-          "Release": "6.21.amzn1",
-          "Version": "2.2.36",
-          "Filename": "Packages/dovecot-debuginfo-2.2.36-6.21.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "dovecot-pigeonhole",
-          "Release": "6.21.amzn1",
-          "Version": "2.2.36",
-          "Filename": "Packages/dovecot-pigeonhole-2.2.36-6.21.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2020-1435",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2020-1435: important priority package update for dovecot",
+	"Issued": {
+		"Date": "2020-10-26 17:59"
+	},
+	"Updated": {
+		"Date": "2020-10-27 21:32"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-12674:\n\tIn Dovecot before 2.3.11.3, sending a specially formatted RPA request will crash the auth service because a length of zero is mishandled.\nA flaw was found in dovecot. An attacker can use the way dovecot handles RPA (Remote Passphrase Authentication) to crash the authentication process repeatedly preventing login. The highest threat from this vulnerability is to system availability.\n1866317: CVE-2020-12674 dovecot: Crash due to assert in RPA implementation\n\nCVE-2020-12673:\n\tIn Dovecot before 2.3.11.3, sending a specially formatted NTLM request will crash the auth service because of an out-of-bounds read.\nA flaw was found in dovecot. An out-of-bounds read flaw was found in the way dovecot handled NTLM authentication allowing an attacker to crash the dovecot auth process repeatedly preventing login. The highest threat from this vulnerability is to system availability.\n1866313: CVE-2020-12673 dovecot: Out of bound reads in dovecot NTLM implementation\n\nCVE-2020-12100:\n\tIn Dovecot before 2.3.11.3, uncontrolled recursion in submission, lmtp, and lda allows remote attackers to cause a denial of service (resource consumption) via a crafted e-mail message with deeply nested MIME parts.\nA flaw was found in dovecot. A remote attacker could cause a denial of service by repeatedly sending emails containing MIME parts containing malicious content of which dovecot will attempt to parse. The highest threat from this vulnerability is to system availability.\n1866309: CVE-2020-12100 dovecot: Resource exhaustion via deeply nested MIME parts\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12100",
+				"ID": "CVE-2020-12100",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12673",
+				"ID": "CVE-2020-12673",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-12674",
+				"ID": "CVE-2020-12674",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "dovecot-pgsql",
+					"Release": "6.21.amzn1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-pgsql-2.2.36-6.21.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "dovecot-mysql",
+					"Release": "6.21.amzn1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-mysql-2.2.36-6.21.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "dovecot-devel",
+					"Release": "6.21.amzn1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-devel-2.2.36-6.21.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "dovecot-pigeonhole",
+					"Release": "6.21.amzn1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-pigeonhole-2.2.36-6.21.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "dovecot-debuginfo",
+					"Release": "6.21.amzn1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-debuginfo-2.2.36-6.21.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "dovecot",
+					"Release": "6.21.amzn1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-2.2.36-6.21.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "dovecot-devel",
+					"Release": "6.21.amzn1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-devel-2.2.36-6.21.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "dovecot-pgsql",
+					"Release": "6.21.amzn1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-pgsql-2.2.36-6.21.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "dovecot-mysql",
+					"Release": "6.21.amzn1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-mysql-2.2.36-6.21.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "dovecot",
+					"Release": "6.21.amzn1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-2.2.36-6.21.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "dovecot-debuginfo",
+					"Release": "6.21.amzn1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-debuginfo-2.2.36-6.21.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "dovecot-pigeonhole",
+					"Release": "6.21.amzn1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-pigeonhole-2.2.36-6.21.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

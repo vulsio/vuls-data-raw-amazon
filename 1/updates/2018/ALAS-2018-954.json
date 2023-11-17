@@ -1,147 +1,147 @@
 {
-  "ID": "ALAS-2018-954",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2018-954: important priority package update for bind",
-  "Issued": {
-    "Date": "2018-02-20 21:02"
-  },
-  "Updated": {
-    "Date": "2018-02-21 20:42"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-3145:\n\tA use-after-free flaw leading to denial of service was found in the way BIND internally handled cleanup operations on upstream recursion fetch contexts. A remote attacker could potentially use this flaw to make named, acting as a DNSSEC validating resolver, exit unexpectedly with an assertion failure via a specially crafted DNS request.\n1534812: \nCVE-2017-3145 bind: Improper fetch cleanup sequencing in the resolver can cause named to crash\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3145",
-        "ID": "CVE-2017-3145",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind",
-          "Release": "0.62.rc1.57.amzn1",
-          "Version": "9.8.2",
-          "Filename": "Packages/bind-9.8.2-0.62.rc1.57.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-debuginfo",
-          "Release": "0.62.rc1.57.amzn1",
-          "Version": "9.8.2",
-          "Filename": "Packages/bind-debuginfo-9.8.2-0.62.rc1.57.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-libs",
-          "Release": "0.62.rc1.57.amzn1",
-          "Version": "9.8.2",
-          "Filename": "Packages/bind-libs-9.8.2-0.62.rc1.57.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-utils",
-          "Release": "0.62.rc1.57.amzn1",
-          "Version": "9.8.2",
-          "Filename": "Packages/bind-utils-9.8.2-0.62.rc1.57.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-chroot",
-          "Release": "0.62.rc1.57.amzn1",
-          "Version": "9.8.2",
-          "Filename": "Packages/bind-chroot-9.8.2-0.62.rc1.57.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-sdb",
-          "Release": "0.62.rc1.57.amzn1",
-          "Version": "9.8.2",
-          "Filename": "Packages/bind-sdb-9.8.2-0.62.rc1.57.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "32",
-          "Name": "bind-devel",
-          "Release": "0.62.rc1.57.amzn1",
-          "Version": "9.8.2",
-          "Filename": "Packages/bind-devel-9.8.2-0.62.rc1.57.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-sdb",
-          "Release": "0.62.rc1.57.amzn1",
-          "Version": "9.8.2",
-          "Filename": "Packages/bind-sdb-9.8.2-0.62.rc1.57.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-chroot",
-          "Release": "0.62.rc1.57.amzn1",
-          "Version": "9.8.2",
-          "Filename": "Packages/bind-chroot-9.8.2-0.62.rc1.57.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-devel",
-          "Release": "0.62.rc1.57.amzn1",
-          "Version": "9.8.2",
-          "Filename": "Packages/bind-devel-9.8.2-0.62.rc1.57.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-debuginfo",
-          "Release": "0.62.rc1.57.amzn1",
-          "Version": "9.8.2",
-          "Filename": "Packages/bind-debuginfo-9.8.2-0.62.rc1.57.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind",
-          "Release": "0.62.rc1.57.amzn1",
-          "Version": "9.8.2",
-          "Filename": "Packages/bind-9.8.2-0.62.rc1.57.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-utils",
-          "Release": "0.62.rc1.57.amzn1",
-          "Version": "9.8.2",
-          "Filename": "Packages/bind-utils-9.8.2-0.62.rc1.57.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "32",
-          "Name": "bind-libs",
-          "Release": "0.62.rc1.57.amzn1",
-          "Version": "9.8.2",
-          "Filename": "Packages/bind-libs-9.8.2-0.62.rc1.57.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2018-954",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2018-954: important priority package update for bind",
+	"Issued": {
+		"Date": "2018-02-20 21:02"
+	},
+	"Updated": {
+		"Date": "2018-02-21 20:42"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-3145:\n\tA use-after-free flaw leading to denial of service was found in the way BIND internally handled cleanup operations on upstream recursion fetch contexts. A remote attacker could potentially use this flaw to make named, acting as a DNSSEC validating resolver, exit unexpectedly with an assertion failure via a specially crafted DNS request.\n1534812: \nCVE-2017-3145 bind: Improper fetch cleanup sequencing in the resolver can cause named to crash\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-3145",
+				"ID": "CVE-2017-3145",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind",
+					"Release": "0.62.rc1.57.amzn1",
+					"Version": "9.8.2",
+					"Filename": "Packages/bind-9.8.2-0.62.rc1.57.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-debuginfo",
+					"Release": "0.62.rc1.57.amzn1",
+					"Version": "9.8.2",
+					"Filename": "Packages/bind-debuginfo-9.8.2-0.62.rc1.57.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-libs",
+					"Release": "0.62.rc1.57.amzn1",
+					"Version": "9.8.2",
+					"Filename": "Packages/bind-libs-9.8.2-0.62.rc1.57.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-utils",
+					"Release": "0.62.rc1.57.amzn1",
+					"Version": "9.8.2",
+					"Filename": "Packages/bind-utils-9.8.2-0.62.rc1.57.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-chroot",
+					"Release": "0.62.rc1.57.amzn1",
+					"Version": "9.8.2",
+					"Filename": "Packages/bind-chroot-9.8.2-0.62.rc1.57.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-sdb",
+					"Release": "0.62.rc1.57.amzn1",
+					"Version": "9.8.2",
+					"Filename": "Packages/bind-sdb-9.8.2-0.62.rc1.57.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-devel",
+					"Release": "0.62.rc1.57.amzn1",
+					"Version": "9.8.2",
+					"Filename": "Packages/bind-devel-9.8.2-0.62.rc1.57.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-sdb",
+					"Release": "0.62.rc1.57.amzn1",
+					"Version": "9.8.2",
+					"Filename": "Packages/bind-sdb-9.8.2-0.62.rc1.57.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-chroot",
+					"Release": "0.62.rc1.57.amzn1",
+					"Version": "9.8.2",
+					"Filename": "Packages/bind-chroot-9.8.2-0.62.rc1.57.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-devel",
+					"Release": "0.62.rc1.57.amzn1",
+					"Version": "9.8.2",
+					"Filename": "Packages/bind-devel-9.8.2-0.62.rc1.57.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-debuginfo",
+					"Release": "0.62.rc1.57.amzn1",
+					"Version": "9.8.2",
+					"Filename": "Packages/bind-debuginfo-9.8.2-0.62.rc1.57.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind",
+					"Release": "0.62.rc1.57.amzn1",
+					"Version": "9.8.2",
+					"Filename": "Packages/bind-9.8.2-0.62.rc1.57.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-utils",
+					"Release": "0.62.rc1.57.amzn1",
+					"Version": "9.8.2",
+					"Filename": "Packages/bind-utils-9.8.2-0.62.rc1.57.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-libs",
+					"Release": "0.62.rc1.57.amzn1",
+					"Version": "9.8.2",
+					"Filename": "Packages/bind-libs-9.8.2-0.62.rc1.57.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

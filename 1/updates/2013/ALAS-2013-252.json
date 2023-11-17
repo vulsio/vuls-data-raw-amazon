@@ -1,161 +1,161 @@
 {
-  "ID": "ALAS-2013-252",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-252: medium priority package update for kernel",
-  "Issued": {
-    "Date": "2013-12-02 20:30"
-  },
-  "Updated": {
-    "Date": "2014-09-16 22:04"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-4470:\n\tThe Linux kernel before 3.12, when UDP Fragmentation Offload (UFO) is enabled, does not properly initialize certain data structures, which allows local users to cause a denial of service (memory corruption and system crash) or possibly gain privileges via a crafted application that uses the UDP_CORK option in a setsockopt system call and sends both short and long packets, related to the ip_ufo_append_data function in net/ipv4/ip_output.c and the ip6_ufo_append_data function in net/ipv6/ip6_output.c.\n1023477: \nCVE-2013-4470 Kernel: net: memory corruption with UDP_CORK and UFO\n\nCVE-2013-4348:\n\tThe skb_flow_dissect function in net/core/flow_dissector.c in the Linux kernel through 3.12 allows remote attackers to cause a denial of service (infinite loop) via a small value in the IHL field of a packet with IPIP encapsulation.\n1007939: \nCVE-2013-4348 kernel: net: deadloop path in skb_flow_dissect()\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4348",
-        "ID": "CVE-2013-4348",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4470",
-        "ID": "CVE-2013-4470",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "63.98.amzn1",
-          "Version": "3.4.71",
-          "Filename": "Packages/kernel-tools-3.4.71-63.98.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "63.98.amzn1",
-          "Version": "3.4.71",
-          "Filename": "Packages/kernel-debuginfo-3.4.71-63.98.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "63.98.amzn1",
-          "Version": "3.4.71",
-          "Filename": "Packages/kernel-headers-3.4.71-63.98.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "63.98.amzn1",
-          "Version": "3.4.71",
-          "Filename": "Packages/kernel-devel-3.4.71-63.98.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-x86_64",
-          "Release": "63.98.amzn1",
-          "Version": "3.4.71",
-          "Filename": "Packages/kernel-debuginfo-common-x86_64-3.4.71-63.98.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "63.98.amzn1",
-          "Version": "3.4.71",
-          "Filename": "Packages/kernel-3.4.71-63.98.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "63.98.amzn1",
-          "Version": "3.4.71",
-          "Filename": "Packages/kernel-tools-debuginfo-3.4.71-63.98.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "63.98.amzn1",
-          "Version": "3.4.71",
-          "Filename": "Packages/kernel-debuginfo-3.4.71-63.98.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "63.98.amzn1",
-          "Version": "3.4.71",
-          "Filename": "Packages/kernel-devel-3.4.71-63.98.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-i686",
-          "Release": "63.98.amzn1",
-          "Version": "3.4.71",
-          "Filename": "Packages/kernel-debuginfo-common-i686-3.4.71-63.98.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "63.98.amzn1",
-          "Version": "3.4.71",
-          "Filename": "Packages/kernel-headers-3.4.71-63.98.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "63.98.amzn1",
-          "Version": "3.4.71",
-          "Filename": "Packages/kernel-tools-debuginfo-3.4.71-63.98.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "63.98.amzn1",
-          "Version": "3.4.71",
-          "Filename": "Packages/kernel-3.4.71-63.98.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "63.98.amzn1",
-          "Version": "3.4.71",
-          "Filename": "Packages/kernel-tools-3.4.71-63.98.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "kernel-doc",
-          "Release": "63.98.amzn1",
-          "Version": "3.4.71",
-          "Filename": "Packages/kernel-doc-3.4.71-63.98.amzn1.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2013-252",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2012.09 - ALAS-2013-252: medium priority package update for kernel",
+	"Issued": {
+		"Date": "2013-12-02 20:30"
+	},
+	"Updated": {
+		"Date": "2014-09-16 22:04"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-4470:\n\tThe Linux kernel before 3.12, when UDP Fragmentation Offload (UFO) is enabled, does not properly initialize certain data structures, which allows local users to cause a denial of service (memory corruption and system crash) or possibly gain privileges via a crafted application that uses the UDP_CORK option in a setsockopt system call and sends both short and long packets, related to the ip_ufo_append_data function in net/ipv4/ip_output.c and the ip6_ufo_append_data function in net/ipv6/ip6_output.c.\n1023477: \nCVE-2013-4470 Kernel: net: memory corruption with UDP_CORK and UFO\n\nCVE-2013-4348:\n\tThe skb_flow_dissect function in net/core/flow_dissector.c in the Linux kernel through 3.12 allows remote attackers to cause a denial of service (infinite loop) via a small value in the IHL field of a packet with IPIP encapsulation.\n1007939: \nCVE-2013-4348 kernel: net: deadloop path in skb_flow_dissect()\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4348",
+				"ID": "CVE-2013-4348",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4470",
+				"ID": "CVE-2013-4470",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "63.98.amzn1",
+					"Version": "3.4.71",
+					"Filename": "Packages/kernel-tools-3.4.71-63.98.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "63.98.amzn1",
+					"Version": "3.4.71",
+					"Filename": "Packages/kernel-debuginfo-3.4.71-63.98.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "63.98.amzn1",
+					"Version": "3.4.71",
+					"Filename": "Packages/kernel-headers-3.4.71-63.98.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "63.98.amzn1",
+					"Version": "3.4.71",
+					"Filename": "Packages/kernel-devel-3.4.71-63.98.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-x86_64",
+					"Release": "63.98.amzn1",
+					"Version": "3.4.71",
+					"Filename": "Packages/kernel-debuginfo-common-x86_64-3.4.71-63.98.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "63.98.amzn1",
+					"Version": "3.4.71",
+					"Filename": "Packages/kernel-3.4.71-63.98.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "63.98.amzn1",
+					"Version": "3.4.71",
+					"Filename": "Packages/kernel-tools-debuginfo-3.4.71-63.98.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "63.98.amzn1",
+					"Version": "3.4.71",
+					"Filename": "Packages/kernel-debuginfo-3.4.71-63.98.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "63.98.amzn1",
+					"Version": "3.4.71",
+					"Filename": "Packages/kernel-devel-3.4.71-63.98.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-i686",
+					"Release": "63.98.amzn1",
+					"Version": "3.4.71",
+					"Filename": "Packages/kernel-debuginfo-common-i686-3.4.71-63.98.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "63.98.amzn1",
+					"Version": "3.4.71",
+					"Filename": "Packages/kernel-headers-3.4.71-63.98.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "63.98.amzn1",
+					"Version": "3.4.71",
+					"Filename": "Packages/kernel-tools-debuginfo-3.4.71-63.98.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "63.98.amzn1",
+					"Version": "3.4.71",
+					"Filename": "Packages/kernel-3.4.71-63.98.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "63.98.amzn1",
+					"Version": "3.4.71",
+					"Filename": "Packages/kernel-tools-3.4.71-63.98.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "kernel-doc",
+					"Release": "63.98.amzn1",
+					"Version": "3.4.71",
+					"Filename": "Packages/kernel-doc-3.4.71-63.98.amzn1.noarch.rpm"
+				}
+			]
+		}
+	}
 }

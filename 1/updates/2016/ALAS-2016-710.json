@@ -1,73 +1,73 @@
 {
-  "ID": "ALAS-2016-710",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-710: medium priority package update for mod_dav_svn",
-  "Issued": {
-    "Date": "2016-06-02 18:09"
-  },
-  "Updated": {
-    "Date": "2016-06-03 19:46"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-2168:\n\tThe req_check_access function in the mod_authz_svn module in the httpd server in Apache Subversion before 1.8.16 and 1.9.x before 1.9.4 allows remote authenticated users to cause a denial of service (NULL pointer dereference and crash) via a crafted header in a (1) MOVE or (2) COPY request, involving an authorization check.\n1331683: \nCVE-2016-2168 subversion: DoS in mod_authz_svn during COPY/MOVE authorization check\n\nCVE-2016-2167:\n\tThe canonicalize_username function in svnserve/cyrus_auth.c in Apache Subversion before 1.8.16 and 1.9.x before 1.9.4, when Cyrus SASL authentication is used, allows remote attackers to authenticate and bypass intended access restrictions via a realm string that is a prefix of an expected repository realm string.\n1331686: \nCVE-2016-2167 subversion: svnserve/sasl may authenticate users using the wrong realm\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2167",
-        "ID": "CVE-2016-2167",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2168",
-        "ID": "CVE-2016-2168",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mod_dav_svn",
-          "Release": "2.52.amzn1",
-          "Version": "1.9.4",
-          "Filename": "Packages/mod_dav_svn-1.9.4-2.52.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mod_dav_svn-debuginfo",
-          "Release": "2.52.amzn1",
-          "Version": "1.9.4",
-          "Filename": "Packages/mod_dav_svn-debuginfo-1.9.4-2.52.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mod_dav_svn-debuginfo",
-          "Release": "2.52.amzn1",
-          "Version": "1.9.4",
-          "Filename": "Packages/mod_dav_svn-debuginfo-1.9.4-2.52.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mod_dav_svn",
-          "Release": "2.52.amzn1",
-          "Version": "1.9.4",
-          "Filename": "Packages/mod_dav_svn-1.9.4-2.52.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2016-710",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2016-710: medium priority package update for mod_dav_svn",
+	"Issued": {
+		"Date": "2016-06-02 18:09"
+	},
+	"Updated": {
+		"Date": "2016-06-03 19:46"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-2168:\n\tThe req_check_access function in the mod_authz_svn module in the httpd server in Apache Subversion before 1.8.16 and 1.9.x before 1.9.4 allows remote authenticated users to cause a denial of service (NULL pointer dereference and crash) via a crafted header in a (1) MOVE or (2) COPY request, involving an authorization check.\n1331683: \nCVE-2016-2168 subversion: DoS in mod_authz_svn during COPY/MOVE authorization check\n\nCVE-2016-2167:\n\tThe canonicalize_username function in svnserve/cyrus_auth.c in Apache Subversion before 1.8.16 and 1.9.x before 1.9.4, when Cyrus SASL authentication is used, allows remote attackers to authenticate and bypass intended access restrictions via a realm string that is a prefix of an expected repository realm string.\n1331686: \nCVE-2016-2167 subversion: svnserve/sasl may authenticate users using the wrong realm\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2167",
+				"ID": "CVE-2016-2167",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2168",
+				"ID": "CVE-2016-2168",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mod_dav_svn",
+					"Release": "2.52.amzn1",
+					"Version": "1.9.4",
+					"Filename": "Packages/mod_dav_svn-1.9.4-2.52.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mod_dav_svn-debuginfo",
+					"Release": "2.52.amzn1",
+					"Version": "1.9.4",
+					"Filename": "Packages/mod_dav_svn-debuginfo-1.9.4-2.52.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mod_dav_svn-debuginfo",
+					"Release": "2.52.amzn1",
+					"Version": "1.9.4",
+					"Filename": "Packages/mod_dav_svn-debuginfo-1.9.4-2.52.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mod_dav_svn",
+					"Release": "2.52.amzn1",
+					"Version": "1.9.4",
+					"Filename": "Packages/mod_dav_svn-1.9.4-2.52.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

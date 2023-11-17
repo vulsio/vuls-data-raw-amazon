@@ -1,683 +1,683 @@
 {
-  "ID": "ALAS2-2023-2245",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2245: medium priority package update for gcc",
-  "Issued": {
-    "Date": "2023-09-08 19:46"
-  },
-  "Updated": {
-    "Date": "2023-09-13 16:18"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-4039:\n\tAn issue was found in a defense in depth feature of the GCC compiler on aarch64 platforms. The stack protector feature (-fstack-protector) did not detect or defend against overflows of dynamically-sized local variables. This update to the GCC compiler remedies code generation for this defense in depth feature, ensuring it is working as intended.\nCustomers building their own binaries with GCC are advised to update their compiler, and to ensure they are enabling the defense in depth options available to them, such as the stack protector.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4039",
-        "ID": "CVE-2023-4039",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gcc",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libgcc",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgcc-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gcc-c++",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-c++-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libstdc++",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libstdc++-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libstdc++-docs",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libstdc++-docs-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gcc-objc",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-objc-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gcc-objc++",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-objc++-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libobjc",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libobjc-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gcc-gfortran",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-gfortran-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libgfortran",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgfortran-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libgomp",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgomp-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gcc-gdb-plugin",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-gdb-plugin-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libgccjit",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgccjit-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libgccjit-devel",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgccjit-devel-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libquadmath",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libquadmath-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libitm",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libitm-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libatomic",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libatomic-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libsanitizer",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libsanitizer-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libcilkrts",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libcilkrts-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libmpx",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libmpx-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "cpp",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/cpp-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gcc-gnat",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-gnat-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libgnat",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgnat-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gcc-go",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-go-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libgo",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgo-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gcc-plugin-devel",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-plugin-devel-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gcc-debuginfo",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-debuginfo-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gcc-base-debuginfo",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-base-debuginfo-7.3.1-17.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gcc",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libgcc",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgcc-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gcc-c++",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-c++-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libstdc++",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libstdc++-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libstdc++-docs",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libstdc++-docs-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gcc-objc",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-objc-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gcc-objc++",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-objc++-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libobjc",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libobjc-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gcc-gfortran",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-gfortran-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libgfortran",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgfortran-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libgomp",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgomp-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gcc-gdb-plugin",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-gdb-plugin-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libgccjit",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgccjit-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libgccjit-devel",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgccjit-devel-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libquadmath",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libquadmath-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libitm",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libitm-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libatomic",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libatomic-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libsanitizer",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libsanitizer-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libcilkrts",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libcilkrts-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libmpx",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libmpx-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "cpp",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/cpp-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gcc-gnat",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-gnat-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libgnat",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgnat-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gcc-go",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-go-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libgo",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgo-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gcc-plugin-devel",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-plugin-devel-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gcc-debuginfo",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-debuginfo-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gcc-base-debuginfo",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-base-debuginfo-7.3.1-17.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "gcc",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libgcc",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgcc-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "gcc-c++",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-c++-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libstdc++",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libstdc++-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libstdc++-docs",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libstdc++-docs-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "gcc-objc",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-objc-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "gcc-objc++",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-objc++-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libobjc",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libobjc-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "gcc-gfortran",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-gfortran-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libgfortran",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgfortran-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libgomp",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgomp-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "gcc-gdb-plugin",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-gdb-plugin-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libgccjit",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgccjit-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libgccjit-devel",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgccjit-devel-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libitm",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libitm-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libatomic",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libatomic-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libsanitizer",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libsanitizer-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "cpp",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/cpp-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "gcc-gnat",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-gnat-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libgnat",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgnat-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "gcc-go",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-go-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libgo",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/libgo-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "gcc-plugin-devel",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-plugin-devel-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "gcc-debuginfo",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-debuginfo-7.3.1-17.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "gcc-base-debuginfo",
-          "Release": "17.amzn2",
-          "Version": "7.3.1",
-          "Filename": "Packages/gcc-base-debuginfo-7.3.1-17.amzn2.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2023-2245",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2245: medium priority package update for gcc",
+	"Issued": {
+		"Date": "2023-09-08 19:46"
+	},
+	"Updated": {
+		"Date": "2023-09-13 16:18"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-4039:\n\tAn issue was found in a defense in depth feature of the GCC compiler on aarch64 platforms. The stack protector feature (-fstack-protector) did not detect or defend against overflows of dynamically-sized local variables. This update to the GCC compiler remedies code generation for this defense in depth feature, ensuring it is working as intended.\nCustomers building their own binaries with GCC are advised to update their compiler, and to ensure they are enabling the defense in depth options available to them, such as the stack protector.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4039",
+				"ID": "CVE-2023-4039",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gcc",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libgcc",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgcc-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gcc-c++",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-c++-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libstdc++",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libstdc++-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libstdc++-docs",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libstdc++-docs-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gcc-objc",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-objc-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gcc-objc++",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-objc++-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libobjc",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libobjc-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gcc-gfortran",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-gfortran-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libgfortran",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgfortran-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libgomp",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgomp-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gcc-gdb-plugin",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-gdb-plugin-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libgccjit",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgccjit-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libgccjit-devel",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgccjit-devel-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libquadmath",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libquadmath-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libitm",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libitm-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libatomic",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libatomic-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsanitizer",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libsanitizer-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libcilkrts",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libcilkrts-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libmpx",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libmpx-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "cpp",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/cpp-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gcc-gnat",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-gnat-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libgnat",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgnat-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gcc-go",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-go-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libgo",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgo-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gcc-plugin-devel",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-plugin-devel-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gcc-debuginfo",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-debuginfo-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gcc-base-debuginfo",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-base-debuginfo-7.3.1-17.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gcc",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libgcc",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgcc-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gcc-c++",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-c++-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libstdc++",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libstdc++-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libstdc++-docs",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libstdc++-docs-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gcc-objc",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-objc-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gcc-objc++",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-objc++-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libobjc",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libobjc-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gcc-gfortran",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-gfortran-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libgfortran",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgfortran-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libgomp",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgomp-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gcc-gdb-plugin",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-gdb-plugin-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libgccjit",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgccjit-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libgccjit-devel",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgccjit-devel-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libquadmath",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libquadmath-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libitm",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libitm-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libatomic",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libatomic-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libsanitizer",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libsanitizer-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libcilkrts",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libcilkrts-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libmpx",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libmpx-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "cpp",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/cpp-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gcc-gnat",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-gnat-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libgnat",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgnat-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gcc-go",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-go-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libgo",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgo-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gcc-plugin-devel",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-plugin-devel-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gcc-debuginfo",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-debuginfo-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gcc-base-debuginfo",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-base-debuginfo-7.3.1-17.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "gcc",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libgcc",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgcc-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "gcc-c++",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-c++-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libstdc++",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libstdc++-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libstdc++-docs",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libstdc++-docs-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "gcc-objc",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-objc-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "gcc-objc++",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-objc++-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libobjc",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libobjc-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "gcc-gfortran",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-gfortran-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libgfortran",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgfortran-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libgomp",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgomp-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "gcc-gdb-plugin",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-gdb-plugin-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libgccjit",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgccjit-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libgccjit-devel",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgccjit-devel-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libitm",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libitm-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libatomic",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libatomic-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libsanitizer",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libsanitizer-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "cpp",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/cpp-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "gcc-gnat",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-gnat-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libgnat",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgnat-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "gcc-go",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-go-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libgo",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/libgo-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "gcc-plugin-devel",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-plugin-devel-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "gcc-debuginfo",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-debuginfo-7.3.1-17.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "gcc-base-debuginfo",
+					"Release": "17.amzn2",
+					"Version": "7.3.1",
+					"Filename": "Packages/gcc-base-debuginfo-7.3.1-17.amzn2.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

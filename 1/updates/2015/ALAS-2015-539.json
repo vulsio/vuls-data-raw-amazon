@@ -1,79 +1,79 @@
 {
-  "ID": "ALAS-2015-539",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-539: medium priority package update for chrony",
-  "Issued": {
-    "Date": "2015-06-02 22:25"
-  },
-  "Updated": {
-    "Date": "2015-06-02 22:42"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-1853:\n\t1209572: \nCVE-2015-1853 chrony: authentication doesn't protect symmetric associations against DoS attacks\n\nCVE-2015-1822:\n\tchrony before 1.31.1 does not initialize the last \"next\" pointer when saving unacknowledged replies to command requests, which allows remote authenticated users to cause a denial of service (uninitialized pointer dereference and daemon crash) or possibly execute arbitrary code via a large number of command requests.\n1209632: \nCVE-2015-1822 chrony: uninitialized pointer in cmdmon reply slots\n\nCVE-2015-1821:\n\tHeap-based buffer overflow in chrony before 1.31.1 allows remote authenticated users to cause a denial of service (chronyd crash) or possibly execute arbitrary code by configuring the (1) NTP or (2) cmdmon access with a subnet size that is indivisible by four and an address with a nonzero bit in the subnet remainder.\n1209631: \nCVE-2015-1821 chrony: Heap out of bound write in address filter\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1821",
-        "ID": "CVE-2015-1821",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1822",
-        "ID": "CVE-2015-1822",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1853",
-        "ID": "CVE-2015-1853",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "chrony-debuginfo",
-          "Release": "1.13.amzn1",
-          "Version": "1.31.1",
-          "Filename": "Packages/chrony-debuginfo-1.31.1-1.13.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "chrony",
-          "Release": "1.13.amzn1",
-          "Version": "1.31.1",
-          "Filename": "Packages/chrony-1.31.1-1.13.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "chrony-debuginfo",
-          "Release": "1.13.amzn1",
-          "Version": "1.31.1",
-          "Filename": "Packages/chrony-debuginfo-1.31.1-1.13.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "chrony",
-          "Release": "1.13.amzn1",
-          "Version": "1.31.1",
-          "Filename": "Packages/chrony-1.31.1-1.13.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2015-539",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2015-539: medium priority package update for chrony",
+	"Issued": {
+		"Date": "2015-06-02 22:25"
+	},
+	"Updated": {
+		"Date": "2015-06-02 22:42"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-1853:\n\t1209572: \nCVE-2015-1853 chrony: authentication doesn't protect symmetric associations against DoS attacks\n\nCVE-2015-1822:\n\tchrony before 1.31.1 does not initialize the last \"next\" pointer when saving unacknowledged replies to command requests, which allows remote authenticated users to cause a denial of service (uninitialized pointer dereference and daemon crash) or possibly execute arbitrary code via a large number of command requests.\n1209632: \nCVE-2015-1822 chrony: uninitialized pointer in cmdmon reply slots\n\nCVE-2015-1821:\n\tHeap-based buffer overflow in chrony before 1.31.1 allows remote authenticated users to cause a denial of service (chronyd crash) or possibly execute arbitrary code by configuring the (1) NTP or (2) cmdmon access with a subnet size that is indivisible by four and an address with a nonzero bit in the subnet remainder.\n1209631: \nCVE-2015-1821 chrony: Heap out of bound write in address filter\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1821",
+				"ID": "CVE-2015-1821",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1822",
+				"ID": "CVE-2015-1822",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1853",
+				"ID": "CVE-2015-1853",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "chrony-debuginfo",
+					"Release": "1.13.amzn1",
+					"Version": "1.31.1",
+					"Filename": "Packages/chrony-debuginfo-1.31.1-1.13.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "chrony",
+					"Release": "1.13.amzn1",
+					"Version": "1.31.1",
+					"Filename": "Packages/chrony-1.31.1-1.13.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "chrony-debuginfo",
+					"Release": "1.13.amzn1",
+					"Version": "1.31.1",
+					"Filename": "Packages/chrony-debuginfo-1.31.1-1.13.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "chrony",
+					"Release": "1.13.amzn1",
+					"Version": "1.31.1",
+					"Filename": "Packages/chrony-1.31.1-1.13.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

@@ -1,113 +1,113 @@
 {
-  "ID": "ALAS2-2020-1501",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1501: medium priority package update for audiofile",
-  "Issued": {
-    "Date": "2020-10-22 17:18"
-  },
-  "Updated": {
-    "Date": "2020-10-22 22:43"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-17095:\n\tAn issue has been discovered in mpruett Audio File Library (aka audiofile) 0.3.6. A heap-based buffer overflow in Expand3To4Module::run has occurred when running sfconvert.\n1631088: CVE-2018-17095 audiofile: Heap-based buffer overflow in Expand3To4Module::run() when running sfconvert\n\nCVE-2018-13440:\n\tThe audiofile Audio File Library 0.3.6 has a NULL pointer dereference bug in ModuleState::setup in modules/ModuleState.cpp, which allows an attacker to cause a denial of service via a crafted caf file, as demonstrated by sfconvert.\n1600367: CVE-2018-13440 audiofile: NULL pointer dereference in ModuleState::setup() in modules/ModuleState.cpp allows for denial of service via crafted file\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-13440",
-        "ID": "CVE-2018-13440",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17095",
-        "ID": "CVE-2018-17095",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "audiofile",
-          "Release": "9.amzn2",
-          "Version": "0.3.6",
-          "Filename": "Packages/audiofile-0.3.6-9.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "audiofile-devel",
-          "Release": "9.amzn2",
-          "Version": "0.3.6",
-          "Filename": "Packages/audiofile-devel-0.3.6-9.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "audiofile-debuginfo",
-          "Release": "9.amzn2",
-          "Version": "0.3.6",
-          "Filename": "Packages/audiofile-debuginfo-0.3.6-9.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "audiofile",
-          "Release": "9.amzn2",
-          "Version": "0.3.6",
-          "Filename": "Packages/audiofile-0.3.6-9.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "audiofile-devel",
-          "Release": "9.amzn2",
-          "Version": "0.3.6",
-          "Filename": "Packages/audiofile-devel-0.3.6-9.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "audiofile-debuginfo",
-          "Release": "9.amzn2",
-          "Version": "0.3.6",
-          "Filename": "Packages/audiofile-debuginfo-0.3.6-9.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "audiofile",
-          "Release": "9.amzn2",
-          "Version": "0.3.6",
-          "Filename": "Packages/audiofile-0.3.6-9.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "audiofile-devel",
-          "Release": "9.amzn2",
-          "Version": "0.3.6",
-          "Filename": "Packages/audiofile-devel-0.3.6-9.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "audiofile-debuginfo",
-          "Release": "9.amzn2",
-          "Version": "0.3.6",
-          "Filename": "Packages/audiofile-debuginfo-0.3.6-9.amzn2.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2020-1501",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1501: medium priority package update for audiofile",
+	"Issued": {
+		"Date": "2020-10-22 17:18"
+	},
+	"Updated": {
+		"Date": "2020-10-22 22:43"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-17095:\n\tAn issue has been discovered in mpruett Audio File Library (aka audiofile) 0.3.6. A heap-based buffer overflow in Expand3To4Module::run has occurred when running sfconvert.\n1631088: CVE-2018-17095 audiofile: Heap-based buffer overflow in Expand3To4Module::run() when running sfconvert\n\nCVE-2018-13440:\n\tThe audiofile Audio File Library 0.3.6 has a NULL pointer dereference bug in ModuleState::setup in modules/ModuleState.cpp, which allows an attacker to cause a denial of service via a crafted caf file, as demonstrated by sfconvert.\n1600367: CVE-2018-13440 audiofile: NULL pointer dereference in ModuleState::setup() in modules/ModuleState.cpp allows for denial of service via crafted file\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-13440",
+				"ID": "CVE-2018-13440",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17095",
+				"ID": "CVE-2018-17095",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "audiofile",
+					"Release": "9.amzn2",
+					"Version": "0.3.6",
+					"Filename": "Packages/audiofile-0.3.6-9.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "audiofile-devel",
+					"Release": "9.amzn2",
+					"Version": "0.3.6",
+					"Filename": "Packages/audiofile-devel-0.3.6-9.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "audiofile-debuginfo",
+					"Release": "9.amzn2",
+					"Version": "0.3.6",
+					"Filename": "Packages/audiofile-debuginfo-0.3.6-9.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "audiofile",
+					"Release": "9.amzn2",
+					"Version": "0.3.6",
+					"Filename": "Packages/audiofile-0.3.6-9.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "audiofile-devel",
+					"Release": "9.amzn2",
+					"Version": "0.3.6",
+					"Filename": "Packages/audiofile-devel-0.3.6-9.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "audiofile-debuginfo",
+					"Release": "9.amzn2",
+					"Version": "0.3.6",
+					"Filename": "Packages/audiofile-debuginfo-0.3.6-9.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "audiofile",
+					"Release": "9.amzn2",
+					"Version": "0.3.6",
+					"Filename": "Packages/audiofile-0.3.6-9.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "audiofile-devel",
+					"Release": "9.amzn2",
+					"Version": "0.3.6",
+					"Filename": "Packages/audiofile-devel-0.3.6-9.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "audiofile-debuginfo",
+					"Release": "9.amzn2",
+					"Version": "0.3.6",
+					"Filename": "Packages/audiofile-debuginfo-0.3.6-9.amzn2.i686.rpm"
+				}
+			]
+		}
+	}
 }

@@ -1,217 +1,217 @@
 {
-  "ID": "ALAS-2015-485",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-485: medium priority package update for postgresql93",
-  "Issued": {
-    "Date": "2015-02-25 20:34"
-  },
-  "Updated": {
-    "Date": "2015-02-25 20:36"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-0244:\n\tA flaw was found in way PostgreSQL handled certain errors during that were generated during protocol synchronization. An authenticated database user could use this flaw to inject queries into an existing connection.\n1188694: \nCVE-2015-0244 postgresql: loss of frontend/backend protocol synchronization after an error\n\nCVE-2015-0243:\n\tA stack-buffer overflow flaw was found in PostgreSQL's pgcrypto module. An authenticated database user could use this flaw to cause PostgreSQL to crash or, potentially, execute arbitrary code with the permissions of the user running PostgreSQL.\n1188689: \nCVE-2015-0243 postgresql: buffer overflow flaws in contrib/pgcrypto\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0243",
-        "ID": "CVE-2015-0243",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0244",
-        "ID": "CVE-2015-0244",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-docs",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-docs-9.3.6-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-server",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-server-9.3.6-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-pltcl",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-pltcl-9.3.6-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-9.3.6-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-contrib",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-contrib-9.3.6-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-plperl",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-plperl-9.3.6-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-plpython",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-plpython-9.3.6-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-test",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-test-9.3.6-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-libs",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-libs-9.3.6-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-debuginfo",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-debuginfo-9.3.6-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "postgresql93-devel",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-devel-9.3.6-1.56.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-libs",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-libs-9.3.6-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-server",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-server-9.3.6-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-plperl",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-plperl-9.3.6-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-plpython",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-plpython-9.3.6-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-test",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-test-9.3.6-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-devel",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-devel-9.3.6-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-pltcl",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-pltcl-9.3.6-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-9.3.6-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-debuginfo",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-debuginfo-9.3.6-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-docs",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-docs-9.3.6-1.56.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "postgresql93-contrib",
-          "Release": "1.56.amzn1",
-          "Version": "9.3.6",
-          "Filename": "Packages/postgresql93-contrib-9.3.6-1.56.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2015-485",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2015-485: medium priority package update for postgresql93",
+	"Issued": {
+		"Date": "2015-02-25 20:34"
+	},
+	"Updated": {
+		"Date": "2015-02-25 20:36"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-0244:\n\tA flaw was found in way PostgreSQL handled certain errors during that were generated during protocol synchronization. An authenticated database user could use this flaw to inject queries into an existing connection.\n1188694: \nCVE-2015-0244 postgresql: loss of frontend/backend protocol synchronization after an error\n\nCVE-2015-0243:\n\tA stack-buffer overflow flaw was found in PostgreSQL's pgcrypto module. An authenticated database user could use this flaw to cause PostgreSQL to crash or, potentially, execute arbitrary code with the permissions of the user running PostgreSQL.\n1188689: \nCVE-2015-0243 postgresql: buffer overflow flaws in contrib/pgcrypto\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0243",
+				"ID": "CVE-2015-0243",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-0244",
+				"ID": "CVE-2015-0244",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-docs",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-docs-9.3.6-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-server",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-server-9.3.6-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-pltcl",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-pltcl-9.3.6-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-9.3.6-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-contrib",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-contrib-9.3.6-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-plperl",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-plperl-9.3.6-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-plpython",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-plpython-9.3.6-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-test",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-test-9.3.6-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-libs",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-libs-9.3.6-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-debuginfo",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-debuginfo-9.3.6-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql93-devel",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-devel-9.3.6-1.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-libs",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-libs-9.3.6-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-server",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-server-9.3.6-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-plperl",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-plperl-9.3.6-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-plpython",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-plpython-9.3.6-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-test",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-test-9.3.6-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-devel",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-devel-9.3.6-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-pltcl",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-pltcl-9.3.6-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-9.3.6-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-debuginfo",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-debuginfo-9.3.6-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-docs",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-docs-9.3.6-1.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql93-contrib",
+					"Release": "1.56.amzn1",
+					"Version": "9.3.6",
+					"Filename": "Packages/postgresql93-contrib-9.3.6-1.56.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

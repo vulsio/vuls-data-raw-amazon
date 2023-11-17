@@ -1,89 +1,89 @@
 {
-  "ID": "ALAS-2013-245",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2012.09 - ALAS-2013-245: medium priority package update for gc",
-  "Issued": {
-    "Date": "2013-11-04 14:53"
-  },
-  "Updated": {
-    "Date": "2014-09-16 21:53"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2012-2673:\n\tIt was discovered that gc's implementation of the malloc() and calloc() routines did not properly perform parameter sanitization when allocating memory. If an application using gc did not implement application-level validity checks for the malloc() and calloc() routines, a remote attacker could provide specially crafted application-specific input, which, when processed by the application, could lead to an application crash or, potentially, arbitrary code execution with the privileges of the user running the application.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2673",
-        "ID": "CVE-2012-2673",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2013:1500.html",
-        "ID": "RHSA-2013:1500",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gc",
-          "Release": "12.6.amzn1",
-          "Version": "7.1",
-          "Filename": "Packages/gc-7.1-12.6.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gc-debuginfo",
-          "Release": "12.6.amzn1",
-          "Version": "7.1",
-          "Filename": "Packages/gc-debuginfo-7.1-12.6.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "gc-devel",
-          "Release": "12.6.amzn1",
-          "Version": "7.1",
-          "Filename": "Packages/gc-devel-7.1-12.6.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gc-devel",
-          "Release": "12.6.amzn1",
-          "Version": "7.1",
-          "Filename": "Packages/gc-devel-7.1-12.6.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gc",
-          "Release": "12.6.amzn1",
-          "Version": "7.1",
-          "Filename": "Packages/gc-7.1-12.6.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "gc-debuginfo",
-          "Release": "12.6.amzn1",
-          "Version": "7.1",
-          "Filename": "Packages/gc-debuginfo-7.1-12.6.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2013-245",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2012.09 - ALAS-2013-245: medium priority package update for gc",
+	"Issued": {
+		"Date": "2013-11-04 14:53"
+	},
+	"Updated": {
+		"Date": "2014-09-16 21:53"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2012-2673:\n\tIt was discovered that gc's implementation of the malloc() and calloc() routines did not properly perform parameter sanitization when allocating memory. If an application using gc did not implement application-level validity checks for the malloc() and calloc() routines, a remote attacker could provide specially crafted application-specific input, which, when processed by the application, could lead to an application crash or, potentially, arbitrary code execution with the privileges of the user running the application.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-2673",
+				"ID": "CVE-2012-2673",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2013:1500.html",
+				"ID": "RHSA-2013:1500",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gc",
+					"Release": "12.6.amzn1",
+					"Version": "7.1",
+					"Filename": "Packages/gc-7.1-12.6.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gc-debuginfo",
+					"Release": "12.6.amzn1",
+					"Version": "7.1",
+					"Filename": "Packages/gc-debuginfo-7.1-12.6.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gc-devel",
+					"Release": "12.6.amzn1",
+					"Version": "7.1",
+					"Filename": "Packages/gc-devel-7.1-12.6.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gc-devel",
+					"Release": "12.6.amzn1",
+					"Version": "7.1",
+					"Filename": "Packages/gc-devel-7.1-12.6.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gc",
+					"Release": "12.6.amzn1",
+					"Version": "7.1",
+					"Filename": "Packages/gc-7.1-12.6.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gc-debuginfo",
+					"Release": "12.6.amzn1",
+					"Version": "7.1",
+					"Filename": "Packages/gc-debuginfo-7.1-12.6.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

@@ -1,205 +1,205 @@
 {
-  "ID": "ALAS-2022-1639",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2022-1639: low priority package update for vim",
-  "Issued": {
-    "Date": "2022-10-17 20:22"
-  },
-  "Updated": {
-    "Date": "2022-10-20 20:35"
-  },
-  "Severity": "low",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2022-3037:\n\tUse After Free in GitHub repository vim/vim prior to 9.0.0322.\n\nCVE-2022-2819:\n\tA flaw was found in vim. The vulnerability occurs due to illegal memory access and leads to a heap buffer overflow vulnerability. This flaw allows an attacker to input a specially crafted file, leading to a crash or code execution.\n\nCVE-2022-2817:\n\tA use-after-free vulnerability was found in Vim in the string_quote function in the strings.c file. This issue occurs because an already freed memory is used when a specially crafted input is processed. This flaw allows an attacker who can trick a user into opening a specially crafted file into triggering the use-after-free, causing the application to crash, possibly executing code and corrupting memory.\n\nCVE-2022-2816:\n\tAn out-of-bounds read vulnerability was found in Vim in the check_vim9_unlet function in the vim9cmds.c file. This issue occurs because of invalid memory access when compiling the unlet command when a specially crafted input is processed. This flaw allows an attacker who can trick a user into opening a specially crafted file into triggering the out-of-bounds read, causing the application to crash, possibly executing code and corrupting memory.\n\nCVE-2022-2345:\n\tA use-after-free vulnerability was found in Vim in the skipwhite function in the charset.c file. This issue occurs because an already freed memory is used when a specially crafted input is processed. This flaw allows an attacker who can trick a user into opening a specially crafted file into triggering the use-after-free, and cause the application to crash, possibly executing code and corrupting memory.\n\nCVE-2022-2344:\n\tA heap-based buffer overflow was found in Vim in the ins_compl_add function in the insexpand.c file. This issue occurs due to a read past the end of a buffer when a specially crafted input is processed. This flaw allows an attacker who can trick a user into opening a specially crafted file into triggering the heap-based buffer overflow, causing the application to crash, possibly executing code and corrupting memory.\n\nCVE-2022-2343:\n\tA heap-based buffer overflow was found in Vim in the ins_compl_add function in the insexpand.c file. This issue occurs due to a read past the end of a buffer when a specially crafted input is processed. This flaw allows an attacker who can trick a user into opening a specially crafted file into triggering the heap-based buffer overflow, causing the application to crash, possibly executing code and corrupting memory.\n\nCVE-2022-2304:\n\tA stack-based buffer overflow vulnerability was found in Vim's spell_dump_compl() function of the src/spell.c file. This issue occurs because the spell dump goes beyond the end of an array when crafted input is processed. This flaw allows an attacker to trick a user into opening a specially crafted file, triggering an out-of-bounds write that causes an application to crash, possibly executing code and corrupting memory.\n\nCVE-2022-2289:\n\tUse After Free in GitHub repository vim/vim prior to 9.0.\n\nCVE-2022-2288:\n\tOut-of-bounds Write in GitHub repository vim/vim prior to 9.0.\n\nCVE-2022-2287:\n\tOut-of-bounds Read in GitHub repository vim/vim prior to 9.0.\n\nCVE-2022-2286:\n\tOut-of-bounds Read in GitHub repository vim/vim prior to 9.0.\n\nCVE-2022-2285:\n\tInteger Overflow or Wraparound in GitHub repository vim/vim prior to 9.0.\n\nCVE-2022-2284:\n\tHeap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.\n\nCVE-2022-2264:\n\tA heap buffer overflow vulnerability was found in Vim's inc() function of misc2.c. This issue occurs because Vim reads beyond the end of the line with a put command. This flaw allows an attacker to trick a user into opening a specially crafted file, triggering an out-of-bounds read that causes a crash in the CLI tool.\n\nCVE-2022-2257:\n\tA flaw was found in vim, which is vulnerable to an out-of-bounds read in the msg_outtrans_special function. This flaw allows a specially crafted file to crash software or execute code when opened in vim.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2257",
-        "ID": "CVE-2022-2257",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2264",
-        "ID": "CVE-2022-2264",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2284",
-        "ID": "CVE-2022-2284",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2285",
-        "ID": "CVE-2022-2285",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2286",
-        "ID": "CVE-2022-2286",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2287",
-        "ID": "CVE-2022-2287",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2288",
-        "ID": "CVE-2022-2288",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2289",
-        "ID": "CVE-2022-2289",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2304",
-        "ID": "CVE-2022-2304",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2343",
-        "ID": "CVE-2022-2343",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2344",
-        "ID": "CVE-2022-2344",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2345",
-        "ID": "CVE-2022-2345",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2816",
-        "ID": "CVE-2022-2816",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2817",
-        "ID": "CVE-2022-2817",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2819",
-        "ID": "CVE-2022-2819",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3037",
-        "ID": "CVE-2022-3037",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "vim-enhanced",
-          "Release": "1.1.amzn1",
-          "Version": "9.0.475",
-          "Filename": "Packages/vim-enhanced-9.0.475-1.1.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "vim-common",
-          "Release": "1.1.amzn1",
-          "Version": "9.0.475",
-          "Filename": "Packages/vim-common-9.0.475-1.1.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "2",
-          "Name": "vim-data",
-          "Release": "1.1.amzn1",
-          "Version": "9.0.475",
-          "Filename": "Packages/vim-data-9.0.475-1.1.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "vim-debuginfo",
-          "Release": "1.1.amzn1",
-          "Version": "9.0.475",
-          "Filename": "Packages/vim-debuginfo-9.0.475-1.1.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "2",
-          "Name": "vim-minimal",
-          "Release": "1.1.amzn1",
-          "Version": "9.0.475",
-          "Filename": "Packages/vim-minimal-9.0.475-1.1.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "2",
-          "Name": "vim-filesystem",
-          "Release": "1.1.amzn1",
-          "Version": "9.0.475",
-          "Filename": "Packages/vim-filesystem-9.0.475-1.1.amzn1.noarch.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "2",
-          "Name": "vim-debuginfo",
-          "Release": "1.1.amzn1",
-          "Version": "9.0.475",
-          "Filename": "Packages/vim-debuginfo-9.0.475-1.1.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "2",
-          "Name": "vim-common",
-          "Release": "1.1.amzn1",
-          "Version": "9.0.475",
-          "Filename": "Packages/vim-common-9.0.475-1.1.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "2",
-          "Name": "vim-minimal",
-          "Release": "1.1.amzn1",
-          "Version": "9.0.475",
-          "Filename": "Packages/vim-minimal-9.0.475-1.1.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "2",
-          "Name": "vim-enhanced",
-          "Release": "1.1.amzn1",
-          "Version": "9.0.475",
-          "Filename": "Packages/vim-enhanced-9.0.475-1.1.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2022-1639",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2022-1639: low priority package update for vim",
+	"Issued": {
+		"Date": "2022-10-17 20:22"
+	},
+	"Updated": {
+		"Date": "2022-10-20 20:35"
+	},
+	"Severity": "low",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2022-3037:\n\tUse After Free in GitHub repository vim/vim prior to 9.0.0322.\n\nCVE-2022-2819:\n\tA flaw was found in vim. The vulnerability occurs due to illegal memory access and leads to a heap buffer overflow vulnerability. This flaw allows an attacker to input a specially crafted file, leading to a crash or code execution.\n\nCVE-2022-2817:\n\tA use-after-free vulnerability was found in Vim in the string_quote function in the strings.c file. This issue occurs because an already freed memory is used when a specially crafted input is processed. This flaw allows an attacker who can trick a user into opening a specially crafted file into triggering the use-after-free, causing the application to crash, possibly executing code and corrupting memory.\n\nCVE-2022-2816:\n\tAn out-of-bounds read vulnerability was found in Vim in the check_vim9_unlet function in the vim9cmds.c file. This issue occurs because of invalid memory access when compiling the unlet command when a specially crafted input is processed. This flaw allows an attacker who can trick a user into opening a specially crafted file into triggering the out-of-bounds read, causing the application to crash, possibly executing code and corrupting memory.\n\nCVE-2022-2345:\n\tA use-after-free vulnerability was found in Vim in the skipwhite function in the charset.c file. This issue occurs because an already freed memory is used when a specially crafted input is processed. This flaw allows an attacker who can trick a user into opening a specially crafted file into triggering the use-after-free, and cause the application to crash, possibly executing code and corrupting memory.\n\nCVE-2022-2344:\n\tA heap-based buffer overflow was found in Vim in the ins_compl_add function in the insexpand.c file. This issue occurs due to a read past the end of a buffer when a specially crafted input is processed. This flaw allows an attacker who can trick a user into opening a specially crafted file into triggering the heap-based buffer overflow, causing the application to crash, possibly executing code and corrupting memory.\n\nCVE-2022-2343:\n\tA heap-based buffer overflow was found in Vim in the ins_compl_add function in the insexpand.c file. This issue occurs due to a read past the end of a buffer when a specially crafted input is processed. This flaw allows an attacker who can trick a user into opening a specially crafted file into triggering the heap-based buffer overflow, causing the application to crash, possibly executing code and corrupting memory.\n\nCVE-2022-2304:\n\tA stack-based buffer overflow vulnerability was found in Vim's spell_dump_compl() function of the src/spell.c file. This issue occurs because the spell dump goes beyond the end of an array when crafted input is processed. This flaw allows an attacker to trick a user into opening a specially crafted file, triggering an out-of-bounds write that causes an application to crash, possibly executing code and corrupting memory.\n\nCVE-2022-2289:\n\tUse After Free in GitHub repository vim/vim prior to 9.0.\n\nCVE-2022-2288:\n\tOut-of-bounds Write in GitHub repository vim/vim prior to 9.0.\n\nCVE-2022-2287:\n\tOut-of-bounds Read in GitHub repository vim/vim prior to 9.0.\n\nCVE-2022-2286:\n\tOut-of-bounds Read in GitHub repository vim/vim prior to 9.0.\n\nCVE-2022-2285:\n\tInteger Overflow or Wraparound in GitHub repository vim/vim prior to 9.0.\n\nCVE-2022-2284:\n\tHeap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.\n\nCVE-2022-2264:\n\tA heap buffer overflow vulnerability was found in Vim's inc() function of misc2.c. This issue occurs because Vim reads beyond the end of the line with a put command. This flaw allows an attacker to trick a user into opening a specially crafted file, triggering an out-of-bounds read that causes a crash in the CLI tool.\n\nCVE-2022-2257:\n\tA flaw was found in vim, which is vulnerable to an out-of-bounds read in the msg_outtrans_special function. This flaw allows a specially crafted file to crash software or execute code when opened in vim.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2257",
+				"ID": "CVE-2022-2257",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2264",
+				"ID": "CVE-2022-2264",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2284",
+				"ID": "CVE-2022-2284",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2285",
+				"ID": "CVE-2022-2285",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2286",
+				"ID": "CVE-2022-2286",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2287",
+				"ID": "CVE-2022-2287",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2288",
+				"ID": "CVE-2022-2288",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2289",
+				"ID": "CVE-2022-2289",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2304",
+				"ID": "CVE-2022-2304",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2343",
+				"ID": "CVE-2022-2343",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2344",
+				"ID": "CVE-2022-2344",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2345",
+				"ID": "CVE-2022-2345",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2816",
+				"ID": "CVE-2022-2816",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2817",
+				"ID": "CVE-2022-2817",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2819",
+				"ID": "CVE-2022-2819",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3037",
+				"ID": "CVE-2022-3037",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "vim-enhanced",
+					"Release": "1.1.amzn1",
+					"Version": "9.0.475",
+					"Filename": "Packages/vim-enhanced-9.0.475-1.1.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "vim-common",
+					"Release": "1.1.amzn1",
+					"Version": "9.0.475",
+					"Filename": "Packages/vim-common-9.0.475-1.1.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "2",
+					"Name": "vim-data",
+					"Release": "1.1.amzn1",
+					"Version": "9.0.475",
+					"Filename": "Packages/vim-data-9.0.475-1.1.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "vim-debuginfo",
+					"Release": "1.1.amzn1",
+					"Version": "9.0.475",
+					"Filename": "Packages/vim-debuginfo-9.0.475-1.1.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "vim-minimal",
+					"Release": "1.1.amzn1",
+					"Version": "9.0.475",
+					"Filename": "Packages/vim-minimal-9.0.475-1.1.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "2",
+					"Name": "vim-filesystem",
+					"Release": "1.1.amzn1",
+					"Version": "9.0.475",
+					"Filename": "Packages/vim-filesystem-9.0.475-1.1.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "2",
+					"Name": "vim-debuginfo",
+					"Release": "1.1.amzn1",
+					"Version": "9.0.475",
+					"Filename": "Packages/vim-debuginfo-9.0.475-1.1.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "2",
+					"Name": "vim-common",
+					"Release": "1.1.amzn1",
+					"Version": "9.0.475",
+					"Filename": "Packages/vim-common-9.0.475-1.1.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "2",
+					"Name": "vim-minimal",
+					"Release": "1.1.amzn1",
+					"Version": "9.0.475",
+					"Filename": "Packages/vim-minimal-9.0.475-1.1.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "2",
+					"Name": "vim-enhanced",
+					"Release": "1.1.amzn1",
+					"Version": "9.0.475",
+					"Filename": "Packages/vim-enhanced-9.0.475-1.1.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

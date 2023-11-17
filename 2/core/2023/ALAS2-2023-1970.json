@@ -1,359 +1,359 @@
 {
-  "ID": "ALAS2-2023-1970",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-1970: medium priority package update for freeradius",
-  "Issued": {
-    "Date": "2023-03-02 21:50"
-  },
-  "Updated": {
-    "Date": "2023-03-07 00:19"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-41861:\n\tfreeradius: A malicious RADIUS client or home server can send a malformed abinary attribute which can cause the server to crash.\n\nCVE-2022-41860:\n\tWhen an EAP-SIM supplicant sends an unknown SIM option, the server will try to look that option up in the internal dictionaries. This lookup will fail, but the SIM code will not check for that failure. Instead, it will dereference a NULL pointer, and cause the server to crash.\n\nCVE-2022-41859:\n\tThe EAP-PWD function compute_password_element() leaks information about the password which allows an attacker to substantially reduce the size of an offline dictionary attack.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41859",
-        "ID": "CVE-2022-41859",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41860",
-        "ID": "CVE-2022-41860",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41861",
-        "ID": "CVE-2022-41861",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "freeradius",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-3.0.26-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "freeradius-doc",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-doc-3.0.26-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "freeradius-utils",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-utils-3.0.26-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "freeradius-devel",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-devel-3.0.26-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "freeradius-ldap",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-ldap-3.0.26-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "freeradius-krb5",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-krb5-3.0.26-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "freeradius-perl",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-perl-3.0.26-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "freeradius-python",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-python-3.0.26-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "freeradius-mysql",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-mysql-3.0.26-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "freeradius-postgresql",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-postgresql-3.0.26-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "freeradius-sqlite",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-sqlite-3.0.26-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "freeradius-unixODBC",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-unixODBC-3.0.26-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "freeradius-debuginfo",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-debuginfo-3.0.26-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "freeradius",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-3.0.26-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "freeradius-doc",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-doc-3.0.26-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "freeradius-utils",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-utils-3.0.26-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "freeradius-devel",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-devel-3.0.26-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "freeradius-ldap",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-ldap-3.0.26-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "freeradius-krb5",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-krb5-3.0.26-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "freeradius-perl",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-perl-3.0.26-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "freeradius-python",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-python-3.0.26-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "freeradius-mysql",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-mysql-3.0.26-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "freeradius-postgresql",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-postgresql-3.0.26-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "freeradius-sqlite",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-sqlite-3.0.26-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "freeradius-unixODBC",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-unixODBC-3.0.26-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "freeradius-debuginfo",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-debuginfo-3.0.26-1.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "freeradius",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-3.0.26-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "freeradius-doc",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-doc-3.0.26-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "freeradius-utils",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-utils-3.0.26-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "freeradius-devel",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-devel-3.0.26-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "freeradius-ldap",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-ldap-3.0.26-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "freeradius-krb5",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-krb5-3.0.26-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "freeradius-perl",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-perl-3.0.26-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "freeradius-python",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-python-3.0.26-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "freeradius-mysql",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-mysql-3.0.26-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "freeradius-postgresql",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-postgresql-3.0.26-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "freeradius-sqlite",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-sqlite-3.0.26-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "freeradius-unixODBC",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-unixODBC-3.0.26-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "freeradius-debuginfo",
-          "Release": "1.amzn2.0.1",
-          "Version": "3.0.26",
-          "Filename": "Packages/freeradius-debuginfo-3.0.26-1.amzn2.0.1.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2023-1970",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2023-1970: medium priority package update for freeradius",
+	"Issued": {
+		"Date": "2023-03-02 21:50"
+	},
+	"Updated": {
+		"Date": "2023-03-07 00:19"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-41861:\n\tfreeradius: A malicious RADIUS client or home server can send a malformed abinary attribute which can cause the server to crash.\n\nCVE-2022-41860:\n\tWhen an EAP-SIM supplicant sends an unknown SIM option, the server will try to look that option up in the internal dictionaries. This lookup will fail, but the SIM code will not check for that failure. Instead, it will dereference a NULL pointer, and cause the server to crash.\n\nCVE-2022-41859:\n\tThe EAP-PWD function compute_password_element() leaks information about the password which allows an attacker to substantially reduce the size of an offline dictionary attack.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41859",
+				"ID": "CVE-2022-41859",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41860",
+				"ID": "CVE-2022-41860",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41861",
+				"ID": "CVE-2022-41861",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "freeradius",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-3.0.26-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "freeradius-doc",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-doc-3.0.26-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "freeradius-utils",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-utils-3.0.26-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "freeradius-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-devel-3.0.26-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "freeradius-ldap",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-ldap-3.0.26-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "freeradius-krb5",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-krb5-3.0.26-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "freeradius-perl",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-perl-3.0.26-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "freeradius-python",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-python-3.0.26-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "freeradius-mysql",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-mysql-3.0.26-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "freeradius-postgresql",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-postgresql-3.0.26-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "freeradius-sqlite",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-sqlite-3.0.26-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "freeradius-unixODBC",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-unixODBC-3.0.26-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "freeradius-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-debuginfo-3.0.26-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "freeradius",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-3.0.26-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "freeradius-doc",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-doc-3.0.26-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "freeradius-utils",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-utils-3.0.26-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "freeradius-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-devel-3.0.26-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "freeradius-ldap",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-ldap-3.0.26-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "freeradius-krb5",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-krb5-3.0.26-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "freeradius-perl",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-perl-3.0.26-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "freeradius-python",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-python-3.0.26-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "freeradius-mysql",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-mysql-3.0.26-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "freeradius-postgresql",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-postgresql-3.0.26-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "freeradius-sqlite",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-sqlite-3.0.26-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "freeradius-unixODBC",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-unixODBC-3.0.26-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "freeradius-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-debuginfo-3.0.26-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "freeradius",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-3.0.26-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "freeradius-doc",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-doc-3.0.26-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "freeradius-utils",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-utils-3.0.26-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "freeradius-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-devel-3.0.26-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "freeradius-ldap",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-ldap-3.0.26-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "freeradius-krb5",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-krb5-3.0.26-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "freeradius-perl",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-perl-3.0.26-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "freeradius-python",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-python-3.0.26-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "freeradius-mysql",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-mysql-3.0.26-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "freeradius-postgresql",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-postgresql-3.0.26-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "freeradius-sqlite",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-sqlite-3.0.26-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "freeradius-unixODBC",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-unixODBC-3.0.26-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "freeradius-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.0.26",
+					"Filename": "Packages/freeradius-debuginfo-3.0.26-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

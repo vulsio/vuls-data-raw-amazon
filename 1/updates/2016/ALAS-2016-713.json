@@ -1,103 +1,103 @@
 {
-  "ID": "ALAS-2016-713",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-713: medium priority package update for squid",
-  "Issued": {
-    "Date": "2016-06-15 13:30"
-  },
-  "Updated": {
-    "Date": "2016-06-15 13:30"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-4556:\n\t* An incorrect reference counting flaw was found in the way Squid processes ESI responses. If Squid is configured as reverse-proxy, for TLS/HTTPS interception, an attacker controlling a server accessed by Squid, could crash the squid worker, causing a Denial of Service attack.\n\nCVE-2016-4554:\n\t* An input validation flaw was found in Squid's mime_get_header_field() function, which is used to search for headers within HTTP requests. An attacker could send an HTTP request from the client side with specially crafted header Host header that bypasses same-origin security protections, causing Squid operating as interception or reverse-proxy to contact the wrong origin server. It could also be used for cache poisoning for client not following RFC 7230.\n\nCVE-2016-4054:\n\t* Buffer overflow and input validation flaws were found in the way Squid processed ESI responses. If Squid was used as a reverse proxy, or for TLS/HTTPS interception, a remote attacker able to control ESI components on an HTTP server could use these flaws to crash Squid, disclose parts of the stack memory, or possibly execute arbitrary code as the user running Squid.\n\nCVE-2016-4053:\n\t* Buffer overflow and input validation flaws were found in the way Squid processed ESI responses. If Squid was used as a reverse proxy, or for TLS/HTTPS interception, a remote attacker able to control ESI components on an HTTP server could use these flaws to crash Squid, disclose parts of the stack memory, or possibly execute arbitrary code as the user running Squid.\n\nCVE-2016-4052:\n\t* Buffer overflow and input validation flaws were found in the way Squid processed ESI responses. If Squid was used as a reverse proxy, or for TLS/HTTPS interception, a remote attacker able to control ESI components on an HTTP server could use these flaws to crash Squid, disclose parts of the stack memory, or possibly execute arbitrary code as the user running Squid.\n\nCVE-2016-4051:\n\t* A buffer overflow flaw was found in the way the Squid cachemgr.cgi utility processed remotely relayed Squid input. When the CGI interface utility is used, a remote attacker could possibly use this flaw to execute arbitrary code.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4051",
-        "ID": "CVE-2016-4051",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4052",
-        "ID": "CVE-2016-4052",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4053",
-        "ID": "CVE-2016-4053",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4054",
-        "ID": "CVE-2016-4054",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4554",
-        "ID": "CVE-2016-4554",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4556",
-        "ID": "CVE-2016-4556",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2016:1138.html",
-        "ID": "RHSA-2016:1138",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "7",
-          "Name": "squid-debuginfo",
-          "Release": "16.21.amzn1",
-          "Version": "3.1.23",
-          "Filename": "Packages/squid-debuginfo-3.1.23-16.21.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "7",
-          "Name": "squid",
-          "Release": "16.21.amzn1",
-          "Version": "3.1.23",
-          "Filename": "Packages/squid-3.1.23-16.21.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "7",
-          "Name": "squid-debuginfo",
-          "Release": "16.21.amzn1",
-          "Version": "3.1.23",
-          "Filename": "Packages/squid-debuginfo-3.1.23-16.21.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "7",
-          "Name": "squid",
-          "Release": "16.21.amzn1",
-          "Version": "3.1.23",
-          "Filename": "Packages/squid-3.1.23-16.21.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2016-713",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2016-713: medium priority package update for squid",
+	"Issued": {
+		"Date": "2016-06-15 13:30"
+	},
+	"Updated": {
+		"Date": "2016-06-15 13:30"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-4556:\n\t* An incorrect reference counting flaw was found in the way Squid processes ESI responses. If Squid is configured as reverse-proxy, for TLS/HTTPS interception, an attacker controlling a server accessed by Squid, could crash the squid worker, causing a Denial of Service attack.\n\nCVE-2016-4554:\n\t* An input validation flaw was found in Squid's mime_get_header_field() function, which is used to search for headers within HTTP requests. An attacker could send an HTTP request from the client side with specially crafted header Host header that bypasses same-origin security protections, causing Squid operating as interception or reverse-proxy to contact the wrong origin server. It could also be used for cache poisoning for client not following RFC 7230.\n\nCVE-2016-4054:\n\t* Buffer overflow and input validation flaws were found in the way Squid processed ESI responses. If Squid was used as a reverse proxy, or for TLS/HTTPS interception, a remote attacker able to control ESI components on an HTTP server could use these flaws to crash Squid, disclose parts of the stack memory, or possibly execute arbitrary code as the user running Squid.\n\nCVE-2016-4053:\n\t* Buffer overflow and input validation flaws were found in the way Squid processed ESI responses. If Squid was used as a reverse proxy, or for TLS/HTTPS interception, a remote attacker able to control ESI components on an HTTP server could use these flaws to crash Squid, disclose parts of the stack memory, or possibly execute arbitrary code as the user running Squid.\n\nCVE-2016-4052:\n\t* Buffer overflow and input validation flaws were found in the way Squid processed ESI responses. If Squid was used as a reverse proxy, or for TLS/HTTPS interception, a remote attacker able to control ESI components on an HTTP server could use these flaws to crash Squid, disclose parts of the stack memory, or possibly execute arbitrary code as the user running Squid.\n\nCVE-2016-4051:\n\t* A buffer overflow flaw was found in the way the Squid cachemgr.cgi utility processed remotely relayed Squid input. When the CGI interface utility is used, a remote attacker could possibly use this flaw to execute arbitrary code.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4051",
+				"ID": "CVE-2016-4051",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4052",
+				"ID": "CVE-2016-4052",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4053",
+				"ID": "CVE-2016-4053",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4054",
+				"ID": "CVE-2016-4054",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4554",
+				"ID": "CVE-2016-4554",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-4556",
+				"ID": "CVE-2016-4556",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2016:1138.html",
+				"ID": "RHSA-2016:1138",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "7",
+					"Name": "squid-debuginfo",
+					"Release": "16.21.amzn1",
+					"Version": "3.1.23",
+					"Filename": "Packages/squid-debuginfo-3.1.23-16.21.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "7",
+					"Name": "squid",
+					"Release": "16.21.amzn1",
+					"Version": "3.1.23",
+					"Filename": "Packages/squid-3.1.23-16.21.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "7",
+					"Name": "squid-debuginfo",
+					"Release": "16.21.amzn1",
+					"Version": "3.1.23",
+					"Filename": "Packages/squid-debuginfo-3.1.23-16.21.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "7",
+					"Name": "squid",
+					"Release": "16.21.amzn1",
+					"Version": "3.1.23",
+					"Filename": "Packages/squid-3.1.23-16.21.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

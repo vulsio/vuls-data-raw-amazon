@@ -1,221 +1,221 @@
 {
-  "ID": "ALAS-2016-669",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2016-669: medium priority package update for kernel",
-  "Issued": {
-    "Date": "2016-03-16 16:30"
-  },
-  "Updated": {
-    "Date": "2016-12-23 21:35"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-3157:\n\tAn issue was discovered in the kernel, running as a Xen 64-bit PV guest, where user mode processes to be granted permission to I/O ports, resulting in local privilege escalation, crashes, or information leaks.\n\nCVE-2016-2847:\n\t1313428: \nCVE-2016-2847 kernel: pipe: limit the per-user amount of pages allocated in pipes\n\nCVE-2016-2550:\n\tA resource-exhaustion vulnerability was found in the kernel, where an unprivileged process could allocate and accumulate far more file descriptors than the process&#039; limit. A local, unauthenticated user could exploit this flaw by sending file descriptors over a Unix socket and then closing them to keep the process&#039; fd count low, thereby creating kernel-memory or file-descriptors exhaustion (denial of service).\n1311517: \nCVE-2016-2550 kernel: incorrectly accounted in-flight fds\n\nCVE-2016-2383:\n\t1308452: \nCVE-2016-2383 kernel: incorrect branch fixups for eBPG allow arbitrary read\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2383",
-        "ID": "CVE-2016-2383",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2550",
-        "ID": "CVE-2016-2550",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2847",
-        "ID": "CVE-2016-2847",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3157",
-        "ID": "CVE-2016-3157",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/kernel-tools-debuginfo-4.1.19-24.31.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/kernel-tools-devel-4.1.19-24.31.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/kernel-devel-4.1.19-24.31.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/kernel-headers-4.1.19-24.31.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-x86_64",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/kernel-debuginfo-common-x86_64-4.1.19-24.31.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/kernel-tools-4.1.19-24.31.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/kernel-4.1.19-24.31.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/perf-4.1.19-24.31.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/perf-debuginfo-4.1.19-24.31.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/kernel-debuginfo-4.1.19-24.31.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/perf-debuginfo-4.1.19-24.31.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/kernel-headers-4.1.19-24.31.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/kernel-devel-4.1.19-24.31.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-i686",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/kernel-debuginfo-common-i686-4.1.19-24.31.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/kernel-tools-devel-4.1.19-24.31.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/kernel-tools-debuginfo-4.1.19-24.31.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/kernel-tools-4.1.19-24.31.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/kernel-4.1.19-24.31.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/kernel-debuginfo-4.1.19-24.31.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/perf-4.1.19-24.31.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "kernel-doc",
-          "Release": "24.31.amzn1",
-          "Version": "4.1.19",
-          "Filename": "Packages/kernel-doc-4.1.19-24.31.amzn1.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2016-669",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2016-669: medium priority package update for kernel",
+	"Issued": {
+		"Date": "2016-03-16 16:30"
+	},
+	"Updated": {
+		"Date": "2016-12-23 21:35"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-3157:\n\tAn issue was discovered in the kernel, running as a Xen 64-bit PV guest, where user mode processes to be granted permission to I/O ports, resulting in local privilege escalation, crashes, or information leaks.\n\nCVE-2016-2847:\n\t1313428: \nCVE-2016-2847 kernel: pipe: limit the per-user amount of pages allocated in pipes\n\nCVE-2016-2550:\n\tA resource-exhaustion vulnerability was found in the kernel, where an unprivileged process could allocate and accumulate far more file descriptors than the process&#039; limit. A local, unauthenticated user could exploit this flaw by sending file descriptors over a Unix socket and then closing them to keep the process&#039; fd count low, thereby creating kernel-memory or file-descriptors exhaustion (denial of service).\n1311517: \nCVE-2016-2550 kernel: incorrectly accounted in-flight fds\n\nCVE-2016-2383:\n\t1308452: \nCVE-2016-2383 kernel: incorrect branch fixups for eBPG allow arbitrary read\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2383",
+				"ID": "CVE-2016-2383",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2550",
+				"ID": "CVE-2016-2550",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-2847",
+				"ID": "CVE-2016-2847",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3157",
+				"ID": "CVE-2016-3157",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/kernel-tools-debuginfo-4.1.19-24.31.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/kernel-tools-devel-4.1.19-24.31.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/kernel-devel-4.1.19-24.31.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/kernel-headers-4.1.19-24.31.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-x86_64",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/kernel-debuginfo-common-x86_64-4.1.19-24.31.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/kernel-tools-4.1.19-24.31.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/kernel-4.1.19-24.31.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/perf-4.1.19-24.31.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/perf-debuginfo-4.1.19-24.31.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/kernel-debuginfo-4.1.19-24.31.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/perf-debuginfo-4.1.19-24.31.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/kernel-headers-4.1.19-24.31.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/kernel-devel-4.1.19-24.31.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-i686",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/kernel-debuginfo-common-i686-4.1.19-24.31.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/kernel-tools-devel-4.1.19-24.31.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/kernel-tools-debuginfo-4.1.19-24.31.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/kernel-tools-4.1.19-24.31.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/kernel-4.1.19-24.31.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/kernel-debuginfo-4.1.19-24.31.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/perf-4.1.19-24.31.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "kernel-doc",
+					"Release": "24.31.amzn1",
+					"Version": "4.1.19",
+					"Filename": "Packages/kernel-doc-4.1.19-24.31.amzn1.noarch.rpm"
+				}
+			]
+		}
+	}
 }

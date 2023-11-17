@@ -1,133 +1,133 @@
 {
-  "ID": "ALAS-2014-273",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2012.09 - ALAS-2014-273: important priority package update for openssl",
-  "Issued": {
-    "Date": "2014-01-14 15:56"
-  },
-  "Updated": {
-    "Date": "2014-09-16 22:16"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-6450:\n\tThe DTLS retransmission implementation in OpenSSL through 0.9.8y and 1.x through 1.0.1e does not properly maintain data structures for digest and encryption contexts, which might allow man-in-the-middle attackers to trigger the use of a different context by interfering with packet delivery, related to ssl/d1_both.c and ssl/t1_enc.c.\nIt was discovered that the Datagram Transport Layer Security (DTLS) protocol implementation in OpenSSL did not properly maintain encryption and digest contexts during renegotiation. A lost or discarded renegotiation handshake packet could cause a DTLS client or server using OpenSSL to crash.\n1047840: \nCVE-2013-6450 openssl: crash in DTLS renegotiation after packet loss\n\nCVE-2013-6449:\n\tThe ssl_get_algorithm2 function in ssl/s3_lib.c in OpenSSL before 1.0.2 obtains a certain version number from an incorrect data structure, which allows remote attackers to cause a denial of service (daemon crash) via crafted traffic from a TLS 1.2 client.\nA flaw was found in the way OpenSSL determined which hashing algorithm to use when TLS protocol version 1.2 was enabled. This could possibly cause OpenSSL to use an incorrect hashing algorithm, leading to a crash of an application using the library.\n1045363: \nCVE-2013-6449 openssl: crash when using TLS 1.2 caused by use of incorrect hash algorithm\n\nCVE-2013-4353:\n\tA NULL pointer dereference flaw was found in the way OpenSSL handled TLS/SSL protocol handshake packets. A specially crafted handshake packet could cause a TLS/SSL client using OpenSSL to crash.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4353",
-        "ID": "CVE-2013-4353",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6449",
-        "ID": "CVE-2013-6449",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6450",
-        "ID": "CVE-2013-6450",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2014:0015.html",
-        "ID": "RHSA-2014:0015",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "openssl-debuginfo",
-          "Release": "4.55.amzn1",
-          "Version": "1.0.1e",
-          "Filename": "Packages/openssl-debuginfo-1.0.1e-4.55.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "openssl",
-          "Release": "4.55.amzn1",
-          "Version": "1.0.1e",
-          "Filename": "Packages/openssl-1.0.1e-4.55.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "openssl-static",
-          "Release": "4.55.amzn1",
-          "Version": "1.0.1e",
-          "Filename": "Packages/openssl-static-1.0.1e-4.55.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "openssl-perl",
-          "Release": "4.55.amzn1",
-          "Version": "1.0.1e",
-          "Filename": "Packages/openssl-perl-1.0.1e-4.55.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "openssl-devel",
-          "Release": "4.55.amzn1",
-          "Version": "1.0.1e",
-          "Filename": "Packages/openssl-devel-1.0.1e-4.55.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "openssl-static",
-          "Release": "4.55.amzn1",
-          "Version": "1.0.1e",
-          "Filename": "Packages/openssl-static-1.0.1e-4.55.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "openssl-perl",
-          "Release": "4.55.amzn1",
-          "Version": "1.0.1e",
-          "Filename": "Packages/openssl-perl-1.0.1e-4.55.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "openssl",
-          "Release": "4.55.amzn1",
-          "Version": "1.0.1e",
-          "Filename": "Packages/openssl-1.0.1e-4.55.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "openssl-devel",
-          "Release": "4.55.amzn1",
-          "Version": "1.0.1e",
-          "Filename": "Packages/openssl-devel-1.0.1e-4.55.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "1",
-          "Name": "openssl-debuginfo",
-          "Release": "4.55.amzn1",
-          "Version": "1.0.1e",
-          "Filename": "Packages/openssl-debuginfo-1.0.1e-4.55.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2014-273",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2012.09 - ALAS-2014-273: important priority package update for openssl",
+	"Issued": {
+		"Date": "2014-01-14 15:56"
+	},
+	"Updated": {
+		"Date": "2014-09-16 22:16"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2013-6450:\n\tThe DTLS retransmission implementation in OpenSSL through 0.9.8y and 1.x through 1.0.1e does not properly maintain data structures for digest and encryption contexts, which might allow man-in-the-middle attackers to trigger the use of a different context by interfering with packet delivery, related to ssl/d1_both.c and ssl/t1_enc.c.\nIt was discovered that the Datagram Transport Layer Security (DTLS) protocol implementation in OpenSSL did not properly maintain encryption and digest contexts during renegotiation. A lost or discarded renegotiation handshake packet could cause a DTLS client or server using OpenSSL to crash.\n1047840: \nCVE-2013-6450 openssl: crash in DTLS renegotiation after packet loss\n\nCVE-2013-6449:\n\tThe ssl_get_algorithm2 function in ssl/s3_lib.c in OpenSSL before 1.0.2 obtains a certain version number from an incorrect data structure, which allows remote attackers to cause a denial of service (daemon crash) via crafted traffic from a TLS 1.2 client.\nA flaw was found in the way OpenSSL determined which hashing algorithm to use when TLS protocol version 1.2 was enabled. This could possibly cause OpenSSL to use an incorrect hashing algorithm, leading to a crash of an application using the library.\n1045363: \nCVE-2013-6449 openssl: crash when using TLS 1.2 caused by use of incorrect hash algorithm\n\nCVE-2013-4353:\n\tA NULL pointer dereference flaw was found in the way OpenSSL handled TLS/SSL protocol handshake packets. A specially crafted handshake packet could cause a TLS/SSL client using OpenSSL to crash.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-4353",
+				"ID": "CVE-2013-4353",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6449",
+				"ID": "CVE-2013-6449",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-6450",
+				"ID": "CVE-2013-6450",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2014:0015.html",
+				"ID": "RHSA-2014:0015",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "openssl-debuginfo",
+					"Release": "4.55.amzn1",
+					"Version": "1.0.1e",
+					"Filename": "Packages/openssl-debuginfo-1.0.1e-4.55.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "openssl",
+					"Release": "4.55.amzn1",
+					"Version": "1.0.1e",
+					"Filename": "Packages/openssl-1.0.1e-4.55.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "openssl-static",
+					"Release": "4.55.amzn1",
+					"Version": "1.0.1e",
+					"Filename": "Packages/openssl-static-1.0.1e-4.55.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "openssl-perl",
+					"Release": "4.55.amzn1",
+					"Version": "1.0.1e",
+					"Filename": "Packages/openssl-perl-1.0.1e-4.55.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "openssl-devel",
+					"Release": "4.55.amzn1",
+					"Version": "1.0.1e",
+					"Filename": "Packages/openssl-devel-1.0.1e-4.55.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "openssl-static",
+					"Release": "4.55.amzn1",
+					"Version": "1.0.1e",
+					"Filename": "Packages/openssl-static-1.0.1e-4.55.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "openssl-perl",
+					"Release": "4.55.amzn1",
+					"Version": "1.0.1e",
+					"Filename": "Packages/openssl-perl-1.0.1e-4.55.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "openssl",
+					"Release": "4.55.amzn1",
+					"Version": "1.0.1e",
+					"Filename": "Packages/openssl-1.0.1e-4.55.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "openssl-devel",
+					"Release": "4.55.amzn1",
+					"Version": "1.0.1e",
+					"Filename": "Packages/openssl-devel-1.0.1e-4.55.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "openssl-debuginfo",
+					"Release": "4.55.amzn1",
+					"Version": "1.0.1e",
+					"Filename": "Packages/openssl-debuginfo-1.0.1e-4.55.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

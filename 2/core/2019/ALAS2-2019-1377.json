@@ -1,203 +1,203 @@
 {
-  "ID": "ALAS2-2019-1377",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1377: medium priority package update for udisks2",
-  "Issued": {
-    "Date": "2019-12-13 19:43"
-  },
-  "Updated": {
-    "Date": "2019-12-18 01:23"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-17336:\n\tUDisks 2.8.0 has a format string vulnerability in udisks_log in udiskslogging.c, allowing attackers to obtain sensitive information (stack contents), cause a denial of service (memory corruption), or possibly have unspecified other impact via a malformed filesystem label, as demonstrated by %d or %n substrings.\nAn uncontrolled format string vulnerability has been discovered in udisks when it mounts a filesystem with a malformed label. A local attacker may use this flaw to leak memory, make the udisks service crash, or cause other unspecified effects.\n99999: \nCVE-2018-17336 udisks: Format string vulnerability in udisks_log in udiskslogging.c\n1632828: \nCVE-2018-17336 udisks: Format string vulnerability in udisks_log in udiskslogging.c\n    \n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17336",
-        "ID": "CVE-2018-17336",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "udisks2",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/udisks2-2.7.3-9.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libudisks2",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/libudisks2-2.7.3-9.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "udisks2-iscsi",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/udisks2-iscsi-2.7.3-9.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "udisks2-lvm2",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/udisks2-lvm2-2.7.3-9.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "udisks2-lsm",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/udisks2-lsm-2.7.3-9.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "libudisks2-devel",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/libudisks2-devel-2.7.3-9.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "udisks2-debuginfo",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/udisks2-debuginfo-2.7.3-9.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "udisks2",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/udisks2-2.7.3-9.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libudisks2",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/libudisks2-2.7.3-9.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "udisks2-iscsi",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/udisks2-iscsi-2.7.3-9.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "udisks2-lvm2",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/udisks2-lvm2-2.7.3-9.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "udisks2-lsm",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/udisks2-lsm-2.7.3-9.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libudisks2-devel",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/libudisks2-devel-2.7.3-9.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "udisks2-debuginfo",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/udisks2-debuginfo-2.7.3-9.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "udisks2",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/udisks2-2.7.3-9.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libudisks2",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/libudisks2-2.7.3-9.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "udisks2-iscsi",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/udisks2-iscsi-2.7.3-9.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "udisks2-lvm2",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/udisks2-lvm2-2.7.3-9.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "udisks2-lsm",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/udisks2-lsm-2.7.3-9.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libudisks2-devel",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/libudisks2-devel-2.7.3-9.amzn2.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "udisks2-debuginfo",
-          "Release": "9.amzn2.0.1",
-          "Version": "2.7.3",
-          "Filename": "Packages/udisks2-debuginfo-2.7.3-9.amzn2.0.1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2019-1377",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1377: medium priority package update for udisks2",
+	"Issued": {
+		"Date": "2019-12-13 19:43"
+	},
+	"Updated": {
+		"Date": "2019-12-18 01:23"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2018-17336:\n\tUDisks 2.8.0 has a format string vulnerability in udisks_log in udiskslogging.c, allowing attackers to obtain sensitive information (stack contents), cause a denial of service (memory corruption), or possibly have unspecified other impact via a malformed filesystem label, as demonstrated by %d or %n substrings.\nAn uncontrolled format string vulnerability has been discovered in udisks when it mounts a filesystem with a malformed label. A local attacker may use this flaw to leak memory, make the udisks service crash, or cause other unspecified effects.\n99999: \nCVE-2018-17336 udisks: Format string vulnerability in udisks_log in udiskslogging.c\n1632828: \nCVE-2018-17336 udisks: Format string vulnerability in udisks_log in udiskslogging.c\n    \n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17336",
+				"ID": "CVE-2018-17336",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "udisks2",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/udisks2-2.7.3-9.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libudisks2",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/libudisks2-2.7.3-9.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "udisks2-iscsi",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/udisks2-iscsi-2.7.3-9.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "udisks2-lvm2",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/udisks2-lvm2-2.7.3-9.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "udisks2-lsm",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/udisks2-lsm-2.7.3-9.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libudisks2-devel",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/libudisks2-devel-2.7.3-9.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "udisks2-debuginfo",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/udisks2-debuginfo-2.7.3-9.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "udisks2",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/udisks2-2.7.3-9.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libudisks2",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/libudisks2-2.7.3-9.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "udisks2-iscsi",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/udisks2-iscsi-2.7.3-9.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "udisks2-lvm2",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/udisks2-lvm2-2.7.3-9.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "udisks2-lsm",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/udisks2-lsm-2.7.3-9.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libudisks2-devel",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/libudisks2-devel-2.7.3-9.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "udisks2-debuginfo",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/udisks2-debuginfo-2.7.3-9.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "udisks2",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/udisks2-2.7.3-9.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libudisks2",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/libudisks2-2.7.3-9.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "udisks2-iscsi",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/udisks2-iscsi-2.7.3-9.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "udisks2-lvm2",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/udisks2-lvm2-2.7.3-9.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "udisks2-lsm",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/udisks2-lsm-2.7.3-9.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libudisks2-devel",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/libudisks2-devel-2.7.3-9.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "udisks2-debuginfo",
+					"Release": "9.amzn2.0.1",
+					"Version": "2.7.3",
+					"Filename": "Packages/udisks2-debuginfo-2.7.3-9.amzn2.0.1.i686.rpm"
+				}
+			]
+		}
+	}
 }

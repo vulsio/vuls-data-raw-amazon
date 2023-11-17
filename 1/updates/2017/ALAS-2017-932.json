@@ -1,137 +1,137 @@
 {
-  "ID": "ALAS-2017-932",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-932: critical priority package update for exim",
-  "Issued": {
-    "Date": "2017-12-20 18:51"
-  },
-  "Updated": {
-    "Date": "2017-12-21 22:55"
-  },
-  "Severity": "critical",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-16944:\n\tThe receive_msg function in receive.c in the SMTP daemon in Exim 4.88 and 4.89 allows remote attackers to cause a denial of service (infinite loop and stack exhaustion) via vectors involving BDAT commands and an improper check for a &#039;.&#039; character signifying the end of the content, related to the bdat_getc function.\n1517684: \nCVE-2017-16944 exim: infinite loop and stack exhaustion in receive_msg function via vectors involving BDAT commands\n\nCVE-2017-16943:\n\tThe receive_msg function in receive.c in the SMTP daemon in Exim 4.88 and 4.89 allows remote attackers to execute arbitrary code or cause a denial of service (use-after-free) via vectors involving BDAT commands.\n1517680: \nCVE-2017-16943 exim: use-after-free in receive_msg function via vectors involving BDAT commands\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-16943",
-        "ID": "CVE-2017-16943",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-16944",
-        "ID": "CVE-2017-16944",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "exim-debuginfo",
-          "Release": "4.17.amzn1",
-          "Version": "4.89",
-          "Filename": "Packages/exim-debuginfo-4.89-4.17.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "exim",
-          "Release": "4.17.amzn1",
-          "Version": "4.89",
-          "Filename": "Packages/exim-4.89-4.17.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "exim-greylist",
-          "Release": "4.17.amzn1",
-          "Version": "4.89",
-          "Filename": "Packages/exim-greylist-4.89-4.17.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "exim-mysql",
-          "Release": "4.17.amzn1",
-          "Version": "4.89",
-          "Filename": "Packages/exim-mysql-4.89-4.17.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "exim-pgsql",
-          "Release": "4.17.amzn1",
-          "Version": "4.89",
-          "Filename": "Packages/exim-pgsql-4.89-4.17.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "exim-mon",
-          "Release": "4.17.amzn1",
-          "Version": "4.89",
-          "Filename": "Packages/exim-mon-4.89-4.17.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "exim-mysql",
-          "Release": "4.17.amzn1",
-          "Version": "4.89",
-          "Filename": "Packages/exim-mysql-4.89-4.17.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "exim-greylist",
-          "Release": "4.17.amzn1",
-          "Version": "4.89",
-          "Filename": "Packages/exim-greylist-4.89-4.17.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "exim-debuginfo",
-          "Release": "4.17.amzn1",
-          "Version": "4.89",
-          "Filename": "Packages/exim-debuginfo-4.89-4.17.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "exim-pgsql",
-          "Release": "4.17.amzn1",
-          "Version": "4.89",
-          "Filename": "Packages/exim-pgsql-4.89-4.17.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "exim-mon",
-          "Release": "4.17.amzn1",
-          "Version": "4.89",
-          "Filename": "Packages/exim-mon-4.89-4.17.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "exim",
-          "Release": "4.17.amzn1",
-          "Version": "4.89",
-          "Filename": "Packages/exim-4.89-4.17.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2017-932",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2017-932: critical priority package update for exim",
+	"Issued": {
+		"Date": "2017-12-20 18:51"
+	},
+	"Updated": {
+		"Date": "2017-12-21 22:55"
+	},
+	"Severity": "critical",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2017-16944:\n\tThe receive_msg function in receive.c in the SMTP daemon in Exim 4.88 and 4.89 allows remote attackers to cause a denial of service (infinite loop and stack exhaustion) via vectors involving BDAT commands and an improper check for a &#039;.&#039; character signifying the end of the content, related to the bdat_getc function.\n1517684: \nCVE-2017-16944 exim: infinite loop and stack exhaustion in receive_msg function via vectors involving BDAT commands\n\nCVE-2017-16943:\n\tThe receive_msg function in receive.c in the SMTP daemon in Exim 4.88 and 4.89 allows remote attackers to execute arbitrary code or cause a denial of service (use-after-free) via vectors involving BDAT commands.\n1517680: \nCVE-2017-16943 exim: use-after-free in receive_msg function via vectors involving BDAT commands\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-16943",
+				"ID": "CVE-2017-16943",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-16944",
+				"ID": "CVE-2017-16944",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "exim-debuginfo",
+					"Release": "4.17.amzn1",
+					"Version": "4.89",
+					"Filename": "Packages/exim-debuginfo-4.89-4.17.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "exim",
+					"Release": "4.17.amzn1",
+					"Version": "4.89",
+					"Filename": "Packages/exim-4.89-4.17.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "exim-greylist",
+					"Release": "4.17.amzn1",
+					"Version": "4.89",
+					"Filename": "Packages/exim-greylist-4.89-4.17.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "exim-mysql",
+					"Release": "4.17.amzn1",
+					"Version": "4.89",
+					"Filename": "Packages/exim-mysql-4.89-4.17.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "exim-pgsql",
+					"Release": "4.17.amzn1",
+					"Version": "4.89",
+					"Filename": "Packages/exim-pgsql-4.89-4.17.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "exim-mon",
+					"Release": "4.17.amzn1",
+					"Version": "4.89",
+					"Filename": "Packages/exim-mon-4.89-4.17.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "exim-mysql",
+					"Release": "4.17.amzn1",
+					"Version": "4.89",
+					"Filename": "Packages/exim-mysql-4.89-4.17.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "exim-greylist",
+					"Release": "4.17.amzn1",
+					"Version": "4.89",
+					"Filename": "Packages/exim-greylist-4.89-4.17.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "exim-debuginfo",
+					"Release": "4.17.amzn1",
+					"Version": "4.89",
+					"Filename": "Packages/exim-debuginfo-4.89-4.17.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "exim-pgsql",
+					"Release": "4.17.amzn1",
+					"Version": "4.89",
+					"Filename": "Packages/exim-pgsql-4.89-4.17.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "exim-mon",
+					"Release": "4.17.amzn1",
+					"Version": "4.89",
+					"Filename": "Packages/exim-mon-4.89-4.17.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "exim",
+					"Release": "4.17.amzn1",
+					"Version": "4.89",
+					"Filename": "Packages/exim-4.89-4.17.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

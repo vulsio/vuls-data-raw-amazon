@@ -1,239 +1,239 @@
 {
-  "ID": "ALAS2022-2022-232",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2022 - ALAS2022-2022-232: Critical priority package update for expat",
-  "Issued": {
-    "Date": "2022-12-06 16:43"
-  },
-  "Updated": {
-    "Date": "2022-12-06 16:43"
-  },
-  "Severity": "Critical",
-  "Description": "Package updates are available for Amazon Linux 2022 that fix the following vulnerabilities:\nCVE-2022-25315:\n\tAn integer overflow was found in expat. The issue occurs in storeRawNames() by abusing the m_buffer expansion logic to allow allocations very close to INT_MAX and out-of-bounds heap writes. This flaw can cause a denial of service or potentially arbitrary code execution.\n\nCVE-2022-25314:\n\tAn integer overflow flaw was found in expat. This issue affects the encoding name parameter at the parser creation time, which is often hard-coded (rather than user input), takes a value in the gigabytes to trigger, and on a 64-bit machine. This flaw can cause a denial of service.\n\nCVE-2022-25313:\n\tA flaw was found in expat. A stack exhaustion in doctype parsing could be triggered by a file with a large number of opening braces, resulting in a denial of service.\n\nCVE-2022-25236:\n\tA flaw was found in expat. Passing one or more namespace separator characters in the \"xmlns[:prefix]\" attribute values made expat send malformed tag names to the XML processor on top of expat. This issue causes arbitrary code execution depending on how unexpected cases are handled inside the XML processor.\n\nCVE-2022-25235:\n\tA flaw was found in expat. Passing malformed 2- and 3-byte UTF-8 sequences (for example, from start tag names) to the XML processing application on top of expat can lead to arbitrary code execution. This issue is dependent on how invalid UTF-8 is handled inside the XML processor.\n\nCVE-2022-23990:\n\tExpat (aka libexpat) before 2.4.4 has an integer overflow in the doProlog function.\n\nCVE-2022-23852:\n\texpat (libexpat) is susceptible to a software flaw that causes process interruption. When processing a large number of prefixed XML attributes on a single tag can libexpat can terminate unexpectedly due to integer overflow. The highest threat from this vulnerability is to availability, confidentiality and integrity.\n\nCVE-2022-22827:\n\tstoreAtts in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.\n\nCVE-2022-22826:\n\tnextScaffoldPart in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.\n\nCVE-2022-22825:\n\tlookup in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.\n\nCVE-2022-22824:\n\tdefineAttribute in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.\n\nCVE-2022-22823:\n\tbuild_model in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.\n\nCVE-2022-22822:\n\taddBinding in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.\n\nCVE-2021-46143:\n\tIn doProlog in xmlparse.c in Expat (aka libexpat) before 2.4.3, an integer overflow exists for m_groupSize.\n\nCVE-2021-45960:\n\tIn Expat (aka libexpat) before 2.4.3, a left shift by 29 (or more) places in the storeAtts function in xmlparse.c can lead to realloc misbehavior (e.g., allocating too few bytes, or only freeing memory).\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45960",
-        "ID": "CVE-2021-45960",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-46143",
-        "ID": "CVE-2021-46143",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22822",
-        "ID": "CVE-2022-22822",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22823",
-        "ID": "CVE-2022-22823",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22824",
-        "ID": "CVE-2022-22824",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22825",
-        "ID": "CVE-2022-22825",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22826",
-        "ID": "CVE-2022-22826",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22827",
-        "ID": "CVE-2022-22827",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23852",
-        "ID": "CVE-2022-23852",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23990",
-        "ID": "CVE-2022-23990",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25235",
-        "ID": "CVE-2022-25235",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25236",
-        "ID": "CVE-2022-25236",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25313",
-        "ID": "CVE-2022-25313",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25314",
-        "ID": "CVE-2022-25314",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25315",
-        "ID": "CVE-2022-25315",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2022",
-      "Name": "Amazon Linux 2022",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "expat-debugsource",
-          "Release": "1.amzn2022.0.1",
-          "Version": "2.4.7",
-          "Filename": "Packages/expat-debugsource-2.4.7-1.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "expat-devel",
-          "Release": "1.amzn2022.0.1",
-          "Version": "2.4.7",
-          "Filename": "Packages/expat-devel-2.4.7-1.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "expat-static",
-          "Release": "1.amzn2022.0.1",
-          "Version": "2.4.7",
-          "Filename": "Packages/expat-static-2.4.7-1.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "expat",
-          "Release": "1.amzn2022.0.1",
-          "Version": "2.4.7",
-          "Filename": "Packages/expat-2.4.7-1.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "expat-debuginfo",
-          "Release": "1.amzn2022.0.1",
-          "Version": "2.4.7",
-          "Filename": "Packages/expat-debuginfo-2.4.7-1.amzn2022.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "expat-debugsource",
-          "Release": "1.amzn2022.0.1",
-          "Version": "2.4.7",
-          "Filename": "Packages/expat-debugsource-2.4.7-1.amzn2022.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "expat-static",
-          "Release": "1.amzn2022.0.1",
-          "Version": "2.4.7",
-          "Filename": "Packages/expat-static-2.4.7-1.amzn2022.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "expat-debuginfo",
-          "Release": "1.amzn2022.0.1",
-          "Version": "2.4.7",
-          "Filename": "Packages/expat-debuginfo-2.4.7-1.amzn2022.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "expat",
-          "Release": "1.amzn2022.0.1",
-          "Version": "2.4.7",
-          "Filename": "Packages/expat-2.4.7-1.amzn2022.0.1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "expat-devel",
-          "Release": "1.amzn2022.0.1",
-          "Version": "2.4.7",
-          "Filename": "Packages/expat-devel-2.4.7-1.amzn2022.0.1.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "expat-static",
-          "Release": "1.amzn2022.0.1",
-          "Version": "2.4.7",
-          "Filename": "Packages/expat-static-2.4.7-1.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "expat-debuginfo",
-          "Release": "1.amzn2022.0.1",
-          "Version": "2.4.7",
-          "Filename": "Packages/expat-debuginfo-2.4.7-1.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "expat-debugsource",
-          "Release": "1.amzn2022.0.1",
-          "Version": "2.4.7",
-          "Filename": "Packages/expat-debugsource-2.4.7-1.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "expat-devel",
-          "Release": "1.amzn2022.0.1",
-          "Version": "2.4.7",
-          "Filename": "Packages/expat-devel-2.4.7-1.amzn2022.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "expat",
-          "Release": "1.amzn2022.0.1",
-          "Version": "2.4.7",
-          "Filename": "Packages/expat-2.4.7-1.amzn2022.0.1.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2022-2022-232",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2022 - ALAS2022-2022-232: Critical priority package update for expat",
+	"Issued": {
+		"Date": "2022-12-06 16:43"
+	},
+	"Updated": {
+		"Date": "2022-12-06 16:43"
+	},
+	"Severity": "Critical",
+	"Description": "Package updates are available for Amazon Linux 2022 that fix the following vulnerabilities:\nCVE-2022-25315:\n\tAn integer overflow was found in expat. The issue occurs in storeRawNames() by abusing the m_buffer expansion logic to allow allocations very close to INT_MAX and out-of-bounds heap writes. This flaw can cause a denial of service or potentially arbitrary code execution.\n\nCVE-2022-25314:\n\tAn integer overflow flaw was found in expat. This issue affects the encoding name parameter at the parser creation time, which is often hard-coded (rather than user input), takes a value in the gigabytes to trigger, and on a 64-bit machine. This flaw can cause a denial of service.\n\nCVE-2022-25313:\n\tA flaw was found in expat. A stack exhaustion in doctype parsing could be triggered by a file with a large number of opening braces, resulting in a denial of service.\n\nCVE-2022-25236:\n\tA flaw was found in expat. Passing one or more namespace separator characters in the \"xmlns[:prefix]\" attribute values made expat send malformed tag names to the XML processor on top of expat. This issue causes arbitrary code execution depending on how unexpected cases are handled inside the XML processor.\n\nCVE-2022-25235:\n\tA flaw was found in expat. Passing malformed 2- and 3-byte UTF-8 sequences (for example, from start tag names) to the XML processing application on top of expat can lead to arbitrary code execution. This issue is dependent on how invalid UTF-8 is handled inside the XML processor.\n\nCVE-2022-23990:\n\tExpat (aka libexpat) before 2.4.4 has an integer overflow in the doProlog function.\n\nCVE-2022-23852:\n\texpat (libexpat) is susceptible to a software flaw that causes process interruption. When processing a large number of prefixed XML attributes on a single tag can libexpat can terminate unexpectedly due to integer overflow. The highest threat from this vulnerability is to availability, confidentiality and integrity.\n\nCVE-2022-22827:\n\tstoreAtts in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.\n\nCVE-2022-22826:\n\tnextScaffoldPart in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.\n\nCVE-2022-22825:\n\tlookup in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.\n\nCVE-2022-22824:\n\tdefineAttribute in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.\n\nCVE-2022-22823:\n\tbuild_model in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.\n\nCVE-2022-22822:\n\taddBinding in xmlparse.c in Expat (aka libexpat) before 2.4.3 has an integer overflow.\n\nCVE-2021-46143:\n\tIn doProlog in xmlparse.c in Expat (aka libexpat) before 2.4.3, an integer overflow exists for m_groupSize.\n\nCVE-2021-45960:\n\tIn Expat (aka libexpat) before 2.4.3, a left shift by 29 (or more) places in the storeAtts function in xmlparse.c can lead to realloc misbehavior (e.g., allocating too few bytes, or only freeing memory).\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45960",
+				"ID": "CVE-2021-45960",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-46143",
+				"ID": "CVE-2021-46143",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22822",
+				"ID": "CVE-2022-22822",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22823",
+				"ID": "CVE-2022-22823",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22824",
+				"ID": "CVE-2022-22824",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22825",
+				"ID": "CVE-2022-22825",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22826",
+				"ID": "CVE-2022-22826",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22827",
+				"ID": "CVE-2022-22827",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23852",
+				"ID": "CVE-2022-23852",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23990",
+				"ID": "CVE-2022-23990",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25235",
+				"ID": "CVE-2022-25235",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25236",
+				"ID": "CVE-2022-25236",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25313",
+				"ID": "CVE-2022-25313",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25314",
+				"ID": "CVE-2022-25314",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25315",
+				"ID": "CVE-2022-25315",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2022",
+			"Name": "Amazon Linux 2022",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "expat-debugsource",
+					"Release": "1.amzn2022.0.1",
+					"Version": "2.4.7",
+					"Filename": "Packages/expat-debugsource-2.4.7-1.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "expat-devel",
+					"Release": "1.amzn2022.0.1",
+					"Version": "2.4.7",
+					"Filename": "Packages/expat-devel-2.4.7-1.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "expat-static",
+					"Release": "1.amzn2022.0.1",
+					"Version": "2.4.7",
+					"Filename": "Packages/expat-static-2.4.7-1.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "expat",
+					"Release": "1.amzn2022.0.1",
+					"Version": "2.4.7",
+					"Filename": "Packages/expat-2.4.7-1.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "expat-debuginfo",
+					"Release": "1.amzn2022.0.1",
+					"Version": "2.4.7",
+					"Filename": "Packages/expat-debuginfo-2.4.7-1.amzn2022.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "expat-debugsource",
+					"Release": "1.amzn2022.0.1",
+					"Version": "2.4.7",
+					"Filename": "Packages/expat-debugsource-2.4.7-1.amzn2022.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "expat-static",
+					"Release": "1.amzn2022.0.1",
+					"Version": "2.4.7",
+					"Filename": "Packages/expat-static-2.4.7-1.amzn2022.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "expat-debuginfo",
+					"Release": "1.amzn2022.0.1",
+					"Version": "2.4.7",
+					"Filename": "Packages/expat-debuginfo-2.4.7-1.amzn2022.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "expat",
+					"Release": "1.amzn2022.0.1",
+					"Version": "2.4.7",
+					"Filename": "Packages/expat-2.4.7-1.amzn2022.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "expat-devel",
+					"Release": "1.amzn2022.0.1",
+					"Version": "2.4.7",
+					"Filename": "Packages/expat-devel-2.4.7-1.amzn2022.0.1.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "expat-static",
+					"Release": "1.amzn2022.0.1",
+					"Version": "2.4.7",
+					"Filename": "Packages/expat-static-2.4.7-1.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "expat-debuginfo",
+					"Release": "1.amzn2022.0.1",
+					"Version": "2.4.7",
+					"Filename": "Packages/expat-debuginfo-2.4.7-1.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "expat-debugsource",
+					"Release": "1.amzn2022.0.1",
+					"Version": "2.4.7",
+					"Filename": "Packages/expat-debugsource-2.4.7-1.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "expat-devel",
+					"Release": "1.amzn2022.0.1",
+					"Version": "2.4.7",
+					"Filename": "Packages/expat-devel-2.4.7-1.amzn2022.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "expat",
+					"Release": "1.amzn2022.0.1",
+					"Version": "2.4.7",
+					"Filename": "Packages/expat-2.4.7-1.amzn2022.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

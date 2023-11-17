@@ -1,235 +1,235 @@
 {
-  "ID": "ALAS2-2022-1816",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2022-1816: medium priority package update for rust",
-  "Issued": {
-    "Date": "2022-07-06 03:15"
-  },
-  "Updated": {
-    "Date": "2022-07-14 22:26"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-31162:\n\tIn the standard library in Rust before 1.52.0, a double free can occur in the Vec::from_iter function if freeing the element panics.\n\nCVE-2021-28879:\n\tIn the standard library in Rust before 1.52.0, the Zip implementation can report an incorrect size due to an integer overflow. This bug can lead to a buffer overflow when a consumed Zip iterator is used again.\n\nCVE-2021-28878:\n\tIn the standard library in Rust before 1.52.0, the Zip implementation calls __iterator_get_unchecked() more than once for the same index (under certain conditions) when next_back() and next() are used together. This bug could lead to a memory safety violation due to an unmet safety requirement for the TrustedRandomAccess trait.\n\nCVE-2021-28876:\n\tIn the standard library in Rust before 1.52.0, the Zip implementation has a panic safety issue. It calls __iterator_get_unchecked() more than once for the same index when the underlying iterator panics (in certain conditions). This bug could lead to a memory safety violation due to an unmet safety requirement for the TrustedRandomAccess trait.\n\nCVE-2020-36323:\n\tIn the standard library in Rust before 1.52.0, there is an optimization for joining strings that can cause uninitialized bytes to be exposed (or the program to crash) if the borrowed string changes after its length is checked.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-36323",
-        "ID": "CVE-2020-36323",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28876",
-        "ID": "CVE-2021-28876",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28878",
-        "ID": "CVE-2021-28878",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28879",
-        "ID": "CVE-2021-28879",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-31162",
-        "ID": "CVE-2021-31162",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "rust",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/rust-1.56.1-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "rust-std-static",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/rust-std-static-1.56.1-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "rust-debugger-common",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/rust-debugger-common-1.56.1-1.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "rust-gdb",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/rust-gdb-1.56.1-1.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "rust-doc",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/rust-doc-1.56.1-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "cargo",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/cargo-1.56.1-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "cargo-doc",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/cargo-doc-1.56.1-1.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "rustfmt",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/rustfmt-1.56.1-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "rls",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/rls-1.56.1-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "clippy",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/clippy-1.56.1-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "rust-src",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/rust-src-1.56.1-1.amzn2.0.1.noarch.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "rust-analysis",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/rust-analysis-1.56.1-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "rust-debuginfo",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/rust-debuginfo-1.56.1-1.amzn2.0.1.x86_64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "rust",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/rust-1.56.1-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "rust-std-static",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/rust-std-static-1.56.1-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "rust-doc",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/rust-doc-1.56.1-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "cargo",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/cargo-1.56.1-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "rustfmt",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/rustfmt-1.56.1-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "rls",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/rls-1.56.1-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "clippy",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/clippy-1.56.1-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "rust-analysis",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/rust-analysis-1.56.1-1.amzn2.0.1.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "rust-debuginfo",
-          "Release": "1.amzn2.0.1",
-          "Version": "1.56.1",
-          "Filename": "Packages/rust-debuginfo-1.56.1-1.amzn2.0.1.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2022-1816",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2022-1816: medium priority package update for rust",
+	"Issued": {
+		"Date": "2022-07-06 03:15"
+	},
+	"Updated": {
+		"Date": "2022-07-14 22:26"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-31162:\n\tIn the standard library in Rust before 1.52.0, a double free can occur in the Vec::from_iter function if freeing the element panics.\n\nCVE-2021-28879:\n\tIn the standard library in Rust before 1.52.0, the Zip implementation can report an incorrect size due to an integer overflow. This bug can lead to a buffer overflow when a consumed Zip iterator is used again.\n\nCVE-2021-28878:\n\tIn the standard library in Rust before 1.52.0, the Zip implementation calls __iterator_get_unchecked() more than once for the same index (under certain conditions) when next_back() and next() are used together. This bug could lead to a memory safety violation due to an unmet safety requirement for the TrustedRandomAccess trait.\n\nCVE-2021-28876:\n\tIn the standard library in Rust before 1.52.0, the Zip implementation has a panic safety issue. It calls __iterator_get_unchecked() more than once for the same index when the underlying iterator panics (in certain conditions). This bug could lead to a memory safety violation due to an unmet safety requirement for the TrustedRandomAccess trait.\n\nCVE-2020-36323:\n\tIn the standard library in Rust before 1.52.0, there is an optimization for joining strings that can cause uninitialized bytes to be exposed (or the program to crash) if the borrowed string changes after its length is checked.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-36323",
+				"ID": "CVE-2020-36323",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28876",
+				"ID": "CVE-2021-28876",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28878",
+				"ID": "CVE-2021-28878",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28879",
+				"ID": "CVE-2021-28879",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-31162",
+				"ID": "CVE-2021-31162",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rust",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/rust-1.56.1-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rust-std-static",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/rust-std-static-1.56.1-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "rust-debugger-common",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/rust-debugger-common-1.56.1-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "rust-gdb",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/rust-gdb-1.56.1-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rust-doc",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/rust-doc-1.56.1-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "cargo",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/cargo-1.56.1-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "cargo-doc",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/cargo-doc-1.56.1-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rustfmt",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/rustfmt-1.56.1-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rls",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/rls-1.56.1-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clippy",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/clippy-1.56.1-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "rust-src",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/rust-src-1.56.1-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rust-analysis",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/rust-analysis-1.56.1-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rust-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/rust-debuginfo-1.56.1-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "rust",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/rust-1.56.1-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "rust-std-static",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/rust-std-static-1.56.1-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "rust-doc",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/rust-doc-1.56.1-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "cargo",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/cargo-1.56.1-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "rustfmt",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/rustfmt-1.56.1-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "rls",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/rls-1.56.1-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "clippy",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/clippy-1.56.1-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "rust-analysis",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/rust-analysis-1.56.1-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "rust-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.56.1",
+					"Filename": "Packages/rust-debuginfo-1.56.1-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

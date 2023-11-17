@@ -1,271 +1,271 @@
 {
-  "ID": "ALAS2KERNEL-5.4-2022-018",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 - Kernel-5.4 2.0 - ALAS2KERNEL-5.4-2022-018: important priority package update for kernel",
-  "Issued": {
-    "Date": "2022-01-20 19:50"
-  },
-  "Updated": {
-    "Date": "2022-01-28 17:22"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2020-28974:\n\tAn out-of-bounds (OOB) SLAB memory access flaw was found in the Linux kernel's fbcon driver module. A bounds check failure allows a local attacker with special user privileges to gain access to out-of-bounds memory, leading to a system crash or leaking of internal kernel information. The highest threat from this vulnerability is to system availability.\n\nCVE-2020-27675:\n\tAn issue was discovered in the Linux kernel through 5.9.1, as used with Xen through 4.14.x. drivers/xen/events/events_base.c allows event-channel removal during the event-handling loop (a race condition). This can cause a use-after-free or NULL pointer dereference, as demonstrated by a dom0 crash via events for an in-reconfiguration paravirtualized device, aka CID-073d0552ead5.\n\nCVE-2020-27673:\n\tAn issue was discovered in the Linux kernel through 5.9.1, as used with Xen through 4.14.x. Guest OS users can cause a denial of service (host OS hang) via a high rate of events to dom0, aka CID-e99502f76271.\n\nCVE-2020-25704:\n\tA memory leak flaw was found in the Linux kernel's performance monitoring subsystem when using PERF_EVENT_IOC_SET_FILTER. This flaw allows a local user to starve the resources, causing a denial of service. The highest threat from this vulnerability is to system availability.\n\nCVE-2020-25668:\n\tA use-after-free flaw was found in the Linux kernel's TTY driver functionality in the way the user triggers the con_font_op function. This flaw allows a local user to crash or escalate their privileges on the system or expose sensitive information (kernel memory).\n\nCVE-2020-25656:\n\tA flaw was found in the Linux kernel. A use-after-free was found in the way the console subsystem was using ioctls KDGKBSENT and KDSKBSENT. A local user could use this flaw to get read memory access out of bounds. The highest threat from this vulnerability is to data confidentiality.\n\nCVE-2020-14351:\n\tA flaw was found in the Linux kernel. A use-after-free memory flaw was found in the perf subsystem allowing a local attacker with permission to monitor perf events to corrupt memory and possibly escalate privileges.  The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14351",
-        "ID": "CVE-2020-14351",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25656",
-        "ID": "CVE-2020-25656",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25668",
-        "ID": "CVE-2020-25668",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25704",
-        "ID": "CVE-2020-25704",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27673",
-        "ID": "CVE-2020-27673",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27675",
-        "ID": "CVE-2020-27675",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28974",
-        "ID": "CVE-2020-28974",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2---kernel-5.4",
-      "Name": "Amazon Linux 2 - Kernel-5.4",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/kernel-5.4.80-40.140.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/kernel-headers-5.4.80-40.140.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-aarch64",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/kernel-debuginfo-common-aarch64-5.4.80-40.140.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/perf-5.4.80-40.140.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/perf-debuginfo-5.4.80-40.140.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python-perf",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/python-perf-5.4.80-40.140.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python-perf-debuginfo",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/python-perf-debuginfo-5.4.80-40.140.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/kernel-tools-5.4.80-40.140.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/kernel-tools-devel-5.4.80-40.140.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/kernel-tools-debuginfo-5.4.80-40.140.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/kernel-devel-5.4.80-40.140.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/kernel-debuginfo-5.4.80-40.140.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/kernel-5.4.80-40.140.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/kernel-headers-5.4.80-40.140.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-x86_64",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/kernel-debuginfo-common-x86_64-5.4.80-40.140.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/perf-5.4.80-40.140.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/perf-debuginfo-5.4.80-40.140.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python-perf",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/python-perf-5.4.80-40.140.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python-perf-debuginfo",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/python-perf-debuginfo-5.4.80-40.140.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/kernel-tools-5.4.80-40.140.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/kernel-tools-devel-5.4.80-40.140.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/kernel-tools-debuginfo-5.4.80-40.140.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/kernel-devel-5.4.80-40.140.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/kernel-debuginfo-5.4.80-40.140.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "40.140.amzn2",
-          "Version": "5.4.80",
-          "Filename": "Packages/kernel-headers-5.4.80-40.140.amzn2.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2KERNEL-5.4-2022-018",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Kernel-5.4 2.0 - ALAS2KERNEL-5.4-2022-018: important priority package update for kernel",
+	"Issued": {
+		"Date": "2022-01-20 19:50"
+	},
+	"Updated": {
+		"Date": "2022-01-28 17:22"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2020-28974:\n\tAn out-of-bounds (OOB) SLAB memory access flaw was found in the Linux kernel's fbcon driver module. A bounds check failure allows a local attacker with special user privileges to gain access to out-of-bounds memory, leading to a system crash or leaking of internal kernel information. The highest threat from this vulnerability is to system availability.\n\nCVE-2020-27675:\n\tAn issue was discovered in the Linux kernel through 5.9.1, as used with Xen through 4.14.x. drivers/xen/events/events_base.c allows event-channel removal during the event-handling loop (a race condition). This can cause a use-after-free or NULL pointer dereference, as demonstrated by a dom0 crash via events for an in-reconfiguration paravirtualized device, aka CID-073d0552ead5.\n\nCVE-2020-27673:\n\tAn issue was discovered in the Linux kernel through 5.9.1, as used with Xen through 4.14.x. Guest OS users can cause a denial of service (host OS hang) via a high rate of events to dom0, aka CID-e99502f76271.\n\nCVE-2020-25704:\n\tA memory leak flaw was found in the Linux kernel's performance monitoring subsystem when using PERF_EVENT_IOC_SET_FILTER. This flaw allows a local user to starve the resources, causing a denial of service. The highest threat from this vulnerability is to system availability.\n\nCVE-2020-25668:\n\tA use-after-free flaw was found in the Linux kernel's TTY driver functionality in the way the user triggers the con_font_op function. This flaw allows a local user to crash or escalate their privileges on the system or expose sensitive information (kernel memory).\n\nCVE-2020-25656:\n\tA flaw was found in the Linux kernel. A use-after-free was found in the way the console subsystem was using ioctls KDGKBSENT and KDSKBSENT. A local user could use this flaw to get read memory access out of bounds. The highest threat from this vulnerability is to data confidentiality.\n\nCVE-2020-14351:\n\tA flaw was found in the Linux kernel. A use-after-free memory flaw was found in the perf subsystem allowing a local attacker with permission to monitor perf events to corrupt memory and possibly escalate privileges.  The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-14351",
+				"ID": "CVE-2020-14351",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25656",
+				"ID": "CVE-2020-25656",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25668",
+				"ID": "CVE-2020-25668",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-25704",
+				"ID": "CVE-2020-25704",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27673",
+				"ID": "CVE-2020-27673",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-27675",
+				"ID": "CVE-2020-27675",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-28974",
+				"ID": "CVE-2020-28974",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---kernel-5.4",
+			"Name": "Amazon Linux 2 - Kernel-5.4",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/kernel-5.4.80-40.140.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/kernel-headers-5.4.80-40.140.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-aarch64",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/kernel-debuginfo-common-aarch64-5.4.80-40.140.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/perf-5.4.80-40.140.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/perf-debuginfo-5.4.80-40.140.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-perf",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/python-perf-5.4.80-40.140.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-perf-debuginfo",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/python-perf-debuginfo-5.4.80-40.140.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/kernel-tools-5.4.80-40.140.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/kernel-tools-devel-5.4.80-40.140.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/kernel-tools-debuginfo-5.4.80-40.140.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/kernel-devel-5.4.80-40.140.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/kernel-debuginfo-5.4.80-40.140.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/kernel-5.4.80-40.140.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/kernel-headers-5.4.80-40.140.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-x86_64",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/kernel-debuginfo-common-x86_64-5.4.80-40.140.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/perf-5.4.80-40.140.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/perf-debuginfo-5.4.80-40.140.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-perf",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/python-perf-5.4.80-40.140.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-perf-debuginfo",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/python-perf-debuginfo-5.4.80-40.140.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/kernel-tools-5.4.80-40.140.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/kernel-tools-devel-5.4.80-40.140.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/kernel-tools-debuginfo-5.4.80-40.140.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/kernel-devel-5.4.80-40.140.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/kernel-debuginfo-5.4.80-40.140.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "40.140.amzn2",
+					"Version": "5.4.80",
+					"Filename": "Packages/kernel-headers-5.4.80-40.140.amzn2.i686.rpm"
+				}
+			]
+		}
+	}
 }

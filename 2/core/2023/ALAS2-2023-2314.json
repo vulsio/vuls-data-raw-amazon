@@ -1,121 +1,121 @@
 {
-  "ID": "ALAS2-2023-2314",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2314: medium priority package update for java-17-amazon-corretto",
-  "Issued": {
-    "Date": "2023-10-18 02:27"
-  },
-  "Updated": {
-    "Date": "2023-10-19 23:42"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-22081:\n\tVulnerability in the Oracle Java SE, Oracle GraalVM for JDK product of Oracle Java SE (component: JSSE).  Supported versions that are affected are Oracle Java SE: 8u381, 8u381-perf, 11.0.20, 17.0.8, 20.0.2; Oracle GraalVM for JDK: 17.0.8 and  20.0.2. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTPS to compromise Oracle Java SE, Oracle GraalVM for JDK.  Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Oracle Java SE, Oracle GraalVM for JDK. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator). CVSS 3.1 Base Score 5.3 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L).\n\nCVE-2023-22025:\n\tMemory corruption bug on JDK 21 and 20 when AVX-512 is enabled.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-22025",
-        "ID": "CVE-2023-22025",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-22081",
-        "ID": "CVE-2023-22081",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-17-amazon-corretto",
-          "Release": "1.amzn2.1",
-          "Version": "17.0.9+8",
-          "Filename": "Packages/java-17-amazon-corretto-17.0.9+8-1.amzn2.1.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-17-amazon-corretto",
-          "Release": "1.amzn2.1",
-          "Version": "17.0.9+8",
-          "Filename": "Packages/java-17-amazon-corretto-17.0.9+8-1.amzn2.1.x86_64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-17-amazon-corretto-devel",
-          "Release": "1.amzn2.1",
-          "Version": "17.0.9+8",
-          "Filename": "Packages/java-17-amazon-corretto-devel-17.0.9+8-1.amzn2.1.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-17-amazon-corretto-devel",
-          "Release": "1.amzn2.1",
-          "Version": "17.0.9+8",
-          "Filename": "Packages/java-17-amazon-corretto-devel-17.0.9+8-1.amzn2.1.x86_64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-17-amazon-corretto-headless",
-          "Release": "1.amzn2.1",
-          "Version": "17.0.9+8",
-          "Filename": "Packages/java-17-amazon-corretto-headless-17.0.9+8-1.amzn2.1.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-17-amazon-corretto-headless",
-          "Release": "1.amzn2.1",
-          "Version": "17.0.9+8",
-          "Filename": "Packages/java-17-amazon-corretto-headless-17.0.9+8-1.amzn2.1.x86_64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-17-amazon-corretto-javadoc",
-          "Release": "1.amzn2.1",
-          "Version": "17.0.9+8",
-          "Filename": "Packages/java-17-amazon-corretto-javadoc-17.0.9+8-1.amzn2.1.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-17-amazon-corretto-javadoc",
-          "Release": "1.amzn2.1",
-          "Version": "17.0.9+8",
-          "Filename": "Packages/java-17-amazon-corretto-javadoc-17.0.9+8-1.amzn2.1.x86_64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "1",
-          "Name": "java-17-amazon-corretto-jmods",
-          "Release": "1.amzn2.1",
-          "Version": "17.0.9+8",
-          "Filename": "Packages/java-17-amazon-corretto-jmods-17.0.9+8-1.amzn2.1.aarch64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "1",
-          "Name": "java-17-amazon-corretto-jmods",
-          "Release": "1.amzn2.1",
-          "Version": "17.0.9+8",
-          "Filename": "Packages/java-17-amazon-corretto-jmods-17.0.9+8-1.amzn2.1.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2023-2314",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2314: medium priority package update for java-17-amazon-corretto",
+	"Issued": {
+		"Date": "2023-10-18 02:27"
+	},
+	"Updated": {
+		"Date": "2023-10-19 23:42"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-22081:\n\tVulnerability in the Oracle Java SE, Oracle GraalVM for JDK product of Oracle Java SE (component: JSSE).  Supported versions that are affected are Oracle Java SE: 8u381, 8u381-perf, 11.0.20, 17.0.8, 20.0.2; Oracle GraalVM for JDK: 17.0.8 and  20.0.2. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTPS to compromise Oracle Java SE, Oracle GraalVM for JDK.  Successful attacks of this vulnerability can result in unauthorized ability to cause a partial denial of service (partial DOS) of Oracle Java SE, Oracle GraalVM for JDK. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java deployments, typically in servers, that load and run only trusted code (e.g., code installed by an administrator). CVSS 3.1 Base Score 5.3 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L).\n\nCVE-2023-22025:\n\tMemory corruption bug on JDK 21 and 20 when AVX-512 is enabled.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-22025",
+				"ID": "CVE-2023-22025",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-22081",
+				"ID": "CVE-2023-22081",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-17-amazon-corretto",
+					"Release": "1.amzn2.1",
+					"Version": "17.0.9+8",
+					"Filename": "Packages/java-17-amazon-corretto-17.0.9+8-1.amzn2.1.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-17-amazon-corretto",
+					"Release": "1.amzn2.1",
+					"Version": "17.0.9+8",
+					"Filename": "Packages/java-17-amazon-corretto-17.0.9+8-1.amzn2.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-17-amazon-corretto-devel",
+					"Release": "1.amzn2.1",
+					"Version": "17.0.9+8",
+					"Filename": "Packages/java-17-amazon-corretto-devel-17.0.9+8-1.amzn2.1.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-17-amazon-corretto-devel",
+					"Release": "1.amzn2.1",
+					"Version": "17.0.9+8",
+					"Filename": "Packages/java-17-amazon-corretto-devel-17.0.9+8-1.amzn2.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-17-amazon-corretto-headless",
+					"Release": "1.amzn2.1",
+					"Version": "17.0.9+8",
+					"Filename": "Packages/java-17-amazon-corretto-headless-17.0.9+8-1.amzn2.1.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-17-amazon-corretto-headless",
+					"Release": "1.amzn2.1",
+					"Version": "17.0.9+8",
+					"Filename": "Packages/java-17-amazon-corretto-headless-17.0.9+8-1.amzn2.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-17-amazon-corretto-javadoc",
+					"Release": "1.amzn2.1",
+					"Version": "17.0.9+8",
+					"Filename": "Packages/java-17-amazon-corretto-javadoc-17.0.9+8-1.amzn2.1.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-17-amazon-corretto-javadoc",
+					"Release": "1.amzn2.1",
+					"Version": "17.0.9+8",
+					"Filename": "Packages/java-17-amazon-corretto-javadoc-17.0.9+8-1.amzn2.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "java-17-amazon-corretto-jmods",
+					"Release": "1.amzn2.1",
+					"Version": "17.0.9+8",
+					"Filename": "Packages/java-17-amazon-corretto-jmods-17.0.9+8-1.amzn2.1.aarch64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "java-17-amazon-corretto-jmods",
+					"Release": "1.amzn2.1",
+					"Version": "17.0.9+8",
+					"Filename": "Packages/java-17-amazon-corretto-jmods-17.0.9+8-1.amzn2.1.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

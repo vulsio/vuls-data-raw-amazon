@@ -1,249 +1,249 @@
 {
-  "ID": "ALAS-2015-555",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-555: medium priority package update for mod_dav_svn subversion",
-  "Issued": {
-    "Date": "2015-06-24 10:08"
-  },
-  "Updated": {
-    "Date": "2015-06-24 10:15"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-8108:\n\tA NULL pointer dereference flaw was found in the way the mod_dav_svn module handled certain requests for URIs that trigger a lookup of a virtual transaction name. A remote, unauthenticated attacker could send a request for a virtual transaction name that does not exist, causing mod_dav_svn to crash.\n1174057: \nCVE-2014-8108 subversion: NULL pointer dereference flaw in mod_dav_svn when handling URIs for virtual transaction names\n\nCVE-2014-3580:\n\tA NULL pointer dereference flaw was found in the way the mod_dav_svn module handled REPORT requests. A remote, unauthenticated attacker could use a specially crafted REPORT request to crash mod_dav_svn.\n1174054: \nCVE-2014-3580 subversion: NULL pointer dereference flaw in mod_dav_svn when handling REPORT requests\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3580",
-        "ID": "CVE-2014-3580",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8108",
-        "ID": "CVE-2014-8108",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "subversion-ruby",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-ruby-1.8.11-1.50.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "subversion-tools",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-tools-1.8.11-1.50.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mod24_dav_svn",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/mod24_dav_svn-1.8.11-1.50.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "subversion-javahl",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-javahl-1.8.11-1.50.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "subversion-devel",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-devel-1.8.11-1.50.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "subversion-debuginfo",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-debuginfo-1.8.11-1.50.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "subversion-perl",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-perl-1.8.11-1.50.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "subversion",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-1.8.11-1.50.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "subversion-python27",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-python27-1.8.11-1.50.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "subversion-python26",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-python26-1.8.11-1.50.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "subversion-libs",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-libs-1.8.11-1.50.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "subversion-python26",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-python26-1.8.11-1.50.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "subversion-javahl",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-javahl-1.8.11-1.50.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "subversion-debuginfo",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-debuginfo-1.8.11-1.50.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "subversion-tools",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-tools-1.8.11-1.50.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "subversion",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-1.8.11-1.50.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "subversion-python27",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-python27-1.8.11-1.50.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "subversion-perl",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-perl-1.8.11-1.50.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "subversion-ruby",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-ruby-1.8.11-1.50.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "subversion-devel",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-devel-1.8.11-1.50.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mod24_dav_svn",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/mod24_dav_svn-1.8.11-1.50.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "subversion-libs",
-          "Release": "1.50.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/subversion-libs-1.8.11-1.50.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mod_dav_svn",
-          "Release": "1.49.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/mod_dav_svn-1.8.11-1.49.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "mod_dav_svn-debuginfo",
-          "Release": "1.49.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/mod_dav_svn-debuginfo-1.8.11-1.49.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mod_dav_svn",
-          "Release": "1.49.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/mod_dav_svn-1.8.11-1.49.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "mod_dav_svn-debuginfo",
-          "Release": "1.49.amzn1",
-          "Version": "1.8.11",
-          "Filename": "Packages/mod_dav_svn-debuginfo-1.8.11-1.49.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2015-555",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2015-555: medium priority package update for mod_dav_svn subversion",
+	"Issued": {
+		"Date": "2015-06-24 10:08"
+	},
+	"Updated": {
+		"Date": "2015-06-24 10:15"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-8108:\n\tA NULL pointer dereference flaw was found in the way the mod_dav_svn module handled certain requests for URIs that trigger a lookup of a virtual transaction name. A remote, unauthenticated attacker could send a request for a virtual transaction name that does not exist, causing mod_dav_svn to crash.\n1174057: \nCVE-2014-8108 subversion: NULL pointer dereference flaw in mod_dav_svn when handling URIs for virtual transaction names\n\nCVE-2014-3580:\n\tA NULL pointer dereference flaw was found in the way the mod_dav_svn module handled REPORT requests. A remote, unauthenticated attacker could use a specially crafted REPORT request to crash mod_dav_svn.\n1174054: \nCVE-2014-3580 subversion: NULL pointer dereference flaw in mod_dav_svn when handling REPORT requests\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3580",
+				"ID": "CVE-2014-3580",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-8108",
+				"ID": "CVE-2014-8108",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "subversion-ruby",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-ruby-1.8.11-1.50.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "subversion-tools",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-tools-1.8.11-1.50.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mod24_dav_svn",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/mod24_dav_svn-1.8.11-1.50.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "subversion-javahl",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-javahl-1.8.11-1.50.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "subversion-devel",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-devel-1.8.11-1.50.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "subversion-debuginfo",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-debuginfo-1.8.11-1.50.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "subversion-perl",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-perl-1.8.11-1.50.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "subversion",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-1.8.11-1.50.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "subversion-python27",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-python27-1.8.11-1.50.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "subversion-python26",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-python26-1.8.11-1.50.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "subversion-libs",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-libs-1.8.11-1.50.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "subversion-python26",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-python26-1.8.11-1.50.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "subversion-javahl",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-javahl-1.8.11-1.50.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "subversion-debuginfo",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-debuginfo-1.8.11-1.50.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "subversion-tools",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-tools-1.8.11-1.50.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "subversion",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-1.8.11-1.50.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "subversion-python27",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-python27-1.8.11-1.50.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "subversion-perl",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-perl-1.8.11-1.50.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "subversion-ruby",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-ruby-1.8.11-1.50.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "subversion-devel",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-devel-1.8.11-1.50.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mod24_dav_svn",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/mod24_dav_svn-1.8.11-1.50.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "subversion-libs",
+					"Release": "1.50.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/subversion-libs-1.8.11-1.50.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mod_dav_svn",
+					"Release": "1.49.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/mod_dav_svn-1.8.11-1.49.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mod_dav_svn-debuginfo",
+					"Release": "1.49.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/mod_dav_svn-debuginfo-1.8.11-1.49.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mod_dav_svn",
+					"Release": "1.49.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/mod_dav_svn-1.8.11-1.49.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mod_dav_svn-debuginfo",
+					"Release": "1.49.amzn1",
+					"Version": "1.8.11",
+					"Filename": "Packages/mod_dav_svn-debuginfo-1.8.11-1.49.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

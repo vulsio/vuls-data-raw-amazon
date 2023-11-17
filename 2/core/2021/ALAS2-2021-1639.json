@@ -1,59 +1,59 @@
 {
-  "ID": "ALAS2-2021-1639",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1639: medium priority package update for python-pip",
-  "Issued": {
-    "Date": "2021-05-20 16:07"
-  },
-  "Updated": {
-    "Date": "2021-05-24 17:56"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2019-20916:\n\tThe pip package before 19.2 for Python allows Directory Traversal when a URL is given in an install command, because a Content-Disposition header can have ../ in a filename, as demonstrated by overwriting the /root/.ssh/authorized_keys file. This occurs in _download_http_url in _internal/download.py.\n1868135: CVE-2019-20916 python-pip: directory traversal in _download_http_url() function in src/pip/_internal/download.py\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-20916",
-        "ID": "CVE-2019-20916",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2",
-      "Name": "Amazon Linux 2",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "python2-pip",
-          "Release": "1.amzn2.0.2",
-          "Version": "20.2.2",
-          "Filename": "Packages/python2-pip-20.2.2-1.amzn2.0.2.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "python3-pip",
-          "Release": "1.amzn2.0.2",
-          "Version": "20.2.2",
-          "Filename": "Packages/python3-pip-20.2.2-1.amzn2.0.2.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "python-pip-wheel",
-          "Release": "1.amzn2.0.2",
-          "Version": "20.2.2",
-          "Filename": "Packages/python-pip-wheel-20.2.2-1.amzn2.0.2.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2-2021-1639",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1639: medium priority package update for python-pip",
+	"Issued": {
+		"Date": "2021-05-20 16:07"
+	},
+	"Updated": {
+		"Date": "2021-05-24 17:56"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2019-20916:\n\tThe pip package before 19.2 for Python allows Directory Traversal when a URL is given in an install command, because a Content-Disposition header can have ../ in a filename, as demonstrated by overwriting the /root/.ssh/authorized_keys file. This occurs in _download_http_url in _internal/download.py.\n1868135: CVE-2019-20916 python-pip: directory traversal in _download_http_url() function in src/pip/_internal/download.py\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-20916",
+				"ID": "CVE-2019-20916",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python2-pip",
+					"Release": "1.amzn2.0.2",
+					"Version": "20.2.2",
+					"Filename": "Packages/python2-pip-20.2.2-1.amzn2.0.2.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python3-pip",
+					"Release": "1.amzn2.0.2",
+					"Version": "20.2.2",
+					"Filename": "Packages/python3-pip-20.2.2-1.amzn2.0.2.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python-pip-wheel",
+					"Release": "1.amzn2.0.2",
+					"Version": "20.2.2",
+					"Filename": "Packages/python-pip-wheel-20.2.2-1.amzn2.0.2.noarch.rpm"
+				}
+			]
+		}
+	}
 }

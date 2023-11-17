@@ -1,169 +1,169 @@
 {
-  "ID": "ALAS-2017-793",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2017-793: low priority package update for krb5",
-  "Issued": {
-    "Date": "2017-02-06 18:00"
-  },
-  "Updated": {
-    "Date": "2017-02-06 18:00"
-  },
-  "Severity": "low",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-3120:\n\tA NULL pointer dereference flaw was found in MIT Kerberos krb5kdc service. An authenticated attacker could use this flaw to cause krb5kdc to dereference a null pointer and crash by making an S4U2Self request, if the restrict_anonymous_to_tgt option was set to true.\n1361050: \nCVE-2016-3120 krb5: S4U2Self KDC crash when anon is restricted\n\nCVE-2016-3119:\n\tA NULL pointer dereference flaw was found in MIT Kerberos kadmind service. An authenticated attacker with permission to modify a principal entry could use this flaw to cause kadmind to dereference a null pointer and crash by supplying an empty DB argument to the modify_principal command, if kadmind was configured to use the LDAP KDB module.\n1319616: \nCVE-2016-3119 krb5: null pointer dereference in kadmin\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3119",
-        "ID": "CVE-2016-3119",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3120",
-        "ID": "CVE-2016-3120",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-devel",
-          "Release": "27.41.amzn1",
-          "Version": "1.14.1",
-          "Filename": "Packages/krb5-devel-1.14.1-27.41.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-server",
-          "Release": "27.41.amzn1",
-          "Version": "1.14.1",
-          "Filename": "Packages/krb5-server-1.14.1-27.41.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-server-ldap",
-          "Release": "27.41.amzn1",
-          "Version": "1.14.1",
-          "Filename": "Packages/krb5-server-ldap-1.14.1-27.41.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-workstation",
-          "Release": "27.41.amzn1",
-          "Version": "1.14.1",
-          "Filename": "Packages/krb5-workstation-1.14.1-27.41.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "libkadm5",
-          "Release": "27.41.amzn1",
-          "Version": "1.14.1",
-          "Filename": "Packages/libkadm5-1.14.1-27.41.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-pkinit-openssl",
-          "Release": "27.41.amzn1",
-          "Version": "1.14.1",
-          "Filename": "Packages/krb5-pkinit-openssl-1.14.1-27.41.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-libs",
-          "Release": "27.41.amzn1",
-          "Version": "1.14.1",
-          "Filename": "Packages/krb5-libs-1.14.1-27.41.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "krb5-debuginfo",
-          "Release": "27.41.amzn1",
-          "Version": "1.14.1",
-          "Filename": "Packages/krb5-debuginfo-1.14.1-27.41.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-debuginfo",
-          "Release": "27.41.amzn1",
-          "Version": "1.14.1",
-          "Filename": "Packages/krb5-debuginfo-1.14.1-27.41.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-server",
-          "Release": "27.41.amzn1",
-          "Version": "1.14.1",
-          "Filename": "Packages/krb5-server-1.14.1-27.41.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-devel",
-          "Release": "27.41.amzn1",
-          "Version": "1.14.1",
-          "Filename": "Packages/krb5-devel-1.14.1-27.41.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-pkinit-openssl",
-          "Release": "27.41.amzn1",
-          "Version": "1.14.1",
-          "Filename": "Packages/krb5-pkinit-openssl-1.14.1-27.41.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "libkadm5",
-          "Release": "27.41.amzn1",
-          "Version": "1.14.1",
-          "Filename": "Packages/libkadm5-1.14.1-27.41.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-libs",
-          "Release": "27.41.amzn1",
-          "Version": "1.14.1",
-          "Filename": "Packages/krb5-libs-1.14.1-27.41.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-server-ldap",
-          "Release": "27.41.amzn1",
-          "Version": "1.14.1",
-          "Filename": "Packages/krb5-server-ldap-1.14.1-27.41.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "krb5-workstation",
-          "Release": "27.41.amzn1",
-          "Version": "1.14.1",
-          "Filename": "Packages/krb5-workstation-1.14.1-27.41.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2017-793",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2017-793: low priority package update for krb5",
+	"Issued": {
+		"Date": "2017-02-06 18:00"
+	},
+	"Updated": {
+		"Date": "2017-02-06 18:00"
+	},
+	"Severity": "low",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-3120:\n\tA NULL pointer dereference flaw was found in MIT Kerberos krb5kdc service. An authenticated attacker could use this flaw to cause krb5kdc to dereference a null pointer and crash by making an S4U2Self request, if the restrict_anonymous_to_tgt option was set to true.\n1361050: \nCVE-2016-3120 krb5: S4U2Self KDC crash when anon is restricted\n\nCVE-2016-3119:\n\tA NULL pointer dereference flaw was found in MIT Kerberos kadmind service. An authenticated attacker with permission to modify a principal entry could use this flaw to cause kadmind to dereference a null pointer and crash by supplying an empty DB argument to the modify_principal command, if kadmind was configured to use the LDAP KDB module.\n1319616: \nCVE-2016-3119 krb5: null pointer dereference in kadmin\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3119",
+				"ID": "CVE-2016-3119",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3120",
+				"ID": "CVE-2016-3120",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-devel",
+					"Release": "27.41.amzn1",
+					"Version": "1.14.1",
+					"Filename": "Packages/krb5-devel-1.14.1-27.41.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-server",
+					"Release": "27.41.amzn1",
+					"Version": "1.14.1",
+					"Filename": "Packages/krb5-server-1.14.1-27.41.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-server-ldap",
+					"Release": "27.41.amzn1",
+					"Version": "1.14.1",
+					"Filename": "Packages/krb5-server-ldap-1.14.1-27.41.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-workstation",
+					"Release": "27.41.amzn1",
+					"Version": "1.14.1",
+					"Filename": "Packages/krb5-workstation-1.14.1-27.41.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libkadm5",
+					"Release": "27.41.amzn1",
+					"Version": "1.14.1",
+					"Filename": "Packages/libkadm5-1.14.1-27.41.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-pkinit-openssl",
+					"Release": "27.41.amzn1",
+					"Version": "1.14.1",
+					"Filename": "Packages/krb5-pkinit-openssl-1.14.1-27.41.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-libs",
+					"Release": "27.41.amzn1",
+					"Version": "1.14.1",
+					"Filename": "Packages/krb5-libs-1.14.1-27.41.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "krb5-debuginfo",
+					"Release": "27.41.amzn1",
+					"Version": "1.14.1",
+					"Filename": "Packages/krb5-debuginfo-1.14.1-27.41.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-debuginfo",
+					"Release": "27.41.amzn1",
+					"Version": "1.14.1",
+					"Filename": "Packages/krb5-debuginfo-1.14.1-27.41.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-server",
+					"Release": "27.41.amzn1",
+					"Version": "1.14.1",
+					"Filename": "Packages/krb5-server-1.14.1-27.41.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-devel",
+					"Release": "27.41.amzn1",
+					"Version": "1.14.1",
+					"Filename": "Packages/krb5-devel-1.14.1-27.41.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-pkinit-openssl",
+					"Release": "27.41.amzn1",
+					"Version": "1.14.1",
+					"Filename": "Packages/krb5-pkinit-openssl-1.14.1-27.41.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libkadm5",
+					"Release": "27.41.amzn1",
+					"Version": "1.14.1",
+					"Filename": "Packages/libkadm5-1.14.1-27.41.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-libs",
+					"Release": "27.41.amzn1",
+					"Version": "1.14.1",
+					"Filename": "Packages/krb5-libs-1.14.1-27.41.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-server-ldap",
+					"Release": "27.41.amzn1",
+					"Version": "1.14.1",
+					"Filename": "Packages/krb5-server-ldap-1.14.1-27.41.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "krb5-workstation",
+					"Release": "27.41.amzn1",
+					"Version": "1.14.1",
+					"Filename": "Packages/krb5-workstation-1.14.1-27.41.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

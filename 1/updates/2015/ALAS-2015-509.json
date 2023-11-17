@@ -1,539 +1,539 @@
 {
-  "ID": "ALAS-2015-509",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux AMI 2014.03 - ALAS-2015-509: important priority package update for php54",
-  "Issued": {
-    "Date": "2015-04-17 12:04"
-  },
-  "Updated": {
-    "Date": "2015-06-15 14:29"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-3329:\n\tA buffer overflow flaw was found in the way PHP's Phar extension parsed Phar archives. A specially crafted archive could cause PHP to crash or, possibly, execute arbitrary code when opened.\n1213449: \nCVE-2015-3329 php: buffer overflow in phar_set_inode()\n\nCVE-2015-2783:\n\t\n\nCVE-2015-2301:\n\tA use-after-free flaw was found in PHP's phar (PHP Archive) paths implementation. A malicious script author could possibly use this flaw to disclose certain portions of server memory.\n1194747: \nCVE-2015-2301 php: use after free in phar_object.c\n\nCVE-2015-1352:\n\tA NULL pointer dereference flaw was found in PHP's pgsql extension. A specially crafted table name passed to function as pg_insert() or pg_select() could cause a PHP application to crash.\n1185904: \nCVE-2015-1352 php: NULL pointer dereference in pgsql extension\n\nCVE-2014-9709:\n\tA buffer over-read flaw was found in the GD library. A specially crafted GIF file could cause an application using the gdImageCreateFromGif() function to crash.\n1188639: \nCVE-2014-9709 gd: buffer read overflow in gd_gif_in.c\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9709",
-        "ID": "CVE-2014-9709",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1352",
-        "ID": "CVE-2015-1352",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2301",
-        "ID": "CVE-2015-2301",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2783",
-        "ID": "CVE-2015-2783",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3329",
-        "ID": "CVE-2015-3329",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-ami",
-      "Name": "Amazon Linux AMI",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-mbstring",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-mbstring-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-dba",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-dba-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-soap",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-soap-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-pgsql",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-pgsql-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-xml",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-xml-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-devel",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-devel-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-tidy",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-tidy-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-enchant",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-enchant-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-common",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-common-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-mysqlnd",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-mysqlnd-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-gd",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-gd-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-snmp",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-snmp-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-odbc",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-odbc-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-intl",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-intl-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-debuginfo",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-debuginfo-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-pdo",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-pdo-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-process",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-process-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-bcmath",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-bcmath-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-pspell",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-pspell-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-xmlrpc",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-xmlrpc-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-fpm",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-fpm-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-embedded",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-embedded-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-recode",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-recode-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-mssql",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-mssql-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-mcrypt",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-mcrypt-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-ldap",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-ldap-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-cli",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-cli-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-mysql",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-mysql-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "php54-imap",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-imap-5.4.40-1.68.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-mysqlnd",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-mysqlnd-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-xmlrpc",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-xmlrpc-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-devel",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-devel-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-pgsql",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-pgsql-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-enchant",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-enchant-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-cli",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-cli-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-soap",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-soap-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-dba",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-dba-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-mysql",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-mysql-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-ldap",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-ldap-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-pdo",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-pdo-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-recode",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-recode-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-tidy",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-tidy-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-common",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-common-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-process",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-process-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-intl",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-intl-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-fpm",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-fpm-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-snmp",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-snmp-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-debuginfo",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-debuginfo-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-odbc",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-odbc-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-embedded",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-embedded-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-xml",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-xml-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-gd",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-gd-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-mcrypt",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-mcrypt-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-mssql",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-mssql-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-mbstring",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-mbstring-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-imap",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-imap-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-pspell",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-pspell-5.4.40-1.68.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "php54-bcmath",
-          "Release": "1.68.amzn1",
-          "Version": "5.4.40",
-          "Filename": "Packages/php54-bcmath-5.4.40-1.68.amzn1.i686.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2015-509",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2015-509: important priority package update for php54",
+	"Issued": {
+		"Date": "2015-04-17 12:04"
+	},
+	"Updated": {
+		"Date": "2015-06-15 14:29"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2015-3329:\n\tA buffer overflow flaw was found in the way PHP's Phar extension parsed Phar archives. A specially crafted archive could cause PHP to crash or, possibly, execute arbitrary code when opened.\n1213449: \nCVE-2015-3329 php: buffer overflow in phar_set_inode()\n\nCVE-2015-2783:\n\t\n\nCVE-2015-2301:\n\tA use-after-free flaw was found in PHP's phar (PHP Archive) paths implementation. A malicious script author could possibly use this flaw to disclose certain portions of server memory.\n1194747: \nCVE-2015-2301 php: use after free in phar_object.c\n\nCVE-2015-1352:\n\tA NULL pointer dereference flaw was found in PHP's pgsql extension. A specially crafted table name passed to function as pg_insert() or pg_select() could cause a PHP application to crash.\n1185904: \nCVE-2015-1352 php: NULL pointer dereference in pgsql extension\n\nCVE-2014-9709:\n\tA buffer over-read flaw was found in the GD library. A specially crafted GIF file could cause an application using the gdImageCreateFromGif() function to crash.\n1188639: \nCVE-2014-9709 gd: buffer read overflow in gd_gif_in.c\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-9709",
+				"ID": "CVE-2014-9709",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1352",
+				"ID": "CVE-2015-1352",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2301",
+				"ID": "CVE-2015-2301",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2783",
+				"ID": "CVE-2015-2783",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3329",
+				"ID": "CVE-2015-3329",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-mbstring",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-mbstring-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-dba",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-dba-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-soap",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-soap-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-pgsql",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-pgsql-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-xml",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-xml-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-devel",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-devel-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-tidy",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-tidy-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-enchant",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-enchant-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-common",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-common-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-mysqlnd",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-mysqlnd-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-gd",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-gd-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-snmp",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-snmp-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-odbc",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-odbc-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-intl",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-intl-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-debuginfo",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-debuginfo-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-pdo",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-pdo-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-process",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-process-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-bcmath",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-bcmath-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-pspell",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-pspell-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-xmlrpc",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-xmlrpc-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-fpm",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-fpm-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-embedded",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-embedded-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-recode",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-recode-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-mssql",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-mssql-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-mcrypt",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-mcrypt-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-ldap",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-ldap-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-cli",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-cli-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-mysql",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-mysql-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php54-imap",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-imap-5.4.40-1.68.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-mysqlnd",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-mysqlnd-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-xmlrpc",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-xmlrpc-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-devel",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-devel-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-pgsql",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-pgsql-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-enchant",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-enchant-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-cli",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-cli-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-soap",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-soap-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-dba",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-dba-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-mysql",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-mysql-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-ldap",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-ldap-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-pdo",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-pdo-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-recode",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-recode-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-tidy",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-tidy-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-common",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-common-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-process",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-process-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-intl",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-intl-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-fpm",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-fpm-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-snmp",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-snmp-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-debuginfo",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-debuginfo-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-odbc",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-odbc-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-embedded",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-embedded-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-xml",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-xml-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-gd",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-gd-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-mcrypt",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-mcrypt-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-mssql",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-mssql-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-mbstring",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-mbstring-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-imap",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-imap-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-pspell",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-pspell-5.4.40-1.68.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "php54-bcmath",
+					"Release": "1.68.amzn1",
+					"Version": "5.4.40",
+					"Filename": "Packages/php54-bcmath-5.4.40-1.68.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
 }

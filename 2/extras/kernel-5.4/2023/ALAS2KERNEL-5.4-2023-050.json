@@ -1,285 +1,285 @@
 {
-  "ID": "ALAS2KERNEL-5.4-2023-050",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2 - Kernel-5.4 2.0 - ALAS2KERNEL-5.4-2023-050: important priority package update for kernel",
-  "Issued": {
-    "Date": "2023-08-03 19:42"
-  },
-  "Updated": {
-    "Date": "2023-08-17 17:03"
-  },
-  "Severity": "important",
-  "Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2023-3776:\n\tA use-after-free vulnerability in the Linux kernel's net/sched: cls_fw component can be exploited to achieve local privilege escalation.\n\nIf tcf_change_indev() fails, fw_set_parms() will immediately return an error after incrementing or decrementing the reference counter in tcf_bind_filter(). If an attacker can control the reference counter and set it to zero, they can cause the reference to be freed, leading to a use-after-free vulnerability.\n\nWe recommend upgrading past commit 0323bce598eea038714f941ce2b22541c46d488f.\n\nCVE-2023-3611:\n\tAn out-of-bounds write vulnerability in the Linux kernel's net/sched: sch_qfq component can be exploited to achieve local privilege escalation.\n\nThe qfq_change_agg() function in net/sched/sch_qfq.c allows an out-of-bounds write because lmax is updated according to packet sizes without bounds checks.\n\nWe recommend upgrading past commit 3e337087c3b5805fe0b8a46ba622a962880b5d64.\n\nCVE-2023-20593:\n\tAn issue in \"Zen 2\" CPUs, under specific microarchitectural circumstances, may allow an attacker to potentially access sensitive information.\n\nCVE-2023-20569:\n\tA side channel vulnerability on some of the AMD CPUs may allow an attacker to influence the return address prediction. This may result in speculative execution at an attacker-controlled?address, potentially leading to information disclosure.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-20569",
-        "ID": "CVE-2023-20569",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-20593",
-        "ID": "CVE-2023-20593",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3611",
-        "ID": "CVE-2023-3611",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3776",
-        "ID": "CVE-2023-3776",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2---kernel-5.4",
-      "Name": "Amazon Linux 2 - Kernel-5.4",
-      "Package": [
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/kernel-5.4.250-166.369.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/kernel-headers-5.4.250-166.369.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-x86_64",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/kernel-debuginfo-common-x86_64-5.4.250-166.369.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/perf-5.4.250-166.369.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/perf-debuginfo-5.4.250-166.369.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python-perf",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/python-perf-5.4.250-166.369.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "python-perf-debuginfo",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/python-perf-debuginfo-5.4.250-166.369.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/kernel-tools-5.4.250-166.369.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/kernel-tools-devel-5.4.250-166.369.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/kernel-tools-debuginfo-5.4.250-166.369.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "bpftool",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/bpftool-5.4.250-166.369.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "bpftool-debuginfo",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/bpftool-debuginfo-5.4.250-166.369.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/kernel-devel-5.4.250-166.369.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/kernel-debuginfo-5.4.250-166.369.amzn2.x86_64.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/kernel-headers-5.4.250-166.369.amzn2.i686.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/kernel-5.4.250-166.369.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-headers",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/kernel-headers-5.4.250-166.369.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo-common-aarch64",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/kernel-debuginfo-common-aarch64-5.4.250-166.369.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "perf",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/perf-5.4.250-166.369.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "perf-debuginfo",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/perf-debuginfo-5.4.250-166.369.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python-perf",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/python-perf-5.4.250-166.369.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "python-perf-debuginfo",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/python-perf-debuginfo-5.4.250-166.369.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-tools",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/kernel-tools-5.4.250-166.369.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-tools-devel",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/kernel-tools-devel-5.4.250-166.369.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-tools-debuginfo",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/kernel-tools-debuginfo-5.4.250-166.369.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "bpftool",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/bpftool-5.4.250-166.369.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "bpftool-debuginfo",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/bpftool-debuginfo-5.4.250-166.369.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-devel",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/kernel-devel-5.4.250-166.369.amzn2.aarch64.rpm"
-        },
-        {
-          "Arch": "aarch64",
-          "Epoch": "0",
-          "Name": "kernel-debuginfo",
-          "Release": "166.369.amzn2",
-          "Version": "5.4.250",
-          "Filename": "Packages/kernel-debuginfo-5.4.250-166.369.amzn2.aarch64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2KERNEL-5.4-2023-050",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Kernel-5.4 2.0 - ALAS2KERNEL-5.4-2023-050: important priority package update for kernel",
+	"Issued": {
+		"Date": "2023-08-03 19:42"
+	},
+	"Updated": {
+		"Date": "2023-08-17 17:03"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2023-3776:\n\tA use-after-free vulnerability in the Linux kernel's net/sched: cls_fw component can be exploited to achieve local privilege escalation.\n\nIf tcf_change_indev() fails, fw_set_parms() will immediately return an error after incrementing or decrementing the reference counter in tcf_bind_filter(). If an attacker can control the reference counter and set it to zero, they can cause the reference to be freed, leading to a use-after-free vulnerability.\n\nWe recommend upgrading past commit 0323bce598eea038714f941ce2b22541c46d488f.\n\nCVE-2023-3611:\n\tAn out-of-bounds write vulnerability in the Linux kernel's net/sched: sch_qfq component can be exploited to achieve local privilege escalation.\n\nThe qfq_change_agg() function in net/sched/sch_qfq.c allows an out-of-bounds write because lmax is updated according to packet sizes without bounds checks.\n\nWe recommend upgrading past commit 3e337087c3b5805fe0b8a46ba622a962880b5d64.\n\nCVE-2023-20593:\n\tAn issue in \"Zen 2\" CPUs, under specific microarchitectural circumstances, may allow an attacker to potentially access sensitive information.\n\nCVE-2023-20569:\n\tA side channel vulnerability on some of the AMD CPUs may allow an attacker to influence the return address prediction. This may result in speculative execution at an attacker-controlled?address, potentially leading to information disclosure.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-20569",
+				"ID": "CVE-2023-20569",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-20593",
+				"ID": "CVE-2023-20593",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3611",
+				"ID": "CVE-2023-3611",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3776",
+				"ID": "CVE-2023-3776",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---kernel-5.4",
+			"Name": "Amazon Linux 2 - Kernel-5.4",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/kernel-5.4.250-166.369.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/kernel-headers-5.4.250-166.369.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-x86_64",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/kernel-debuginfo-common-x86_64-5.4.250-166.369.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/perf-5.4.250-166.369.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/perf-debuginfo-5.4.250-166.369.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-perf",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/python-perf-5.4.250-166.369.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-perf-debuginfo",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/python-perf-debuginfo-5.4.250-166.369.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/kernel-tools-5.4.250-166.369.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/kernel-tools-devel-5.4.250-166.369.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/kernel-tools-debuginfo-5.4.250-166.369.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "bpftool",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/bpftool-5.4.250-166.369.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "bpftool-debuginfo",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/bpftool-debuginfo-5.4.250-166.369.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/kernel-devel-5.4.250-166.369.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/kernel-debuginfo-5.4.250-166.369.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/kernel-headers-5.4.250-166.369.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/kernel-5.4.250-166.369.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/kernel-headers-5.4.250-166.369.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-aarch64",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/kernel-debuginfo-common-aarch64-5.4.250-166.369.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/perf-5.4.250-166.369.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/perf-debuginfo-5.4.250-166.369.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-perf",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/python-perf-5.4.250-166.369.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-perf-debuginfo",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/python-perf-debuginfo-5.4.250-166.369.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/kernel-tools-5.4.250-166.369.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/kernel-tools-devel-5.4.250-166.369.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/kernel-tools-debuginfo-5.4.250-166.369.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "bpftool",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/bpftool-5.4.250-166.369.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "bpftool-debuginfo",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/bpftool-debuginfo-5.4.250-166.369.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/kernel-devel-5.4.250-166.369.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "166.369.amzn2",
+					"Version": "5.4.250",
+					"Filename": "Packages/kernel-debuginfo-5.4.250-166.369.amzn2.aarch64.rpm"
+				}
+			]
+		}
+	}
 }

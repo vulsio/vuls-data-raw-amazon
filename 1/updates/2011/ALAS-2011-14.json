@@ -1,169 +1,169 @@
 {
-  "ID": "ALAS-2011-14",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux - ALAS-2011-14: medium priority package update for rpm",
-  "Issued": {
-    "Date": "2011-10-31 18:25"
-  },
-  "Updated": {
-    "Date": "2014-09-14 14:33"
-  },
-  "Severity": "medium",
-  "Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2011-3378:\n\tRPM 4.4.x through 4.9.x, probably before 4.9.1.2, allows remote attackers to cause a denial of service (memory corruption) and possibly execute arbitrary code via an rpm package with crafted headers and offsets that are not properly handled when a package is queried or installed, related to (1) the regionSwab function, (2) the headerLoad function, and (3) multiple functions in rpmio/rpmpgp.c.\nMultiple flaws were found in the way the RPM library parsed package headers. An attacker could create a specially-crafted RPM package that, when queried or installed, would cause rpm to crash or, potentially, execute arbitrary code.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3378",
-        "ID": "CVE-2011-3378",
-        "Title": "",
-        "Type": "cve"
-      },
-      {
-        "Href": "https://rhn.redhat.com/errata/RHSA-2011:1349.html",
-        "ID": "RHSA-2011:1349",
-        "Title": "",
-        "Type": "redhat"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux",
-      "Name": "Amazon Linux",
-      "Package": [
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "rpm-devel",
-          "Release": "16.36.amzn1",
-          "Version": "4.8.0",
-          "Filename": "Packages/rpm-devel-4.8.0-16.36.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "rpm-libs",
-          "Release": "16.36.amzn1",
-          "Version": "4.8.0",
-          "Filename": "Packages/rpm-libs-4.8.0-16.36.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "rpm-apidocs",
-          "Release": "16.36.amzn1",
-          "Version": "4.8.0",
-          "Filename": "Packages/rpm-apidocs-4.8.0-16.36.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "rpm",
-          "Release": "16.36.amzn1",
-          "Version": "4.8.0",
-          "Filename": "Packages/rpm-4.8.0-16.36.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "rpm-python",
-          "Release": "16.36.amzn1",
-          "Version": "4.8.0",
-          "Filename": "Packages/rpm-python-4.8.0-16.36.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "rpm-cron",
-          "Release": "16.36.amzn1",
-          "Version": "4.8.0",
-          "Filename": "Packages/rpm-cron-4.8.0-16.36.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "rpm-build",
-          "Release": "16.36.amzn1",
-          "Version": "4.8.0",
-          "Filename": "Packages/rpm-build-4.8.0-16.36.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "i686",
-          "Epoch": "0",
-          "Name": "rpm-debuginfo",
-          "Release": "16.36.amzn1",
-          "Version": "4.8.0",
-          "Filename": "Packages/rpm-debuginfo-4.8.0-16.36.amzn1.i686.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "rpm-devel",
-          "Release": "16.36.amzn1",
-          "Version": "4.8.0",
-          "Filename": "Packages/rpm-devel-4.8.0-16.36.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "rpm-python",
-          "Release": "16.36.amzn1",
-          "Version": "4.8.0",
-          "Filename": "Packages/rpm-python-4.8.0-16.36.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "rpm-debuginfo",
-          "Release": "16.36.amzn1",
-          "Version": "4.8.0",
-          "Filename": "Packages/rpm-debuginfo-4.8.0-16.36.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "rpm-libs",
-          "Release": "16.36.amzn1",
-          "Version": "4.8.0",
-          "Filename": "Packages/rpm-libs-4.8.0-16.36.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "rpm-apidocs",
-          "Release": "16.36.amzn1",
-          "Version": "4.8.0",
-          "Filename": "Packages/rpm-apidocs-4.8.0-16.36.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "rpm",
-          "Release": "16.36.amzn1",
-          "Version": "4.8.0",
-          "Filename": "Packages/rpm-4.8.0-16.36.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "rpm-build",
-          "Release": "16.36.amzn1",
-          "Version": "4.8.0",
-          "Filename": "Packages/rpm-build-4.8.0-16.36.amzn1.x86_64.rpm"
-        },
-        {
-          "Arch": "x86_64",
-          "Epoch": "0",
-          "Name": "rpm-cron",
-          "Release": "16.36.amzn1",
-          "Version": "4.8.0",
-          "Filename": "Packages/rpm-cron-4.8.0-16.36.amzn1.x86_64.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS-2011-14",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux - ALAS-2011-14: medium priority package update for rpm",
+	"Issued": {
+		"Date": "2011-10-31 18:25"
+	},
+	"Updated": {
+		"Date": "2014-09-14 14:33"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux that fix the following vulnerabilities:\nCVE-2011-3378:\n\tRPM 4.4.x through 4.9.x, probably before 4.9.1.2, allows remote attackers to cause a denial of service (memory corruption) and possibly execute arbitrary code via an rpm package with crafted headers and offsets that are not properly handled when a package is queried or installed, related to (1) the regionSwab function, (2) the headerLoad function, and (3) multiple functions in rpmio/rpmpgp.c.\nMultiple flaws were found in the way the RPM library parsed package headers. An attacker could create a specially-crafted RPM package that, when queried or installed, would cause rpm to crash or, potentially, execute arbitrary code.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-3378",
+				"ID": "CVE-2011-3378",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "https://rhn.redhat.com/errata/RHSA-2011:1349.html",
+				"ID": "RHSA-2011:1349",
+				"Title": "",
+				"Type": "redhat"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux",
+			"Name": "Amazon Linux",
+			"Package": [
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "rpm-devel",
+					"Release": "16.36.amzn1",
+					"Version": "4.8.0",
+					"Filename": "Packages/rpm-devel-4.8.0-16.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "rpm-libs",
+					"Release": "16.36.amzn1",
+					"Version": "4.8.0",
+					"Filename": "Packages/rpm-libs-4.8.0-16.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "rpm-apidocs",
+					"Release": "16.36.amzn1",
+					"Version": "4.8.0",
+					"Filename": "Packages/rpm-apidocs-4.8.0-16.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "rpm",
+					"Release": "16.36.amzn1",
+					"Version": "4.8.0",
+					"Filename": "Packages/rpm-4.8.0-16.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "rpm-python",
+					"Release": "16.36.amzn1",
+					"Version": "4.8.0",
+					"Filename": "Packages/rpm-python-4.8.0-16.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "rpm-cron",
+					"Release": "16.36.amzn1",
+					"Version": "4.8.0",
+					"Filename": "Packages/rpm-cron-4.8.0-16.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "rpm-build",
+					"Release": "16.36.amzn1",
+					"Version": "4.8.0",
+					"Filename": "Packages/rpm-build-4.8.0-16.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "rpm-debuginfo",
+					"Release": "16.36.amzn1",
+					"Version": "4.8.0",
+					"Filename": "Packages/rpm-debuginfo-4.8.0-16.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rpm-devel",
+					"Release": "16.36.amzn1",
+					"Version": "4.8.0",
+					"Filename": "Packages/rpm-devel-4.8.0-16.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rpm-python",
+					"Release": "16.36.amzn1",
+					"Version": "4.8.0",
+					"Filename": "Packages/rpm-python-4.8.0-16.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rpm-debuginfo",
+					"Release": "16.36.amzn1",
+					"Version": "4.8.0",
+					"Filename": "Packages/rpm-debuginfo-4.8.0-16.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rpm-libs",
+					"Release": "16.36.amzn1",
+					"Version": "4.8.0",
+					"Filename": "Packages/rpm-libs-4.8.0-16.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rpm-apidocs",
+					"Release": "16.36.amzn1",
+					"Version": "4.8.0",
+					"Filename": "Packages/rpm-apidocs-4.8.0-16.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rpm",
+					"Release": "16.36.amzn1",
+					"Version": "4.8.0",
+					"Filename": "Packages/rpm-4.8.0-16.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rpm-build",
+					"Release": "16.36.amzn1",
+					"Version": "4.8.0",
+					"Filename": "Packages/rpm-build-4.8.0-16.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rpm-cron",
+					"Release": "16.36.amzn1",
+					"Version": "4.8.0",
+					"Filename": "Packages/rpm-cron-4.8.0-16.36.amzn1.x86_64.rpm"
+				}
+			]
+		}
+	}
 }

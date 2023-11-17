@@ -1,59 +1,59 @@
 {
-  "ID": "ALAS2023-2023-305",
-  "Author": "linux-security@amazon.com",
-  "From": "linux-security@amazon.com",
-  "Status": "final",
-  "Type": "security",
-  "Version": "1.4",
-  "Title": "Amazon Linux 2023 - ALAS2023-2023-305: Medium priority package update for guava",
-  "Issued": {
-    "Date": "2023-08-17 11:20:00"
-  },
-  "Updated": {
-    "Date": "2023-08-23 22:30:00"
-  },
-  "Severity": "Medium",
-  "Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-2976:\n\tUse of Java's default temporary directory for file creation in `FileBackedOutputStream` in Google Guava versions 1.0 to 31.1 on Unix systems and Android Ice Cream Sandwich allows other users and apps on the machine with access to the default Java temporary directory to be able to access the files created by the class.\n\nEven though the security vulnerability is fixed in version 32.0.0, we recommend using version 32.0.1 as version 32.0.0 breaks some functionality under Windows.\n",
-  "References": {
-    "Reference": [
-      {
-        "Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-2976",
-        "ID": "CVE-2023-2976",
-        "Title": "",
-        "Type": "cve"
-      }
-    ]
-  },
-  "Pkglist": {
-    "Collection": {
-      "Short": "amazon-linux-2023",
-      "Name": "Amazon Linux 2023",
-      "Package": [
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "guava-testlib",
-          "Release": "3.amzn2023.0.5",
-          "Version": "31.0.1",
-          "Filename": "Packages/guava-testlib-31.0.1-3.amzn2023.0.5.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "guava",
-          "Release": "3.amzn2023.0.5",
-          "Version": "31.0.1",
-          "Filename": "Packages/guava-31.0.1-3.amzn2023.0.5.noarch.rpm"
-        },
-        {
-          "Arch": "noarch",
-          "Epoch": "0",
-          "Name": "guava-javadoc",
-          "Release": "3.amzn2023.0.5",
-          "Version": "31.0.1",
-          "Filename": "Packages/guava-javadoc-31.0.1-3.amzn2023.0.5.noarch.rpm"
-        }
-      ]
-    }
-  }
+	"ID": "ALAS2023-2023-305",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2023-305: Medium priority package update for guava",
+	"Issued": {
+		"Date": "2023-08-17 11:20:00"
+	},
+	"Updated": {
+		"Date": "2023-08-23 22:30:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-2976:\n\tUse of Java's default temporary directory for file creation in `FileBackedOutputStream` in Google Guava versions 1.0 to 31.1 on Unix systems and Android Ice Cream Sandwich allows other users and apps on the machine with access to the default Java temporary directory to be able to access the files created by the class.\n\nEven though the security vulnerability is fixed in version 32.0.0, we recommend using version 32.0.1 as version 32.0.0 breaks some functionality under Windows.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-2976",
+				"ID": "CVE-2023-2976",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "guava-testlib",
+					"Release": "3.amzn2023.0.5",
+					"Version": "31.0.1",
+					"Filename": "Packages/guava-testlib-31.0.1-3.amzn2023.0.5.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "guava",
+					"Release": "3.amzn2023.0.5",
+					"Version": "31.0.1",
+					"Filename": "Packages/guava-31.0.1-3.amzn2023.0.5.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "guava-javadoc",
+					"Release": "3.amzn2023.0.5",
+					"Version": "31.0.1",
+					"Filename": "Packages/guava-javadoc-31.0.1-3.amzn2023.0.5.noarch.rpm"
+				}
+			]
+		}
+	}
 }
