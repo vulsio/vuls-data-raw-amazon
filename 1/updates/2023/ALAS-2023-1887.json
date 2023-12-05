@@ -1,0 +1,89 @@
+{
+	"ID": "ALAS-2023-1887",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2023-1887: medium priority package update for zbar",
+	"Issued": {
+		"Date": "2023-11-10 17:32"
+	},
+	"Updated": {
+		"Date": "2023-11-10 17:32"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2023-40890:\n\tA stack-based buffer overflow vulnerability exists in the lookup_sequence function of ZBar 0.23.90. Specially crafted QR codes may lead to information disclosure and/or arbitrary code execution. To trigger this vulnerability, an attacker can digitally input the malicious QR code, or prepare it to be physically scanned by the vulnerable scanner.\n\nCVE-2023-40889:\n\tA heap-based buffer overflow exists in the qr_reader_match_centers function of ZBar 0.23.90. Specially crafted QR codes may lead to information disclosure and/or arbitrary code execution. To trigger this vulnerability, an attacker can digitally input the malicious QR code, or prepare it to be physically scanned by the vulnerable scanner.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-40889",
+				"ID": "CVE-2023-40889",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-40890",
+				"ID": "CVE-2023-40890",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "zbar",
+					"Release": "19.3.amzn1",
+					"Version": "0.10",
+					"Filename": "Packages/zbar-0.10-19.3.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "zbar-debuginfo",
+					"Release": "19.3.amzn1",
+					"Version": "0.10",
+					"Filename": "Packages/zbar-debuginfo-0.10-19.3.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "zbar-devel",
+					"Release": "19.3.amzn1",
+					"Version": "0.10",
+					"Filename": "Packages/zbar-devel-0.10-19.3.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "zbar-devel",
+					"Release": "19.3.amzn1",
+					"Version": "0.10",
+					"Filename": "Packages/zbar-devel-0.10-19.3.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "zbar-debuginfo",
+					"Release": "19.3.amzn1",
+					"Version": "0.10",
+					"Filename": "Packages/zbar-debuginfo-0.10-19.3.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "zbar",
+					"Release": "19.3.amzn1",
+					"Version": "0.10",
+					"Filename": "Packages/zbar-0.10-19.3.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
+}

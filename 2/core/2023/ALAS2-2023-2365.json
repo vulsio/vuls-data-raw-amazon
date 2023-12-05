@@ -1,0 +1,179 @@
+{
+	"ID": "ALAS2-2023-2365",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2365: medium priority package update for dovecot",
+	"Issued": {
+		"Date": "2023-11-29 22:20"
+	},
+	"Updated": {
+		"Date": "2023-11-29 22:20"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-30550:\n\tAn issue was discovered in the auth component in Dovecot 2.2 and 2.3 before 2.3.20. When two passdb configuration entries exist with the same driver and args settings, incorrect username_filter and mechanism settings can be applied to passdb definitions. These incorrectly applied settings can lead to an unintended security configuration and can permit privilege escalation in certain configurations. The documentation does not advise against the use of passdb definitions that have the same driver and args settings. One such configuration would be where an administrator wishes to use the same PAM configuration or passwd file for both normal and master users but use the username_filter setting to restrict which of the users is able to be a master user.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30550",
+				"ID": "CVE-2022-30550",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "dovecot",
+					"Release": "6.amzn2.1.1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-2.2.36-6.amzn2.1.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "dovecot-pigeonhole",
+					"Release": "6.amzn2.1.1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-pigeonhole-2.2.36-6.amzn2.1.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "dovecot-pgsql",
+					"Release": "6.amzn2.1.1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-pgsql-2.2.36-6.amzn2.1.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "dovecot-mysql",
+					"Release": "6.amzn2.1.1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-mysql-2.2.36-6.amzn2.1.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "dovecot-devel",
+					"Release": "6.amzn2.1.1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-devel-2.2.36-6.amzn2.1.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "dovecot-debuginfo",
+					"Release": "6.amzn2.1.1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-debuginfo-2.2.36-6.amzn2.1.1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "dovecot",
+					"Release": "6.amzn2.1.1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-2.2.36-6.amzn2.1.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "dovecot-pigeonhole",
+					"Release": "6.amzn2.1.1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-pigeonhole-2.2.36-6.amzn2.1.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "dovecot-pgsql",
+					"Release": "6.amzn2.1.1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-pgsql-2.2.36-6.amzn2.1.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "dovecot-mysql",
+					"Release": "6.amzn2.1.1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-mysql-2.2.36-6.amzn2.1.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "dovecot-devel",
+					"Release": "6.amzn2.1.1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-devel-2.2.36-6.amzn2.1.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "dovecot-debuginfo",
+					"Release": "6.amzn2.1.1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-debuginfo-2.2.36-6.amzn2.1.1.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "dovecot",
+					"Release": "6.amzn2.1.1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-2.2.36-6.amzn2.1.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "dovecot-pigeonhole",
+					"Release": "6.amzn2.1.1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-pigeonhole-2.2.36-6.amzn2.1.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "dovecot-pgsql",
+					"Release": "6.amzn2.1.1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-pgsql-2.2.36-6.amzn2.1.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "dovecot-mysql",
+					"Release": "6.amzn2.1.1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-mysql-2.2.36-6.amzn2.1.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "dovecot-devel",
+					"Release": "6.amzn2.1.1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-devel-2.2.36-6.amzn2.1.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "dovecot-debuginfo",
+					"Release": "6.amzn2.1.1",
+					"Version": "2.2.36",
+					"Filename": "Packages/dovecot-debuginfo-2.2.36-6.amzn2.1.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

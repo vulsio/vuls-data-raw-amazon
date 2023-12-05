@@ -1,0 +1,67 @@
+{
+	"ID": "ALAS2LIVEPATCH-2023-156",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Livepatch 2.0 - ALAS2LIVEPATCH-2023-156: important priority package update for kernel-livepatch-5.10.196-185.743",
+	"Issued": {
+		"Date": "2023-11-29 22:47"
+	},
+	"Updated": {
+		"Date": "2023-11-29 22:47"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Livepatch that fix the following vulnerabilities:\nCVE-2023-5197:\n\tA use-after-free vulnerability in the Linux kernel's netfilter: nf_tables component can be exploited to achieve local privilege escalation.\n\nAddition and removal of rules from chain bindings within the same transaction causes leads to use-after-free.\n\nWe recommend upgrading past commit f15f29fd4779be8a418b66e9d52979bb6d6c2325.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5197",
+				"ID": "CVE-2023-5197",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---livepatch",
+			"Name": "Amazon Linux 2 - Livepatch",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-livepatch-5.10.196-185.743",
+					"Release": "1.amzn2",
+					"Version": "1.0",
+					"Filename": "Packages/kernel-livepatch-5.10.196-185.743-1.0-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-livepatch-5.10.196-185.743-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "1.0",
+					"Filename": "Packages/kernel-livepatch-5.10.196-185.743-debuginfo-1.0-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-livepatch-5.10.196-185.743",
+					"Release": "1.amzn2",
+					"Version": "1.0",
+					"Filename": "Packages/kernel-livepatch-5.10.196-185.743-1.0-1.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-livepatch-5.10.196-185.743-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "1.0",
+					"Filename": "Packages/kernel-livepatch-5.10.196-185.743-debuginfo-1.0-1.amzn2.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

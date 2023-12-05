@@ -10,12 +10,18 @@
 		"Date": "2023-10-18 16:51"
 	},
 	"Updated": {
-		"Date": "2023-10-31 00:14"
+		"Date": "2023-11-29 22:46"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Nitro-enclaves that fix the following vulnerabilities:\nCVE-2023-39325:\n\tThe HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023.\n\nCVE-2023-24540:\n\thtml/template: improper handling of JavaScript whitespace.\n\nNot all valid JavaScript whitespace characters were considered to be whitespace. Templates containing whitespace characters outside of the character set \"\\t\\n\\f\\r\\u0020\\u2028\\u2029\" in JavaScript contexts that also contain actions may not be properly sanitized during execution.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Nitro-enclaves that fix the following vulnerabilities:\nCVE-2023-39325:\n\tThe HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023.\n\nCVE-2023-24540:\n\thtml/template: improper handling of JavaScript whitespace.\n\nNot all valid JavaScript whitespace characters were considered to be whitespace. Templates containing whitespace characters outside of the character set \"\\t\\n\\f\\r\\u0020\\u2028\\u2029\" in JavaScript contexts that also contain actions may not be properly sanitized during execution.\n\nCVE-2023-24538:\n\tTemplates did not properly consider backticks (`) as Javascript string delimiters, and as such did\nnot escape them as expected. Backticks are used, since ES6, for JS template literals. If a template\ncontained a Go template action within a Javascript template literal, the contents of the action could\nbe used to terminate the literal, injecting arbitrary Javascript code into the Go template.\n",
 	"References": {
 		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-24538",
+				"ID": "CVE-2023-24538",
+				"Title": "",
+				"Type": "cve"
+			},
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-24540",
 				"ID": "CVE-2023-24540",

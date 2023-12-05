@@ -1,0 +1,59 @@
+{
+	"ID": "ALAS2-2023-2349",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2349: medium priority package update for python-pip",
+	"Issued": {
+		"Date": "2023-11-29 22:19"
+	},
+	"Updated": {
+		"Date": "2023-11-29 22:19"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-5752:\n\tWhen installing a package from a Mercurial VCS URL  (ie \"pip install \nhg+...\") with pip prior to v23.3, the specified Mercurial revision could\n be used to inject arbitrary configuration options to the \"hg clone\" \ncall (ie \"--config\"). Controlling the Mercurial configuration can modify\n how and which repository is installed. This vulnerability does not \naffect users who aren't installing from Mercurial.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5752",
+				"ID": "CVE-2023-5752",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python2-pip",
+					"Release": "1.amzn2.0.5",
+					"Version": "20.2.2",
+					"Filename": "Packages/python2-pip-20.2.2-1.amzn2.0.5.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python3-pip",
+					"Release": "1.amzn2.0.5",
+					"Version": "20.2.2",
+					"Filename": "Packages/python3-pip-20.2.2-1.amzn2.0.5.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python-pip-wheel",
+					"Release": "1.amzn2.0.5",
+					"Version": "20.2.2",
+					"Filename": "Packages/python-pip-wheel-20.2.2-1.amzn2.0.5.noarch.rpm"
+				}
+			]
+		}
+	}
+}

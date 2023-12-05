@@ -1,0 +1,665 @@
+{
+	"ID": "ALAS2-2023-2367",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2023-2367: medium priority package update for samba",
+	"Issued": {
+		"Date": "2023-11-29 22:20"
+	},
+	"Updated": {
+		"Date": "2023-11-29 22:20"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-4091:\n\tSMB client can truncate files to 0 bytes by opening files with OVERWRITE disposition when using the acl_xattr Samba VFS module with the smb.conf setting \"acl_xattr:ignore system acls = yes\"\n\nCVE-2022-2127:\n\tWhen doing NTLM authentication, the client sends replies to\ncryptographic challenges back to the server. These replies\nhave variable length. Winbind did not properly bounds-check\nthe lan manager response length, which despite the lan\nmanager version no longer being used is still part of the\nprotocol.\n\nIf the system is running Samba's ntlm_auth as authentication backend\nfor services like Squid (or a very unusual configuration with\nFreeRADIUS), the vulnarebility is remotely exploitable\n\nIf not so configured, or to exploit this vulnerability locally, the\nuser must have access to the privileged winbindd UNIX domain\nsocket (a subdirectory with name 'winbindd_privileged' under \"state\ndirectory\", as set in the smb.conf).\n\nThis access is normally only given so special system services like\nSquid or FreeRADIUS, that use this feature.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2127",
+				"ID": "CVE-2022-2127",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4091",
+				"ID": "CVE-2023-4091",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba-client",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-client-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba-client-libs",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-client-libs-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "samba-common",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-common-4.10.16-24.amzn2.0.4.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba-common-libs",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-common-libs-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba-common-tools",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-common-tools-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba-dc",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-dc-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba-dc-libs",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-dc-libs-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba-devel",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-devel-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba-vfs-glusterfs",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-vfs-glusterfs-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba-krb5-printing",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-krb5-printing-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba-libs",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-libs-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsmbclient",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/libsmbclient-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsmbclient-devel",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/libsmbclient-devel-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libwbclient",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/libwbclient-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libwbclient-devel",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/libwbclient-devel-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba-python",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-python-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba-python-test",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-python-test-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "samba-pidl",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-pidl-4.10.16-24.amzn2.0.4.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba-test",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-test-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba-test-libs",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-test-libs-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba-winbind",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-winbind-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba-winbind-clients",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-winbind-clients-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba-winbind-krb5-locator",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-winbind-krb5-locator-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba-winbind-modules",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-winbind-modules-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ctdb",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/ctdb-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ctdb-tests",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/ctdb-tests-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "samba-debuginfo",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-debuginfo-4.10.16-24.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "samba",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "samba-client",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-client-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "samba-client-libs",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-client-libs-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "samba-common-libs",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-common-libs-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "samba-common-tools",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-common-tools-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "samba-dc",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-dc-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "samba-dc-libs",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-dc-libs-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "samba-devel",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-devel-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "samba-krb5-printing",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-krb5-printing-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "samba-libs",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-libs-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libsmbclient",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/libsmbclient-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libsmbclient-devel",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/libsmbclient-devel-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libwbclient",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/libwbclient-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libwbclient-devel",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/libwbclient-devel-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "samba-python",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-python-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "samba-python-test",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-python-test-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "samba-test",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-test-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "samba-test-libs",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-test-libs-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "samba-winbind",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-winbind-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "samba-winbind-clients",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-winbind-clients-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "samba-winbind-krb5-locator",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-winbind-krb5-locator-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "samba-winbind-modules",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-winbind-modules-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "ctdb",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/ctdb-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "ctdb-tests",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/ctdb-tests-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "samba-debuginfo",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-debuginfo-4.10.16-24.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "samba",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "samba-client",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-client-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "samba-client-libs",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-client-libs-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "samba-common-libs",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-common-libs-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "samba-common-tools",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-common-tools-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "samba-dc",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-dc-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "samba-dc-libs",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-dc-libs-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "samba-devel",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-devel-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "samba-krb5-printing",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-krb5-printing-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "samba-libs",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-libs-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libsmbclient",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/libsmbclient-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libsmbclient-devel",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/libsmbclient-devel-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libwbclient",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/libwbclient-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libwbclient-devel",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/libwbclient-devel-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "samba-python",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-python-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "samba-python-test",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-python-test-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "samba-test",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-test-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "samba-test-libs",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-test-libs-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "samba-winbind",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-winbind-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "samba-winbind-clients",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-winbind-clients-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "samba-winbind-krb5-locator",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-winbind-krb5-locator-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "samba-winbind-modules",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-winbind-modules-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "ctdb",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/ctdb-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "ctdb-tests",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/ctdb-tests-4.10.16-24.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "samba-debuginfo",
+					"Release": "24.amzn2.0.4",
+					"Version": "4.10.16",
+					"Filename": "Packages/samba-debuginfo-4.10.16-24.amzn2.0.4.i686.rpm"
+				}
+			]
+		}
+	}
+}
