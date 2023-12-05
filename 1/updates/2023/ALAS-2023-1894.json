@@ -1,0 +1,83 @@
+{
+	"ID": "ALAS-2023-1894",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2023-1894: medium priority package update for libXpm",
+	"Issued": {
+		"Date": "2023-11-29 23:18"
+	},
+	"Updated": {
+		"Date": "2023-11-29 23:18"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2023-43788:\n\tlibXpm: out of bounds read in XpmCreateXpmImageFromBuffer()\n\nNOTE: https://www.openwall.com/lists/oss-security/2023/10/03/1\nNOTE: Fixed by: https://gitlab.freedesktop.org/xorg/lib/libxpm/-/commit/2fa554b01ef6079a9b35df9332bdc4f139ed67e0\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-43788",
+				"ID": "CVE-2023-43788",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libXpm-debuginfo",
+					"Release": "2.13.amzn1",
+					"Version": "3.5.10",
+					"Filename": "Packages/libXpm-debuginfo-3.5.10-2.13.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libXpm",
+					"Release": "2.13.amzn1",
+					"Version": "3.5.10",
+					"Filename": "Packages/libXpm-3.5.10-2.13.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libXpm-devel",
+					"Release": "2.13.amzn1",
+					"Version": "3.5.10",
+					"Filename": "Packages/libXpm-devel-3.5.10-2.13.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libXpm-devel",
+					"Release": "2.13.amzn1",
+					"Version": "3.5.10",
+					"Filename": "Packages/libXpm-devel-3.5.10-2.13.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libXpm-debuginfo",
+					"Release": "2.13.amzn1",
+					"Version": "3.5.10",
+					"Filename": "Packages/libXpm-debuginfo-3.5.10-2.13.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libXpm",
+					"Release": "2.13.amzn1",
+					"Version": "3.5.10",
+					"Filename": "Packages/libXpm-3.5.10-2.13.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
+}
