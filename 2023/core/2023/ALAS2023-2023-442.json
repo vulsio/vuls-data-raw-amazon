@@ -1,0 +1,51 @@
+{
+	"ID": "ALAS2023-2023-442",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2023-442: Medium priority package update for python-pip",
+	"Issued": {
+		"Date": "2023-12-06 07:45:00"
+	},
+	"Updated": {
+		"Date": "2023-12-06 07:45:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-5752:\n\tWhen installing a package from a Mercurial VCS URL  (ie \"pip install \nhg+...\") with pip prior to v23.3, the specified Mercurial revision could\n be used to inject arbitrary configuration options to the \"hg clone\" \ncall (ie \"--config\"). Controlling the Mercurial configuration can modify\n how and which repository is installed. This vulnerability does not \naffect users who aren't installing from Mercurial.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5752",
+				"ID": "CVE-2023-5752",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python3-pip-wheel",
+					"Release": "2.amzn2023.0.7",
+					"Version": "21.3.1",
+					"Filename": "Packages/python3-pip-wheel-21.3.1-2.amzn2023.0.7.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python3-pip",
+					"Release": "2.amzn2023.0.7",
+					"Version": "21.3.1",
+					"Filename": "Packages/python3-pip-21.3.1-2.amzn2023.0.7.noarch.rpm"
+				}
+			]
+		}
+	}
+}
