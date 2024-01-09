@@ -10,15 +10,21 @@
 		"Date": "2023-12-13 20:28:00"
 	},
 	"Updated": {
-		"Date": "2023-12-14 21:42:00"
+		"Date": "2024-01-03 23:20:00"
 	},
 	"Severity": "Important",
-	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-6111:\n\tA use-after-free vulnerability in the Linux kernel's netfilter: nf_tables component can be exploited to achieve local privilege escalation.\n\nThe function nft_trans_gc_catchall did not remove the catchall set element from the catchall_list when the argument sync is true, making it possible to free a catchall set element many times.\n\nWe recommend upgrading past commit 93995bf4af2c5a99e2a87f0cd5ce547d31eb7630.\n",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-6932:\n\tA use-after-free vulnerability in the Linux kernel's ipv4: igmp component can be exploited to achieve local privilege escalation.\n\nA race condition can be exploited to cause a timer be mistakenly registered on a RCU read locked object which is freed by another thread.\n\nWe recommend upgrading past commit e2b706c691905fe78468c361aaabc719d0a496f1.\n\nCVE-2023-6111:\n\tA use-after-free vulnerability in the Linux kernel's netfilter: nf_tables component can be exploited to achieve local privilege escalation.\n\nThe function nft_trans_gc_catchall did not remove the catchall set element from the catchall_list when the argument sync is true, making it possible to free a catchall set element many times.\n\nWe recommend upgrading past commit 93995bf4af2c5a99e2a87f0cd5ce547d31eb7630.\n",
 	"References": {
 		"Reference": [
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6111",
 				"ID": "CVE-2023-6111",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6932",
+				"ID": "CVE-2023-6932",
 				"Title": "",
 				"Type": "cve"
 			}
