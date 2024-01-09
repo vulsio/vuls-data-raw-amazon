@@ -1,0 +1,161 @@
+{
+	"ID": "ALAS-2024-1902",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2024-1902: low priority package update for vim",
+	"Issued": {
+		"Date": "2024-01-03 22:37"
+	},
+	"Updated": {
+		"Date": "2024-01-03 22:37"
+	},
+	"Severity": "low",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2023-48237:\n\tVim is an open source command line text editor. In affected versions when shifting lines in operator pending mode and using a very large value, it may be possible to overflow the size of integer. Impact is low, user interaction is required and a crash may not even happen in all situations. This issue has been addressed in commit `6bf131888` which has been included in version 9.0.2112. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\nCVE-2023-48236:\n\tVim is an open source command line text editor. When using the z= command, the user may overflow the count with values larger\nthan MAX_INT. Impact is low, user interaction is required and a crash may not even happen in all situations. This vulnerability has been addressed in commit `73b2d379` which has been included in release version 9.0.2111. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\nCVE-2023-48235:\n\tVim is an open source command line text editor. When parsing relative ex addresses one may unintentionally cause an\noverflow. Ironically this happens in the existing overflow check, because the line number becomes negative and LONG_MAX - lnum will cause the overflow. Impact is low, user interaction is required and a crash may not even happen in all situations. This issue has been addressed in commit `060623e` which has been included in release version 9.0.2110. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\nCVE-2023-48234:\n\tVim is an open source command line text editor. When getting the count for a normal mode z command, it may overflow for large counts given. Impact is low, user interaction is required and a crash may not even happen in all situations. This issue has been addressed in commit `58f9befca1` which has been included in release version 9.0.2109. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\nCVE-2023-48233:\n\tVim is an open source command line text editor. If the count after the :s command is larger than what fits into a (signed) long variable, abort with e_value_too_large. Impact is low, user interaction is required and a crash may not even happen in all situations. This issue has been addressed in commit `ac6378773` which has been included in release version 9.0.2108. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\nCVE-2023-48231:\n\tVim is an open source command line text editor. When closing a window, vim may try to access already freed window structure. Exploitation beyond crashing the application has not been shown to be viable. This issue has been addressed in commit `25aabc2b` which has been included in release version 9.0.2106. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-48231",
+				"ID": "CVE-2023-48231",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-48233",
+				"ID": "CVE-2023-48233",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-48234",
+				"ID": "CVE-2023-48234",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-48235",
+				"ID": "CVE-2023-48235",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-48236",
+				"ID": "CVE-2023-48236",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-48237",
+				"ID": "CVE-2023-48237",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "2",
+					"Name": "vim-data",
+					"Release": "1.87.amzn1",
+					"Version": "9.0.2120",
+					"Filename": "Packages/vim-data-9.0.2120-1.87.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "vim-enhanced",
+					"Release": "1.87.amzn1",
+					"Version": "9.0.2120",
+					"Filename": "Packages/vim-enhanced-9.0.2120-1.87.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "vim-common",
+					"Release": "1.87.amzn1",
+					"Version": "9.0.2120",
+					"Filename": "Packages/vim-common-9.0.2120-1.87.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "xxd",
+					"Release": "1.87.amzn1",
+					"Version": "9.0.2120",
+					"Filename": "Packages/xxd-9.0.2120-1.87.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "2",
+					"Name": "vim-filesystem",
+					"Release": "1.87.amzn1",
+					"Version": "9.0.2120",
+					"Filename": "Packages/vim-filesystem-9.0.2120-1.87.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "vim-minimal",
+					"Release": "1.87.amzn1",
+					"Version": "9.0.2120",
+					"Filename": "Packages/vim-minimal-9.0.2120-1.87.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "vim-debuginfo",
+					"Release": "1.87.amzn1",
+					"Version": "9.0.2120",
+					"Filename": "Packages/vim-debuginfo-9.0.2120-1.87.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "2",
+					"Name": "xxd",
+					"Release": "1.87.amzn1",
+					"Version": "9.0.2120",
+					"Filename": "Packages/xxd-9.0.2120-1.87.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "2",
+					"Name": "vim-minimal",
+					"Release": "1.87.amzn1",
+					"Version": "9.0.2120",
+					"Filename": "Packages/vim-minimal-9.0.2120-1.87.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "2",
+					"Name": "vim-debuginfo",
+					"Release": "1.87.amzn1",
+					"Version": "9.0.2120",
+					"Filename": "Packages/vim-debuginfo-9.0.2120-1.87.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "2",
+					"Name": "vim-common",
+					"Release": "1.87.amzn1",
+					"Version": "9.0.2120",
+					"Filename": "Packages/vim-common-9.0.2120-1.87.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "2",
+					"Name": "vim-enhanced",
+					"Release": "1.87.amzn1",
+					"Version": "9.0.2120",
+					"Filename": "Packages/vim-enhanced-9.0.2120-1.87.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
+}
