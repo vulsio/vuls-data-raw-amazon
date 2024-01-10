@@ -1,0 +1,103 @@
+{
+	"ID": "ALAS2FIREFOX-2024-019",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Firefox 2.0 - ALAS2FIREFOX-2024-019: important priority package update for firefox",
+	"Issued": {
+		"Date": "2024-01-03 23:00"
+	},
+	"Updated": {
+		"Date": "2024-01-03 23:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Firefox that fix the following vulnerabilities:\nCVE-2023-6212:\n\tMemory safety bugs present in Firefox 119, Firefox 115.4, and Thunderbird 115.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 120, Firefox < 115.5, and Thunderbird < 115.5.0.\n\nCVE-2023-6209:\n\tRelative URLs starting with three slashes were incorrectly parsed, and a path-traversal \"/../\" part in the path could be used to override the specified host. This could contribute to security problems in web sites. This vulnerability affects Firefox < 120, Firefox < 115.5, and Thunderbird < 115.5.0.\n\nCVE-2023-6208:\n\tWhen using X11, text selected by the page using the Selection API was erroneously copied into the primary selection, a temporary storage not unlike the clipboard.\n*This bug only affects Thunderbird on X11. Other systems are unaffected.* This vulnerability affects Firefox < 120, Firefox < 115.5, and Thunderbird < 115.5.0.\n\nCVE-2023-6207:\n\tOwnership mismanagement led to a use-after-free in ReadableByteStreams This vulnerability affects Firefox < 120, Firefox < 115.5, and Thunderbird < 115.5.0.\n\nCVE-2023-6206:\n\tThe black fade animation when exiting fullscreen is roughly the length of the anti-clickjacking delay on permission prompts. It was possible to use this fact to surprise users by luring them to click where the permission grant button would be about to appear. This vulnerability affects Firefox < 120, Firefox < 115.5, and Thunderbird < 115.5.0.\n\nCVE-2023-6205:\n\tIt was possible to cause the use of a MessagePort after it had already been freed, which could potentially have led to an exploitable crash. This vulnerability affects Firefox < 120, Firefox < 115.5, and Thunderbird < 115.5.0.\n\nCVE-2023-6204:\n\tOn some systems--depending on the graphics settings and drivers--it was possible to force an out-of-bounds read and leak memory data into the images created on the canvas element. This vulnerability affects Firefox < 120, Firefox < 115.5, and Thunderbird < 115.5.0.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6204",
+				"ID": "CVE-2023-6204",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6205",
+				"ID": "CVE-2023-6205",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6206",
+				"ID": "CVE-2023-6206",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6207",
+				"ID": "CVE-2023-6207",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6208",
+				"ID": "CVE-2023-6208",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6209",
+				"ID": "CVE-2023-6209",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6212",
+				"ID": "CVE-2023-6212",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---firefox",
+			"Name": "Amazon Linux 2 - Firefox",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "firefox",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.5.0",
+					"Filename": "Packages/firefox-115.5.0-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "firefox-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.5.0",
+					"Filename": "Packages/firefox-debuginfo-115.5.0-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "firefox",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.5.0",
+					"Filename": "Packages/firefox-115.5.0-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "firefox-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.5.0",
+					"Filename": "Packages/firefox-debuginfo-115.5.0-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

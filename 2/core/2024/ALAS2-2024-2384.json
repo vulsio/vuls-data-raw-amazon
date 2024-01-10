@@ -1,0 +1,195 @@
+{
+	"ID": "ALAS2-2024-2384",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2384: low priority package update for vim",
+	"Issued": {
+		"Date": "2024-01-03 21:04"
+	},
+	"Updated": {
+		"Date": "2024-01-03 21:04"
+	},
+	"Severity": "low",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-48706:\n\tVim is a UNIX editor that, prior to version 9.0.2121, has a heap-use-after-free vulnerability. When executing a `:s` command for the very first time and using a sub-replace-special atom inside the substitution part, it is possible that the recursive `:s` call causes free-ing of memory which may later then be accessed by the initial `:s` command. The user must intentionally execute the payload and the whole process is a bit tricky to do since it seems to work only reliably for the very first :s command. It may also cause a crash of Vim. Version 9.0.2121 contains a fix for this issue.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-48706",
+				"ID": "CVE-2023-48706",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "vim-common",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/vim-common-9.0.2153-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "vim-minimal",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/vim-minimal-9.0.2153-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "vim-enhanced",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/vim-enhanced-9.0.2153-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "2",
+					"Name": "vim-filesystem",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/vim-filesystem-9.0.2153-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "vim-X11",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/vim-X11-9.0.2153-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "2",
+					"Name": "vim-data",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/vim-data-9.0.2153-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "xxd",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/xxd-9.0.2153-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "vim-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/vim-debuginfo-9.0.2153-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "2",
+					"Name": "vim-common",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/vim-common-9.0.2153-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "2",
+					"Name": "vim-minimal",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/vim-minimal-9.0.2153-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "2",
+					"Name": "vim-enhanced",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/vim-enhanced-9.0.2153-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "2",
+					"Name": "vim-X11",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/vim-X11-9.0.2153-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "2",
+					"Name": "xxd",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/xxd-9.0.2153-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "2",
+					"Name": "vim-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/vim-debuginfo-9.0.2153-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "vim-common",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/vim-common-9.0.2153-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "vim-minimal",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/vim-minimal-9.0.2153-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "vim-enhanced",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/vim-enhanced-9.0.2153-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "vim-X11",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/vim-X11-9.0.2153-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "xxd",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/xxd-9.0.2153-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "vim-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.2153",
+					"Filename": "Packages/vim-debuginfo-9.0.2153-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

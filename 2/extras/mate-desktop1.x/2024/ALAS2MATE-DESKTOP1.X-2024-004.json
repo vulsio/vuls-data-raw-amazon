@@ -1,0 +1,95 @@
+{
+	"ID": "ALAS2MATE-DESKTOP1.X-2024-004",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Mate-desktop1.x 2.0 - ALAS2MATE-DESKTOP1.X-2024-004: important priority package update for libsass",
+	"Issued": {
+		"Date": "2024-01-03 23:00"
+	},
+	"Updated": {
+		"Date": "2024-01-03 23:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Mate-desktop1.x that fix the following vulnerabilities:\nCVE-2022-43358:\n\tStack overflow vulnerability in ast_selectors.cpp: in function Sass::ComplexSelector::has_placeholder in libsass:3.6.5-8-g210218, which can be exploited by attackers to cause a denial of service (DoS).\n\nCVE-2022-43357:\n\tStack overflow vulnerability in ast_selectors.cpp in function Sass::CompoundSelector::has_real_parent_ref in libsass:3.6.5-8-g210218, which can be exploited by attackers to causea denial of service (DoS). Also affects the command line driver for libsass, sassc 3.6.2.\n\nCVE-2022-26592:\n\tStack Overflow vulnerability in libsass 3.6.5 via the CompoundSelector::has_real_parent_ref function.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26592",
+				"ID": "CVE-2022-26592",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-43357",
+				"ID": "CVE-2022-43357",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-43358",
+				"ID": "CVE-2022-43358",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---mate-desktop1.x",
+			"Name": "Amazon Linux 2 - Mate-desktop1.x",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsass",
+					"Release": "3.amzn2.0.1",
+					"Version": "3.6.4",
+					"Filename": "Packages/libsass-3.6.4-3.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsass-devel",
+					"Release": "3.amzn2.0.1",
+					"Version": "3.6.4",
+					"Filename": "Packages/libsass-devel-3.6.4-3.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsass-debuginfo",
+					"Release": "3.amzn2.0.1",
+					"Version": "3.6.4",
+					"Filename": "Packages/libsass-debuginfo-3.6.4-3.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libsass",
+					"Release": "3.amzn2.0.1",
+					"Version": "3.6.4",
+					"Filename": "Packages/libsass-3.6.4-3.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libsass-devel",
+					"Release": "3.amzn2.0.1",
+					"Version": "3.6.4",
+					"Filename": "Packages/libsass-devel-3.6.4-3.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libsass-debuginfo",
+					"Release": "3.amzn2.0.1",
+					"Version": "3.6.4",
+					"Filename": "Packages/libsass-debuginfo-3.6.4-3.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

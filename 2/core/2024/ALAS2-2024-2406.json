@@ -1,0 +1,83 @@
+{
+	"ID": "ALAS2-2024-2406",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2406: medium priority package update for python-ldap",
+	"Issued": {
+		"Date": "2024-01-03 21:04"
+	},
+	"Updated": {
+		"Date": "2024-01-03 21:04"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-46823:\n\tpython-ldap before 3.4.0 is vulnerable to a denial of service when ldap.schema is used for untrusted schema definitions, because of a regular expression denial of service (ReDoS) flaw in the LDAP schema parser. By sending crafted regex input, a remote authenticated attacker could exploit this vulnerability to cause a denial of service condition.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-46823",
+				"ID": "CVE-2021-46823",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-ldap",
+					"Release": "2.amzn2.0.3",
+					"Version": "2.4.15",
+					"Filename": "Packages/python-ldap-2.4.15-2.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-ldap-debuginfo",
+					"Release": "2.amzn2.0.3",
+					"Version": "2.4.15",
+					"Filename": "Packages/python-ldap-debuginfo-2.4.15-2.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python-ldap",
+					"Release": "2.amzn2.0.3",
+					"Version": "2.4.15",
+					"Filename": "Packages/python-ldap-2.4.15-2.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python-ldap-debuginfo",
+					"Release": "2.amzn2.0.3",
+					"Version": "2.4.15",
+					"Filename": "Packages/python-ldap-debuginfo-2.4.15-2.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-ldap",
+					"Release": "2.amzn2.0.3",
+					"Version": "2.4.15",
+					"Filename": "Packages/python-ldap-2.4.15-2.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-ldap-debuginfo",
+					"Release": "2.amzn2.0.3",
+					"Version": "2.4.15",
+					"Filename": "Packages/python-ldap-debuginfo-2.4.15-2.amzn2.0.3.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,119 @@
+{
+	"ID": "ALAS2-2024-2399",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2399: medium priority package update for c-ares",
+	"Issued": {
+		"Date": "2024-01-03 21:04"
+	},
+	"Updated": {
+		"Date": "2024-01-03 21:04"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-31130:\n\tares_inet_net_pton() is vulnerable to a buffer underflow for certain ipv6 addresses, in particular \"0::00:00:00/2\" was found to cause an issue. C-ares only uses this function internally for configuration purposes which would require an administrator to configure such an address via ares_set_sortlist().\n\nHowever, users may externally use ares_inet_net_pton() for other purposes and thus be vulnerable to more severe issues.\n\nCVE-2022-4904:\n\tA flaw was found in the c-ares package. The ares_set_sortlist is missing checks about the validity of the input string, which allows a possible arbitrary length stack overflow. This issue may cause a denial of service or a limited impact on confidentiality and integrity.\n\nCVE-2021-3672:\n\tA flaw was found in c-ares library, where a missing input validation check of host names returned by DNS (Domain Name Servers) can lead to output of wrong hostnames which might potentially lead to Domain Hijacking. The highest threat from this vulnerability is to confidentiality and integrity as well as system availability.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3672",
+				"ID": "CVE-2021-3672",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4904",
+				"ID": "CVE-2022-4904",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-31130",
+				"ID": "CVE-2023-31130",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "c-ares",
+					"Release": "3.amzn2.0.4",
+					"Version": "1.10.0",
+					"Filename": "Packages/c-ares-1.10.0-3.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "c-ares-devel",
+					"Release": "3.amzn2.0.4",
+					"Version": "1.10.0",
+					"Filename": "Packages/c-ares-devel-1.10.0-3.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "c-ares-debuginfo",
+					"Release": "3.amzn2.0.4",
+					"Version": "1.10.0",
+					"Filename": "Packages/c-ares-debuginfo-1.10.0-3.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "c-ares",
+					"Release": "3.amzn2.0.4",
+					"Version": "1.10.0",
+					"Filename": "Packages/c-ares-1.10.0-3.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "c-ares-devel",
+					"Release": "3.amzn2.0.4",
+					"Version": "1.10.0",
+					"Filename": "Packages/c-ares-devel-1.10.0-3.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "c-ares-debuginfo",
+					"Release": "3.amzn2.0.4",
+					"Version": "1.10.0",
+					"Filename": "Packages/c-ares-debuginfo-1.10.0-3.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "c-ares",
+					"Release": "3.amzn2.0.4",
+					"Version": "1.10.0",
+					"Filename": "Packages/c-ares-1.10.0-3.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "c-ares-devel",
+					"Release": "3.amzn2.0.4",
+					"Version": "1.10.0",
+					"Filename": "Packages/c-ares-devel-1.10.0-3.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "c-ares-debuginfo",
+					"Release": "3.amzn2.0.4",
+					"Version": "1.10.0",
+					"Filename": "Packages/c-ares-debuginfo-1.10.0-3.amzn2.0.4.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,145 @@
+{
+	"ID": "ALAS2-2024-2398",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2398: medium priority package update for resteasy-base",
+	"Issued": {
+		"Date": "2024-01-03 21:04"
+	},
+	"Updated": {
+		"Date": "2024-01-03 21:04"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-0482:\n\tIn RESTEasy the insecure File.createTempFile() is used in the DataSourceProvider, FileProvider and Mime4JWorkaround classes which creates temp files with insecure permissions that could be read by a local user.\n\nCVE-2021-20289:\n\tA flaw was found in RESTEasy in all versions of RESTEasy up to 4.6.0.Final. The endpoint class and method names are returned as part of the exception response when RESTEasy cannot convert one of the request URI path or query values to the matching JAX-RS resource method's parameter value. The highest threat from this vulnerability is to data confidentiality.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-20289",
+				"ID": "CVE-2021-20289",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-0482",
+				"ID": "CVE-2023-0482",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "resteasy-base",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.0.6",
+					"Filename": "Packages/resteasy-base-3.0.6-4.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "resteasy-base-javadoc",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.0.6",
+					"Filename": "Packages/resteasy-base-javadoc-3.0.6-4.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "resteasy-base-jaxrs-api",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.0.6",
+					"Filename": "Packages/resteasy-base-jaxrs-api-3.0.6-4.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "resteasy-base-providers-pom",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.0.6",
+					"Filename": "Packages/resteasy-base-providers-pom-3.0.6-4.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "resteasy-base-atom-provider",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.0.6",
+					"Filename": "Packages/resteasy-base-atom-provider-3.0.6-4.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "resteasy-base-jackson-provider",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.0.6",
+					"Filename": "Packages/resteasy-base-jackson-provider-3.0.6-4.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "resteasy-base-jaxb-provider",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.0.6",
+					"Filename": "Packages/resteasy-base-jaxb-provider-3.0.6-4.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "resteasy-base-jaxrs",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.0.6",
+					"Filename": "Packages/resteasy-base-jaxrs-3.0.6-4.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "resteasy-base-jaxrs-all",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.0.6",
+					"Filename": "Packages/resteasy-base-jaxrs-all-3.0.6-4.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "resteasy-base-jettison-provider",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.0.6",
+					"Filename": "Packages/resteasy-base-jettison-provider-3.0.6-4.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "resteasy-base-tjws",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.0.6",
+					"Filename": "Packages/resteasy-base-tjws-3.0.6-4.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "resteasy-base-client",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.0.6",
+					"Filename": "Packages/resteasy-base-client-3.0.6-4.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "resteasy-base-resteasy-pom",
+					"Release": "4.amzn2.0.1",
+					"Version": "3.0.6",
+					"Filename": "Packages/resteasy-base-resteasy-pom-3.0.6-4.amzn2.0.1.noarch.rpm"
+				}
+			]
+		}
+	}
+}

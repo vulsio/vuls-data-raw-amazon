@@ -1,0 +1,83 @@
+{
+	"ID": "ALAS2-2024-2390",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2390: low priority package update for tar",
+	"Issued": {
+		"Date": "2024-01-03 21:04"
+	},
+	"Updated": {
+		"Date": "2024-01-03 21:04"
+	},
+	"Severity": "low",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-39804:\n\tIt was discovered that tar incorrectly handled extended attributes in PAX archives. An attacker could supply a specially crafted file and cause tar to crash, resulting in a denial of service.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39804",
+				"ID": "CVE-2023-39804",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "tar",
+					"Release": "35.amzn2.0.3",
+					"Version": "1.26",
+					"Filename": "Packages/tar-1.26-35.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "tar-debuginfo",
+					"Release": "35.amzn2.0.3",
+					"Version": "1.26",
+					"Filename": "Packages/tar-debuginfo-1.26-35.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "2",
+					"Name": "tar",
+					"Release": "35.amzn2.0.3",
+					"Version": "1.26",
+					"Filename": "Packages/tar-1.26-35.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "2",
+					"Name": "tar-debuginfo",
+					"Release": "35.amzn2.0.3",
+					"Version": "1.26",
+					"Filename": "Packages/tar-debuginfo-1.26-35.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "tar",
+					"Release": "35.amzn2.0.3",
+					"Version": "1.26",
+					"Filename": "Packages/tar-1.26-35.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "tar-debuginfo",
+					"Release": "35.amzn2.0.3",
+					"Version": "1.26",
+					"Filename": "Packages/tar-debuginfo-1.26-35.amzn2.0.3.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

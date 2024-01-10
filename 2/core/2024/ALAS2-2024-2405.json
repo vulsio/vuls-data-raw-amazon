@@ -1,0 +1,43 @@
+{
+	"ID": "ALAS2-2024-2405",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2405: low priority package update for perl-HTTP-Daemon",
+	"Issued": {
+		"Date": "2024-01-03 21:04"
+	},
+	"Updated": {
+		"Date": "2024-01-03 21:04"
+	},
+	"Severity": "low",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-31081:\n\tHTTP::Daemon is a simple http server class written in perl. Versions prior to 6.15 are subject to a vulnerability which could potentially be exploited to gain privileged access to APIs or poison intermediate caches. It is uncertain how large the risks are, most Perl based applications are served on top of Nginx or Apache, not on the `HTTP::Daemon`. This library is commonly used for local development and tests. Users are advised to update to resolve this issue. Users unable to upgrade may add additional request handling logic as a mitigation. After calling `my $rqst = $conn->get_request()` one could inspect the returned `HTTP::Request` object. Querying the 'Content-Length' (`my $cl = $rqst->header('Content-Length')`) will show any abnormalities that should be dealt with by a `400` response. Expected strings of 'Content-Length' SHOULD consist of either a single non-negative integer, or, a comma separated repetition of that number. (that is `42` or `42, 42, 42`). Anything else MUST be rejected.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-31081",
+				"ID": "CVE-2022-31081",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "perl-HTTP-Daemon",
+					"Release": "8.amzn2.0.1",
+					"Version": "6.01",
+					"Filename": "Packages/perl-HTTP-Daemon-6.01-8.amzn2.0.1.noarch.rpm"
+				}
+			]
+		}
+	}
+}

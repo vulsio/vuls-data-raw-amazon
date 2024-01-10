@@ -1,0 +1,67 @@
+{
+	"ID": "ALAS2HAPROXY2-2024-008",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Haproxy2 2.0 - ALAS2HAPROXY2-2024-008: medium priority package update for haproxy2",
+	"Issued": {
+		"Date": "2024-01-03 23:00"
+	},
+	"Updated": {
+		"Date": "2024-01-03 23:00"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 - Haproxy2 that fix the following vulnerabilities:\nCVE-2023-45539:\n\tHAProxy before 2.8.2 accepts # as part of the URI component, which might allow remote attackers to obtain sensitive information or have unspecified other impact upon misinterpretation of a path_end rule, such as routing index.html#.png to a static server.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45539",
+				"ID": "CVE-2023-45539",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---haproxy2",
+			"Name": "Amazon Linux 2 - Haproxy2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "haproxy2",
+					"Release": "1.amzn2.0.8",
+					"Version": "2.2.17",
+					"Filename": "Packages/haproxy2-2.2.17-1.amzn2.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "haproxy2-debuginfo",
+					"Release": "1.amzn2.0.8",
+					"Version": "2.2.17",
+					"Filename": "Packages/haproxy2-debuginfo-2.2.17-1.amzn2.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "haproxy2",
+					"Release": "1.amzn2.0.8",
+					"Version": "2.2.17",
+					"Filename": "Packages/haproxy2-2.2.17-1.amzn2.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "haproxy2-debuginfo",
+					"Release": "1.amzn2.0.8",
+					"Version": "2.2.17",
+					"Filename": "Packages/haproxy2-debuginfo-2.2.17-1.amzn2.0.8.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

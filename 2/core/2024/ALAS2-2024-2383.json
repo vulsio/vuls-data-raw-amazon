@@ -1,0 +1,85 @@
+{
+	"ID": "ALAS2-2024-2383",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2383: important priority package update for virtuoso-opensource",
+	"Issued": {
+		"Date": "2024-01-03 21:04"
+	},
+	"Updated": {
+		"Date": "2024-01-03 21:04"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-48952:\n\tAn issue in the box_deserialize_reusing function in openlink virtuoso-opensource v7.2.11 allows attackers to cause a Denial of Service (DoS) after running a SELECT statement.\n\nCVE-2023-48951:\n\tAn issue in the box_equal function in openlink virtuoso-opensource v7.2.11 allows attackers to cause a Denial of Service (DoS) after running a SELECT statement.\n\nCVE-2023-48949:\n\tAn issue in the box_add function in openlink virtuoso-opensource v7.2.11 allows attackers to cause a Denial of Service (DoS) after running a SELECT statement.\n\nCVE-2023-48948:\n\tAn issue in the box_div function in openlink virtuoso-opensource v7.2.11 allows attackers to cause a Denial of Service (DoS) after running a SELECT statement.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-48948",
+				"ID": "CVE-2023-48948",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-48949",
+				"ID": "CVE-2023-48949",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-48951",
+				"ID": "CVE-2023-48951",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-48952",
+				"ID": "CVE-2023-48952",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "virtuoso-opensource",
+					"Release": "2.amzn2.0.1",
+					"Version": "7.2.11",
+					"Filename": "Packages/virtuoso-opensource-7.2.11-2.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "virtuoso-opensource-debuginfo",
+					"Release": "2.amzn2.0.1",
+					"Version": "7.2.11",
+					"Filename": "Packages/virtuoso-opensource-debuginfo-7.2.11-2.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "virtuoso-opensource",
+					"Release": "2.amzn2.0.1",
+					"Version": "7.2.11",
+					"Filename": "Packages/virtuoso-opensource-7.2.11-2.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "virtuoso-opensource-debuginfo",
+					"Release": "2.amzn2.0.1",
+					"Version": "7.2.11",
+					"Filename": "Packages/virtuoso-opensource-debuginfo-7.2.11-2.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
