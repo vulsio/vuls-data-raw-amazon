@@ -1,0 +1,131 @@
+{
+	"ID": "ALAS-2024-1908",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2024-1908: important priority package update for exim",
+	"Issued": {
+		"Date": "2024-01-19 01:19"
+	},
+	"Updated": {
+		"Date": "2024-01-19 01:19"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2023-51766:\n\tExim through 4.97 allows SMTP smuggling in certain configurations. Remote attackers can use a published exploitation technique to inject e-mail messages with a spoofed MAIL FROM address, allowing bypass of an SPF protection mechanism. This occurs because Exim supports <LF>.<CR><LF> but some other popular e-mail servers do not.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-51766",
+				"ID": "CVE-2023-51766",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "exim-mysql",
+					"Release": "1.40.amzn1",
+					"Version": "4.92",
+					"Filename": "Packages/exim-mysql-4.92-1.40.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "exim-mon",
+					"Release": "1.40.amzn1",
+					"Version": "4.92",
+					"Filename": "Packages/exim-mon-4.92-1.40.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "exim-pgsql",
+					"Release": "1.40.amzn1",
+					"Version": "4.92",
+					"Filename": "Packages/exim-pgsql-4.92-1.40.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "exim",
+					"Release": "1.40.amzn1",
+					"Version": "4.92",
+					"Filename": "Packages/exim-4.92-1.40.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "exim-debuginfo",
+					"Release": "1.40.amzn1",
+					"Version": "4.92",
+					"Filename": "Packages/exim-debuginfo-4.92-1.40.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "exim-greylist",
+					"Release": "1.40.amzn1",
+					"Version": "4.92",
+					"Filename": "Packages/exim-greylist-4.92-1.40.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "exim-mysql",
+					"Release": "1.40.amzn1",
+					"Version": "4.92",
+					"Filename": "Packages/exim-mysql-4.92-1.40.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "exim-pgsql",
+					"Release": "1.40.amzn1",
+					"Version": "4.92",
+					"Filename": "Packages/exim-pgsql-4.92-1.40.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "exim-greylist",
+					"Release": "1.40.amzn1",
+					"Version": "4.92",
+					"Filename": "Packages/exim-greylist-4.92-1.40.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "exim",
+					"Release": "1.40.amzn1",
+					"Version": "4.92",
+					"Filename": "Packages/exim-4.92-1.40.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "exim-mon",
+					"Release": "1.40.amzn1",
+					"Version": "4.92",
+					"Filename": "Packages/exim-mon-4.92-1.40.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "exim-debuginfo",
+					"Release": "1.40.amzn1",
+					"Version": "4.92",
+					"Filename": "Packages/exim-debuginfo-4.92-1.40.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
+}

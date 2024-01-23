@@ -1,0 +1,323 @@
+{
+	"ID": "ALAS2023-2024-495",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-495: Important priority package update for postfix",
+	"Issued": {
+		"Date": "2024-01-19 01:31:00"
+	},
+	"Updated": {
+		"Date": "2024-01-19 01:31:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-51764:\n\tPostfix through 3.8.4 allows SMTP smuggling unless configured with smtpd_data_restrictions=reject_unauth_pipelining and smtpd_discard_ehlo_keywords=chunking (or certain other options that exist in recent versions). Remote attackers can use a published exploitation technique to inject e-mail messages with a spoofed MAIL FROM address, allowing bypass of an SPF protection mechanism. This occurs because Postfix supports <LF>.<CR><LF> but some other popular e-mail servers do not. To prevent attack variants (by always disallowing <LF> without <CR>), a different solution is required: the smtpd_forbid_bare_newline=yes option with a Postfix minimum version of 3.5.23, 3.6.13, 3.7.9, 3.8.4, or 3.9.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-51764",
+				"ID": "CVE-2023-51764",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "postfix-mysql-debuginfo",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-mysql-debuginfo-3.7.2-4.amzn2023.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "postfix-ldap-debuginfo",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-ldap-debuginfo-3.7.2-4.amzn2023.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "postfix-perl-scripts",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-perl-scripts-3.7.2-4.amzn2023.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "postfix-cdb-debuginfo",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-cdb-debuginfo-3.7.2-4.amzn2023.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "postfix-sqlite",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-sqlite-3.7.2-4.amzn2023.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "postfix-pcre",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-pcre-3.7.2-4.amzn2023.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "postfix-pgsql",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-pgsql-3.7.2-4.amzn2023.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "postfix-sqlite-debuginfo",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-sqlite-debuginfo-3.7.2-4.amzn2023.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "postfix-ldap",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-ldap-3.7.2-4.amzn2023.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "postfix-pcre-debuginfo",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-pcre-debuginfo-3.7.2-4.amzn2023.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "postfix-pgsql-debuginfo",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-pgsql-debuginfo-3.7.2-4.amzn2023.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "postfix-lmdb",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-lmdb-3.7.2-4.amzn2023.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "postfix-lmdb-debuginfo",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-lmdb-debuginfo-3.7.2-4.amzn2023.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "postfix-cdb",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-cdb-3.7.2-4.amzn2023.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "postfix-mysql",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-mysql-3.7.2-4.amzn2023.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "postfix",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-3.7.2-4.amzn2023.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "postfix-debuginfo",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-debuginfo-3.7.2-4.amzn2023.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "2",
+					"Name": "postfix-debugsource",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-debugsource-3.7.2-4.amzn2023.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "postfix-cdb-debuginfo",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-cdb-debuginfo-3.7.2-4.amzn2023.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "postfix-sqlite",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-sqlite-3.7.2-4.amzn2023.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "postfix-sqlite-debuginfo",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-sqlite-debuginfo-3.7.2-4.amzn2023.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "postfix-pcre-debuginfo",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-pcre-debuginfo-3.7.2-4.amzn2023.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "postfix-perl-scripts",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-perl-scripts-3.7.2-4.amzn2023.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "postfix-pgsql",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-pgsql-3.7.2-4.amzn2023.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "postfix-lmdb",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-lmdb-3.7.2-4.amzn2023.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "postfix-mysql-debuginfo",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-mysql-debuginfo-3.7.2-4.amzn2023.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "postfix-lmdb-debuginfo",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-lmdb-debuginfo-3.7.2-4.amzn2023.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "postfix-mysql",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-mysql-3.7.2-4.amzn2023.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "postfix-ldap",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-ldap-3.7.2-4.amzn2023.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "postfix-debuginfo",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-debuginfo-3.7.2-4.amzn2023.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "postfix-pcre",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-pcre-3.7.2-4.amzn2023.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "postfix-ldap-debuginfo",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-ldap-debuginfo-3.7.2-4.amzn2023.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "postfix-pgsql-debuginfo",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-pgsql-debuginfo-3.7.2-4.amzn2023.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "postfix-cdb",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-cdb-3.7.2-4.amzn2023.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "postfix-debugsource",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-debugsource-3.7.2-4.amzn2023.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "2",
+					"Name": "postfix",
+					"Release": "4.amzn2023.0.5",
+					"Version": "3.7.2",
+					"Filename": "Packages/postfix-3.7.2-4.amzn2023.0.5.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

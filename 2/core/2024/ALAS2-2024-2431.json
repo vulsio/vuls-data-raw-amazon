@@ -1,0 +1,107 @@
+{
+	"ID": "ALAS2-2024-2431",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2431: medium priority package update for vsftpd",
+	"Issued": {
+		"Date": "2024-01-19 01:51"
+	},
+	"Updated": {
+		"Date": "2024-01-19 01:51"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-3618:\n\tALPACA is an application layer protocol content confusion attack, exploiting TLS servers implementing different protocols but using compatible certificates, such as multi-domain or wildcard certificates.  A MiTM attacker having access to victim's traffic at the TCP/IP layer can redirect traffic from one subdomain to another, resulting in a valid TLS session. This breaks the authentication of TLS and cross-protocol attacks may be possible where the behavior of one protocol service may compromise the other at the application layer.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3618",
+				"ID": "CVE-2021-3618",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "vsftpd",
+					"Release": "25.amzn2.0.1",
+					"Version": "3.0.2",
+					"Filename": "Packages/vsftpd-3.0.2-25.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "vsftpd-sysvinit",
+					"Release": "25.amzn2.0.1",
+					"Version": "3.0.2",
+					"Filename": "Packages/vsftpd-sysvinit-3.0.2-25.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "vsftpd-debuginfo",
+					"Release": "25.amzn2.0.1",
+					"Version": "3.0.2",
+					"Filename": "Packages/vsftpd-debuginfo-3.0.2-25.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "vsftpd",
+					"Release": "25.amzn2.0.1",
+					"Version": "3.0.2",
+					"Filename": "Packages/vsftpd-3.0.2-25.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "vsftpd-sysvinit",
+					"Release": "25.amzn2.0.1",
+					"Version": "3.0.2",
+					"Filename": "Packages/vsftpd-sysvinit-3.0.2-25.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "vsftpd-debuginfo",
+					"Release": "25.amzn2.0.1",
+					"Version": "3.0.2",
+					"Filename": "Packages/vsftpd-debuginfo-3.0.2-25.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "vsftpd",
+					"Release": "25.amzn2.0.1",
+					"Version": "3.0.2",
+					"Filename": "Packages/vsftpd-3.0.2-25.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "vsftpd-sysvinit",
+					"Release": "25.amzn2.0.1",
+					"Version": "3.0.2",
+					"Filename": "Packages/vsftpd-sysvinit-3.0.2-25.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "vsftpd-debuginfo",
+					"Release": "25.amzn2.0.1",
+					"Version": "3.0.2",
+					"Filename": "Packages/vsftpd-debuginfo-3.0.2-25.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

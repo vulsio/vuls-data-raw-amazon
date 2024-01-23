@@ -1,0 +1,155 @@
+{
+	"ID": "ALAS2-2024-2419",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2419: medium priority package update for nss-softokn",
+	"Issued": {
+		"Date": "2024-01-19 01:51"
+	},
+	"Updated": {
+		"Date": "2024-01-19 01:51"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-5388:\n\tIt was discovered that the numerical library used in NSS for RSA cryptography leaks information whether high order bits of the RSA decryption result are zero. This information can be used to mount a Bleichenbacher or Manger like attack against all RSA decryption operations. As the leak happens before any padding operations, it affects all padding modes: PKCS#1 v1.5, OAEP, and RSASVP. Both API level calls and TLS server operation are affected.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5388",
+				"ID": "CVE-2023-5388",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-softokn",
+					"Release": "6.amzn2.0.1",
+					"Version": "3.90.0",
+					"Filename": "Packages/nss-softokn-3.90.0-6.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-softokn-freebl",
+					"Release": "6.amzn2.0.1",
+					"Version": "3.90.0",
+					"Filename": "Packages/nss-softokn-freebl-3.90.0-6.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-softokn-freebl-devel",
+					"Release": "6.amzn2.0.1",
+					"Version": "3.90.0",
+					"Filename": "Packages/nss-softokn-freebl-devel-3.90.0-6.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-softokn-devel",
+					"Release": "6.amzn2.0.1",
+					"Version": "3.90.0",
+					"Filename": "Packages/nss-softokn-devel-3.90.0-6.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "nss-softokn-debuginfo",
+					"Release": "6.amzn2.0.1",
+					"Version": "3.90.0",
+					"Filename": "Packages/nss-softokn-debuginfo-3.90.0-6.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-softokn",
+					"Release": "6.amzn2.0.1",
+					"Version": "3.90.0",
+					"Filename": "Packages/nss-softokn-3.90.0-6.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-softokn-freebl",
+					"Release": "6.amzn2.0.1",
+					"Version": "3.90.0",
+					"Filename": "Packages/nss-softokn-freebl-3.90.0-6.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-softokn-freebl-devel",
+					"Release": "6.amzn2.0.1",
+					"Version": "3.90.0",
+					"Filename": "Packages/nss-softokn-freebl-devel-3.90.0-6.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-softokn-devel",
+					"Release": "6.amzn2.0.1",
+					"Version": "3.90.0",
+					"Filename": "Packages/nss-softokn-devel-3.90.0-6.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "nss-softokn-debuginfo",
+					"Release": "6.amzn2.0.1",
+					"Version": "3.90.0",
+					"Filename": "Packages/nss-softokn-debuginfo-3.90.0-6.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nss-softokn",
+					"Release": "6.amzn2.0.1",
+					"Version": "3.90.0",
+					"Filename": "Packages/nss-softokn-3.90.0-6.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nss-softokn-freebl",
+					"Release": "6.amzn2.0.1",
+					"Version": "3.90.0",
+					"Filename": "Packages/nss-softokn-freebl-3.90.0-6.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nss-softokn-freebl-devel",
+					"Release": "6.amzn2.0.1",
+					"Version": "3.90.0",
+					"Filename": "Packages/nss-softokn-freebl-devel-3.90.0-6.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nss-softokn-devel",
+					"Release": "6.amzn2.0.1",
+					"Version": "3.90.0",
+					"Filename": "Packages/nss-softokn-devel-3.90.0-6.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "nss-softokn-debuginfo",
+					"Release": "6.amzn2.0.1",
+					"Version": "3.90.0",
+					"Filename": "Packages/nss-softokn-debuginfo-3.90.0-6.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

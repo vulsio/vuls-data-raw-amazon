@@ -1,0 +1,67 @@
+{
+	"ID": "ALAS2-2024-2417",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2417: important priority package update for thunderbird",
+	"Issued": {
+		"Date": "2024-01-19 01:51"
+	},
+	"Updated": {
+		"Date": "2024-01-19 01:51"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-7104:\n\tA vulnerability was found in SQLite SQLite3 up to 3.43.0 and classified as critical. This issue affects the function sessionReadRecord of the file ext/session/sqlite3session.c of the component make alltest Handler. The manipulation leads to heap-based buffer overflow. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-248999.\n\nNOTE: https://sqlite.org/forum/forumpost/5bcbf4571c\nNOTE: Fixed by: https://sqlite.org/src/info/0e4e7a05c4204b47\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-7104",
+				"ID": "CVE-2023-7104",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "thunderbird",
+					"Release": "1.amzn2.0.2",
+					"Version": "115.6.0",
+					"Filename": "Packages/thunderbird-115.6.0-1.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "thunderbird-debuginfo",
+					"Release": "1.amzn2.0.2",
+					"Version": "115.6.0",
+					"Filename": "Packages/thunderbird-debuginfo-115.6.0-1.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "thunderbird",
+					"Release": "1.amzn2.0.2",
+					"Version": "115.6.0",
+					"Filename": "Packages/thunderbird-115.6.0-1.amzn2.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "thunderbird-debuginfo",
+					"Release": "1.amzn2.0.2",
+					"Version": "115.6.0",
+					"Filename": "Packages/thunderbird-debuginfo-115.6.0-1.amzn2.0.2.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
