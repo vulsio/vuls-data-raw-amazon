@@ -1,0 +1,101 @@
+{
+	"ID": "ALAS2DOCKER-2024-035",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Docker 2.0 - ALAS2DOCKER-2024-035: important priority package update for containerd",
+	"Issued": {
+		"Date": "2024-01-19 02:20"
+	},
+	"Updated": {
+		"Date": "2024-01-19 02:20"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Docker that fix the following vulnerabilities:\nCVE-2023-25173:\n\tcontainerd is an open source container runtime. A bug was found in containerd prior to versions 1.6.18 and 1.5.18 where supplementary groups are not set up properly inside a container. If an attacker has direct access to a container and manipulates their supplementary group access, they may be able to use supplementary group access to bypass primary group restrictions in some cases, potentially gaining access to sensitive information or gaining the ability to execute code in that container. Downstream applications that use the containerd client library may be affected as well. This bug has been fixed in containerd v1.6.18 and v.1.5.18. Users should update to these versions and recreate containers to resolve this issue. Users who rely on a downstream application that uses containerd's client library should check that application for a separate advisory and instructions. As a workaround, ensure that the `\"USER $USERNAME\"` Dockerfile instruction is not used. Instead, set the container entrypoint to a value similar to `ENTRYPOINT [\"su\", \"-\", \"user\"]` to allow `su` to properly set up supplementary groups.\n\nCVE-2023-25153:\n\tcontainerd is an open source container runtime. Before versions 1.6.18 and 1.5.18, when importing an OCI image, there was no limit on the number of bytes read for certain files. A maliciously crafted image with a large file where a limit was not applied could cause a denial of service. This bug has been fixed in containerd 1.6.18 and 1.5.18. Users should update to these versions to resolve the issue. As a workaround, ensure that only trusted images are used and that only trusted users have permissions to import images.\n\nCVE-2022-41721:\n\tA request smuggling attack is possible when using MaxBytesHandler. When using MaxBytesHandler, the body of an HTTP request is not fully consumed. When the server attempts to read HTTP2 frames from the connection, it will instead be reading the body of the HTTP request, which could be attacker-manipulated to represent arbitrary HTTP2 requests.\n\nCVE-2022-32149:\n\tAn attacker may cause a denial of service by crafting an Accept-Language header which ParseAcceptLanguage will take significant time to parse.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32149",
+				"ID": "CVE-2022-32149",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41721",
+				"ID": "CVE-2022-41721",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25153",
+				"ID": "CVE-2023-25153",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25173",
+				"ID": "CVE-2023-25173",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---docker",
+			"Name": "Amazon Linux 2 - Docker",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "containerd",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.2",
+					"Filename": "Packages/containerd-1.7.2-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "containerd-stress",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.2",
+					"Filename": "Packages/containerd-stress-1.7.2-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "containerd-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.2",
+					"Filename": "Packages/containerd-debuginfo-1.7.2-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "containerd",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.2",
+					"Filename": "Packages/containerd-1.7.2-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "containerd-stress",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.2",
+					"Filename": "Packages/containerd-stress-1.7.2-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "containerd-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.2",
+					"Filename": "Packages/containerd-debuginfo-1.7.2-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
