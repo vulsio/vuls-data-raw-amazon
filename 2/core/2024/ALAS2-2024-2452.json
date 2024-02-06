@@ -1,0 +1,185 @@
+{
+	"ID": "ALAS2-2024-2452",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2452: medium priority package update for unbound",
+	"Issued": {
+		"Date": "2024-02-01 19:57"
+	},
+	"Updated": {
+		"Date": "2024-02-01 19:57"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-30699:\n\tNLnet Labs Unbound, up to and including version 1.16.1, is vulnerable to a novel type of the \"ghost domain names\" attack. The vulnerability works by targeting an Unbound instance. Unbound is queried for a rogue domain name when the cached delegation information is about to expire. The rogue nameserver delays the response so that the cached delegation information is expired. Upon receiving the delayed answer containing the delegation information, Unbound overwrites the now expired entries. This action can be repeated when the delegation information is about to expire making the rogue delegation information ever-updating. From version 1.16.2 on, Unbound stores the start time for a query and uses that to decide if the cached delegation information can be overwritten.\n\nCVE-2022-30698:\n\tNLnet Labs Unbound, up to and including version 1.16.1 is vulnerable to a novel type of the \"ghost domain names\" attack. The vulnerability works by targeting an Unbound instance. Unbound is queried for a subdomain of a rogue domain name. The rogue nameserver returns delegation information for the subdomain that updates Unbound's delegation cache. This action can be repeated before expiry of the delegation information by querying Unbound for a second level subdomain which the rogue nameserver provides new delegation information. Since Unbound is a child-centric resolver, the ever-updating child delegation information can keep a rogue domain name resolvable long after revocation. From version 1.16.2 on, Unbound checks the validity of parent delegation records before using cached delegation information.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30698",
+				"ID": "CVE-2022-30698",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30699",
+				"ID": "CVE-2022-30699",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "unbound",
+					"Release": "15.amzn2.0.5",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-1.7.3-15.amzn2.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "unbound-devel",
+					"Release": "15.amzn2.0.5",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-devel-1.7.3-15.amzn2.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "unbound-libs",
+					"Release": "15.amzn2.0.5",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-libs-1.7.3-15.amzn2.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python2-unbound",
+					"Release": "15.amzn2.0.5",
+					"Version": "1.7.3",
+					"Filename": "Packages/python2-unbound-1.7.3-15.amzn2.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-unbound",
+					"Release": "15.amzn2.0.5",
+					"Version": "1.7.3",
+					"Filename": "Packages/python3-unbound-1.7.3-15.amzn2.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "unbound-debuginfo",
+					"Release": "15.amzn2.0.5",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-debuginfo-1.7.3-15.amzn2.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "unbound",
+					"Release": "15.amzn2.0.5",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-1.7.3-15.amzn2.0.5.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "unbound-devel",
+					"Release": "15.amzn2.0.5",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-devel-1.7.3-15.amzn2.0.5.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "unbound-libs",
+					"Release": "15.amzn2.0.5",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-libs-1.7.3-15.amzn2.0.5.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python2-unbound",
+					"Release": "15.amzn2.0.5",
+					"Version": "1.7.3",
+					"Filename": "Packages/python2-unbound-1.7.3-15.amzn2.0.5.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3-unbound",
+					"Release": "15.amzn2.0.5",
+					"Version": "1.7.3",
+					"Filename": "Packages/python3-unbound-1.7.3-15.amzn2.0.5.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "unbound-debuginfo",
+					"Release": "15.amzn2.0.5",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-debuginfo-1.7.3-15.amzn2.0.5.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "unbound",
+					"Release": "15.amzn2.0.5",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-1.7.3-15.amzn2.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "unbound-devel",
+					"Release": "15.amzn2.0.5",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-devel-1.7.3-15.amzn2.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "unbound-libs",
+					"Release": "15.amzn2.0.5",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-libs-1.7.3-15.amzn2.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python2-unbound",
+					"Release": "15.amzn2.0.5",
+					"Version": "1.7.3",
+					"Filename": "Packages/python2-unbound-1.7.3-15.amzn2.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-unbound",
+					"Release": "15.amzn2.0.5",
+					"Version": "1.7.3",
+					"Filename": "Packages/python3-unbound-1.7.3-15.amzn2.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "unbound-debuginfo",
+					"Release": "15.amzn2.0.5",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-debuginfo-1.7.3-15.amzn2.0.5.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

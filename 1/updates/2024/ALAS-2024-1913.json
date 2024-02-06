@@ -1,0 +1,99 @@
+{
+	"ID": "ALAS-2024-1913",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2024-1913: important priority package update for libtiff",
+	"Issued": {
+		"Date": "2024-02-01 19:33"
+	},
+	"Updated": {
+		"Date": "2024-02-01 19:33"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2023-6277:\n\tAn out-of-memory flaw was found in libtiff. Passing a crafted tiff file to TIFFOpen() API may allow a remote attacker to cause a denial of service via a craft input with size smaller than 379 KB.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6277",
+				"ID": "CVE-2023-6277",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libtiff-devel",
+					"Release": "35.50.amzn1",
+					"Version": "4.0.3",
+					"Filename": "Packages/libtiff-devel-4.0.3-35.50.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libtiff",
+					"Release": "35.50.amzn1",
+					"Version": "4.0.3",
+					"Filename": "Packages/libtiff-4.0.3-35.50.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libtiff-static",
+					"Release": "35.50.amzn1",
+					"Version": "4.0.3",
+					"Filename": "Packages/libtiff-static-4.0.3-35.50.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libtiff-debuginfo",
+					"Release": "35.50.amzn1",
+					"Version": "4.0.3",
+					"Filename": "Packages/libtiff-debuginfo-4.0.3-35.50.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libtiff-static",
+					"Release": "35.50.amzn1",
+					"Version": "4.0.3",
+					"Filename": "Packages/libtiff-static-4.0.3-35.50.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libtiff-debuginfo",
+					"Release": "35.50.amzn1",
+					"Version": "4.0.3",
+					"Filename": "Packages/libtiff-debuginfo-4.0.3-35.50.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libtiff-devel",
+					"Release": "35.50.amzn1",
+					"Version": "4.0.3",
+					"Filename": "Packages/libtiff-devel-4.0.3-35.50.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libtiff",
+					"Release": "35.50.amzn1",
+					"Version": "4.0.3",
+					"Filename": "Packages/libtiff-4.0.3-35.50.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
+}

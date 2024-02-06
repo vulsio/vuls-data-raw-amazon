@@ -1,0 +1,307 @@
+{
+	"ID": "ALAS2KERNEL-5.15-2024-036",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Kernel-5.15 2.0 - ALAS2KERNEL-5.15-2024-036: important priority package update for kernel",
+	"Issued": {
+		"Date": "2024-02-01 20:10"
+	},
+	"Updated": {
+		"Date": "2024-02-01 20:10"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.15 that fix the following vulnerabilities:\nCVE-2024-0646:\n\tAn out-of-bounds memory write flaw was found in the Linux kernel's Transport Layer Security functionality in how a user calls a function splice with a ktls socket as the destination. This flaw allows a local user to crash or potentially escalate their privileges on the system.\n\nCVE-2024-0565:\n\tAn out-of-bounds memory read flaw was found in receive_encrypted_standard in fs/smb/client/smb2ops.c in the SMB Client sub-component in the Linux Kernel. This issue occurs due to integer underflow on the memcpy length, leading to a denial of service.\n\nCVE-2023-6915:\n\tA Null pointer dereference problem was found in ida_free in lib/idr.c in the Linux Kernel. This issue may allow an attacker using this library to cause a denial of service problem due to a missing check at a function return.\n\nCVE-2023-6040:\n\tAn out-of-bounds access vulnerability involving netfilter was reported and fixed as: f1082dd31fe4 (netfilter: nf_tables: Reject tables of unsupported family); While creating a new netfilter table, lack of a safeguard against invalid nf_tables family (pf) values within `nf_tables_newtable` function enables an attacker to achieve out-of-bounds access.\n\nCVE-2023-46838:\n\tA flaw has been found in Xen. An unprivileged guest can cause Denial of Service (DoS) of the host by sending network packets to the backend, causing the backend to crash.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-46838",
+				"ID": "CVE-2023-46838",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6040",
+				"ID": "CVE-2023-6040",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6915",
+				"ID": "CVE-2023-6915",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0565",
+				"ID": "CVE-2024-0565",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0646",
+				"ID": "CVE-2024-0646",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---kernel-5.15",
+			"Name": "Amazon Linux 2 - Kernel-5.15",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/kernel-5.15.148-97.158.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/kernel-headers-5.15.148-97.158.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-x86_64",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/kernel-debuginfo-common-x86_64-5.15.148-97.158.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/perf-5.15.148-97.158.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/perf-debuginfo-5.15.148-97.158.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-perf",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/python-perf-5.15.148-97.158.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-perf-debuginfo",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/python-perf-debuginfo-5.15.148-97.158.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/kernel-tools-5.15.148-97.158.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/kernel-tools-devel-5.15.148-97.158.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/kernel-tools-debuginfo-5.15.148-97.158.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "bpftool",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/bpftool-5.15.148-97.158.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "bpftool-debuginfo",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/bpftool-debuginfo-5.15.148-97.158.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/kernel-devel-5.15.148-97.158.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/kernel-debuginfo-5.15.148-97.158.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-livepatch-5.15.148-97.158",
+					"Release": "0.amzn2",
+					"Version": "1.0",
+					"Filename": "Packages/kernel-livepatch-5.15.148-97.158-1.0-0.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/kernel-headers-5.15.148-97.158.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/kernel-5.15.148-97.158.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/kernel-headers-5.15.148-97.158.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-aarch64",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/kernel-debuginfo-common-aarch64-5.15.148-97.158.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/perf-5.15.148-97.158.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/perf-debuginfo-5.15.148-97.158.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-perf",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/python-perf-5.15.148-97.158.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-perf-debuginfo",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/python-perf-debuginfo-5.15.148-97.158.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/kernel-tools-5.15.148-97.158.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/kernel-tools-devel-5.15.148-97.158.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/kernel-tools-debuginfo-5.15.148-97.158.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "bpftool",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/bpftool-5.15.148-97.158.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "bpftool-debuginfo",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/bpftool-debuginfo-5.15.148-97.158.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/kernel-devel-5.15.148-97.158.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "97.158.amzn2",
+					"Version": "5.15.148",
+					"Filename": "Packages/kernel-debuginfo-5.15.148-97.158.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-livepatch-5.15.148-97.158",
+					"Release": "0.amzn2",
+					"Version": "1.0",
+					"Filename": "Packages/kernel-livepatch-5.15.148-97.158-1.0-0.amzn2.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

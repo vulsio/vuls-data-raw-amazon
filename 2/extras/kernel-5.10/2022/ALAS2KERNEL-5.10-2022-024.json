@@ -10,10 +10,10 @@
 		"Date": "2022-12-12 19:59"
 	},
 	"Updated": {
-		"Date": "2023-04-13 19:51"
+		"Date": "2024-02-01 20:10"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2022-4139:\n\tAn incorrect TLB flush issue was found in the Linux kernel&rsquo;s GPU i915 kernel driver, potentially leading to random memory corruption or data leaks. This flaw could allow a local user to crash the system or escalate their privileges on the system.\n\nCVE-2022-3169:\n\tA flaw was found in the Linux kernel. A denial of service flaw may occur if there is a consecutive request of the NVME_IOCTL_RESET and the NVME_IOCTL_SUBSYS_RESET through the device file of the driver, resulting in a PCIe link disconnect.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2022-47946:\n\tAn issue was discovered in the Linux kernel 5.10.x before 5.10.155. A use-after-free in io_sqpoll_wait_sq in fs/io_uring.c allows an attacker to crash the kernel, resulting in denial of service. finish_wait can be skipped. An attack can occur in some situations by forking a process and then quickly terminating it. NOTE: later kernel versions, such as the 5.15 longterm series, substantially changed the implementation of io_sqpoll_wait_sq.\n\nCVE-2022-4139:\n\tAn incorrect TLB flush issue was found in the Linux kernel&rsquo;s GPU i915 kernel driver, potentially leading to random memory corruption or data leaks. This flaw could allow a local user to crash the system or escalate their privileges on the system.\n\nCVE-2022-3169:\n\tA flaw was found in the Linux kernel. A denial of service flaw may occur if there is a consecutive request of the NVME_IOCTL_RESET and the NVME_IOCTL_SUBSYS_RESET through the device file of the driver, resulting in a PCIe link disconnect.\n",
 	"References": {
 		"Reference": [
 			{
@@ -25,6 +25,12 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4139",
 				"ID": "CVE-2022-4139",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-47946",
+				"ID": "CVE-2022-47946",
 				"Title": "",
 				"Type": "cve"
 			}

@@ -1,0 +1,179 @@
+{
+	"ID": "ALAS2-2024-2451",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2451: medium priority package update for unbound",
+	"Issued": {
+		"Date": "2024-02-01 19:57"
+	},
+	"Updated": {
+		"Date": "2024-02-01 19:57"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-3204:\n\tA vulnerability named 'Non-Responsive Delegation Attack' (NRDelegation Attack) has been discovered in various DNS resolving software. The NRDelegation Attack works by having a malicious delegation with a considerable number of non responsive nameservers. The attack starts by querying a resolver for a record that relies on those unresponsive nameservers. The attack can cause a resolver to spend a lot of time/resources resolving records under a malicious delegation point where a considerable number of unresponsive NS records reside. It can trigger high CPU usage in some resolver implementations that continually look in the cache for resolved NS records in that delegation. This can lead to degraded performance and eventually denial of service in orchestrated attacks. Unbound does not suffer from high CPU usage, but resources are still needed for resolving the malicious delegation. Unbound will keep trying to resolve the record until hard limits are reached. Based on the nature of the attack and the replies, different limits could be reached. From version 1.16.3 on, Unbound introduces fixes for better performance when under load, by cutting opportunistic queries for nameserver discovery and DNSKEY prefetching and limiting the number of times a delegation point can issue a cache lookup for missing records.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3204",
+				"ID": "CVE-2022-3204",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "unbound",
+					"Release": "15.amzn2.0.6",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-1.7.3-15.amzn2.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "unbound-devel",
+					"Release": "15.amzn2.0.6",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-devel-1.7.3-15.amzn2.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "unbound-libs",
+					"Release": "15.amzn2.0.6",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-libs-1.7.3-15.amzn2.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python2-unbound",
+					"Release": "15.amzn2.0.6",
+					"Version": "1.7.3",
+					"Filename": "Packages/python2-unbound-1.7.3-15.amzn2.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-unbound",
+					"Release": "15.amzn2.0.6",
+					"Version": "1.7.3",
+					"Filename": "Packages/python3-unbound-1.7.3-15.amzn2.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "unbound-debuginfo",
+					"Release": "15.amzn2.0.6",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-debuginfo-1.7.3-15.amzn2.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "unbound",
+					"Release": "15.amzn2.0.6",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-1.7.3-15.amzn2.0.6.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "unbound-devel",
+					"Release": "15.amzn2.0.6",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-devel-1.7.3-15.amzn2.0.6.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "unbound-libs",
+					"Release": "15.amzn2.0.6",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-libs-1.7.3-15.amzn2.0.6.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python2-unbound",
+					"Release": "15.amzn2.0.6",
+					"Version": "1.7.3",
+					"Filename": "Packages/python2-unbound-1.7.3-15.amzn2.0.6.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3-unbound",
+					"Release": "15.amzn2.0.6",
+					"Version": "1.7.3",
+					"Filename": "Packages/python3-unbound-1.7.3-15.amzn2.0.6.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "unbound-debuginfo",
+					"Release": "15.amzn2.0.6",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-debuginfo-1.7.3-15.amzn2.0.6.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "unbound",
+					"Release": "15.amzn2.0.6",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-1.7.3-15.amzn2.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "unbound-devel",
+					"Release": "15.amzn2.0.6",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-devel-1.7.3-15.amzn2.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "unbound-libs",
+					"Release": "15.amzn2.0.6",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-libs-1.7.3-15.amzn2.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python2-unbound",
+					"Release": "15.amzn2.0.6",
+					"Version": "1.7.3",
+					"Filename": "Packages/python2-unbound-1.7.3-15.amzn2.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-unbound",
+					"Release": "15.amzn2.0.6",
+					"Version": "1.7.3",
+					"Filename": "Packages/python3-unbound-1.7.3-15.amzn2.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "unbound-debuginfo",
+					"Release": "15.amzn2.0.6",
+					"Version": "1.7.3",
+					"Filename": "Packages/unbound-debuginfo-1.7.3-15.amzn2.0.6.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

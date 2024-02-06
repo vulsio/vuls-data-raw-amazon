@@ -1,0 +1,115 @@
+{
+	"ID": "ALAS2FIREFOX-2024-021",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Firefox 2.0 - ALAS2FIREFOX-2024-021: medium priority package update for firefox",
+	"Issued": {
+		"Date": "2024-02-01 20:10"
+	},
+	"Updated": {
+		"Date": "2024-02-01 20:10"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 - Firefox that fix the following vulnerabilities:\nCVE-2024-0755:\n\tMemory safety bugs present in Firefox 121, Firefox ESR 115.6, and Thunderbird 115.6. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 122, Firefox ESR < 115.7, and Thunderbird < 115.7.\n\nCVE-2024-0753:\n\tIn specific HSTS configurations an attacker could have bypassed HSTS on a subdomain. This vulnerability affects Firefox < 122, Firefox ESR < 115.7, and Thunderbird < 115.7.\n\nCVE-2024-0751:\n\tA malicious devtools extension could have been used to escalate privileges. This vulnerability affects Firefox < 122, Firefox ESR < 115.7, and Thunderbird < 115.7.\n\nCVE-2024-0750:\n\tA bug in popup notifications delay calculation could have made it possible for an attacker to trick a user into granting permissions. This vulnerability affects Firefox < 122, Firefox ESR < 115.7, and Thunderbird < 115.7.\n\nCVE-2024-0749:\n\tA phishing site could have repurposed an `about:` dialog to show phishing content with an incorrect origin in the address bar. This vulnerability affects Firefox < 122, Firefox ESR < 115.7, and Thunderbird < 115.7.\n\nCVE-2024-0747:\n\tWhen a parent page loaded a child in an iframe with `unsafe-inline`, the parent Content Security Policy could have overridden the child Content Security Policy. This vulnerability affects Firefox < 122, Firefox ESR < 115.7, and Thunderbird < 115.7.\n\nCVE-2024-0746:\n\tA Linux user opening the print preview dialog could have caused the browser to crash. This vulnerability affects Firefox < 122, Firefox ESR < 115.7, and Thunderbird < 115.7.\n\nCVE-2024-0742:\n\tIt was possible for certain browser prompts and dialogs to be activated or dismissed unintentionally by the user due to an incorrect timestamp used to prevent input after page load. This vulnerability affects Firefox < 122, Firefox ESR < 115.7, and Thunderbird < 115.7.\n\nCVE-2024-0741:\n\tAn out of bounds write in ANGLE could have allowed an attacker to corrupt memory leading to a potentially exploitable crash. This vulnerability affects Firefox < 122, Firefox ESR < 115.7, and Thunderbird < 115.7.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0741",
+				"ID": "CVE-2024-0741",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0742",
+				"ID": "CVE-2024-0742",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0746",
+				"ID": "CVE-2024-0746",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0747",
+				"ID": "CVE-2024-0747",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0749",
+				"ID": "CVE-2024-0749",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0750",
+				"ID": "CVE-2024-0750",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0751",
+				"ID": "CVE-2024-0751",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0753",
+				"ID": "CVE-2024-0753",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0755",
+				"ID": "CVE-2024-0755",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---firefox",
+			"Name": "Amazon Linux 2 - Firefox",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "firefox",
+					"Release": "1.amzn2.0.2",
+					"Version": "115.7.0",
+					"Filename": "Packages/firefox-115.7.0-1.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "firefox-debuginfo",
+					"Release": "1.amzn2.0.2",
+					"Version": "115.7.0",
+					"Filename": "Packages/firefox-debuginfo-115.7.0-1.amzn2.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "firefox",
+					"Release": "1.amzn2.0.2",
+					"Version": "115.7.0",
+					"Filename": "Packages/firefox-115.7.0-1.amzn2.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "firefox-debuginfo",
+					"Release": "1.amzn2.0.2",
+					"Version": "115.7.0",
+					"Filename": "Packages/firefox-debuginfo-115.7.0-1.amzn2.0.2.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

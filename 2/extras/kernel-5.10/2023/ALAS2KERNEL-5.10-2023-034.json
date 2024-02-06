@@ -10,10 +10,10 @@
 		"Date": "2023-06-21 19:12"
 	},
 	"Updated": {
-		"Date": "2023-10-12 17:29"
+		"Date": "2024-02-01 20:10"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2023-35788:\n\tAn issue was discovered in fl_set_geneve_opt in net/sched/cls_flower.c in the Linux kernel before 6.3.7. It allows an out-of-bounds write in the flower classifier code via TCA_FLOWER_KEY_ENC_OPTS_GENEVE packets. This may result in denial of service or privilege escalation.\n\nCVE-2023-3567:\n\tA use-after-free flaw was found in vcs_read in drivers/tty/vt/vc_screen.c in vc_screen in the Linux Kernel. In this flaw an attacker with local user access may lead to a system crash or a leak of internal kernel information.\n\nCVE-2023-34256:\n\tAn issue was discovered in the Linux kernel before 6.3.3. There is an out-of-bounds read in crc16 in lib/crc16.c when called from fs/ext4/super.c because ext4_group_desc_csum does not properly check an offset.\n\nCVE-2023-3268:\n\tAn out of bounds (OOB) memory access flaw was found in the Linux kernel in relay_file_read_start_pos in kernel/relay.c in the relayfs. This flaw could allow a local attacker to crash the system or leak kernel internal information.\n\nCVE-2023-3212:\n\tA flaw in the Linux Kernel found in the GFS2 file system. On corrupted gfs2 file systems the evict code can try to reference the journal descriptor structure, jdesc, after it has been freed and set to NULL. It can lead to null pointer dereference when gfs2_trans_begin being called and then fail ingfs2_evict_inode().\n\nCVE-2023-3111:\n\tA use after free vulnerability was found in prepare_to_relocate in fs/btrfs/relocation.c in btrfs in the Linux Kernel. This possible flaw can be triggered by calling btrfs_ioctl_balance() before calling btrfs_ioctl_defrag().\n\nCVE-2023-3090:\n\tA heap out-of-bounds write vulnerability in the Linux Kernel ipvlan network driver can be exploited to achieve local privilege escalation.\n\nThe out-of-bounds write is caused by missing skb->cb  initialization in the ipvlan network driver. The vulnerability is reachable if CONFIG_IPVLAN is enabled.\n\n\nWe recommend upgrading past commit 90cbed5247439a966b645b34eb0a2e037836ea8e.\n\nCVE-2023-2156:\n\tA flaw was found in the Linux kernel's networking subsystem within the RPL protocol's handling. This issue results from the improper handling of user-supplied data, which can lead to an assertion failure. This flaw allows an unauthenticated, remote attacker to create a denial of service condition on the system.\n\nCVE-2022-4269:\n\tA flaw was found in the Linux kernel Traffic Control (TC) subsystem. Using a specific networking configuration (redirecting egress packets to ingress using TC action \"mirred\") a local unprivileged user could trigger a CPU soft lockup (ABBA deadlock) when the transport protocol in use (TCP or SCTP) does a retransmission, resulting in a denial of service condition.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2024-0775:\n\tA use-after-free flaw was found in the __ext4_remount in fs/ext4/super.c in ext4 in the Linux kernel. This flaw allows a local user to cause an information leak problem while freeing the old quota file names before a potential failure, leading to a use-after-free.\n\nCVE-2023-35788:\n\tAn issue was discovered in fl_set_geneve_opt in net/sched/cls_flower.c in the Linux kernel before 6.3.7. It allows an out-of-bounds write in the flower classifier code via TCA_FLOWER_KEY_ENC_OPTS_GENEVE packets. This may result in denial of service or privilege escalation.\n\nCVE-2023-3567:\n\tA use-after-free flaw was found in vcs_read in drivers/tty/vt/vc_screen.c in vc_screen in the Linux Kernel. In this flaw an attacker with local user access may lead to a system crash or a leak of internal kernel information.\n\nCVE-2023-34256:\n\tAn issue was discovered in the Linux kernel before 6.3.3. There is an out-of-bounds read in crc16 in lib/crc16.c when called from fs/ext4/super.c because ext4_group_desc_csum does not properly check an offset.\n\nCVE-2023-3268:\n\tAn out of bounds (OOB) memory access flaw was found in the Linux kernel in relay_file_read_start_pos in kernel/relay.c in the relayfs. This flaw could allow a local attacker to crash the system or leak kernel internal information.\n\nCVE-2023-3212:\n\tA flaw in the Linux Kernel found in the GFS2 file system. On corrupted gfs2 file systems the evict code can try to reference the journal descriptor structure, jdesc, after it has been freed and set to NULL. It can lead to null pointer dereference when gfs2_trans_begin being called and then fail ingfs2_evict_inode().\n\nCVE-2023-3141:\n\tA use-after-free flaw was found in r592_remove in drivers/memstick/host/r592.c in media access in the Linux Kernel. This flaw allows a local attacker to crash the system at device disconnect, possibly leading to a kernel information leak.\n\nCVE-2023-3111:\n\tA use after free vulnerability was found in prepare_to_relocate in fs/btrfs/relocation.c in btrfs in the Linux Kernel. This possible flaw can be triggered by calling btrfs_ioctl_balance() before calling btrfs_ioctl_defrag().\n\nCVE-2023-3090:\n\tA heap out-of-bounds write vulnerability in the Linux Kernel ipvlan network driver can be exploited to achieve local privilege escalation.\n\nThe out-of-bounds write is caused by missing skb->cb  initialization in the ipvlan network driver. The vulnerability is reachable if CONFIG_IPVLAN is enabled.\n\n\nWe recommend upgrading past commit 90cbed5247439a966b645b34eb0a2e037836ea8e.\n\nCVE-2023-2156:\n\tA flaw was found in the Linux kernel's networking subsystem within the RPL protocol's handling. This issue results from the improper handling of user-supplied data, which can lead to an assertion failure. This flaw allows an unauthenticated, remote attacker to create a denial of service condition on the system.\n\nCVE-2022-4269:\n\tA flaw was found in the Linux kernel Traffic Control (TC) subsystem. Using a specific networking configuration (redirecting egress packets to ingress using TC action \"mirred\") a local unprivileged user could trigger a CPU soft lockup (ABBA deadlock) when the transport protocol in use (TCP or SCTP) does a retransmission, resulting in a denial of service condition.\n",
 	"References": {
 		"Reference": [
 			{
@@ -37,6 +37,12 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3111",
 				"ID": "CVE-2023-3111",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3141",
+				"ID": "CVE-2023-3141",
 				"Title": "",
 				"Type": "cve"
 			},
@@ -67,6 +73,12 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-35788",
 				"ID": "CVE-2023-35788",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0775",
+				"ID": "CVE-2024-0775",
 				"Title": "",
 				"Type": "cve"
 			}
