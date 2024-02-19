@@ -1,0 +1,105 @@
+{
+	"ID": "ALAS2-2024-2465",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2465: medium priority package update for edk2",
+	"Issued": {
+		"Date": "2024-02-15 03:52"
+	},
+	"Updated": {
+		"Date": "2024-02-15 03:52"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-36764:\n\tEDK2 is susceptible to a vulnerability in the Tcg2MeasurePeImage() function, allowing a user to trigger a heap buffer overflow via a local network. Successful exploitation of this vulnerability may result in a compromise of confidentiality, integrity, and/or availability.\n\nCVE-2022-36763:\n\tEDK2 is susceptible to a vulnerability in the Tcg2MeasureGptTable() function, allowing a user to trigger a heap buffer overflow via a local network. Successful exploitation of this vulnerability may result in a compromise of confidentiality, integrity, and/or availability.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-36763",
+				"ID": "CVE-2022-36763",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-36764",
+				"ID": "CVE-2022-36764",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "edk2-tools",
+					"Release": "1.amzn2.0.3",
+					"Version": "20200801stable",
+					"Filename": "Packages/edk2-tools-20200801stable-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "edk2-tools-python",
+					"Release": "1.amzn2.0.3",
+					"Version": "20200801stable",
+					"Filename": "Packages/edk2-tools-python-20200801stable-1.amzn2.0.3.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "edk2-tools-doc",
+					"Release": "1.amzn2.0.3",
+					"Version": "20200801stable",
+					"Filename": "Packages/edk2-tools-doc-20200801stable-1.amzn2.0.3.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "edk2-ovmf",
+					"Release": "1.amzn2.0.3",
+					"Version": "20200801stable",
+					"Filename": "Packages/edk2-ovmf-20200801stable-1.amzn2.0.3.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "edk2-debuginfo",
+					"Release": "1.amzn2.0.3",
+					"Version": "20200801stable",
+					"Filename": "Packages/edk2-debuginfo-20200801stable-1.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "edk2-tools",
+					"Release": "1.amzn2.0.3",
+					"Version": "20200801stable",
+					"Filename": "Packages/edk2-tools-20200801stable-1.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "edk2-aarch64",
+					"Release": "1.amzn2.0.3",
+					"Version": "20200801stable",
+					"Filename": "Packages/edk2-aarch64-20200801stable-1.amzn2.0.3.noarch.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "edk2-debuginfo",
+					"Release": "1.amzn2.0.3",
+					"Version": "20200801stable",
+					"Filename": "Packages/edk2-debuginfo-20200801stable-1.amzn2.0.3.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

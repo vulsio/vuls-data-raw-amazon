@@ -1,0 +1,83 @@
+{
+	"ID": "ALAS2-2024-2451",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2451: medium priority package update for rear",
+	"Issued": {
+		"Date": "2024-02-15 03:52"
+	},
+	"Updated": {
+		"Date": "2024-02-15 03:52"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-23301:\n\tRelax-and-Recover (aka ReaR) through 2.7 creates a world-readable initrd when using GRUB_RESCUE=y. This allows local attackers to gain access to system secrets otherwise only readable by root.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-23301",
+				"ID": "CVE-2024-23301",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rear",
+					"Release": "7.amzn2.0.1",
+					"Version": "2.00",
+					"Filename": "Packages/rear-2.00-7.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rear-debuginfo",
+					"Release": "7.amzn2.0.1",
+					"Version": "2.00",
+					"Filename": "Packages/rear-debuginfo-2.00-7.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "rear",
+					"Release": "7.amzn2.0.1",
+					"Version": "2.00",
+					"Filename": "Packages/rear-2.00-7.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "rear-debuginfo",
+					"Release": "7.amzn2.0.1",
+					"Version": "2.00",
+					"Filename": "Packages/rear-debuginfo-2.00-7.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "rear",
+					"Release": "7.amzn2.0.1",
+					"Version": "2.00",
+					"Filename": "Packages/rear-2.00-7.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "rear-debuginfo",
+					"Release": "7.amzn2.0.1",
+					"Version": "2.00",
+					"Filename": "Packages/rear-debuginfo-2.00-7.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
