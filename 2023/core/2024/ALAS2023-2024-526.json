@@ -1,0 +1,83 @@
+{
+	"ID": "ALAS2023-2024-526",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-526: Important priority package update for amazon-ssm-agent",
+	"Issued": {
+		"Date": "2024-02-15 02:52:00"
+	},
+	"Updated": {
+		"Date": "2024-02-15 02:52:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-49569:\n\tA path traversal vulnerability was discovered in go-git versions prior to v5.11. This vulnerability allows an attacker to create and amend files across the filesystem. In the worse case scenario, remote code execution could be achieved.\n\nApplications are only affected if they are using the  ChrootOS https://pkg.go.dev/github.com/go-git/go-billy/v5/osfs#ChrootOS , which is the default when using \"Plain\" versions of Open and Clone funcs (e.g. PlainClone). Applications using  BoundOS https://pkg.go.dev/github.com/go-git/go-billy/v5/osfs#BoundOS  or in-memory filesystems are not affected by this issue.\nThis is a go-git implementation issue and does not affect the upstream git cli.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-49569",
+				"ID": "CVE-2023-49569",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "amazon-ssm-agent-debuginfo",
+					"Release": "1.amzn2023",
+					"Version": "3.2.2222.0",
+					"Filename": "Packages/amazon-ssm-agent-debuginfo-3.2.2222.0-1.amzn2023.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "amazon-ssm-agent",
+					"Release": "1.amzn2023",
+					"Version": "3.2.2222.0",
+					"Filename": "Packages/amazon-ssm-agent-3.2.2222.0-1.amzn2023.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "amazon-ssm-agent-debugsource",
+					"Release": "1.amzn2023",
+					"Version": "3.2.2222.0",
+					"Filename": "Packages/amazon-ssm-agent-debugsource-3.2.2222.0-1.amzn2023.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "amazon-ssm-agent",
+					"Release": "1.amzn2023",
+					"Version": "3.2.2222.0",
+					"Filename": "Packages/amazon-ssm-agent-3.2.2222.0-1.amzn2023.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "amazon-ssm-agent-debuginfo",
+					"Release": "1.amzn2023",
+					"Version": "3.2.2222.0",
+					"Filename": "Packages/amazon-ssm-agent-debuginfo-3.2.2222.0-1.amzn2023.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "amazon-ssm-agent-debugsource",
+					"Release": "1.amzn2023",
+					"Version": "3.2.2222.0",
+					"Filename": "Packages/amazon-ssm-agent-debugsource-3.2.2222.0-1.amzn2023.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

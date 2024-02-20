@@ -1,30 +1,24 @@
 {
-	"ID": "ALAS2023-2024-510",
+	"ID": "ALAS2023-2024-519",
 	"Author": "linux-security@amazon.com",
 	"From": "linux-security@amazon.com",
 	"Status": "final",
 	"Type": "security",
 	"Version": "1.4",
-	"Title": "Amazon Linux 2023 - ALAS2023-2024-510: Medium priority package update for kernel",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-519: Important priority package update for kernel",
 	"Issued": {
-		"Date": "2024-02-01 17:56:00"
+		"Date": "2024-02-15 02:51:00"
 	},
 	"Updated": {
-		"Date": "2024-02-06 15:00:00"
+		"Date": "2024-02-15 02:51:00"
 	},
-	"Severity": "Medium",
-	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-6915:\n\tA Null pointer dereference problem was found in ida_free in lib/idr.c in the Linux Kernel. This issue may allow an attacker using this library to cause a denial of service problem due to a missing check at a function return.\n\nCVE-2023-46838:\n\tA flaw has been found in Xen. An unprivileged guest can cause Denial of Service (DoS) of the host by sending network packets to the backend, causing the backend to crash.\n",
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-1085:\n\tA use-after-free vulnerability in the Linux kernel's netfilter: nf_tables component can be exploited to achieve local privilege escalation.\n\nThe nft_setelem_catchall_deactivate() function checks whether the catch-all set element is active in the current generation instead of the next generation before freeing it, but only flags it inactive in the next generation, making it possible to free the element multiple times, leading to a double free vulnerability.\n\nWe recommend upgrading past commit b1db244ffd041a49ecc9618e8feb6b5c1afcdaa7.\n",
 	"References": {
 		"Reference": [
 			{
-				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-46838",
-				"ID": "CVE-2023-46838",
-				"Title": "",
-				"Type": "cve"
-			},
-			{
-				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6915",
-				"ID": "CVE-2023-6915",
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1085",
+				"ID": "CVE-2024-1085",
 				"Title": "",
 				"Type": "cve"
 			}
