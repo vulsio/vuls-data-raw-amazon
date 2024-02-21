@@ -1,0 +1,67 @@
+{
+	"ID": "ALAS2ECS-2024-033",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Ecs 2.0 - ALAS2ECS-2024-033: important priority package update for runc",
+	"Issued": {
+		"Date": "2024-01-31 20:51"
+	},
+	"Updated": {
+		"Date": "2024-01-31 22:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Ecs that fix the following vulnerabilities:\nCVE-2024-21626:\n\tAWS is aware of CVE-2024-21626, an issue affecting the runc component of several open source container management systems. Under certain conditions, an actor could leverage a specially crafted container or container configuration to access files or directories outside the container's file system namespace.\n\nAn updated version of runc that addresses the issue is available for Amazon Linux 1 (runc-1.1.11-1.0.amzn1), Amazon Linux 2 (runc-1.1.11-1.amzn2) and for Amazon Linux 2023 (runc-1.1.11-1.amzn2023). AWS recommends that customers using runc or any container-related software apply those updates or a newer version.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-21626",
+				"ID": "CVE-2024-21626",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---ecs",
+			"Name": "Amazon Linux 2 - Ecs",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "runc",
+					"Release": "1.amzn2",
+					"Version": "1.1.11",
+					"Filename": "Packages/runc-1.1.11-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "runc-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "1.1.11",
+					"Filename": "Packages/runc-debuginfo-1.1.11-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "runc",
+					"Release": "1.amzn2",
+					"Version": "1.1.11",
+					"Filename": "Packages/runc-1.1.11-1.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "runc-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "1.1.11",
+					"Filename": "Packages/runc-debuginfo-1.1.11-1.amzn2.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
