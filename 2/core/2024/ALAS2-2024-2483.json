@@ -1,0 +1,141 @@
+{
+	"ID": "ALAS2-2024-2483",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2483: important priority package update for edk2",
+	"Issued": {
+		"Date": "2024-02-29 10:03"
+	},
+	"Updated": {
+		"Date": "2024-02-29 10:03"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-0727:\n\tProcessing a maliciously formatted PKCS12 file may lead OpenSSL to crash leading to a potential Denial of Service attack\n\nThe package openssl098e is provided purely for binary compatibility with older Amazon Linux versions. It does not receive security updates.\n\nCVE-2023-45235:\n\tEDK2's Network Package is susceptible to a buffer overflow vulnerability when\n\n\n\n\n\nhandling Server ID option \n\n\n\n from a DHCPv6 proxy Advertise message. This\n vulnerability can be exploited by an attacker to gain unauthorized \naccess and potentially lead to a loss of Confidentiality, Integrity and/or Availability.\n\nCVE-2023-45234:\n\tEDK2's Network Package is susceptible to a buffer overflow vulnerability when processing DNS Servers option from a DHCPv6 Advertise message. This\n vulnerability can be exploited by an attacker to gain unauthorized \naccess and potentially lead to a loss of Confidentiality, Integrity and/or Availability.\n\nCVE-2023-45233:\n\tEDK2's Network Package is susceptible to an infinite lop vulnerability when parsing a PadN option in the Destination Options header of IPv6. This\n vulnerability can be exploited by an attacker to gain unauthorized \naccess and potentially lead to a loss of Availability.\n\nCVE-2023-45232:\n\tEDK2's Network Package is susceptible to an infinite loop vulnerability when parsing unknown options in the Destination Options header of IPv6. This\n vulnerability can be exploited by an attacker to gain unauthorized \naccess and potentially lead to a loss of Availability.\n\nCVE-2023-45231:\n\tEDK2's Network Package is susceptible to an out-of-bounds read\n vulnerability when processing  Neighbor Discovery Redirect message. This\n vulnerability can be exploited by an attacker to gain unauthorized \naccess and potentially lead to a loss of Confidentiality.\n\nCVE-2023-45230:\n\tEDK2's Network Package is susceptible to a buffer overflow vulnerability via a long server ID option in DHCPv6 client. This\n vulnerability can be exploited by an attacker to gain unauthorized \naccess and potentially lead to a loss of Confidentiality, Integrity and/or Availability.\n\nCVE-2023-45229:\n\tEDK2's Network Package is susceptible to an out-of-bounds read\n vulnerability when processing the IA_NA or IA_TA option in a DHCPv6 Advertise message. This\n vulnerability can be exploited by an attacker to gain unauthorized \naccess and potentially lead to a loss of Confidentiality.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45229",
+				"ID": "CVE-2023-45229",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45230",
+				"ID": "CVE-2023-45230",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45231",
+				"ID": "CVE-2023-45231",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45232",
+				"ID": "CVE-2023-45232",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45233",
+				"ID": "CVE-2023-45233",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45234",
+				"ID": "CVE-2023-45234",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45235",
+				"ID": "CVE-2023-45235",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0727",
+				"ID": "CVE-2024-0727",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "edk2-tools",
+					"Release": "1.amzn2.0.4",
+					"Version": "20200801stable",
+					"Filename": "Packages/edk2-tools-20200801stable-1.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "edk2-tools-python",
+					"Release": "1.amzn2.0.4",
+					"Version": "20200801stable",
+					"Filename": "Packages/edk2-tools-python-20200801stable-1.amzn2.0.4.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "edk2-tools-doc",
+					"Release": "1.amzn2.0.4",
+					"Version": "20200801stable",
+					"Filename": "Packages/edk2-tools-doc-20200801stable-1.amzn2.0.4.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "edk2-ovmf",
+					"Release": "1.amzn2.0.4",
+					"Version": "20200801stable",
+					"Filename": "Packages/edk2-ovmf-20200801stable-1.amzn2.0.4.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "edk2-debuginfo",
+					"Release": "1.amzn2.0.4",
+					"Version": "20200801stable",
+					"Filename": "Packages/edk2-debuginfo-20200801stable-1.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "edk2-tools",
+					"Release": "1.amzn2.0.4",
+					"Version": "20200801stable",
+					"Filename": "Packages/edk2-tools-20200801stable-1.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "edk2-aarch64",
+					"Release": "1.amzn2.0.4",
+					"Version": "20200801stable",
+					"Filename": "Packages/edk2-aarch64-20200801stable-1.amzn2.0.4.noarch.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "edk2-debuginfo",
+					"Release": "1.amzn2.0.4",
+					"Version": "20200801stable",
+					"Filename": "Packages/edk2-debuginfo-20200801stable-1.amzn2.0.4.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
