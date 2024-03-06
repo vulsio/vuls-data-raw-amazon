@@ -1,0 +1,403 @@
+{
+	"ID": "ALAS2POSTGRESQL12-2024-008",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Postgresql12 2.0 - ALAS2POSTGRESQL12-2024-008: important priority package update for postgresql",
+	"Issued": {
+		"Date": "2024-02-29 00:57"
+	},
+	"Updated": {
+		"Date": "2024-02-29 00:57"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Postgresql12 that fix the following vulnerabilities:\nCVE-2024-0985:\n\tLate privilege drop in REFRESH MATERIALIZED VIEW CONCURRENTLY in PostgreSQL allows an object creator to execute arbitrary SQL functions as the command issuer. The command intends to run SQL functions as the owner of the materialized view, enabling safe refresh of untrusted materialized views. The victim is a superuser or member of one of the attacker's roles. The attack requires luring the victim into running REFRESH MATERIALIZED VIEW CONCURRENTLY on the attacker's materialized view. As part of exploiting this vulnerability, the attacker creates functions that use CREATE RULE to convert the internally-built temporary table to a view. Versions before PostgreSQL 15.6, 14.11, 13.14, and 12.18 are affected. The only known exploit does not work in PostgreSQL 16 and later. For defense in depth, PostgreSQL 16.2 adds the protections that older branches are using to fix their vulnerability.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0985",
+				"ID": "CVE-2024-0985",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---postgresql12",
+			"Name": "Amazon Linux 2 - Postgresql12",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-12.18-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-server",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-server-12.18-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-docs",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-docs-12.18-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-contrib",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-contrib-12.18-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-server-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-server-devel-12.18-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "postgresql-test-rpm-macros",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-test-rpm-macros-12.18-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-static",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-static-12.18-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-upgrade",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-upgrade-12.18-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-upgrade-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-upgrade-devel-12.18-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-plperl",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-plperl-12.18-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-plpython2",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-plpython2-12.18-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-plpython3",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-plpython3-12.18-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-pltcl",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-pltcl-12.18-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-test",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-test-12.18-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-llvmjit",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-llvmjit-12.18-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-debuginfo-12.18-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-12.18-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-server",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-server-12.18-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-docs",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-docs-12.18-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-contrib",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-contrib-12.18-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-server-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-server-devel-12.18-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-static",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-static-12.18-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-upgrade",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-upgrade-12.18-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-upgrade-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-upgrade-devel-12.18-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-plperl",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-plperl-12.18-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-plpython2",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-plpython2-12.18-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-plpython3",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-plpython3-12.18-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-pltcl",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-pltcl-12.18-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-test",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-test-12.18-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-llvmjit",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-llvmjit-12.18-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-debuginfo-12.18-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-12.18-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql-server",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-server-12.18-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql-docs",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-docs-12.18-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql-contrib",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-contrib-12.18-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql-server-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-server-devel-12.18-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql-static",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-static-12.18-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql-upgrade",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-upgrade-12.18-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql-upgrade-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-upgrade-devel-12.18-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql-plperl",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-plperl-12.18-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql-plpython2",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-plpython2-12.18-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql-plpython3",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-plpython3-12.18-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql-pltcl",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-pltcl-12.18-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql-test",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-test-12.18-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql-llvmjit",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-llvmjit-12.18-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "postgresql-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.18",
+					"Filename": "Packages/postgresql-debuginfo-12.18-1.amzn2.0.1.i686.rpm"
+				}
+			]
+		}
+	}
+}

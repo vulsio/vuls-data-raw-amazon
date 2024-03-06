@@ -10,12 +10,18 @@
 		"Date": "2023-08-07 05:59"
 	},
 	"Updated": {
-		"Date": "2023-09-25 22:07"
+		"Date": "2024-02-29 00:57"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Postgresql12 that fix the following vulnerabilities:\nCVE-2022-1552:\n\tA flaw was found in PostgreSQL. There is an issue with incomplete efforts to operate safely when a privileged user is maintaining another user's objects. The Autovacuum, REINDEX, CREATE INDEX, REFRESH MATERIALIZED VIEW, CLUSTER, and pg_amcheck commands activated relevant protections too late or not at all during the process. This flaw allows an attacker with permission to create non-temporary objects in at least one schema to execute arbitrary SQL functions under a superuser identity.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Postgresql12 that fix the following vulnerabilities:\nCVE-2022-1552:\n\tA flaw was found in PostgreSQL. There is an issue with incomplete efforts to operate safely when a privileged user is maintaining another user's objects. The Autovacuum, REINDEX, CREATE INDEX, REFRESH MATERIALIZED VIEW, CLUSTER, and pg_amcheck commands activated relevant protections too late or not at all during the process. This flaw allows an attacker with permission to create non-temporary objects in at least one schema to execute arbitrary SQL functions under a superuser identity.\n\nCVE-2021-23222:\n\tA man-in-the-middle attacker can inject false responses to the client's first few queries, despite the use of SSL certificate verification and encryption.\n",
 	"References": {
 		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-23222",
+				"ID": "CVE-2021-23222",
+				"Title": "",
+				"Type": "cve"
+			},
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-1552",
 				"ID": "CVE-2022-1552",

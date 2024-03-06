@@ -1,0 +1,83 @@
+{
+	"ID": "ALAS2POSTGRESQL14-2024-007",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Postgresql14 2.0 - ALAS2POSTGRESQL14-2024-007: important priority package update for libpq",
+	"Issued": {
+		"Date": "2024-02-29 00:57"
+	},
+	"Updated": {
+		"Date": "2024-02-29 00:57"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Postgresql14 that fix the following vulnerabilities:\nCVE-2024-0985:\n\tLate privilege drop in REFRESH MATERIALIZED VIEW CONCURRENTLY in PostgreSQL allows an object creator to execute arbitrary SQL functions as the command issuer. The command intends to run SQL functions as the owner of the materialized view, enabling safe refresh of untrusted materialized views. The victim is a superuser or member of one of the attacker's roles. The attack requires luring the victim into running REFRESH MATERIALIZED VIEW CONCURRENTLY on the attacker's materialized view. As part of exploiting this vulnerability, the attacker creates functions that use CREATE RULE to convert the internally-built temporary table to a view. Versions before PostgreSQL 15.6, 14.11, 13.14, and 12.18 are affected. The only known exploit does not work in PostgreSQL 16 and later. For defense in depth, PostgreSQL 16.2 adds the protections that older branches are using to fix their vulnerability.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0985",
+				"ID": "CVE-2024-0985",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---postgresql14",
+			"Name": "Amazon Linux 2 - Postgresql14",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libpq",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.11",
+					"Filename": "Packages/libpq-14.11-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libpq-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.11",
+					"Filename": "Packages/libpq-devel-14.11-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libpq-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.11",
+					"Filename": "Packages/libpq-debuginfo-14.11-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libpq",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.11",
+					"Filename": "Packages/libpq-14.11-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libpq-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.11",
+					"Filename": "Packages/libpq-devel-14.11-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libpq-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.11",
+					"Filename": "Packages/libpq-debuginfo-14.11-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
