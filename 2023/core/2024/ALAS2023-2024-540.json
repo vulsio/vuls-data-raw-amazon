@@ -1,0 +1,115 @@
+{
+	"ID": "ALAS2023-2024-540",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-540: Medium priority package update for libuv",
+	"Issued": {
+		"Date": "2024-02-29 10:29:00"
+	},
+	"Updated": {
+		"Date": "2024-02-29 10:29:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-24806:\n\tlibuv is a multi-platform support library with a focus on asynchronous I/O. The `uv_getaddrinfo` function in `src/unix/getaddrinfo.c` (and its windows counterpart `src/win/getaddrinfo.c`), truncates hostnames to 256 characters before calling `getaddrinfo`. This behavior can be exploited to create addresses like `0x00007f000001`, which are considered valid by `getaddrinfo` and could allow an attacker to craft payloads that resolve to unintended IP addresses, bypassing developer checks. The vulnerability arises due to how the `hostname_ascii` variable (with a length of 256 bytes) is handled in `uv_getaddrinfo` and subsequently in `uv__idna_toascii`. When the hostname exceeds 256 characters, it gets truncated without a terminating null byte. As a result attackers may be able to access internal APIs or for websites (similar to MySpace) that allows users to have `username.example.com` pages. Internal services that crawl or cache these user pages can be exposed to SSRF attacks if a malicious user chooses a long vulnerable username. This issue has been addressed in release version 1.48.0. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24806",
+				"ID": "CVE-2024-24806",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "libuv-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "1.47.0",
+					"Filename": "Packages/libuv-debuginfo-1.47.0-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "libuv-static",
+					"Release": "1.amzn2023.0.2",
+					"Version": "1.47.0",
+					"Filename": "Packages/libuv-static-1.47.0-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "libuv-devel",
+					"Release": "1.amzn2023.0.2",
+					"Version": "1.47.0",
+					"Filename": "Packages/libuv-devel-1.47.0-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "libuv",
+					"Release": "1.amzn2023.0.2",
+					"Version": "1.47.0",
+					"Filename": "Packages/libuv-1.47.0-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "libuv-debugsource",
+					"Release": "1.amzn2023.0.2",
+					"Version": "1.47.0",
+					"Filename": "Packages/libuv-debugsource-1.47.0-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "libuv-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "1.47.0",
+					"Filename": "Packages/libuv-debuginfo-1.47.0-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "libuv-static",
+					"Release": "1.amzn2023.0.2",
+					"Version": "1.47.0",
+					"Filename": "Packages/libuv-static-1.47.0-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "libuv-debugsource",
+					"Release": "1.amzn2023.0.2",
+					"Version": "1.47.0",
+					"Filename": "Packages/libuv-debugsource-1.47.0-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "libuv",
+					"Release": "1.amzn2023.0.2",
+					"Version": "1.47.0",
+					"Filename": "Packages/libuv-1.47.0-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "libuv-devel",
+					"Release": "1.amzn2023.0.2",
+					"Version": "1.47.0",
+					"Filename": "Packages/libuv-devel-1.47.0-1.amzn2023.0.2.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

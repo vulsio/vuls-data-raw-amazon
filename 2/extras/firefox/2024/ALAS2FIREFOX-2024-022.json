@@ -1,0 +1,103 @@
+{
+	"ID": "ALAS2FIREFOX-2024-022",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Firefox 2.0 - ALAS2FIREFOX-2024-022: important priority package update for firefox",
+	"Issued": {
+		"Date": "2024-02-29 00:58"
+	},
+	"Updated": {
+		"Date": "2024-02-29 00:58"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Firefox that fix the following vulnerabilities:\nCVE-2024-1553:\n\tMemory safety bugs present in Firefox 122, Firefox ESR 115.7, and Thunderbird 115.7. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 123, Firefox ESR < 115.8, and Thunderbird < 115.8.\n\nCVE-2024-1551:\n\tSet-Cookie response headers were being incorrectly honored in multipart HTTP responses. If an attacker could control the Content-Type response header, as well as control part of the response body, they could inject Set-Cookie response headers that would have been honored by the browser. This vulnerability affects Firefox < 123, Firefox ESR < 115.8, and Thunderbird < 115.8.\n\nCVE-2024-1550:\n\tA malicious website could have used a combination of exiting fullscreen mode and `requestPointerLock` to cause the user's mouse to be re-positioned unexpectedly, which could have led to user confusion and inadvertently granting permissions they did not intend to grant. This vulnerability affects Firefox < 123, Firefox ESR < 115.8, and Thunderbird < 115.8.\n\nCVE-2024-1549:\n\tIf a website set a large custom cursor, portions of the cursor could have overlapped with the permission dialog, potentially resulting in user confusion and unexpected granted permissions. This vulnerability affects Firefox < 123, Firefox ESR < 115.8, and Thunderbird < 115.8.\n\nCVE-2024-1548:\n\tA website could have obscured the fullscreen notification by using a dropdown select input element. This could have led to user confusion and possible spoofing attacks. This vulnerability affects Firefox < 123, Firefox ESR < 115.8, and Thunderbird < 115.8.\n\nCVE-2024-1547:\n\tThrough a series of API calls and redirects, an attacker-controlled alert dialog could have been displayed on another website (with the victim website's URL shown). This vulnerability affects Firefox < 123, Firefox ESR < 115.8, and Thunderbird < 115.8.\n\nCVE-2024-1546:\n\tWhen storing and re-accessing data on a networking channel, the length of buffers may have been confused, resulting in an out-of-bounds memory read. This vulnerability affects Firefox < 123, Firefox ESR < 115.8, and Thunderbird < 115.8.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1546",
+				"ID": "CVE-2024-1546",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1547",
+				"ID": "CVE-2024-1547",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1548",
+				"ID": "CVE-2024-1548",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1549",
+				"ID": "CVE-2024-1549",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1550",
+				"ID": "CVE-2024-1550",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1551",
+				"ID": "CVE-2024-1551",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1553",
+				"ID": "CVE-2024-1553",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---firefox",
+			"Name": "Amazon Linux 2 - Firefox",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "firefox",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.8.0",
+					"Filename": "Packages/firefox-115.8.0-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "firefox-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.8.0",
+					"Filename": "Packages/firefox-debuginfo-115.8.0-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "firefox",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.8.0",
+					"Filename": "Packages/firefox-115.8.0-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "firefox-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.8.0",
+					"Filename": "Packages/firefox-debuginfo-115.8.0-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
