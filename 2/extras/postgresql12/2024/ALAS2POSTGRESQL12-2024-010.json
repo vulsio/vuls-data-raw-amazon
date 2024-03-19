@@ -1,0 +1,107 @@
+{
+	"ID": "ALAS2POSTGRESQL12-2024-010",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Postgresql12 2.0 - ALAS2POSTGRESQL12-2024-010: low priority package update for libpq",
+	"Issued": {
+		"Date": "2024-03-13 20:08"
+	},
+	"Updated": {
+		"Date": "2024-03-13 20:08"
+	},
+	"Severity": "low",
+	"Description": "Package updates are available for Amazon Linux 2 - Postgresql12 that fix the following vulnerabilities:\nCVE-2022-41862:\n\tIn PostgreSQL, a modified, unauthenticated server can send an unterminated string during the establishment of Kerberos transport encryption. In certain conditions a server can cause a libpq client to over-read and report an error message containing uninitialized bytes.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41862",
+				"ID": "CVE-2022-41862",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---postgresql12",
+			"Name": "Amazon Linux 2 - Postgresql12",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libpq",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.15",
+					"Filename": "Packages/libpq-12.15-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libpq-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.15",
+					"Filename": "Packages/libpq-devel-12.15-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libpq-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.15",
+					"Filename": "Packages/libpq-debuginfo-12.15-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libpq",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.15",
+					"Filename": "Packages/libpq-12.15-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libpq-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.15",
+					"Filename": "Packages/libpq-devel-12.15-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libpq-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.15",
+					"Filename": "Packages/libpq-debuginfo-12.15-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libpq",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.15",
+					"Filename": "Packages/libpq-12.15-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libpq-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.15",
+					"Filename": "Packages/libpq-devel-12.15-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libpq-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.15",
+					"Filename": "Packages/libpq-debuginfo-12.15-1.amzn2.0.1.i686.rpm"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,217 @@
+{
+	"ID": "ALAS2-2024-2496",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2496: important priority package update for rust",
+	"Issued": {
+		"Date": "2024-03-13 20:26"
+	},
+	"Updated": {
+		"Date": "2024-03-13 20:26"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-24577:\n\tlibgit2 is a portable C implementation of the Git core methods provided as a linkable library with a solid API, allowing to build Git functionality into your application. Using well-crafted inputs to `git_index_add` can cause heap corruption that could be leveraged for arbitrary code execution. There is an issue in the `has_dir_name` function in `src/libgit2/index.c`, which frees an entry that should not be freed. The freed entry is later used and overwritten with potentially bad actor-controlled data leading to controlled heap corruption. Depending on the application that uses libgit2, this could lead to arbitrary code execution. This issue has been patched in version 1.6.5 and 1.7.2.\n\nCVE-2024-24575:\n\tlibgit2 is a portable C implementation of the Git core methods provided as a linkable library with a solid API, allowing to build Git functionality into your application. Using well-crafted inputs to `git_revparse_single` can cause the function to enter an infinite loop, potentially causing a Denial of Service attack in the calling application. The revparse function in `src/libgit2/revparse.c` uses a loop to parse the user-provided spec string. There is an edge-case during parsing that allows a bad actor to force the loop conditions to access arbitrary memory. Potentially, this could also leak memory if the extracted rev spec is reflected back to the attacker. As such, libgit2 versions before 1.4.0 are not affected. Users should upgrade to version 1.6.5 or 1.7.2.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24575",
+				"ID": "CVE-2024-24575",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24577",
+				"ID": "CVE-2024-24577",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rust",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/rust-1.68.2-1.amzn2.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rust-std-static",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/rust-std-static-1.68.2-1.amzn2.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "rust-debugger-common",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/rust-debugger-common-1.68.2-1.amzn2.0.6.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "rust-gdb",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/rust-gdb-1.68.2-1.amzn2.0.6.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rust-doc",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/rust-doc-1.68.2-1.amzn2.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "cargo",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/cargo-1.68.2-1.amzn2.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rustfmt",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/rustfmt-1.68.2-1.amzn2.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rust-analyzer",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/rust-analyzer-1.68.2-1.amzn2.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clippy",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/clippy-1.68.2-1.amzn2.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "rust-src",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/rust-src-1.68.2-1.amzn2.0.6.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rust-analysis",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/rust-analysis-1.68.2-1.amzn2.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "rust-toolset",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/rust-toolset-1.68.2-1.amzn2.0.6.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "rust-debuginfo",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/rust-debuginfo-1.68.2-1.amzn2.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "rust",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/rust-1.68.2-1.amzn2.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "rust-std-static",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/rust-std-static-1.68.2-1.amzn2.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "rust-doc",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/rust-doc-1.68.2-1.amzn2.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "cargo",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/cargo-1.68.2-1.amzn2.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "rustfmt",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/rustfmt-1.68.2-1.amzn2.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "rust-analyzer",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/rust-analyzer-1.68.2-1.amzn2.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "clippy",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/clippy-1.68.2-1.amzn2.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "rust-analysis",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/rust-analysis-1.68.2-1.amzn2.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "rust-debuginfo",
+					"Release": "1.amzn2.0.6",
+					"Version": "1.68.2",
+					"Filename": "Packages/rust-debuginfo-1.68.2-1.amzn2.0.6.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

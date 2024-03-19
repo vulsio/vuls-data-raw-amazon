@@ -1,0 +1,119 @@
+{
+	"ID": "ALAS2-2024-2492",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2492: medium priority package update for pcs",
+	"Issued": {
+		"Date": "2024-03-13 20:26"
+	},
+	"Updated": {
+		"Date": "2024-03-13 20:26"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-26146:\n\tA Denial of Service (DoS) vulnerability was found in rubygem-rack in how it parses Rack Header. Carefully crafted headers can cause header parsing in Rack to take longer than expected resulting in a possible denial of service issue. Accept and Forwarded headers are impacted.\n\nCVE-2024-26141:\n\tA Denial of Service (DoS) vulnerability was found in rubygem-rack in how it parses Range Header. Carefully crafted Range headers can cause a server to respond with an unexpectedly large response. Responding with such large responses could lead to a denial of service issue.\n\nCVE-2024-25126:\n\tA Denial of Service (DoS) vulnerability was found in rubygem-rack in how it parses Content-Type. Carefully crafted content type headers can cause Rack's media type parser to take much longer than expected, leading to a possible denial of service vulnerability.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-25126",
+				"ID": "CVE-2024-25126",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26141",
+				"ID": "CVE-2024-26141",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26146",
+				"ID": "CVE-2024-26146",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "pcs",
+					"Release": "3.amzn2.3.0.3",
+					"Version": "0.9.169",
+					"Filename": "Packages/pcs-0.9.169-3.amzn2.3.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "pcs-snmp",
+					"Release": "3.amzn2.3.0.3",
+					"Version": "0.9.169",
+					"Filename": "Packages/pcs-snmp-0.9.169-3.amzn2.3.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "pcs-debuginfo",
+					"Release": "3.amzn2.3.0.3",
+					"Version": "0.9.169",
+					"Filename": "Packages/pcs-debuginfo-0.9.169-3.amzn2.3.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "pcs",
+					"Release": "3.amzn2.3.0.3",
+					"Version": "0.9.169",
+					"Filename": "Packages/pcs-0.9.169-3.amzn2.3.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "pcs-snmp",
+					"Release": "3.amzn2.3.0.3",
+					"Version": "0.9.169",
+					"Filename": "Packages/pcs-snmp-0.9.169-3.amzn2.3.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "pcs-debuginfo",
+					"Release": "3.amzn2.3.0.3",
+					"Version": "0.9.169",
+					"Filename": "Packages/pcs-debuginfo-0.9.169-3.amzn2.3.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "pcs",
+					"Release": "3.amzn2.3.0.3",
+					"Version": "0.9.169",
+					"Filename": "Packages/pcs-0.9.169-3.amzn2.3.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "pcs-snmp",
+					"Release": "3.amzn2.3.0.3",
+					"Version": "0.9.169",
+					"Filename": "Packages/pcs-snmp-0.9.169-3.amzn2.3.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "pcs-debuginfo",
+					"Release": "3.amzn2.3.0.3",
+					"Version": "0.9.169",
+					"Filename": "Packages/pcs-debuginfo-0.9.169-3.amzn2.3.0.3.i686.rpm"
+				}
+			]
+		}
+	}
+}

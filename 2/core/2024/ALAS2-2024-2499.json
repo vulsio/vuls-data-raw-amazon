@@ -1,0 +1,243 @@
+{
+	"ID": "ALAS2-2024-2499",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2499: low priority package update for grub2",
+	"Issued": {
+		"Date": "2024-03-13 20:26"
+	},
+	"Updated": {
+		"Date": "2024-03-13 20:26"
+	},
+	"Severity": "low",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-1048:\n\tA flaw was found in the grub2-set-bootflag utility of grub2. After the fix of CVE-2019-14865, grub2-set-bootflag will create a temporary file with the new grubenv content and rename it to the original grubenv file. If the program is killed before the rename operation, the temporary file will not be removed and may fill the filesystem when invoked multiple times, resulting in a filesystem out of free inodes or blocks.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1048",
+				"ID": "CVE-2024-1048",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-2.06-14.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "1",
+					"Name": "grub2-common",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-common-2.06-14.amzn2.0.3.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-tools",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-2.06-14.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-tools-efi",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-efi-2.06-14.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-tools-minimal",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-minimal-2.06-14.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-tools-extra",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-extra-2.06-14.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-efi-x64",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-efi-x64-2.06-14.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "1",
+					"Name": "grub2-efi-x64-modules",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-efi-x64-modules-2.06-14.amzn2.0.3.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-efi-x64-ec2",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-efi-x64-ec2-2.06-14.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-efi-x64-cdboot",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-efi-x64-cdboot-2.06-14.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-pc",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-pc-2.06-14.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "1",
+					"Name": "grub2-pc-modules",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-pc-modules-2.06-14.amzn2.0.3.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-emu",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-emu-2.06-14.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-emu-modules",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-emu-modules-2.06-14.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "grub2-debuginfo",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-debuginfo-2.06-14.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-2.06-14.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-tools",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-2.06-14.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-tools-minimal",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-minimal-2.06-14.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-tools-extra",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-tools-extra-2.06-14.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-efi-aa64",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-efi-aa64-2.06-14.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "1",
+					"Name": "grub2-efi-aa64-modules",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-efi-aa64-modules-2.06-14.amzn2.0.3.noarch.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-efi-aa64-ec2",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-efi-aa64-ec2-2.06-14.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-efi-aa64-cdboot",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-efi-aa64-cdboot-2.06-14.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-emu",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-emu-2.06-14.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-emu-modules",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-emu-modules-2.06-14.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "grub2-debuginfo",
+					"Release": "14.amzn2.0.3",
+					"Version": "2.06",
+					"Filename": "Packages/grub2-debuginfo-2.06-14.amzn2.0.3.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

@@ -10,7 +10,7 @@
 		"Date": "2024-02-29 00:57"
 	},
 	"Updated": {
-		"Date": "2024-02-29 00:57"
+		"Date": "2024-03-05 12:00"
 	},
 	"Severity": "important",
 	"Description": "Package updates are available for Amazon Linux 2 - Livepatch that fix the following vulnerabilities:\nCVE-2024-23849:\n\tIn rds_recv_track_latency in net/rds/af_rds.c in the Linux kernel through 6.7.1, there is an off-by-one error for an RDS_MSG_RX_DGRAM_TRACE_MAX comparison, resulting in out-of-bounds access.\n\nCVE-2024-0646:\n\tAn out-of-bounds memory write flaw was found in the Linux kernel's Transport Layer Security functionality in how a user calls a function splice with a ktls socket as the destination. This flaw allows a local user to crash or potentially escalate their privileges on the system.\n\nCVE-2024-0565:\n\tAn out-of-bounds memory read flaw was found in receive_encrypted_standard in fs/smb/client/smb2ops.c in the SMB Client sub-component in the Linux Kernel. This issue occurs due to integer underflow on the memcpy length, leading to a denial of service.\n\nCVE-2023-6606:\n\tAn out-of-bounds read vulnerability was found in smbCalcSize in fs/smb/client/netmisc.c in the Linux Kernel. This issue could allow a local attacker to crash the system or leak internal kernel information.\n\nCVE-2023-6040:\n\tAn out-of-bounds access vulnerability involving netfilter was reported and fixed as: f1082dd31fe4 (netfilter: nf_tables: Reject tables of unsupported family); While creating a new netfilter table, lack of a safeguard against invalid nf_tables family (pf) values within `nf_tables_newtable` function enables an attacker to achieve out-of-bounds access.\n",

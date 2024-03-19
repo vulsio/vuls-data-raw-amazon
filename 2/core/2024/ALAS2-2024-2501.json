@@ -1,0 +1,115 @@
+{
+	"ID": "ALAS2-2024-2501",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2501: important priority package update for tomcat",
+	"Issued": {
+		"Date": "2024-03-13 20:26"
+	},
+	"Updated": {
+		"Date": "2024-03-13 20:26"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-45648:\n\tImproper Input Validation vulnerability in Apache Tomcat. Tomcat from 11.0.0-M1 through 11.0.0-M11, from 10.1.0-M1 through 10.1.13, from 9.0.0-M1 through 9.0.81 and from 8.5.0 through 8.5.93 did not correctly parse HTTP trailer headers. A specially crafted, invalid trailer header could cause Tomcat to treat a single request as multiple requests leading to the possibility of request smuggling when behind a reverse proxy. Users are recommended to upgrade to version 11.0.0-M12 onwards, 10.1.14 onwards, 9.0.81 onwards or 8.5.94 onwards, which fix the issue.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45648",
+				"ID": "CVE-2023-45648",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat",
+					"Release": "10.amzn2.0.7",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-7.0.76-10.amzn2.0.7.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-admin-webapps",
+					"Release": "10.amzn2.0.7",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-admin-webapps-7.0.76-10.amzn2.0.7.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-docs-webapp",
+					"Release": "10.amzn2.0.7",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-docs-webapp-7.0.76-10.amzn2.0.7.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-javadoc",
+					"Release": "10.amzn2.0.7",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-javadoc-7.0.76-10.amzn2.0.7.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-jsvc",
+					"Release": "10.amzn2.0.7",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-jsvc-7.0.76-10.amzn2.0.7.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-jsp-2.2-api",
+					"Release": "10.amzn2.0.7",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-jsp-2.2-api-7.0.76-10.amzn2.0.7.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-lib",
+					"Release": "10.amzn2.0.7",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-lib-7.0.76-10.amzn2.0.7.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-servlet-3.0-api",
+					"Release": "10.amzn2.0.7",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-servlet-3.0-api-7.0.76-10.amzn2.0.7.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-el-2.2-api",
+					"Release": "10.amzn2.0.7",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-el-2.2-api-7.0.76-10.amzn2.0.7.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-webapps",
+					"Release": "10.amzn2.0.7",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-webapps-7.0.76-10.amzn2.0.7.noarch.rpm"
+				}
+			]
+		}
+	}
+}
