@@ -1,0 +1,199 @@
+{
+	"ID": "ALAS2023-2024-568",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-568: Medium priority package update for nodejs",
+	"Issued": {
+		"Date": "2024-03-13 20:41:00"
+	},
+	"Updated": {
+		"Date": "2024-03-13 20:41:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-25629:\n\tc-ares is a C library for asynchronous DNS requests. `ares__read_line()` is used to parse local configuration files such as `/etc/resolv.conf`, `/etc/nsswitch.conf`, the `HOSTALIASES` file, and if using a c-ares version prior to 1.27.0, the `/etc/hosts` file. If any of these configuration files has an embedded `NULL` character as the first character in a new line, it can lead to attempting to read memory prior to the start of the given buffer which may result in a crash. This issue is fixed in c-ares 1.27.0. No known workarounds exist.\n\nCVE-2024-24758:\n\tUndici is an HTTP/1.1 client, written from scratch for Node.js. Undici already cleared Authorization headers on cross-origin redirects, but did not clear `Proxy-Authentication` headers. This issue has been patched in versions 5.28.3 and 6.6.1. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\nCVE-2024-22025:\n\tNOTE: https://nodejs.org/en/blog/release/v18.19.1\nNOTE: https://github.com/nodejs/node/commit/f31d47e135973746c4f490d5eb635eded8bb3dda (v18.x)\nNOTE: https://github.com/nodejs/node/commit/9052ef43dc2d1b0db340591a9bc9e45a25c01d90 (main)\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-22025",
+				"ID": "CVE-2024-22025",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24758",
+				"ID": "CVE-2024-24758",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-25629",
+				"ID": "CVE-2024-25629",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "nodejs-libs-debuginfo",
+					"Release": "1.amzn2023.0.3",
+					"Version": "18.18.2",
+					"Filename": "Packages/nodejs-libs-debuginfo-18.18.2-1.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "nodejs-debuginfo",
+					"Release": "1.amzn2023.0.3",
+					"Version": "18.18.2",
+					"Filename": "Packages/nodejs-debuginfo-18.18.2-1.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "nodejs-devel",
+					"Release": "1.amzn2023.0.3",
+					"Version": "18.18.2",
+					"Filename": "Packages/nodejs-devel-18.18.2-1.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "nodejs-full-i18n",
+					"Release": "1.amzn2023.0.3",
+					"Version": "18.18.2",
+					"Filename": "Packages/nodejs-full-i18n-18.18.2-1.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "nodejs-libs",
+					"Release": "1.amzn2023.0.3",
+					"Version": "18.18.2",
+					"Filename": "Packages/nodejs-libs-18.18.2-1.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "3",
+					"Name": "v8-10.2-devel",
+					"Release": "1.18.18.2.1.amzn2023.0.3",
+					"Version": "10.2.154.26",
+					"Filename": "Packages/v8-10.2-devel-10.2.154.26-1.18.18.2.1.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "1",
+					"Name": "nodejs-docs",
+					"Release": "1.amzn2023.0.3",
+					"Version": "18.18.2",
+					"Filename": "Packages/nodejs-docs-18.18.2-1.amzn2023.0.3.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "nodejs-npm",
+					"Release": "1.18.18.2.1.amzn2023.0.3",
+					"Version": "9.8.1",
+					"Filename": "Packages/nodejs-npm-9.8.1-1.18.18.2.1.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "nodejs",
+					"Release": "1.amzn2023.0.3",
+					"Version": "18.18.2",
+					"Filename": "Packages/nodejs-18.18.2-1.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "nodejs-debugsource",
+					"Release": "1.amzn2023.0.3",
+					"Version": "18.18.2",
+					"Filename": "Packages/nodejs-debugsource-18.18.2-1.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "nodejs-libs-debuginfo",
+					"Release": "1.amzn2023.0.3",
+					"Version": "18.18.2",
+					"Filename": "Packages/nodejs-libs-debuginfo-18.18.2-1.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "nodejs-debuginfo",
+					"Release": "1.amzn2023.0.3",
+					"Version": "18.18.2",
+					"Filename": "Packages/nodejs-debuginfo-18.18.2-1.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "3",
+					"Name": "v8-10.2-devel",
+					"Release": "1.18.18.2.1.amzn2023.0.3",
+					"Version": "10.2.154.26",
+					"Filename": "Packages/v8-10.2-devel-10.2.154.26-1.18.18.2.1.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "nodejs-devel",
+					"Release": "1.amzn2023.0.3",
+					"Version": "18.18.2",
+					"Filename": "Packages/nodejs-devel-18.18.2-1.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "nodejs-full-i18n",
+					"Release": "1.amzn2023.0.3",
+					"Version": "18.18.2",
+					"Filename": "Packages/nodejs-full-i18n-18.18.2-1.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "nodejs-libs",
+					"Release": "1.amzn2023.0.3",
+					"Version": "18.18.2",
+					"Filename": "Packages/nodejs-libs-18.18.2-1.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "nodejs",
+					"Release": "1.amzn2023.0.3",
+					"Version": "18.18.2",
+					"Filename": "Packages/nodejs-18.18.2-1.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "nodejs-npm",
+					"Release": "1.18.18.2.1.amzn2023.0.3",
+					"Version": "9.8.1",
+					"Filename": "Packages/nodejs-npm-9.8.1-1.18.18.2.1.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "nodejs-debugsource",
+					"Release": "1.amzn2023.0.3",
+					"Version": "18.18.2",
+					"Filename": "Packages/nodejs-debugsource-18.18.2-1.amzn2023.0.3.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
