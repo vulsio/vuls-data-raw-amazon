@@ -1,0 +1,97 @@
+{
+	"ID": "ALAS2-2024-2505",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2505: important priority package update for thunderbird",
+	"Issued": {
+		"Date": "2024-03-27 21:32"
+	},
+	"Updated": {
+		"Date": "2024-03-27 21:32"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-2616:\n\tTo harden ICU against exploitation, the behavior for out-of-memory conditions was changed to crash instead of attempt to continue. This vulnerability affects Firefox ESR < 115.9 and Thunderbird < 115.9.\n\nCVE-2024-2614:\n\tMemory safety bugs present in Firefox 123, Firefox ESR 115.8, and Thunderbird 115.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 124, Firefox ESR < 115.9, and Thunderbird < 115.9.\n\nCVE-2024-2612:\n\tIf an attacker could find a way to trigger a particular code path in `SafeRefPtr`, it could have triggered a crash or potentially be leveraged to achieve code execution. This vulnerability affects Firefox < 124, Firefox ESR < 115.9, and Thunderbird < 115.9.\n\nCVE-2024-2611:\n\tA missing delay on when pointer lock was used could have allowed a malicious page to trick a user into granting permissions. This vulnerability affects Firefox < 124, Firefox ESR < 115.9, and Thunderbird < 115.9.\n\nCVE-2024-2610:\n\tUsing a markup injection an attacker could have stolen nonce values. This could have been used to bypass strict content security policies. This vulnerability affects Firefox < 124, Firefox ESR < 115.9, and Thunderbird < 115.9.\n\nCVE-2024-2608:\n\t`AppendEncodedAttributeValue(), ExtraSpaceNeededForAttrEncoding()` and `AppendEncodedCharacters()` could have experienced integer overflows, causing underallocation of an output buffer leading to an out of bounds write. This vulnerability affects Firefox < 124, Firefox ESR < 115.9, and Thunderbird < 115.9.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2608",
+				"ID": "CVE-2024-2608",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2610",
+				"ID": "CVE-2024-2610",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2611",
+				"ID": "CVE-2024-2611",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2612",
+				"ID": "CVE-2024-2612",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2614",
+				"ID": "CVE-2024-2614",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2616",
+				"ID": "CVE-2024-2616",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "thunderbird",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.9.0",
+					"Filename": "Packages/thunderbird-115.9.0-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "thunderbird-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.9.0",
+					"Filename": "Packages/thunderbird-debuginfo-115.9.0-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "thunderbird",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.9.0",
+					"Filename": "Packages/thunderbird-115.9.0-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "thunderbird-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.9.0",
+					"Filename": "Packages/thunderbird-debuginfo-115.9.0-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

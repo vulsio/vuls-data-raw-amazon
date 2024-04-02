@@ -10,10 +10,10 @@
 		"Date": "2023-10-31 00:17"
 	},
 	"Updated": {
-		"Date": "2024-02-01 20:10"
+		"Date": "2024-03-27 21:47"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2024-0641:\n\tA denial of service vulnerability was found in tipc_crypto_key_revoke in net/tipc/crypto.c in the Linux kernel's TIPC subsystem. This flaw allows guests with local user privileges to trigger a deadlock and potentially crash the system.\n\nCVE-2023-4881:\n\tA stack based out-of-bounds write flaw was found in the netfilter subsystem in the Linux kernel. If the expression length is a multiple of 4 (register size), the `nft_exthdr_eval` family of functions writes 4 NULL bytes past the end of the `regs` argument, leading to stack corruption and potential information disclosure or a denial of service.\n\nCVE-2023-42754:\n\tipv4: fix null-deref in ipv4_link_failure\n\nNOTE: https://www.openwall.com/lists/oss-security/2023/10/02/8\nNOTE: https://git.kernel.org/linus/0113d9c9d1ccc07f5a3710dac4aa24b6d711278c (6.6-rc3)\n\nCVE-2023-4244:\n\tA use-after-free vulnerability in the Linux kernel's netfilter: nf_tables component can be exploited to achieve local privilege escalation.\n\nDue to a race condition between nf_tables netlink control plane transaction and nft_set element garbage collection, it is possible to underflow the reference counter causing a use-after-free vulnerability.\n\nWe recommend upgrading past commit 3e91b0ebd994635df2346353322ac51ce84ce6d8.\n\nCVE-2023-34324:\n\tA flaw in the kernel Xen event handler can cause a deadlock with Xen console handling in unprivileged Xen guests.\n\nCVE-2023-31085:\n\tAn issue was discovered in drivers/mtd/ubi/cdev.c in the Linux kernel 6.2. There is a divide-by-zero error in do_div(sz,mtd->erasesize), used indirectly by ctrl_cdev_ioctl, when mtd->erasesize is 0.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2024-0641:\n\tA denial of service vulnerability was found in tipc_crypto_key_revoke in net/tipc/crypto.c in the Linux kernel's TIPC subsystem. This flaw allows guests with local user privileges to trigger a deadlock and potentially crash the system.\n\nCVE-2023-52433:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nft_set_rbtree: skip sync GC for new elements in this transaction\n\nNew elements in this transaction might expired before such transaction\nends. Skip sync GC for such elements otherwise commit path might walk\nover an already released object. Once transaction is finished, async GC\nwill collect such expired element.\n\nCVE-2023-4881:\n\tA stack based out-of-bounds write flaw was found in the netfilter subsystem in the Linux kernel. If the expression length is a multiple of 4 (register size), the `nft_exthdr_eval` family of functions writes 4 NULL bytes past the end of the `regs` argument, leading to stack corruption and potential information disclosure or a denial of service.\n\nCVE-2023-42754:\n\tipv4: fix null-deref in ipv4_link_failure\n\nNOTE: https://www.openwall.com/lists/oss-security/2023/10/02/8\nNOTE: https://git.kernel.org/linus/0113d9c9d1ccc07f5a3710dac4aa24b6d711278c (6.6-rc3)\n\nCVE-2023-4244:\n\tA use-after-free vulnerability in the Linux kernel's netfilter: nf_tables component can be exploited to achieve local privilege escalation.\n\nDue to a race condition between nf_tables netlink control plane transaction and nft_set element garbage collection, it is possible to underflow the reference counter causing a use-after-free vulnerability.\n\nWe recommend upgrading past commit 3e91b0ebd994635df2346353322ac51ce84ce6d8.\n\nCVE-2023-34324:\n\tA flaw in the kernel Xen event handler can cause a deadlock with Xen console handling in unprivileged Xen guests.\n\nCVE-2023-31085:\n\tAn issue was discovered in drivers/mtd/ubi/cdev.c in the Linux kernel 6.2. There is a divide-by-zero error in do_div(sz,mtd->erasesize), used indirectly by ctrl_cdev_ioctl, when mtd->erasesize is 0.\n",
 	"References": {
 		"Reference": [
 			{
@@ -43,6 +43,12 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4881",
 				"ID": "CVE-2023-4881",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52433",
+				"ID": "CVE-2023-52433",
 				"Title": "",
 				"Type": "cve"
 			},
