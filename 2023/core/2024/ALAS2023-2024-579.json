@@ -1,0 +1,147 @@
+{
+	"ID": "ALAS2023-2024-579",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-579: Medium priority package update for libdwarf",
+	"Issued": {
+		"Date": "2024-03-27 22:12:00"
+	},
+	"Updated": {
+		"Date": "2024-03-27 22:12:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-2002:\n\tIn a multiply-corrupted DWARF object libdwarf may try to dealloc(free) an allocation twice.\nResults are unpredictable and various. This has been a possibility since we added code to prevent leaks when generating 'unattached' Dwarf_Error records (where there is no Dwarf_Debug available at the point of error).\nThe problem was introduced in libdwarf-0.1.0 in 2021.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2002",
+				"ID": "CVE-2024-2002",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "libdwarf-static",
+					"Release": "1.amzn2023.0.3",
+					"Version": "0.5.0",
+					"Filename": "Packages/libdwarf-static-0.5.0-1.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "libdwarf-tools-debuginfo",
+					"Release": "1.amzn2023.0.3",
+					"Version": "0.5.0",
+					"Filename": "Packages/libdwarf-tools-debuginfo-0.5.0-1.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "libdwarf-devel",
+					"Release": "1.amzn2023.0.3",
+					"Version": "0.5.0",
+					"Filename": "Packages/libdwarf-devel-0.5.0-1.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "libdwarf-tools",
+					"Release": "1.amzn2023.0.3",
+					"Version": "0.5.0",
+					"Filename": "Packages/libdwarf-tools-0.5.0-1.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "libdwarf",
+					"Release": "1.amzn2023.0.3",
+					"Version": "0.5.0",
+					"Filename": "Packages/libdwarf-0.5.0-1.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "libdwarf-debuginfo",
+					"Release": "1.amzn2023.0.3",
+					"Version": "0.5.0",
+					"Filename": "Packages/libdwarf-debuginfo-0.5.0-1.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "libdwarf-debugsource",
+					"Release": "1.amzn2023.0.3",
+					"Version": "0.5.0",
+					"Filename": "Packages/libdwarf-debugsource-0.5.0-1.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "libdwarf-static",
+					"Release": "1.amzn2023.0.3",
+					"Version": "0.5.0",
+					"Filename": "Packages/libdwarf-static-0.5.0-1.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "libdwarf-debuginfo",
+					"Release": "1.amzn2023.0.3",
+					"Version": "0.5.0",
+					"Filename": "Packages/libdwarf-debuginfo-0.5.0-1.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "libdwarf",
+					"Release": "1.amzn2023.0.3",
+					"Version": "0.5.0",
+					"Filename": "Packages/libdwarf-0.5.0-1.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "libdwarf-tools-debuginfo",
+					"Release": "1.amzn2023.0.3",
+					"Version": "0.5.0",
+					"Filename": "Packages/libdwarf-tools-debuginfo-0.5.0-1.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "libdwarf-debugsource",
+					"Release": "1.amzn2023.0.3",
+					"Version": "0.5.0",
+					"Filename": "Packages/libdwarf-debugsource-0.5.0-1.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "libdwarf-devel",
+					"Release": "1.amzn2023.0.3",
+					"Version": "0.5.0",
+					"Filename": "Packages/libdwarf-devel-0.5.0-1.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "libdwarf-tools",
+					"Release": "1.amzn2023.0.3",
+					"Version": "0.5.0",
+					"Filename": "Packages/libdwarf-tools-0.5.0-1.amzn2023.0.3.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
