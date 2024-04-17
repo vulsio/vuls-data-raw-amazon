@@ -1,0 +1,83 @@
+{
+	"ID": "ALAS2023-2024-587",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-587: Medium priority package update for libreswan",
+	"Issued": {
+		"Date": "2024-04-10 22:17:00"
+	},
+	"Updated": {
+		"Date": "2024-04-10 22:17:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-2357:\n\tThe Libreswan Project was notified of an issue causing libreswan to restart under some IKEv2 retransmit scenarios when a connection is configured to use PreSharedKeys (authby=secret) and the connection cannot find a matching configured secret. When such a connection is automatically added on startup using the auto= keyword, it can cause repeated crashes leading to a Denial of Service.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2357",
+				"ID": "CVE-2024-2357",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libreswan-debuginfo",
+					"Release": "3.amzn2023.0.1",
+					"Version": "4.12",
+					"Filename": "Packages/libreswan-debuginfo-4.12-3.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libreswan",
+					"Release": "3.amzn2023.0.1",
+					"Version": "4.12",
+					"Filename": "Packages/libreswan-4.12-3.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libreswan-debugsource",
+					"Release": "3.amzn2023.0.1",
+					"Version": "4.12",
+					"Filename": "Packages/libreswan-debugsource-4.12-3.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libreswan-debuginfo",
+					"Release": "3.amzn2023.0.1",
+					"Version": "4.12",
+					"Filename": "Packages/libreswan-debuginfo-4.12-3.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libreswan",
+					"Release": "3.amzn2023.0.1",
+					"Version": "4.12",
+					"Filename": "Packages/libreswan-4.12-3.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libreswan-debugsource",
+					"Release": "3.amzn2023.0.1",
+					"Version": "4.12",
+					"Filename": "Packages/libreswan-debugsource-4.12-3.amzn2023.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
