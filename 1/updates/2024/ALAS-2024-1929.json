@@ -1,0 +1,107 @@
+{
+	"ID": "ALAS-2024-1929",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2024-1929: important priority package update for glib2",
+	"Issued": {
+		"Date": "2024-04-11 01:43"
+	},
+	"Updated": {
+		"Date": "2024-04-11 01:43"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2020-35457:\n\tGNOME GLib before 2.65.3 has an integer overflow, that might lead to an out-of-bounds write, in g_option_group_add_entries. NOTE: the vendor's position is \"Realistically this is not a security issue. The standard pattern is for callers to provide a static list of option entries in a fixed number of calls to g_option_group_add_entries().\" The researcher states that this pattern is undocumented\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35457",
+				"ID": "CVE-2020-35457",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "glib2-debuginfo",
+					"Release": "5.27.amzn1",
+					"Version": "2.36.3",
+					"Filename": "Packages/glib2-debuginfo-2.36.3-5.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "glib2-fam",
+					"Release": "5.27.amzn1",
+					"Version": "2.36.3",
+					"Filename": "Packages/glib2-fam-2.36.3-5.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "glib2-doc",
+					"Release": "5.27.amzn1",
+					"Version": "2.36.3",
+					"Filename": "Packages/glib2-doc-2.36.3-5.27.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "glib2",
+					"Release": "5.27.amzn1",
+					"Version": "2.36.3",
+					"Filename": "Packages/glib2-2.36.3-5.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "glib2-devel",
+					"Release": "5.27.amzn1",
+					"Version": "2.36.3",
+					"Filename": "Packages/glib2-devel-2.36.3-5.27.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "glib2-debuginfo",
+					"Release": "5.27.amzn1",
+					"Version": "2.36.3",
+					"Filename": "Packages/glib2-debuginfo-2.36.3-5.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "glib2-fam",
+					"Release": "5.27.amzn1",
+					"Version": "2.36.3",
+					"Filename": "Packages/glib2-fam-2.36.3-5.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "glib2",
+					"Release": "5.27.amzn1",
+					"Version": "2.36.3",
+					"Filename": "Packages/glib2-2.36.3-5.27.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "glib2-devel",
+					"Release": "5.27.amzn1",
+					"Version": "2.36.3",
+					"Filename": "Packages/glib2-devel-2.36.3-5.27.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
+}

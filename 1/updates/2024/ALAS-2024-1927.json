@@ -1,0 +1,99 @@
+{
+	"ID": "ALAS-2024-1927",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2024-1927: important priority package update for tigervnc",
+	"Issued": {
+		"Date": "2024-04-11 01:43"
+	},
+	"Updated": {
+		"Date": "2024-04-11 01:43"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2024-31083:\n\tThe ProcRenderAddGlyphs() function calls the AllocateGlyph() function to store new glyphs sent by the client to the X server.  AllocateGlyph() would return a new glyph with refcount=0 and a re-used glyph would end up not changing the refcount at all. The resulting glyph_new array would thus have multiple entries pointing to the same non-refcounted glyphs.\n\nProcRenderAddGlyphs() may free a glyph, resulting in a use-after-free when the same glyph pointer is then later used.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-31083",
+				"ID": "CVE-2024-31083",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "tigervnc-debuginfo",
+					"Release": "21.36.amzn1",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-debuginfo-1.8.0-21.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "tigervnc",
+					"Release": "21.36.amzn1",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-1.8.0-21.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "tigervnc-server",
+					"Release": "21.36.amzn1",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-server-1.8.0-21.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "tigervnc-server-module",
+					"Release": "21.36.amzn1",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-server-module-1.8.0-21.36.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "tigervnc-debuginfo",
+					"Release": "21.36.amzn1",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-debuginfo-1.8.0-21.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "tigervnc",
+					"Release": "21.36.amzn1",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-1.8.0-21.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "tigervnc-server-module",
+					"Release": "21.36.amzn1",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-server-module-1.8.0-21.36.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "tigervnc-server",
+					"Release": "21.36.amzn1",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-server-1.8.0-21.36.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
+}
