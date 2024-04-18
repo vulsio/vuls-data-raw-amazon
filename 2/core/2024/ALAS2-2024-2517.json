@@ -1,0 +1,121 @@
+{
+	"ID": "ALAS2-2024-2517",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2517: important priority package update for tomcat",
+	"Issued": {
+		"Date": "2024-04-11 01:07"
+	},
+	"Updated": {
+		"Date": "2024-04-11 01:07"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-28709:\n\tThe fix for CVE-2023-24998 was incomplete for Apache Tomcat 11.0.0-M2 to 11.0.0-M4, 10.1.5 to 10.1.7, 9.0.71 to 9.0.73 and 8.5.85 to 8.5.87. If non-default HTTP       connector settings were used such that the maxParameterCount could be reached using query string parameters and a request was       submitted that supplied exactly maxParameterCount parameters in the query string, the limit for uploaded request parts could be bypassed with the potential for a denial of service to occur.\n\nCVE-2023-24998:\n\tApache Commons FileUpload before 1.5 does not limit the number of request parts to be processed resulting in the possibility of an attacker triggering a DoS with a malicious upload or series of uploads.\n\n\n\n\nNote that, like all of the file upload limits, the\n          new configuration option (FileUploadBase#setFileCountMax) is not\n          enabled by default and must be explicitly configured.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-24998",
+				"ID": "CVE-2023-24998",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28709",
+				"ID": "CVE-2023-28709",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat",
+					"Release": "10.amzn2.0.9",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-7.0.76-10.amzn2.0.9.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-admin-webapps",
+					"Release": "10.amzn2.0.9",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-admin-webapps-7.0.76-10.amzn2.0.9.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-docs-webapp",
+					"Release": "10.amzn2.0.9",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-docs-webapp-7.0.76-10.amzn2.0.9.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-javadoc",
+					"Release": "10.amzn2.0.9",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-javadoc-7.0.76-10.amzn2.0.9.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-jsvc",
+					"Release": "10.amzn2.0.9",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-jsvc-7.0.76-10.amzn2.0.9.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-jsp-2.2-api",
+					"Release": "10.amzn2.0.9",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-jsp-2.2-api-7.0.76-10.amzn2.0.9.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-lib",
+					"Release": "10.amzn2.0.9",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-lib-7.0.76-10.amzn2.0.9.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-servlet-3.0-api",
+					"Release": "10.amzn2.0.9",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-servlet-3.0-api-7.0.76-10.amzn2.0.9.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-el-2.2-api",
+					"Release": "10.amzn2.0.9",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-el-2.2-api-7.0.76-10.amzn2.0.9.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-webapps",
+					"Release": "10.amzn2.0.9",
+					"Version": "7.0.76",
+					"Filename": "Packages/tomcat-webapps-7.0.76-10.amzn2.0.9.noarch.rpm"
+				}
+			]
+		}
+	}
+}

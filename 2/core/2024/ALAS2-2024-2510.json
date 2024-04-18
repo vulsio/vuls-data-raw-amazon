@@ -1,0 +1,191 @@
+{
+	"ID": "ALAS2-2024-2510",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2510: important priority package update for tigervnc",
+	"Issued": {
+		"Date": "2024-04-11 01:07"
+	},
+	"Updated": {
+		"Date": "2024-04-11 01:07"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-31083:\n\tThe ProcRenderAddGlyphs() function calls the AllocateGlyph() function to store new glyphs sent by the client to the X server.  AllocateGlyph() would return a new glyph with refcount=0 and a re-used glyph would end up not changing the refcount at all. The resulting glyph_new array would thus have multiple entries pointing to the same non-refcounted glyphs.\n\nProcRenderAddGlyphs() may free a glyph, resulting in a use-after-free when the same glyph pointer is then later used.\n\nCVE-2024-31081:\n\tA heap-based buffer over-read vulnerability was found in the X.org server's ProcXIPassiveGrabDevice() function. This issue occurs when byte-swapped length values are used in replies, potentially leading to memory leakage and segmentation faults, particularly when triggered by a client with a different endianness. This vulnerability could be exploited by an attacker to cause the X server to read heap memory values and then transmit them back to the client until encountering an unmapped page, resulting in a crash. Despite the attacker's inability to control the specific memory copied into the replies, the small length values typically stored in a 32-bit integer can result in significant attempted out-of-bounds reads.\n\nCVE-2024-31080:\n\tA heap-based buffer over-read vulnerability was found in the X.org server's ProcXIGetSelectedEvents() function. This issue occurs when byte-swapped length values are used in replies, potentially leading to memory leakage and segmentation faults, particularly when triggered by a client with a different endianness. This vulnerability could be exploited by an attacker to cause the X server to read heap memory values and then transmit them back to the client until encountering an unmapped page, resulting in a crash. Despite the attacker's inability to control the specific memory copied into the replies, the small length values typically stored in a 32-bit integer can result in significant attempted out-of-bounds reads.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-31080",
+				"ID": "CVE-2024-31080",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-31081",
+				"ID": "CVE-2024-31081",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-31083",
+				"ID": "CVE-2024-31083",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "tigervnc",
+					"Release": "24.amzn2.0.3",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-1.8.0-24.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "tigervnc-server",
+					"Release": "24.amzn2.0.3",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-server-1.8.0-24.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "tigervnc-server-minimal",
+					"Release": "24.amzn2.0.3",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-server-minimal-1.8.0-24.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "tigervnc-server-module",
+					"Release": "24.amzn2.0.3",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-server-module-1.8.0-24.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tigervnc-server-applet",
+					"Release": "24.amzn2.0.3",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-server-applet-1.8.0-24.amzn2.0.3.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tigervnc-license",
+					"Release": "24.amzn2.0.3",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-license-1.8.0-24.amzn2.0.3.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tigervnc-icons",
+					"Release": "24.amzn2.0.3",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-icons-1.8.0-24.amzn2.0.3.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "tigervnc-debuginfo",
+					"Release": "24.amzn2.0.3",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-debuginfo-1.8.0-24.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "tigervnc",
+					"Release": "24.amzn2.0.3",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-1.8.0-24.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "tigervnc-server",
+					"Release": "24.amzn2.0.3",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-server-1.8.0-24.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "tigervnc-server-minimal",
+					"Release": "24.amzn2.0.3",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-server-minimal-1.8.0-24.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "tigervnc-server-module",
+					"Release": "24.amzn2.0.3",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-server-module-1.8.0-24.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "tigervnc-debuginfo",
+					"Release": "24.amzn2.0.3",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-debuginfo-1.8.0-24.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "tigervnc",
+					"Release": "24.amzn2.0.3",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-1.8.0-24.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "tigervnc-server",
+					"Release": "24.amzn2.0.3",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-server-1.8.0-24.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "tigervnc-server-minimal",
+					"Release": "24.amzn2.0.3",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-server-minimal-1.8.0-24.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "tigervnc-server-module",
+					"Release": "24.amzn2.0.3",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-server-module-1.8.0-24.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "tigervnc-debuginfo",
+					"Release": "24.amzn2.0.3",
+					"Version": "1.8.0",
+					"Filename": "Packages/tigervnc-debuginfo-1.8.0-24.amzn2.0.3.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
