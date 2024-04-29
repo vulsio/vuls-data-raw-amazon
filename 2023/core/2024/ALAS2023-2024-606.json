@@ -1,0 +1,195 @@
+{
+	"ID": "ALAS2023-2024-606",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-606: Medium priority package update for curl",
+	"Issued": {
+		"Date": "2024-04-25 16:40:00"
+	},
+	"Updated": {
+		"Date": "2024-04-25 16:40:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-46218:\n\tThis flaw allows a malicious HTTP server to set \"super cookies\" in curl that are then passed back to more origins than what is otherwise allowed or possible. This allows a site to set cookies that then would get sent to different and unrelated sites and domains.\n\nIt could do this by exploiting a mixed case flaw in curl's function that verifies a given cookie domain against the Public Suffix List (PSL). For example a cookie could be set with domain=co.UK when the URL used a lowercase hostname curl.co.uk, even though co.uk is listed as a PSL domain.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-46218",
+				"ID": "CVE-2023-46218",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libcurl-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-debuginfo-8.5.0-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "curl-minimal-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-minimal-debuginfo-8.5.0-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libcurl-minimal",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-minimal-8.5.0-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "curl-debugsource",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-debugsource-8.5.0-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "curl-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-debuginfo-8.5.0-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libcurl-minimal-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-minimal-debuginfo-8.5.0-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "curl",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-8.5.0-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "curl-minimal",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-minimal-8.5.0-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libcurl",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-8.5.0-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libcurl-devel",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-devel-8.5.0-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "curl-minimal-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-minimal-debuginfo-8.5.0-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libcurl-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-debuginfo-8.5.0-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libcurl",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-8.5.0-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "curl-debugsource",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-debugsource-8.5.0-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libcurl-minimal-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-minimal-debuginfo-8.5.0-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "curl",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-8.5.0-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libcurl-minimal",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-minimal-8.5.0-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "curl-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-debuginfo-8.5.0-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "curl-minimal",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-minimal-8.5.0-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libcurl-devel",
+					"Release": "1.amzn2023.0.2",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-devel-8.5.0-1.amzn2023.0.2.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,201 @@
+{
+	"ID": "ALAS2023-2024-596",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-596: Medium priority package update for curl",
+	"Issued": {
+		"Date": "2024-04-25 16:39:00"
+	},
+	"Updated": {
+		"Date": "2024-04-25 16:39:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-2398:\n\tWhen an application tells libcurl it wants to allow HTTP/2 server push, and the amount of received headers for the push surpasses the maximum allowed limit (1000), libcurl aborts the server push. When aborting, libcurl inadvertently does not free all the previously allocated headers and instead leaks the memory.  Further, this error condition fails silently and is therefore not easily detected by an application.\n\nCVE-2024-2004:\n\tWhen a protocol selection parameter option disables all protocols without adding any then the default set of protocols would remain in the allowed set due to an error in the logic for removing protocols. The below command would perform a request to curl.se with a plaintext protocol which has been explicitly disabled.      curl --proto -all,-http http://curl.se  The flaw is only present if the set of selected protocols disables the entire set of available protocols, in itself a command with no practical use and therefore unlikely to be encountered in real situations. The curl security team has thus assessed this to be low severity bug.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2004",
+				"ID": "CVE-2024-2004",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2398",
+				"ID": "CVE-2024-2398",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libcurl-minimal-debuginfo",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-minimal-debuginfo-8.5.0-1.amzn2023.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libcurl-minimal",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-minimal-8.5.0-1.amzn2023.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "curl-debuginfo",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-debuginfo-8.5.0-1.amzn2023.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "curl-minimal",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-minimal-8.5.0-1.amzn2023.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "curl-debugsource",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-debugsource-8.5.0-1.amzn2023.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libcurl",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-8.5.0-1.amzn2023.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "curl-minimal-debuginfo",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-minimal-debuginfo-8.5.0-1.amzn2023.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "curl",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-8.5.0-1.amzn2023.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libcurl-debuginfo",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-debuginfo-8.5.0-1.amzn2023.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libcurl-devel",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-devel-8.5.0-1.amzn2023.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libcurl-minimal-debuginfo",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-minimal-debuginfo-8.5.0-1.amzn2023.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "curl-debuginfo",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-debuginfo-8.5.0-1.amzn2023.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "curl-minimal-debuginfo",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-minimal-debuginfo-8.5.0-1.amzn2023.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "curl-debugsource",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-debugsource-8.5.0-1.amzn2023.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "curl",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-8.5.0-1.amzn2023.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libcurl-debuginfo",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-debuginfo-8.5.0-1.amzn2023.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "curl-minimal",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/curl-minimal-8.5.0-1.amzn2023.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libcurl",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-8.5.0-1.amzn2023.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libcurl-minimal",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-minimal-8.5.0-1.amzn2023.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libcurl-devel",
+					"Release": "1.amzn2023.0.4",
+					"Version": "8.5.0",
+					"Filename": "Packages/libcurl-devel-8.5.0-1.amzn2023.0.4.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

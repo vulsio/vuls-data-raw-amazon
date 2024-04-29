@@ -1,0 +1,83 @@
+{
+	"ID": "ALAS2023-2024-595",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-595: Important priority package update for mod_http2",
+	"Issued": {
+		"Date": "2024-04-25 16:39:00"
+	},
+	"Updated": {
+		"Date": "2024-04-25 16:39:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-27316:\n\tHTTP/2 incoming headers exceeding the limit are temporarily buffered in nghttp2 in order to generate an informative HTTP 413 response. If a client does not stop sending headers, this leads to memory exhaustion.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-27316",
+				"ID": "CVE-2024-27316",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mod_http2-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "2.0.27",
+					"Filename": "Packages/mod_http2-debuginfo-2.0.27-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mod_http2",
+					"Release": "1.amzn2023.0.2",
+					"Version": "2.0.27",
+					"Filename": "Packages/mod_http2-2.0.27-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mod_http2-debugsource",
+					"Release": "1.amzn2023.0.2",
+					"Version": "2.0.27",
+					"Filename": "Packages/mod_http2-debugsource-2.0.27-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "mod_http2",
+					"Release": "1.amzn2023.0.2",
+					"Version": "2.0.27",
+					"Filename": "Packages/mod_http2-2.0.27-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "mod_http2-debugsource",
+					"Release": "1.amzn2023.0.2",
+					"Version": "2.0.27",
+					"Filename": "Packages/mod_http2-debugsource-2.0.27-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "mod_http2-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "2.0.27",
+					"Filename": "Packages/mod_http2-debuginfo-2.0.27-1.amzn2023.0.2.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
