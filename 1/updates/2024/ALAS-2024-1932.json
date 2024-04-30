@@ -1,0 +1,189 @@
+{
+	"ID": "ALAS-2024-1932",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2024-1932: important priority package update for xorg-x11-server",
+	"Issued": {
+		"Date": "2024-04-25 16:04"
+	},
+	"Updated": {
+		"Date": "2024-04-25 16:04"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2024-21886:\n\tHeap buffer overflow in DisableDevice\n\nNOTE: https://lists.x.org/archives/xorg/2024-January/061525.html\nNOTE: https://gitlab.freedesktop.org/xorg/xserver/-/commit/bc1fdbe46559dd947674375946bbef54dd0ce36b\nNOTE: https://gitlab.freedesktop.org/xorg/xserver/-/commit/26769aa71fcbe0a8403b7fb13b7c9010cc07c3a8\n\nCVE-2024-21885:\n\tHeap buffer overflow in XISendDeviceHierarchyEvent\n\nNOTE: https://lists.x.org/archives/xorg/2024-January/061525.html\nNOTE: https://gitlab.freedesktop.org/xorg/xserver/-/commit/4a5e9b1895627d40d26045bd0b7ef3dce503cbd1\n\nCVE-2024-0229:\n\tReattaching to different master device may lead to out-of-bounds memory access\n\nNOTE: https://lists.x.org/archives/xorg/2024-January/061525.html\nNOTE: https://gitlab.freedesktop.org/xorg/xserver/-/commit/ece23be888a93b741aa1209d1dbf64636109d6a5\nNOTE: https://gitlab.freedesktop.org/xorg/xserver/-/commit/219c54b8a3337456ce5270ded6a67bcde53553d5\nNOTE: https://gitlab.freedesktop.org/xorg/xserver/-/commit/df3c65706eb169d5938df0052059f3e0d5981b74\n\nCVE-2023-6816:\n\tHeap buffer overflow in DeviceFocusEvent and ProcXIQueryPointer\n\nNOTE: https://lists.x.org/archives/xorg/2024-January/061525.html\nNOTE: https://gitlab.freedesktop.org/xorg/xserver/-/commit/9e2ecb2af8302dedc49cb6a63ebe063c58a9e7e3\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6816",
+				"ID": "CVE-2023-6816",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0229",
+				"ID": "CVE-2024-0229",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-21885",
+				"ID": "CVE-2024-21885",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-21886",
+				"ID": "CVE-2024-21886",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "xorg-x11-server-common",
+					"Release": "18.56.amzn1",
+					"Version": "1.17.4",
+					"Filename": "Packages/xorg-x11-server-common-1.17.4-18.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "xorg-x11-server-source",
+					"Release": "18.56.amzn1",
+					"Version": "1.17.4",
+					"Filename": "Packages/xorg-x11-server-source-1.17.4-18.56.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "xorg-x11-server-Xnest",
+					"Release": "18.56.amzn1",
+					"Version": "1.17.4",
+					"Filename": "Packages/xorg-x11-server-Xnest-1.17.4-18.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "xorg-x11-server-devel",
+					"Release": "18.56.amzn1",
+					"Version": "1.17.4",
+					"Filename": "Packages/xorg-x11-server-devel-1.17.4-18.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "xorg-x11-server-debuginfo",
+					"Release": "18.56.amzn1",
+					"Version": "1.17.4",
+					"Filename": "Packages/xorg-x11-server-debuginfo-1.17.4-18.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "xorg-x11-server-Xvfb",
+					"Release": "18.56.amzn1",
+					"Version": "1.17.4",
+					"Filename": "Packages/xorg-x11-server-Xvfb-1.17.4-18.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "xorg-x11-server-Xephyr",
+					"Release": "18.56.amzn1",
+					"Version": "1.17.4",
+					"Filename": "Packages/xorg-x11-server-Xephyr-1.17.4-18.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "xorg-x11-server-Xorg",
+					"Release": "18.56.amzn1",
+					"Version": "1.17.4",
+					"Filename": "Packages/xorg-x11-server-Xorg-1.17.4-18.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "xorg-x11-server-Xdmx",
+					"Release": "18.56.amzn1",
+					"Version": "1.17.4",
+					"Filename": "Packages/xorg-x11-server-Xdmx-1.17.4-18.56.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "xorg-x11-server-Xephyr",
+					"Release": "18.56.amzn1",
+					"Version": "1.17.4",
+					"Filename": "Packages/xorg-x11-server-Xephyr-1.17.4-18.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "xorg-x11-server-Xorg",
+					"Release": "18.56.amzn1",
+					"Version": "1.17.4",
+					"Filename": "Packages/xorg-x11-server-Xorg-1.17.4-18.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "xorg-x11-server-Xdmx",
+					"Release": "18.56.amzn1",
+					"Version": "1.17.4",
+					"Filename": "Packages/xorg-x11-server-Xdmx-1.17.4-18.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "xorg-x11-server-Xnest",
+					"Release": "18.56.amzn1",
+					"Version": "1.17.4",
+					"Filename": "Packages/xorg-x11-server-Xnest-1.17.4-18.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "xorg-x11-server-devel",
+					"Release": "18.56.amzn1",
+					"Version": "1.17.4",
+					"Filename": "Packages/xorg-x11-server-devel-1.17.4-18.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "xorg-x11-server-common",
+					"Release": "18.56.amzn1",
+					"Version": "1.17.4",
+					"Filename": "Packages/xorg-x11-server-common-1.17.4-18.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "xorg-x11-server-debuginfo",
+					"Release": "18.56.amzn1",
+					"Version": "1.17.4",
+					"Filename": "Packages/xorg-x11-server-debuginfo-1.17.4-18.56.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "xorg-x11-server-Xvfb",
+					"Release": "18.56.amzn1",
+					"Version": "1.17.4",
+					"Filename": "Packages/xorg-x11-server-Xvfb-1.17.4-18.56.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
+}
