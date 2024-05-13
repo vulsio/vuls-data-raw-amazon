@@ -1,0 +1,155 @@
+{
+	"ID": "ALAS2023-2024-614",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-614: Medium priority package update for python-pymongo",
+	"Issued": {
+		"Date": "2024-05-09 17:16:00"
+	},
+	"Updated": {
+		"Date": "2024-05-09 17:16:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-21506:\n\tVersions of the package pymongo before 4.6.3 are vulnerable to Out-of-bounds Read in the bson module. Using the crafted payload the attacker could force the parser to deserialize unmanaged memory. The parser tries to interpret bytes next to buffer and throws an exception with string. If the following bytes are not printable UTF-8 the parser throws an exception with a single byte.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-21506",
+				"ID": "CVE-2024-21506",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-pymongo-debuginfo",
+					"Release": "5.amzn2023.0.3",
+					"Version": "3.10.1",
+					"Filename": "Packages/python-pymongo-debuginfo-3.10.1-5.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python-pymongo-doc",
+					"Release": "5.amzn2023.0.3",
+					"Version": "3.10.1",
+					"Filename": "Packages/python-pymongo-doc-3.10.1-5.amzn2023.0.3.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-bson-debuginfo",
+					"Release": "5.amzn2023.0.3",
+					"Version": "3.10.1",
+					"Filename": "Packages/python3-bson-debuginfo-3.10.1-5.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-pymongo-debugsource",
+					"Release": "5.amzn2023.0.3",
+					"Version": "3.10.1",
+					"Filename": "Packages/python-pymongo-debugsource-3.10.1-5.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-pymongo-debuginfo",
+					"Release": "5.amzn2023.0.3",
+					"Version": "3.10.1",
+					"Filename": "Packages/python3-pymongo-debuginfo-3.10.1-5.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-pymongo-gridfs",
+					"Release": "5.amzn2023.0.3",
+					"Version": "3.10.1",
+					"Filename": "Packages/python3-pymongo-gridfs-3.10.1-5.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-bson",
+					"Release": "5.amzn2023.0.3",
+					"Version": "3.10.1",
+					"Filename": "Packages/python3-bson-3.10.1-5.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-pymongo",
+					"Release": "5.amzn2023.0.3",
+					"Version": "3.10.1",
+					"Filename": "Packages/python3-pymongo-3.10.1-5.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-pymongo-debugsource",
+					"Release": "5.amzn2023.0.3",
+					"Version": "3.10.1",
+					"Filename": "Packages/python-pymongo-debugsource-3.10.1-5.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-pymongo-gridfs",
+					"Release": "5.amzn2023.0.3",
+					"Version": "3.10.1",
+					"Filename": "Packages/python3-pymongo-gridfs-3.10.1-5.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-bson-debuginfo",
+					"Release": "5.amzn2023.0.3",
+					"Version": "3.10.1",
+					"Filename": "Packages/python3-bson-debuginfo-3.10.1-5.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-pymongo-debuginfo",
+					"Release": "5.amzn2023.0.3",
+					"Version": "3.10.1",
+					"Filename": "Packages/python-pymongo-debuginfo-3.10.1-5.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-pymongo-debuginfo",
+					"Release": "5.amzn2023.0.3",
+					"Version": "3.10.1",
+					"Filename": "Packages/python3-pymongo-debuginfo-3.10.1-5.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-pymongo",
+					"Release": "5.amzn2023.0.3",
+					"Version": "3.10.1",
+					"Filename": "Packages/python3-pymongo-3.10.1-5.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-bson",
+					"Release": "5.amzn2023.0.3",
+					"Version": "3.10.1",
+					"Filename": "Packages/python3-bson-3.10.1-5.amzn2023.0.3.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
