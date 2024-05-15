@@ -1,0 +1,155 @@
+{
+	"ID": "ALAS2-2024-2538",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2538: important priority package update for flatpak",
+	"Issued": {
+		"Date": "2024-05-09 19:16"
+	},
+	"Updated": {
+		"Date": "2024-05-09 19:16"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-32462:\n\tFlatpak is a system for building, distributing, and running sandboxed desktop applications on Linux. in versions before 1.10.9, 1.12.9, 1.14.6, and 1.15.8, a malicious or compromised Flatpak app could execute arbitrary code outside its sandbox. Normally, the `--command` argument of `flatpak run` expects to be given a command to run in the specified Flatpak app, optionally along with some arguments. However it is possible to instead pass `bwrap` arguments to `--command=`, such as `--bind`. It's possible to pass an arbitrary `commandline` to the portal interface `org.freedesktop.portal.Background.RequestBackground` from within a Flatpak app. When this is converted into a `--command` and arguments, it achieves the same effect of passing arguments directly to `bwrap`, and thus can be used for a sandbox escape. The solution is to pass the `--` argument to `bwrap`, which makes it stop processing options. This has been supported since bubblewrap 0.3.0. All supported versions of Flatpak require at least that version of bubblewrap. xdg-desktop-portal version 1.18.4 will mitigate this vulnerability by only allowing Flatpak apps to create .desktop files for commands that do not start with --. The vulnerability is patched in 1.15.8, 1.10.9, 1.12.9, and 1.14.6.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-32462",
+				"ID": "CVE-2024-32462",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "flatpak",
+					"Release": "10.amzn2.0.5",
+					"Version": "1.0.9",
+					"Filename": "Packages/flatpak-1.0.9-10.amzn2.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "flatpak-builder",
+					"Release": "10.amzn2.0.5",
+					"Version": "1.0.0",
+					"Filename": "Packages/flatpak-builder-1.0.0-10.amzn2.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "flatpak-devel",
+					"Release": "10.amzn2.0.5",
+					"Version": "1.0.9",
+					"Filename": "Packages/flatpak-devel-1.0.9-10.amzn2.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "flatpak-libs",
+					"Release": "10.amzn2.0.5",
+					"Version": "1.0.9",
+					"Filename": "Packages/flatpak-libs-1.0.9-10.amzn2.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "flatpak-debuginfo",
+					"Release": "10.amzn2.0.5",
+					"Version": "1.0.9",
+					"Filename": "Packages/flatpak-debuginfo-1.0.9-10.amzn2.0.5.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "flatpak",
+					"Release": "10.amzn2.0.5",
+					"Version": "1.0.9",
+					"Filename": "Packages/flatpak-1.0.9-10.amzn2.0.5.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "flatpak-builder",
+					"Release": "10.amzn2.0.5",
+					"Version": "1.0.0",
+					"Filename": "Packages/flatpak-builder-1.0.0-10.amzn2.0.5.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "flatpak-devel",
+					"Release": "10.amzn2.0.5",
+					"Version": "1.0.9",
+					"Filename": "Packages/flatpak-devel-1.0.9-10.amzn2.0.5.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "flatpak-libs",
+					"Release": "10.amzn2.0.5",
+					"Version": "1.0.9",
+					"Filename": "Packages/flatpak-libs-1.0.9-10.amzn2.0.5.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "flatpak-debuginfo",
+					"Release": "10.amzn2.0.5",
+					"Version": "1.0.9",
+					"Filename": "Packages/flatpak-debuginfo-1.0.9-10.amzn2.0.5.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "flatpak",
+					"Release": "10.amzn2.0.5",
+					"Version": "1.0.9",
+					"Filename": "Packages/flatpak-1.0.9-10.amzn2.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "flatpak-builder",
+					"Release": "10.amzn2.0.5",
+					"Version": "1.0.0",
+					"Filename": "Packages/flatpak-builder-1.0.0-10.amzn2.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "flatpak-devel",
+					"Release": "10.amzn2.0.5",
+					"Version": "1.0.9",
+					"Filename": "Packages/flatpak-devel-1.0.9-10.amzn2.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "flatpak-libs",
+					"Release": "10.amzn2.0.5",
+					"Version": "1.0.9",
+					"Filename": "Packages/flatpak-libs-1.0.9-10.amzn2.0.5.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "flatpak-debuginfo",
+					"Release": "10.amzn2.0.5",
+					"Version": "1.0.9",
+					"Filename": "Packages/flatpak-debuginfo-1.0.9-10.amzn2.0.5.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
