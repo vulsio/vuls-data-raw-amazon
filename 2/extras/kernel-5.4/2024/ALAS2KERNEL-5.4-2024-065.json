@@ -1,0 +1,285 @@
+{
+	"ID": "ALAS2KERNEL-5.4-2024-065",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Kernel-5.4 2.0 - ALAS2KERNEL-5.4-2024-065: medium priority package update for kernel",
+	"Issued": {
+		"Date": "2024-05-09 18:00"
+	},
+	"Updated": {
+		"Date": "2024-05-09 18:00"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2024-26586:\n\tIn the Linux kernel, the following vulnerability has been resolved: mlxsw: spectrum_acl_tcam: Fix stack corruption When tc filters are first added to a net device, the corresponding local port gets bound to an ACL group in the device.\n\nCVE-2024-26584:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: tls: handle backlogging of crypto requests\n\nSince we're setting the CRYPTO_TFM_REQ_MAY_BACKLOG flag on our\nrequests to the crypto API, crypto_aead_{encrypt,decrypt} can return\n -EBUSY instead of -EINPROGRESS in valid situations. For example, when\nthe cryptd queue for AESNI is full (easy to trigger with an\nartificially low cryptd.cryptd_max_cpu_qlen), requests will be enqueued\nto the backlog but still processed. In that case, the async callback\nwill also be called twice: first with err == -EINPROGRESS, which it\nseems we can just ignore, then with err == 0.\n\nCompared to Sabrina's original patch this version uses the new\ntls_*crypt_async_wait() helpers and converts the EBUSY to\nEINPROGRESS to avoid having to modify all the error handling\npaths. The handling is identical.\n\nCVE-2024-26583:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntls: fix race between async notify and socket close\n\nThe submitting thread (one which called recvmsg/sendmsg)\nmay exit as soon as the async crypto handler calls complete()\nso any code past that point risks touching already freed data.\n\nTry to avoid the locking and extra flags altogether.\nHave the main thread hold an extra reference, this way\nwe can depend solely on the atomic ref counter for\nsynchronization.\n\nDon't futz with reiniting the completion, either, we are now\ntightly controlling when completion fires.\n\nCVE-2023-52434:\n\tA flaw was found in the smb client in the Linux kernel. A potential out-of-bounds error was seen in the smb2_parse_contexts() function. Validate offsets and lengths before dereferencing create contexts in smb2_parse_contexts().\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52434",
+				"ID": "CVE-2023-52434",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26583",
+				"ID": "CVE-2024-26583",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26584",
+				"ID": "CVE-2024-26584",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26586",
+				"ID": "CVE-2024-26586",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---kernel-5.4",
+			"Name": "Amazon Linux 2 - Kernel-5.4",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/kernel-5.4.275-189.375.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/kernel-headers-5.4.275-189.375.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-x86_64",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/kernel-debuginfo-common-x86_64-5.4.275-189.375.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/perf-5.4.275-189.375.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/perf-debuginfo-5.4.275-189.375.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-perf",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/python-perf-5.4.275-189.375.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-perf-debuginfo",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/python-perf-debuginfo-5.4.275-189.375.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/kernel-tools-5.4.275-189.375.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/kernel-tools-devel-5.4.275-189.375.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/kernel-tools-debuginfo-5.4.275-189.375.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "bpftool",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/bpftool-5.4.275-189.375.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "bpftool-debuginfo",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/bpftool-debuginfo-5.4.275-189.375.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/kernel-devel-5.4.275-189.375.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/kernel-debuginfo-5.4.275-189.375.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/kernel-headers-5.4.275-189.375.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/kernel-5.4.275-189.375.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/kernel-headers-5.4.275-189.375.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-aarch64",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/kernel-debuginfo-common-aarch64-5.4.275-189.375.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/perf-5.4.275-189.375.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/perf-debuginfo-5.4.275-189.375.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-perf",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/python-perf-5.4.275-189.375.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-perf-debuginfo",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/python-perf-debuginfo-5.4.275-189.375.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/kernel-tools-5.4.275-189.375.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/kernel-tools-devel-5.4.275-189.375.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/kernel-tools-debuginfo-5.4.275-189.375.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "bpftool",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/bpftool-5.4.275-189.375.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "bpftool-debuginfo",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/bpftool-debuginfo-5.4.275-189.375.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/kernel-devel-5.4.275-189.375.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "189.375.amzn2",
+					"Version": "5.4.275",
+					"Filename": "Packages/kernel-debuginfo-5.4.275-189.375.amzn2.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
