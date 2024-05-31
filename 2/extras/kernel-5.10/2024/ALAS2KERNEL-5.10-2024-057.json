@@ -10,10 +10,10 @@
 		"Date": "2024-05-09 18:00"
 	},
 	"Updated": {
-		"Date": "2024-05-09 18:00"
+		"Date": "2024-05-23 23:02"
 	},
 	"Severity": "medium",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2024-26584:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: tls: handle backlogging of crypto requests\n\nSince we're setting the CRYPTO_TFM_REQ_MAY_BACKLOG flag on our\nrequests to the crypto API, crypto_aead_{encrypt,decrypt} can return\n -EBUSY instead of -EINPROGRESS in valid situations. For example, when\nthe cryptd queue for AESNI is full (easy to trigger with an\nartificially low cryptd.cryptd_max_cpu_qlen), requests will be enqueued\nto the backlog but still processed. In that case, the async callback\nwill also be called twice: first with err == -EINPROGRESS, which it\nseems we can just ignore, then with err == 0.\n\nCompared to Sabrina's original patch this version uses the new\ntls_*crypt_async_wait() helpers and converts the EBUSY to\nEINPROGRESS to avoid having to modify all the error handling\npaths. The handling is identical.\n\nCVE-2024-26583:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntls: fix race between async notify and socket close\n\nThe submitting thread (one which called recvmsg/sendmsg)\nmay exit as soon as the async crypto handler calls complete()\nso any code past that point risks touching already freed data.\n\nTry to avoid the locking and extra flags altogether.\nHave the main thread hold an extra reference, this way\nwe can depend solely on the atomic ref counter for\nsynchronization.\n\nDon't futz with reiniting the completion, either, we are now\ntightly controlling when completion fires.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2024-26923:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\naf_unix: Fix garbage collector racing against connect()\n\nCVE-2024-26584:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: tls: handle backlogging of crypto requests\n\nSince we're setting the CRYPTO_TFM_REQ_MAY_BACKLOG flag on our\nrequests to the crypto API, crypto_aead_{encrypt,decrypt} can return\n -EBUSY instead of -EINPROGRESS in valid situations. For example, when\nthe cryptd queue for AESNI is full (easy to trigger with an\nartificially low cryptd.cryptd_max_cpu_qlen), requests will be enqueued\nto the backlog but still processed. In that case, the async callback\nwill also be called twice: first with err == -EINPROGRESS, which it\nseems we can just ignore, then with err == 0.\n\nCompared to Sabrina's original patch this version uses the new\ntls_*crypt_async_wait() helpers and converts the EBUSY to\nEINPROGRESS to avoid having to modify all the error handling\npaths. The handling is identical.\n\nCVE-2024-26583:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntls: fix race between async notify and socket close\n\nThe submitting thread (one which called recvmsg/sendmsg)\nmay exit as soon as the async crypto handler calls complete()\nso any code past that point risks touching already freed data.\n\nTry to avoid the locking and extra flags altogether.\nHave the main thread hold an extra reference, this way\nwe can depend solely on the atomic ref counter for\nsynchronization.\n\nDon't futz with reiniting the completion, either, we are now\ntightly controlling when completion fires.\n",
 	"References": {
 		"Reference": [
 			{
@@ -25,6 +25,12 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26584",
 				"ID": "CVE-2024-26584",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26923",
+				"ID": "CVE-2024-26923",
 				"Title": "",
 				"Type": "cve"
 			}

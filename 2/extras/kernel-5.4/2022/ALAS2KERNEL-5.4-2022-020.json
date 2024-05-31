@@ -10,10 +10,10 @@
 		"Date": "2022-01-20 19:56"
 	},
 	"Updated": {
-		"Date": "2022-01-28 17:21"
+		"Date": "2024-05-23 23:02"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2021-3348:\n\tA use after free flaw in the Linux kernel network block device (NBD) subsystem was found in the way user calls an ioctl NBD_SET_SOCK at a certain point during device setup.\n\nCVE-2021-3347:\n\tA flaw was found in the Linux kernel. A use-after-free memory flaw in the Fast Userspace Mutexes functionality allowing a local user to crash the system or escalate their privileges on the system. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n\nCVE-2021-3178:\n\tA flaw leak of the file handle for parent directory in the Linux kernel's NFS3 functionality was found in the way user calls READDIRPLUS. A local user could use this flaw to traverse to other parts of the file-system than mounted sub-folder.\n\nCVE-2020-27825:\n\tA use-after-free flaw was found in kernel/trace/ring_buffer.c in Linux kernel. There was a race problem in trace_open and resize of cpu buffer running parallely on different cpus, may cause a denial of service problem (DOS). This flaw could even allow a local attacker with special user  privilege to a kernel information leak threat.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2023-1390:\n\tA remote denial of service vulnerability was found in the Linux kernel's TIPC kernel module. The while loop in tipc_link_xmit() hits an unknown state while attempting to parse SKBs, which are not in the queue. Sending two small UDP packets to a system with a UDP bearer results in the CPU utilization for the system to instantly spike to 100%, causing a denial of service condition.\n\nCVE-2021-3348:\n\tA use after free flaw in the Linux kernel network block device (NBD) subsystem was found in the way user calls an ioctl NBD_SET_SOCK at a certain point during device setup.\n\nCVE-2021-3347:\n\tA flaw was found in the Linux kernel. A use-after-free memory flaw in the Fast Userspace Mutexes functionality allowing a local user to crash the system or escalate their privileges on the system. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n\nCVE-2021-3178:\n\tA flaw leak of the file handle for parent directory in the Linux kernel's NFS3 functionality was found in the way user calls READDIRPLUS. A local user could use this flaw to traverse to other parts of the file-system than mounted sub-folder.\n\nCVE-2020-27825:\n\tA use-after-free flaw was found in kernel/trace/ring_buffer.c in Linux kernel. There was a race problem in trace_open and resize of cpu buffer running parallely on different cpus, may cause a denial of service problem (DOS). This flaw could even allow a local attacker with special user  privilege to a kernel information leak threat.\n",
 	"References": {
 		"Reference": [
 			{
@@ -37,6 +37,12 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3348",
 				"ID": "CVE-2021-3348",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-1390",
+				"ID": "CVE-2023-1390",
 				"Title": "",
 				"Type": "cve"
 			}

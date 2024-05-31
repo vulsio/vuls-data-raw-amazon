@@ -10,10 +10,10 @@
 		"Date": "2024-03-27 21:47"
 	},
 	"Updated": {
-		"Date": "2024-03-27 21:47"
+		"Date": "2024-05-23 23:02"
 	},
 	"Severity": "medium",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2024-26601:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: regenerate buddy after block freeing failed if under fc replay\n\nThis mostly reverts commit 6bd97bf273bd (\"ext4: remove redundant\nmb_regenerate_buddy()\") and reintroduces mb_regenerate_buddy(). Based on\ncode in mb_free_blocks(), fast commit replay can end up marking as free\nblocks that are already marked as such. This causes corruption of the\nbuddy bitmap so we need to regenerate it in that case.\n\nCVE-2024-1627:\n\tA vulnerability was discovered in the Linux kernel's IPv4 networking stack. Under certain conditions, MPTCP and NetLabel can be configured in a way that triggers a double free memory error in net/ipv4/af_inet.c:inet_sock_destruct(). This may lead to a system crash, denial of service, or potential arbitrary code execution.\n\nCVE-2023-52434:\n\tA flaw was found in the smb client in the Linux kernel. A potential out-of-bounds error was seen in the smb2_parse_contexts() function. Validate offsets and lengths before dereferencing create contexts in smb2_parse_contexts().\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2024-26782:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: fix double-free on socket dismantle\n\nCVE-2024-26736:\n\tIn the Linux kernel, the following vulnerability has been resolved: afs: Increase buffer size in afs_update_volume_status() The max length of volume->vid value is 20 characters. So increase idbuf[] size up to 24 to avoid overflow. Found by Linux Verification Center (linuxtesting.org) with SVACE. [DH: Actually, it's 20 + NUL, so increase it to 24 and use snprintf()]\n\nCVE-2024-26601:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: regenerate buddy after block freeing failed if under fc replay\n\nThis mostly reverts commit 6bd97bf273bd (\"ext4: remove redundant\nmb_regenerate_buddy()\") and reintroduces mb_regenerate_buddy(). Based on\ncode in mb_free_blocks(), fast commit replay can end up marking as free\nblocks that are already marked as such. This causes corruption of the\nbuddy bitmap so we need to regenerate it in that case.\n\nCVE-2024-1627:\n\tA vulnerability was discovered in the Linux kernel's IPv4 networking stack. Under certain conditions, MPTCP and NetLabel can be configured in a way that triggers a double free memory error in net/ipv4/af_inet.c:inet_sock_destruct(). This may lead to a system crash, denial of service, or potential arbitrary code execution.\n\nCVE-2023-52434:\n\tA flaw was found in the smb client in the Linux kernel. A potential out-of-bounds error was seen in the smb2_parse_contexts() function. Validate offsets and lengths before dereferencing create contexts in smb2_parse_contexts().\n",
 	"References": {
 		"Reference": [
 			{
@@ -31,6 +31,18 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26601",
 				"ID": "CVE-2024-26601",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26736",
+				"ID": "CVE-2024-26736",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26782",
+				"ID": "CVE-2024-26782",
 				"Title": "",
 				"Type": "cve"
 			}
