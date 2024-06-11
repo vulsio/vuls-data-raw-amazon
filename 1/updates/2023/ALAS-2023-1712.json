@@ -7,10 +7,10 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux AMI 2014.03 - ALAS-2023-1712: important priority package update for emacs",
 	"Issued": {
-		"Date": "2023-03-30 22:50"
+		"Date": "2023-03-30 22:50:00"
 	},
 	"Updated": {
-		"Date": "2023-04-05 20:25"
+		"Date": "2023-04-05 20:25:00"
 	},
 	"Severity": "important",
 	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2022-48339:\n\tAn issue was discovered in GNU Emacs through 28.2. htmlfontify.el has a command injection vulnerability. In the hfy-istext-command function, the parameter file and parameter srcdir come from external input, and parameters are not escaped. If a file name or directory name contains shell metacharacters, code may be executed.\n\nCVE-2022-48337:\n\tGNU Emacs through 28.2 allows attackers to execute commands via shell metacharacters in the name of a source-code file, because lib-src/etags.c uses the system C library function in its implementation of the etags program. For example, a victim may use the \"etags -u *\" command (suggested in the etags documentation) in a situation where the current working directory has contents that depend on untrusted input.\n\nCVE-2022-45939:\n\tGNU Emacs through 28.2 allows attackers to execute commands via shell metacharacters in the name of a source-code file, because lib-src/etags.c uses the system C library function in its implementation of the ctags program. For example, a victim may use the \"ctags *\" command (suggested in the ctags documentation) in a situation where the current working directory has contents that depend on untrusted input.\n",

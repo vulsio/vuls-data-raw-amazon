@@ -7,10 +7,10 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux AMI 2012.09 - ALAS-2014-331: medium priority package update for httpd",
 	"Issued": {
-		"Date": "2014-04-25 16:00"
+		"Date": "2014-04-25 16:00:00"
 	},
 	"Updated": {
-		"Date": "2014-09-18 00:30"
+		"Date": "2014-09-18 00:30:00"
 	},
 	"Severity": "medium",
 	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2014-0098:\n\tA buffer over-read flaw was found in the httpd mod_log_config module. In configurations where cookie logging is enabled (on Red Hat Enterprise Linux it is disabled by default), a remote attacker could use this flaw to crash the httpd child process via an HTTP request with a malformed cookie header.\n\nCVE-2013-6438:\n\tIt was found that the mod_dav module did not correctly strip leading white space from certain elements in a parsed XML. In certain httpd configurations that use the mod_dav module (for example when using the mod_dav_svn module), a remote attacker could send a specially crafted DAV request that would cause the httpd child process to crash or, possibly, allow the attacker to execute arbitrary code with the privileges of the \"apache\" user.\n",
