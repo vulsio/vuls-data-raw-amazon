@@ -7,10 +7,10 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 2017.12 - ALAS2-2019-1293: important priority package update for kernel",
 	"Issued": {
-		"Date": "2019-09-25 22:59"
+		"Date": "2019-09-25 22:59:00"
 	},
 	"Updated": {
-		"Date": "2019-10-23 23:20"
+		"Date": "2019-10-23 23:20:00"
 	},
 	"Severity": "important",
 	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2019-14835:\n\tA buffer overflow flaw was found in the way Linux kernel&#039;s vhost functionality that translates virtqueue buffers to IOVs, logged the buffer descriptors during migration. A privileged guest user able to pass descriptors with invalid length to the host when migration is underway, could use this flaw to increase their privileges on the host.\n99999: \nCVE-2019-14835 kernel: vhost-net: guest to host kernel escape during migration\n\nCVE-2019-14821:\n\tAn out-of-bounds access issue was found in the way Linux kernel&#039;s KVM hypervisor implements the Coalesced MMIO write operation. It operates on an MMIO ring buffer &#039;struct kvm_coalesced_mmio&#039; object, wherein write indices &#039;ring-&gt;first&#039; and &#039;ring-&gt;last&#039; value could be supplied by a host user-space process. An unprivileged host user or process with access to &#039;/dev/kvm&#039; device could use this flaw to crash the host kernel, resulting in a denial of service or potentially escalating privileges on the system.\n1746708: \nCVE-2019-14821 Kernel: KVM: OOB memory access via mmio ring buffer\n",

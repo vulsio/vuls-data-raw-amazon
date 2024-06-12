@@ -7,10 +7,10 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1384: important priority package update for nss",
 	"Issued": {
-		"Date": "2020-01-14 20:03"
+		"Date": "2020-01-14 20:03:00"
 	},
 	"Updated": {
-		"Date": "2020-01-17 16:12"
+		"Date": "2020-01-17 16:12:00"
 	},
 	"Severity": "important",
 	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2019-11745:\n\tA heap-based buffer overflow was found in the NSC_EncryptUpdate() function in Mozilla nss. A remote attacker could trigger this flaw via SRTP encrypt or decrypt operations, to execute arbitrary code with the permissions of the user running the application (compiled with nss). While the attack complexity is high, the impact to confidentiality, integrity, and availability are high as well.\n99999: \nCVE-2019-11745 nss: Out-of-bounds write when passing an output buffer smaller than the block size to NSC_EncryptUpdate\n\nCVE-2019-11729:\n\tEmpty or malformed p256-ECDH public keys may trigger a segmentation fault due values being improperly sanitized before being copied into memory and used. This vulnerability affects Firefox ESR &lt; 60.8, Firefox &lt; 68, and Thunderbird &lt; 60.8.\n99999: \nCVE-2019-11729 nss: Empty or malformed p256-ECDH public keys may trigger a segmentation fault\n",

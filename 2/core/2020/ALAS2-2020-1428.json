@@ -7,10 +7,10 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 2017.12 - ALAS2-2020-1428: important priority package update for python-twisted-web",
 	"Issued": {
-		"Date": "2020-05-19 18:32"
+		"Date": "2020-05-19 18:32:00"
 	},
 	"Updated": {
-		"Date": "2020-05-20 20:18"
+		"Date": "2020-05-20 20:18:00"
 	},
 	"Severity": "important",
 	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-10109:\n\tIn Twisted Web through 19.10.0, there was an HTTP request splitting vulnerability. When presented with a content-length and a chunked encoding header, the content-length took precedence and the remainder of the request body was interpreted as a pipelined request.\n1813447: CVE-2020-10109 python-twisted: HTTP request smuggling when presented with a Content-Length and a chunked Transfer-Encoding header\n\nCVE-2020-10108:\n\tIn Twisted Web through 19.10.0, there was an HTTP request splitting vulnerability. When presented with two content-length headers, it ignored the first header. When the second content-length value was set to zero, the request body was interpreted as a pipelined request.\n1813439: CVE-2020-10108 python-twisted: HTTP request smuggling when presented with two Content-Length headers\n",

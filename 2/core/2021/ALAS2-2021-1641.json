@@ -7,10 +7,10 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 2017.12 - ALAS2-2021-1641: medium priority package update for ruby",
 	"Issued": {
-		"Date": "2021-05-20 16:29"
+		"Date": "2021-05-20 16:29:00"
 	},
 	"Updated": {
-		"Date": "2023-02-17 00:12"
+		"Date": "2023-02-17 00:12:00"
 	},
 	"Severity": "medium",
 	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-31799:\n\tAn operating system command injection flaw was found in RDoc. Using the rdoc command to generate documentation for a malicious Ruby source code could lead to execution of arbitrary commands with the privileges of the user running rdoc.\n\nCVE-2020-25613:\n\tAn issue was discovered in Ruby through 2.5.8, 2.6.x through 2.6.6, and 2.7.x through 2.7.1. WEBrick, a simple HTTP server bundled with Ruby, had not checked the transfer-encoding header value rigorously. An attacker may potentially exploit this issue to bypass a reverse proxy (which also has a poor header check), which may lead to an HTTP Request Smuggling attack.\n\nCVE-2020-10663:\n\tA flaw was found in rubygem-json. While parsing certain JSON documents, the json gem (including the one bundled with Ruby) can be coerced into creating arbitrary objects in the target system. This is the same issue as CVE-2013-0269.\n",

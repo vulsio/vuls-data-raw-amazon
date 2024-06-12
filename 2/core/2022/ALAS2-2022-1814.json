@@ -7,10 +7,10 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 2017.12 - ALAS2-2022-1814: medium priority package update for libtiff",
 	"Issued": {
-		"Date": "2022-07-06 03:14"
+		"Date": "2022-07-06 03:14:00"
 	},
 	"Updated": {
-		"Date": "2022-07-14 22:21"
+		"Date": "2022-07-14 22:21:00"
 	},
 	"Severity": "medium",
 	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-34266:\n\tA flaw was found in libtiff-4.0.3-35.amzn2.0.1 as packaged on Amazon Linux 2. When processing a malicious TIFF file, an invalid range may be passed as an argument to the memset() function within TIFFFetchStripThing() in tif_dirread.c. This will cause TIFFFetchStripThing() to segfault. Actors can use this issue to potentially cause a Denial of Service condition.\n\nCVE-2022-0562:\n\tA flaw was found in libtiff where a NULL source pointer passed as an argument to the memcpy() function within the TIFFReadDirectory() in tif_dirread.c. This flaw allows an attacker to exploit this vulnerability via a crafted TIFF file, causing a crash and leading to a denial of service.\n",
