@@ -7,10 +7,10 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 - Nitro-enclaves 2.0 - ALAS2NITRO-ENCLAVES-2023-030: important priority package update for docker",
 	"Issued": {
-		"Date": "2023-10-18 16:51"
+		"Date": "2023-10-18 16:51:00"
 	},
 	"Updated": {
-		"Date": "2024-05-09 18:00"
+		"Date": "2024-05-09 18:00:00"
 	},
 	"Severity": "important",
 	"Description": "Package updates are available for Amazon Linux 2 - Nitro-enclaves that fix the following vulnerabilities:\nCVE-2023-39325:\n\tThe HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023.\n\nCVE-2023-24540:\n\thtml/template: improper handling of JavaScript whitespace.\n\nNot all valid JavaScript whitespace characters were considered to be whitespace. Templates containing whitespace characters outside of the character set \"\\t\\n\\f\\r\\u0020\\u2028\\u2029\" in JavaScript contexts that also contain actions may not be properly sanitized during execution.\n\nCVE-2023-24538:\n\tTemplates did not properly consider backticks (`) as Javascript string delimiters, and as such did\nnot escape them as expected. Backticks are used, since ES6, for JS template literals. If a template\ncontained a Go template action within a Javascript template literal, the contents of the action could\nbe used to terminate the literal, injecting arbitrary Javascript code into the Go template.\n\nCVE-2022-41723:\n\thttp2/hpack: avoid quadratic complexity in hpack decoding\n",

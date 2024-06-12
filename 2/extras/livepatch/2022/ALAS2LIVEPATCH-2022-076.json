@@ -7,10 +7,10 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 - Livepatch 2.0 - ALAS2LIVEPATCH-2022-076: important priority package update for kernel-livepatch-5.10.82-83.359",
 	"Issued": {
-		"Date": "2022-03-07 23:48"
+		"Date": "2022-03-07 23:48:00"
 	},
 	"Updated": {
-		"Date": "2022-03-08 18:11"
+		"Date": "2022-03-08 18:11:00"
 	},
 	"Severity": "important",
 	"Description": "Package updates are available for Amazon Linux 2 - Livepatch that fix the following vulnerabilities:\nCVE-2022-0185:\n\tA heap-based buffer overflow flaw was found in the way the legacy_parse_param function in the Filesystem Context functionality of the Linux kernel verified the supplied parameters length. An unprivileged (in case of unprivileged user namespaces enabled, otherwise needs namespaced CAP_SYS_ADMIN privilege) local user able to open a filesystem that does not support the Filesystem Context API (and thus fallbacks to legacy handling) could use this flaw to escalate their privileges on the system.\n\nCVE-2021-4155:\n\tA data leak flaw was found in the way XFS_IOC_ALLOCSP IOCTL in the XFS filesystem allowed for size increase of files with unaligned size. A local attacker could use this flaw to leak data on the XFS filesystem otherwise not accessible to them.\n",

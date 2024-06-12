@@ -7,10 +7,10 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 - Ecs 2.0 - ALAS2ECS-2022-001: medium priority package update for ecs-init docker containerd runc",
 	"Issued": {
-		"Date": "2022-06-30 00:08"
+		"Date": "2022-06-30 00:08:00"
 	},
 	"Updated": {
-		"Date": "2023-10-06 23:37"
+		"Date": "2023-10-06 23:37:00"
 	},
 	"Severity": "medium",
 	"Description": "Package updates are available for Amazon Linux 2 - Ecs that fix the following vulnerabilities:\nCVE-2022-24769:\n\tA flaw was found in Moby (Docker Engine), where containers were started incorrectly with non-empty inheritable Linux process capabilities. This flaw allows an attacker with access to programs with inheritable file capabilities to elevate those capabilities to the permitted set when execve(2) runs. Containers using Linux users and groups to perform privilege separation inside the container are most directly impacted.\n\nCVE-2022-23648:\n\tA bug was found in containerd where containers launched through containerd's CRI implementation with a specially-crafted image configuration could gain access to read-only copies of arbitrary files and directories on the host. This may bypass any policy-based enforcement on container setup (including a Kubernetes Pod Security Policy) and expose potentially sensitive information. Kubernetes and crictl can both be configured to use containerd's CRI implementation.\n",

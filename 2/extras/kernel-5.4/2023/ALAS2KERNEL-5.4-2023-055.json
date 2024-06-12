@@ -7,13 +7,13 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 - Kernel-5.4 2.0 - ALAS2KERNEL-5.4-2023-055: medium priority package update for kernel",
 	"Issued": {
-		"Date": "2023-10-31 00:16"
+		"Date": "2023-10-31 00:16:00"
 	},
 	"Updated": {
-		"Date": "2023-11-01 00:49"
+		"Date": "2024-06-06 20:37:00"
 	},
 	"Severity": "medium",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2023-42754:\n\tipv4: fix null-deref in ipv4_link_failure\n\nNOTE: https://www.openwall.com/lists/oss-security/2023/10/02/8\nNOTE: https://git.kernel.org/linus/0113d9c9d1ccc07f5a3710dac4aa24b6d711278c (6.6-rc3)\n\nCVE-2023-34324:\n\tA flaw in the kernel Xen event handler can cause a deadlock with Xen console handling in unprivileged Xen guests.\n\nCVE-2023-31085:\n\tAn issue was discovered in drivers/mtd/ubi/cdev.c in the Linux kernel 6.2. There is a divide-by-zero error in do_div(sz,mtd->erasesize), used indirectly by ctrl_cdev_ioctl, when mtd->erasesize is 0.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2023-52567:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nserial: 8250_port: Check IRQ data before use\n\nCVE-2023-42754:\n\tA NULL pointer dereference flaw was found in the Linux kernel ipv4 stack. The socket buffer (skb) was assumed to be associated with a device before calling __ip_options_compile, which is not always the case if the skb is re-routed by ipvs. This issue may allow a local user with CAP_NET_ADMIN privileges to crash the system.\n\nCVE-2023-34324:\n\tA flaw in the kernel Xen event handler can cause a deadlock with Xen console handling in unprivileged Xen guests.\n\nCVE-2023-31085:\n\tAn issue was discovered in drivers/mtd/ubi/cdev.c in the Linux kernel 6.2. There is a divide-by-zero error in do_div(sz,mtd->erasesize), used indirectly by ctrl_cdev_ioctl, when mtd->erasesize is 0.\n",
 	"References": {
 		"Reference": [
 			{
@@ -31,6 +31,12 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-42754",
 				"ID": "CVE-2023-42754",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52567",
+				"ID": "CVE-2023-52567",
 				"Title": "",
 				"Type": "cve"
 			}

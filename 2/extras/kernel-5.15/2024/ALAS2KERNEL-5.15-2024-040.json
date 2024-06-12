@@ -7,13 +7,13 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 - Kernel-5.15 2.0 - ALAS2KERNEL-5.15-2024-040: medium priority package update for kernel",
 	"Issued": {
-		"Date": "2024-03-27 21:47"
+		"Date": "2024-03-27 21:47:00"
 	},
 	"Updated": {
-		"Date": "2024-05-23 23:02"
+		"Date": "2024-06-06 20:37:00"
 	},
 	"Severity": "medium",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.15 that fix the following vulnerabilities:\nCVE-2024-26782:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: fix double-free on socket dismantle\n\nCVE-2024-26603:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nx86/fpu: Stop relying on userspace for info to fault in xsave buffer\n\nBefore this change, the expected size of the user space buffer was\ntaken from fx_sw->xstate_size. fx_sw->xstate_size can be changed\nfrom user-space, so it is possible construct a sigreturn frame where:\n\n * fx_sw->xstate_size is smaller than the size required by valid bits in\n   fx_sw->xfeatures.\n * user-space unmaps parts of the sigrame fpu buffer so that not all of\n   the buffer required by xrstor is accessible.\n\nIn this case, xrstor tries to restore and accesses the unmapped area\nwhich results in a fault. But fault_in_readable succeeds because buf +\nfx_sw->xstate_size is within the still mapped area, so it goes back and\ntries xrstor again. It will spin in this loop forever.\n\nInstead, fault in the maximum size which can be touched by XRSTOR (taken\nfrom fpstate->user_size).\n\n[ dhansen: tweak subject / changelog ]\n\nCVE-2024-26601:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: regenerate buddy after block freeing failed if under fc replay\n\nThis mostly reverts commit 6bd97bf273bd (\"ext4: remove redundant\nmb_regenerate_buddy()\") and reintroduces mb_regenerate_buddy(). Based on\ncode in mb_free_blocks(), fast commit replay can end up marking as free\nblocks that are already marked as such. This causes corruption of the\nbuddy bitmap so we need to regenerate it in that case.\n\nCVE-2024-1627:\n\tA vulnerability was discovered in the Linux kernel's IPv4 networking stack. Under certain conditions, MPTCP and NetLabel can be configured in a way that triggers a double free memory error in net/ipv4/af_inet.c:inet_sock_destruct(). This may lead to a system crash, denial of service, or potential arbitrary code execution.\n\nCVE-2023-52434:\n\tA flaw was found in the smb client in the Linux kernel. A potential out-of-bounds error was seen in the smb2_parse_contexts() function. Validate offsets and lengths before dereferencing create contexts in smb2_parse_contexts().\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.15 that fix the following vulnerabilities:\nCVE-2024-27417:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nipv6: fix potential \"struct net\" leak in inet6_rtm_getaddr()\n\nCVE-2024-26782:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: fix double-free on socket dismantle\n\nCVE-2024-26603:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nx86/fpu: Stop relying on userspace for info to fault in xsave buffer\n\nBefore this change, the expected size of the user space buffer was\ntaken from fx_sw->xstate_size. fx_sw->xstate_size can be changed\nfrom user-space, so it is possible construct a sigreturn frame where:\n\n * fx_sw->xstate_size is smaller than the size required by valid bits in\n   fx_sw->xfeatures.\n * user-space unmaps parts of the sigrame fpu buffer so that not all of\n   the buffer required by xrstor is accessible.\n\nIn this case, xrstor tries to restore and accesses the unmapped area\nwhich results in a fault. But fault_in_readable succeeds because buf +\nfx_sw->xstate_size is within the still mapped area, so it goes back and\ntries xrstor again. It will spin in this loop forever.\n\nInstead, fault in the maximum size which can be touched by XRSTOR (taken\nfrom fpstate->user_size).\n\n[ dhansen: tweak subject / changelog ]\n\nCVE-2024-26601:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: regenerate buddy after block freeing failed if under fc replay\n\nThis mostly reverts commit 6bd97bf273bd (\"ext4: remove redundant\nmb_regenerate_buddy()\") and reintroduces mb_regenerate_buddy(). Based on\ncode in mb_free_blocks(), fast commit replay can end up marking as free\nblocks that are already marked as such. This causes corruption of the\nbuddy bitmap so we need to regenerate it in that case.\n\nCVE-2024-1627:\n\tA vulnerability was discovered in the Linux kernel's IPv4 networking stack. Under certain conditions, MPTCP and NetLabel can be configured in a way that triggers a double free memory error in net/ipv4/af_inet.c:inet_sock_destruct(). This may lead to a system crash, denial of service, or potential arbitrary code execution.\n\nCVE-2023-52434:\n\tA flaw was found in the smb client in the Linux kernel. A potential out-of-bounds error was seen in the smb2_parse_contexts() function. Validate offsets and lengths before dereferencing create contexts in smb2_parse_contexts().\n",
 	"References": {
 		"Reference": [
 			{
@@ -43,6 +43,12 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26782",
 				"ID": "CVE-2024-26782",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-27417",
+				"ID": "CVE-2024-27417",
 				"Title": "",
 				"Type": "cve"
 			}

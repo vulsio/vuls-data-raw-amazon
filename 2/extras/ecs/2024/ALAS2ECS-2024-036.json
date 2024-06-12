@@ -7,10 +7,10 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 - Ecs 2.0 - ALAS2ECS-2024-036: medium priority package update for amazon-ecr-credential-helper",
 	"Issued": {
-		"Date": "2024-05-23 23:02"
+		"Date": "2024-05-23 23:02:00"
 	},
 	"Updated": {
-		"Date": "2024-05-23 23:02"
+		"Date": "2024-05-30 13:00:00"
 	},
 	"Severity": "medium",
 	"Description": "Package updates are available for Amazon Linux 2 - Ecs that fix the following vulnerabilities:\nCVE-2023-45288:\n\tAn attacker may cause an HTTP/2 endpoint to read arbitrary amounts of header data by sending an excessive number of CONTINUATION frames. Maintaining HPACK state requires parsing and processing all HEADERS and CONTINUATION frames on a connection. When a request's headers exceed MaxHeaderBytes, no memory is allocated to store the excess headers, but they are still parsed. This permits an attacker to cause an HTTP/2 endpoint to read arbitrary amounts of header data, all associated with a request which is going to be rejected. These headers can include Huffman-encoded data which is significantly more expensive for the receiver to decode than for an attacker to send. The fix sets a limit on the amount of excess header frames we will process before closing a connection.\n",

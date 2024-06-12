@@ -7,13 +7,13 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 - Kernel-5.15 2.0 - ALAS2KERNEL-5.15-2022-009: important priority package update for kernel",
 	"Issued": {
-		"Date": "2022-10-17 22:06"
+		"Date": "2022-10-17 22:06:00"
 	},
 	"Updated": {
-		"Date": "2023-04-13 19:50"
+		"Date": "2024-06-06 20:38:00"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.15 that fix the following vulnerabilities:\nCVE-2022-43750:\n\tdrivers/usb/mon/mon_bin.c in usbmon in the Linux kernel before 5.19.15 and 6.x before 6.0.1 allows a user-space client to corrupt the monitor's internal memory.\n\nCVE-2022-42432:\n\tThis vulnerability allows local attackers to disclose sensitive information on affected installations of the Linux Kernel 6.0-rc2. An attacker must first obtain the ability to execute high-privileged code on the target system in order to exploit this vulnerability. The specific flaw exists within the nft_osf_eval function. The issue results from the lack of proper initialization of memory prior to accessing it. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the kernel. Was ZDI-CAN-18540.\n\nCVE-2022-39842:\n\tAn issue was discovered in the Linux kernel before 5.19. In pxa3xx_gcu_write in drivers/video/fbdev/pxa3xx-gcu.c, the count parameter has a type conflict of size_t versus int, causing an integer overflow and bypassing the size check. After that, because it is used as the third argument to copy_from_user(), a heap overflow may occur.\n\nCVE-2022-3061:\n\tFound Linux Kernel flaw in the i740 driver. The Userspace program could pass any values to the driver through ioctl() interface. The driver doesn't check the value of 'pixclock', so it may cause a divide by zero error.\n\nCVE-2022-2978:\n\tA flaw use after free in the Linux kernel NILFS file system was found in the way user triggers function security_inode_alloc to fail with following call to function nilfs_mdt_destroy. A local user could use this flaw to crash the system or potentially escalate their privileges on the system.\n\nCVE-2022-2602:\n\tA use-after-free flaw was found in the Linux kernel's Unix socket Garbage Collection and io_uring. This flaw allows a local user to crash or potentially escalate their privileges on the system.\n\nCVE-2022-2308:\n\tA flaw was found in the Linux kernel in vDPA with VDUSE backend. There were no checks in VDUSE kernel driver to ensure the size of the device config space was in line with the features advertised by the VDUSE userspace application. In case of a mismatch, Virtio drivers config read helpers did not initialize the memory indirectly passed to vduse_vdpa_get_config() returning uninitialized memory from the stack. Such memory was not directly propagated to userspace, although under some circumstances it could be printed in the kernel logs.\n\nCVE-2022-0171:\n\tA flaw was found in the Linux kernel. The existing KVM SEV API has a vulnerability that allows a non-root (host) user-level application to crash the host kernel by creating a confidential guest VM instance in AMD CPU that supports Secure Encrypted Virtualization (SEV).\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.15 that fix the following vulnerabilities:\nCVE-2022-48662:\n\tIn the Linux kernel, the following vulnerability has been resolved: drm/i915/gem: Really move i915_gem_context.link under ref protection i915_perf assumes that it can use the i915_gem_context reference to protect its i915->gem.contexts.list iteration. However, this requires that we do not remove the context from the list until after we drop the final reference and release the struct. If, as currently, we remove the context from the list during context_close(), the link.next pointer may be poisoned while we are holding the context reference and cause a GPF\n\nCVE-2022-48658:\n\tIn the Linux kernel, the following vulnerability has been resolved: mm: slub: fix flush_cpu_slab()/__free_slab() invocations in task context. Commit 5a836bf6b09f (\"mm: slub: move flush_cpu_slab() invocations __free_slab() invocations out of IRQ context\") moved all flush_cpu_slab() invocations to the global workqueue to avoid a problem related with deactivate_slab()/__free_slab() being called from an IRQ context on PREEMPT_RT kernels.\n\nCVE-2022-48651:\n\tIn the Linux kernel, the following vulnerability has been resolved: ipvlan: Fix out-of-bound bugs caused by unset skb->mac_header If an AF_PACKET socket is used to send packets through ipvlan and the default xmit function of the AF_PACKET socket is changed from dev_queue_xmit() to packet_direct_xmit() via setsockopt() with the option name of PACKET_QDISC_BYPASS, the skb->mac_header may not be reset and remains as the initial value of 65535, this may trigger slab-out-of-bounds bugs as following:\n\nCVE-2022-43750:\n\tdrivers/usb/mon/mon_bin.c in usbmon in the Linux kernel before 5.19.15 and 6.x before 6.0.1 allows a user-space client to corrupt the monitor's internal memory.\n\nCVE-2022-42432:\n\tThis vulnerability allows local attackers to disclose sensitive information on affected installations of the Linux Kernel 6.0-rc2. An attacker must first obtain the ability to execute high-privileged code on the target system in order to exploit this vulnerability. The specific flaw exists within the nft_osf_eval function. The issue results from the lack of proper initialization of memory prior to accessing it. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the kernel. Was ZDI-CAN-18540.\n\nCVE-2022-39842:\n\tAn issue was discovered in the Linux kernel before 5.19. In pxa3xx_gcu_write in drivers/video/fbdev/pxa3xx-gcu.c, the count parameter has a type conflict of size_t versus int, causing an integer overflow and bypassing the size check. After that, because it is used as the third argument to copy_from_user(), a heap overflow may occur.\n\nCVE-2022-3061:\n\tFound Linux Kernel flaw in the i740 driver. The Userspace program could pass any values to the driver through ioctl() interface. The driver doesn't check the value of 'pixclock', so it may cause a divide by zero error.\n\nCVE-2022-2978:\n\tA flaw use after free in the Linux kernel NILFS file system was found in the way user triggers function security_inode_alloc to fail with following call to function nilfs_mdt_destroy. A local user could use this flaw to crash the system or potentially escalate their privileges on the system.\n\nCVE-2022-2602:\n\tA use-after-free flaw was found in the Linux kernel's Unix socket Garbage Collection and io_uring. This flaw allows a local user to crash or potentially escalate their privileges on the system.\n\nCVE-2022-2308:\n\tA flaw was found in the Linux kernel in vDPA with VDUSE backend. There were no checks in VDUSE kernel driver to ensure the size of the device config space was in line with the features advertised by the VDUSE userspace application. In case of a mismatch, Virtio drivers config read helpers did not initialize the memory indirectly passed to vduse_vdpa_get_config() returning uninitialized memory from the stack. Such memory was not directly propagated to userspace, although under some circumstances it could be printed in the kernel logs.\n\nCVE-2022-0171:\n\tA flaw was found in the Linux kernel. The existing KVM SEV API has a vulnerability that allows a non-root (host) user-level application to crash the host kernel by creating a confidential guest VM instance in AMD CPU that supports Secure Encrypted Virtualization (SEV).\n",
 	"References": {
 		"Reference": [
 			{
@@ -61,6 +61,24 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-43750",
 				"ID": "CVE-2022-43750",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48651",
+				"ID": "CVE-2022-48651",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48658",
+				"ID": "CVE-2022-48658",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48662",
+				"ID": "CVE-2022-48662",
 				"Title": "",
 				"Type": "cve"
 			}

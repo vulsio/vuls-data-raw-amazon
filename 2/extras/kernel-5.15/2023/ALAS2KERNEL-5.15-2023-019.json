@@ -7,18 +7,24 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 - Kernel-5.15 2.0 - ALAS2KERNEL-5.15-2023-019: important priority package update for kernel",
 	"Issued": {
-		"Date": "2023-05-15 23:18"
+		"Date": "2023-05-15 23:18:00"
 	},
 	"Updated": {
-		"Date": "2023-06-05 17:58"
+		"Date": "2024-06-06 20:38:00"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.15 that fix the following vulnerabilities:\nCVE-2023-2235:\n\tA use-after-free vulnerability in the Linux Kernel Performance Events system can be exploited to achieve local privilege escalation.\n\nThe perf_group_detach function did not check the event's siblings' attach_state before calling add_event_to_groups(), but remove_on_exec made it possible to call list_del_event() on before detaching from their group, making it possible to use a dangling pointer causing a use-after-free vulnerability.\n\nWe recommend upgrading past commit fd0815f632c24878e325821943edccc7fde947a2.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.15 that fix the following vulnerabilities:\nCVE-2023-30456:\n\tAn issue was discovered in arch/x86/kvm/vmx/nested.c in the Linux kernel before 6.2.8. nVMX on x86_64 lacks consistency checks for CR0 and CR4.\n\nCVE-2023-2235:\n\tA use-after-free vulnerability in the Linux Kernel Performance Events system can be exploited to achieve local privilege escalation.\n\nThe perf_group_detach function did not check the event's siblings' attach_state before calling add_event_to_groups(), but remove_on_exec made it possible to call list_del_event() on before detaching from their group, making it possible to use a dangling pointer causing a use-after-free vulnerability.\n\nWe recommend upgrading past commit fd0815f632c24878e325821943edccc7fde947a2.\n",
 	"References": {
 		"Reference": [
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-2235",
 				"ID": "CVE-2023-2235",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-30456",
+				"ID": "CVE-2023-30456",
 				"Title": "",
 				"Type": "cve"
 			}

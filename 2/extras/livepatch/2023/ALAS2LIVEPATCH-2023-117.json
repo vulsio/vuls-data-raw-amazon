@@ -7,10 +7,10 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 - Livepatch 2.0 - ALAS2LIVEPATCH-2023-117: important priority package update for kernel-livepatch-5.10.157-139.675",
 	"Issued": {
-		"Date": "2023-03-30 22:07"
+		"Date": "2023-03-30 22:07:00"
 	},
 	"Updated": {
-		"Date": "2023-04-05 20:52"
+		"Date": "2023-04-05 20:52:00"
 	},
 	"Severity": "important",
 	"Description": "Package updates are available for Amazon Linux 2 - Livepatch that fix the following vulnerabilities:\nCVE-2023-26545:\n\tIn the Linux kernel before 6.1.13, there is a double free in net/mpls/af_mpls.c upon an allocation failure (for registering the sysctl table under a new location) during the renaming of a device.\n\nCVE-2023-1078:\n\tThe upstream bug report describes this issue as follows:\n\nA flaw found in the Linux Kernel in RDS (Reliable Datagram Sockets) protocol. The rds_rm_zerocopy_callback() uses list_entry() on the head of a list causing a type confusion. Local user can trigger this with rds_message_put(). Type confusion leads to `struct rds_msg_zcopy_info *info` actually points to something else that is potentially controlled by local user. It is known how to trigger this, which causes an OOB access, and a lock corruption.\n",

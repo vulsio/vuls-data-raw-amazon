@@ -7,18 +7,24 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 - Kernel-5.4 2.0 - ALAS2KERNEL-5.4-2024-068: medium priority package update for kernel",
 	"Issued": {
-		"Date": "2024-05-23 23:02"
+		"Date": "2024-05-23 23:02:00"
 	},
 	"Updated": {
-		"Date": "2024-05-23 23:02"
+		"Date": "2024-06-06 20:37:00"
 	},
 	"Severity": "medium",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2024-26736:\n\tIn the Linux kernel, the following vulnerability has been resolved: afs: Increase buffer size in afs_update_volume_status() The max length of volume->vid value is 20 characters. So increase idbuf[] size up to 24 to avoid overflow. Found by Linux Verification Center (linuxtesting.org) with SVACE. [DH: Actually, it's 20 + NUL, so increase it to 24 and use snprintf()]\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2024-27417:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nipv6: fix potential \"struct net\" leak in inet6_rtm_getaddr()\n\nCVE-2024-26736:\n\tIn the Linux kernel, the following vulnerability has been resolved: afs: Increase buffer size in afs_update_volume_status() The max length of volume->vid value is 20 characters. So increase idbuf[] size up to 24 to avoid overflow. Found by Linux Verification Center (linuxtesting.org) with SVACE. [DH: Actually, it's 20 + NUL, so increase it to 24 and use snprintf()]\n",
 	"References": {
 		"Reference": [
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26736",
 				"ID": "CVE-2024-26736",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-27417",
+				"ID": "CVE-2024-27417",
 				"Title": "",
 				"Type": "cve"
 			}

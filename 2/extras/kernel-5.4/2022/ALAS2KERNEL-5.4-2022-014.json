@@ -7,10 +7,10 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 - Kernel-5.4 2.0 - ALAS2KERNEL-5.4-2022-014: medium priority package update for kernel",
 	"Issued": {
-		"Date": "2022-01-20 19:25"
+		"Date": "2022-01-20 19:25:00"
 	},
 	"Updated": {
-		"Date": "2022-01-28 17:22"
+		"Date": "2022-01-28 17:22:00"
 	},
 	"Severity": "medium",
 	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2020-16166:\n\tA flaw was found in the Linux kernel. The generation of the device ID from the network RNG internal state is predictable. The highest threat from this vulnerability is to data confidentiality.\n\nCVE-2020-15393:\n\tIn the Linux kernel 4.4 through 5.7.6, usbtest_disconnect in drivers/usb/misc/usbtest.c has a memory leak, aka CID-28ebeb8db770.\n\nCVE-2020-12656:\n\tA flaw was found in the implementation of the Linux kernel's GSS mechanism registration functionality. During this period, memory allocation was not freed when the module was unloaded, leading to a memory leak. This flaw allows an attacker with the ability to repeat loads and unloads, to cause the system to run out of free memory and crash eventually.\n\nCVE-2020-10781:\n\tA flaw was found in the ZRAM kernel module, where a user with a local account and the ability to read the /sys/class/zram-control/hot_add file can create ZRAM device nodes in the /dev/ directory. This read allocates kernel memory and is not accounted for a user that triggers the creation of that ZRAM device. With this vulnerability, continually reading the device may consume a large amount of system memory and cause the Out-of-Memory (OOM) killer to activate and terminate random userspace processes, possibly making the system inoperable.\n\nCVE-2019-19054:\n\tA flaw was found in the Linux kernel. The CX23888 Integrated Consumer Infrared Controller probe code handles resource cleanup low memory conditions. A local attacker able to induce low memory conditions could use this flaw to crash the system. The highest threat from this vulnerability is to system availability.\n\nCVE-2019-18808:\n\tA flaw was found in the AMD Cryptographic Co-processor driver in the Linux kernel. An attacker, able to send invalid SHA type commands, could cause the system to crash. The highest threat from this vulnerability is to system availability.\n",

@@ -7,10 +7,10 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 - Firefox 2.0 - ALAS2FIREFOX-2024-024: important priority package update for firefox",
 	"Issued": {
-		"Date": "2024-04-25 16:31"
+		"Date": "2024-04-25 16:31:00"
 	},
 	"Updated": {
-		"Date": "2024-04-25 16:31"
+		"Date": "2024-04-25 16:31:00"
 	},
 	"Severity": "important",
 	"Description": "Package updates are available for Amazon Linux 2 - Firefox that fix the following vulnerabilities:\nCVE-2024-3864:\n\tMemory safety bug present in Firefox 124, Firefox ESR 115.9, and Thunderbird 115.9. This bug showed evidence of memory corruption and we presume that with enough effort this could have been exploited to run arbitrary code. This vulnerability affects Firefox < 125 and Firefox ESR < 115.10.\n\nCVE-2024-3861:\n\tIf an AlignedBuffer were assigned to itself, the subsequent self-move could result in an incorrect reference count and later use-after-free. This vulnerability affects Firefox < 125 and Firefox ESR < 115.10.\n\nCVE-2024-3857:\n\tThe JIT created incorrect code for arguments in certain cases. This led to potential use-after-free crashes during garbage collection. This vulnerability affects Firefox < 125 and Firefox ESR < 115.10.\n\nCVE-2024-3854:\n\tIn some code patterns the JIT incorrectly optimized switch statements and generated code with out-of-bounds-reads. This vulnerability affects Firefox < 125 and Firefox ESR < 115.10.\n\nCVE-2024-3852:\n\tGetBoundName could return the wrong version of an object when JIT optimizations were applied. This vulnerability affects Firefox < 125 and Firefox ESR < 115.10.\n\nCVE-2024-3302:\n\tThere was no limit to the number of HTTP/2 CONTINUATION frames that would be processed. A server could abuse this to create an Out of Memory condition in the browser. This vulnerability affects Firefox < 125 and Firefox ESR < 115.10.\n\nCVE-2024-29944:\n\tAn attacker was able to inject an event handler into a privileged object that would allow arbitrary JavaScript execution in the parent process. This vulnerability affects Firefox < 124.0.1 and Firefox ESR < 115.9.1.\n",

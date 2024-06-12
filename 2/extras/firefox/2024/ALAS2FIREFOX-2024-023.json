@@ -7,10 +7,10 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 - Firefox 2.0 - ALAS2FIREFOX-2024-023: important priority package update for firefox",
 	"Issued": {
-		"Date": "2024-03-27 21:47"
+		"Date": "2024-03-27 21:47:00"
 	},
 	"Updated": {
-		"Date": "2024-03-27 21:47"
+		"Date": "2024-03-27 21:47:00"
 	},
 	"Severity": "important",
 	"Description": "Package updates are available for Amazon Linux 2 - Firefox that fix the following vulnerabilities:\nCVE-2024-29944:\n\tAn attacker was able to inject an event handler into a privileged object that would allow arbitrary JavaScript execution in the parent process. This vulnerability affects Firefox < 124.0.1 and Firefox ESR < 115.9.1.\n\nCVE-2024-2616:\n\tTo harden ICU against exploitation, the behavior for out-of-memory conditions was changed to crash instead of attempt to continue. This vulnerability affects Firefox ESR < 115.9 and Thunderbird < 115.9.\n\nCVE-2024-2614:\n\tMemory safety bugs present in Firefox 123, Firefox ESR 115.8, and Thunderbird 115.8. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 124, Firefox ESR < 115.9, and Thunderbird < 115.9.\n\nCVE-2024-2612:\n\tIf an attacker could find a way to trigger a particular code path in `SafeRefPtr`, it could have triggered a crash or potentially be leveraged to achieve code execution. This vulnerability affects Firefox < 124, Firefox ESR < 115.9, and Thunderbird < 115.9.\n\nCVE-2024-2611:\n\tA missing delay on when pointer lock was used could have allowed a malicious page to trick a user into granting permissions. This vulnerability affects Firefox < 124, Firefox ESR < 115.9, and Thunderbird < 115.9.\n\nCVE-2024-2610:\n\tUsing a markup injection an attacker could have stolen nonce values. This could have been used to bypass strict content security policies. This vulnerability affects Firefox < 124, Firefox ESR < 115.9, and Thunderbird < 115.9.\n\nCVE-2024-2608:\n\t`AppendEncodedAttributeValue(), ExtraSpaceNeededForAttrEncoding()` and `AppendEncodedCharacters()` could have experienced integer overflows, causing underallocation of an output buffer leading to an out of bounds write. This vulnerability affects Firefox < 124, Firefox ESR < 115.9, and Thunderbird < 115.9.\n",
