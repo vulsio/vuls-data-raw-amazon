@@ -1,0 +1,107 @@
+{
+	"ID": "ALAS2-2024-2579",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2579: medium priority package update for iperf3",
+	"Issued": {
+		"Date": "2024-06-19 19:15:00"
+	},
+	"Updated": {
+		"Date": "2024-06-19 19:15:00"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-7250:\n\tIt is possible for a malicious or malfunctioning client to send less\nthan the expected amount of data to the server. If this happens, the\nserver will hang indefinitely waiting for the remainder (or until the\nconnection gets closed). Because iperf3 is deliberately designed to\nservice only one client connection at a time, this will prevent other\nconnections to the iperf3 server.\nAvoid running iperf3 with root privileges to minimize impact.\nUpdate iperf3 to a version containing the fix (i.e. iperf-3.15 or\nlater).\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-7250",
+				"ID": "CVE-2023-7250",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "iperf3",
+					"Release": "2.amzn2.0.4",
+					"Version": "3.1.7",
+					"Filename": "Packages/iperf3-3.1.7-2.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "iperf3-devel",
+					"Release": "2.amzn2.0.4",
+					"Version": "3.1.7",
+					"Filename": "Packages/iperf3-devel-3.1.7-2.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "iperf3-debuginfo",
+					"Release": "2.amzn2.0.4",
+					"Version": "3.1.7",
+					"Filename": "Packages/iperf3-debuginfo-3.1.7-2.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "iperf3",
+					"Release": "2.amzn2.0.4",
+					"Version": "3.1.7",
+					"Filename": "Packages/iperf3-3.1.7-2.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "iperf3-devel",
+					"Release": "2.amzn2.0.4",
+					"Version": "3.1.7",
+					"Filename": "Packages/iperf3-devel-3.1.7-2.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "iperf3-debuginfo",
+					"Release": "2.amzn2.0.4",
+					"Version": "3.1.7",
+					"Filename": "Packages/iperf3-debuginfo-3.1.7-2.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "iperf3",
+					"Release": "2.amzn2.0.4",
+					"Version": "3.1.7",
+					"Filename": "Packages/iperf3-3.1.7-2.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "iperf3-devel",
+					"Release": "2.amzn2.0.4",
+					"Version": "3.1.7",
+					"Filename": "Packages/iperf3-devel-3.1.7-2.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "iperf3-debuginfo",
+					"Release": "2.amzn2.0.4",
+					"Version": "3.1.7",
+					"Filename": "Packages/iperf3-debuginfo-3.1.7-2.amzn2.0.4.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

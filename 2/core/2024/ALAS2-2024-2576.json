@@ -1,0 +1,121 @@
+{
+	"ID": "ALAS2-2024-2576",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2576: medium priority package update for golang",
+	"Issued": {
+		"Date": "2024-06-19 19:15:00"
+	},
+	"Updated": {
+		"Date": "2024-06-19 19:15:00"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-24790:\n\tThe various Is methods (IsPrivate, IsLoopback, etc) did not work as expected for IPv4-mapped IPv6 addresses, returning false for addresses which would return true in their traditional IPv4 forms.\n\nCVE-2024-24789:\n\tThe archive/zip package's handling of certain types of invalid zip files differs from the behavior of most zip implementations. This misalignment could be exploited to create an zip file with contents that vary depending on the implementation reading the file. The archive/zip package now rejects files containing these errors.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24789",
+				"ID": "CVE-2024-24789",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24790",
+				"ID": "CVE-2024-24790",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "golang",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.4",
+					"Filename": "Packages/golang-1.22.4-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "golang-docs",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.4",
+					"Filename": "Packages/golang-docs-1.22.4-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "golang-misc",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.4",
+					"Filename": "Packages/golang-misc-1.22.4-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "golang-tests",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.4",
+					"Filename": "Packages/golang-tests-1.22.4-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "golang-src",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.4",
+					"Filename": "Packages/golang-src-1.22.4-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "golang-bin",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.4",
+					"Filename": "Packages/golang-bin-1.22.4-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "golang-shared",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.4",
+					"Filename": "Packages/golang-shared-1.22.4-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "golang",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.4",
+					"Filename": "Packages/golang-1.22.4-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "golang-bin",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.4",
+					"Filename": "Packages/golang-bin-1.22.4-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "golang-shared",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.4",
+					"Filename": "Packages/golang-shared-1.22.4-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

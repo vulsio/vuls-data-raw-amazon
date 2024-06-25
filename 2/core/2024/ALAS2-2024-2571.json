@@ -1,0 +1,107 @@
+{
+	"ID": "ALAS2-2024-2571",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2571: important priority package update for libndp",
+	"Issued": {
+		"Date": "2024-06-19 19:15:00"
+	},
+	"Updated": {
+		"Date": "2024-06-19 19:15:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-5564:\n\tA vulnerability was found in libndp. A buffer overflow in NetworkManager that can be triggered by sending a malformed IPv6 router advertisement packet via malicious user locally. This happens as libndp was not validating correctly the route length information and hence leading to a flaw. This affects versions of libndp >= 1.0.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-5564",
+				"ID": "CVE-2024-5564",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libndp",
+					"Release": "7.amzn2.0.3",
+					"Version": "1.2",
+					"Filename": "Packages/libndp-1.2-7.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libndp-devel",
+					"Release": "7.amzn2.0.3",
+					"Version": "1.2",
+					"Filename": "Packages/libndp-devel-1.2-7.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libndp-debuginfo",
+					"Release": "7.amzn2.0.3",
+					"Version": "1.2",
+					"Filename": "Packages/libndp-debuginfo-1.2-7.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libndp",
+					"Release": "7.amzn2.0.3",
+					"Version": "1.2",
+					"Filename": "Packages/libndp-1.2-7.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libndp-devel",
+					"Release": "7.amzn2.0.3",
+					"Version": "1.2",
+					"Filename": "Packages/libndp-devel-1.2-7.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libndp-debuginfo",
+					"Release": "7.amzn2.0.3",
+					"Version": "1.2",
+					"Filename": "Packages/libndp-debuginfo-1.2-7.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libndp",
+					"Release": "7.amzn2.0.3",
+					"Version": "1.2",
+					"Filename": "Packages/libndp-1.2-7.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libndp-devel",
+					"Release": "7.amzn2.0.3",
+					"Version": "1.2",
+					"Filename": "Packages/libndp-devel-1.2-7.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libndp-debuginfo",
+					"Release": "7.amzn2.0.3",
+					"Version": "1.2",
+					"Filename": "Packages/libndp-debuginfo-1.2-7.amzn2.0.3.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
