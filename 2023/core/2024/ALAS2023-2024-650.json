@@ -1,0 +1,43 @@
+{
+	"ID": "ALAS2023-2024-650",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-650: Important priority package update for composer",
+	"Issued": {
+		"Date": "2024-07-03 22:13:00"
+	},
+	"Updated": {
+		"Date": "2024-07-03 22:13:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-35241:\n\tComposer is a dependency manager for PHP. On the 2.x branch prior to versions 2.2.24 and 2.7.7, the `status`, `reinstall` and `remove` commands with packages installed from source via git containing specially crafted branch names in the repository can be used to execute code. Patches for this issue are available in version 2.2.24 for 2.2 LTS or 2.7.7 for mainline. As a workaround, avoid installing dependencies via git by using `--prefer-dist` or the `preferred-install: dist` config setting.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-35241",
+				"ID": "CVE-2024-35241",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "composer",
+					"Release": "2.amzn2023.0.3",
+					"Version": "2.5.8",
+					"Filename": "Packages/composer-2.5.8-2.amzn2023.0.3.noarch.rpm"
+				}
+			]
+		}
+	}
+}
