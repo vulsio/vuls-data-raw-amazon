@@ -10,15 +10,51 @@
 		"Date": "2024-05-23 23:02:00"
 	},
 	"Updated": {
-		"Date": "2024-06-19 20:39:00"
+		"Date": "2024-07-03 22:01:00"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2024-36959:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\npinctrl: devicetree: fix refcount leak in pinctrl_dt_to_map()\n\nCVE-2024-36933:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnsh: Restore skb->{protocol,data,mac_header} for outer header in nsh_gso_segment().\n\nCVE-2024-36905:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntcp: defer shutdown(SEND_SHUTDOWN) for TCP_SYN_RECV sockets\n\nCVE-2023-52628:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nftables: exthdr: fix 4-byte stack OOB write\n\nIf priv->len is a multiple of 4, then dst[len / 4] can write past\nthe destination array which leads to stack corruption.\n\nThis construct is necessary to clean the remainder of the register\nin case ->len is NOT a multiple of the register size, so make it\nconditional just like nft_payload.c does.\n\nThe bug was added in 4.1 cycle and then copied/inherited when\ntcp/sctp and ip option support was added.\n\nBug reported by Zero Day Initiative project (ZDI-CAN-21950,\nZDI-CAN-21951, ZDI-CAN-21961).\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2024-36959:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\npinctrl: devicetree: fix refcount leak in pinctrl_dt_to_map()\n\nCVE-2024-36954:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntipc: fix a possible memleak in tipc_buf_append\n\nCVE-2024-36940:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\npinctrl: core: delete incorrect free in pinctrl_enable()\n\nCVE-2024-36939:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnfs: Handle error of rpc_proc_register() in nfs_net_init().\n\nCVE-2024-36933:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnsh: Restore skb->{protocol,data,mac_header} for outer header in nsh_gso_segment().\n\nCVE-2024-36905:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntcp: defer shutdown(SEND_SHUTDOWN) for TCP_SYN_RECV sockets\n\nCVE-2024-36904:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntcp: Use refcount_inc_not_zero() in tcp_twsk_unique().\n\nCVE-2024-36902:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nipv6: fib6_rules: avoid possible NULL dereference in fib6_rule_action()\n\nCVE-2024-36886:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntipc: fix UAF in error path\n\nCVE-2024-36883:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: fix out-of-bounds access in ops_init\n\nCVE-2024-36017:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nrtnetlink: Correct nested IFLA_VF_VLAN_LIST attribute validation\n\nCVE-2024-35947:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ndyndbg: fix old BUG_ON in >control parser\n\nCVE-2023-52628:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nftables: exthdr: fix 4-byte stack OOB write\n\nIf priv->len is a multiple of 4, then dst[len / 4] can write past\nthe destination array which leads to stack corruption.\n\nThis construct is necessary to clean the remainder of the register\nin case ->len is NOT a multiple of the register size, so make it\nconditional just like nft_payload.c does.\n\nThe bug was added in 4.1 cycle and then copied/inherited when\ntcp/sctp and ip option support was added.\n\nBug reported by Zero Day Initiative project (ZDI-CAN-21950,\nZDI-CAN-21951, ZDI-CAN-21961).\n",
 	"References": {
 		"Reference": [
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52628",
 				"ID": "CVE-2023-52628",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-35947",
+				"ID": "CVE-2024-35947",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-36017",
+				"ID": "CVE-2024-36017",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-36883",
+				"ID": "CVE-2024-36883",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-36886",
+				"ID": "CVE-2024-36886",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-36902",
+				"ID": "CVE-2024-36902",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-36904",
+				"ID": "CVE-2024-36904",
 				"Title": "",
 				"Type": "cve"
 			},
@@ -31,6 +67,24 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-36933",
 				"ID": "CVE-2024-36933",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-36939",
+				"ID": "CVE-2024-36939",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-36940",
+				"ID": "CVE-2024-36940",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-36954",
+				"ID": "CVE-2024-36954",
 				"Title": "",
 				"Type": "cve"
 			},

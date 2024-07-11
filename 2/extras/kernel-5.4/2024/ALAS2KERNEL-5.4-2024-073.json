@@ -10,7 +10,7 @@
 		"Date": "2024-06-19 20:39:00"
 	},
 	"Updated": {
-		"Date": "2024-06-19 20:39:00"
+		"Date": "2024-06-24 11:30:00"
 	},
 	"Severity": "important",
 	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2022-20141:\n\tIn ip_check_mc_rcu of igmp.c, there is a possible use after free due to improper locking. This could lead to local escalation of privilege when opening and closing inet sockets with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-112551163References: Upstream kernel\n\nCVE-2021-3655:\n\tA vulnerability was found in the Linux kernel. Missing size validations on inbound SCTP packets may allow the kernel to read uninitialized memory.\n\nCVE-2021-20322:\n\tA flaw in the processing of received ICMP errors (ICMP fragment needed and ICMP redirect) in the Linux kernel functionality was found to allow the ability to quickly scan open UDP ports. This flaw allows an off-path remote user to effectively bypass the source port UDP randomization. The highest threat from this vulnerability is to confidentiality and possibly integrity, because software that relies on UDP source port randomization are indirectly affected as well.\n\nCVE-2020-16119:\n\tA flaw was found in the Linux kernel. When reusing a socket with an attached dccps_hc_tx_ccid as a listener, the socket will be used after being released leading to denial of service (DoS) or a potential code execution. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n",

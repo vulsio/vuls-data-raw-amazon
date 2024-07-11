@@ -10,15 +10,45 @@
 		"Date": "2024-05-09 18:00:00"
 	},
 	"Updated": {
-		"Date": "2024-06-06 20:38:00"
+		"Date": "2024-07-03 22:01:00"
 	},
 	"Severity": "medium",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2024-35809:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nPCI/PM: Drain runtime-idle callbacks before driver removal\n\nCVE-2024-26925:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_tables: release mutex after nft_gc_seq_end from abort path\n\nThe commit mutex should not be released during the critical section\nbetween nft_gc_seq_begin() and nft_gc_seq_end(), otherwise, async GC\nworker could collect expired objects and get the released commit lock\nwithin the same GC sequence.\n\nnf_tables_module_autoload() temporarily releases the mutex to load\nmodule dependencies, then it goes back to replay the transaction again.\nMove it at the end of the abort phase after nft_gc_seq_end() is called.\n\nCVE-2023-52482:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nx86/srso: Add SRSO mitigation for Hygon processors\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2024-35809:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nPCI/PM: Drain runtime-idle callbacks before driver removal\n\nCVE-2024-26925:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_tables: release mutex after nft_gc_seq_end from abort path\n\nThe commit mutex should not be released during the critical section\nbetween nft_gc_seq_begin() and nft_gc_seq_end(), otherwise, async GC\nworker could collect expired objects and get the released commit lock\nwithin the same GC sequence.\n\nnf_tables_module_autoload() temporarily releases the mutex to load\nmodule dependencies, then it goes back to replay the transaction again.\nMove it at the end of the abort phase after nft_gc_seq_end() is called.\n\nCVE-2024-26643:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_tables: mark set as dead when unbinding anonymous set with timeout\n\nCVE-2024-26642:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_tables: disallow anonymous set with timeout flag\n\nCVE-2024-25739:\n\tcreate_empty_lvol in drivers/mtd/ubi/vtbl.c in the Linux kernel through 6.7.4 can attempt to allocate zero bytes, and crash, because of a missing check for ubi->leb_size.\n\nCVE-2023-52620:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_tables: disallow timeout for anonymous sets\n\nCVE-2023-52482:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nx86/srso: Add SRSO mitigation for Hygon processors\n\nCVE-2023-52458:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nblock: add check that partition length needs to be aligned with block size\n\nBefore calling add partition or resize partition, there is no check\non whether the length is aligned with the logical block size.\nIf the logical block size of the disk is larger than 512 bytes,\nthen the partition size maybe not the multiple of the logical block size,\nand when the last sector is read, bio_truncate() will adjust the bio size,\nresulting in an IO error if the size of the read command is smaller than\nthe logical block size.If integrity data is supported, this will also\nresult in a null pointer dereference when calling bio_integrity_free.\n",
 	"References": {
 		"Reference": [
 			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52458",
+				"ID": "CVE-2023-52458",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52482",
 				"ID": "CVE-2023-52482",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52620",
+				"ID": "CVE-2023-52620",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-25739",
+				"ID": "CVE-2024-25739",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26642",
+				"ID": "CVE-2024-26642",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26643",
+				"ID": "CVE-2024-26643",
 				"Title": "",
 				"Type": "cve"
 			},

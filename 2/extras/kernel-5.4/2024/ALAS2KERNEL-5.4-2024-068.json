@@ -10,12 +10,24 @@
 		"Date": "2024-05-23 23:02:00"
 	},
 	"Updated": {
-		"Date": "2024-06-06 20:37:00"
+		"Date": "2024-07-03 22:01:00"
 	},
 	"Severity": "medium",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2024-27417:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nipv6: fix potential \"struct net\" leak in inet6_rtm_getaddr()\n\nCVE-2024-26736:\n\tIn the Linux kernel, the following vulnerability has been resolved: afs: Increase buffer size in afs_update_volume_status() The max length of volume->vid value is 20 characters. So increase idbuf[] size up to 24 to avoid overflow. Found by Linux Verification Center (linuxtesting.org) with SVACE. [DH: Actually, it's 20 + NUL, so increase it to 24 and use snprintf()]\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2024-27417:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nipv6: fix potential \"struct net\" leak in inet6_rtm_getaddr()\n\nCVE-2024-26736:\n\tIn the Linux kernel, the following vulnerability has been resolved: afs: Increase buffer size in afs_update_volume_status() The max length of volume->vid value is 20 characters. So increase idbuf[] size up to 24 to avoid overflow. Found by Linux Verification Center (linuxtesting.org) with SVACE. [DH: Actually, it's 20 + NUL, so increase it to 24 and use snprintf()]\n\nCVE-2024-0841:\n\tA null pointer dereference flaw was found in the hugetlbfs_fill_super function in the Linux kernel hugetlbfs (HugeTLB pages) functionality. This issue may allow a local user to crash the system or potentially escalate their privileges on the system.\n\nCVE-2023-52504:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nx86/alternatives: Disable KASAN in apply_alternatives()\n",
 	"References": {
 		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52504",
+				"ID": "CVE-2023-52504",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0841",
+				"ID": "CVE-2024-0841",
+				"Title": "",
+				"Type": "cve"
+			},
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26736",
 				"ID": "CVE-2024-26736",
