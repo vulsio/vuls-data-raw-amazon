@@ -1,0 +1,67 @@
+{
+	"ID": "ALAS2-2024-2583",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2583: important priority package update for thunderbird",
+	"Issued": {
+		"Date": "2024-07-03 20:05:00"
+	},
+	"Updated": {
+		"Date": "2024-07-03 20:05:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-5700:\n\tMemory safety bugs present in Firefox 126, Firefox ESR 115.11, and Thunderbird 115.11. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 127 and Firefox ESR < 115.12.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-5700",
+				"ID": "CVE-2024-5700",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "thunderbird",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.12.1",
+					"Filename": "Packages/thunderbird-115.12.1-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "thunderbird-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.12.1",
+					"Filename": "Packages/thunderbird-debuginfo-115.12.1-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "thunderbird",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.12.1",
+					"Filename": "Packages/thunderbird-115.12.1-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "thunderbird-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.12.1",
+					"Filename": "Packages/thunderbird-debuginfo-115.12.1-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
