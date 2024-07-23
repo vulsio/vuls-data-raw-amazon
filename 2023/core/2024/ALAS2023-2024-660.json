@@ -1,0 +1,267 @@
+{
+	"ID": "ALAS2023-2024-660",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-660: Medium priority package update for cups",
+	"Issued": {
+		"Date": "2024-07-18 01:24:00"
+	},
+	"Updated": {
+		"Date": "2024-07-18 01:24:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-35235:\n\tOpenPrinting CUPS is an open source printing system for Linux and other Unix-like operating systems. In versions 2.4.8 and earlier, when starting the cupsd server with a Listen configuration item pointing to a symbolic link, the cupsd process can be caused to perform an arbitrary chmod of the provided argument, providing world-writable access to the target. Given that cupsd is often running as root, this can result in the change of permission of any user or system files to be world writable. Given the aforementioned Ubuntu AppArmor context, on such systems this vulnerability is limited to those files modifiable by the cupsd process. In that specific case it was found to be possible to turn the configuration of the Listen argument into full control over the cupsd.conf and cups-files.conf configuration files. By later setting the User and Group arguments in cups-files.conf, and printing with a printer configured by PPD with a `FoomaticRIPCommandLine` argument, arbitrary user and group (not root) command execution could be achieved, which can further be used on Ubuntu systems to achieve full root command execution. Commit ff1f8a623e090dee8a8aadf12a6a4b25efac143d contains a patch for the issue.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-35235",
+				"ID": "CVE-2024-35235",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "1",
+					"Name": "cups-filesystem",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-filesystem-2.3.3op2-18.amzn2023.0.8.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "cups-printerapp-debuginfo",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-printerapp-debuginfo-2.3.3op2-18.amzn2023.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "cups-lpd-debuginfo",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-lpd-debuginfo-2.3.3op2-18.amzn2023.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "cups-debugsource",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-debugsource-2.3.3op2-18.amzn2023.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "cups-ipptool-debuginfo",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-ipptool-debuginfo-2.3.3op2-18.amzn2023.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "cups-devel",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-devel-2.3.3op2-18.amzn2023.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "cups-libs-debuginfo",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-libs-debuginfo-2.3.3op2-18.amzn2023.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "cups-ipptool",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-ipptool-2.3.3op2-18.amzn2023.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "cups-libs",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-libs-2.3.3op2-18.amzn2023.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "cups-client-debuginfo",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-client-debuginfo-2.3.3op2-18.amzn2023.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "cups-client",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-client-2.3.3op2-18.amzn2023.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "cups-lpd",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-lpd-2.3.3op2-18.amzn2023.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "cups-printerapp",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-printerapp-2.3.3op2-18.amzn2023.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "cups-debuginfo",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-debuginfo-2.3.3op2-18.amzn2023.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "cups",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-2.3.3op2-18.amzn2023.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "cups-libs-debuginfo",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-libs-debuginfo-2.3.3op2-18.amzn2023.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "cups-ipptool-debuginfo",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-ipptool-debuginfo-2.3.3op2-18.amzn2023.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "cups-printerapp-debuginfo",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-printerapp-debuginfo-2.3.3op2-18.amzn2023.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "cups-lpd-debuginfo",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-lpd-debuginfo-2.3.3op2-18.amzn2023.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "cups-devel",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-devel-2.3.3op2-18.amzn2023.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "cups-lpd",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-lpd-2.3.3op2-18.amzn2023.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "cups-ipptool",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-ipptool-2.3.3op2-18.amzn2023.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "cups-libs",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-libs-2.3.3op2-18.amzn2023.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "cups-debugsource",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-debugsource-2.3.3op2-18.amzn2023.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "cups-printerapp",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-printerapp-2.3.3op2-18.amzn2023.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "cups-client",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-client-2.3.3op2-18.amzn2023.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "cups-client-debuginfo",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-client-debuginfo-2.3.3op2-18.amzn2023.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "cups-debuginfo",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-debuginfo-2.3.3op2-18.amzn2023.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "1",
+					"Name": "cups",
+					"Release": "18.amzn2023.0.8",
+					"Version": "2.3.3op2",
+					"Filename": "Packages/cups-2.3.3op2-18.amzn2023.0.8.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

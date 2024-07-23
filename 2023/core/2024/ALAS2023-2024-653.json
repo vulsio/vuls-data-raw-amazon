@@ -1,0 +1,51 @@
+{
+	"ID": "ALAS2023-2024-653",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-653: Medium priority package update for python3.11-setuptools",
+	"Issued": {
+		"Date": "2024-07-18 01:24:00"
+	},
+	"Updated": {
+		"Date": "2024-07-18 01:24:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-5569:\n\tA Denial of Service (DoS) vulnerability exists in the jaraco/zipp library, affecting all versions prior to 3.19.1. The vulnerability is triggered when processing a specially crafted zip file that leads to an infinite loop. This issue also impacts the zipfile module of CPython, as features from the third-party zipp library are later merged into CPython, and the affected code is identical in both projects. The infinite loop can be initiated through the use of functions affecting the `Path` module in both zipp and zipfile, such as `joinpath`, the overloaded division operator, and `iterdir`. Although the infinite loop is not resource exhaustive, it prevents the application from responding. The vulnerability was addressed in version 3.19.1 of jaraco/zipp.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-5569",
+				"ID": "CVE-2024-5569",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python3.11-setuptools-wheel",
+					"Release": "2.amzn2023.0.5",
+					"Version": "65.5.1",
+					"Filename": "Packages/python3.11-setuptools-wheel-65.5.1-2.amzn2023.0.5.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python3.11-setuptools",
+					"Release": "2.amzn2023.0.5",
+					"Version": "65.5.1",
+					"Filename": "Packages/python3.11-setuptools-65.5.1-2.amzn2023.0.5.noarch.rpm"
+				}
+			]
+		}
+	}
+}

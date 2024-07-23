@@ -1,0 +1,83 @@
+{
+	"ID": "ALAS2-2024-2596",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2596: medium priority package update for libreswan",
+	"Issued": {
+		"Date": "2024-07-18 02:00:00"
+	},
+	"Updated": {
+		"Date": "2024-07-18 02:00:00"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-3652:\n\tThe Libreswan Project was notified of an issue causing libreswan to restart when using IKEv1 without specifying an esp= line. When the peer requests AES-GMAC, libreswan's default proposal handler causes an assertion failure and crashes and restarts. IKEv2 connections are not affected.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-3652",
+				"ID": "CVE-2024-3652",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libreswan",
+					"Release": "4.8.amzn2.0.3",
+					"Version": "3.25",
+					"Filename": "Packages/libreswan-3.25-4.8.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libreswan-debuginfo",
+					"Release": "4.8.amzn2.0.3",
+					"Version": "3.25",
+					"Filename": "Packages/libreswan-debuginfo-3.25-4.8.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libreswan",
+					"Release": "4.8.amzn2.0.3",
+					"Version": "3.25",
+					"Filename": "Packages/libreswan-3.25-4.8.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libreswan-debuginfo",
+					"Release": "4.8.amzn2.0.3",
+					"Version": "3.25",
+					"Filename": "Packages/libreswan-debuginfo-3.25-4.8.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libreswan",
+					"Release": "4.8.amzn2.0.3",
+					"Version": "3.25",
+					"Filename": "Packages/libreswan-3.25-4.8.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libreswan-debuginfo",
+					"Release": "4.8.amzn2.0.3",
+					"Version": "3.25",
+					"Filename": "Packages/libreswan-debuginfo-3.25-4.8.amzn2.0.3.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

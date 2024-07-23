@@ -1,0 +1,937 @@
+{
+	"ID": "ALAS2023-2024-654",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-654: Medium priority package update for php8.1",
+	"Issued": {
+		"Date": "2024-07-18 01:24:00"
+	},
+	"Updated": {
+		"Date": "2024-07-18 01:24:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-5458:\n\tIn PHP versions 8.1.* before 8.1.29, 8.2.* before 8.2.20, 8.3.* before 8.3.8, due to a code logic error, filtering functions such as filter_var when validating URLs (FILTER_VALIDATE_URL) for certain types of URLs the function will result in invalid user information (username + password part of URLs) being treated as valid user information. This may lead to the downstream code accepting invalid URLs as valid and parsing them incorrectly.\n\nCVE-2024-2408:\n\tThe openssl_private_decrypt function in PHP, when using PKCS1 padding (OPENSSL_PKCS1_PADDING, which is the default), is vulnerable to the Marvin Attack unless it is used with an OpenSSL version that includes the changes from this pull request:  https://github.com/openssl/openssl/pull/13817  (rsa_pkcs1_implicit_rejection). These changes are part of OpenSSL 3.2 and have also been backported to stable versions of various Linux distributions, as well as to the PHP builds provided for Windows since the previous release. All distributors and builders should ensure that this version is used to prevent PHP from being vulnerable.\n\nPHP Windows builds for the versions 8.1.29, 8.2.20 and 8.3.8 and above include OpenSSL patches that fix the vulnerability.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2408",
+				"ID": "CVE-2024-2408",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-5458",
+				"ID": "CVE-2024-5458",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-dbg-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-dbg-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-embedded-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-embedded-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-opcache",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-opcache-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-process-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-process-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-gd-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-gd-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-mbstring-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-mbstring-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-cli",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-cli-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-snmp-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-snmp-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-cli-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-cli-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-pdo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-pdo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-pdo-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-pdo-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-soap-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-soap-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-dbg",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-dbg-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-odbc-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-odbc-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-xml",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-xml-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-mbstring",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-mbstring-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-fpm",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-fpm-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-fpm-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-fpm-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-intl",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-intl-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-debugsource",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-debugsource-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-mysqlnd-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-mysqlnd-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-ffi-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-ffi-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-ldap-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-ldap-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-xml-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-xml-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-devel-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-intl-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-intl-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-soap",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-soap-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-common",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-common-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-zip-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-zip-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-common-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-common-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-pgsql-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-pgsql-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-opcache-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-opcache-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-mysqlnd",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-mysqlnd-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-embedded",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-embedded-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-pgsql",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-pgsql-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-dba-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-dba-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-tidy-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-tidy-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-ffi",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-ffi-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-gmp-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-gmp-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-bcmath-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-bcmath-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-process",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-process-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-gd",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-gd-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-odbc",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-odbc-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-ldap",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-ldap-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-zip",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-zip-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-gmp",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-gmp-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-bcmath",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-bcmath-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-dba",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-dba-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-tidy",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-tidy-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-snmp",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-snmp-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-enchant-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-enchant-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-pspell-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-pspell-debuginfo-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-enchant",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-enchant-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1-pspell",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-pspell-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "php8.1",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-8.1.29-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-dbg-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-dbg-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-zip-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-zip-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-cli-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-cli-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-soap-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-soap-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-ffi",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-ffi-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-mbstring-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-mbstring-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-odbc-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-odbc-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-pspell",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-pspell-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-xml",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-xml-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-gd-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-gd-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-opcache-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-opcache-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-ldap",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-ldap-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-embedded",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-embedded-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-intl-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-intl-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-odbc",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-odbc-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-ffi-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-ffi-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-debugsource",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-debugsource-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-snmp",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-snmp-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-common-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-common-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-fpm",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-fpm-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-intl",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-intl-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-pdo-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-pdo-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-bcmath",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-bcmath-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-tidy",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-tidy-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-pgsql-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-pgsql-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-gd",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-gd-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-devel-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-fpm-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-fpm-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-pgsql",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-pgsql-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-mysqlnd",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-mysqlnd-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-dba",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-dba-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-zip",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-zip-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-embedded-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-embedded-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-process",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-process-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-ldap-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-ldap-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-common",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-common-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-soap",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-soap-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-enchant",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-enchant-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-dbg",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-dbg-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-cli",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-cli-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-opcache",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-opcache-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-gmp",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-gmp-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-process-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-process-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-xml-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-xml-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-mysqlnd-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-mysqlnd-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-pdo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-pdo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-mbstring",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-mbstring-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-snmp-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-snmp-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-dba-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-dba-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-tidy-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-tidy-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-gmp-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-gmp-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-bcmath-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-bcmath-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-enchant-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-enchant-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1-pspell-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-pspell-debuginfo-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "php8.1",
+					"Release": "1.amzn2023.0.1",
+					"Version": "8.1.29",
+					"Filename": "Packages/php8.1-8.1.29-1.amzn2023.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

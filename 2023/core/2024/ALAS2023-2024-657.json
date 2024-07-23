@@ -1,0 +1,83 @@
+{
+	"ID": "ALAS2023-2024-657",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-657: Medium priority package update for wget",
+	"Issued": {
+		"Date": "2024-07-18 01:24:00"
+	},
+	"Updated": {
+		"Date": "2024-07-18 01:24:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-38428:\n\turl.c in GNU Wget through 1.24.5 mishandles semicolons in the userinfo subcomponent of a URI, and thus there may be insecure behavior in which data that was supposed to be in the userinfo subcomponent is misinterpreted to be part of the host subcomponent.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-38428",
+				"ID": "CVE-2024-38428",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "wget-debuginfo",
+					"Release": "1.amzn2023.0.4",
+					"Version": "1.21.3",
+					"Filename": "Packages/wget-debuginfo-1.21.3-1.amzn2023.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "wget-debugsource",
+					"Release": "1.amzn2023.0.4",
+					"Version": "1.21.3",
+					"Filename": "Packages/wget-debugsource-1.21.3-1.amzn2023.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "wget",
+					"Release": "1.amzn2023.0.4",
+					"Version": "1.21.3",
+					"Filename": "Packages/wget-1.21.3-1.amzn2023.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "wget-debuginfo",
+					"Release": "1.amzn2023.0.4",
+					"Version": "1.21.3",
+					"Filename": "Packages/wget-debuginfo-1.21.3-1.amzn2023.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "wget",
+					"Release": "1.amzn2023.0.4",
+					"Version": "1.21.3",
+					"Filename": "Packages/wget-1.21.3-1.amzn2023.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "wget-debugsource",
+					"Release": "1.amzn2023.0.4",
+					"Version": "1.21.3",
+					"Filename": "Packages/wget-debugsource-1.21.3-1.amzn2023.0.4.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

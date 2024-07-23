@@ -1,0 +1,51 @@
+{
+	"ID": "ALAS2023-2024-662",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-662: Important priority package update for python-werkzeug",
+	"Issued": {
+		"Date": "2024-07-18 01:24:00"
+	},
+	"Updated": {
+		"Date": "2024-07-18 01:24:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-34069:\n\tWerkzeug is a comprehensive WSGI web application library. The debugger in affected versions of Werkzeug can allow an attacker to execute code on a developer's machine under some circumstances. This requires the attacker to get the developer to interact with a domain and subdomain they control, and enter the debugger PIN, but if they are successful it allows access to the debugger even if it is only running on localhost. This also requires the attacker to guess a URL in the developer's application that will trigger the debugger. This vulnerability is fixed in 3.0.3.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34069",
+				"ID": "CVE-2024-34069",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python3-werkzeug",
+					"Release": "5.amzn2023.0.5",
+					"Version": "1.0.1",
+					"Filename": "Packages/python3-werkzeug-1.0.1-5.amzn2023.0.5.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python3-werkzeug-doc",
+					"Release": "5.amzn2023.0.5",
+					"Version": "1.0.1",
+					"Filename": "Packages/python3-werkzeug-doc-1.0.1-5.amzn2023.0.5.noarch.rpm"
+				}
+			]
+		}
+	}
+}
