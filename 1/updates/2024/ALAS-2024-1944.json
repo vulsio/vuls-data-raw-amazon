@@ -1,0 +1,205 @@
+{
+	"ID": "ALAS-2024-1944",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2024-1944: important priority package update for httpd24",
+	"Issued": {
+		"Date": "2024-07-17 22:27:00"
+	},
+	"Updated": {
+		"Date": "2024-07-17 22:27:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2024-38477:\n\tnull pointer dereference in mod_proxy in Apache HTTP Server 2.4.59 and earlier allows an attacker to crash the server via a malicious request.\nUsers are recommended to upgrade to version 2.4.60, which fixes this issue.\n\nCVE-2024-38476:\n\tVulnerability in core of Apache HTTP Server 2.4.59 and earlier are vulnerably to information disclosure, SSRF or local script execution via backend applications whose response headers are malicious or exploitable.\n\nUsers are recommended to upgrade to version 2.4.60, which fixes this issue.\n\nCVE-2024-38475:\n\tImproper escaping of output in mod_rewrite in Apache HTTP Server 2.4.59 and earlier allows an attacker to map URLs to filesystem locations that are permitted to be served by the server but are not intentionally/directly reachable by any URL, resulting in code execution or source code disclosure. \n\nSubstitutions in server context that use a backreferences or variables as the first segment of the substitution are affected.  Some unsafe RewiteRules will be broken by this change and the rewrite flag \"UnsafePrefixStat\" can be used to opt back in once ensuring the substitution is appropriately constrained.\n\nCVE-2024-38474:\n\tSubstitution encoding issue in mod_rewrite in Apache HTTP Server 2.4.59 and earlier allows attacker to execute scripts in\ndirectories permitted by the configuration but not directly reachable by any URL or source disclosure of scripts meant to only to be executed as CGI.\n\nUsers are recommended to upgrade to version 2.4.60, which fixes this issue.\n\nSome RewriteRules that capture and substitute unsafely will now fail unless rewrite flag \"UnsafeAllow3F\" is specified.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-38474",
+				"ID": "CVE-2024-38474",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-38475",
+				"ID": "CVE-2024-38475",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-38476",
+				"ID": "CVE-2024-38476",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-38477",
+				"ID": "CVE-2024-38477",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "httpd24-tools",
+					"Release": "1.103.amzn1",
+					"Version": "2.4.61",
+					"Filename": "Packages/httpd24-tools-2.4.61-1.103.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "mod24_proxy_html",
+					"Release": "1.103.amzn1",
+					"Version": "2.4.61",
+					"Filename": "Packages/mod24_proxy_html-2.4.61-1.103.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "1",
+					"Name": "mod24_ssl",
+					"Release": "1.103.amzn1",
+					"Version": "2.4.61",
+					"Filename": "Packages/mod24_ssl-2.4.61-1.103.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mod24_session",
+					"Release": "1.103.amzn1",
+					"Version": "2.4.61",
+					"Filename": "Packages/mod24_session-2.4.61-1.103.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "httpd24",
+					"Release": "1.103.amzn1",
+					"Version": "2.4.61",
+					"Filename": "Packages/httpd24-2.4.61-1.103.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "httpd24-devel",
+					"Release": "1.103.amzn1",
+					"Version": "2.4.61",
+					"Filename": "Packages/httpd24-devel-2.4.61-1.103.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mod24_ldap",
+					"Release": "1.103.amzn1",
+					"Version": "2.4.61",
+					"Filename": "Packages/mod24_ldap-2.4.61-1.103.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "httpd24-debuginfo",
+					"Release": "1.103.amzn1",
+					"Version": "2.4.61",
+					"Filename": "Packages/httpd24-debuginfo-2.4.61-1.103.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "httpd24-manual",
+					"Release": "1.103.amzn1",
+					"Version": "2.4.61",
+					"Filename": "Packages/httpd24-manual-2.4.61-1.103.amzn1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "mod24_md",
+					"Release": "1.103.amzn1",
+					"Version": "2.4.61",
+					"Filename": "Packages/mod24_md-2.4.61-1.103.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "httpd24-devel",
+					"Release": "1.103.amzn1",
+					"Version": "2.4.61",
+					"Filename": "Packages/httpd24-devel-2.4.61-1.103.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mod24_session",
+					"Release": "1.103.amzn1",
+					"Version": "2.4.61",
+					"Filename": "Packages/mod24_session-2.4.61-1.103.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "httpd24-tools",
+					"Release": "1.103.amzn1",
+					"Version": "2.4.61",
+					"Filename": "Packages/httpd24-tools-2.4.61-1.103.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "httpd24-debuginfo",
+					"Release": "1.103.amzn1",
+					"Version": "2.4.61",
+					"Filename": "Packages/httpd24-debuginfo-2.4.61-1.103.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "mod24_proxy_html",
+					"Release": "1.103.amzn1",
+					"Version": "2.4.61",
+					"Filename": "Packages/mod24_proxy_html-2.4.61-1.103.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "1",
+					"Name": "mod24_ssl",
+					"Release": "1.103.amzn1",
+					"Version": "2.4.61",
+					"Filename": "Packages/mod24_ssl-2.4.61-1.103.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "httpd24",
+					"Release": "1.103.amzn1",
+					"Version": "2.4.61",
+					"Filename": "Packages/httpd24-2.4.61-1.103.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mod24_md",
+					"Release": "1.103.amzn1",
+					"Version": "2.4.61",
+					"Filename": "Packages/mod24_md-2.4.61-1.103.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "mod24_ldap",
+					"Release": "1.103.amzn1",
+					"Version": "2.4.61",
+					"Filename": "Packages/mod24_ldap-2.4.61-1.103.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
+}
