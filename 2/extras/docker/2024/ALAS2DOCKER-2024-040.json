@@ -1,0 +1,67 @@
+{
+	"ID": "ALAS2DOCKER-2024-040",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Docker 2.0 - ALAS2DOCKER-2024-040: important priority package update for docker",
+	"Issued": {
+		"Date": "2024-07-29 22:31:00"
+	},
+	"Updated": {
+		"Date": "2024-07-29 22:31:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Docker that fix the following vulnerabilities:\nCVE-2024-41110:\n\tMoby is an open-source project created by Docker for software containerization. A security vulnerability has been detected in certain versions of Docker Engine, which could allow an attacker to bypass authorization plugins (AuthZ) under specific circumstances. The base likelihood of this being exploited is low.\n\nUsing a specially-crafted API request, an Engine API client could make the daemon forward the request or response to an authorization plugin without the body. In certain circumstances, the authorization plugin may allow a request which it would have otherwise denied if the body had been forwarded to it.\n\nA security issue was discovered In 2018, where an attacker could bypass AuthZ plugins using a specially crafted API request. This could lead to unauthorized actions, including privilege escalation. Although this issue was fixed in Docker Engine v18.09.1 in January 2019, the fix was not carried forward to later major versions, resulting in a regression. Anyone who depends on authorization plugins that introspect the request and/or response body to make access control decisions is potentially impacted.\n\nDocker EE v19.03.x and all versions of Mirantis Container Runtime are not vulnerable.\n\ndocker-ce v27.1.1 containes patches to fix the vulnerability. Patches have also been merged into the master, 19.0, 20.0, 23.0, 24.0, 25.0, 26.0, and 26.1 release branches. If one is unable to upgrade immediately, avoid using AuthZ plugins and/or restrict access to the Docker API to trusted parties, following the principle of least privilege.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-41110",
+				"ID": "CVE-2024-41110",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---docker",
+			"Name": "Amazon Linux 2 - Docker",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "docker",
+					"Release": "1.amzn2.0.1",
+					"Version": "25.0.6",
+					"Filename": "Packages/docker-25.0.6-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "docker-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "25.0.6",
+					"Filename": "Packages/docker-debuginfo-25.0.6-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "docker",
+					"Release": "1.amzn2.0.1",
+					"Version": "25.0.6",
+					"Filename": "Packages/docker-25.0.6-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "docker-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "25.0.6",
+					"Filename": "Packages/docker-debuginfo-25.0.6-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
