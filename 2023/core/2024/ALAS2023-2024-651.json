@@ -10,7 +10,7 @@
 		"Date": "2024-07-18 01:24:00"
 	},
 	"Updated": {
-		"Date": "2024-07-18 01:24:00"
+		"Date": "2024-07-22 16:00:00"
 	},
 	"Severity": "Important",
 	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-6409:\n\tA signal handler race condition vulnerability was found in OpenSSH's server (sshd), where a client does not authenticate within LoginGraceTime seconds (120 by default, 600 in old OpenSSH versions), then sshd's SIGALRM handler is called asynchronously. However, this signal handler calls various functions that are not async-signal-safe, for example, syslog(). This issue leaves it vulnerable to a signal handler race condition on the cleanup_exit() function, which introduces the same vulnerability as CVE-2024-6387 in the unprivileged child of the SSHD server.\n",
