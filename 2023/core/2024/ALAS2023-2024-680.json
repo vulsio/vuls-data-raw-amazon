@@ -1,0 +1,367 @@
+{
+	"ID": "ALAS2023-2024-680",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-680: Important priority package update for bind",
+	"Issued": {
+		"Date": "2024-08-01 04:06:00"
+	},
+	"Updated": {
+		"Date": "2024-08-01 04:06:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-4076:\n\tClient queries that trigger serving stale data and that also require lookups in local authoritative zone data may result in an assertion failure.\nThis issue affects BIND 9 versions 9.16.13 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.11.33-S1 through 9.11.37-S1, 9.16.13-S1 through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1.\n\nCVE-2024-1975:\n\tIf a server hosts a zone containing a \"KEY\" Resource Record, or a resolver DNSSEC-validates a \"KEY\" Resource Record from a DNSSEC-signed domain in cache, a client can exhaust resolver CPU resources by sending a stream of SIG(0) signed requests.\nThis issue affects BIND 9 versions 9.0.0 through 9.11.37, 9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1 through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1.\n\nCVE-2024-1737:\n\tResolver caches and authoritative zone databases that hold significant numbers of RRs for the same hostname (of any RTYPE) can suffer from degraded performance as content is being added or updated, and also when handling client queries for this name.\nThis issue affects BIND 9 versions 9.11.0 through 9.11.37, 9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.11.4-S1 through 9.11.37-S1, 9.16.8-S1 through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1737",
+				"ID": "CVE-2024-1737",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1975",
+				"ID": "CVE-2024-1975",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-4076",
+				"ID": "CVE-2024-4076",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-libs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-libs-debuginfo-9.18.28-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-dlz-sqlite3",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dlz-sqlite3-9.18.28-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "32",
+					"Name": "bind-doc",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-doc-9.18.28-1.amzn2023.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-utils-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-utils-debuginfo-9.18.28-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-dnssec-utils-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dnssec-utils-debuginfo-9.18.28-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-chroot",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-chroot-9.18.28-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-devel-9.18.28-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-dlz-ldap",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dlz-ldap-9.18.28-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-dlz-ldap-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dlz-ldap-debuginfo-9.18.28-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "32",
+					"Name": "bind-license",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-license-9.18.28-1.amzn2023.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-dlz-filesystem",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dlz-filesystem-9.18.28-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-utils",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-utils-9.18.28-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-libs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-libs-9.18.28-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-dlz-sqlite3-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dlz-sqlite3-debuginfo-9.18.28-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-dlz-filesystem-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dlz-filesystem-debuginfo-9.18.28-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-dnssec-utils",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dnssec-utils-9.18.28-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-dlz-mysql",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dlz-mysql-9.18.28-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-debugsource",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-debugsource-9.18.28-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-dlz-mysql-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dlz-mysql-debuginfo-9.18.28-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-debuginfo-9.18.28-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-9.18.28-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-libs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-libs-debuginfo-9.18.28-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-chroot",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-chroot-9.18.28-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-dlz-mysql-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dlz-mysql-debuginfo-9.18.28-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-dnssec-utils-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dnssec-utils-debuginfo-9.18.28-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-dlz-mysql",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dlz-mysql-9.18.28-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-debuginfo-9.18.28-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-9.18.28-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-dlz-sqlite3",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dlz-sqlite3-9.18.28-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-devel-9.18.28-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-dlz-ldap",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dlz-ldap-9.18.28-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-dlz-filesystem-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dlz-filesystem-debuginfo-9.18.28-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-dnssec-utils",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dnssec-utils-9.18.28-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-dlz-sqlite3-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dlz-sqlite3-debuginfo-9.18.28-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-debugsource",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-debugsource-9.18.28-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-utils",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-utils-9.18.28-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-dlz-filesystem",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dlz-filesystem-9.18.28-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-utils-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-utils-debuginfo-9.18.28-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-libs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-libs-9.18.28-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-dlz-ldap-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "9.18.28",
+					"Filename": "Packages/bind-dlz-ldap-debuginfo-9.18.28-1.amzn2023.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
