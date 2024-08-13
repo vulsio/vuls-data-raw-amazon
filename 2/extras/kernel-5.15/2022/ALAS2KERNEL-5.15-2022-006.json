@@ -10,10 +10,10 @@
 		"Date": "2022-08-15 21:23:00"
 	},
 	"Updated": {
-		"Date": "2022-10-17 22:06:00"
+		"Date": "2024-08-01 01:11:00"
 	},
 	"Severity": "medium",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.15 that fix the following vulnerabilities:\nCVE-2022-36123:\n\tA memory access flaw was found in the Linux kernel's XEN hypervisor for the virtual machine. This flaw allows a local user to crash the system or potentially escalate their privileges on the system.\n\nCVE-2022-29901:\n\tA flaw was found in hw. Non-transparent sharing of branch predictor targets between contexts in some Intel(R) processors may potentially allow an authorized user to enable information disclosure via local access.\n\nCVE-2022-29900:\n\tA flaw was found in hw. Mis-trained branch predictions for return instructions may allow arbitrary speculative code execution under certain microarchitecture-dependent conditions.\n\nCVE-2022-28693:\n\tA flaw was found in hw. The unprotected alternative channel of return branch target prediction in some Intel(R) Processors may allow an authorized user to enable information disclosure via local access.\n\nCVE-2022-26373:\n\tA flaw was found in hw. In certain processors with Intel's Enhanced Indirect Branch Restricted Speculation (eIBRS) capabilities, soon after VM exit or IBPB command event, the linear address following the most recent near CALL instruction prior to a VM exit may be used as the Return Stack Buffer (RSB) prediction.\n\nCVE-2022-23825:\n\tA flaw was found in hw. Aliases in the branch predictor may cause some AMD processors to predict the wrong branch type, potentially leading to information disclosure.\n\nCVE-2022-23816:\n\tA flaw was found in hw. Mis-trained branch predictions for return instructions may allow arbitrary speculative code execution under certain microarchitecture-dependent conditions.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.15 that fix the following vulnerabilities:\nCVE-2022-48627:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nvt: fix memory overlapping when deleting chars in the buffer\n\nCVE-2022-36123:\n\tA memory access flaw was found in the Linux kernel's XEN hypervisor for the virtual machine. This flaw allows a local user to crash the system or potentially escalate their privileges on the system.\n\nCVE-2022-29901:\n\tIntel microprocessor generations 6 to 8 are affected by a new Spectre variant that is able to bypass their retpoline mitigation in the kernel to leak arbitrary data. An attacker with unprivileged user access can hijack return instructions to achieve arbitrary speculative code execution under certain microarchitecture-dependent conditions.\n\nCVE-2022-29900:\n\tA flaw was found in hw. Mis-trained branch predictions for return instructions may allow arbitrary speculative code execution under certain microarchitecture-dependent conditions.\n\nCVE-2022-28693:\n\tA flaw was found in hw. The unprotected alternative channel of return branch target prediction in some Intel(R) Processors may allow an authorized user to enable information disclosure via local access.\n\nCVE-2022-26373:\n\tNon-transparent sharing of return predictor targets between contexts in some Intel(R) Processors may allow an authorized user to potentially enable information disclosure via local access.\n\nCVE-2022-23825:\n\tA flaw was found in hw. Aliases in the branch predictor may cause some AMD processors to predict the wrong branch type, potentially leading to information disclosure.\n\nCVE-2022-23816:\n\tRejected reason: DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.\n",
 	"References": {
 		"Reference": [
 			{
@@ -55,6 +55,12 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-36123",
 				"ID": "CVE-2022-36123",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48627",
+				"ID": "CVE-2022-48627",
 				"Title": "",
 				"Type": "cve"
 			}

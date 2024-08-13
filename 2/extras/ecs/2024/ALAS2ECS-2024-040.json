@@ -1,0 +1,83 @@
+{
+	"ID": "ALAS2ECS-2024-040",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Ecs 2.0 - ALAS2ECS-2024-040: medium priority package update for containerd",
+	"Issued": {
+		"Date": "2024-08-01 01:11:00"
+	},
+	"Updated": {
+		"Date": "2024-08-01 01:11:00"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 - Ecs that fix the following vulnerabilities:\nCVE-2024-28180:\n\tPackage jose aims to provide an implementation of the Javascript Object Signing and Encryption set of standards. An attacker could send a JWE containing compressed data that used large amounts of memory and CPU when decompressed by Decrypt or DecryptMulti. Those functions now return an error if the decompressed data would exceed 250kB or 10x the compressed size (whichever is larger). This vulnerability has been patched in versions 4.0.1, 3.0.3 and 2.6.3.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-28180",
+				"ID": "CVE-2024-28180",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---ecs",
+			"Name": "Amazon Linux 2 - Ecs",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "containerd",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.20",
+					"Filename": "Packages/containerd-1.7.20-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "containerd-stress",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.20",
+					"Filename": "Packages/containerd-stress-1.7.20-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "containerd-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.20",
+					"Filename": "Packages/containerd-debuginfo-1.7.20-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "containerd",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.20",
+					"Filename": "Packages/containerd-1.7.20-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "containerd-stress",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.20",
+					"Filename": "Packages/containerd-stress-1.7.20-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "containerd-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.20",
+					"Filename": "Packages/containerd-debuginfo-1.7.20-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

@@ -7,10 +7,10 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 - Tomcat8.5 2.0 - ALAS2TOMCAT8.5-2023-012: important priority package update for tomcat",
 	"Issued": {
-		"Date": "2023-08-21 20:58"
+		"Date": "2023-08-21 20:58:00"
 	},
 	"Updated": {
-		"Date": "2023-09-25 21:58"
+		"Date": "2023-09-25 21:58:00"
 	},
 	"Severity": "important",
 	"Description": "Package updates are available for Amazon Linux 2 - Tomcat8.5 that fix the following vulnerabilities:\nCVE-2020-1938:\n\tCVE-2020-1938 is a file read/inclusion vulnerability in the AJP connector in Apache Tomcat. This is enabled by default with a default configuration port of 8009. A remote, unauthenticated attacker could exploit this vulnerability to read web application files from a vulnerable server. In instances where the vulnerable server allows file uploads, an attacker could upload malicious JavaServer Pages (JSP) code within a variety of file types and trigger this vulnerability to gain remote code execution (RCE).\n\nCVE-2020-1935:\n\tA flaw was found in Apache Tomcat. The HTTP header parsing code used an approach to end-of-line (EOL) parsing that allowed some invalid HTTP headers to be parsed as valid. This led to the possibility of HTTP Request Smuggling if Tomcat was located behind a reverse proxy that incorrectly handled the invalid Transfer-Encoding header in a particular manner. The highest threat with this vulnerability is system availability.\n\nCVE-2019-17569:\n\tThe refactoring present in Apache Tomcat 9.0.28 to 9.0.30, 8.5.48 to 8.5.50 and 7.0.98 to 7.0.99 introduced a regression. The result of the regression was that invalid Transfer-Encoding headers were incorrectly processed leading to a possibility of HTTP Request Smuggling if Tomcat was located behind a reverse proxy that incorrectly handled the invalid Transfer-Encoding header in a particular manner. Such a reverse proxy is considered unlikely.\n",

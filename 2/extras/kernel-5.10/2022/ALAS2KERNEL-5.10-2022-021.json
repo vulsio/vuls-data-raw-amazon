@@ -10,10 +10,10 @@
 		"Date": "2022-10-17 22:06:00"
 	},
 	"Updated": {
-		"Date": "2024-06-06 20:38:00"
+		"Date": "2024-08-01 01:11:00"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2022-48651:\n\tIn the Linux kernel, the following vulnerability has been resolved: ipvlan: Fix out-of-bound bugs caused by unset skb->mac_header If an AF_PACKET socket is used to send packets through ipvlan and the default xmit function of the AF_PACKET socket is changed from dev_queue_xmit() to packet_direct_xmit() via setsockopt() with the option name of PACKET_QDISC_BYPASS, the skb->mac_header may not be reset and remains as the initial value of 65535, this may trigger slab-out-of-bounds bugs as following:\n\nCVE-2022-42432:\n\tThis vulnerability allows local attackers to disclose sensitive information on affected installations of the Linux Kernel 6.0-rc2. An attacker must first obtain the ability to execute high-privileged code on the target system in order to exploit this vulnerability. The specific flaw exists within the nft_osf_eval function. The issue results from the lack of proper initialization of memory prior to accessing it. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the kernel. Was ZDI-CAN-18540.\n\nCVE-2022-39842:\n\tAn issue was discovered in the Linux kernel before 5.19. In pxa3xx_gcu_write in drivers/video/fbdev/pxa3xx-gcu.c, the count parameter has a type conflict of size_t versus int, causing an integer overflow and bypassing the size check. After that, because it is used as the third argument to copy_from_user(), a heap overflow may occur.\n\nCVE-2022-3544:\n\tA vulnerability, which was classified as problematic, was found in Linux Kernel. Affected is the function damon_sysfs_add_target of the file mm/damon/sysfs.c of the component Netfilter. The manipulation leads to memory leak. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-211044.\n\nCVE-2022-3061:\n\tFound Linux Kernel flaw in the i740 driver. The Userspace program could pass any values to the driver through ioctl() interface. The driver doesn't check the value of 'pixclock', so it may cause a divide by zero error.\n\nCVE-2022-2602:\n\tA use-after-free flaw was found in the Linux kernel's Unix socket Garbage Collection and io_uring. This flaw allows a local user to crash or potentially escalate their privileges on the system.\n\nCVE-2022-0171:\n\tA flaw was found in the Linux kernel. The existing KVM SEV API has a vulnerability that allows a non-root (host) user-level application to crash the host kernel by creating a confidential guest VM instance in AMD CPU that supports Secure Encrypted Virtualization (SEV).\n\nCVE-2021-4037:\n\tA vulnerability was found in the fs/inode.c:inode_init_owner() function logic of the LInux kernel that allows local users to create files for the XFS file-system with an unintended group ownership and with group execution and SGID permission bits set, in a scenario where a directory is SGID and belongs to a certain group and is writable by a user who is not a member of this group. This can lead to excessive permissions granted in case when they should not.  This vulnerability is similar to the previous CVE-2018-13405 and adds the missed fix for the XFS.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2022-48664:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbtrfs: fix hang during unmount when stopping a space reclaim worker\n\nCVE-2022-48660:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ngpiolib: cdev: Set lineevent_state::irq after IRQ register successfully\n\nCVE-2022-48659:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmm/slub: fix to return errno if kmalloc() fails\n\nCVE-2022-48654:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nfnetlink_osf: fix possible bogus match in nf_osf_find()\n\nCVE-2022-48651:\n\tIn the Linux kernel, the following vulnerability has been resolved: ipvlan: Fix out-of-bound bugs caused by unset skb->mac_header If an AF_PACKET socket is used to send packets through ipvlan and the default xmit function of the AF_PACKET socket is changed from dev_queue_xmit() to packet_direct_xmit() via setsockopt() with the option name of PACKET_QDISC_BYPASS, the skb->mac_header may not be reset and remains as the initial value of 65535, this may trigger slab-out-of-bounds bugs as following:\n\nCVE-2022-48644:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: taprio: avoid disabling offload when it was never enabled\n\nCVE-2022-48643:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_tables: fix nft_counters_enabled underflow at nf_tables_addchain()\n\nCVE-2022-48642:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_tables: fix percpu memory leak at nf_tables_addchain()\n\nCVE-2022-48641:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: ebtables: fix memory leak when blob is malformed\n\nCVE-2022-48639:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: sched: fix possible refcount leak in tc_new_tfilter()\n\nCVE-2022-48631:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: fix bug in extents parsing when eh_entries == 0 and eh_depth > 0\n\nCVE-2022-42432:\n\tThis vulnerability allows local attackers to disclose sensitive information on affected installations of the Linux Kernel 6.0-rc2. An attacker must first obtain the ability to execute high-privileged code on the target system in order to exploit this vulnerability. The specific flaw exists within the nft_osf_eval function. The issue results from the lack of proper initialization of memory prior to accessing it. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the kernel. Was ZDI-CAN-18540.\n\nCVE-2022-39842:\n\tAn issue was discovered in the Linux kernel before 5.19. In pxa3xx_gcu_write in drivers/video/fbdev/pxa3xx-gcu.c, the count parameter has a type conflict of size_t versus int, causing an integer overflow and bypassing the size check. After that, because it is used as the third argument to copy_from_user(), a heap overflow may occur.\n\nCVE-2022-3544:\n\tA vulnerability, which was classified as problematic, was found in Linux Kernel. Affected is the function damon_sysfs_add_target of the file mm/damon/sysfs.c of the component Netfilter. The manipulation leads to memory leak. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-211044.\n\nCVE-2022-3061:\n\tFound Linux Kernel flaw in the i740 driver. The Userspace program could pass any values to the driver through ioctl() interface. The driver doesn't check the value of 'pixclock', so it may cause a divide by zero error.\n\nCVE-2022-2602:\n\tA use-after-free flaw was found in the Linux kernel's Unix socket Garbage Collection and io_uring. This flaw allows a local user to crash or potentially escalate their privileges on the system.\n\nCVE-2022-0171:\n\tA flaw was found in the Linux kernel. The existing KVM SEV API has a vulnerability that allows a non-root (host) user-level application to crash the host kernel by creating a confidential guest VM instance in AMD CPU that supports Secure Encrypted Virtualization (SEV).\n\nCVE-2021-4037:\n\tA vulnerability was found in the fs/inode.c:inode_init_owner() function logic of the LInux kernel that allows local users to create files for the XFS file-system with an unintended group ownership and with group execution and SGID permission bits set, in a scenario where a directory is SGID and belongs to a certain group and is writable by a user who is not a member of this group. This can lead to excessive permissions granted in case when they should not.  This vulnerability is similar to the previous CVE-2018-13405 and adds the missed fix for the XFS.\n",
 	"References": {
 		"Reference": [
 			{
@@ -59,8 +59,68 @@
 				"Type": "cve"
 			},
 			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48631",
+				"ID": "CVE-2022-48631",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48639",
+				"ID": "CVE-2022-48639",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48641",
+				"ID": "CVE-2022-48641",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48642",
+				"ID": "CVE-2022-48642",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48643",
+				"ID": "CVE-2022-48643",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48644",
+				"ID": "CVE-2022-48644",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48651",
 				"ID": "CVE-2022-48651",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48654",
+				"ID": "CVE-2022-48654",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48659",
+				"ID": "CVE-2022-48659",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48660",
+				"ID": "CVE-2022-48660",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48664",
+				"ID": "CVE-2022-48664",
 				"Title": "",
 				"Type": "cve"
 			}

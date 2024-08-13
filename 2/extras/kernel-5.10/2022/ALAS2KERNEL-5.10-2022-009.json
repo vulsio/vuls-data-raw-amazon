@@ -10,10 +10,10 @@
 		"Date": "2022-01-26 00:57:00"
 	},
 	"Updated": {
-		"Date": "2024-07-03 22:01:00"
+		"Date": "2024-08-01 01:11:00"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2022-0185:\n\tA heap-based buffer overflow flaw was found in the way the legacy_parse_param function in the Filesystem Context functionality of the Linux kernel verified the supplied parameters length. An unprivileged (in case of unprivileged user namespaces enabled, otherwise needs namespaced CAP_SYS_ADMIN privilege) local user able to open a filesystem that does not support the Filesystem Context API (and thus fallbacks to legacy handling) could use this flaw to escalate their privileges on the system.\n\nCVE-2021-47541:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet/mlx4_en: Fix an use-after-free bug in mlx4_en_try_alloc_resources()\n\nCVE-2021-46936:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: fix use-after-free in tw_timer_handler\n\nCVE-2021-46934:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ni2c: validate user data in compat ioctl\n\nWrong user data may cause warning in i2c_transfer(), ex: zero msgs.\nUserspace should not be able to trigger warnings, so this patch adds\nvalidation checks for user data in compact ioctl to prevent reported\nwarnings\n\nCVE-2021-46931:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet/mlx5e: Wrap the tx reporter dump callback to extract the sq\n\nCVE-2021-46929:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nsctp: use call_rcu to free endpoint\n\nCVE-2021-43975:\n\tAn out-of-bounds write flaw was found in the Linux kernel's Aquantia AQtion Ethernet card Atlantic driver in the way the ethernet card provides malicious input to the driver. This flaw allows a local user to emulate the networking device and crash the system. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability.\n\nCVE-2021-4155:\n\tA data leak flaw was found in the way XFS_IOC_ALLOCSP IOCTL in the XFS filesystem allowed for size increase of files with unaligned size. A local attacker could use this flaw to leak data on the XFS filesystem otherwise not accessible to them.\n\nCVE-2021-4135:\n\tA flaw memory leak in the Linux kernel's eBPF for the Simulated networking device driver in the way user uses BPF for the device such that function nsim_map_alloc_elem being called. A local user could use this flaw to get unauthorized access to some data.\n\nCVE-2021-3923:\n\tA flaw was found in the Linux kernel's implementation of RDMA over infiniband. An attacker with a privileged local account can leak kernel stack information when issuing commands to the /dev/infiniband/rdma_cm device node. While this access is unlikely to leak sensitive user information, it can be further used to defeat existing kernel protection mechanisms.\n\nCVE-2021-28715:\n\tIncoming data packets for a guest in the Linux kernel's netback driver are buffered until the guest is ready to process them. There are some measures taken for avoiding to pile up too much data, but those can be bypassed by the guest: There is a timeout how long the client side of an interface can stop consuming new packets before it is assumed to have stalled, but this timeout is rather long (60 seconds by default). Using a UDP connection on a fast interface can easily accumulate gigabytes of data in that time.\n\nCVE-2021-28714:\n\tIncoming data packets for a guest in the Linux kernel's netback driver are buffered until the guest is ready to process them. There are some measures taken for avoiding to pile up too much data, but those can be bypassed by the guest: The timeout could even never trigger if the guest manages to have only one free slot in its RX queue ring page and the next package would require more than one free slot, which may be the case when using GSO, XDP, or software hashing.\n\nCVE-2021-28713:\n\tA denial of service flaw for virtual machine guests in the Linux kernel's Xen hypervisor subsystem was found in the way users call some interrupts with high frequency from one of the guests.\nA local user could use this flaw to starve the resources resulting in a denial of service.\n\nCVE-2021-28712:\n\tA denial of service flaw for virtual machine guests in the Linux kernel's Xen hypervisor subsystem was found in the way users call some interrupts with high frequency from one of the guests.\nA local user could use this flaw to starve the resources resulting in a denial of service.\n\nCVE-2021-28711:\n\tA denial of service flaw for virtual machine guests in the Linux kernel's Xen hypervisor subsystem was found in the way users call some interrupts with high frequency from one of the guests.\nA local user could use this flaw to starve the resources resulting in a denial of service.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2022-0185:\n\tA heap-based buffer overflow flaw was found in the way the legacy_parse_param function in the Filesystem Context functionality of the Linux kernel verified the supplied parameters length. An unprivileged (in case of unprivileged user namespaces enabled, otherwise needs namespaced CAP_SYS_ADMIN privilege) local user able to open a filesystem that does not support the Filesystem Context API (and thus fallbacks to legacy handling) could use this flaw to escalate their privileges on the system.\n\nCVE-2021-47609:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nfirmware: arm_scpi: Fix string overflow in SCPI genpd driver\n\nCVE-2021-47606:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: netlink: af_netlink: Prevent empty skb by adding a check on len.\n\nCVE-2021-47603:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\naudit: improve robustness of the audit queue handling\n\nCVE-2021-47600:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ndm btree remove: fix use after free in rebalance_children()\n\nCVE-2021-47598:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nsch_cake: do not call cake_destroy() from cake_init()\n\nCVE-2021-47597:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ninet_diag: fix kernel-infoleak for UDP sockets\n\nCVE-2021-47593:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: clear 'kern' flag from fallback sockets\n\nCVE-2021-47589:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nigbvf: fix double free in `igbvf_probe`\n\nCVE-2021-47588:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nsit: do not call ipip6_dev_free() from sit_init_net()\n\nCVE-2021-47585:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbtrfs: fix memory leak in __add_inode_ref()\n\nCVE-2021-47584:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\niocost: Fix divide-by-zero on donation from low hweight cgroup\n\nCVE-2021-47580:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nscsi: scsi_debug: Fix type in min_t to avoid stack OOB\n\nCVE-2021-47579:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\novl: fix warning in ovl_create_real()\n\nCVE-2021-47578:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nscsi: scsi_debug: Don't call kcalloc() if size arg is zero\n\nCVE-2021-47576:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nscsi: scsi_debug: Sanity check block descriptor length in resp_mode_select()\n\nCVE-2021-47541:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet/mlx4_en: Fix an use-after-free bug in mlx4_en_try_alloc_resources()\n\nCVE-2021-47097:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nInput: elantech - fix stack out of bound access in elantech_change_report_id()\n\nCVE-2021-47090:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmm/hwpoison: clear MF_COUNT_INCREASED before retrying get_any_page()\n\nCVE-2021-46936:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: fix use-after-free in tw_timer_handler\n\nCVE-2021-46934:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ni2c: validate user data in compat ioctl\n\nWrong user data may cause warning in i2c_transfer(), ex: zero msgs.\nUserspace should not be able to trigger warnings, so this patch adds\nvalidation checks for user data in compact ioctl to prevent reported\nwarnings\n\nCVE-2021-46931:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet/mlx5e: Wrap the tx reporter dump callback to extract the sq\n\nCVE-2021-46929:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nsctp: use call_rcu to free endpoint\n\nCVE-2021-43975:\n\tAn out-of-bounds write flaw was found in the Linux kernel's Aquantia AQtion Ethernet card Atlantic driver in the way the ethernet card provides malicious input to the driver. This flaw allows a local user to emulate the networking device and crash the system. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability.\n\nCVE-2021-4155:\n\tA data leak flaw was found in the way XFS_IOC_ALLOCSP IOCTL in the XFS filesystem allowed for size increase of files with unaligned size. A local attacker could use this flaw to leak data on the XFS filesystem otherwise not accessible to them.\n\nCVE-2021-4135:\n\tA flaw memory leak in the Linux kernel's eBPF for the Simulated networking device driver in the way user uses BPF for the device such that function nsim_map_alloc_elem being called. A local user could use this flaw to get unauthorized access to some data.\n\nCVE-2021-3923:\n\tA flaw was found in the Linux kernel's implementation of RDMA over infiniband. An attacker with a privileged local account can leak kernel stack information when issuing commands to the /dev/infiniband/rdma_cm device node. While this access is unlikely to leak sensitive user information, it can be further used to defeat existing kernel protection mechanisms.\n\nCVE-2021-28715:\n\tIncoming data packets for a guest in the Linux kernel's netback driver are buffered until the guest is ready to process them. There are some measures taken for avoiding to pile up too much data, but those can be bypassed by the guest: There is a timeout how long the client side of an interface can stop consuming new packets before it is assumed to have stalled, but this timeout is rather long (60 seconds by default). Using a UDP connection on a fast interface can easily accumulate gigabytes of data in that time.\n\nCVE-2021-28714:\n\tIncoming data packets for a guest in the Linux kernel's netback driver are buffered until the guest is ready to process them. There are some measures taken for avoiding to pile up too much data, but those can be bypassed by the guest: The timeout could even never trigger if the guest manages to have only one free slot in its RX queue ring page and the next package would require more than one free slot, which may be the case when using GSO, XDP, or software hashing.\n\nCVE-2021-28713:\n\tA denial of service flaw for virtual machine guests in the Linux kernel's Xen hypervisor subsystem was found in the way users call some interrupts with high frequency from one of the guests.\nA local user could use this flaw to starve the resources resulting in a denial of service.\n\nCVE-2021-28712:\n\tA denial of service flaw for virtual machine guests in the Linux kernel's Xen hypervisor subsystem was found in the way users call some interrupts with high frequency from one of the guests.\nA local user could use this flaw to starve the resources resulting in a denial of service.\n\nCVE-2021-28711:\n\tA denial of service flaw for virtual machine guests in the Linux kernel's Xen hypervisor subsystem was found in the way users call some interrupts with high frequency from one of the guests.\nA local user could use this flaw to starve the resources resulting in a denial of service.\n",
 	"References": {
 		"Reference": [
 			{
@@ -95,8 +95,110 @@
 				"Type": "cve"
 			},
 			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47090",
+				"ID": "CVE-2021-47090",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47097",
+				"ID": "CVE-2021-47097",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47541",
 				"ID": "CVE-2021-47541",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47576",
+				"ID": "CVE-2021-47576",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47578",
+				"ID": "CVE-2021-47578",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47579",
+				"ID": "CVE-2021-47579",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47580",
+				"ID": "CVE-2021-47580",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47584",
+				"ID": "CVE-2021-47584",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47585",
+				"ID": "CVE-2021-47585",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47588",
+				"ID": "CVE-2021-47588",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47589",
+				"ID": "CVE-2021-47589",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47593",
+				"ID": "CVE-2021-47593",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47597",
+				"ID": "CVE-2021-47597",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47598",
+				"ID": "CVE-2021-47598",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47600",
+				"ID": "CVE-2021-47600",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47603",
+				"ID": "CVE-2021-47603",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47606",
+				"ID": "CVE-2021-47606",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47609",
+				"ID": "CVE-2021-47609",
 				"Title": "",
 				"Type": "cve"
 			},

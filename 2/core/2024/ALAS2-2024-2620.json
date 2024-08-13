@@ -1,0 +1,115 @@
+{
+	"ID": "ALAS2-2024-2620",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2620: medium priority package update for python-lxml",
+	"Issued": {
+		"Date": "2024-08-01 03:01:00"
+	},
+	"Updated": {
+		"Date": "2024-08-01 03:01:00"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2021-28957:\n\tAn XSS vulnerability was discovered in python-lxml's clean module versions before 4.6.3. When disabling the safe_attrs_only and forms arguments, the Cleaner class does not remove the formaction attribute allowing for JS to bypass the sanitizer. A remote attacker could exploit this flaw to run arbitrary JS code on users who interact with incorrectly sanitized HTML. This issue is patched in lxml 4.6.3.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28957",
+				"ID": "CVE-2021-28957",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-lxml",
+					"Release": "4.amzn2.0.6",
+					"Version": "3.2.1",
+					"Filename": "Packages/python-lxml-3.2.1-4.amzn2.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python-lxml-docs",
+					"Release": "4.amzn2.0.6",
+					"Version": "3.2.1",
+					"Filename": "Packages/python-lxml-docs-3.2.1-4.amzn2.0.6.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-lxml",
+					"Release": "4.amzn2.0.6",
+					"Version": "3.2.1",
+					"Filename": "Packages/python3-lxml-3.2.1-4.amzn2.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-lxml-debuginfo",
+					"Release": "4.amzn2.0.6",
+					"Version": "3.2.1",
+					"Filename": "Packages/python-lxml-debuginfo-3.2.1-4.amzn2.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python-lxml",
+					"Release": "4.amzn2.0.6",
+					"Version": "3.2.1",
+					"Filename": "Packages/python-lxml-3.2.1-4.amzn2.0.6.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3-lxml",
+					"Release": "4.amzn2.0.6",
+					"Version": "3.2.1",
+					"Filename": "Packages/python3-lxml-3.2.1-4.amzn2.0.6.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python-lxml-debuginfo",
+					"Release": "4.amzn2.0.6",
+					"Version": "3.2.1",
+					"Filename": "Packages/python-lxml-debuginfo-3.2.1-4.amzn2.0.6.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-lxml",
+					"Release": "4.amzn2.0.6",
+					"Version": "3.2.1",
+					"Filename": "Packages/python-lxml-3.2.1-4.amzn2.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-lxml",
+					"Release": "4.amzn2.0.6",
+					"Version": "3.2.1",
+					"Filename": "Packages/python3-lxml-3.2.1-4.amzn2.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-lxml-debuginfo",
+					"Release": "4.amzn2.0.6",
+					"Version": "3.2.1",
+					"Filename": "Packages/python-lxml-debuginfo-3.2.1-4.amzn2.0.6.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

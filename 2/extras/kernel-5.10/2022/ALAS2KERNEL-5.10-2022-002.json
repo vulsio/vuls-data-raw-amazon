@@ -10,10 +10,10 @@
 		"Date": "2022-01-20 23:37:00"
 	},
 	"Updated": {
-		"Date": "2024-06-19 20:39:00"
+		"Date": "2024-08-01 01:11:00"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2021-47227:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nx86/fpu: Prevent state corruption in __fpu__restore_sig()\n\nCVE-2021-47175:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: fq_pie: fix OOB access in the traffic path\n\nCVE-2021-47166:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nNFS: Don't corrupt the value of pg_bytes_written in nfs_do_recoalesce()\n\nCVE-2021-47131:\n\tIn the Linux kernel, the following vulnerability has been resolved: net/tls: Fix use-after-free after the TLS device goes down and up When a netdev with active TLS offload goes down, tls_device_down is called to stop the offload and tear down the TLS context. However, the socket stays alive, and it still points to the TLS context, which is now deallocated. If a netdev goes up, while the connection is still active, and the data flow resumes after a number of TCP retransmissions, it will lead to a use-after-free of the TLS context. This commit addresses this bug by keeping the context alive until its normal destruction, and implements the necessary fallbacks, so that the connection can resume in software (non-offloaded) kTLS mode.\n\nCVE-2021-47110:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nx86/kvm: Disable kvmclock on all CPUs on shutdown\n\nCVE-2021-47035:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\niommu/vt-d: Remove WO permissions on second-level paging entries\n\nCVE-2021-47015:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbnxt_en: Fix RX consumer index logic in the error path.\n\nCVE-2021-47013:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet:emac/emac-mac: Fix a use after free in emac_mac_tx_buf_send\n\nCVE-2021-47011:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmm: memcontrol: slab: fix obtain a reference to a freeing memcg\n\nCVE-2021-47010:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: Only allow init netns to set default tcp cong to a restricted algo\n\nCVE-2021-47009:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nKEYS: trusted: Fix memory leak on object td\n\nCVE-2021-47006:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nARM: 9064/1: hw_breakpoint: Do not directly check the event's overflow_handler hook\n\nCVE-2021-47001:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nxprtrdma: Fix cwnd update ordering\n\nCVE-2021-47000:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nceph: fix inode leak on getattr error in __fh_to_dentry\n\nCVE-2021-46997:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\narm64: entry: always set GIC_PRIO_PSR_I_SET during entry\n\nCVE-2021-46996:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nftables: Fix a memleak from userdata error path in new objects\n\nCVE-2021-46993:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nsched: Fix out-of-bound access in uclamp\n\nCVE-2021-46985:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nACPI: scan: Fix a memory leak in an error handling path\n\nCVE-2021-46981:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnbd: Fix NULL pointer in flush_workqueue\n\nCVE-2021-46978:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nKVM: nVMX: Always make an attempt to map eVMCS after migration\n\nCVE-2021-46977:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nKVM: VMX: Disable preemption when probing user return MSRs\n\nCVE-2021-46976:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ndrm/i915: Fix crash in auto_retire\n\nCVE-2021-46963:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nscsi: qla2xxx: Fix crash in qla2xxx_mqueuecommand()\n\nCVE-2021-46961:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nirqchip/gic-v3: Do not enable irqs when handling spurious interrups\n\nCVE-2021-46960:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ncifs: Return correct error code from smb2_get_enc_key\n\nCVE-2021-46958:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbtrfs: fix race between transaction aborts and fsyncs leading to use-after-free\n\nCVE-2021-46956:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nvirtiofs: fix memory leak in virtio_fs_probe()\n\nCVE-2021-46955:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nopenvswitch: fix stack OOB read while fragmenting IPv4 packets\n\nCVE-2021-46953:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nACPI: GTDT: Don't corrupt interrupt mappings on watchdow probe failure\n\nCVE-2021-46952:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nNFS: fs_context: validate UDP retrans to prevent shift out-of-bounds\n\nCVE-2021-46951:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntpm: efi: Use local variable for calculating final log size\n\nCVE-2021-46950:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmd/raid1: properly indicate failure when ending a failed write request\n\nThis patch addresses a data corruption bug in raid1 arrays using bitmaps.\nWithout this fix, the bitmap bits for the failed I/O end up being cleared.\n\nSince we are in the failure leg of raid1_end_write_request, the request\neither needs to be retried (R1BIO_WriteError) or failed (R1BIO_Degraded).\n\nCVE-2021-46939:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntracing: Restructure trace_clock_global() to never block\n\nCVE-2021-46938:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ndm rq: fix double free of blk_mq_tag_set in dev remove after table load fails\n\nCVE-2021-46906:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nHID: usbhid: fix info leak in hid_submit_ctrl\n\nIn hid_submit_ctrl(), the way of calculating the report length doesn't\ntake into account that report->size can be zero. When running the\nsyzkaller reproducer, a report of size 0 causes hid_submit_ctrl) to\ncalculate transfer_buffer_length as 16384. When this urb is passed to\nthe usb core layer, KMSAN reports an info leak of 16384 bytes.\n\nTo fix this, first modify hid_report_len() to account for the zero\nreport size case by using DIV_ROUND_UP for the division. Then, call it\nfrom hid_submit_ctrl().\n\nCVE-2021-38208:\n\tA flaw was found in the Linux kernels NFC implementation, A NULL pointer dereference and BUG leading to a denial of service can be triggered by a local unprivileged user causing a kernel panic.\n\nCVE-2021-3573:\n\tA flaw use-after-free in function hci_sock_bound_ioctl() of the Linux kernel HCI subsystem was found in the way user calls ioct HCIUNBLOCKADDR or other way triggers race condition of the call hci_unregister_dev() together with one of the calls hci_sock_blacklist_add(), hci_sock_blacklist_del(), hci_get_conn_info(), hci_get_auth_info(). A privileged local user could use this flaw to crash the system or escalate their privileges on the system.\n\nCVE-2021-3564:\n\tA flaw double-free memory corruption in the Linux kernel HCI device initialization subsystem was found in the way user attach malicious HCI TTY Bluetooth device. A local user could use this flaw to crash the system.\n\nCVE-2021-3543:\n\tA flaw null pointer dereference in the Nitro Enclaves kernel driver was found in the way that Enclaves VMs forces closures on the enclave file descriptor. A local user of a host machine could use this flaw to crash the system or escalate their privileges on the system.\n\nCVE-2021-3506:\n\tAn out-of-bounds (OOB) memory access flaw was found in fs/f2fs/node.c in the f2fs module in the Linux kernel. A bounds check failure allows a local attacker to gain access to out-of-bounds memory leading to a system crash or a leak of internal kernel information. The highest threat from this vulnerability is to system availability.\n\nCVE-2021-3491:\n\tA flaw was found in the Linux kernel.  The io_uring PROVIDE_BUFFERS operation allowed the MAX_RW_COUNT limit to be bypassed, which led to negative values being used in mem_rw when reading /proc/<PID>/mem. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n\nCVE-2021-3490:\n\tThe eBPF ALU32 bounds tracking for bitwise ops (AND, OR and XOR) in the Linux kernel did not properly update 32-bit bounds, which could be turned into out of bounds reads and writes in the Linux kernel and therefore, arbitrary code execution. This issue was fixed via commit 049c4e13714e (\"bpf: Fix alu32 const subreg bound tracking on bitwise operations\") (v5.13-rc4) and backported to the stable kernels in v5.12.4, v5.11.21, and v5.10.37. The AND/OR issues were introduced by commit 3f50f132d840 (\"bpf: Verifier, do explicit ALU32 bounds tracking\") (5.7-rc1) and the XOR variant was introduced by 2921c90d4718 (\"bpf:Fix a verifier failure with xor\") ( 5.10-rc1).\n\nCVE-2021-3489:\n\tThe eBPF RINGBUF bpf_ringbuf_reserve() function in the Linux kernel did not check that the allocated size was smaller than the ringbuf size, allowing an attacker to perform out-of-bounds writes within the kernel and therefore, arbitrary code execution. This issue was fixed via commit 4b81ccebaeee (\"bpf, ringbuf: Deny reserve of buffers larger than ringbuf\") (v5.13-rc4) and backported to the stable kernels in v5.12.4, v5.11.21, and v5.10.37. It was introduced via 457f44363a88 (\"bpf: Implement BPF ring buffer and verifier support for it\") (v5.8-rc1).\n\nCVE-2021-34693:\n\tThe canbus filesystem in the Linux kernel contains an information leak of kernel memory to devices on the CAN bus network link layer.  An attacker with the ability to dump messages on the CAN bus is able to learn of uninitialized stack values by dumbing messages on the can bus.\n\nCVE-2021-33624:\n\tIn kernel/bpf/verifier.c in the Linux kernel before 5.12.13, a branch can be mispredicted (e.g., because of type confusion) and consequently an unprivileged BPF program can read arbitrary memory locations via a side-channel attack, aka CID-9183671af6db.\n\nCVE-2021-33034:\n\tA use-after-free flaw was found in hci_send_acl in the bluetooth host controller interface (HCI) in Linux kernel, where a local attacker with an access rights could cause a denial of service problem on the system  The issue results from the object hchan, freed in hci_disconn_loglink_complete_evt, yet still used in other places. The highest threat from this vulnerability is to data integrity, confidentiality and system availability.\n\nCVE-2021-32399:\n\tA flaw was found in the Linux kernel's handling of the removal of Bluetooth HCI controllers. This flaw allows an attacker with a local account to exploit a race condition, leading to corrupted memory and possible privilege escalation. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability.\n\nCVE-2021-31440:\n\tAn out-of-bounds access flaw was found in the Linux kernel's implementation of the eBPF code verifier, where an incorrect register bounds calculation while checking unsigned 32-bit instructions in an eBPF program occurs.. By default accessing the eBPF verifier is only accessible to privileged users with CAP_SYS_ADMIN. The issue results from the lack of proper validation of user-supplied eBPF programs prior to executing them. A local user could use this flaw to crash the system or possibly escalate their privileges on the system.\n\nCVE-2021-28691:\n\tGuest triggered use-after-free in Linux xen-netback A malicious or buggy network PV frontend can force Linux netback to disable the interface and terminate the receive kernel thread associated with queue 0 in response to the frontend sending a malformed packet. Such kernel thread termination will lead to a use-after-free in Linux netback when the backend is destroyed, as the kernel thread associated with queue 0 will have already exited and thus the call to kthread_stop will be performed against a stale pointer.\n\nCVE-2021-22543:\n\tA flaw was found in the Linux kernel's KVM implementation, where improper handing of the VM_IO|VM_PFNMAP VMAs in KVM bypasses RO checks and leads to pages being freed while still accessible by the VMM and guest. This flaw allows users who can start and control a VM to read/write random pages of memory, resulting in local privilege escalation. The highest threat from this vulnerability is to confidentiality, integrity, and system availability.\n\nCVE-2021-0129:\n\tA flaw was found in the Linux kernel. Improper access control in BlueZ may allow an authenticated user to potentially enable information disclosure via adjacent access. The highest threat from this vulnerability is to data confidentiality and integrity.\n\nCVE-2020-36776:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nthermal/drivers/cpufreq_cooling: Fix slab OOB issue\n\nCVE-2020-26558:\n\tA vulnerability was found in the bluez, where Passkey Entry protocol used in Secure Simple Pairing (SSP), Secure Connections (SC) and LE Secure Connections (LESC) of the Bluetooth Core Specification is vulnerable to an impersonation attack where an active attacker can impersonate the initiating device without any previous knowledge.\n\nCVE-2020-26541:\n\tA flaw was found in the Linux kernel in certs/blacklist.c, When signature entries for EFI_CERT_X509_GUID are contained in the Secure Boot Forbidden Signature Database, the entries are skipped. This can cause a security threat and breach system integrity, confidentiality and even lead to a denial of service problem.\n\nCVE-2020-26147:\n\tA flaw was found in ieee80211_rx_h_defragment in net/mac80211/rx.c in the Linux Kernel's WiFi implementation. This vulnerability can be abused to inject packets or exfiltrate selected fragments when another device sends fragmented frames, and the WEP, CCMP, or GCMP data-confidentiality protocol is used. The highest threat from this vulnerability is to integrity.\n\nCVE-2020-26145:\n\tA flaw was found in ath10k_htt_rx_proc_rx_frag_ind_hl in drivers/net/wireless/ath/ath10k/htt_rx.c in the Linux kernel WiFi implementations, where it accepts a second (or subsequent) broadcast fragments even when sent in plaintext and then process them as full unfragmented frames. The highest threat from this vulnerability is to integrity.\n\nCVE-2020-26141:\n\tA vulnerability was found in Linux kernel's WiFi implementation.  An attacker within wireless range can inject a control packet fragment where the kernel does not verify the Message Integrity Check (authenticity) of fragmented TKIP frames.\n\nCVE-2020-26139:\n\tFrames used for authentication and key management between the AP and connected clients.  Some clients may take these redirected frames masquerading as control mechanisms from the AP.\n\nCVE-2020-24588:\n\tA flaw was found in the Linux kernels wifi implementation. An attacker within wireless broadcast range can inject custom data into the wireless communication circumventing checks on the data.  This can cause the frame to pass checks and be considered a valid frame of a different type.\n\nCVE-2020-24587:\n\tA flaw was found in the Linux kernel's WiFi implementation. An attacker within the wireless range can abuse a logic flaw in the WiFi implementation by reassembling packets from multiple fragments under different keys, treating them as valid. This flaw allows an attacker to send a fragment under an incorrect key, treating them as a valid fragment under the new key. The highest threat from this vulnerability is to confidentiality.\n\nCVE-2020-24586:\n\tA flaw was found in the Linux kernels implementation of wifi fragmentation handling. An attacker with the ability to transmit within the wireless transmission range of an access point can abuse a flaw where previous contents of wifi fragments can be unintentionally transmitted to another device.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2021-47227:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nx86/fpu: Prevent state corruption in __fpu__restore_sig()\n\nCVE-2021-47177:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\niommu/vt-d: Fix sysfs leak in alloc_iommu()\n\nCVE-2021-47175:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: fq_pie: fix OOB access in the traffic path\n\nCVE-2021-47174:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nft_set_pipapo_avx2: Add irq_fpu_usable() check, fallback to non-AVX2 version\n\nCVE-2021-47170:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nUSB: usbfs: Don't WARN about excessively large memory allocations\n\nCVE-2021-47168:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nNFS: fix an incorrect limit in filelayout_decode_layout()\n\nCVE-2021-47167:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nNFS: Fix an Oopsable condition in __nfs_pageio_add_request()\n\nCVE-2021-47166:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nNFS: Don't corrupt the value of pg_bytes_written in nfs_do_recoalesce()\n\nCVE-2021-47164:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet/mlx5e: Fix null deref accessing lag dev\n\nCVE-2021-47159:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: dsa: fix a crash if ->get_sset_count() fails\n\nCVE-2021-47146:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmld: fix panic in mld_newpack()\n\nCVE-2021-47145:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbtrfs: do not BUG_ON in link_to_fixup_dir\n\nCVE-2021-47144:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amd/amdgpu: fix refcount leak\n\nCVE-2021-47138:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ncxgb4: avoid accessing registers when clearing filters\n\nCVE-2021-47136:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: zero-initialize tc skb extension on allocation\n\nCVE-2021-47134:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nefi/fdt: fix panic when no valid fdt found\n\nCVE-2021-47131:\n\tIn the Linux kernel, the following vulnerability has been resolved: net/tls: Fix use-after-free after the TLS device goes down and up When a netdev with active TLS offload goes down, tls_device_down is called to stop the offload and tear down the TLS context. However, the socket stays alive, and it still points to the TLS context, which is now deallocated. If a netdev goes up, while the connection is still active, and the data flow resumes after a number of TCP retransmissions, it will lead to a use-after-free of the TLS context. This commit addresses this bug by keeping the context alive until its normal destruction, and implements the necessary fallbacks, so that the connection can resume in software (non-offloaded) kTLS mode.\n\nCVE-2021-47130:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnvmet: fix freeing unallocated p2pmem\n\nCVE-2021-47129:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nft_ct: skip expectations for confirmed conntrack\n\nCVE-2021-47128:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbpf, lockdown, audit: Fix buggy SELinux lockdown permission checks\n\nCVE-2021-47126:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nipv6: Fix KASAN: slab-out-of-bounds Read in fib6_nh_flush_exceptions\n\nCVE-2021-47124:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nio_uring: fix link timeout refs\n\nCVE-2021-47120:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nHID: magicmouse: fix NULL-deref on disconnect\n\nCVE-2021-47119:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: fix memory leak in ext4_fill_super\n\nCVE-2021-47118:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\npid: take a reference when initializing `cad_pid`\n\nCVE-2021-47117:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: fix bug on in ext4_es_cache_extent as ext4_split_extent_at failed\n\nCVE-2021-47116:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: fix memory leak in ext4_mb_init_backend on error path.\n\nCVE-2021-47113:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbtrfs: abort in rename_exchange if we fail to insert the second ref\n\nCVE-2021-47112:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nx86/kvm: Teardown PV features on boot CPU as well\n\nCVE-2021-47111:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nxen-netback: take a reference to the RX task thread\n\nCVE-2021-47110:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nx86/kvm: Disable kvmclock on all CPUs on shutdown\n\nCVE-2021-47109:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nneighbour: allow NUD_NOARP entries to be forced GCed\n\nCVE-2021-47080:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nRDMA/core: Prevent divide-by-zero error triggered by the user\n\nCVE-2021-47078:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nRDMA/rxe: Clear all QP fields if creation failed\n\nCVE-2021-47075:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnvmet: fix memory leak in nvmet_alloc_ctrl()\n\nCVE-2021-47074:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnvme-loop: fix memory leak in nvme_loop_create_ctrl()\n\nCVE-2021-47071:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nuio_hv_generic: Fix a memory leak in error handling paths\n\nCVE-2021-47069:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nipc/mqueue, msg, sem: avoid relying on a stack reference past its expiry\n\nCVE-2021-47066:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nasync_xor: increase src_offs when dropping destination page\n\nCVE-2021-47063:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ndrm: bridge/panel: Cleanup connector on bridge detach\n\nCVE-2021-47061:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nKVM: Destroy I/O bus devices on unregister failure _after_ sync'ing SRCU\n\nCVE-2021-47060:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nKVM: Stop looking for coalesced MMIO zones if the bus is destroyed\n\nCVE-2021-47058:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nregmap: set debugfs_name to NULL after it is freed\n\nCVE-2021-47055:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmtd: require write permissions for locking and badblock ioctls\n\nCVE-2021-47054:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbus: qcom: Put child node before return\n\nCVE-2021-47040:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nio_uring: fix overflows checks in provide buffers\n\nCVE-2021-47035:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\niommu/vt-d: Remove WO permissions on second-level paging entries\n\nCVE-2021-47024:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nvsock/virtio: free queued packets when closing socket\n\nCVE-2021-47015:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbnxt_en: Fix RX consumer index logic in the error path.\n\nCVE-2021-47013:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet:emac/emac-mac: Fix a use after free in emac_mac_tx_buf_send\n\nCVE-2021-47011:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmm: memcontrol: slab: fix obtain a reference to a freeing memcg\n\nCVE-2021-47010:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: Only allow init netns to set default tcp cong to a restricted algo\n\nCVE-2021-47009:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nKEYS: trusted: Fix memory leak on object td\n\nCVE-2021-47006:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nARM: 9064/1: hw_breakpoint: Do not directly check the event's overflow_handler hook\n\nCVE-2021-47001:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nxprtrdma: Fix cwnd update ordering\n\nCVE-2021-47000:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nceph: fix inode leak on getattr error in __fh_to_dentry\n\nCVE-2021-46997:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\narm64: entry: always set GIC_PRIO_PSR_I_SET during entry\n\nCVE-2021-46996:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nftables: Fix a memleak from userdata error path in new objects\n\nCVE-2021-46993:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nsched: Fix out-of-bound access in uclamp\n\nCVE-2021-46985:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nACPI: scan: Fix a memory leak in an error handling path\n\nCVE-2021-46981:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnbd: Fix NULL pointer in flush_workqueue\n\nCVE-2021-46978:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nKVM: nVMX: Always make an attempt to map eVMCS after migration\n\nCVE-2021-46977:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nKVM: VMX: Disable preemption when probing user return MSRs\n\nCVE-2021-46976:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ndrm/i915: Fix crash in auto_retire\n\nCVE-2021-46963:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nscsi: qla2xxx: Fix crash in qla2xxx_mqueuecommand()\n\nCVE-2021-46961:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nirqchip/gic-v3: Do not enable irqs when handling spurious interrups\n\nCVE-2021-46960:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ncifs: Return correct error code from smb2_get_enc_key\n\nCVE-2021-46959:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nspi: Fix use-after-free with devm_spi_alloc_*\n\nCVE-2021-46958:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbtrfs: fix race between transaction aborts and fsyncs leading to use-after-free\n\nCVE-2021-46956:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nvirtiofs: fix memory leak in virtio_fs_probe()\n\nCVE-2021-46955:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nopenvswitch: fix stack OOB read while fragmenting IPv4 packets\n\nCVE-2021-46953:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nACPI: GTDT: Don't corrupt interrupt mappings on watchdow probe failure\n\nCVE-2021-46952:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nNFS: fs_context: validate UDP retrans to prevent shift out-of-bounds\n\nCVE-2021-46951:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntpm: efi: Use local variable for calculating final log size\n\nCVE-2021-46950:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmd/raid1: properly indicate failure when ending a failed write request\n\nThis patch addresses a data corruption bug in raid1 arrays using bitmaps.\nWithout this fix, the bitmap bits for the failed I/O end up being cleared.\n\nSince we are in the failure leg of raid1_end_write_request, the request\neither needs to be retried (R1BIO_WriteError) or failed (R1BIO_Degraded).\n\nCVE-2021-46939:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntracing: Restructure trace_clock_global() to never block\n\nCVE-2021-46938:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ndm rq: fix double free of blk_mq_tag_set in dev remove after table load fails\n\nCVE-2021-46906:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nHID: usbhid: fix info leak in hid_submit_ctrl\n\nIn hid_submit_ctrl(), the way of calculating the report length doesn't\ntake into account that report->size can be zero. When running the\nsyzkaller reproducer, a report of size 0 causes hid_submit_ctrl) to\ncalculate transfer_buffer_length as 16384. When this urb is passed to\nthe usb core layer, KMSAN reports an info leak of 16384 bytes.\n\nTo fix this, first modify hid_report_len() to account for the zero\nreport size case by using DIV_ROUND_UP for the division. Then, call it\nfrom hid_submit_ctrl().\n\nCVE-2021-38208:\n\tA flaw was found in the Linux kernels NFC implementation, A NULL pointer dereference and BUG leading to a denial of service can be triggered by a local unprivileged user causing a kernel panic.\n\nCVE-2021-3573:\n\tA flaw use-after-free in function hci_sock_bound_ioctl() of the Linux kernel HCI subsystem was found in the way user calls ioct HCIUNBLOCKADDR or other way triggers race condition of the call hci_unregister_dev() together with one of the calls hci_sock_blacklist_add(), hci_sock_blacklist_del(), hci_get_conn_info(), hci_get_auth_info(). A privileged local user could use this flaw to crash the system or escalate their privileges on the system.\n\nCVE-2021-3564:\n\tA flaw double-free memory corruption in the Linux kernel HCI device initialization subsystem was found in the way user attach malicious HCI TTY Bluetooth device. A local user could use this flaw to crash the system.\n\nCVE-2021-3543:\n\tA flaw null pointer dereference in the Nitro Enclaves kernel driver was found in the way that Enclaves VMs forces closures on the enclave file descriptor. A local user of a host machine could use this flaw to crash the system or escalate their privileges on the system.\n\nCVE-2021-3506:\n\tAn out-of-bounds (OOB) memory access flaw was found in fs/f2fs/node.c in the f2fs module in the Linux kernel. A bounds check failure allows a local attacker to gain access to out-of-bounds memory leading to a system crash or a leak of internal kernel information. The highest threat from this vulnerability is to system availability.\n\nCVE-2021-3491:\n\tA flaw was found in the Linux kernel.  The io_uring PROVIDE_BUFFERS operation allowed the MAX_RW_COUNT limit to be bypassed, which led to negative values being used in mem_rw when reading /proc/<PID>/mem. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.\n\nCVE-2021-3490:\n\tThe eBPF ALU32 bounds tracking for bitwise ops (AND, OR and XOR) in the Linux kernel did not properly update 32-bit bounds, which could be turned into out of bounds reads and writes in the Linux kernel and therefore, arbitrary code execution. This issue was fixed via commit 049c4e13714e (\"bpf: Fix alu32 const subreg bound tracking on bitwise operations\") (v5.13-rc4) and backported to the stable kernels in v5.12.4, v5.11.21, and v5.10.37. The AND/OR issues were introduced by commit 3f50f132d840 (\"bpf: Verifier, do explicit ALU32 bounds tracking\") (5.7-rc1) and the XOR variant was introduced by 2921c90d4718 (\"bpf:Fix a verifier failure with xor\") ( 5.10-rc1).\n\nCVE-2021-3489:\n\tThe eBPF RINGBUF bpf_ringbuf_reserve() function in the Linux kernel did not check that the allocated size was smaller than the ringbuf size, allowing an attacker to perform out-of-bounds writes within the kernel and therefore, arbitrary code execution. This issue was fixed via commit 4b81ccebaeee (\"bpf, ringbuf: Deny reserve of buffers larger than ringbuf\") (v5.13-rc4) and backported to the stable kernels in v5.12.4, v5.11.21, and v5.10.37. It was introduced via 457f44363a88 (\"bpf: Implement BPF ring buffer and verifier support for it\") (v5.8-rc1).\n\nCVE-2021-34693:\n\tThe canbus filesystem in the Linux kernel contains an information leak of kernel memory to devices on the CAN bus network link layer.  An attacker with the ability to dump messages on the CAN bus is able to learn of uninitialized stack values by dumbing messages on the can bus.\n\nCVE-2021-33624:\n\tIn kernel/bpf/verifier.c in the Linux kernel before 5.12.13, a branch can be mispredicted (e.g., because of type confusion) and consequently an unprivileged BPF program can read arbitrary memory locations via a side-channel attack, aka CID-9183671af6db.\n\nCVE-2021-33034:\n\tA use-after-free flaw was found in hci_send_acl in the bluetooth host controller interface (HCI) in Linux kernel, where a local attacker with an access rights could cause a denial of service problem on the system  The issue results from the object hchan, freed in hci_disconn_loglink_complete_evt, yet still used in other places. The highest threat from this vulnerability is to data integrity, confidentiality and system availability.\n\nCVE-2021-32399:\n\tA flaw was found in the Linux kernel's handling of the removal of Bluetooth HCI controllers. This flaw allows an attacker with a local account to exploit a race condition, leading to corrupted memory and possible privilege escalation. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability.\n\nCVE-2021-31440:\n\tAn out-of-bounds access flaw was found in the Linux kernel's implementation of the eBPF code verifier, where an incorrect register bounds calculation while checking unsigned 32-bit instructions in an eBPF program occurs.. By default accessing the eBPF verifier is only accessible to privileged users with CAP_SYS_ADMIN. The issue results from the lack of proper validation of user-supplied eBPF programs prior to executing them. A local user could use this flaw to crash the system or possibly escalate their privileges on the system.\n\nCVE-2021-28691:\n\tGuest triggered use-after-free in Linux xen-netback A malicious or buggy network PV frontend can force Linux netback to disable the interface and terminate the receive kernel thread associated with queue 0 in response to the frontend sending a malformed packet. Such kernel thread termination will lead to a use-after-free in Linux netback when the backend is destroyed, as the kernel thread associated with queue 0 will have already exited and thus the call to kthread_stop will be performed against a stale pointer.\n\nCVE-2021-22543:\n\tA flaw was found in the Linux kernel's KVM implementation, where improper handing of the VM_IO|VM_PFNMAP VMAs in KVM bypasses RO checks and leads to pages being freed while still accessible by the VMM and guest. This flaw allows users who can start and control a VM to read/write random pages of memory, resulting in local privilege escalation. The highest threat from this vulnerability is to confidentiality, integrity, and system availability.\n\nCVE-2021-0129:\n\tA flaw was found in the Linux kernel. Improper access control in BlueZ may allow an authenticated user to potentially enable information disclosure via adjacent access. The highest threat from this vulnerability is to data confidentiality and integrity.\n\nCVE-2020-36776:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nthermal/drivers/cpufreq_cooling: Fix slab OOB issue\n\nCVE-2020-26558:\n\tA vulnerability was found in the bluez, where Passkey Entry protocol used in Secure Simple Pairing (SSP), Secure Connections (SC) and LE Secure Connections (LESC) of the Bluetooth Core Specification is vulnerable to an impersonation attack where an active attacker can impersonate the initiating device without any previous knowledge.\n\nCVE-2020-26541:\n\tA flaw was found in the Linux kernel in certs/blacklist.c, When signature entries for EFI_CERT_X509_GUID are contained in the Secure Boot Forbidden Signature Database, the entries are skipped. This can cause a security threat and breach system integrity, confidentiality and even lead to a denial of service problem.\n\nCVE-2020-26147:\n\tA flaw was found in ieee80211_rx_h_defragment in net/mac80211/rx.c in the Linux Kernel's WiFi implementation. This vulnerability can be abused to inject packets or exfiltrate selected fragments when another device sends fragmented frames, and the WEP, CCMP, or GCMP data-confidentiality protocol is used. The highest threat from this vulnerability is to integrity.\n\nCVE-2020-26145:\n\tA flaw was found in ath10k_htt_rx_proc_rx_frag_ind_hl in drivers/net/wireless/ath/ath10k/htt_rx.c in the Linux kernel WiFi implementations, where it accepts a second (or subsequent) broadcast fragments even when sent in plaintext and then process them as full unfragmented frames. The highest threat from this vulnerability is to integrity.\n\nCVE-2020-26141:\n\tA vulnerability was found in Linux kernel's WiFi implementation.  An attacker within wireless range can inject a control packet fragment where the kernel does not verify the Message Integrity Check (authenticity) of fragmented TKIP frames.\n\nCVE-2020-26139:\n\tFrames used for authentication and key management between the AP and connected clients.  Some clients may take these redirected frames masquerading as control mechanisms from the AP.\n\nCVE-2020-24588:\n\tA flaw was found in the Linux kernels wifi implementation. An attacker within wireless broadcast range can inject custom data into the wireless communication circumventing checks on the data.  This can cause the frame to pass checks and be considered a valid frame of a different type.\n\nCVE-2020-24587:\n\tA flaw was found in the Linux kernel's WiFi implementation. An attacker within the wireless range can abuse a logic flaw in the WiFi implementation by reassembling packets from multiple fragments under different keys, treating them as valid. This flaw allows an attacker to send a fragment under an incorrect key, treating them as a valid fragment under the new key. The highest threat from this vulnerability is to confidentiality.\n\nCVE-2020-24586:\n\tA flaw was found in the Linux kernels implementation of wifi fragmentation handling. An attacker with the ability to transmit within the wireless transmission range of an access point can abuse a flaw where previous contents of wifi fragments can be unintentionally transmitted to another device.\n",
 	"References": {
 		"Reference": [
 			{
@@ -233,6 +233,12 @@
 				"Type": "cve"
 			},
 			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-46959",
+				"ID": "CVE-2021-46959",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-46960",
 				"ID": "CVE-2021-46960",
 				"Title": "",
@@ -347,8 +353,104 @@
 				"Type": "cve"
 			},
 			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47024",
+				"ID": "CVE-2021-47024",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47035",
 				"ID": "CVE-2021-47035",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47040",
+				"ID": "CVE-2021-47040",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47054",
+				"ID": "CVE-2021-47054",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47055",
+				"ID": "CVE-2021-47055",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47058",
+				"ID": "CVE-2021-47058",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47060",
+				"ID": "CVE-2021-47060",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47061",
+				"ID": "CVE-2021-47061",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47063",
+				"ID": "CVE-2021-47063",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47066",
+				"ID": "CVE-2021-47066",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47069",
+				"ID": "CVE-2021-47069",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47071",
+				"ID": "CVE-2021-47071",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47074",
+				"ID": "CVE-2021-47074",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47075",
+				"ID": "CVE-2021-47075",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47078",
+				"ID": "CVE-2021-47078",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47080",
+				"ID": "CVE-2021-47080",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47109",
+				"ID": "CVE-2021-47109",
 				"Title": "",
 				"Type": "cve"
 			},
@@ -359,8 +461,134 @@
 				"Type": "cve"
 			},
 			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47111",
+				"ID": "CVE-2021-47111",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47112",
+				"ID": "CVE-2021-47112",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47113",
+				"ID": "CVE-2021-47113",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47116",
+				"ID": "CVE-2021-47116",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47117",
+				"ID": "CVE-2021-47117",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47118",
+				"ID": "CVE-2021-47118",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47119",
+				"ID": "CVE-2021-47119",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47120",
+				"ID": "CVE-2021-47120",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47124",
+				"ID": "CVE-2021-47124",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47126",
+				"ID": "CVE-2021-47126",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47128",
+				"ID": "CVE-2021-47128",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47129",
+				"ID": "CVE-2021-47129",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47130",
+				"ID": "CVE-2021-47130",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47131",
 				"ID": "CVE-2021-47131",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47134",
+				"ID": "CVE-2021-47134",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47136",
+				"ID": "CVE-2021-47136",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47138",
+				"ID": "CVE-2021-47138",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47144",
+				"ID": "CVE-2021-47144",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47145",
+				"ID": "CVE-2021-47145",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47146",
+				"ID": "CVE-2021-47146",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47159",
+				"ID": "CVE-2021-47159",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47164",
+				"ID": "CVE-2021-47164",
 				"Title": "",
 				"Type": "cve"
 			},
@@ -371,8 +599,38 @@
 				"Type": "cve"
 			},
 			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47167",
+				"ID": "CVE-2021-47167",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47168",
+				"ID": "CVE-2021-47168",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47170",
+				"ID": "CVE-2021-47170",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47174",
+				"ID": "CVE-2021-47174",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47175",
 				"ID": "CVE-2021-47175",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47177",
+				"ID": "CVE-2021-47177",
 				"Title": "",
 				"Type": "cve"
 			},

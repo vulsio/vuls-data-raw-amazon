@@ -1,0 +1,95 @@
+{
+	"ID": "ALAS2NITRO-ENCLAVES-2024-042",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Nitro-enclaves 2.0 - ALAS2NITRO-ENCLAVES-2024-042: important priority package update for containerd",
+	"Issued": {
+		"Date": "2024-08-01 01:11:00"
+	},
+	"Updated": {
+		"Date": "2024-08-01 01:11:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Nitro-enclaves that fix the following vulnerabilities:\nCVE-2024-28180:\n\tPackage jose aims to provide an implementation of the Javascript Object Signing and Encryption set of standards. An attacker could send a JWE containing compressed data that used large amounts of memory and CPU when decompressed by Decrypt or DecryptMulti. Those functions now return an error if the decompressed data would exceed 250kB or 10x the compressed size (whichever is larger). This vulnerability has been patched in versions 4.0.1, 3.0.3 and 2.6.3.\n\nCVE-2024-24786:\n\tThe protojson.Unmarshal function can enter an infinite loop when unmarshaling certain forms of invalid JSON. This condition can occur when unmarshaling into a message which contains a google.protobuf.Any value, or when the UnmarshalOptions.DiscardUnknown option is set.\n\nCVE-2023-47108:\n\tOpenTelemetry-Go Contrib is a collection of third-party packages for OpenTelemetry-Go. Prior to version 0.46.0, the grpc Unary Server Interceptor out of the box adds labels `net.peer.sock.addr` and `net.peer.sock.port` that have unbound cardinality. It leads to the server's potential memory exhaustion when many malicious requests are sent. An attacker can easily flood the peer address and port for requests. Version 0.46.0 contains a fix for this issue. As a workaround to stop being affected, a view removing the attributes can be used. The other possibility is to disable grpc metrics instrumentation by passing `otelgrpc.WithMeterProvider` option with `noop.NewMeterProvider`.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-47108",
+				"ID": "CVE-2023-47108",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24786",
+				"ID": "CVE-2024-24786",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-28180",
+				"ID": "CVE-2024-28180",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---nitro-enclaves",
+			"Name": "Amazon Linux 2 - Nitro-enclaves",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "containerd",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.20",
+					"Filename": "Packages/containerd-1.7.20-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "containerd-stress",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.20",
+					"Filename": "Packages/containerd-stress-1.7.20-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "containerd-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.20",
+					"Filename": "Packages/containerd-debuginfo-1.7.20-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "containerd",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.20",
+					"Filename": "Packages/containerd-1.7.20-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "containerd-stress",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.20",
+					"Filename": "Packages/containerd-stress-1.7.20-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "containerd-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.20",
+					"Filename": "Packages/containerd-debuginfo-1.7.20-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

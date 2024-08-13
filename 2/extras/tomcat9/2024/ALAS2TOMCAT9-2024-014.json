@@ -1,0 +1,107 @@
+{
+	"ID": "ALAS2TOMCAT9-2024-014",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Tomcat9 2.0 - ALAS2TOMCAT9-2024-014: important priority package update for tomcat",
+	"Issued": {
+		"Date": "2024-08-01 01:10:00"
+	},
+	"Updated": {
+		"Date": "2024-08-01 01:10:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Tomcat9 that fix the following vulnerabilities:\nCVE-2024-34750:\n\tImproper Handling of Exceptional Conditions, Uncontrolled Resource Consumption vulnerability in Apache Tomcat. When processing an HTTP/2 stream, Tomcat did not handle some cases of excessive HTTP headers correctly. This led to a miscounting of active HTTP/2 streams which in turn led to the use of an incorrect infinite timeout which allowed connections to remain open which should have been closed.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.0-M20, from 10.1.0-M1 through 10.1.24, from 9.0.0-M1 through 9.0.89.\n\nUsers are recommended to upgrade to version 11.0.0-M21, 10.1.25 or 9.0.90, which fixes the issue.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34750",
+				"ID": "CVE-2024-34750",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---tomcat9",
+			"Name": "Amazon Linux 2 - Tomcat9",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.91",
+					"Filename": "Packages/tomcat-9.0.91-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-admin-webapps",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.91",
+					"Filename": "Packages/tomcat-admin-webapps-9.0.91-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-docs-webapp",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.91",
+					"Filename": "Packages/tomcat-docs-webapp-9.0.91-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-jsvc",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.91",
+					"Filename": "Packages/tomcat-jsvc-9.0.91-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-jsp-2.3-api",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.91",
+					"Filename": "Packages/tomcat-jsp-2.3-api-9.0.91-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-lib",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.91",
+					"Filename": "Packages/tomcat-lib-9.0.91-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-servlet-4.0-api",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.91",
+					"Filename": "Packages/tomcat-servlet-4.0-api-9.0.91-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-el-3.0-api",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.91",
+					"Filename": "Packages/tomcat-el-3.0-api-9.0.91-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-webapps",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.91",
+					"Filename": "Packages/tomcat-webapps-9.0.91-1.amzn2.0.1.noarch.rpm"
+				}
+			]
+		}
+	}
+}

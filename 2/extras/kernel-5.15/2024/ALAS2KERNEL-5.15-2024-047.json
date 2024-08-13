@@ -1,0 +1,343 @@
+{
+	"ID": "ALAS2KERNEL-5.15-2024-047",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Kernel-5.15 2.0 - ALAS2KERNEL-5.15-2024-047: important priority package update for kernel",
+	"Issued": {
+		"Date": "2024-08-01 01:11:00"
+	},
+	"Updated": {
+		"Date": "2024-08-01 01:11:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.15 that fix the following vulnerabilities:\nCVE-2024-38662:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbpf: Allow delete from sockmap/sockhash only if update is allowed\n\nCVE-2024-38624:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nfs/ntfs3: Use 64 bit variable to avoid 32 bit overflow\n\nCVE-2024-38623:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nfs/ntfs3: Use variable length array instead of fixed size\n\nCVE-2024-37356:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntcp: Fix shift-out-of-bounds in dctcp_update_alpha().\n\nCVE-2024-37353:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nvirtio: delete vq in vp_find_vqs_msix() when request_irq() fails\n\nCVE-2024-36489:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntls: fix missing memory barrier in tls_init\n\nCVE-2024-36286:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nfnetlink_queue: acquire rcu_read_lock() in instance_destroy_rcu()\n\nCVE-2024-36270:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: tproxy: bail out if IP has been disabled on the device\n\nCVE-2024-33621:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nipvlan: Dont Use skb->sk in ipvlan_process_v{4,6}_outbound\n\nCVE-2024-31076:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ngenirq/cpuhotplug, x86/vector: Prevent vector leak during CPU offline\n\nCVE-2023-52884:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nInput: cyapa - add missing input core locking to suspend/resume functions\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52884",
+				"ID": "CVE-2023-52884",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-31076",
+				"ID": "CVE-2024-31076",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-33621",
+				"ID": "CVE-2024-33621",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-36270",
+				"ID": "CVE-2024-36270",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-36286",
+				"ID": "CVE-2024-36286",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-36489",
+				"ID": "CVE-2024-36489",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-37353",
+				"ID": "CVE-2024-37353",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-37356",
+				"ID": "CVE-2024-37356",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-38623",
+				"ID": "CVE-2024-38623",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-38624",
+				"ID": "CVE-2024-38624",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-38662",
+				"ID": "CVE-2024-38662",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---kernel-5.15",
+			"Name": "Amazon Linux 2 - Kernel-5.15",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/kernel-5.15.161-106.159.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/kernel-headers-5.15.161-106.159.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-x86_64",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/kernel-debuginfo-common-x86_64-5.15.161-106.159.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/perf-5.15.161-106.159.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/perf-debuginfo-5.15.161-106.159.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-perf",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/python-perf-5.15.161-106.159.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python-perf-debuginfo",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/python-perf-debuginfo-5.15.161-106.159.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/kernel-tools-5.15.161-106.159.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/kernel-tools-devel-5.15.161-106.159.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/kernel-tools-debuginfo-5.15.161-106.159.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "bpftool",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/bpftool-5.15.161-106.159.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "bpftool-debuginfo",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/bpftool-debuginfo-5.15.161-106.159.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/kernel-devel-5.15.161-106.159.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/kernel-debuginfo-5.15.161-106.159.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "kernel-livepatch-5.15.161-106.159",
+					"Release": "0.amzn2",
+					"Version": "1.0",
+					"Filename": "Packages/kernel-livepatch-5.15.161-106.159-1.0-0.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/kernel-headers-5.15.161-106.159.amzn2.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/kernel-5.15.161-106.159.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-headers",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/kernel-headers-5.15.161-106.159.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo-common-aarch64",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/kernel-debuginfo-common-aarch64-5.15.161-106.159.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "perf",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/perf-5.15.161-106.159.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "perf-debuginfo",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/perf-debuginfo-5.15.161-106.159.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-perf",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/python-perf-5.15.161-106.159.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python-perf-debuginfo",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/python-perf-debuginfo-5.15.161-106.159.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/kernel-tools-5.15.161-106.159.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools-devel",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/kernel-tools-devel-5.15.161-106.159.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-tools-debuginfo",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/kernel-tools-debuginfo-5.15.161-106.159.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "bpftool",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/bpftool-5.15.161-106.159.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "bpftool-debuginfo",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/bpftool-debuginfo-5.15.161-106.159.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-devel",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/kernel-devel-5.15.161-106.159.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-debuginfo",
+					"Release": "106.159.amzn2",
+					"Version": "5.15.161",
+					"Filename": "Packages/kernel-debuginfo-5.15.161-106.159.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "kernel-livepatch-5.15.161-106.159",
+					"Release": "0.amzn2",
+					"Version": "1.0",
+					"Filename": "Packages/kernel-livepatch-5.15.161-106.159-1.0-0.amzn2.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

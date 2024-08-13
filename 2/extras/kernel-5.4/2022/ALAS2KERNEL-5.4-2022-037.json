@@ -10,10 +10,10 @@
 		"Date": "2022-10-17 22:06:00"
 	},
 	"Updated": {
-		"Date": "2024-06-06 20:37:00"
+		"Date": "2024-08-01 01:11:00"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2022-48651:\n\tIn the Linux kernel, the following vulnerability has been resolved: ipvlan: Fix out-of-bound bugs caused by unset skb->mac_header If an AF_PACKET socket is used to send packets through ipvlan and the default xmit function of the AF_PACKET socket is changed from dev_queue_xmit() to packet_direct_xmit() via setsockopt() with the option name of PACKET_QDISC_BYPASS, the skb->mac_header may not be reset and remains as the initial value of 65535, this may trigger slab-out-of-bounds bugs as following:\n\nCVE-2022-42432:\n\tThis vulnerability allows local attackers to disclose sensitive information on affected installations of the Linux Kernel 6.0-rc2. An attacker must first obtain the ability to execute high-privileged code on the target system in order to exploit this vulnerability. The specific flaw exists within the nft_osf_eval function. The issue results from the lack of proper initialization of memory prior to accessing it. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the kernel. Was ZDI-CAN-18540.\n\nCVE-2022-39842:\n\tAn issue was discovered in the Linux kernel before 5.19. In pxa3xx_gcu_write in drivers/video/fbdev/pxa3xx-gcu.c, the count parameter has a type conflict of size_t versus int, causing an integer overflow and bypassing the size check. After that, because it is used as the third argument to copy_from_user(), a heap overflow may occur.\n\nCVE-2022-3303:\n\tA race condition flaw was found in the Linux kernel sound subsystem due to improper locking. It could lead to a NULL pointer dereference while handling the SNDCTL_DSP_SYNC ioctl. A privileged local user (root or member of the audio group) could use this flaw to crash the system, resulting in a denial of service condition.\n\nCVE-2022-29901:\n\tIntel microprocessor generations 6 to 8 are affected by a new Spectre variant that is able to bypass their retpoline mitigation in the kernel to leak arbitrary data. An attacker with unprivileged user access can hijack return instructions to achieve arbitrary speculative code execution under certain microarchitecture-dependent conditions.\n\nCVE-2022-29900:\n\tA flaw was found in hw. Mis-trained branch predictions for return instructions may allow arbitrary speculative code execution under certain microarchitecture-dependent conditions.\n\nCVE-2022-28693:\n\tA flaw was found in hw. The unprotected alternative channel of return branch target prediction in some Intel(R) Processors may allow an authorized user to enable information disclosure via local access.\n\nCVE-2022-2602:\n\tA use-after-free flaw was found in the Linux kernel's Unix socket Garbage Collection and io_uring. This flaw allows a local user to crash or potentially escalate their privileges on the system.\n\nCVE-2022-23816:\n\tRejected reason: DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2022-48659:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmm/slub: fix to return errno if kmalloc() fails\n\nCVE-2022-48654:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nfnetlink_osf: fix possible bogus match in nf_osf_find()\n\nCVE-2022-48651:\n\tIn the Linux kernel, the following vulnerability has been resolved: ipvlan: Fix out-of-bound bugs caused by unset skb->mac_header If an AF_PACKET socket is used to send packets through ipvlan and the default xmit function of the AF_PACKET socket is changed from dev_queue_xmit() to packet_direct_xmit() via setsockopt() with the option name of PACKET_QDISC_BYPASS, the skb->mac_header may not be reset and remains as the initial value of 65535, this may trigger slab-out-of-bounds bugs as following:\n\nCVE-2022-48644:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: taprio: avoid disabling offload when it was never enabled\n\nCVE-2022-48641:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: ebtables: fix memory leak when blob is malformed\n\nCVE-2022-48639:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: sched: fix possible refcount leak in tc_new_tfilter()\n\nCVE-2022-48631:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: fix bug in extents parsing when eh_entries == 0 and eh_depth > 0\n\nCVE-2022-42432:\n\tThis vulnerability allows local attackers to disclose sensitive information on affected installations of the Linux Kernel 6.0-rc2. An attacker must first obtain the ability to execute high-privileged code on the target system in order to exploit this vulnerability. The specific flaw exists within the nft_osf_eval function. The issue results from the lack of proper initialization of memory prior to accessing it. An attacker can leverage this in conjunction with other vulnerabilities to execute arbitrary code in the context of the kernel. Was ZDI-CAN-18540.\n\nCVE-2022-39842:\n\tAn issue was discovered in the Linux kernel before 5.19. In pxa3xx_gcu_write in drivers/video/fbdev/pxa3xx-gcu.c, the count parameter has a type conflict of size_t versus int, causing an integer overflow and bypassing the size check. After that, because it is used as the third argument to copy_from_user(), a heap overflow may occur.\n\nCVE-2022-3303:\n\tA race condition flaw was found in the Linux kernel sound subsystem due to improper locking. It could lead to a NULL pointer dereference while handling the SNDCTL_DSP_SYNC ioctl. A privileged local user (root or member of the audio group) could use this flaw to crash the system, resulting in a denial of service condition.\n\nCVE-2022-29901:\n\tIntel microprocessor generations 6 to 8 are affected by a new Spectre variant that is able to bypass their retpoline mitigation in the kernel to leak arbitrary data. An attacker with unprivileged user access can hijack return instructions to achieve arbitrary speculative code execution under certain microarchitecture-dependent conditions.\n\nCVE-2022-29900:\n\tA flaw was found in hw. Mis-trained branch predictions for return instructions may allow arbitrary speculative code execution under certain microarchitecture-dependent conditions.\n\nCVE-2022-28693:\n\tA flaw was found in hw. The unprotected alternative channel of return branch target prediction in some Intel(R) Processors may allow an authorized user to enable information disclosure via local access.\n\nCVE-2022-2602:\n\tA use-after-free flaw was found in the Linux kernel's Unix socket Garbage Collection and io_uring. This flaw allows a local user to crash or potentially escalate their privileges on the system.\n\nCVE-2022-23816:\n\tRejected reason: DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate is unused by its CNA. Notes: none.\n",
 	"References": {
 		"Reference": [
 			{
@@ -65,8 +65,44 @@
 				"Type": "cve"
 			},
 			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48631",
+				"ID": "CVE-2022-48631",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48639",
+				"ID": "CVE-2022-48639",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48641",
+				"ID": "CVE-2022-48641",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48644",
+				"ID": "CVE-2022-48644",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48651",
 				"ID": "CVE-2022-48651",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48654",
+				"ID": "CVE-2022-48654",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48659",
+				"ID": "CVE-2022-48659",
 				"Title": "",
 				"Type": "cve"
 			}

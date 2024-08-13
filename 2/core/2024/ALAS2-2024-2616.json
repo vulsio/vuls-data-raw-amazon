@@ -1,0 +1,433 @@
+{
+	"ID": "ALAS2-2024-2616",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2616: important priority package update for bind",
+	"Issued": {
+		"Date": "2024-08-01 03:01:00"
+	},
+	"Updated": {
+		"Date": "2024-08-01 03:01:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-1975:\n\tIf a server hosts a zone containing a \"KEY\" Resource Record, or a resolver DNSSEC-validates a \"KEY\" Resource Record from a DNSSEC-signed domain in cache, a client can exhaust resolver CPU resources by sending a stream of SIG(0) signed requests.\nThis issue affects BIND 9 versions 9.0.0 through 9.11.37, 9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.9.3-S1 through 9.11.37-S1, 9.16.8-S1 through 9.16.49-S1, and 9.18.11-S1 through 9.18.27-S1.\n\nCVE-2024-1737:\n\tResolver caches and authoritative zone databases that hold significant numbers of RRs for the same hostname (of any RTYPE) can suffer from degraded performance as content is being added or updated, and also when handling client queries for this name.\nThis issue affects BIND 9 versions 9.11.0 through 9.11.37, 9.16.0 through 9.16.50, 9.18.0 through 9.18.27, 9.19.0 through 9.19.24, 9.11.4-S1 through 9.11.37-S1, 9.16.8-S1 through 9.16.50-S1, and 9.18.11-S1 through 9.18.27-S1.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1737",
+				"ID": "CVE-2024-1737",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1975",
+				"ID": "CVE-2024-1975",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-9.11.4-26.P2.amzn2.13.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-pkcs11",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-9.11.4-26.P2.amzn2.13.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-pkcs11-utils",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-utils-9.11.4-26.P2.amzn2.13.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-pkcs11-libs",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-libs-9.11.4-26.P2.amzn2.13.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-pkcs11-devel",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-devel-9.11.4-26.P2.amzn2.13.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-sdb",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-sdb-9.11.4-26.P2.amzn2.13.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-libs-lite",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-libs-lite-9.11.4-26.P2.amzn2.13.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-libs",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-libs-9.11.4-26.P2.amzn2.13.7.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "32",
+					"Name": "bind-license",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-license-9.11.4-26.P2.amzn2.13.7.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-utils",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-utils-9.11.4-26.P2.amzn2.13.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-devel",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-devel-9.11.4-26.P2.amzn2.13.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-lite-devel",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-lite-devel-9.11.4-26.P2.amzn2.13.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-chroot",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-chroot-9.11.4-26.P2.amzn2.13.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-sdb-chroot",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-sdb-chroot-9.11.4-26.P2.amzn2.13.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-export-libs",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-export-libs-9.11.4-26.P2.amzn2.13.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-export-devel",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-export-devel-9.11.4-26.P2.amzn2.13.7.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-debuginfo",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-debuginfo-9.11.4-26.P2.amzn2.13.7.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-9.11.4-26.P2.amzn2.13.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-pkcs11",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-9.11.4-26.P2.amzn2.13.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-pkcs11-utils",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-utils-9.11.4-26.P2.amzn2.13.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-pkcs11-libs",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-libs-9.11.4-26.P2.amzn2.13.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-pkcs11-devel",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-devel-9.11.4-26.P2.amzn2.13.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-sdb",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-sdb-9.11.4-26.P2.amzn2.13.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-libs-lite",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-libs-lite-9.11.4-26.P2.amzn2.13.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-libs",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-libs-9.11.4-26.P2.amzn2.13.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-utils",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-utils-9.11.4-26.P2.amzn2.13.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-devel",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-devel-9.11.4-26.P2.amzn2.13.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-lite-devel",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-lite-devel-9.11.4-26.P2.amzn2.13.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-chroot",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-chroot-9.11.4-26.P2.amzn2.13.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-sdb-chroot",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-sdb-chroot-9.11.4-26.P2.amzn2.13.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-export-libs",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-export-libs-9.11.4-26.P2.amzn2.13.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-export-devel",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-export-devel-9.11.4-26.P2.amzn2.13.7.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "32",
+					"Name": "bind-debuginfo",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-debuginfo-9.11.4-26.P2.amzn2.13.7.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-9.11.4-26.P2.amzn2.13.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-pkcs11",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-9.11.4-26.P2.amzn2.13.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-pkcs11-utils",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-utils-9.11.4-26.P2.amzn2.13.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-pkcs11-libs",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-libs-9.11.4-26.P2.amzn2.13.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-pkcs11-devel",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-pkcs11-devel-9.11.4-26.P2.amzn2.13.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-sdb",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-sdb-9.11.4-26.P2.amzn2.13.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-libs-lite",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-libs-lite-9.11.4-26.P2.amzn2.13.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-libs",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-libs-9.11.4-26.P2.amzn2.13.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-utils",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-utils-9.11.4-26.P2.amzn2.13.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-devel",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-devel-9.11.4-26.P2.amzn2.13.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-lite-devel",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-lite-devel-9.11.4-26.P2.amzn2.13.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-chroot",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-chroot-9.11.4-26.P2.amzn2.13.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-sdb-chroot",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-sdb-chroot-9.11.4-26.P2.amzn2.13.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-export-libs",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-export-libs-9.11.4-26.P2.amzn2.13.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-export-devel",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-export-devel-9.11.4-26.P2.amzn2.13.7.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-debuginfo",
+					"Release": "26.P2.amzn2.13.7",
+					"Version": "9.11.4",
+					"Filename": "Packages/bind-debuginfo-9.11.4-26.P2.amzn2.13.7.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
