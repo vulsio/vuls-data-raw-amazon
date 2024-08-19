@@ -1,0 +1,507 @@
+{
+	"ID": "ALAS2023-2024-702",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-702: Important priority package update for postgresql15",
+	"Issued": {
+		"Date": "2024-08-14 19:14:00"
+	},
+	"Updated": {
+		"Date": "2024-08-14 19:14:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-7348:\n\tTime-of-check Time-of-use (TOCTOU) race condition in pg_dump in PostgreSQL allows an object creator to execute arbitrary SQL functions as the user running pg_dump, which is often a superuser. The attack involves replacing another relation type with a view or foreign table. The attack requires waiting for pg_dump to start, but winning the race condition is trivial if the attacker retains an open transaction. Versions before PostgreSQL 16.4, 15.8, 14.13, 13.16, and 12.20 are affected.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-7348",
+				"ID": "CVE-2024-7348",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-server-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-server-debuginfo-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-docs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-docs-debuginfo-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-debuginfo-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-test-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-test-debuginfo-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-pltcl-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-pltcl-debuginfo-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-upgrade-devel-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-upgrade-devel-debuginfo-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "postgresql15-test-rpm-macros",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-test-rpm-macros-15.8-1.amzn2023.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-plperl-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-plperl-debuginfo-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-private-libs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-private-libs-debuginfo-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-static",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-static-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-pltcl",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-pltcl-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-plperl",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-plperl-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-upgrade-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-upgrade-devel-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-llvmjit-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-llvmjit-debuginfo-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-server",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-server-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-upgrade-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-upgrade-debuginfo-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-server-devel-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-server-devel-debuginfo-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-contrib-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-contrib-debuginfo-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-plpython3-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-plpython3-debuginfo-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-private-libs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-private-libs-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-private-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-private-devel-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-llvmjit",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-llvmjit-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-plpython3",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-plpython3-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-docs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-docs-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-test",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-test-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-contrib",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-contrib-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-server-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-server-devel-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-upgrade",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-upgrade-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql15-debugsource",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-debugsource-15.8-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-llvmjit-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-llvmjit-debuginfo-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-plperl",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-plperl-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-pltcl",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-pltcl-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-pltcl-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-pltcl-debuginfo-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-upgrade-devel-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-upgrade-devel-debuginfo-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-plpython3-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-plpython3-debuginfo-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-test",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-test-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-upgrade-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-upgrade-devel-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-plpython3",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-plpython3-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-plperl-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-plperl-debuginfo-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-private-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-private-devel-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-contrib",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-contrib-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-debuginfo-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-private-libs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-private-libs-debuginfo-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-test-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-test-debuginfo-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-server-devel-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-server-devel-debuginfo-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-server-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-server-debuginfo-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-contrib-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-contrib-debuginfo-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-static",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-static-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-upgrade-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-upgrade-debuginfo-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-private-libs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-private-libs-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-docs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-docs-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-docs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-docs-debuginfo-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-server-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-server-devel-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-llvmjit",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-llvmjit-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-server",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-server-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-upgrade",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-upgrade-15.8-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql15-debugsource",
+					"Release": "1.amzn2023.0.1",
+					"Version": "15.8",
+					"Filename": "Packages/postgresql15-debugsource-15.8-1.amzn2023.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

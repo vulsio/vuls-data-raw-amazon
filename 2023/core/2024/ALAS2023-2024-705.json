@@ -1,0 +1,113 @@
+{
+	"ID": "ALAS2023-2024-705",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-705: Medium priority package update for p7zip",
+	"Issued": {
+		"Date": "2024-08-14 19:14:00"
+	},
+	"Updated": {
+		"Date": "2024-08-14 19:14:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2023-52169:\n\tThe NtfsHandler.cpp NTFS handler in 7-Zip before 24.01 (for 7zz) contains an out-of-bounds read that allows an attacker to read beyond the intended buffer. The bytes read beyond the intended buffer are presented as a part of a filename listed in the file system image. This has security relevance in some known web-service use cases where untrusted users can upload files and have them extracted by a server-side 7-Zip process.\n\nCVE-2023-52168:\n\tThe NtfsHandler.cpp NTFS handler in 7-Zip before 24.01 (for 7zz) contains a heap-based buffer overflow that allows an attacker to overwrite two bytes at multiple offsets beyond the allocated buffer size: buffer+512*i-2, for i=9, i=10, i=11, etc.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52168",
+				"ID": "CVE-2023-52168",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52169",
+				"ID": "CVE-2023-52169",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "p7zip-plugins-debuginfo",
+					"Release": "20.amzn2023.0.6",
+					"Version": "16.02",
+					"Filename": "Packages/p7zip-plugins-debuginfo-16.02-20.amzn2023.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "p7zip-doc",
+					"Release": "20.amzn2023.0.6",
+					"Version": "16.02",
+					"Filename": "Packages/p7zip-doc-16.02-20.amzn2023.0.6.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "p7zip",
+					"Release": "20.amzn2023.0.6",
+					"Version": "16.02",
+					"Filename": "Packages/p7zip-16.02-20.amzn2023.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "p7zip-plugins",
+					"Release": "20.amzn2023.0.6",
+					"Version": "16.02",
+					"Filename": "Packages/p7zip-plugins-16.02-20.amzn2023.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "p7zip-debugsource",
+					"Release": "20.amzn2023.0.6",
+					"Version": "16.02",
+					"Filename": "Packages/p7zip-debugsource-16.02-20.amzn2023.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "p7zip-plugins-debuginfo",
+					"Release": "20.amzn2023.0.6",
+					"Version": "16.02",
+					"Filename": "Packages/p7zip-plugins-debuginfo-16.02-20.amzn2023.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "p7zip-plugins",
+					"Release": "20.amzn2023.0.6",
+					"Version": "16.02",
+					"Filename": "Packages/p7zip-plugins-16.02-20.amzn2023.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "p7zip",
+					"Release": "20.amzn2023.0.6",
+					"Version": "16.02",
+					"Filename": "Packages/p7zip-16.02-20.amzn2023.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "p7zip-debugsource",
+					"Release": "20.amzn2023.0.6",
+					"Version": "16.02",
+					"Filename": "Packages/p7zip-debugsource-16.02-20.amzn2023.0.6.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
