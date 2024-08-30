@@ -10,15 +10,21 @@
 		"Date": "2024-08-01 01:11:00"
 	},
 	"Updated": {
-		"Date": "2024-08-13 09:30:00"
+		"Date": "2024-08-27 19:16:00"
 	},
 	"Severity": "medium",
-	"Description": "Package updates are available for Amazon Linux 2 - Nitro-enclaves that fix the following vulnerabilities:\nCVE-2024-28180:\n\tPackage jose aims to provide an implementation of the Javascript Object Signing and Encryption set of standards. An attacker could send a JWE containing compressed data that used large amounts of memory and CPU when decompressed by Decrypt or DecryptMulti. Those functions now return an error if the decompressed data would exceed 250kB or 10x the compressed size (whichever is larger). This vulnerability has been patched in versions 4.0.1, 3.0.3 and 2.6.3.\n\nCVE-2024-24786:\n\tThe protojson.Unmarshal function can enter an infinite loop when unmarshaling certain forms of invalid JSON. This condition can occur when unmarshaling into a message which contains a google.protobuf.Any value, or when the UnmarshalOptions.DiscardUnknown option is set.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Nitro-enclaves that fix the following vulnerabilities:\nCVE-2024-28180:\n\tPackage jose aims to provide an implementation of the Javascript Object Signing and Encryption set of standards. An attacker could send a JWE containing compressed data that used large amounts of memory and CPU when decompressed by Decrypt or DecryptMulti. Those functions now return an error if the decompressed data would exceed 250kB or 10x the compressed size (whichever is larger). This vulnerability has been patched in versions 4.0.1, 3.0.3 and 2.6.3.\n\nCVE-2024-24790:\n\tThe various Is methods (IsPrivate, IsLoopback, etc) did not work as expected for IPv4-mapped IPv6 addresses, returning false for addresses which would return true in their traditional IPv4 forms.\n\nCVE-2024-24786:\n\tThe protojson.Unmarshal function can enter an infinite loop when unmarshaling certain forms of invalid JSON. This condition can occur when unmarshaling into a message which contains a google.protobuf.Any value, or when the UnmarshalOptions.DiscardUnknown option is set.\n",
 	"References": {
 		"Reference": [
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24786",
 				"ID": "CVE-2024-24786",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24790",
+				"ID": "CVE-2024-24790",
 				"Title": "",
 				"Type": "cve"
 			},
