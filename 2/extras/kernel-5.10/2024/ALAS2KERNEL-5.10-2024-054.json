@@ -10,15 +10,75 @@
 		"Date": "2024-04-25 16:31:00"
 	},
 	"Updated": {
-		"Date": "2024-08-01 01:11:00"
+		"Date": "2024-08-27 19:16:00"
 	},
 	"Severity": "medium",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2024-36031:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nkeys: Fix overwrite of key expiration on instantiation\n\nCVE-2024-27077:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmedia: v4l2-mem2mem: fix a memleak in v4l2_m2m_register_entity\n\nCVE-2024-27065:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_tables: do not compare internal table flags on updates\n\nCVE-2024-27025:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnbd: null check for nla_nest_start\n\nCVE-2024-26898:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\naoe: fix the potential use-after-free problem in aoecmd_cfg_pkts\n\nCVE-2023-52447:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbpf: Defer the free of inner map when necessary\n\nWhen updating or deleting an inner map in map array or map htab, the map\nmay still be accessed by non-sleepable program or sleepable program.\nHowever bpf_map_fd_put_ptr() decreases the ref-counter of the inner map\ndirectly through bpf_map_put(), if the ref-counter is the last one\n(which is true for most cases), the inner map will be freed by\nops->map_free() in a kworker. But for now, most .map_free() callbacks\ndon't use synchronize_rcu() or its variants to wait for the elapse of a\nRCU grace period, so after the invocation of ops->map_free completes,\nthe bpf program which is accessing the inner map may incur\nuse-after-free problem.\n\nFix the free of inner map by invoking bpf_map_free_deferred() after both\none RCU grace period and one tasks trace RCU grace period if the inner\nmap has been removed from the outer map before. The deferment is\naccomplished by using call_rcu() or call_rcu_tasks_trace() when\nreleasing the last ref-counter of bpf map. The newly-added rcu_head\nfield in bpf_map shares the same storage space with work field to\nreduce the size of bpf_map.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2024-36031:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nkeys: Fix overwrite of key expiration on instantiation\n\nCVE-2024-27388:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nSUNRPC: fix some memleaks in gssx_dec_option_array\n\nCVE-2024-27077:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmedia: v4l2-mem2mem: fix a memleak in v4l2_m2m_register_entity\n\nCVE-2024-27065:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_tables: do not compare internal table flags on updates\n\nCVE-2024-27038:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nclk: Fix clk_core_get NULL dereference\n\nCVE-2024-27025:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnbd: null check for nla_nest_start\n\nCVE-2024-26901:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ndo_sys_name_to_handle(): use kzalloc() to fix kernel-infoleak\n\nCVE-2024-26898:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\naoe: fix the potential use-after-free problem in aoecmd_cfg_pkts\n\nCVE-2024-26880:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ndm: call the resume method on internal suspend\n\nCVE-2024-26878:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nquota: Fix potential NULL pointer dereference\n\nCVE-2024-26872:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nRDMA/srpt: Do not register event handler until srpt device is fully setup\n\nCVE-2024-26863:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nhsr: Fix uninit-value access in hsr_get_node()\n\nCVE-2024-26862:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\npacket: annotate data-races around ignore_outgoing\n\nCVE-2024-26861:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nwireguard: receive: annotate data-race around receiving_counter.counter\n\nCVE-2024-26859:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet/bnx2x: Prevent access to a freed page in page_pool\n\nCVE-2024-26816:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nx86, relocs: Ignore relocations in .notes section\n\nCVE-2024-26809:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nft_set_pipapo: release elements in clone only from destroy path\n\nCVE-2023-52656:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nio_uring: drop any code related to SCM_RIGHTS\n\nCVE-2023-52447:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbpf: Defer the free of inner map when necessary\n\nWhen updating or deleting an inner map in map array or map htab, the map\nmay still be accessed by non-sleepable program or sleepable program.\nHowever bpf_map_fd_put_ptr() decreases the ref-counter of the inner map\ndirectly through bpf_map_put(), if the ref-counter is the last one\n(which is true for most cases), the inner map will be freed by\nops->map_free() in a kworker. But for now, most .map_free() callbacks\ndon't use synchronize_rcu() or its variants to wait for the elapse of a\nRCU grace period, so after the invocation of ops->map_free completes,\nthe bpf program which is accessing the inner map may incur\nuse-after-free problem.\n\nFix the free of inner map by invoking bpf_map_free_deferred() after both\none RCU grace period and one tasks trace RCU grace period if the inner\nmap has been removed from the outer map before. The deferment is\naccomplished by using call_rcu() or call_rcu_tasks_trace() when\nreleasing the last ref-counter of bpf map. The newly-added rcu_head\nfield in bpf_map shares the same storage space with work field to\nreduce the size of bpf_map.\n",
 	"References": {
 		"Reference": [
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52447",
 				"ID": "CVE-2023-52447",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52656",
+				"ID": "CVE-2023-52656",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26809",
+				"ID": "CVE-2024-26809",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26816",
+				"ID": "CVE-2024-26816",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26859",
+				"ID": "CVE-2024-26859",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26861",
+				"ID": "CVE-2024-26861",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26862",
+				"ID": "CVE-2024-26862",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26863",
+				"ID": "CVE-2024-26863",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26872",
+				"ID": "CVE-2024-26872",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26878",
+				"ID": "CVE-2024-26878",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26880",
+				"ID": "CVE-2024-26880",
 				"Title": "",
 				"Type": "cve"
 			},
@@ -29,8 +89,20 @@
 				"Type": "cve"
 			},
 			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26901",
+				"ID": "CVE-2024-26901",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-27025",
 				"ID": "CVE-2024-27025",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-27038",
+				"ID": "CVE-2024-27038",
 				"Title": "",
 				"Type": "cve"
 			},
@@ -43,6 +115,12 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-27077",
 				"ID": "CVE-2024-27077",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-27388",
+				"ID": "CVE-2024-27388",
 				"Title": "",
 				"Type": "cve"
 			},

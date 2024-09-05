@@ -10,10 +10,10 @@
 		"Date": "2024-03-27 21:47:00"
 	},
 	"Updated": {
-		"Date": "2024-07-03 22:01:00"
+		"Date": "2024-08-27 19:16:00"
 	},
 	"Severity": "medium",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2024-27417:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nipv6: fix potential \"struct net\" leak in inet6_rtm_getaddr()\n\nCVE-2024-26782:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: fix double-free on socket dismantle\n\nCVE-2024-26736:\n\tIn the Linux kernel, the following vulnerability has been resolved: afs: Increase buffer size in afs_update_volume_status() The max length of volume->vid value is 20 characters. So increase idbuf[] size up to 24 to avoid overflow. Found by Linux Verification Center (linuxtesting.org) with SVACE. [DH: Actually, it's 20 + NUL, so increase it to 24 and use snprintf()]\n\nCVE-2024-26601:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: regenerate buddy after block freeing failed if under fc replay\n\nThis mostly reverts commit 6bd97bf273bd (\"ext4: remove redundant\nmb_regenerate_buddy()\") and reintroduces mb_regenerate_buddy(). Based on\ncode in mb_free_blocks(), fast commit replay can end up marking as free\nblocks that are already marked as such. This causes corruption of the\nbuddy bitmap so we need to regenerate it in that case.\n\nCVE-2024-1627:\n\tA vulnerability was discovered in the Linux kernel's IPv4 networking stack. Under certain conditions, MPTCP and NetLabel can be configured in a way that triggers a double free memory error in net/ipv4/af_inet.c:inet_sock_destruct(). This may lead to a system crash, denial of service, or potential arbitrary code execution.\n\nCVE-2024-0841:\n\tA null pointer dereference flaw was found in the hugetlbfs_fill_super function in the Linux kernel hugetlbfs (HugeTLB pages) functionality. This issue may allow a local user to crash the system or potentially escalate their privileges on the system.\n\nCVE-2023-52434:\n\tA flaw was found in the smb client in the Linux kernel. A potential out-of-bounds error was seen in the smb2_parse_contexts() function. Validate offsets and lengths before dereferencing create contexts in smb2_parse_contexts().\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2024-27417:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nipv6: fix potential \"struct net\" leak in inet6_rtm_getaddr()\n\nCVE-2024-27024:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet/rds: fix WARNING in rds_conn_connect_if_down\n\nCVE-2024-26857:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ngeneve: make sure to pull inner header in geneve_rx()\n\nCVE-2024-26851:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_conntrack_h323: Add protection for bmp length out of range\n\nCVE-2024-26848:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nafs: Fix endless loop in directory parsing\n\nCVE-2024-26845:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nscsi: target: core: Add TMF to tmr_list handling\n\nCVE-2024-26840:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ncachefiles: fix memory leak in cachefiles_add_cache()\n\nCVE-2024-26835:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_tables: set dormant flag on hook register failure\n\nCVE-2024-26833:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amd/display: Fix memory leak in dm_sw_fini()\n\nCVE-2024-26820:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nhv_netvsc: Register VF in netvsc_probe if NET_DEVICE_REGISTER missed\n\nCVE-2024-26805:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetlink: Fix kernel-infoleak-after-free in __skb_datagram_iter\n\nCVE-2024-26804:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: ip_tunnel: prevent perpetual headroom growth\n\nCVE-2024-26793:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ngtp: fix use-after-free and null-ptr-deref in gtp_newlink()\n\nCVE-2024-26791:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbtrfs: dev-replace: properly validate device names\n\nCVE-2024-26787:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmmc: mmci: stm32: fix DMA API overlapping mappings warning\n\nCVE-2024-26782:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: fix double-free on socket dismantle\n\nCVE-2024-26773:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: avoid allocating blocks from corrupted group in ext4_mb_try_best_found()\n\nCVE-2024-26772:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: avoid allocating blocks from corrupted group in ext4_mb_find_by_goal()\n\nCVE-2024-26764:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nfs/aio: Restrict kiocb_set_cancel_fn() to I/O submitted via libaio\n\nCVE-2024-26763:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ndm-crypt: don't modify the data when using authenticated encryption\n\nCVE-2024-26753:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: virtio/akcipher - Fix stack overflow on memcpy\n\nCVE-2024-26752:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nl2tp: pass correct message length to ip6_append_data\n\nCVE-2024-26751:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nARM: ep93xx: Add terminator to gpiod_lookup_table\n\nCVE-2024-26744:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nRDMA/srpt: Support specifying the srpt_service_guid parameter\n\nCVE-2024-26743:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nRDMA/qedr: Fix qedr_create_user_qp error flow\n\nCVE-2024-26736:\n\tIn the Linux kernel, the following vulnerability has been resolved: afs: Increase buffer size in afs_update_volume_status() The max length of volume->vid value is 20 characters. So increase idbuf[] size up to 24 to avoid overflow. Found by Linux Verification Center (linuxtesting.org) with SVACE. [DH: Actually, it's 20 + NUL, so increase it to 24 and use snprintf()]\n\nCVE-2024-26735:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nipv6: sr: fix possible use-after-free and null-ptr-deref\n\nCVE-2024-26688:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nfs,hugetlb: fix NULL pointer dereference in hugetlbs_fill_super\n\nCVE-2024-26659:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nxhci: handle isoc Babble and Buffer Overrun events properly\n\nCVE-2024-26601:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: regenerate buddy after block freeing failed if under fc replay\n\nThis mostly reverts commit 6bd97bf273bd (\"ext4: remove redundant\nmb_regenerate_buddy()\") and reintroduces mb_regenerate_buddy(). Based on\ncode in mb_free_blocks(), fast commit replay can end up marking as free\nblocks that are already marked as such. This causes corruption of the\nbuddy bitmap so we need to regenerate it in that case.\n\nCVE-2024-1627:\n\tA vulnerability was discovered in the Linux kernel's IPv4 networking stack. Under certain conditions, MPTCP and NetLabel can be configured in a way that triggers a double free memory error in net/ipv4/af_inet.c:inet_sock_destruct(). This may lead to a system crash, denial of service, or potential arbitrary code execution.\n\nCVE-2024-0841:\n\tA null pointer dereference flaw was found in the hugetlbfs_fill_super function in the Linux kernel hugetlbfs (HugeTLB pages) functionality. This issue may allow a local user to crash the system or potentially escalate their privileges on the system.\n\nCVE-2023-52434:\n\tA flaw was found in the smb client in the Linux kernel. A potential out-of-bounds error was seen in the smb2_parse_contexts() function. Validate offsets and lengths before dereferencing create contexts in smb2_parse_contexts().\n",
 	"References": {
 		"Reference": [
 			{
@@ -41,14 +41,170 @@
 				"Type": "cve"
 			},
 			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26659",
+				"ID": "CVE-2024-26659",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26688",
+				"ID": "CVE-2024-26688",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26735",
+				"ID": "CVE-2024-26735",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26736",
 				"ID": "CVE-2024-26736",
 				"Title": "",
 				"Type": "cve"
 			},
 			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26743",
+				"ID": "CVE-2024-26743",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26744",
+				"ID": "CVE-2024-26744",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26751",
+				"ID": "CVE-2024-26751",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26752",
+				"ID": "CVE-2024-26752",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26753",
+				"ID": "CVE-2024-26753",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26763",
+				"ID": "CVE-2024-26763",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26764",
+				"ID": "CVE-2024-26764",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26772",
+				"ID": "CVE-2024-26772",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26773",
+				"ID": "CVE-2024-26773",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26782",
 				"ID": "CVE-2024-26782",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26787",
+				"ID": "CVE-2024-26787",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26791",
+				"ID": "CVE-2024-26791",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26793",
+				"ID": "CVE-2024-26793",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26804",
+				"ID": "CVE-2024-26804",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26805",
+				"ID": "CVE-2024-26805",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26820",
+				"ID": "CVE-2024-26820",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26833",
+				"ID": "CVE-2024-26833",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26835",
+				"ID": "CVE-2024-26835",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26840",
+				"ID": "CVE-2024-26840",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26845",
+				"ID": "CVE-2024-26845",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26848",
+				"ID": "CVE-2024-26848",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26851",
+				"ID": "CVE-2024-26851",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26857",
+				"ID": "CVE-2024-26857",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-27024",
+				"ID": "CVE-2024-27024",
 				"Title": "",
 				"Type": "cve"
 			},

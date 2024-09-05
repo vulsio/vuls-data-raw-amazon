@@ -10,10 +10,10 @@
 		"Date": "2022-04-04 23:40:00"
 	},
 	"Updated": {
-		"Date": "2024-05-23 23:02:00"
+		"Date": "2024-08-27 19:16:00"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2022-25636:\n\tAn out-of-bounds (OOB) memory access flaw was found in nft_fwd_dup_netdev_offload in net/netfilter/nf_dup_netdev.c in the netfilter subcomponent in the Linux kernel due to a heap out-of-bounds write problem. This flaw allows a local attacker with a user account on the system to gain access to out-of-bounds memory, leading to a system crash or a privilege escalation threat.\n\nCVE-2022-1055:\n\tA use-after-free vulnerability was found in the tc_new_tfilter function in net/sched/cls_api.c in the Linux kernel. The availability of local, unprivileged user namespaces allows privilege escalation.\n\nCVE-2022-1016:\n\tA flaw was found in the Linux kernel in net/netfilter/nf_tables_core.c:nft_do_chain, which can cause a use-after-free. This issue needs to handle return with proper preconditions, as it can lead to a kernel information leak problem caused by a local, unprivileged attacker.\n\nCVE-2022-1015:\n\tA flaw was found in the Linux kernel in linux/net/netfilter/nf_tables_api.c of the netfilter subsystem. This flaw allows a local user to cause an out-of-bounds write issue.\n\nCVE-2021-47088:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmm/damon/dbgfs: protect targets destructions with kdamond_lock\n\nCVE-2021-46937:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmm/damon/dbgfs: fix 'struct pid' leaks in 'dbgfs_target_ids_write()'\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2022-48858:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet/mlx5: Fix a race on command flush flow\n\nCVE-2022-48855:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nsctp: fix kernel-infoleak for SCTP sockets\n\nCVE-2022-48843:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ndrm/vrr: Set VRR capable prop only if it is attached to connector\n\nCVE-2022-25636:\n\tAn out-of-bounds (OOB) memory access flaw was found in nft_fwd_dup_netdev_offload in net/netfilter/nf_dup_netdev.c in the netfilter subcomponent in the Linux kernel due to a heap out-of-bounds write problem. This flaw allows a local attacker with a user account on the system to gain access to out-of-bounds memory, leading to a system crash or a privilege escalation threat.\n\nCVE-2022-1055:\n\tA use-after-free vulnerability was found in the tc_new_tfilter function in net/sched/cls_api.c in the Linux kernel. The availability of local, unprivileged user namespaces allows privilege escalation.\n\nCVE-2022-1016:\n\tA flaw was found in the Linux kernel in net/netfilter/nf_tables_core.c:nft_do_chain, which can cause a use-after-free. This issue needs to handle return with proper preconditions, as it can lead to a kernel information leak problem caused by a local, unprivileged attacker.\n\nCVE-2022-1015:\n\tA flaw was found in the Linux kernel in linux/net/netfilter/nf_tables_api.c of the netfilter subsystem. This flaw allows a local user to cause an out-of-bounds write issue.\n\nCVE-2021-47088:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmm/damon/dbgfs: protect targets destructions with kdamond_lock\n\nCVE-2021-46937:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmm/damon/dbgfs: fix 'struct pid' leaks in 'dbgfs_target_ids_write()'\n",
 	"References": {
 		"Reference": [
 			{
@@ -49,6 +49,24 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-25636",
 				"ID": "CVE-2022-25636",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48843",
+				"ID": "CVE-2022-48843",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48855",
+				"ID": "CVE-2022-48855",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48858",
+				"ID": "CVE-2022-48858",
 				"Title": "",
 				"Type": "cve"
 			}
