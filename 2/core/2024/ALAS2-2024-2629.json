@@ -1,0 +1,103 @@
+{
+	"ID": "ALAS2-2024-2629",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2629: important priority package update for thunderbird",
+	"Issued": {
+		"Date": "2024-08-28 19:04:00"
+	},
+	"Updated": {
+		"Date": "2024-08-28 19:04:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-7529:\n\tThe date picker could partially obscure security prompts. This could be used by a malicious site to trick a user into granting permissions. This vulnerability affects Firefox < 129, Firefox ESR < 115.14, Firefox ESR < 128.1, Thunderbird < 128.1, and Thunderbird < 115.14.\n\nCVE-2024-7527:\n\tUnexpected marking work at the start of sweeping could have led to a use-after-free. This vulnerability affects Firefox < 129, Firefox ESR < 115.14, Firefox ESR < 128.1, Thunderbird < 128.1, and Thunderbird < 115.14.\n\nCVE-2024-7526:\n\tANGLE failed to initialize parameters which led to reading from uninitialized memory. This could be leveraged to leak sensitive data from memory. This vulnerability affects Firefox < 129, Firefox ESR < 115.14, Firefox ESR < 128.1, Thunderbird < 128.1, and Thunderbird < 115.14.\n\nCVE-2024-7525:\n\tIt was possible for a web extension with minimal permissions to create a `StreamFilter` which could be used to read and modify the response body of requests on any site. This vulnerability affects Firefox < 129, Firefox ESR < 115.14, Firefox ESR < 128.1, Thunderbird < 128.1, and Thunderbird < 115.14.\n\nCVE-2024-7522:\n\tEditor code failed to check an attribute value. This could have led to an out-of-bounds read. This vulnerability affects Firefox < 129, Firefox ESR < 115.14, Firefox ESR < 128.1, Thunderbird < 128.1, and Thunderbird < 115.14.\n\nCVE-2024-7521:\n\tIncomplete WebAssembly exception handing could have led to a use-after-free. This vulnerability affects Firefox < 129, Firefox ESR < 115.14, and Firefox ESR < 128.1.\n\nCVE-2024-7519:\n\tInsufficient checks when processing graphics shared memory could have led to memory corruption. This could be leveraged by an attacker to perform a sandbox escape. This vulnerability affects Firefox < 129, Firefox ESR < 115.14, Firefox ESR < 128.1, Thunderbird < 128.1, and Thunderbird < 115.14.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-7519",
+				"ID": "CVE-2024-7519",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-7521",
+				"ID": "CVE-2024-7521",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-7522",
+				"ID": "CVE-2024-7522",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-7525",
+				"ID": "CVE-2024-7525",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-7526",
+				"ID": "CVE-2024-7526",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-7527",
+				"ID": "CVE-2024-7527",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-7529",
+				"ID": "CVE-2024-7529",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "thunderbird",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.14.0",
+					"Filename": "Packages/thunderbird-115.14.0-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "thunderbird-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.14.0",
+					"Filename": "Packages/thunderbird-debuginfo-115.14.0-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "thunderbird",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.14.0",
+					"Filename": "Packages/thunderbird-115.14.0-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "thunderbird-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "115.14.0",
+					"Filename": "Packages/thunderbird-debuginfo-115.14.0-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
