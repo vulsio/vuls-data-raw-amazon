@@ -10,15 +10,21 @@
 		"Date": "2019-08-07 23:16:00"
 	},
 	"Updated": {
-		"Date": "2019-08-12 18:24:00"
+		"Date": "2024-09-13 01:16:00"
 	},
 	"Severity": "medium",
-	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-19052:\n\t\n",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2018-25103:\n\tThere exists use-after-free vulnerabilities in lighttpd <= 1.4.50 request parsing which might read from invalid pointers to memory used in the same request, not from other requests.\n\nCVE-2018-19052:\n\tAn issue was discovered in mod_alias_physical_handler in mod_alias.c in lighttpd before 1.4.50. There is potential ../ path traversal of a single directory above an alias target, with a specific mod_alias configuration where the matched alias lacks a trailing '/' character, but the alias target filesystem path does have a trailing '/' character.\n",
 	"References": {
 		"Reference": [
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19052",
 				"ID": "CVE-2018-19052",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-25103",
+				"ID": "CVE-2018-25103",
 				"Title": "",
 				"Type": "cve"
 			}
