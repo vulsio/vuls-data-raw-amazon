@@ -10,10 +10,10 @@
 		"Date": "2022-01-11 23:55:00"
 	},
 	"Updated": {
-		"Date": "2022-01-28 17:24:00"
+		"Date": "2024-09-12 18:30:00"
 	},
 	"Severity": "medium",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2021-29650:\n\tA denial-of-service (DoS) flaw was identified  in the Linux kernel due to an incorrect memory barrier in xt_replace_table in net/netfilter/x_tables.c in the netfilter subsystem.\n\nCVE-2021-28971:\n\tA flaw was found in the Linux kernel. On some Haswell CPUs, userspace applications (such as perf-fuzzer) can cause a system crash because the PEBS status in a PEBS record is mishandled.\n\nCVE-2021-28964:\n\tA race condition flaw was found in get_old_root in fs/btrfs/ctree.c in the Linux kernel in btrfs file-system. This flaw allows a local attacker with a special user privilege to cause a denial of service due to not locking an extent buffer before a cloning operation. The highest threat from this vulnerability is to system availability.\n\nCVE-2021-28688:\n\tThe fix for XSA-365 includes initialization of pointers such that subsequent cleanup code wouldn't use uninitialized or stale values. This initialization went too far and may under certain conditions also overwrite pointers which are in need of cleaning up. The lack of cleanup would result in leaking persistent grants. The leak in turn would prevent fully cleaning up after a respective guest has died, leaving around zombie domains. All Linux versions having the fix for XSA-365 applied are vulnerable. XSA-365 was classified to affect versions back to at least 3.11.\n\nCVE-2021-28660:\n\tA flaw was found in the Linux kernel. The rtw_wx_set_scan driver allows writing beyond the end of the ->ssid[] array. The highest threat from this vulnerability is to data confidentiality and integrity as well system availability.\n\nCVE-2021-28375:\n\tAn issue was discovered in the Linux kernel. Fastrpc_internal_invoke in drivers/misc/fastrpc.c does not prevent user applications from sending kernel RPC messages. This is a related issue to CVE-2019-2308.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2021-4442:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntcp: add sanity tests to TCP_QUEUE_SEQ\n\nCVE-2021-29650:\n\tA denial-of-service (DoS) flaw was identified  in the Linux kernel due to an incorrect memory barrier in xt_replace_table in net/netfilter/x_tables.c in the netfilter subsystem.\n\nCVE-2021-28971:\n\tA flaw was found in the Linux kernel. On some Haswell CPUs, userspace applications (such as perf-fuzzer) can cause a system crash because the PEBS status in a PEBS record is mishandled.\n\nCVE-2021-28964:\n\tA race condition flaw was found in get_old_root in fs/btrfs/ctree.c in the Linux kernel in btrfs file-system. This flaw allows a local attacker with a special user privilege to cause a denial of service due to not locking an extent buffer before a cloning operation. The highest threat from this vulnerability is to system availability.\n\nCVE-2021-28688:\n\tThe fix for XSA-365 includes initialization of pointers such that subsequent cleanup code wouldn't use uninitialized or stale values. This initialization went too far and may under certain conditions also overwrite pointers which are in need of cleaning up. The lack of cleanup would result in leaking persistent grants. The leak in turn would prevent fully cleaning up after a respective guest has died, leaving around zombie domains. All Linux versions having the fix for XSA-365 applied are vulnerable. XSA-365 was classified to affect versions back to at least 3.11.\n\nCVE-2021-28660:\n\tA flaw was found in the Linux kernel. The rtw_wx_set_scan driver allows writing beyond the end of the ->ssid[] array. The highest threat from this vulnerability is to data confidentiality and integrity as well system availability.\n\nCVE-2021-28375:\n\tAn issue was discovered in the Linux kernel. Fastrpc_internal_invoke in drivers/misc/fastrpc.c does not prevent user applications from sending kernel RPC messages. This is a related issue to CVE-2019-2308.\n",
 	"References": {
 		"Reference": [
 			{
@@ -49,6 +49,12 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-29650",
 				"ID": "CVE-2021-29650",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-4442",
+				"ID": "CVE-2021-4442",
 				"Title": "",
 				"Type": "cve"
 			}

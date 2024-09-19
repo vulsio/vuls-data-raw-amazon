@@ -1,0 +1,43 @@
+{
+	"ID": "ALAS2-2024-2632",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2632: important priority package update for python2-setuptools",
+	"Issued": {
+		"Date": "2024-09-12 18:30:00"
+	},
+	"Updated": {
+		"Date": "2024-09-12 18:30:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-6345:\n\tA vulnerability in the package_index module of pypa/setuptools versions up to 69.1.1 allows for remote code execution via its download functions. These functions, which are used to download packages from URLs provided by users or retrieved from package index servers, are susceptible to code injection. If these functions are exposed to user-controlled inputs, such as package URLs, they can execute arbitrary commands on the system. The issue is fixed in version 70.0.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-6345",
+				"ID": "CVE-2024-6345",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python2-setuptools",
+					"Release": "4.amzn2.0.4",
+					"Version": "41.2.0",
+					"Filename": "Packages/python2-setuptools-41.2.0-4.amzn2.0.4.noarch.rpm"
+				}
+			]
+		}
+	}
+}
