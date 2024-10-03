@@ -10,12 +10,18 @@
 		"Date": "2024-09-12 18:30:00"
 	},
 	"Updated": {
-		"Date": "2024-09-12 18:30:00"
+		"Date": "2024-09-26 01:10:00"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Firefox that fix the following vulnerabilities:\nCVE-2024-8384:\n\tThe JavaScript garbage collector could mis-color cross-compartment objects if OOM conditions were detected at the right point between two passes. This could have led to memory corruption. This vulnerability affects Firefox < 130, Firefox ESR < 128.2, and Firefox ESR < 115.15.\n\nCVE-2024-8383:\n\tThe Mozilla Foundation's Security Advisory reveals that Firefox didn't prompt for confirmation when handling Usenet schemes like news: and snews:, which could allow malicious programs to register as handlers. This oversight could enable a website to launch these programs without user consent.\n\nCVE-2024-8382:\n\tInternal browser event interfaces were exposed to web content when privileged EventHandler listener callbacks ran for those events. Web content that tried to use those interfaces would not be able to use them with elevated privileges, but their presence would indicate certain browser features had been used, such as when a user opened the Dev Tools console. This vulnerability affects Firefox < 130, Firefox ESR < 128.2, and Firefox ESR < 115.15.\n\nCVE-2024-8381:\n\tA potentially exploitable type confusion could be triggered when looking up a property name on an object being used as the `with` environment. This vulnerability affects Firefox < 130, Firefox ESR < 128.2, and Firefox ESR < 115.15.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Firefox that fix the following vulnerabilities:\nCVE-2024-8384:\n\tThe JavaScript garbage collector could mis-color cross-compartment objects if OOM conditions were detected at the right point between two passes. This could have led to memory corruption. This vulnerability affects Firefox < 130, Firefox ESR < 128.2, and Firefox ESR < 115.15.\n\nCVE-2024-8383:\n\tThe Mozilla Foundation's Security Advisory reveals that Firefox didn't prompt for confirmation when handling Usenet schemes like news: and snews:, which could allow malicious programs to register as handlers. This oversight could enable a website to launch these programs without user consent.\n\nCVE-2024-8382:\n\tInternal browser event interfaces were exposed to web content when privileged EventHandler listener callbacks ran for those events. Web content that tried to use those interfaces would not be able to use them with elevated privileges, but their presence would indicate certain browser features had been used, such as when a user opened the Dev Tools console. This vulnerability affects Firefox < 130, Firefox ESR < 128.2, and Firefox ESR < 115.15.\n\nCVE-2024-8381:\n\tA potentially exploitable type confusion could be triggered when looking up a property name on an object being used as the `with` environment. This vulnerability affects Firefox < 130, Firefox ESR < 128.2, and Firefox ESR < 115.15.\n\nCVE-2024-7652:\n\tAn error in the ECMA-262 specification relating to Async Generators could have resulted in a type confusion, potentially leading to memory corruption and an exploitable crash. This vulnerability affects Firefox < 128, Firefox ESR < 115.13, Thunderbird < 115.13, and Thunderbird < 128.\n",
 	"References": {
 		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-7652",
+				"ID": "CVE-2024-7652",
+				"Title": "",
+				"Type": "cve"
+			},
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-8381",
 				"ID": "CVE-2024-8381",

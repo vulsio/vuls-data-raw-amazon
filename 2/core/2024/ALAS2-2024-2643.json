@@ -1,0 +1,127 @@
+{
+	"ID": "ALAS2-2024-2643",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2643: important priority package update for golang",
+	"Issued": {
+		"Date": "2024-09-25 22:07:00"
+	},
+	"Updated": {
+		"Date": "2024-09-25 22:07:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-34158:\n\tCalling Parse on a \"// +build\" build tag line with deeply nested expressions can cause a panic due to stack exhaustion.\n\nCVE-2024-34156:\n\tCalling Decoder.Decode on a message which contains deeply nested structures can cause a panic due to stack exhaustion. This is a follow-up to CVE-2022-30635.\n\nCVE-2024-34155:\n\tCalling any of the Parse functions on Go source code which contains deeply nested literals can cause a panic due to stack exhaustion.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34155",
+				"ID": "CVE-2024-34155",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34156",
+				"ID": "CVE-2024-34156",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34158",
+				"ID": "CVE-2024-34158",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "golang",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.7",
+					"Filename": "Packages/golang-1.22.7-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "golang-docs",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.7",
+					"Filename": "Packages/golang-docs-1.22.7-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "golang-misc",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.7",
+					"Filename": "Packages/golang-misc-1.22.7-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "golang-tests",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.7",
+					"Filename": "Packages/golang-tests-1.22.7-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "golang-src",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.7",
+					"Filename": "Packages/golang-src-1.22.7-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "golang-bin",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.7",
+					"Filename": "Packages/golang-bin-1.22.7-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "golang-shared",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.7",
+					"Filename": "Packages/golang-shared-1.22.7-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "golang",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.7",
+					"Filename": "Packages/golang-1.22.7-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "golang-bin",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.7",
+					"Filename": "Packages/golang-bin-1.22.7-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "golang-shared",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.22.7",
+					"Filename": "Packages/golang-shared-1.22.7-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

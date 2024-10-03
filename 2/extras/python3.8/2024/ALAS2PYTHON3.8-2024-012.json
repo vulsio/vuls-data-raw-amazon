@@ -1,0 +1,43 @@
+{
+	"ID": "ALAS2PYTHON3.8-2024-012",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Python3.8 2.0 - ALAS2PYTHON3.8-2024-012: important priority package update for python38-setuptools",
+	"Issued": {
+		"Date": "2024-09-26 01:10:00"
+	},
+	"Updated": {
+		"Date": "2024-09-26 01:10:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Python3.8 that fix the following vulnerabilities:\nCVE-2024-6345:\n\tA vulnerability in the package_index module of pypa/setuptools versions up to 69.1.1 allows for remote code execution via its download functions. These functions, which are used to download packages from URLs provided by users or retrieved from package index servers, are susceptible to code injection. If these functions are exposed to user-controlled inputs, such as package URLs, they can execute arbitrary commands on the system. The issue is fixed in version 70.0.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-6345",
+				"ID": "CVE-2024-6345",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---python3.8",
+			"Name": "Amazon Linux 2 - Python3.8",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python38-setuptools",
+					"Release": "4.amzn2.0.3",
+					"Version": "38.4.0",
+					"Filename": "Packages/python38-setuptools-38.4.0-4.amzn2.0.3.noarch.rpm"
+				}
+			]
+		}
+	}
+}

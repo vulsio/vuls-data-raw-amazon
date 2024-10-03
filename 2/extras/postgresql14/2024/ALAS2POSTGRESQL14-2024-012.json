@@ -1,0 +1,267 @@
+{
+	"ID": "ALAS2POSTGRESQL14-2024-012",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Postgresql14 2.0 - ALAS2POSTGRESQL14-2024-012: important priority package update for postgresql",
+	"Issued": {
+		"Date": "2024-09-26 01:10:00"
+	},
+	"Updated": {
+		"Date": "2024-09-26 01:10:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Postgresql14 that fix the following vulnerabilities:\nCVE-2024-7348:\n\tTime-of-check Time-of-use (TOCTOU) race condition in pg_dump in PostgreSQL allows an object creator to execute arbitrary SQL functions as the user running pg_dump, which is often a superuser. The attack involves replacing another relation type with a view or foreign table. The attack requires waiting for pg_dump to start, but winning the race condition is trivial if the attacker retains an open transaction. Versions before PostgreSQL 16.4, 15.8, 14.13, 13.16, and 12.20 are affected.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-7348",
+				"ID": "CVE-2024-7348",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---postgresql14",
+			"Name": "Amazon Linux 2 - Postgresql14",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-14.13-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-server",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-server-14.13-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-docs",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-docs-14.13-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-contrib",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-contrib-14.13-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-server-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-server-devel-14.13-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "postgresql-test-rpm-macros",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-test-rpm-macros-14.13-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-static",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-static-14.13-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-upgrade",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-upgrade-14.13-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-upgrade-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-upgrade-devel-14.13-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-plperl",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-plperl-14.13-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-plpython3",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-plpython3-14.13-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-pltcl",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-pltcl-14.13-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-test",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-test-14.13-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-llvmjit",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-llvmjit-14.13-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-debuginfo-14.13-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-14.13-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-server",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-server-14.13-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-docs",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-docs-14.13-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-contrib",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-contrib-14.13-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-server-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-server-devel-14.13-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-static",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-static-14.13-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-upgrade",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-upgrade-14.13-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-upgrade-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-upgrade-devel-14.13-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-plperl",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-plperl-14.13-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-plpython3",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-plpython3-14.13-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-pltcl",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-pltcl-14.13-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-test",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-test-14.13-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-llvmjit",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-llvmjit-14.13-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "14.13",
+					"Filename": "Packages/postgresql-debuginfo-14.13-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

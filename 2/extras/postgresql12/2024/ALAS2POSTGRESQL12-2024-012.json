@@ -1,0 +1,107 @@
+{
+	"ID": "ALAS2POSTGRESQL12-2024-012",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Postgresql12 2.0 - ALAS2POSTGRESQL12-2024-012: important priority package update for libpq",
+	"Issued": {
+		"Date": "2024-09-26 01:10:00"
+	},
+	"Updated": {
+		"Date": "2024-09-26 01:10:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Postgresql12 that fix the following vulnerabilities:\nCVE-2024-7348:\n\tTime-of-check Time-of-use (TOCTOU) race condition in pg_dump in PostgreSQL allows an object creator to execute arbitrary SQL functions as the user running pg_dump, which is often a superuser. The attack involves replacing another relation type with a view or foreign table. The attack requires waiting for pg_dump to start, but winning the race condition is trivial if the attacker retains an open transaction. Versions before PostgreSQL 16.4, 15.8, 14.13, 13.16, and 12.20 are affected.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-7348",
+				"ID": "CVE-2024-7348",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---postgresql12",
+			"Name": "Amazon Linux 2 - Postgresql12",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libpq",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.20",
+					"Filename": "Packages/libpq-12.20-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libpq-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.20",
+					"Filename": "Packages/libpq-devel-12.20-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libpq-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.20",
+					"Filename": "Packages/libpq-debuginfo-12.20-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libpq",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.20",
+					"Filename": "Packages/libpq-12.20-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libpq-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.20",
+					"Filename": "Packages/libpq-devel-12.20-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libpq-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.20",
+					"Filename": "Packages/libpq-debuginfo-12.20-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libpq",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.20",
+					"Filename": "Packages/libpq-12.20-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libpq-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.20",
+					"Filename": "Packages/libpq-devel-12.20-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libpq-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "12.20",
+					"Filename": "Packages/libpq-debuginfo-12.20-1.amzn2.0.1.i686.rpm"
+				}
+			]
+		}
+	}
+}

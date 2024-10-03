@@ -1,0 +1,67 @@
+{
+	"ID": "ALAS2DOCKER-2024-046",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Docker 2.0 - ALAS2DOCKER-2024-046: medium priority package update for amazon-ecr-credential-helper",
+	"Issued": {
+		"Date": "2024-09-26 01:10:00"
+	},
+	"Updated": {
+		"Date": "2024-09-26 01:10:00"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 - Docker that fix the following vulnerabilities:\nCVE-2024-24790:\n\tThe various Is methods (IsPrivate, IsLoopback, etc) did not work as expected for IPv4-mapped IPv6 addresses, returning false for addresses which would return true in their traditional IPv4 forms.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24790",
+				"ID": "CVE-2024-24790",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---docker",
+			"Name": "Amazon Linux 2 - Docker",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "amazon-ecr-credential-helper",
+					"Release": "1.amzn2",
+					"Version": "0.9.0",
+					"Filename": "Packages/amazon-ecr-credential-helper-0.9.0-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "amazon-ecr-credential-helper-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "0.9.0",
+					"Filename": "Packages/amazon-ecr-credential-helper-debuginfo-0.9.0-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "amazon-ecr-credential-helper",
+					"Release": "1.amzn2",
+					"Version": "0.9.0",
+					"Filename": "Packages/amazon-ecr-credential-helper-0.9.0-1.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "amazon-ecr-credential-helper-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "0.9.0",
+					"Filename": "Packages/amazon-ecr-credential-helper-debuginfo-0.9.0-1.amzn2.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

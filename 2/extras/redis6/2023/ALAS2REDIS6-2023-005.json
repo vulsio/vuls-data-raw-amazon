@@ -7,10 +7,10 @@
 	"Version": "1.4",
 	"Title": "Amazon Linux 2 - Redis6 2.0 - ALAS2REDIS6-2023-005: important priority package update for redis",
 	"Issued": {
-		"Date": "2023-08-21 21:00"
+		"Date": "2023-08-21 21:00:00"
 	},
 	"Updated": {
-		"Date": "2023-09-25 22:02"
+		"Date": "2023-09-25 22:02:00"
 	},
 	"Severity": "important",
 	"Description": "Package updates are available for Amazon Linux 2 - Redis6 that fix the following vulnerabilities:\nCVE-2021-32761:\n\tRedis is an in-memory database that persists on disk. A vulnerability involving out-of-bounds read and integer overflow to buffer overflow exists starting with version 2.2 and prior to versions 5.0.13, 6.0.15, and 6.2.5. On 32-bit systems, Redis `*BIT*` command are vulnerable to integer overflow that can potentially be exploited to corrupt the heap, leak arbitrary heap contents or trigger remote code execution. The vulnerability involves changing the default `proto-max-bulk-len` configuration parameter to a very large value and constructing specially crafted commands bit commands. This problem only affects Redis on 32-bit platforms, or compiled as a 32-bit binary. Redis versions 5.0.`3m 6.0.15, and 6.2.5 contain patches for this issue. An additional workaround to mitigate the problem without patching the `redis-server` executable is to prevent users from modifying the `proto-max-bulk-len` configuration parameter. This can be done using ACL to restrict unprivileged users from using the CONFIG SET command.\n",
