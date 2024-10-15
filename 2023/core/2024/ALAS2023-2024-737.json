@@ -1,0 +1,257 @@
+{
+	"ID": "ALAS2023-2024-737",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-737: Medium priority package update for clamav",
+	"Issued": {
+		"Date": "2024-10-10 03:02:00"
+	},
+	"Updated": {
+		"Date": "2024-10-10 03:02:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-20506:\n\tA vulnerability in the ClamD service module of Clam AntiVirus (ClamAV) versions 1.4.0, 1.3.2 and prior versions, all 1.2.x versions, 1.0.6 and prior versions, all 0.105.x versions, all 0.104.x versions, and 0.103.11 and all prior versions could allow an authenticated, local attacker to corrupt critical system files.\n\nThe vulnerability is due to allowing the ClamD process to write to its log file while privileged without checking if the logfile has been replaced with a symbolic link. An attacker could exploit this vulnerability if they replace the ClamD log file with a symlink to a critical system file and then find a way to restart the ClamD process. An exploit could allow the attacker to corrupt a critical system file by appending ClamD log messages after restart.\n\nCVE-2024-20505:\n\tA vulnerability in the PDF parsing module of Clam AntiVirus (ClamAV) versions 1.4.0, 1.3.2 and prior versions, all 1.2.x versions, 1.0.6 and prior versions, all 0.105.x versions, all 0.104.x versions, and 0.103.11 and all prior versions could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.\n\nThe vulnerability is due to an out of bounds read. An attacker could exploit this vulnerability by submitting a crafted PDF file to be scanned by ClamAV on an affected device. An exploit could allow the attacker to terminate the scanning process.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-20505",
+				"ID": "CVE-2024-20505",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-20506",
+				"ID": "CVE-2024-20506",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "clamav-data",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-data-0.103.12-1.amzn2023.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "clamav-filesystem",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-filesystem-0.103.12-1.amzn2023.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-milter",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-milter-0.103.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-lib",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-lib-0.103.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-update-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-update-debuginfo-0.103.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-devel-0.103.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "clamav-doc",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-doc-0.103.12-1.amzn2023.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-debuginfo-0.103.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-milter-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-milter-debuginfo-0.103.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-update",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-update-0.103.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamd-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamd-debuginfo-0.103.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-lib-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-lib-debuginfo-0.103.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamd",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamd-0.103.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-0.103.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "clamav-debugsource",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-debugsource-0.103.12-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "clamav-lib-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-lib-debuginfo-0.103.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "clamav-update",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-update-0.103.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "clamd-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamd-debuginfo-0.103.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "clamav-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-debuginfo-0.103.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "clamd",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamd-0.103.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "clamav-debugsource",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-debugsource-0.103.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "clamav-milter-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-milter-debuginfo-0.103.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "clamav-lib",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-lib-0.103.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "clamav-update-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-update-debuginfo-0.103.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "clamav",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-0.103.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "clamav-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-devel-0.103.12-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "clamav-milter",
+					"Release": "1.amzn2023.0.1",
+					"Version": "0.103.12",
+					"Filename": "Packages/clamav-milter-0.103.12-1.amzn2023.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,137 @@
+{
+	"ID": "ALAS2023-2024-723",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-723: Medium priority package update for cups-filters",
+	"Issued": {
+		"Date": "2024-10-10 03:02:00"
+	},
+	"Updated": {
+		"Date": "2024-10-10 03:02:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-47176:\n\tCUPS is a standards-based, open-source printing system, and `cups-browsed` contains network printing functionality including, but not limited to, auto-discovering print services and shared printers. `cups-browsed` binds to `INADDR_ANY:631`, causing it to trust any packet from any source, and can cause the `Get-Printer-Attributes` IPP request to an attacker controlled URL.\n\nDue to the service binding to `*:631 ( INADDR_ANY )`, multiple bugs in `cups-browsed` can be exploited in sequence to introduce a malicious printer to the system. This chain of exploits ultimately enables an attacker to execute arbitrary commands remotely on the target machine without authentication when a print job is started. This poses a significant security risk over the network. Notably, this vulnerability is particularly concerning as it can be exploited from the public internet, potentially exposing a vast number of systems to remote attacks if their CUPS services are enabled.\n\nCVE-2024-47076:\n\tCUPS is a standards-based, open-source printing system, and `libcupsfilters` contains the code of the filters of the former `cups-filters` package as library functions to be used for the data format conversion tasks needed in Printer Applications. The `cfGetPrinterAttributes5` function in `libcupsfilters` does not sanitize IPP attributes returned from an IPP server. When these IPP attributes are used, for instance, to generate a PPD file, this can lead to attacker controlled data to be provided to the rest of the CUPS system.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-47076",
+				"ID": "CVE-2024-47076",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-47176",
+				"ID": "CVE-2024-47176",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "cups-filters-libs-debuginfo",
+					"Release": "3.amzn2023.0.3",
+					"Version": "1.28.16",
+					"Filename": "Packages/cups-filters-libs-debuginfo-1.28.16-3.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "cups-filters-libs",
+					"Release": "3.amzn2023.0.3",
+					"Version": "1.28.16",
+					"Filename": "Packages/cups-filters-libs-1.28.16-3.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "cups-filters-devel",
+					"Release": "3.amzn2023.0.3",
+					"Version": "1.28.16",
+					"Filename": "Packages/cups-filters-devel-1.28.16-3.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "cups-filters-debuginfo",
+					"Release": "3.amzn2023.0.3",
+					"Version": "1.28.16",
+					"Filename": "Packages/cups-filters-debuginfo-1.28.16-3.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "cups-filters-debugsource",
+					"Release": "3.amzn2023.0.3",
+					"Version": "1.28.16",
+					"Filename": "Packages/cups-filters-debugsource-1.28.16-3.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "cups-filters",
+					"Release": "3.amzn2023.0.3",
+					"Version": "1.28.16",
+					"Filename": "Packages/cups-filters-1.28.16-3.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "cups-filters-libs-debuginfo",
+					"Release": "3.amzn2023.0.3",
+					"Version": "1.28.16",
+					"Filename": "Packages/cups-filters-libs-debuginfo-1.28.16-3.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "cups-filters-debugsource",
+					"Release": "3.amzn2023.0.3",
+					"Version": "1.28.16",
+					"Filename": "Packages/cups-filters-debugsource-1.28.16-3.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "cups-filters-devel",
+					"Release": "3.amzn2023.0.3",
+					"Version": "1.28.16",
+					"Filename": "Packages/cups-filters-devel-1.28.16-3.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "cups-filters-libs",
+					"Release": "3.amzn2023.0.3",
+					"Version": "1.28.16",
+					"Filename": "Packages/cups-filters-libs-1.28.16-3.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "cups-filters-debuginfo",
+					"Release": "3.amzn2023.0.3",
+					"Version": "1.28.16",
+					"Filename": "Packages/cups-filters-debuginfo-1.28.16-3.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "cups-filters",
+					"Release": "3.amzn2023.0.3",
+					"Version": "1.28.16",
+					"Filename": "Packages/cups-filters-1.28.16-3.amzn2023.0.3.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
