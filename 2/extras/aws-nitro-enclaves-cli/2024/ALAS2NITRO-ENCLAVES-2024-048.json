@@ -1,0 +1,67 @@
+{
+	"ID": "ALAS2NITRO-ENCLAVES-2024-048",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Nitro-enclaves 2.0 - ALAS2NITRO-ENCLAVES-2024-048: low priority package update for runc",
+	"Issued": {
+		"Date": "2024-10-10 03:01:00"
+	},
+	"Updated": {
+		"Date": "2024-10-10 03:01:00"
+	},
+	"Severity": "low",
+	"Description": "Package updates are available for Amazon Linux 2 - Nitro-enclaves that fix the following vulnerabilities:\nCVE-2024-45310:\n\trunc is a CLI tool for spawning and running containers according to the OCI specification. runc 1.1.13 and earlier, as well as 1.2.0-rc2 and earlier, can be tricked into creating empty files or directories in arbitrary locations in the host filesystem by sharing a volume between two containers and exploiting a race with `os.MkdirAll`. While this could be used to create empty files, existing files would not be truncated. An attacker must have the ability to start containers using some kind of custom volume configuration. Containers using user namespaces are still affected, but the scope of places an attacker can create inodes can be significantly reduced. Sufficiently strict LSM policies (SELinux/Apparmor) can also in principle block this attack -- we suspect the industry standard SELinux policy may restrict this attack's scope but the exact scope of protection hasn't been analysed. This is exploitable using runc directly as well as through Docker and Kubernetes. The issue is fixed in runc v1.1.14 and v1.2.0-rc3.\n\nSome workarounds are available. Using user namespaces restricts this attack fairly significantly such that the attacker can only create inodes in directories that the remapped root user/group has write access to. Unless the root user is remapped to an actual\nuser on the host (such as with rootless containers that don't use `/etc/sub[ug]id`), this in practice means that an attacker would only be able to create inodes in world-writable directories. A strict enough SELinux or AppArmor policy could in principle also restrict the scope if a specific label is applied to the runc runtime, though neither the extent to which the standard existing policies block this attack nor what exact policies are needed to sufficiently restrict this attack have been thoroughly tested.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45310",
+				"ID": "CVE-2024-45310",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---nitro-enclaves",
+			"Name": "Amazon Linux 2 - Nitro-enclaves",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "runc",
+					"Release": "1.amzn2",
+					"Version": "1.1.14",
+					"Filename": "Packages/runc-1.1.14-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "runc-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "1.1.14",
+					"Filename": "Packages/runc-debuginfo-1.1.14-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "runc",
+					"Release": "1.amzn2",
+					"Version": "1.1.14",
+					"Filename": "Packages/runc-1.1.14-1.amzn2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "runc-debuginfo",
+					"Release": "1.amzn2",
+					"Version": "1.1.14",
+					"Filename": "Packages/runc-debuginfo-1.1.14-1.amzn2.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
