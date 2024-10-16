@@ -1,0 +1,43 @@
+{
+	"ID": "ALAS2-2024-2654",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2654: medium priority package update for aws-cfn-bootstrap",
+	"Issued": {
+		"Date": "2024-10-10 03:05:00"
+	},
+	"Updated": {
+		"Date": "2024-10-10 03:05:00"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-35195:\n\tRequests is a HTTP library. Prior to 2.32.0, when making requests through a Requests `Session`, if the first request is made with `verify=False` to disable cert verification, all subsequent requests to the same host will continue to ignore cert verification regardless of changes to the value of `verify`. This behavior will continue for the lifecycle of the connection in the connection pool. This vulnerability is fixed in 2.32.0.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-35195",
+				"ID": "CVE-2024-35195",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "aws-cfn-bootstrap",
+					"Release": "31.amzn2",
+					"Version": "2.0",
+					"Filename": "Packages/aws-cfn-bootstrap-2.0-31.amzn2.noarch.rpm"
+				}
+			]
+		}
+	}
+}
