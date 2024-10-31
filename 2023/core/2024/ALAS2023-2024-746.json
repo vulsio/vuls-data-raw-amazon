@@ -1,0 +1,51 @@
+{
+	"ID": "ALAS2023-2024-746",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-746: Medium priority package update for python-twisted",
+	"Issued": {
+		"Date": "2024-10-24 22:53:00"
+	},
+	"Updated": {
+		"Date": "2024-10-24 22:53:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-41810:\n\tTwisted is an event-based framework for internet applications, supporting Python 3.6+. The `twisted.web.util.redirectTo` function contains an HTML injection vulnerability. If application code allows an attacker to control the redirect URL this vulnerability may result in Reflected Cross-Site Scripting (XSS) in the redirect response HTML body. This vulnerability is fixed in 24.7.0rc1.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-41810",
+				"ID": "CVE-2024-41810",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python3-twisted+tls",
+					"Release": "127.amzn2023.0.4",
+					"Version": "22.4.0",
+					"Filename": "Packages/python3-twisted+tls-22.4.0-127.amzn2023.0.4.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python3-twisted",
+					"Release": "127.amzn2023.0.4",
+					"Version": "22.4.0",
+					"Filename": "Packages/python3-twisted-22.4.0-127.amzn2023.0.4.noarch.rpm"
+				}
+			]
+		}
+	}
+}

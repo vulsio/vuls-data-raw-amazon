@@ -1,0 +1,203 @@
+{
+	"ID": "ALAS2023-2024-745",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-745: Important priority package update for flatpak",
+	"Issued": {
+		"Date": "2024-10-24 22:53:00"
+	},
+	"Updated": {
+		"Date": "2024-10-24 22:53:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-42472:\n\tA sandbox escape vulnerability was found in Flatpak due to a symlink-following issue when mounting persistent directories. This flaw allows a local user or attacker to craft a symbolic link that can bypass the intended restrictions, enabling access to and modification of files outside the designated sandbox. As a result, the attacker could potentially manipulate the file system, leading to unauthorized actions that compromise the security and integrity of the system.\n\nFlatpak is not providing a security boundary that protects the OS from untrusted content in the flatpak. Flatpak applications should be vetted and reviewed with the same attention as regular OS packages. It should be assumed that an installed flatpak shares the same privileges and access than the user running it.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-42472",
+				"ID": "CVE-2024-42472",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "flatpak-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-debuginfo-1.15.10-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "flatpak-session-helper-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-session-helper-debuginfo-1.15.10-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "flatpak-libs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-libs-debuginfo-1.15.10-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "flatpak-session-helper",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-session-helper-1.15.10-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "flatpak-libs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-libs-1.15.10-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "flatpak-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-devel-1.15.10-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "flatpak-tests",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-tests-1.15.10-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "flatpak-selinux",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-selinux-1.15.10-1.amzn2023.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "flatpak",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-1.15.10-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "flatpak-tests-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-tests-debuginfo-1.15.10-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "flatpak-debugsource",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-debugsource-1.15.10-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "flatpak-tests-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-tests-debuginfo-1.15.10-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "flatpak-session-helper-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-session-helper-debuginfo-1.15.10-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "flatpak-session-helper",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-session-helper-1.15.10-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "flatpak-libs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-libs-debuginfo-1.15.10-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "flatpak-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-debuginfo-1.15.10-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "flatpak-libs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-libs-1.15.10-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "flatpak-tests",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-tests-1.15.10-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "flatpak-debugsource",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-debugsource-1.15.10-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "flatpak-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-devel-1.15.10-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "flatpak",
+					"Release": "1.amzn2023.0.1",
+					"Version": "1.15.10",
+					"Filename": "Packages/flatpak-1.15.10-1.amzn2023.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
