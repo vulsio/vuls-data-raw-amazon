@@ -1,0 +1,113 @@
+{
+	"ID": "ALAS2-2024-2681",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2681: important priority package update for libgsf",
+	"Issued": {
+		"Date": "2024-10-24 23:54:00"
+	},
+	"Updated": {
+		"Date": "2024-10-24 23:54:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-42415:\n\tAn integer overflow vulnerability exists in the Compound Document Binary File format parser of v1.14.52 of the GNOME Project G Structured File Library (libgsf). A specially crafted file can result in an integer overflow that allows for a heap-based buffer overflow when processing the sector allocation table. This can lead to arbitrary code execution. An attacker can provide a malicious file to trigger this vulnerability.\n\nCVE-2024-36474:\n\tAn integer overflow vulnerability exists in the Compound Document Binary File format parser of the GNOME Project G Structured File Library (libgsf) version v1.14.52. A specially crafted file can result in an integer overflow when processing the directory from the file that allows for an out-of-bounds index to be used when reading and writing to an array. This can lead to arbitrary code execution. An attacker can provide a malicious file to trigger this vulnerability.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-36474",
+				"ID": "CVE-2024-36474",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-42415",
+				"ID": "CVE-2024-42415",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libgsf",
+					"Release": "7.amzn2.0.3",
+					"Version": "1.14.26",
+					"Filename": "Packages/libgsf-1.14.26-7.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libgsf-devel",
+					"Release": "7.amzn2.0.3",
+					"Version": "1.14.26",
+					"Filename": "Packages/libgsf-devel-1.14.26-7.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libgsf-debuginfo",
+					"Release": "7.amzn2.0.3",
+					"Version": "1.14.26",
+					"Filename": "Packages/libgsf-debuginfo-1.14.26-7.amzn2.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libgsf",
+					"Release": "7.amzn2.0.3",
+					"Version": "1.14.26",
+					"Filename": "Packages/libgsf-1.14.26-7.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libgsf-devel",
+					"Release": "7.amzn2.0.3",
+					"Version": "1.14.26",
+					"Filename": "Packages/libgsf-devel-1.14.26-7.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libgsf-debuginfo",
+					"Release": "7.amzn2.0.3",
+					"Version": "1.14.26",
+					"Filename": "Packages/libgsf-debuginfo-1.14.26-7.amzn2.0.3.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libgsf",
+					"Release": "7.amzn2.0.3",
+					"Version": "1.14.26",
+					"Filename": "Packages/libgsf-1.14.26-7.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libgsf-devel",
+					"Release": "7.amzn2.0.3",
+					"Version": "1.14.26",
+					"Filename": "Packages/libgsf-devel-1.14.26-7.amzn2.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libgsf-debuginfo",
+					"Release": "7.amzn2.0.3",
+					"Version": "1.14.26",
+					"Filename": "Packages/libgsf-debuginfo-1.14.26-7.amzn2.0.3.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
