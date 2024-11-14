@@ -1,0 +1,211 @@
+{
+	"ID": "ALAS2PYTHON3.8-2024-016",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Python3.8 2.0 - ALAS2PYTHON3.8-2024-016: important priority package update for python38",
+	"Issued": {
+		"Date": "2024-11-08 17:57:00"
+	},
+	"Updated": {
+		"Date": "2024-11-08 17:57:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Python3.8 that fix the following vulnerabilities:\nCVE-2024-8088:\n\tThere is a severity vulnerability affecting the CPython \"zipfile\"\nmodule.\n\nWhen iterating over names of entries in a zip archive (for example, methods\nof \"zipfile.ZipFile\" like \"namelist()\", \"iterdir()\", \"extractall()\", etc)\nthe process can be put into an infinite loop with a maliciously crafted\nzip archive. This defect applies when reading only metadata or extracting\nthe contents of the zip archive. Programs that are not handling\nuser-controlled zip archives are not affected.\n\nCVE-2024-7592:\n\tThere is a LOW severity vulnerability affecting CPython, specifically the\n'http.cookies' standard library module.\n\n\nWhen parsing cookies that contained backslashes for quoted characters in\nthe cookie value, the parser would use an algorithm with quadratic\ncomplexity, resulting in excess CPU resources being used while parsing the\nvalue.\n\nCVE-2024-6923:\n\tThere is a MEDIUM severity vulnerability affecting CPython.\n\nThe \nemail module didn't properly quote newlines for email headers when \nserializing an email message allowing for header injection when an email\n is serialized.\n\nCVE-2024-6232:\n\tThere is a MEDIUM severity vulnerability affecting CPython.\n\n\n\n\n\nRegular expressions that allowed excessive backtracking during tarfile.TarFile header parsing are vulnerable to ReDoS via specifically-crafted tar archives.\n\nCVE-2024-4032:\n\tThe \"ipaddress\" module contained incorrect information about whether certain IPv4 and IPv6 addresses were designated as \"globally reachable\" or \"private\". This affected the is_private and is_global properties of the ipaddress.IPv4Address, ipaddress.IPv4Network, ipaddress.IPv6Address, and ipaddress.IPv6Network classes, where values wouldn't be returned in accordance with the latest information from the IANA Special-Purpose Address Registries.\n\nCPython 3.12.4 and 3.13.0a6 contain updated information from these registries and thus have the intended behavior.\n\nCVE-2024-0450:\n\tAn issue was found in the CPython `zipfile` module affecting versions 3.12.2, 3.11.8, 3.10.13, 3.9.18, and 3.8.18 and prior.\n\nThe zipfile module is vulnerable to \"quoted-overlap\" zip-bombs which exploit the zip format to create a zip-bomb with a high compression ratio. The fixed versions of CPython makes the zipfile module reject zip archives which overlap entries in the archive.\n\nCVE-2024-0397:\n\tA defect was discovered in the Python \"ssl\" module where there is a memory\nrace condition with the ssl.SSLContext methods \"cert_store_stats()\" and\n\"get_ca_certs()\". The race condition can be triggered if the methods are\ncalled at the same time as certificates are loaded into the SSLContext,\nsuch as during the TLS handshake with a certificate directory configured.\nThis issue is fixed in CPython 3.10.14, 3.11.9, 3.12.3, and 3.13.0a5.\n\nCVE-2021-28861:\n\tPython 3.x through 3.10 has an open redirection vulnerability in lib/http/server.py due to no protection against multiple (/) at the beginning of URI path which may leads to information disclosure. NOTE: this is disputed by a third party because the http.server.html documentation page states \"Warning: http.server is not recommended for production. It only implements basic security checks.\"\n\nCVE-2007-4559:\n\tDirectory traversal vulnerability in the (1) extract and (2) extractall functions in the tarfile module in Python allows user-assisted remote attackers to overwrite arbitrary files via a .. (dot dot) sequence in filenames in a TAR archive, a related issue to CVE-2001-1267.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-4559",
+				"ID": "CVE-2007-4559",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-28861",
+				"ID": "CVE-2021-28861",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0397",
+				"ID": "CVE-2024-0397",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-0450",
+				"ID": "CVE-2024-0450",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-4032",
+				"ID": "CVE-2024-4032",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-6232",
+				"ID": "CVE-2024-6232",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-6923",
+				"ID": "CVE-2024-6923",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-7592",
+				"ID": "CVE-2024-7592",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-8088",
+				"ID": "CVE-2024-8088",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---python3.8",
+			"Name": "Amazon Linux 2 - Python3.8",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python38",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.8.20",
+					"Filename": "Packages/python38-3.8.20-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python38-libs",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.8.20",
+					"Filename": "Packages/python38-libs-3.8.20-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python38-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.8.20",
+					"Filename": "Packages/python38-devel-3.8.20-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python38-tools",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.8.20",
+					"Filename": "Packages/python38-tools-3.8.20-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python38-tkinter",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.8.20",
+					"Filename": "Packages/python38-tkinter-3.8.20-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python38-test",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.8.20",
+					"Filename": "Packages/python38-test-3.8.20-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python38-debug",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.8.20",
+					"Filename": "Packages/python38-debug-3.8.20-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python38-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.8.20",
+					"Filename": "Packages/python38-debuginfo-3.8.20-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python38",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.8.20",
+					"Filename": "Packages/python38-3.8.20-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python38-libs",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.8.20",
+					"Filename": "Packages/python38-libs-3.8.20-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python38-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.8.20",
+					"Filename": "Packages/python38-devel-3.8.20-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python38-tools",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.8.20",
+					"Filename": "Packages/python38-tools-3.8.20-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python38-tkinter",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.8.20",
+					"Filename": "Packages/python38-tkinter-3.8.20-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python38-test",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.8.20",
+					"Filename": "Packages/python38-test-3.8.20-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python38-debug",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.8.20",
+					"Filename": "Packages/python38-debug-3.8.20-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python38-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "3.8.20",
+					"Filename": "Packages/python38-debuginfo-3.8.20-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
