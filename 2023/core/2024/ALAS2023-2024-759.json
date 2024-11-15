@@ -1,0 +1,121 @@
+{
+	"ID": "ALAS2023-2024-759",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-759: Important priority package update for expat",
+	"Issued": {
+		"Date": "2024-11-13 12:28:00"
+	},
+	"Updated": {
+		"Date": "2024-11-13 12:28:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-45490:\n\tAn issue was discovered in libexpat before 2.6.3. xmlparse.c does not reject a negative length for XML_ParseBuffer.\n\nCVE-2023-52425:\n\tlibexpat through 2.5.0 allows a denial of service (resource consumption) because many full reparsings are required in the case of a large token for which multiple buffer fills are needed.\n\nConsidering the tradeoff between the stability of Amazon Linux and the impact of CVE-2023-52425 a fix will not be provided for firefox and thunderbird in Amazon Linux 2 at this time.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52425",
+				"ID": "CVE-2023-52425",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45490",
+				"ID": "CVE-2024-45490",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "expat-static",
+					"Release": "1.amzn2023.0.1",
+					"Version": "2.6.3",
+					"Filename": "Packages/expat-static-2.6.3-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "expat-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "2.6.3",
+					"Filename": "Packages/expat-devel-2.6.3-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "expat",
+					"Release": "1.amzn2023.0.1",
+					"Version": "2.6.3",
+					"Filename": "Packages/expat-2.6.3-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "expat-debugsource",
+					"Release": "1.amzn2023.0.1",
+					"Version": "2.6.3",
+					"Filename": "Packages/expat-debugsource-2.6.3-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "expat-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "2.6.3",
+					"Filename": "Packages/expat-debuginfo-2.6.3-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "expat-static",
+					"Release": "1.amzn2023.0.1",
+					"Version": "2.6.3",
+					"Filename": "Packages/expat-static-2.6.3-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "expat-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "2.6.3",
+					"Filename": "Packages/expat-debuginfo-2.6.3-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "expat",
+					"Release": "1.amzn2023.0.1",
+					"Version": "2.6.3",
+					"Filename": "Packages/expat-2.6.3-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "expat-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "2.6.3",
+					"Filename": "Packages/expat-devel-2.6.3-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "expat-debugsource",
+					"Release": "1.amzn2023.0.1",
+					"Version": "2.6.3",
+					"Filename": "Packages/expat-debugsource-2.6.3-1.amzn2023.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

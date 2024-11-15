@@ -10,10 +10,10 @@
 		"Date": "2024-10-24 16:45:00"
 	},
 	"Updated": {
-		"Date": "2024-11-08 17:57:00"
+		"Date": "2024-10-24 16:45:00"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.15 that fix the following vulnerabilities:\nCVE-2024-47685:\n\tsyzbot reported that nf_reject_ip6_tcphdr_put() was possibly sending garbage on the four reserved tcp bits (th->res1)\n\nUse skb_put_zero() to clear the whole TCP header, as done in nf_reject_ip_tcphdr_put()\n\nCVE-2024-46865:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nfou: fix initialization of grc\n\nCVE-2024-46858:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: pm: Fix uaf in __timer_delete_sync\n\nCVE-2024-46855:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nft_socket: fix sk refcount leaks\n\nCVE-2024-46695:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nselinux,smack: don't bypass permissions check in inode_setsecctx hook\n\nCVE-2024-38632:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nvfio/pci: fix potential memory leak in vfio_intx_enable()\n\nCVE-2024-26921:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ninet: inet_defrag: prevent sk release while still in use\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.15 that fix the following vulnerabilities:\nCVE-2024-46865:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nfou: fix initialization of grc\n\nCVE-2024-46858:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: pm: Fix uaf in __timer_delete_sync\n\nCVE-2024-46855:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nft_socket: fix sk refcount leaks\n\nCVE-2024-46695:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nselinux,smack: don't bypass permissions check in inode_setsecctx hook\n\nCVE-2024-38632:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nvfio/pci: fix potential memory leak in vfio_intx_enable()\n\nCVE-2024-26921:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ninet: inet_defrag: prevent sk release while still in use\n",
 	"References": {
 		"Reference": [
 			{
@@ -49,12 +49,6 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-46865",
 				"ID": "CVE-2024-46865",
-				"Title": "",
-				"Type": "cve"
-			},
-			{
-				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-47685",
-				"ID": "CVE-2024-47685",
 				"Title": "",
 				"Type": "cve"
 			}
