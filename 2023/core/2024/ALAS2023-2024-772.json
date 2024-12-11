@@ -1,0 +1,119 @@
+{
+	"ID": "ALAS2023-2024-772",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-772: Important priority package update for libsoup",
+	"Issued": {
+		"Date": "2024-12-05 20:34:00"
+	},
+	"Updated": {
+		"Date": "2024-12-05 20:34:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-52532:\n\tGNOME libsoup before 3.6.1 has an infinite loop, and memory consumption. during the reading of certain patterns of WebSocket data from clients.\n\nCVE-2024-52531:\n\tGNOME libsoup before 3.6.1 allows a buffer overflow in applications that perform conversion to UTF-8 in soup_header_parse_param_list_strict. Input received over the network cannot trigger this.\n\nCVE-2024-52530:\n\tGNOME libsoup before 3.6.0 allows HTTP request smuggling in some configurations because '\\0' characters at the end of header names are ignored, i.e., a \"Transfer-Encoding\\0: chunked\" header is treated the same as a \"Transfer-Encoding: chunked\" header.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52530",
+				"ID": "CVE-2024-52530",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52531",
+				"ID": "CVE-2024-52531",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52532",
+				"ID": "CVE-2024-52532",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsoup-debuginfo",
+					"Release": "6.amzn2023.0.3",
+					"Version": "2.72.0",
+					"Filename": "Packages/libsoup-debuginfo-2.72.0-6.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "libsoup-doc",
+					"Release": "6.amzn2023.0.3",
+					"Version": "2.72.0",
+					"Filename": "Packages/libsoup-doc-2.72.0-6.amzn2023.0.3.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsoup-devel",
+					"Release": "6.amzn2023.0.3",
+					"Version": "2.72.0",
+					"Filename": "Packages/libsoup-devel-2.72.0-6.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsoup",
+					"Release": "6.amzn2023.0.3",
+					"Version": "2.72.0",
+					"Filename": "Packages/libsoup-2.72.0-6.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libsoup-debugsource",
+					"Release": "6.amzn2023.0.3",
+					"Version": "2.72.0",
+					"Filename": "Packages/libsoup-debugsource-2.72.0-6.amzn2023.0.3.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libsoup-debuginfo",
+					"Release": "6.amzn2023.0.3",
+					"Version": "2.72.0",
+					"Filename": "Packages/libsoup-debuginfo-2.72.0-6.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libsoup-debugsource",
+					"Release": "6.amzn2023.0.3",
+					"Version": "2.72.0",
+					"Filename": "Packages/libsoup-debugsource-2.72.0-6.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libsoup-devel",
+					"Release": "6.amzn2023.0.3",
+					"Version": "2.72.0",
+					"Filename": "Packages/libsoup-devel-2.72.0-6.amzn2023.0.3.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libsoup",
+					"Release": "6.amzn2023.0.3",
+					"Version": "2.72.0",
+					"Filename": "Packages/libsoup-2.72.0-6.amzn2023.0.3.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

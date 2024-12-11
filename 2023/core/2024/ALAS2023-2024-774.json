@@ -1,0 +1,269 @@
+{
+	"ID": "ALAS2023-2024-774",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-774: Important priority package update for ghostscript",
+	"Issued": {
+		"Date": "2024-12-05 20:34:00"
+	},
+	"Updated": {
+		"Date": "2024-12-05 20:34:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-46956:\n\tPostScript interpreter - fix buffer length check\n\nNOTE: https://bugs.ghostscript.com/show_bug.cgi?id=707895\nNOTE: https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/commit/?id=f4151f12db32cd3ed26c24327de714bf2c3ed6ca\nNOTE: https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/commit/?id=ea69a1388245ad959d31c272b5ba66d40cebba2c (ghostpdl-10.04.0)\n\nCVE-2024-46953:\n\tCheck for overflow validating format string\n\nNOTE: https://bugs.ghostscript.com/show_bug.cgi?id=707793\nNOTE: https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/commit/?id=1f21a45df0fa3abec4cff12951022b192dda3c00\nNOTE: https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/commit/?id=294a3755e33f453dd92e2a7c4cfceb087ac09d6a (ghostpdl-10.04.0)\n\nCVE-2024-46952:\n\tPDF interpreter - sanitise W array values in Xref streams\n\nNOTE: https://bugs.ghostscript.com/show_bug.cgi?id=708001\nNOTE: https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/commit/?id=b1f0827c30f59a2dcbc8a39e42cace7a1de35f7f\nNOTE: https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/commit/?id=1fb76aaddac34530242dfbb9579d9997dae41264 (ghostpdl-10.04.0)\n\nCVE-2024-46951:\n\tPS interpreter - check the type of the Pattern Implementation\n\nNOTE: https://bugs.ghostscript.com/show_bug.cgi?id=707991\nNOTE: https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/commit/?id=f49812186baa7d1362880673408a6fbe8719b4f8\nNOTE: https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/commit/?id=ada21374f0c90cc3acf7ce0e96302394560c7aee (ghostpdl-10.04.0)\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-46951",
+				"ID": "CVE-2024-46951",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-46952",
+				"ID": "CVE-2024-46952",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-46953",
+				"ID": "CVE-2024-46953",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-46956",
+				"ID": "CVE-2024-46956",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ghostscript-gtk",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-gtk-9.56.1-7.amzn2023.0.11.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ghostscript-tools-printing",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-tools-printing-9.56.1-7.amzn2023.0.11.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libgs-debuginfo",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/libgs-debuginfo-9.56.1-7.amzn2023.0.11.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ghostscript-tools-dvipdf",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-tools-dvipdf-9.56.1-7.amzn2023.0.11.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libgs-devel",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/libgs-devel-9.56.1-7.amzn2023.0.11.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ghostscript-debuginfo",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-debuginfo-9.56.1-7.amzn2023.0.11.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ghostscript",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-9.56.1-7.amzn2023.0.11.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ghostscript-x11-debuginfo",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-x11-debuginfo-9.56.1-7.amzn2023.0.11.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ghostscript-x11",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-x11-9.56.1-7.amzn2023.0.11.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ghostscript-gtk-debuginfo",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-gtk-debuginfo-9.56.1-7.amzn2023.0.11.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ghostscript-tools-fonts",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-tools-fonts-9.56.1-7.amzn2023.0.11.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "ghostscript-doc",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-doc-9.56.1-7.amzn2023.0.11.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libgs",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/libgs-9.56.1-7.amzn2023.0.11.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ghostscript-debugsource",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-debugsource-9.56.1-7.amzn2023.0.11.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "ghostscript-debuginfo",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-debuginfo-9.56.1-7.amzn2023.0.11.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libgs-debuginfo",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/libgs-debuginfo-9.56.1-7.amzn2023.0.11.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "ghostscript-tools-fonts",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-tools-fonts-9.56.1-7.amzn2023.0.11.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "ghostscript-tools-dvipdf",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-tools-dvipdf-9.56.1-7.amzn2023.0.11.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libgs-devel",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/libgs-devel-9.56.1-7.amzn2023.0.11.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "ghostscript-tools-printing",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-tools-printing-9.56.1-7.amzn2023.0.11.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "ghostscript-x11-debuginfo",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-x11-debuginfo-9.56.1-7.amzn2023.0.11.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "ghostscript-x11",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-x11-9.56.1-7.amzn2023.0.11.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "ghostscript-gtk",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-gtk-9.56.1-7.amzn2023.0.11.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libgs",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/libgs-9.56.1-7.amzn2023.0.11.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "ghostscript",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-9.56.1-7.amzn2023.0.11.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "ghostscript-gtk-debuginfo",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-gtk-debuginfo-9.56.1-7.amzn2023.0.11.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "ghostscript-debugsource",
+					"Release": "7.amzn2023.0.11",
+					"Version": "9.56.1",
+					"Filename": "Packages/ghostscript-debugsource-9.56.1-7.amzn2023.0.11.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

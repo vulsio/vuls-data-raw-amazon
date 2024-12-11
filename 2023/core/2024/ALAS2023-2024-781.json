@@ -1,0 +1,51 @@
+{
+	"ID": "ALAS2023-2024-781",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-781: Medium priority package update for python-pip",
+	"Issued": {
+		"Date": "2024-12-05 20:34:00"
+	},
+	"Updated": {
+		"Date": "2024-12-05 20:34:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-35195:\n\tRequests is a HTTP library. Prior to 2.32.0, when making requests through a Requests `Session`, if the first request is made with `verify=False` to disable cert verification, all subsequent requests to the same host will continue to ignore cert verification regardless of changes to the value of `verify`. This behavior will continue for the lifecycle of the connection in the connection pool. This vulnerability is fixed in 2.32.0.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-35195",
+				"ID": "CVE-2024-35195",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python3-pip-wheel",
+					"Release": "2.amzn2023.0.10",
+					"Version": "21.3.1",
+					"Filename": "Packages/python3-pip-wheel-21.3.1-2.amzn2023.0.10.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python3-pip",
+					"Release": "2.amzn2023.0.10",
+					"Version": "21.3.1",
+					"Filename": "Packages/python3-pip-21.3.1-2.amzn2023.0.10.noarch.rpm"
+				}
+			]
+		}
+	}
+}

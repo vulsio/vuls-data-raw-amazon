@@ -1,0 +1,525 @@
+{
+	"ID": "ALAS2023-2024-786",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-786: Important priority package update for postgresql16",
+	"Issued": {
+		"Date": "2024-12-05 20:34:00"
+	},
+	"Updated": {
+		"Date": "2024-12-05 20:34:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-10979:\n\tIncorrect control of environment variables in PostgreSQL PL/Perl allows an unprivileged database user to change sensitive process environment variables (e.g. PATH).  That often suffices to enable arbitrary code execution, even if the attacker lacks a database server operating system user.  Versions before PostgreSQL 17.1, 16.5, 15.9, 14.14, 13.17, and 12.21 are affected.\n\nCVE-2024-10978:\n\tIncorrect privilege assignment in PostgreSQL allows a less-privileged application user to view or change different rows from those intended.  An attack requires the application to use SET ROLE, SET SESSION AUTHORIZATION, or an equivalent feature.  The problem arises when an application query uses parameters from the attacker or conveys query results to the attacker.  If that query reacts to current_setting('role') or the current user ID, it may modify or return data as though the session had not used SET ROLE or SET SESSION AUTHORIZATION.  The attacker does not control which incorrect user ID applies.  Query text from less-privileged sources is not a concern here, because SET ROLE and SET SESSION AUTHORIZATION are not sandboxes for unvetted queries.  Versions before PostgreSQL 17.1, 16.5, 15.9, 14.14, 13.17, and 12.21 are affected.\n\nCVE-2024-10977:\n\tClient use of server error message in PostgreSQL allows a server not trusted under current SSL or GSS settings to furnish arbitrary non-NUL bytes to the libpq application. For example, a man-in-the-middle attacker could send a long error message that a human or screen-scraper user of psql mistakes for valid query results. This is probably not a concern for clients where the user interface unambiguously indicates the boundary between one error message and other text. Versions before PostgreSQL 17.1, 16.5, 15.9, 14.14, 13.17, and 12.21 are affected.\n\nCVE-2024-10976:\n\tIncomplete tracking in PostgreSQL of tables with row security allows a reused query to view or change different rows from those intended.  CVE-2023-2455 and CVE-2016-2193 fixed most interaction between row security and user ID changes.  They missed cases where a subquery, WITH query, security invoker view, or SQL-language function references a table with a row-level security policy.  This has the same consequences as the two earlier CVEs.  That is to say, it leads to potentially incorrect policies being applied in cases where role-specific policies are used and a given query is planned under one role and then executed under other roles.  This scenario can happen under security definer functions or when a common user and query is planned initially and then re-used across multiple SET ROLEs.  Applying an incorrect policy may permit a user to complete otherwise-forbidden reads and modifications.  This affects only databases that have used CREATE POLICY to define a row security policy.  An attacker must tailor an attack to a particular application's pattern of query plan reuse, user ID changes, and role-specific row security policies.  Versions before PostgreSQL 17.1, 16.5, 15.9, 14.14, 13.17, and 12.21 are affected.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10976",
+				"ID": "CVE-2024-10976",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10977",
+				"ID": "CVE-2024-10977",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10978",
+				"ID": "CVE-2024-10978",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-10979",
+				"ID": "CVE-2024-10979",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-test-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-test-debuginfo-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-plperl-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-plperl-debuginfo-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-private-libs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-private-libs-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-static",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-static-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-upgrade-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-upgrade-debuginfo-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-server-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-server-debuginfo-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-server-devel-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-server-devel-debuginfo-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-upgrade-devel-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-upgrade-devel-debuginfo-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-llvmjit-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-llvmjit-debuginfo-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-plpython3-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-plpython3-debuginfo-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-pltcl-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-pltcl-debuginfo-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-plpython3",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-plpython3-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-docs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-docs-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-plperl",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-plperl-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-private-libs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-private-libs-debuginfo-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-private-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-private-devel-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-contrib-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-contrib-debuginfo-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-test",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-test-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "postgresql16-test-rpm-macros",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-test-rpm-macros-16.5-1.amzn2023.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-pltcl",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-pltcl-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-docs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-docs-debuginfo-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-upgrade",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-upgrade-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-debuginfo-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-upgrade-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-upgrade-devel-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-server",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-server-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-contrib",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-contrib-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-llvmjit",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-llvmjit-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-server-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-server-devel-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "postgresql16-debugsource",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-debugsource-16.5-1.amzn2023.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-server-devel-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-server-devel-debuginfo-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-upgrade-devel-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-upgrade-devel-debuginfo-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-pltcl",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-pltcl-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-server-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-server-debuginfo-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-debuginfo-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-private-libs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-private-libs-debuginfo-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-plpython3",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-plpython3-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-llvmjit-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-llvmjit-debuginfo-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-private-libs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-private-libs-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-private-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-private-devel-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-server-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-server-devel-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-pltcl-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-pltcl-debuginfo-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-plperl",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-plperl-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-plperl-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-plperl-debuginfo-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-plpython3-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-plpython3-debuginfo-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-server",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-server-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-contrib-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-contrib-debuginfo-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-upgrade",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-upgrade-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-docs",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-docs-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-test",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-test-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-static",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-static-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-test-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-test-debuginfo-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-docs-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-docs-debuginfo-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-upgrade-devel",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-upgrade-devel-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-upgrade-debuginfo",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-upgrade-debuginfo-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-contrib",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-contrib-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-llvmjit",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-llvmjit-16.5-1.amzn2023.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "postgresql16-debugsource",
+					"Release": "1.amzn2023.0.1",
+					"Version": "16.5",
+					"Filename": "Packages/postgresql16-debugsource-16.5-1.amzn2023.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
