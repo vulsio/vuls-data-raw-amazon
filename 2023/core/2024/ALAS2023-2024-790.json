@@ -1,0 +1,217 @@
+{
+	"ID": "ALAS2023-2024-790",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2024-790: Important priority package update for python3.9",
+	"Issued": {
+		"Date": "2024-12-12 20:19:00"
+	},
+	"Updated": {
+		"Date": "2024-12-12 20:19:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-8088:\n\tThere is a severity vulnerability affecting the CPython \"zipfile\"\nmodule.\n\nWhen iterating over names of entries in a zip archive (for example, methods\nof \"zipfile.ZipFile\" like \"namelist()\", \"iterdir()\", \"extractall()\", etc)\nthe process can be put into an infinite loop with a maliciously crafted\nzip archive. This defect applies when reading only metadata or extracting\nthe contents of the zip archive. Programs that are not handling\nuser-controlled zip archives are not affected.\n\nCVE-2024-7592:\n\tThere is a LOW severity vulnerability affecting CPython, specifically the\n'http.cookies' standard library module.\n\n\nWhen parsing cookies that contained backslashes for quoted characters in\nthe cookie value, the parser would use an algorithm with quadratic\ncomplexity, resulting in excess CPU resources being used while parsing the\nvalue.\n\nCVE-2024-6923:\n\tThere is a MEDIUM severity vulnerability affecting CPython.\n\nThe \nemail module didn't properly quote newlines for email headers when \nserializing an email message allowing for header injection when an email\n is serialized.\n\nCVE-2024-6232:\n\tThere is a MEDIUM severity vulnerability affecting CPython.\n\n\n\n\n\nRegular expressions that allowed excessive backtracking during tarfile.TarFile header parsing are vulnerable to ReDoS via specifically-crafted tar archives.\n\nCVE-2024-4032:\n\tThe \"ipaddress\" module contained incorrect information about whether certain IPv4 and IPv6 addresses were designated as \"globally reachable\" or \"private\". This affected the is_private and is_global properties of the ipaddress.IPv4Address, ipaddress.IPv4Network, ipaddress.IPv6Address, and ipaddress.IPv6Network classes, where values wouldn't be returned in accordance with the latest information from the IANA Special-Purpose Address Registries.\n\nCPython 3.12.4 and 3.13.0a6 contain updated information from these registries and thus have the intended behavior.\n\nCVE-2023-27043:\n\tThe email module of Python through 3.11.3 incorrectly parses e-mail addresses that contain a special character. The wrong portion of an RFC2822 header is identified as the value of the addr-spec. In some applications, an attacker can bypass a protection mechanism in which application access is granted only after verifying receipt of e-mail to a specific domain (e.g., only @company.example.com addresses may be used for signup). This occurs in email/_parseaddr.py in recent versions of Python.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-27043",
+				"ID": "CVE-2023-27043",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-4032",
+				"ID": "CVE-2024-4032",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-6232",
+				"ID": "CVE-2024-6232",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-6923",
+				"ID": "CVE-2024-6923",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-7592",
+				"ID": "CVE-2024-7592",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-8088",
+				"ID": "CVE-2024-8088",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-devel",
+					"Release": "1.amzn2023.0.2",
+					"Version": "3.9.20",
+					"Filename": "Packages/python3-devel-3.9.20-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python-unversioned-command",
+					"Release": "1.amzn2023.0.2",
+					"Version": "3.9.20",
+					"Filename": "Packages/python-unversioned-command-3.9.20-1.amzn2023.0.2.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.9-debugsource",
+					"Release": "1.amzn2023.0.2",
+					"Version": "3.9.20",
+					"Filename": "Packages/python3.9-debugsource-3.9.20-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3",
+					"Release": "1.amzn2023.0.2",
+					"Version": "3.9.20",
+					"Filename": "Packages/python3-3.9.20-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-tkinter",
+					"Release": "1.amzn2023.0.2",
+					"Version": "3.9.20",
+					"Filename": "Packages/python3-tkinter-3.9.20-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-debug",
+					"Release": "1.amzn2023.0.2",
+					"Version": "3.9.20",
+					"Filename": "Packages/python3-debug-3.9.20-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-idle",
+					"Release": "1.amzn2023.0.2",
+					"Version": "3.9.20",
+					"Filename": "Packages/python3-idle-3.9.20-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.9-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "3.9.20",
+					"Filename": "Packages/python3.9-debuginfo-3.9.20-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-libs",
+					"Release": "1.amzn2023.0.2",
+					"Version": "3.9.20",
+					"Filename": "Packages/python3-libs-3.9.20-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-test",
+					"Release": "1.amzn2023.0.2",
+					"Version": "3.9.20",
+					"Filename": "Packages/python3-test-3.9.20-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.9-debugsource",
+					"Release": "1.amzn2023.0.2",
+					"Version": "3.9.20",
+					"Filename": "Packages/python3.9-debugsource-3.9.20-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3",
+					"Release": "1.amzn2023.0.2",
+					"Version": "3.9.20",
+					"Filename": "Packages/python3-3.9.20-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-tkinter",
+					"Release": "1.amzn2023.0.2",
+					"Version": "3.9.20",
+					"Filename": "Packages/python3-tkinter-3.9.20-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-devel",
+					"Release": "1.amzn2023.0.2",
+					"Version": "3.9.20",
+					"Filename": "Packages/python3-devel-3.9.20-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-idle",
+					"Release": "1.amzn2023.0.2",
+					"Version": "3.9.20",
+					"Filename": "Packages/python3-idle-3.9.20-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-debug",
+					"Release": "1.amzn2023.0.2",
+					"Version": "3.9.20",
+					"Filename": "Packages/python3-debug-3.9.20-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.9-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "3.9.20",
+					"Filename": "Packages/python3.9-debuginfo-3.9.20-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-libs",
+					"Release": "1.amzn2023.0.2",
+					"Version": "3.9.20",
+					"Filename": "Packages/python3-libs-3.9.20-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-test",
+					"Release": "1.amzn2023.0.2",
+					"Version": "3.9.20",
+					"Filename": "Packages/python3-test-3.9.20-1.amzn2023.0.2.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
