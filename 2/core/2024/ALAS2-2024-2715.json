@@ -1,0 +1,59 @@
+{
+	"ID": "ALAS2-2024-2715",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2715: medium priority package update for python-pip",
+	"Issued": {
+		"Date": "2024-12-05 01:02:00"
+	},
+	"Updated": {
+		"Date": "2024-12-05 01:02:00"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-35195:\n\tRequests is a HTTP library. Prior to 2.32.0, when making requests through a Requests `Session`, if the first request is made with `verify=False` to disable cert verification, all subsequent requests to the same host will continue to ignore cert verification regardless of changes to the value of `verify`. This behavior will continue for the lifecycle of the connection in the connection pool. This vulnerability is fixed in 2.32.0.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-35195",
+				"ID": "CVE-2024-35195",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python2-pip",
+					"Release": "1.amzn2.0.8",
+					"Version": "20.2.2",
+					"Filename": "Packages/python2-pip-20.2.2-1.amzn2.0.8.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python3-pip",
+					"Release": "1.amzn2.0.8",
+					"Version": "20.2.2",
+					"Filename": "Packages/python3-pip-20.2.2-1.amzn2.0.8.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python-pip-wheel",
+					"Release": "1.amzn2.0.8",
+					"Version": "20.2.2",
+					"Filename": "Packages/python-pip-wheel-20.2.2-1.amzn2.0.8.noarch.rpm"
+				}
+			]
+		}
+	}
+}

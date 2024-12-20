@@ -10,10 +10,10 @@
 		"Date": "2022-01-20 23:56:00"
 	},
 	"Updated": {
-		"Date": "2024-11-08 17:57:00"
+		"Date": "2024-12-05 01:00:00"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2021-47378:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnvme-rdma: destroy cm id before destroy qp to avoid use after free\n\nCVE-2021-43267:\n\tA flaw was discovered in the cryptographic receive code in the Linux kernel's implementation of transparent interprocess communication. An attacker, with the ability to send TIPC messages to the target, can corrupt memory and escalate privileges on the target system.\n\nCVE-2021-41864:\n\tAn out-of-bounds (OOB) memory write flaw was found in prealloc_elems_and_freelist in kernel/bpf/stackmap.c in the bpf in the Linux kernel. In this flaw, the multiplication to calculate the size could lead to an integer overflow which could allow a local attacker, with a special user privilege, to gain access to out-of-bounds memory leading to a system crash or a leak of internal kernel information.\n\nCVE-2021-3764:\n\tA memory leak flaw was found in the Linux kernel's ccp_run_aes_gcm_cmd() function that allows an attacker to cause a denial of service. The vulnerability is similar to the older CVE-2019-18808. The highest threat from this vulnerability is to system availability.\n\nCVE-2021-3744:\n\tA flaw was found in the Linux kernel. A memory leak in the ccp-ops crypto driver can allow attackers to cause a denial of service. This vulnerability is similar with the older CVE-2019-18808. The highest threat from this vulnerability is to system availability.\n\nCVE-2021-34866:\n\tThis vulnerability allows local attackers to escalate privileges on affected installations of Linux Kernel 5.14-rc3. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability. The specific flaw exists within the handling of eBPF programs. The issue results from the lack of proper validation of user-supplied eBPF programs, which can result in a type confusion condition. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of the kernel. Was ZDI-CAN-14689.\n\nCVE-2021-20321:\n\tA race condition accessing file object in the Linux kernel OverlayFS subsystem was found in the way users do rename in specific way with OverlayFS. A local user could use this flaw to crash the system.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2021-47408:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: conntrack: serialize hash resizes and cleanups\n\nCVE-2021-47407:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nKVM: x86: Handle SRCU initialization failure during page track init\n\nCVE-2021-47406:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: add error checking to ext4_ext_replay_set_iblocks()\n\nCVE-2021-47404:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nHID: betop: fix slab-out-of-bounds Write in betop_probe\n\nCVE-2021-47390:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nKVM: x86: Fix stack-out-of-bounds memory access from ioapic_write_indirect()\n\nCVE-2021-47387:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ncpufreq: schedutil: Use kobject release() method to free sugov_tunables\n\nCVE-2021-47386:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nhwmon: (w83791d) Fix NULL pointer dereference by removing unnecessary structure field\n\nCVE-2021-47384:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nhwmon: (w83793) Fix NULL pointer dereference by removing unnecessary structure field\n\nCVE-2021-47379:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nblk-cgroup: fix UAF by grabbing blkcg lock before destroying blkg pd\n\nCVE-2021-47378:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnvme-rdma: destroy cm id before destroy qp to avoid use after free\n\nCVE-2021-47376:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbpf: Add oversize check before call kvcalloc()\n\nCVE-2021-47373:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nirqchip/gic-v3-its: Fix potential VPE leak on error\n\nCVE-2021-47360:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbinder: make sure fd closes complete\n\nCVE-2021-43267:\n\tA flaw was discovered in the cryptographic receive code in the Linux kernel's implementation of transparent interprocess communication. An attacker, with the ability to send TIPC messages to the target, can corrupt memory and escalate privileges on the target system.\n\nCVE-2021-41864:\n\tAn out-of-bounds (OOB) memory write flaw was found in prealloc_elems_and_freelist in kernel/bpf/stackmap.c in the bpf in the Linux kernel. In this flaw, the multiplication to calculate the size could lead to an integer overflow which could allow a local attacker, with a special user privilege, to gain access to out-of-bounds memory leading to a system crash or a leak of internal kernel information.\n\nCVE-2021-3764:\n\tA memory leak flaw was found in the Linux kernel's ccp_run_aes_gcm_cmd() function that allows an attacker to cause a denial of service. The vulnerability is similar to the older CVE-2019-18808. The highest threat from this vulnerability is to system availability.\n\nCVE-2021-3744:\n\tA flaw was found in the Linux kernel. A memory leak in the ccp-ops crypto driver can allow attackers to cause a denial of service. This vulnerability is similar with the older CVE-2019-18808. The highest threat from this vulnerability is to system availability.\n\nCVE-2021-34866:\n\tThis vulnerability allows local attackers to escalate privileges on affected installations of Linux Kernel 5.14-rc3. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability. The specific flaw exists within the handling of eBPF programs. The issue results from the lack of proper validation of user-supplied eBPF programs, which can result in a type confusion condition. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of the kernel. Was ZDI-CAN-14689.\n\nCVE-2021-20321:\n\tA race condition accessing file object in the Linux kernel OverlayFS subsystem was found in the way users do rename in specific way with OverlayFS. A local user could use this flaw to crash the system.\n",
 	"References": {
 		"Reference": [
 			{
@@ -53,8 +53,80 @@
 				"Type": "cve"
 			},
 			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47360",
+				"ID": "CVE-2021-47360",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47373",
+				"ID": "CVE-2021-47373",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47376",
+				"ID": "CVE-2021-47376",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47378",
 				"ID": "CVE-2021-47378",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47379",
+				"ID": "CVE-2021-47379",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47384",
+				"ID": "CVE-2021-47384",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47386",
+				"ID": "CVE-2021-47386",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47387",
+				"ID": "CVE-2021-47387",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47390",
+				"ID": "CVE-2021-47390",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47404",
+				"ID": "CVE-2021-47404",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47406",
+				"ID": "CVE-2021-47406",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47407",
+				"ID": "CVE-2021-47407",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-47408",
+				"ID": "CVE-2021-47408",
 				"Title": "",
 				"Type": "cve"
 			}

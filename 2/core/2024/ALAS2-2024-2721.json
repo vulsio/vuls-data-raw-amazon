@@ -1,0 +1,107 @@
+{
+	"ID": "ALAS2-2024-2721",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2721: medium priority package update for apr",
+	"Issued": {
+		"Date": "2024-12-05 01:02:00"
+	},
+	"Updated": {
+		"Date": "2024-12-05 01:02:00"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-49582:\n\tLax permissions set by the Apache Portable Runtime library on Unix platforms would allow local users read access to named shared memory segments, potentially revealing sensitive application data. \n\nThis issue does not affect non-Unix platforms, or builds with APR_USE_SHMEM_SHMGET=1 (apr.h)\n\nUsers are recommended to upgrade to APR version 1.7.5, which fixes this issue.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-49582",
+				"ID": "CVE-2023-49582",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "apr",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.2",
+					"Filename": "Packages/apr-1.7.2-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "apr-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.2",
+					"Filename": "Packages/apr-devel-1.7.2-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "apr-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.2",
+					"Filename": "Packages/apr-debuginfo-1.7.2-1.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "apr",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.2",
+					"Filename": "Packages/apr-1.7.2-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "apr-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.2",
+					"Filename": "Packages/apr-devel-1.7.2-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "apr-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.2",
+					"Filename": "Packages/apr-debuginfo-1.7.2-1.amzn2.0.1.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "apr",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.2",
+					"Filename": "Packages/apr-1.7.2-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "apr-devel",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.2",
+					"Filename": "Packages/apr-devel-1.7.2-1.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "apr-debuginfo",
+					"Release": "1.amzn2.0.1",
+					"Version": "1.7.2",
+					"Filename": "Packages/apr-debuginfo-1.7.2-1.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

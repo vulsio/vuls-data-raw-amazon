@@ -10,10 +10,10 @@
 		"Date": "2024-08-01 03:01:00"
 	},
 	"Updated": {
-		"Date": "2024-09-12 18:30:00"
+		"Date": "2024-12-05 01:02:00"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-35925:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nblock: prevent division by zero in blk_rq_stat_sum()\n\nCVE-2024-35815:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nfs/aio: Check IOCB_AIO_RW before the struct aio_kiocb conversion\n\nCVE-2024-35809:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nPCI/PM: Drain runtime-idle callbacks before driver removal\n\nCVE-2024-27059:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nUSB: usb-storage: Prevent divide-by-0 error in isd200_ata_command\n\nCVE-2024-26976:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nKVM: Always flush async #PF workqueue when vCPU is being destroyed\n\nCVE-2024-26956:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnilfs2: fix failure to detect DAT corruption in btree and direct mappings\n\nCVE-2024-26955:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnilfs2: prevent kernel bug at submit_bh_wbc()\n\nCVE-2024-26931:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nscsi: qla2xxx: Fix command flush on cable pull\n\nCVE-2024-26642:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_tables: disallow anonymous set with timeout flag\n\nCVE-2024-25739:\n\tcreate_empty_lvol in drivers/mtd/ubi/vtbl.c in the Linux kernel through 6.7.4 can attempt to allocate zero bytes, and crash, because of a missing check for ubi->leb_size.\n\nCVE-2023-52620:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_tables: disallow timeout for anonymous sets\n\nCVE-2022-48627:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nvt: fix memory overlapping when deleting chars in the buffer\n",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-35944:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nVMCI: Fix memcpy() run-time warning in dg_dispatch_as_host()\n\nCVE-2024-35930:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nscsi: lpfc: Fix possible memory leak in lpfc_rcv_padisc()\n\nCVE-2024-35925:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nblock: prevent division by zero in blk_rq_stat_sum()\n\nCVE-2024-35910:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntcp: properly terminate timers for kernel sockets\n\nCVE-2024-35815:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nfs/aio: Check IOCB_AIO_RW before the struct aio_kiocb conversion\n\nCVE-2024-35809:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nPCI/PM: Drain runtime-idle callbacks before driver removal\n\nCVE-2024-27059:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nUSB: usb-storage: Prevent divide-by-0 error in isd200_ata_command\n\nCVE-2024-26976:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nKVM: Always flush async #PF workqueue when vCPU is being destroyed\n\nCVE-2024-26973:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nfat: fix uninitialized field in nostale filehandles\n\nCVE-2024-26956:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnilfs2: fix failure to detect DAT corruption in btree and direct mappings\n\nCVE-2024-26955:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnilfs2: prevent kernel bug at submit_bh_wbc()\n\nCVE-2024-26934:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nUSB: core: Fix deadlock in usb_deauthorize_interface()\n\nCVE-2024-26931:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nscsi: qla2xxx: Fix command flush on cable pull\n\nCVE-2024-26642:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_tables: disallow anonymous set with timeout flag\n\nCVE-2024-25739:\n\tcreate_empty_lvol in drivers/mtd/ubi/vtbl.c in the Linux kernel through 6.7.4 can attempt to allocate zero bytes, and crash, because of a missing check for ubi->leb_size.\n\nCVE-2023-52620:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nf_tables: disallow timeout for anonymous sets\n\nCVE-2022-48627:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nvt: fix memory overlapping when deleting chars in the buffer\n",
 	"References": {
 		"Reference": [
 			{
@@ -47,6 +47,12 @@
 				"Type": "cve"
 			},
 			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26934",
+				"ID": "CVE-2024-26934",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26955",
 				"ID": "CVE-2024-26955",
 				"Title": "",
@@ -55,6 +61,12 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26956",
 				"ID": "CVE-2024-26956",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26973",
+				"ID": "CVE-2024-26973",
 				"Title": "",
 				"Type": "cve"
 			},
@@ -83,8 +95,26 @@
 				"Type": "cve"
 			},
 			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-35910",
+				"ID": "CVE-2024-35910",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-35925",
 				"ID": "CVE-2024-35925",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-35930",
+				"ID": "CVE-2024-35930",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-35944",
+				"ID": "CVE-2024-35944",
 				"Title": "",
 				"Type": "cve"
 			}

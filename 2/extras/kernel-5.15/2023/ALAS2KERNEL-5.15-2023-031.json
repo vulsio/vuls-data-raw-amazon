@@ -10,12 +10,48 @@
 		"Date": "2023-11-29 22:47:00"
 	},
 	"Updated": {
-		"Date": "2023-12-04 21:55:00"
+		"Date": "2024-12-05 01:00:00"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.15 that fix the following vulnerabilities:\nCVE-2023-6111:\n\tA use-after-free vulnerability in the Linux kernel's netfilter: nf_tables component can be exploited to achieve local privilege escalation.\n\nThe function nft_trans_gc_catchall did not remove the catchall set element from the catchall_list when the argument sync is true, making it possible to free a catchall set element many times.\n\nWe recommend upgrading past commit 93995bf4af2c5a99e2a87f0cd5ce547d31eb7630.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.15 that fix the following vulnerabilities:\nCVE-2023-6111:\n\tA use-after-free vulnerability in the Linux kernel's netfilter: nf_tables component can be exploited to achieve local privilege escalation.\n\nThe function nft_trans_gc_catchall did not remove the catchall set element from the catchall_list when the argument sync is true, making it possible to free a catchall set element many times.\n\nWe recommend upgrading past commit 93995bf4af2c5a99e2a87f0cd5ce547d31eb7630.\n\nCVE-2023-52869:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\npstore/platform: Add check for kstrdup\n\nCVE-2023-52868:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nthermal: core: prevent potential string overflow\n\nCVE-2023-52859:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nperf: hisi: Fix use-after-free when register pmu fails\n\nCVE-2023-52854:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\npadata: Fix refcnt handling in padata_free_shell()\n\nCVE-2023-52846:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nhsr: Prevent use after free in prp_create_tagged_frame()\n\nCVE-2023-52843:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nllc: verify mac len before reading mac header\n",
 	"References": {
 		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52843",
+				"ID": "CVE-2023-52843",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52846",
+				"ID": "CVE-2023-52846",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52854",
+				"ID": "CVE-2023-52854",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52859",
+				"ID": "CVE-2023-52859",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52868",
+				"ID": "CVE-2023-52868",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-52869",
+				"ID": "CVE-2023-52869",
+				"Title": "",
+				"Type": "cve"
+			},
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-6111",
 				"ID": "CVE-2023-6111",

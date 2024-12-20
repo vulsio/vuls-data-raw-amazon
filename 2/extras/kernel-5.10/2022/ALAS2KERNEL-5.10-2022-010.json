@@ -10,10 +10,10 @@
 		"Date": "2022-02-05 00:20:00"
 	},
 	"Updated": {
-		"Date": "2024-08-01 01:11:00"
+		"Date": "2024-12-05 01:00:00"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2022-48770:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbpf: Guard against accessing NULL pt_regs in bpf_get_task_stack()\n\nCVE-2022-48769:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nefi: runtime: avoid EFIv2 runtime services on Apple x86 machines\n\nCVE-2022-48767:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nceph: properly put ceph_string reference after async create attempt\n\nCVE-2022-48761:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nusb: xhci-plat: fix crash when suspend if remote wake enable\n\nCVE-2022-48760:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nUSB: core: Fix hang in usb_kill_urb by adding memory barriers\n\nCVE-2022-48754:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nphylib: fix potential use-after-free\n\nCVE-2022-48748:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: bridge: vlan: fix memory leak in __allowed_ingress\n\nCVE-2022-48747:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nblock: Fix wrong offset in bio_truncate()\n\nCVE-2022-0492:\n\tThe cgroup release_agent is called with call_usermodehelper. The function call_usermodehelper starts the release_agent with a full set of capabilities. Therefore require capabilities when setting the release_agent.\n\nCVE-2022-0330:\n\tA random memory access flaw was found in the Linux kernel's GPU i915 kernel driver functionality in the way a user may run malicious code on the GPU. This flaw allows a local user to crash the system or escalate their privileges on the system.\n\nCVE-2021-47619:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ni40e: Fix queues reservation for XDP\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.10 that fix the following vulnerabilities:\nCVE-2022-48770:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbpf: Guard against accessing NULL pt_regs in bpf_get_task_stack()\n\nCVE-2022-48769:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nefi: runtime: avoid EFIv2 runtime services on Apple x86 machines\n\nCVE-2022-48767:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nceph: properly put ceph_string reference after async create attempt\n\nCVE-2022-48761:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nusb: xhci-plat: fix crash when suspend if remote wake enable\n\nCVE-2022-48760:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nUSB: core: Fix hang in usb_kill_urb by adding memory barriers\n\nCVE-2022-48757:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: fix information leakage in /proc/net/ptype\n\nCVE-2022-48754:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nphylib: fix potential use-after-free\n\nCVE-2022-48748:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: bridge: vlan: fix memory leak in __allowed_ingress\n\nCVE-2022-48747:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nblock: Fix wrong offset in bio_truncate()\n\nCVE-2022-0492:\n\tThe cgroup release_agent is called with call_usermodehelper. The function call_usermodehelper starts the release_agent with a full set of capabilities. Therefore require capabilities when setting the release_agent.\n\nCVE-2022-0330:\n\tA random memory access flaw was found in the Linux kernel's GPU i915 kernel driver functionality in the way a user may run malicious code on the GPU. This flaw allows a local user to crash the system or escalate their privileges on the system.\n\nCVE-2021-47619:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ni40e: Fix queues reservation for XDP\n",
 	"References": {
 		"Reference": [
 			{
@@ -49,6 +49,12 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48754",
 				"ID": "CVE-2022-48754",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48757",
+				"ID": "CVE-2022-48757",
 				"Title": "",
 				"Type": "cve"
 			},

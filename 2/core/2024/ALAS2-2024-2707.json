@@ -1,0 +1,51 @@
+{
+	"ID": "ALAS2-2024-2707",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2024-2707: important priority package update for xstream",
+	"Issued": {
+		"Date": "2024-12-05 01:02:00"
+	},
+	"Updated": {
+		"Date": "2024-12-05 01:02:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-47072:\n\tXStream is vulnerable to a Denial of Service attack due to stack overflow from a manipulated binary input stream. XStream provides a BinaryStreamDriver with an own optimized serialization format. The format uses ids for string values as deduplication. The mapping for these ids are created on-the-fly at marshalling time. At unmarshalling time the reader's implementation simply used a simple one-time recursion after reading a mapping token to process the next normal token of the data stream. However, an endless recursion could be triggered with manipulated input data resulting in a stack overflow causing a denial of service.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-47072",
+				"ID": "CVE-2024-47072",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "xstream",
+					"Release": "16.amzn2.0.4",
+					"Version": "1.3.1",
+					"Filename": "Packages/xstream-1.3.1-16.amzn2.0.4.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "xstream-javadoc",
+					"Release": "16.amzn2.0.4",
+					"Version": "1.3.1",
+					"Filename": "Packages/xstream-javadoc-1.3.1-16.amzn2.0.4.noarch.rpm"
+				}
+			]
+		}
+	}
+}
