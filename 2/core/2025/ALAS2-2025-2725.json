@@ -1,0 +1,107 @@
+{
+	"ID": "ALAS2-2025-2725",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2025-2725: medium priority package update for python3-tornado",
+	"Issued": {
+		"Date": "2025-01-04 00:04:00"
+	},
+	"Updated": {
+		"Date": "2025-01-04 00:04:00"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-52804:\n\tTornado is a Python web framework and asynchronous networking library. The algorithm used for parsing HTTP cookies in Tornado versions prior to 6.4.2 sometimes has quadratic complexity, leading to excessive CPU consumption when parsing maliciously-crafted cookie headers. This parsing occurs in the event loop thread and may block the processing of other requests. Version 6.4.2 fixes the issue.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52804",
+				"ID": "CVE-2024-52804",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-tornado",
+					"Release": "4.amzn2.0.4",
+					"Version": "5.0.2",
+					"Filename": "Packages/python3-tornado-5.0.2-4.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-tornado-doc",
+					"Release": "4.amzn2.0.4",
+					"Version": "5.0.2",
+					"Filename": "Packages/python3-tornado-doc-5.0.2-4.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3-tornado-debuginfo",
+					"Release": "4.amzn2.0.4",
+					"Version": "5.0.2",
+					"Filename": "Packages/python3-tornado-debuginfo-5.0.2-4.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3-tornado",
+					"Release": "4.amzn2.0.4",
+					"Version": "5.0.2",
+					"Filename": "Packages/python3-tornado-5.0.2-4.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3-tornado-doc",
+					"Release": "4.amzn2.0.4",
+					"Version": "5.0.2",
+					"Filename": "Packages/python3-tornado-doc-5.0.2-4.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "python3-tornado-debuginfo",
+					"Release": "4.amzn2.0.4",
+					"Version": "5.0.2",
+					"Filename": "Packages/python3-tornado-debuginfo-5.0.2-4.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-tornado",
+					"Release": "4.amzn2.0.4",
+					"Version": "5.0.2",
+					"Filename": "Packages/python3-tornado-5.0.2-4.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-tornado-doc",
+					"Release": "4.amzn2.0.4",
+					"Version": "5.0.2",
+					"Filename": "Packages/python3-tornado-doc-5.0.2-4.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3-tornado-debuginfo",
+					"Release": "4.amzn2.0.4",
+					"Version": "5.0.2",
+					"Filename": "Packages/python3-tornado-debuginfo-5.0.2-4.amzn2.0.4.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

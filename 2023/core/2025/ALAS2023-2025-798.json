@@ -1,0 +1,43 @@
+{
+	"ID": "ALAS2023-2025-798",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2025-798: Important priority package update for jackson-databind",
+	"Issued": {
+		"Date": "2025-01-06 19:21:00"
+	},
+	"Updated": {
+		"Date": "2025-01-06 19:21:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2022-42004:\n\tIn FasterXML jackson-databind before 2.13.4, resource exhaustion can occur because of a lack of a check in BeanDeserializer._deserializeFromArray to prevent use of deeply nested arrays. An application is vulnerable only with certain customized choices for deserialization.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42004",
+				"ID": "CVE-2022-42004",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "jackson-databind",
+					"Release": "6.amzn2023.0.3",
+					"Version": "2.11.4",
+					"Filename": "Packages/jackson-databind-2.11.4-6.amzn2023.0.3.noarch.rpm"
+				}
+			]
+		}
+	}
+}

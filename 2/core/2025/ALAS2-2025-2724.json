@@ -1,0 +1,131 @@
+{
+	"ID": "ALAS2-2025-2724",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2025-2724: medium priority package update for curl",
+	"Issued": {
+		"Date": "2025-01-04 00:04:00"
+	},
+	"Updated": {
+		"Date": "2025-01-04 00:04:00"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-9681:\n\tWhen curl is asked to use HSTS, the expiry time for a subdomain might\noverwrite a parent domain's cache entry, making it end sooner or later than\notherwise intended.\n\nThis affects curl using applications that enable HSTS and use URLs with the\ninsecure `HTTP://` scheme and perform transfers with hosts like\n`x.example.com` as well as `example.com` where the first host is a subdomain\nof the second host.\n\n(The HSTS cache either needs to have been populated manually or there needs to\nhave been previous HTTPS accesses done as the cache needs to have entries for\nthe domains involved to trigger this problem.)\n\nWhen `x.example.com` responds with `Strict-Transport-Security:` headers, this\nbug can make the subdomain's expiry timeout *bleed over* and get set for the\nparent domain `example.com` in curl's HSTS cache.\n\nThe result of a triggered bug is that HTTP accesses to `example.com` get\nconverted to HTTPS for a different period of time than what was asked for by\nthe origin server. If `example.com` for example stops supporting HTTPS at its\nexpiry time, curl might then fail to access `http://example.com` until the\n(wrongly set) timeout expires. This bug can also expire the parent's entry\n*earlier*, thus making curl inadvertently switch back to insecure HTTP earlier\nthan otherwise intended.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-9681",
+				"ID": "CVE-2024-9681",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "curl",
+					"Release": "1.amzn2.0.8",
+					"Version": "8.3.0",
+					"Filename": "Packages/curl-8.3.0-1.amzn2.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libcurl",
+					"Release": "1.amzn2.0.8",
+					"Version": "8.3.0",
+					"Filename": "Packages/libcurl-8.3.0-1.amzn2.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "libcurl-devel",
+					"Release": "1.amzn2.0.8",
+					"Version": "8.3.0",
+					"Filename": "Packages/libcurl-devel-8.3.0-1.amzn2.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "curl-debuginfo",
+					"Release": "1.amzn2.0.8",
+					"Version": "8.3.0",
+					"Filename": "Packages/curl-debuginfo-8.3.0-1.amzn2.0.8.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "curl",
+					"Release": "1.amzn2.0.8",
+					"Version": "8.3.0",
+					"Filename": "Packages/curl-8.3.0-1.amzn2.0.8.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libcurl",
+					"Release": "1.amzn2.0.8",
+					"Version": "8.3.0",
+					"Filename": "Packages/libcurl-8.3.0-1.amzn2.0.8.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "libcurl-devel",
+					"Release": "1.amzn2.0.8",
+					"Version": "8.3.0",
+					"Filename": "Packages/libcurl-devel-8.3.0-1.amzn2.0.8.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "curl-debuginfo",
+					"Release": "1.amzn2.0.8",
+					"Version": "8.3.0",
+					"Filename": "Packages/curl-debuginfo-8.3.0-1.amzn2.0.8.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "curl",
+					"Release": "1.amzn2.0.8",
+					"Version": "8.3.0",
+					"Filename": "Packages/curl-8.3.0-1.amzn2.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libcurl",
+					"Release": "1.amzn2.0.8",
+					"Version": "8.3.0",
+					"Filename": "Packages/libcurl-8.3.0-1.amzn2.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "libcurl-devel",
+					"Release": "1.amzn2.0.8",
+					"Version": "8.3.0",
+					"Filename": "Packages/libcurl-devel-8.3.0-1.amzn2.0.8.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "curl-debuginfo",
+					"Release": "1.amzn2.0.8",
+					"Version": "8.3.0",
+					"Filename": "Packages/curl-debuginfo-8.3.0-1.amzn2.0.8.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"ID": "ALAS2-2025-2726",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2025-2726: medium priority package update for python-webob",
+	"Issued": {
+		"Date": "2025-01-04 00:04:00"
+	},
+	"Updated": {
+		"Date": "2025-01-04 00:04:00"
+	},
+	"Severity": "medium",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-42353:\n\tWebOb provides objects for HTTP requests and responses. When WebOb normalizes the HTTP Location header to include the request hostname, it does so by parsing the URL that the user is to be redirected to with Python's urlparse, and joining it to the base URL. `urlparse` however treats a `//` at the start of a string as a URI without a scheme, and then treats the next part as the hostname. `urljoin` will then use that hostname from the second part as the hostname replacing the original one from the request. This vulnerability is patched in WebOb version 1.8.8.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-42353",
+				"ID": "CVE-2024-42353",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python-webob",
+					"Release": "7.amzn2.0.1",
+					"Version": "1.2.3",
+					"Filename": "Packages/python-webob-1.2.3-7.amzn2.0.1.noarch.rpm"
+				}
+			]
+		}
+	}
+}
