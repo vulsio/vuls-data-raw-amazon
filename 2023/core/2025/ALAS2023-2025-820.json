@@ -1,0 +1,67 @@
+{
+	"ID": "ALAS2023-2025-820",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2025-820: Medium priority package update for ansible-core",
+	"Issued": {
+		"Date": "2025-01-21 23:11:00"
+	},
+	"Updated": {
+		"Date": "2025-01-21 23:11:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-11079:\n\tThis vulnerability allows attackers to bypass unsafe content protections using the hostvars object to reference and execute templated content. This issue can lead to arbitrary code execution if remote data or module outputs are improperly templated within playbooks.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-11079",
+				"ID": "CVE-2024-11079",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ansible-test",
+					"Release": "1.amzn2023.0.6",
+					"Version": "2.15.3",
+					"Filename": "Packages/ansible-test-2.15.3-1.amzn2023.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "ansible-core",
+					"Release": "1.amzn2023.0.6",
+					"Version": "2.15.3",
+					"Filename": "Packages/ansible-core-2.15.3-1.amzn2023.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "ansible-test",
+					"Release": "1.amzn2023.0.6",
+					"Version": "2.15.3",
+					"Filename": "Packages/ansible-test-2.15.3-1.amzn2023.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "ansible-core",
+					"Release": "1.amzn2023.0.6",
+					"Version": "2.15.3",
+					"Filename": "Packages/ansible-core-2.15.3-1.amzn2023.0.6.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

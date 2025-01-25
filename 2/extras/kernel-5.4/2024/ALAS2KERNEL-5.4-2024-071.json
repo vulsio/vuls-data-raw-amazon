@@ -10,10 +10,10 @@
 		"Date": "2024-06-06 20:37:00"
 	},
 	"Updated": {
-		"Date": "2024-06-19 20:39:00"
+		"Date": "2025-01-21 20:23:00"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2023-26607:\n\tIn the Linux kernel 6.0.8, there is an out-of-bounds read in ntfs_attr_find in fs/ntfs/attrib.c.\n\nCVE-2022-3435:\n\tA vulnerability classified as problematic has been found in Linux Kernel. This affects the function fib_nh_match of the file net/ipv4/fib_semantics.c of the component IPv4 Handler. The manipulation leads to out-of-bounds read. It is possible to initiate the attack remotely. It is recommended to apply a patch to fix this issue. The identifier VDB-210357 was assigned to this vulnerability.\n\nCVE-2022-3169:\n\tA flaw was found in the Linux kernel. A denial of service flaw may occur if there is a consecutive request of the NVME_IOCTL_RESET and the NVME_IOCTL_SUBSYS_RESET through the device file of the driver, resulting in a PCIe link disconnect.\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2023-26607:\n\tIn the Linux kernel 6.0.8, there is an out-of-bounds read in ntfs_attr_find in fs/ntfs/attrib.c.\n\nCVE-2022-49015:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: hsr: Fix potential use-after-free\n\nCVE-2022-49014:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: tun: Fix use-after-free in tun_detach()\n\nCVE-2022-49006:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntracing: Free buffers when a used dynamic event is removed\n\nCVE-2022-48999:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nipv4: Handle attempt to delete multipath route when fib_info contains an nh reference\n\nCVE-2022-3435:\n\tA vulnerability classified as problematic has been found in Linux Kernel. This affects the function fib_nh_match of the file net/ipv4/fib_semantics.c of the component IPv4 Handler. The manipulation leads to out-of-bounds read. It is possible to initiate the attack remotely. It is recommended to apply a patch to fix this issue. The identifier VDB-210357 was assigned to this vulnerability.\n\nCVE-2022-3169:\n\tA flaw was found in the Linux kernel. A denial of service flaw may occur if there is a consecutive request of the NVME_IOCTL_RESET and the NVME_IOCTL_SUBSYS_RESET through the device file of the driver, resulting in a PCIe link disconnect.\n",
 	"References": {
 		"Reference": [
 			{
@@ -25,6 +25,30 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-3435",
 				"ID": "CVE-2022-3435",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48999",
+				"ID": "CVE-2022-48999",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-49006",
+				"ID": "CVE-2022-49006",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-49014",
+				"ID": "CVE-2022-49014",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-49015",
+				"ID": "CVE-2022-49015",
 				"Title": "",
 				"Type": "cve"
 			},

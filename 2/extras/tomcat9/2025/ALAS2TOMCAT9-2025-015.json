@@ -1,0 +1,119 @@
+{
+	"ID": "ALAS2TOMCAT9-2025-015",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Tomcat9 2.0 - ALAS2TOMCAT9-2025-015: important priority package update for tomcat",
+	"Issued": {
+		"Date": "2025-01-21 20:23:00"
+	},
+	"Updated": {
+		"Date": "2025-01-21 20:23:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Tomcat9 that fix the following vulnerabilities:\nCVE-2024-56337:\n\tTime-of-check Time-of-use (TOCTOU) Race Condition vulnerability in Apache Tomcat.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.1, from 10.1.0-M1 through 10.1.33, from 9.0.0.M1 through 9.0.97.\n\nThe mitigation for CVE-2024-50379 was incomplete.\n\nUsers running Tomcat on a case insensitive file system with the default servlet write enabled (readonly initialisation \nparameter set to the non-default value of false) may need additional configuration to fully mitigate CVE-2024-50379 depending on which version of Java they are using with Tomcat:\n- running on Java 8 or Java 11: the system property sun.io.useCanonCaches must be explicitly set to false (it defaults to true)\n- running on Java 17: the system property sun.io.useCanonCaches, if set, must be set to false (it defaults to false)\n- running on Java 21 onwards: no further configuration is required (the system property and the problematic cache have been removed)\n\nTomcat 11.0.3, 10.1.35 and 9.0.99 onwards will include checks that sun.io.useCanonCaches is set appropriately before allowing the default servlet to be write enabled on a case insensitive file system. Tomcat will also set sun.io.useCanonCaches to false by default where it can.\n\nCVE-2024-52316:\n\tUnchecked Error Condition vulnerability in Apache Tomcat. If Tomcat is configured to use a custom Jakarta Authentication (formerly JASPIC) ServerAuthContext component which may throw an exception during the authentication process without explicitly setting an HTTP status to indicate failure, the authentication may not fail, allowing the user to bypass the authentication process. There are no known Jakarta Authentication components that behave in this way.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.0-M26, from 10.1.0-M1 through 10.1.30, from 9.0.0-M1 through 9.0.95.\n\nUsers are recommended to upgrade to version 11.0.0, 10.1.31 or 9.0.96, which fix the issue.\n\nCVE-2024-50379:\n\tTime-of-check Time-of-use (TOCTOU) Race Condition vulnerability during JSP compilation in Apache Tomcat permits an RCE on case insensitive file systems when the default servlet is enabled for write (non-default configuration).\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.1, from 10.1.0-M1 through 10.1.33, from 9.0.0.M1 through 9.0.97.\n\nUsers are recommended to upgrade to version 11.0.2, 10.1.34 or 9.0.98, which fixes the issue.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-50379",
+				"ID": "CVE-2024-50379",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-52316",
+				"ID": "CVE-2024-52316",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56337",
+				"ID": "CVE-2024-56337",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---tomcat9",
+			"Name": "Amazon Linux 2 - Tomcat9",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.98",
+					"Filename": "Packages/tomcat-9.0.98-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-admin-webapps",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.98",
+					"Filename": "Packages/tomcat-admin-webapps-9.0.98-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-docs-webapp",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.98",
+					"Filename": "Packages/tomcat-docs-webapp-9.0.98-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-jsvc",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.98",
+					"Filename": "Packages/tomcat-jsvc-9.0.98-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-jsp-2.3-api",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.98",
+					"Filename": "Packages/tomcat-jsp-2.3-api-9.0.98-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-lib",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.98",
+					"Filename": "Packages/tomcat-lib-9.0.98-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-servlet-4.0-api",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.98",
+					"Filename": "Packages/tomcat-servlet-4.0-api-9.0.98-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-el-3.0-api",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.98",
+					"Filename": "Packages/tomcat-el-3.0-api-9.0.98-1.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "tomcat-webapps",
+					"Release": "1.amzn2.0.1",
+					"Version": "9.0.98",
+					"Filename": "Packages/tomcat-webapps-9.0.98-1.amzn2.0.1.noarch.rpm"
+				}
+			]
+		}
+	}
+}

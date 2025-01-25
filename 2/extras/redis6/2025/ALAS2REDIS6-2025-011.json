@@ -1,0 +1,91 @@
+{
+	"ID": "ALAS2REDIS6-2025-011",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 - Redis6 2.0 - ALAS2REDIS6-2025-011: important priority package update for redis",
+	"Issued": {
+		"Date": "2025-01-21 20:23:00"
+	},
+	"Updated": {
+		"Date": "2025-01-21 20:23:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 - Redis6 that fix the following vulnerabilities:\nCVE-2024-46981:\n\tRedis is an open source, in-memory database that persists on disk. An authenticated user may use a specially crafted Lua script to manipulate the garbage collector and potentially lead to remote code execution. The problem is fixed in 7.4.2, 7.2.7, and 6.2.17. An additional workaround to mitigate the problem without patching the redis-server executable is to prevent users from executing Lua scripts. This can be done using ACL to restrict EVAL and EVALSHA commands.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-46981",
+				"ID": "CVE-2024-46981",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2---redis6",
+			"Name": "Amazon Linux 2 - Redis6",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "redis",
+					"Release": "2.amzn2.0.1",
+					"Version": "6.2.14",
+					"Filename": "Packages/redis-6.2.14-2.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "redis-devel",
+					"Release": "2.amzn2.0.1",
+					"Version": "6.2.14",
+					"Filename": "Packages/redis-devel-6.2.14-2.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "redis-doc",
+					"Release": "2.amzn2.0.1",
+					"Version": "6.2.14",
+					"Filename": "Packages/redis-doc-6.2.14-2.amzn2.0.1.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "redis-debuginfo",
+					"Release": "2.amzn2.0.1",
+					"Version": "6.2.14",
+					"Filename": "Packages/redis-debuginfo-6.2.14-2.amzn2.0.1.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "redis",
+					"Release": "2.amzn2.0.1",
+					"Version": "6.2.14",
+					"Filename": "Packages/redis-6.2.14-2.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "redis-devel",
+					"Release": "2.amzn2.0.1",
+					"Version": "6.2.14",
+					"Filename": "Packages/redis-devel-6.2.14-2.amzn2.0.1.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "redis-debuginfo",
+					"Release": "2.amzn2.0.1",
+					"Version": "6.2.14",
+					"Filename": "Packages/redis-debuginfo-6.2.14-2.amzn2.0.1.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

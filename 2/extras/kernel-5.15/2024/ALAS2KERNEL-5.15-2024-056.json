@@ -10,10 +10,10 @@
 		"Date": "2024-10-24 16:45:00"
 	},
 	"Updated": {
-		"Date": "2024-12-05 01:00:00"
+		"Date": "2025-01-21 20:23:00"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.15 that fix the following vulnerabilities:\nCVE-2024-47685:\n\tsyzbot reported that nf_reject_ip6_tcphdr_put() was possibly sending garbage on the four reserved tcp bits (th->res1)\n\nUse skb_put_zero() to clear the whole TCP header, as done in nf_reject_ip_tcphdr_put()\n\nCVE-2024-46865:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nfou: fix initialization of grc\n\nCVE-2024-46858:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: pm: Fix uaf in __timer_delete_sync\n\nCVE-2024-46855:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nft_socket: fix sk refcount leaks\n\nCVE-2024-46695:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nselinux,smack: don't bypass permissions check in inode_setsecctx hook\n\nCVE-2024-38632:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nvfio/pci: fix potential memory leak in vfio_intx_enable()\n\nCVE-2024-27017:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nft_set_pipapo: walk over current view on netlink dump\n\nCVE-2024-26921:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ninet: inet_defrag: prevent sk release while still in use\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.15 that fix the following vulnerabilities:\nCVE-2024-50186:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: explicitly clear the sk pointer, when pf->create fails\n\nCVE-2024-49983:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: drop ppath from ext4_ext_replay_update_ex() to avoid double-free\n\nCVE-2024-49936:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet/xen-netback: prevent UAF in xenvif_flush_hash()\n\nCVE-2024-49889:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: avoid use-after-free in ext4_ext_show_leaf()\n\nCVE-2024-49884:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: fix slab-use-after-free in ext4_split_extent_at()\n\nCVE-2024-49883:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: aovid use-after-free in ext4_ext_insert_extent()\n\nCVE-2024-49882:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: fix double brelse() the buffer of the extents path\n\nCVE-2024-49860:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nACPI: sysfs: validate return type of _STR method\n\nCVE-2024-47742:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nfirmware_loader: Block path traversal\n\nCVE-2024-47701:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: avoid OOB when system.data xattr changes underneath the filesystem\n\nCVE-2024-47685:\n\tsyzbot reported that nf_reject_ip6_tcphdr_put() was possibly sending garbage on the four reserved tcp bits (th->res1)\n\nUse skb_put_zero() to clear the whole TCP header, as done in nf_reject_ip_tcphdr_put()\n\nCVE-2024-46865:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nfou: fix initialization of grc\n\nCVE-2024-46858:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: pm: Fix uaf in __timer_delete_sync\n\nCVE-2024-46855:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nft_socket: fix sk refcount leaks\n\nCVE-2024-46695:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nselinux,smack: don't bypass permissions check in inode_setsecctx hook\n\nCVE-2024-38632:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nvfio/pci: fix potential memory leak in vfio_intx_enable()\n\nCVE-2024-27017:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nft_set_pipapo: walk over current view on netlink dump\n\nCVE-2024-26921:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ninet: inet_defrag: prevent sk release while still in use\n",
 	"References": {
 		"Reference": [
 			{
@@ -61,6 +61,66 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-47685",
 				"ID": "CVE-2024-47685",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-47701",
+				"ID": "CVE-2024-47701",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-47742",
+				"ID": "CVE-2024-47742",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-49860",
+				"ID": "CVE-2024-49860",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-49882",
+				"ID": "CVE-2024-49882",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-49883",
+				"ID": "CVE-2024-49883",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-49884",
+				"ID": "CVE-2024-49884",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-49889",
+				"ID": "CVE-2024-49889",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-49936",
+				"ID": "CVE-2024-49936",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-49983",
+				"ID": "CVE-2024-49983",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-50186",
+				"ID": "CVE-2024-50186",
 				"Title": "",
 				"Type": "cve"
 			}
