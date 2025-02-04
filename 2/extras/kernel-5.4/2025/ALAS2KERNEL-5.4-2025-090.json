@@ -10,12 +10,30 @@
 		"Date": "2025-01-21 20:23:00"
 	},
 	"Updated": {
-		"Date": "2025-01-21 20:23:00"
+		"Date": "2025-01-31 05:43:00"
 	},
 	"Severity": "important",
-	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2024-50262:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbpf: Fix out-of-bounds write in trie_get_next_key()\n\nCVE-2024-50230:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnilfs2: fix kernel bug due to missing clearing of checked flag\n\nCVE-2024-50151:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: fix OOBs when building SMB2_IOCTL request\n\nCVE-2024-50150:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nusb: typec: altmode should keep reference to parent\n\nCVE-2024-50143:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nudf: fix uninit-value use in udf_get_fileshortad\n\nCVE-2024-50131:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntracing: Consider the NULL character when validating the event length\n\nCVE-2024-50127:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: sched: fix use-after-free in taprio_change()\n\nCVE-2024-50035:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nppp: fix ppp_async_encode() illegal access\n\nCVE-2024-49995:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntipc: guard against string buffer overrun\n\nCVE-2024-49883:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: aovid use-after-free in ext4_ext_insert_extent()\n\nCVE-2024-49882:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: fix double brelse() the buffer of the extents path\n\nCVE-2024-49860:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nACPI: sysfs: validate return type of _STR method\n\nCVE-2024-47757:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnilfs2: fix potential oob read in nilfs_btree_check_delete()\n\nCVE-2024-47742:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nfirmware_loader: Block path traversal\n\nCVE-2024-47701:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: avoid OOB when system.data xattr changes underneath the filesystem\n",
+	"Description": "Package updates are available for Amazon Linux 2 - Kernel-5.4 that fix the following vulnerabilities:\nCVE-2024-50262:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nbpf: Fix out-of-bounds write in trie_get_next_key()\n\nCVE-2024-50230:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnilfs2: fix kernel bug due to missing clearing of checked flag\n\nCVE-2024-50151:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: fix OOBs when building SMB2_IOCTL request\n\nCVE-2024-50150:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nusb: typec: altmode should keep reference to parent\n\nCVE-2024-50143:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nudf: fix uninit-value use in udf_get_fileshortad\n\nCVE-2024-50131:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntracing: Consider the NULL character when validating the event length\n\nCVE-2024-50127:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: sched: fix use-after-free in taprio_change()\n\nCVE-2024-50035:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nppp: fix ppp_async_encode() illegal access\n\nCVE-2024-50033:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nslip: make slhc_remember() more robust against malicious packets\n\nCVE-2024-49996:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ncifs: Fix buffer overflow when parsing NFS reparse points\n\nCVE-2024-49995:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ntipc: guard against string buffer overrun\n\nCVE-2024-49883:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: aovid use-after-free in ext4_ext_insert_extent()\n\nCVE-2024-49882:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: fix double brelse() the buffer of the extents path\n\nCVE-2024-49860:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nACPI: sysfs: validate return type of _STR method\n\nCVE-2024-47757:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnilfs2: fix potential oob read in nilfs_btree_check_delete()\n\nCVE-2024-47742:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nfirmware_loader: Block path traversal\n\nCVE-2024-47701:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\next4: avoid OOB when system.data xattr changes underneath the filesystem\n\nCVE-2024-47685:\n\tsyzbot reported that nf_reject_ip6_tcphdr_put() was possibly sending garbage on the four reserved tcp bits (th->res1)\n\nUse skb_put_zero() to clear the whole TCP header, as done in nf_reject_ip_tcphdr_put()\n\nCVE-2024-38538:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\nnet: bridge: xmit: make sure we have at least eth header len bytes\n\nCVE-2024-26921:\n\tIn the Linux kernel, the following vulnerability has been resolved:\n\ninet: inet_defrag: prevent sk release while still in use\n",
 	"References": {
 		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26921",
+				"ID": "CVE-2024-26921",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-38538",
+				"ID": "CVE-2024-38538",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-47685",
+				"ID": "CVE-2024-47685",
+				"Title": "",
+				"Type": "cve"
+			},
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-47701",
 				"ID": "CVE-2024-47701",
@@ -55,6 +73,18 @@
 			{
 				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-49995",
 				"ID": "CVE-2024-49995",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-49996",
+				"ID": "CVE-2024-49996",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-50033",
+				"ID": "CVE-2024-50033",
 				"Title": "",
 				"Type": "cve"
 			},
