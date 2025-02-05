@@ -1,0 +1,113 @@
+{
+	"ID": "ALAS2-2025-2748",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2025-2748: important priority package update for gstreamer1-plugins-good",
+	"Issued": {
+		"Date": "2025-01-30 22:56:00"
+	},
+	"Updated": {
+		"Date": "2025-01-30 22:56:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2024-47613:\n\tGStreamer is a library for constructing graphs of media-handling components. A null pointer dereference vulnerability has been identified in `gst_gdk_pixbuf_dec_flush` within `gstgdkpixbufdec.c`. This function invokes `memcpy`, using `out_pix` as the destination address. `out_pix` is expected to point to the frame 0 from the frame structure, which is read from the input file. However, in certain situations, it can points to a NULL frame, causing the subsequent call to `memcpy` to attempt writing to the null address (0x00), leading to a null pointer dereference. This vulnerability can result in a Denial of Service (DoS) by triggering a segmentation fault (SEGV). This vulnerability is fixed in 1.24.10.\n\nCVE-2024-47537:\n\tGStreamer is a library for constructing graphs of media-handling components. The program attempts to reallocate the memory pointed to by stream->samples to accommodate stream->n_samples + samples_count elements of type QtDemuxSample. The problem is that samples_count is read from the input file. And if this value is big enough, this can lead to an integer overflow during the addition. As a consequence, g_try_renew might allocate memory for a significantly smaller number of elements than intended. Following this, the program iterates through samples_count elements and attempts to write samples_count number of elements, potentially exceeding the actual allocated memory size and causing an OOB-write. This vulnerability is fixed in 1.24.10.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-47537",
+				"ID": "CVE-2024-47537",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-47613",
+				"ID": "CVE-2024-47613",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gstreamer1-plugins-good",
+					"Release": "6.amzn2.0.4",
+					"Version": "1.18.4",
+					"Filename": "Packages/gstreamer1-plugins-good-1.18.4-6.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gstreamer1-plugins-good-gtk",
+					"Release": "6.amzn2.0.4",
+					"Version": "1.18.4",
+					"Filename": "Packages/gstreamer1-plugins-good-gtk-1.18.4-6.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "gstreamer1-plugins-good-debuginfo",
+					"Release": "6.amzn2.0.4",
+					"Version": "1.18.4",
+					"Filename": "Packages/gstreamer1-plugins-good-debuginfo-1.18.4-6.amzn2.0.4.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gstreamer1-plugins-good",
+					"Release": "6.amzn2.0.4",
+					"Version": "1.18.4",
+					"Filename": "Packages/gstreamer1-plugins-good-1.18.4-6.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gstreamer1-plugins-good-gtk",
+					"Release": "6.amzn2.0.4",
+					"Version": "1.18.4",
+					"Filename": "Packages/gstreamer1-plugins-good-gtk-1.18.4-6.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "gstreamer1-plugins-good-debuginfo",
+					"Release": "6.amzn2.0.4",
+					"Version": "1.18.4",
+					"Filename": "Packages/gstreamer1-plugins-good-debuginfo-1.18.4-6.amzn2.0.4.i686.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "gstreamer1-plugins-good",
+					"Release": "6.amzn2.0.4",
+					"Version": "1.18.4",
+					"Filename": "Packages/gstreamer1-plugins-good-1.18.4-6.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "gstreamer1-plugins-good-gtk",
+					"Release": "6.amzn2.0.4",
+					"Version": "1.18.4",
+					"Filename": "Packages/gstreamer1-plugins-good-gtk-1.18.4-6.amzn2.0.4.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "gstreamer1-plugins-good-debuginfo",
+					"Release": "6.amzn2.0.4",
+					"Version": "1.18.4",
+					"Filename": "Packages/gstreamer1-plugins-good-debuginfo-1.18.4-6.amzn2.0.4.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

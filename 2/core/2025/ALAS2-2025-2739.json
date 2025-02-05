@@ -1,0 +1,57 @@
+{
+	"ID": "ALAS2-2025-2739",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2 2017.12 - ALAS2-2025-2739: important priority package update for amazon-ssm-agent",
+	"Issued": {
+		"Date": "2025-01-30 22:56:00"
+	},
+	"Updated": {
+		"Date": "2025-01-30 22:56:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2025-21614:\n\tgo-git is a highly extensible git implementation library written in pure Go. A denial of service (DoS) vulnerability was discovered in go-git versions prior to v5.13. This vulnerability allows an attacker to perform denial of service attacks by providing specially crafted responses from a Git server which triggers resource exhaustion in go-git clients. Users running versions of go-git from v4 and above are recommended to upgrade to v5.13 in order to mitigate this vulnerability.\n\nCVE-2025-21613:\n\tgo-git is a highly extensible git implementation library written in pure Go. An argument injection vulnerability was discovered in go-git versions prior to v5.13. Successful exploitation of this vulnerability could allow an attacker to set arbitrary values to git-upload-pack flags. This only happens when the file transport protocol is being used, as that is the only protocol that shells out to git binaries. This vulnerability is fixed in 5.13.0.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-21613",
+				"ID": "CVE-2025-21613",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-21614",
+				"ID": "CVE-2025-21614",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2",
+			"Name": "Amazon Linux 2",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "amazon-ssm-agent",
+					"Release": "1.amzn2",
+					"Version": "3.3.1611.0",
+					"Filename": "Packages/amazon-ssm-agent-3.3.1611.0-1.amzn2.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "amazon-ssm-agent",
+					"Release": "1.amzn2",
+					"Version": "3.3.1611.0",
+					"Filename": "Packages/amazon-ssm-agent-3.3.1611.0-1.amzn2.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
