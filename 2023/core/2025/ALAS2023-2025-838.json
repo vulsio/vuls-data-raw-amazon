@@ -1,0 +1,233 @@
+{
+	"ID": "ALAS2023-2025-838",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2025-838: Important priority package update for bind",
+	"Issued": {
+		"Date": "2025-01-30 03:53:00"
+	},
+	"Updated": {
+		"Date": "2025-01-30 03:53:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-12705:\n\tClients using DNS-over-HTTPS (DoH) can exhaust a DNS resolver's CPU and/or memory by flooding it with crafted valid or invalid HTTP/2 traffic.\nThis issue affects BIND 9 versions 9.18.0 through 9.18.32, 9.20.0 through 9.20.4, 9.21.0 through 9.21.3, and 9.18.11-S1 through 9.18.32-S1.\n\nCVE-2024-11187:\n\tIt is possible to construct a zone such that some queries to it will generate responses containing numerous records in the Additional section. An attacker sending many such queries can cause either the authoritative server itself or an independent resolver to use disproportionate resources processing the queries. Zones will usually need to have been deliberately crafted to attack this exposure.\nThis issue affects BIND 9 versions 9.11.0 through 9.11.37, 9.16.0 through 9.16.50, 9.18.0 through 9.18.32, 9.20.0 through 9.20.4, 9.21.0 through 9.21.3, 9.11.3-S1 through 9.11.37-S1, 9.16.8-S1 through 9.16.50-S1, and 9.18.11-S1 through 9.18.32-S1.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-11187",
+				"ID": "CVE-2024-11187",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-12705",
+				"ID": "CVE-2024-12705",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "32",
+					"Name": "bind-doc",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-doc-9.18.33-1.amzn2023.0.2.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-chroot",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-chroot-9.18.33-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-libs-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-libs-debuginfo-9.18.33-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-dnssec-utils-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-dnssec-utils-debuginfo-9.18.33-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-utils-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-utils-debuginfo-9.18.33-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-devel",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-devel-9.18.33-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "noarch",
+					"Epoch": "32",
+					"Name": "bind-license",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-license-9.18.33-1.amzn2023.0.2.noarch.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-debuginfo-9.18.33-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-debugsource",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-debugsource-9.18.33-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-libs",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-libs-9.18.33-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-9.18.33-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-dnssec-utils",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-dnssec-utils-9.18.33-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "32",
+					"Name": "bind-utils",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-utils-9.18.33-1.amzn2023.0.2.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-debuginfo-9.18.33-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-utils-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-utils-debuginfo-9.18.33-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-chroot",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-chroot-9.18.33-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-dnssec-utils-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-dnssec-utils-debuginfo-9.18.33-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-utils",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-utils-9.18.33-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-debugsource",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-debugsource-9.18.33-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-libs",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-libs-9.18.33-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-dnssec-utils",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-dnssec-utils-9.18.33-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-libs-debuginfo",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-libs-debuginfo-9.18.33-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-9.18.33-1.amzn2023.0.2.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "32",
+					"Name": "bind-devel",
+					"Release": "1.amzn2023.0.2",
+					"Version": "9.18.33",
+					"Filename": "Packages/bind-devel-9.18.33-1.amzn2023.0.2.aarch64.rpm"
+				}
+			]
+		}
+	}
+}

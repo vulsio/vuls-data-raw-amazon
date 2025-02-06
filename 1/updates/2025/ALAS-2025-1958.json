@@ -1,0 +1,67 @@
+{
+	"ID": "ALAS-2025-1958",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux AMI 2014.03 - ALAS-2025-1958: important priority package update for less",
+	"Issued": {
+		"Date": "2025-01-30 04:16:00"
+	},
+	"Updated": {
+		"Date": "2025-01-30 04:16:00"
+	},
+	"Severity": "important",
+	"Description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2024-32487:\n\tless through 653 allows OS command execution via a newline character in the name of a file, because quoting is mishandled in filename.c. Exploitation typically requires use with attacker-controlled file names, such as the files extracted from an untrusted archive. Exploitation also requires the LESSOPEN environment variable, but this is set by default in many common cases.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-32487",
+				"ID": "CVE-2024-32487",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-ami",
+			"Name": "Amazon Linux AMI",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "less-debuginfo",
+					"Release": "13.14.amzn1",
+					"Version": "436",
+					"Filename": "Packages/less-debuginfo-436-13.14.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "less",
+					"Release": "13.14.amzn1",
+					"Version": "436",
+					"Filename": "Packages/less-436-13.14.amzn1.x86_64.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "less",
+					"Release": "13.14.amzn1",
+					"Version": "436",
+					"Filename": "Packages/less-436-13.14.amzn1.i686.rpm"
+				},
+				{
+					"Arch": "i686",
+					"Epoch": "0",
+					"Name": "less-debuginfo",
+					"Release": "13.14.amzn1",
+					"Version": "436",
+					"Filename": "Packages/less-debuginfo-436-13.14.amzn1.i686.rpm"
+				}
+			]
+		}
+	}
+}

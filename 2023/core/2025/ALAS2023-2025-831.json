@@ -1,0 +1,43 @@
+{
+	"ID": "ALAS2023-2025-831",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2025-831: Important priority package update for python-virtualenv",
+	"Issued": {
+		"Date": "2025-01-30 03:53:00"
+	},
+	"Updated": {
+		"Date": "2025-01-30 03:53:00"
+	},
+	"Severity": "Important",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-53899:\n\tvirtualenv before 20.26.6 allows command injection through the activation scripts for a virtual environment. Magic template strings are not quoted correctly when replacing. NOTE: this is not the same as CVE-2024-9287.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-53899",
+				"ID": "CVE-2024-53899",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "noarch",
+					"Epoch": "0",
+					"Name": "python3-virtualenv",
+					"Release": "3.amzn2023.0.4",
+					"Version": "20.4.0",
+					"Filename": "Packages/python3-virtualenv-20.4.0-3.amzn2023.0.4.noarch.rpm"
+				}
+			]
+		}
+	}
+}

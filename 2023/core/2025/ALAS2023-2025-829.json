@@ -1,0 +1,191 @@
+{
+	"ID": "ALAS2023-2025-829",
+	"Author": "linux-security@amazon.com",
+	"From": "linux-security@amazon.com",
+	"Status": "final",
+	"Type": "security",
+	"Version": "1.4",
+	"Title": "Amazon Linux 2023 - ALAS2023-2025-829: Medium priority package update for python3.11",
+	"Issued": {
+		"Date": "2025-01-30 03:53:00"
+	},
+	"Updated": {
+		"Date": "2025-01-30 03:53:00"
+	},
+	"Severity": "Medium",
+	"Description": "Package updates are available for Amazon Linux 2023 that fix the following vulnerabilities:\nCVE-2024-7592:\n\tThere is a LOW severity vulnerability affecting CPython, specifically the\n'http.cookies' standard library module.\n\n\nWhen parsing cookies that contained backslashes for quoted characters in\nthe cookie value, the parser would use an algorithm with quadratic\ncomplexity, resulting in excess CPU resources being used while parsing the\nvalue.\n\nCVE-2024-6923:\n\tThere is a MEDIUM severity vulnerability affecting CPython.\n\nThe \nemail module didn't properly quote newlines for email headers when \nserializing an email message allowing for header injection when an email\n is serialized.\n\nCVE-2024-4032:\n\tThe \"ipaddress\" module contained incorrect information about whether certain IPv4 and IPv6 addresses were designated as \"globally reachable\" or \"private\". This affected the is_private and is_global properties of the ipaddress.IPv4Address, ipaddress.IPv4Network, ipaddress.IPv6Address, and ipaddress.IPv6Network classes, where values wouldn't be returned in accordance with the latest information from the IANA Special-Purpose Address Registries.\n\nCPython 3.12.4 and 3.13.0a6 contain updated information from these registries and thus have the intended behavior.\n",
+	"References": {
+		"Reference": [
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-4032",
+				"ID": "CVE-2024-4032",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-6923",
+				"ID": "CVE-2024-6923",
+				"Title": "",
+				"Type": "cve"
+			},
+			{
+				"Href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-7592",
+				"ID": "CVE-2024-7592",
+				"Title": "",
+				"Type": "cve"
+			}
+		]
+	},
+	"Pkglist": {
+		"Collection": {
+			"Short": "amazon-linux-2023",
+			"Name": "Amazon Linux 2023",
+			"Package": [
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.11",
+					"Release": "1.amzn2023.0.6",
+					"Version": "3.11.6",
+					"Filename": "Packages/python3.11-3.11.6-1.amzn2023.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.11-tkinter",
+					"Release": "1.amzn2023.0.6",
+					"Version": "3.11.6",
+					"Filename": "Packages/python3.11-tkinter-3.11.6-1.amzn2023.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.11-devel",
+					"Release": "1.amzn2023.0.6",
+					"Version": "3.11.6",
+					"Filename": "Packages/python3.11-devel-3.11.6-1.amzn2023.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.11-debugsource",
+					"Release": "1.amzn2023.0.6",
+					"Version": "3.11.6",
+					"Filename": "Packages/python3.11-debugsource-3.11.6-1.amzn2023.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.11-idle",
+					"Release": "1.amzn2023.0.6",
+					"Version": "3.11.6",
+					"Filename": "Packages/python3.11-idle-3.11.6-1.amzn2023.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.11-debug",
+					"Release": "1.amzn2023.0.6",
+					"Version": "3.11.6",
+					"Filename": "Packages/python3.11-debug-3.11.6-1.amzn2023.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.11-debuginfo",
+					"Release": "1.amzn2023.0.6",
+					"Version": "3.11.6",
+					"Filename": "Packages/python3.11-debuginfo-3.11.6-1.amzn2023.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.11-libs",
+					"Release": "1.amzn2023.0.6",
+					"Version": "3.11.6",
+					"Filename": "Packages/python3.11-libs-3.11.6-1.amzn2023.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "x86_64",
+					"Epoch": "0",
+					"Name": "python3.11-test",
+					"Release": "1.amzn2023.0.6",
+					"Version": "3.11.6",
+					"Filename": "Packages/python3.11-test-3.11.6-1.amzn2023.0.6.x86_64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.11-devel",
+					"Release": "1.amzn2023.0.6",
+					"Version": "3.11.6",
+					"Filename": "Packages/python3.11-devel-3.11.6-1.amzn2023.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.11-tkinter",
+					"Release": "1.amzn2023.0.6",
+					"Version": "3.11.6",
+					"Filename": "Packages/python3.11-tkinter-3.11.6-1.amzn2023.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.11-idle",
+					"Release": "1.amzn2023.0.6",
+					"Version": "3.11.6",
+					"Filename": "Packages/python3.11-idle-3.11.6-1.amzn2023.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.11",
+					"Release": "1.amzn2023.0.6",
+					"Version": "3.11.6",
+					"Filename": "Packages/python3.11-3.11.6-1.amzn2023.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.11-debugsource",
+					"Release": "1.amzn2023.0.6",
+					"Version": "3.11.6",
+					"Filename": "Packages/python3.11-debugsource-3.11.6-1.amzn2023.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.11-debug",
+					"Release": "1.amzn2023.0.6",
+					"Version": "3.11.6",
+					"Filename": "Packages/python3.11-debug-3.11.6-1.amzn2023.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.11-debuginfo",
+					"Release": "1.amzn2023.0.6",
+					"Version": "3.11.6",
+					"Filename": "Packages/python3.11-debuginfo-3.11.6-1.amzn2023.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.11-libs",
+					"Release": "1.amzn2023.0.6",
+					"Version": "3.11.6",
+					"Filename": "Packages/python3.11-libs-3.11.6-1.amzn2023.0.6.aarch64.rpm"
+				},
+				{
+					"Arch": "aarch64",
+					"Epoch": "0",
+					"Name": "python3.11-test",
+					"Release": "1.amzn2023.0.6",
+					"Version": "3.11.6",
+					"Filename": "Packages/python3.11-test-3.11.6-1.amzn2023.0.6.aarch64.rpm"
+				}
+			]
+		}
+	}
+}
